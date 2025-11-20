@@ -1,0 +1,65 @@
+# Default Experiment Configuration
+# Override these settings per-experiment as needed
+
+# Data Configuration
+data:
+  source: "20newsgroups"
+  n_train_samples: 400
+  n_test_samples: 100
+  n_categories: 4
+  random_state: 42
+
+# Cross-Validation Configuration
+cross_validation:
+  strategy: "StratifiedKFold"
+  n_splits: 5
+  shuffle: true
+  random_state: 42
+
+# Evaluation Metrics
+metrics:
+  primary: "f1_macro"
+  additional:
+    - "accuracy"
+    - "precision_macro"
+    - "recall_macro"
+
+# Transformer Configurations
+transformers:
+  statistical:
+    max_features: 1000
+    ngram_range: [1, 2]
+    min_df: 2
+    max_df: 0.8
+  
+  semantic:
+    n_components: 50
+    n_clusters: 10
+    max_features: 5000
+  
+  domain_text:
+    n_topics: 20
+    style_features: true
+    structure_features: true
+
+# Model Configurations
+models:
+  logistic_regression:
+    max_iter: 1000
+    random_state: 42
+    solver: "lbfgs"
+
+# Output Configuration
+output:
+  save_plots: true
+  plot_format: "png"
+  plot_dpi: 300
+  save_models: true
+  verbose: true
+
+# Experiment Tracking
+tracking:
+  log_parameters: true
+  log_metrics: true
+  log_artifacts: true
+

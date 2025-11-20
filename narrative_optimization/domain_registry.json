@@ -1,0 +1,88 @@
+{
+  "domains": {
+    "test_domain_verification": {
+      "name": "test_domain_verification",
+      "pi": 0.7,
+      "domain_type": "test",
+      "status": "test",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": null,
+      "similar_domains": null,
+      "patterns_count": null,
+      "last_updated": "2025-11-13T10:59:12.675894",
+      "data_path": null
+    },
+    "test_integration": {
+      "name": "test_integration",
+      "pi": 0.7,
+      "domain_type": "test",
+      "status": "active",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": 45,
+      "similar_domains": [],
+      "patterns_count": 9,
+      "last_updated": "2025-11-13T10:59:13.203951",
+      "data_path": null
+    },
+    "demo_sport_individual": {
+      "name": "demo_sport_individual",
+      "pi": 0.75,
+      "domain_type": "individual_sport",
+      "status": "active",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": 150,
+      "similar_domains": [],
+      "patterns_count": 20,
+      "last_updated": "2025-11-13T11:01:02.651534",
+      "data_path": null
+    },
+    "demo_sport_team": {
+      "name": "demo_sport_team",
+      "pi": 0.5,
+      "domain_type": "team_sport",
+      "status": "active",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": 150,
+      "similar_domains": [
+        "demo_sport_individual"
+      ],
+      "patterns_count": 18,
+      "last_updated": "2025-11-13T11:01:02.951704",
+      "data_path": null
+    },
+    "demo_expertise": {
+      "name": "demo_expertise",
+      "pi": 0.8,
+      "domain_type": "expertise",
+      "status": "active",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": 150,
+      "similar_domains": [
+        "demo_sport_individual",
+        "demo_sport_team"
+      ],
+      "patterns_count": 16,
+      "last_updated": "2025-11-13T11:01:03.223625",
+      "data_path": null
+    },
+    "golf": {
+      "name": "golf",
+      "pi": 0.7,
+      "domain_type": "individual_sport",
+      "status": "active",
+      "r_squared": null,
+      "delta": null,
+      "n_samples": 7700,
+      "similar_domains": [],
+      "patterns_count": 19,
+      "last_updated": "2025-11-13T11:10:11.415077",
+      "data_path": null
+    }
+  },
+  "saved_at": "2025-11-13T11:10:11.415214"
+}

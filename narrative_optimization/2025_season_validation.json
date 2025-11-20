@@ -1,0 +1,11 @@
+{
+  "season": 2025,
+  "weeks": "1-10",
+  "games": 124,
+  "overall_accuracy": 0.45161290322580644,
+  "overall_roi": -13.78299120234604,
+  "profit": -1880.0,
+  "patterns_tested": [
+    {
+      "name": "QB Edge >0.2",
+      "games": 
