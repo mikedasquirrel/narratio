@@ -1,0 +1,389 @@
+<!-- Feature Breakdown Component - Reusable for displaying complete 225-dimension feature vectors -->
+<div class="feature-breakdown-component">
+    <style>
+        .feature-breakdown-component {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-category {
+            margin: 20px 0;
+            background: #252526;
+            border-radius: 6px;
+            padding: 15px;
+        }
+        
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #2d2d30;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        .category-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #4FC3F7;
+        }
+        
+        .category-count {
+            color: #858585;
+            font-size: 0.9em;
+        }
+        
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .feature-table th {
+            background: #2d2d30;
+            padding: 10px;
+            text-align: left;
+            color: #9CDCFE;
+            font-weight: 600;
+            border-bottom: 2px solid #3e3e42;
+        }
+        
+        .feature-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #3e3e42;
+            color: #d4d4d4;
+        }
+        
+        .feature-table tr:hover {
+            background: #2d2d30;
+        }
+        
+        .feature-name {
+            color: #9CDCFE;
+        }
+        
+        .feature-value {
+            color: #CE9178;
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        .feature-bar {
+            background: #3e3e42;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            width: 100px;
+        }
+        
+        .feature-bar-fill {
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .toggle-features {
+            background: #007ACC;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        
+        .toggle-features:hover {
+            background: #005a9e;
+        }
+        
+        .features-hidden {
+            display: none;
+        }
+        
+        .feature-importance {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+            color: #d4d4d4;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: #007ACC;
+        }
+    </style>
+    
+    <div class="feature-category">
+        <div class="category-header" onclick="toggleCategory('hero-journey')">
+            <span class="category-title">🗡️ Hero Journey Features</span>
+            <span class="category-count">60 features</span>
+        </div>
+        
+        <div id="hero-journey-features" class="features-hidden">
+            <input type="text" class="search-box" placeholder="Search hero journey features..." onkeyup="filterFeatures(this, 'hero-journey-table')">
+            
+            <table class="feature-table" id="hero-journey-table">
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Value</th>
+                        <th>Visualization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Will be populated by JavaScript or server-side -->
+                    <tr>
+                        <td class="feature-name">journey_completion <span class="feature-importance">High Impact</span></td>
+                        <td class="feature-value">0.847</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 84.7%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">call_to_adventure</td>
+                        <td class="feature-value">0.923</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 92.3%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">crossing_threshold</td>
+                        <td class="feature-value">0.681</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 68.1%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- More rows would be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="feature-category">
+        <div class="category-header" onclick="toggleCategory('character')">
+            <span class="category-title">👤 Character Archetype Features</span>
+            <span class="category-count">55 features</span>
+        </div>
+        
+        <div id="character-features" class="features-hidden">
+            <input type="text" class="search-box" placeholder="Search character features..." onkeyup="filterFeatures(this, 'character-table')">
+            
+            <table class="feature-table" id="character-table">
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Value</th>
+                        <th>Visualization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">warrior_archetype <span class="feature-importance">High Impact</span></td>
+                        <td class="feature-value">0.912</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 91.2%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">ruler_archetype <span class="feature-importance">High Impact</span></td>
+                        <td class="feature-value">0.634</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 63.4%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">magician_archetype</td>
+                        <td class="feature-value">0.789</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 78.9%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- More rows would be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="feature-category">
+        <div class="category-header" onclick="toggleCategory('plot')">
+            <span class="category-title"> Plot Archetype Features</span>
+            <span class="category-count">50 features</span>
+        </div>
+        
+        <div id="plot-features" class="features-hidden">
+            <input type="text" class="search-box" placeholder="Search plot features..." onkeyup="filterFeatures(this, 'plot-table')">
+            
+            <table class="feature-table" id="plot-table">
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Value</th>
+                        <th>Visualization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">quest_completion <span class="feature-importance">High Impact</span></td>
+                        <td class="feature-value">0.847</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 84.7%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">overcoming_monster</td>
+                        <td class="feature-value">0.234</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 23.4%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- More rows would be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="feature-category">
+        <div class="category-header" onclick="toggleCategory('structural')">
+            <span class="category-title">🏗️ Structural Beat Features</span>
+            <span class="category-count">35 features</span>
+        </div>
+        
+        <div id="structural-features" class="features-hidden">
+            <input type="text" class="search-box" placeholder="Search structural features..." onkeyup="filterFeatures(this, 'structural-table')">
+            
+            <table class="feature-table" id="structural-table">
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Value</th>
+                        <th>Visualization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">structure_quality <span class="feature-importance">Medium Impact</span></td>
+                        <td class="feature-value">0.634</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 63.4%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- More rows would be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="feature-category">
+        <div class="category-header" onclick="toggleCategory('thematic')">
+            <span class="category-title">🎭 Thematic Archetype Features</span>
+            <span class="category-count">25 features</span>
+        </div>
+        
+        <div id="thematic-features" class="features-hidden">
+            <input type="text" class="search-box" placeholder="Search thematic features..." onkeyup="filterFeatures(this, 'thematic-table')">
+            
+            <table class="feature-table" id="thematic-table">
+                <thead>
+                    <tr>
+                        <th>Feature Name</th>
+                        <th>Value</th>
+                        <th>Visualization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">comedy_mythos</td>
+                        <td class="feature-value">0.620</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 62.0%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">romance_mythos</td>
+                        <td class="feature-value">0.340</td>
+                        <td>
+                            <div class="feature-bar">
+                                <div class="feature-bar-fill" style="width: 34.0%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- More rows would be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div style="margin-top: 20px; padding: 15px; background: #252526; border-radius: 6px;">
+        <strong style="color: #4FC3F7;">Total Feature Dimensions:</strong> <span style="color: #CE9178; font-size: 1.2em;">225</span><br>
+        <span style="color: #858585; font-size: 0.9em;">60 hero journey + 55 character + 50 plot + 35 structural + 25 thematic</span>
+    </div>
+    
+    <script>
+        function toggleCategory(categoryId) {
+            const element = document.getElementById(categoryId + '-features');
+            if (element.classList.contains('features-hidden')) {
+                element.classList.remove('features-hidden');
+            } else {
+                element.classList.add('features-hidden');
+            }
+        }
+        
+        function filterFeatures(input, tableId) {
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById(tableId);
+            const rows = table.getElementsByTagName('tr');
+            
+            for (let i = 1; i < rows.length; i++) {
+                const featureName = rows[i].getElementsByClassName('feature-name')[0];
+                if (featureName) {
+                    const txtValue = featureName.textContent || featureName.innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        rows[i].style.display = '';
+                    } else {
+                        rows[i].style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+

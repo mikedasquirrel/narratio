@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Supreme Court - Data Collection Needed{% endblock %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 100px auto; text-align: center; padding: 40px;">
+    <div style="font-size: 5rem; margin-bottom: 20px;">⚖️</div>
+    <h1 style="font-size: 2.5rem; margin-bottom: 20px; color: #1e3a8a;">Supreme Court Domain</h1>
+    <p style="color: #666; margin-bottom: 30px; line-height: 1.8; font-size: 1.1rem;">
+        Supreme Court narrative analysis is configured but data collection hasn't been run yet.
+    </p>
+    
+    <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; margin: 30px 0; text-align: left;">
+        <h3 style="color: #1e3a8a; margin-bottom: 15px;">To collect data:</h3>
+        <pre style="background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto;">
+cd narrative_optimization/domains/supreme_court
+python3 data_collector.py --sample 1000
+
+# For full dataset (takes several hours):
+python3 data_collector.py --start-year 1789
+        </pre>
+    </div>
+    
+    <div style="background: #fff3cd; border: 2px solid #ffc107; padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <h3 style="color: #856404; margin-bottom: 15px;">What This Domain Tests:</h3>
+        <ul style="text-align: left; color: #856404; line-height: 2;">
+            <li>Can narrative framing override evidence?</li>
+            <li>Does π vary within domain (unanimous vs split)?</li>
+            <li>In adversarial setting, does better narrative win?</li>
+            <li>Do better-written opinions get cited more?</li>
+        </ul>
+    </div>
+    
+    <a href="/" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 700;">
+        ← Back to Home
+    </a>
+</div>
+{% endblock %}
+

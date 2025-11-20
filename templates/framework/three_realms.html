@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 60px;
+            font-size: 1.2em;
+        }
+        
+        .realm-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        
+        .realm {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            backdrop-filter: blur(10px);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .realm:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+        
+        .realm-fundamental {
+            top: 50px;
+            left: 250px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        .realm-narrative {
+            bottom: 50px;
+            right: 50px;
+            background: rgba(255, 0, 255, 0.05);
+            border: 3px solid rgba(255, 0, 255, 0.4);
+        }
+        
+        .realm-conscious {
+            bottom: 50px;
+            left: 50px;
+            background: rgba(0, 255, 255, 0.05);
+            border: 3px solid rgba(0, 255, 255, 0.4);
+        }
+        
+        .realm-symbol {
+            font-size: 5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .realm-fundamental .realm-symbol {
+            color: #ffffff;
+        }
+        
+        .realm-narrative .realm-symbol {
+            color: var(--accent-purple);
+        }
+        
+        .realm-conscious .realm-symbol {
+            color: var(--accent-cyan);
+        }
+        
+        .realm-name {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .realm-description {
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 0 30px;
+        }
+        
+        .equilibrium-point {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #ffffff;
+            z-index: 20;
+            animation: pulse 3s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        
+        .force-arrow {
+            position: absolute;
+            height: 3px;
+            transform-origin: center;
+            opacity: 0.6;
+        }
+        
+        .arrow-fundamental {
+            width: 200px;
+            top: 250px;
+            left: 300px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+            transform: rotate(90deg);
+        }
+        
+        .arrow-narrative {
+            width: 200px;
+            bottom: 200px;
+            right: 200px;
+            background: linear-gradient(90deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0.8) 100%);
+            transform: rotate(-45deg);
+        }
+        
+        .arrow-conscious {
+            width: 200px;
+            bottom: 200px;
+            left: 200px;
+            background: linear-gradient(90deg, rgba(0,255,255,0) 0%, rgba(0,255,255,0.8) 100%);
+            transform: rotate(45deg);
+        }
+        
+        .equation {
+            text-align: center;
+            margin: 50px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 15px;
+        }
+        
+        .equation-title {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 15px;
+        }
+        
+        .equation-formula {
+            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+        
+        .equation-formula .symbol {
+            font-weight: bold;
+        }
+        
+        .symbol-lambda { color: #ffffff; }
+        .symbol-theta { color: var(--accent-cyan); }
+        .symbol-taa { color: var(--accent-purple); }
+        .symbol-delta { color: #ffff00; }
+        
+        .examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .example-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        
+        .example-card:hover {
+            border-color: rgba(0, 255, 255, 0.4);
+            transform: translateY(-3px);
+        }
+        
+        .example-title {
+            font-size: 1.3em;
+            color: var(--accent-purple);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .example-forces {
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+        
+        .example-result {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 500;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .nav-link {
+            padding: 15px 30px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>The Three Realms of Reality</h1>
+    <div class="subtitle">Where physics, meaning, and consciousness meet</div>
+    
+    <div class="realm-container">
+        <div class="force-arrow arrow-fundamental"></div>
+        <div class="force-arrow arrow-narrative"></div>
+        <div class="force-arrow arrow-conscious"></div>
+        
+        <div class="realm realm-fundamental">
+            <div class="realm-symbol">λ</div>
+            <div class="realm-name">FUNDAMENTAL</div>
+            <div class="realm-description">
+                Physics, Training, Aptitude<br>
+                The realm of scientific laws
+            </div>
+        </div>
+        
+        <div class="realm realm-narrative">
+            <div class="realm-symbol">ة</div>
+            <div class="realm-name">NARRATIVE</div>
+            <div class="realm-description">
+                Names, Stories, Meanings<br>
+                The realm of identity and branding
+            </div>
+        </div>
+        
+        <div class="realm realm-conscious">
+            <div class="realm-symbol">θ</div>
+            <div class="realm-name">CONSCIOUS</div>
+            <div class="realm-description">
+                Awareness, Choice, Resistance<br>
+                The realm of free will
+            </div>
+        </div>
+        
+        <div class="equilibrium-point">
+            REALITY
+        </div>
+    </div>
+    
+    <div class="equation">
+        <div class="equation-title">The Universal Equation</div>
+        <div class="equation-formula">
+            <span class="symbol symbol-delta">Д</span> = 
+            <span class="symbol symbol-taa">ة</span> − 
+            <span class="symbol symbol-theta">θ</span> − 
+            <span class="symbol symbol-lambda">λ</span>
+        </div>
+    </div>
+    
+    <div class="examples">
+        <div class="example-card">
+            <div class="example-title">Crypto (2017-2018)</div>
+            <div class="example-forces">
+                <strong style="color: var(--accent-purple);">ة = 0.90</strong> (Names are everything)<br>
+                <strong style="color: var(--accent-cyan);">θ = 0.15</strong> (Naive investors)<br>
+                <strong style="color: #ffffff;">λ = 0.05</strong> (Zero barriers)
+            </div>
+            <div class="example-result">
+                → Perfect Storm: Massive nominative effects (r=0.65)
+            </div>
+        </div>
+        
+        <div class="example-card">
+            <div class="example-title">Aviation Safety</div>
+            <div class="example-forces">
+                <strong style="color: var(--accent-purple);">ة = 0.00</strong> (Names irrelevant)<br>
+                <strong style="color: var(--accent-cyan);">θ = 0.90</strong> (Highly aware)<br>
+                <strong style="color: #ffffff;">λ = 0.95</strong> (Engineering rules)
+            </div>
+            <div class="example-result">
+                → Complete Suppression: Zero effects (r=0.00)
+            </div>
+        </div>
+        
+        <div class="example-card">
+            <div class="example-title">Psychology Careers</div>
+            <div class="example-forces">
+                <strong style="color: var(--accent-purple);">ة = 0.50</strong> (Moderate pull)<br>
+                <strong style="color: var(--accent-cyan);">θ = 0.95</strong> (They study this!)<br>
+                <strong style="color: #ffffff;">λ = 0.60</strong> (PhD required)
+            </div>
+            <div class="example-result">
+                → Active Avoidance: Negative effects (d=-0.23)
+            </div>
+        </div>
+        
+        <div class="example-card">
+            <div class="example-title">Oscars (Prestige)</div>
+            <div class="example-forces">
+                <strong style="color: var(--accent-purple);">ة = 0.95</strong> (Prestige is the point)<br>
+                <strong style="color: var(--accent-cyan);">θ = 0.90</strong> (Amplifies!)<br>
+                <strong style="color: #ffffff;">λ = 0.20</strong> (Low barriers)
+            </div>
+            <div class="example-result">
+                → Equation Flips: θ amplifies (AUC=1.0)
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav-links">
+        <a href="/framework-story" class="nav-link">Read the Story</a>
+        <a href="/framework-explorer" class="nav-link">Explore Model</a>
+        <a href="/framework-quickref" class="nav-link">Quick Reference</a>
+        <a href="/" class="nav-link">← Home</a>
+    </div>
+    
+    <script>
+        // Animate realms on load
+        window.addEventListener('load', () => {
+            const realms = document.querySelectorAll('.realm');
+            realms.forEach((realm, i) => {
+                realm.style.opacity = '0';
+                realm.style.transform = 'scale(0.5)';
+                setTimeout(() => {
+                    realm.style.opacity = '1';
+                    realm.style.transform = 'scale(1)';
+                    realm.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                }, i * 200);
+            });
+        });
+        
+        // Interactive hover effects
+        document.querySelectorAll('.realm').forEach(realm => {
+            realm.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 0 60px rgba(0, 255, 255, 0.4)';
+            });
+            
+            realm.addEventListener('mouseleave', function() {
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+

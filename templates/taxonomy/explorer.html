@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}Taxonomy Explorer{% endblock %}
+
+{% block extra_head %}
+<style>
+    .taxonomy-header {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+        border-radius: 20px;
+        margin-bottom: 3rem;
+    }
+    
+    .domain-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .domain-card {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(0, 255, 255, 0.3);
+        border-radius: 15px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+    }
+    
+    .domain-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-purple);
+        box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+    }
+    
+    .domain-card.completed {
+        border-color: rgba(0, 255, 0, 0.5);
+    }
+    
+    .domain-card.proposed {
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .domain-title {
+        font-size: 1.4rem;
+        color: var(--accent-cyan);
+        margin-bottom: 0.5rem;
+    }
+    
+    .domain-meta {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    
+    .status-badge {
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    
+    .status-completed {
+        background: rgba(0, 255, 0, 0.2);
+        border: 1px solid #00ff00;
+        color: #00ff00;
+    }
+    
+    .status-proposed {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .visibility-indicator {
+        width: 100%;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        margin-top: 0.5rem;
+        overflow: hidden;
+    }
+    
+    .visibility-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+        border-radius: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="taxonomy-header">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+        📚 Domain Taxonomy
+    </h1>
+    <p style="color: var(--accent-cyan); font-size: 1.2rem;">
+        Cross-Domain Narrative Analysis Framework
+    </p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(0,255,255,0.3); text-align: center;">
+        <div style="font-size: 3rem; font-weight: bold; color: var(--accent-purple);">{{ stats.total_domains }}</div>
+        <div style="color: var(--accent-cyan);">Total Domains</div>
+    </div>
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(0,255,0,0.3); text-align: center;">
+        <div style="font-size: 3rem; font-weight: bold; color: #00ff00;">{{ stats.implemented }}</div>
+        <div style="color: var(--accent-cyan);">Implemented</div>
+    </div>
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); text-align: center;">
+        <div style="font-size: 3rem; font-weight: bold; color: white;">{{ stats.proposed }}</div>
+        <div style="color: var(--accent-cyan);">Proposed</div>
+    </div>
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(255,0,255,0.3); text-align: center;">
+        <div style="font-size: 3rem; font-weight: bold; color: var(--accent-purple);">{{ "%.2f"|format(model_fit.r_squared) }}</div>
+        <div style="color: var(--accent-cyan);">Model R²</div>
+    </div>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <a href="{{ url_for('taxonomy.visibility_matrix') }}" 
+       style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan)); color: white; text-decoration: none; border-radius: 10px; font-weight: bold;">
+         View Visibility Matrix
+    </a>
+</div>
+
+<h2 style="color: var(--accent-cyan); margin-bottom: 1.5rem;">All Domains</h2>
+
+<div class="domain-grid">
+    {% for domain in domains|sort(attribute='visibility', reverse=true) %}
+    <div class="domain-card {{ domain.status }}">
+        <div class="domain-title">{{ domain.display_name }}</div>
+        <div class="domain-meta">
+            <strong>Visibility:</strong> {{ "%.0f"|format(domain.visibility) }}%<br>
+            <strong>Narrative:</strong> {{ domain.narrative_importance }}<br>
+            <strong>Type:</strong> {{ domain.domain_type }}<br>
+            {% if domain.effect_size_observed %}
+            <strong>Effect:</strong> r = {{ "%.3f"|format(domain.effect_size_observed) }}<br>
+            {% endif %}
+            {% if domain.n_samples %}
+            <strong>Sample:</strong> n = {{ domain.n_samples }}<br>
+            {% endif %}
+        </div>
+        
+        <div class="visibility-indicator">
+            <div class="visibility-fill" style="width: {{ domain.visibility }}%;"></div>
+        </div>
+        
+        <span class="status-badge status-{{ domain.status }}">{{ domain.status.upper() }}</span>
+        
+        {% if domain.route_prefix and domain.status == 'completed' %}
+        <div style="margin-top: 1rem;">
+            <a href="{{ domain.route_prefix }}" 
+               style="color: var(--accent-purple); text-decoration: none; font-weight: bold;">
+                → Explore Domain
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+<div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 15px;">
+    <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">About the Taxonomy</h3>
+    <p style="color: white; line-height: 1.8;">
+        This taxonomy organizes narrative analysis domains across multiple dimensions:
+        <strong>visibility</strong> (how observable is performance),
+        <strong>narrative importance</strong> (how much does story matter),
+        and <strong>domain type</strong> (sports, natural, social, medical, historical).
+        The visibility moderation model predicts effect sizes with R² = {{ "%.2f"|format(model_fit.r_squared) }}.
+    </p>
+</div>
+{% endblock %}
+

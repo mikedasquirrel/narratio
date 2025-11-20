@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.2em;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 50px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 2em;
+            font-weight: 300;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+        }
+        
+        .content h3 {
+            color: var(--accent-purple);
+            font-size: 1.5em;
+            font-weight: 400;
+            margin: 30px 0 15px 0;
+        }
+        
+        .content p {
+            color: rgba(255, 255, 255, 0.85);
+            margin: 15px 0;
+        }
+        
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .content th {
+            background: rgba(0, 255, 255, 0.15);
+            color: var(--accent-cyan);
+            padding: 12px;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .content td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .content code {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: var(--accent-cyan);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .content pre {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .content ul, .content ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        .content li {
+            margin: 8px 0;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .content strong {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .nav-link {
+            padding: 15px 30px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Framework Quick Reference</h1>
+            <div class="subtitle">One-page guide to the complete narrative framework</div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="/framework-story" class="nav-link">Full Story</a>
+            <a href="/framework-explorer" class="nav-link">Interactive Explorer</a>
+            <a href="/three-realms" class="nav-link">Three Realms Visual</a>
+        </div>
+        
+        <div class="content">
+            {{ content_html|safe }}
+        </div>
+        
+        <div class="nav-links">
+            <a href="/" class="nav-link">← Back Home</a>
+        </div>
+    </div>
+</body>
+</html>
+

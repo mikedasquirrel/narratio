@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Domain Comparison | Narrative Optimization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>cross-domain comparison</h1>
+        <p class="subtitle">all domains on unified spectrum</p>
+        
+        <!-- EFFICIENCY THRESHOLD BANNER -->
+        <div style="background: linear-gradient(135deg, rgba(0,255,136,0.1), rgba(255,136,0,0.1)); border: 3px solid #ff8800; border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center;">
+            <div style="font-size: 28px; font-weight: 300; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px;">narrative efficiency threshold</div>
+            <div style="font-size: 96px; font-weight: 200; color: #ff8800; margin: 30px 0;">Д/п > 0.5</div>
+            <p style="font-size: 22px; margin: 20px 0;">narrative matters when it achieves >50% efficiency</p>
+            <p style="font-size: 14px; opacity: 0.8; margin-top: 15px;">
+                Where Д = п × r × κ (agency = openness × correlation × coupling)
+            </p>
+            <p style="font-size: 16px; opacity: 0.7; margin-top: 20px;">
+                2/7 domains pass (subjective only) | 5/7 fail (objective reality dominates)
+            </p>
+        </div>
+        
+        <!-- ALL Д VALUES -->
+        <h2>the bridge across domains</h2>
+        <div class="plot-container">
+            <div id="all-D-values"></div>
+        </div>
+        
+        <!-- NARRATIVITY SPECTRUM -->
+        <h2>narrativity spectrum (п)</h2>
+        <div class="plot-container">
+            <div id="narrativity-spectrum"></div>
+        </div>
+        
+        <!-- α DISTRIBUTION -->
+        <h2>α parameter distribution</h2>
+        <div class="plot-container">
+            <div id="alpha-distribution"></div>
+        </div>
+        
+        <!-- FORCE BALANCE COMPARISON -->
+        <h2>gravitational force balance</h2>
+        <div class="plot-container">
+            <div id="force-comparison"></div>
+        </div>
+        
+        <!-- DOMAIN TABLE -->
+        <h2>complete domain summary</h2>
+        <div id="domain-table" style="margin: 30px 0;"></div>
+        
+        <!-- KEY INSIGHTS -->
+        <div class="insight-box">
+            <h3>Honest Findings: "Better Stories Win" Is Domain-Specific</h3>
+            <p><strong>Only 2/7 domains pass threshold:</strong> Self-Rated (0.59) and Character (0.73)</p>
+            <p><strong>5/7 domains fail:</strong> Physics, math, NBA, movies, startups all show Д/п < 0.5</p>
+            <p><strong>Boundary identified:</strong> Narrative matters in subjective domains, reality dominates objective ones</p>
+            <p><strong>Startups paradox solved:</strong> r=0.980 (high correlation) but Д=0.223 (low agency) due to market constraint</p>
+            <p><strong>The spectrum:</strong> Д ranges from 0.005 (coin flips) to 0.617 (character), not 0 to 1.0</p>
+            <p><strong>This is honest science:</strong> We tested, found boundaries, reported truth</p>
+        </div>
+    </div>
+    
+    <script>
+        const plotTheme = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: { family: 'Inter', color: '#fff', size: 12 },
+            xaxis: { gridcolor: 'rgba(255,255,255,0.05)' },
+            yaxis: { gridcolor: 'rgba(255,255,255,0.05)' }
+        };
+        
+        fetch('/api/domains/all-metrics')
+            .then(r => r.json())
+            .then(data => {
+                const domains = data.domains;
+                
+                // 1. ALL Д VALUES (Agency, not just correlation)
+                const dData = [{
+                    x: domains.map(d => d.name),
+                    y: domains.map(d => d.D_agency),
+                    type: 'bar',
+                    marker: {
+                        color: domains.map(d => d.passes ? 'var(--accent-emerald)' : '#ff0088'),
+                        line: { color: '#fff', width: 1 }
+                    },
+                    text: domains.map(d => `Д=${d.D_agency.toFixed(3)}<br>eff=${d.efficiency.toFixed(2)}`),
+                    textposition: 'outside',
+                    textfont: { size: 11 },
+                    hovertemplate: '<b>%{x}</b><br>Д=%{y:.3f}<br>Efficiency: ' + domains.map(d => d.efficiency.toFixed(2)) + '<extra></extra>'
+                }];
+                
+                Plotly.newPlot('all-D-values', dData, {
+                    ...plotTheme,
+                    title: { text: 'Д (Narrative Agency) Across Domains', font: { size: 18 } },
+                    yaxis: { ...plotTheme.yaxis, title: 'Д = п × r × κ', range: [-0.1, 0.7] },
+                    height: 450,
+                    annotations: [{
+                        x: 0,
+                        y: 0.5,
+                        xref: 'x',
+                        yref: 'paper',
+                        text: 'Green: Д/п > 0.5 (narrative matters)<br>Red: Д/п < 0.5 (reality dominates)',
+                        showarrow: false,
+                        font: { size: 11, color: 'rgba(255,255,255,0.6)' },
+                        xanchor: 'left'
+                    }]
+                }, {displayModeBar: false});
+                
+                // 2. NARRATIVITY SPECTRUM
+                const spectrumData = [{
+                    x: domains.map(d => d.narrativity),
+                    y: domains.map((d, i) => i),
+                    text: domains.map(d => d.name),
+                    mode: 'markers+text',
+                    type: 'scatter',
+                    marker: {
+                        size: 20,
+                        color: domains.map(d => d.narrativity),
+                        colorscale: [[0, '#ff0088'], [0.5, 'var(--accent-purple)'], [1, 'var(--accent-emerald)']],
+                        line: { color: '#fff', width: 2 }
+                    },
+                    textposition: 'right',
+                    textfont: { size: 11 }
+                }];
+                
+                Plotly.newPlot('narrativity-spectrum', spectrumData, {
+                    ...plotTheme,
+                    title: { text: 'п (Narrativity) Spectrum: Circumscribed → Open', font: { size: 18 } },
+                    xaxis: { 
+                        ...plotTheme.xaxis,
+                        title: 'п (Potential)',
+                        range: [0, 1],
+                        tickvals: [0, 0.25, 0.5, 0.75, 1.0],
+                        ticktext: ['0.00<br>Die Roll', '0.25', '0.50', '0.75', '1.00<br>Diary']
+                    },
+                    yaxis: { visible: false },
+                    height: 400
+                }, {displayModeBar: false});
+                
+                // 3. α DISTRIBUTION
+                const alphaData = [{
+                    x: domains.map(d => d.name),
+                    y: domains.map(d => d.alpha),
+                    type: 'bar',
+                    marker: {
+                        color: domains.map(d => d.alpha),
+                        colorscale: [[0, 'var(--accent-emerald)'], [0.5, 'var(--accent-purple)'], [1, '#ff0088']],
+                        line: { color: '#fff', width: 1 }
+                    },
+                    text: domains.map(d => `α=${d.alpha.toFixed(2)}`),
+                    textposition: 'outside'
+                }];
+                
+                Plotly.newPlot('alpha-distribution', alphaData, {
+                    ...plotTheme,
+                    title: { text: 'α Parameter: Plot (1.0) vs Character (0.0)', font: { size: 18 } },
+                    yaxis: { ...plotTheme.yaxis, title: 'α', range: [0, 1.2] },
+                    height: 400
+                }, {displayModeBar: false});
+                
+                // 4. FORCE COMPARISON
+                const forceLabels = domains.map(d => d.name);
+                const forceValues = domains.map(d => d.force_balance);
+                
+                // Create stacked representation
+                const forceData = [{
+                    x: forceLabels,
+                    y: forceLabels.map(() => 0.5),
+                    type: 'bar',
+                    name: 'Narrative (ф)',
+                    marker: { color: '#ff0088' }
+                }, {
+                    x: forceLabels,
+                    y: forceLabels.map(() => 0.5),
+                    type: 'bar',
+                    name: 'Nominative (ة)',
+                    marker: { color: 'var(--accent-cyan)' }
+                }];
+                
+                Plotly.newPlot('force-comparison', forceData, {
+                    ...plotTheme,
+                    title: { text: 'Gravitational Force Balance: ф (Narrative) vs ة (Nominative)', font: { size: 18 } },
+                    yaxis: { ...plotTheme.yaxis, title: 'Relative Strength' },
+                    height: 400,
+                    barmode: 'stack'
+                }, {displayModeBar: false});
+                
+                // 5. DOMAIN TABLE
+                let tableHTML = `
+                    <table style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.02);">
+                        <thead>
+                            <tr style="border-bottom: 2px solid rgba(255,255,255,0.1);">
+                                <th style="padding: 15px; text-align: left;">Domain</th>
+                                <th style="padding: 15px;">N</th>
+                                <th style="padding: 15px;">п</th>
+                                <th style="padding: 15px;">α</th>
+                                <th style="padding: 15px;">Д</th>
+                                <th style="padding: 15px;">Forces</th>
+                                <th style="padding: 15px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                
+                domains.forEach(d => {
+                    const statusColor = d.validated ? 'var(--accent-emerald)' : '#ffcc00';
+                    const statusText = d.validated ? 'VALIDATED' : 'Pending';
+                    const dValue = d.D_correlation ? d.D_correlation.toFixed(3) : '—';
+                    
+                    tableHTML += `
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 15px;"><strong>${d.name}</strong></td>
+                            <td style="padding: 15px; text-align: center;">${d.n_organisms}</td>
+                            <td style="padding: 15px; text-align: center;">${d.narrativity.toFixed(2)}</td>
+                            <td style="padding: 15px; text-align: center;">${d.alpha.toFixed(2)}</td>
+                            <td style="padding: 15px; text-align: center; color: ${d.validated ? 'var(--accent-emerald)' : '#fff'}"><strong>${dValue}</strong></td>
+                            <td style="padding: 15px; text-align: center; font-size: 12px;">${d.force_balance}</td>
+                            <td style="padding: 15px; text-align: center; color: ${statusColor};">${statusText}</td>
+                        </tr>
+                    `;
+                });
+                
+                tableHTML += `
+                        </tbody>
+                    </table>
+                `;
+                
+                document.getElementById('domain-table').innerHTML = tableHTML;
+            });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Compare Hurricanes{% endblock %}
+
+{% block content %}
+<h1 style="color: var(--accent-cyan); margin-bottom: 2rem;">⚖️ Compare Hurricanes</h1>
+
+<div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+    <form method="get" style="display: grid; grid-template-columns: 1fr 1fr auto; gap: 1rem; align-items: end;">
+        <div>
+            <label style="color: var(--accent-cyan); display: block; margin-bottom: 0.5rem;">Hurricane 1:</label>
+            <select name="name1" style="width: 100%; padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: 1px solid var(--accent-cyan); color: white;">
+                <option value="">Select...</option>
+                {% for name in hurricane_names %}
+                <option value="{{ name }}" {% if request.args.get('name1') == name %}selected{% endif %}>{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label style="color: var(--accent-cyan); display: block; margin-bottom: 0.5rem;">Hurricane 2:</label>
+            <select name="name2" style="width: 100%; padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: 1px solid var(--accent-cyan); color: white;">
+                <option value="">Select...</option>
+                {% for name in hurricane_names %}
+                <option value="{{ name }}" {% if request.args.get('name2') == name %}selected{% endif %}>{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" style="padding: 0.5rem 2rem; background: var(--accent-purple); color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Compare
+        </button>
+    </form>
+</div>
+
+{% if comparison %}
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(0,255,255,0.5);">
+        <h2 style="color: var(--accent-cyan); margin-bottom: 1.5rem;">{{ comparison.hurricane1.name }} ({{ comparison.hurricane1.year }})</h2>
+        <div style="color: white; line-height: 2;">
+            <p><strong>Gender Rating:</strong> {{ "%.2f"|format(comparison.hurricane1.gender_rating) }}</p>
+            <p><strong>Syllables:</strong> {{ comparison.hurricane1.syllables }}</p>
+            <p><strong>Memorability:</strong> {{ "%.2f"|format(comparison.hurricane1.memorability) }}</p>
+            <p><strong>Category:</strong> {{ comparison.hurricane1.actual_severity.category }}</p>
+            <p><strong>Evacuation Rate:</strong> {{ "%.1f"|format(comparison.hurricane1.outcomes.evacuation_rate * 100) }}%</p>
+            <p><strong>Casualties:</strong> {{ comparison.hurricane1.outcomes.casualties }}</p>
+        </div>
+    </div>
+    
+    <div style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 15px; border: 2px solid rgba(255,0,255,0.5);">
+        <h2 style="color: var(--accent-purple); margin-bottom: 1.5rem;">{{ comparison.hurricane2.name }} ({{ comparison.hurricane2.year }})</h2>
+        <div style="color: white; line-height: 2;">
+            <p><strong>Gender Rating:</strong> {{ "%.2f"|format(comparison.hurricane2.gender_rating) }}</p>
+            <p><strong>Syllables:</strong> {{ comparison.hurricane2.syllables }}</p>
+            <p><strong>Memorability:</strong> {{ "%.2f"|format(comparison.hurricane2.memorability) }}</p>
+            <p><strong>Category:</strong> {{ comparison.hurricane2.actual_severity.category }}</p>
+            <p><strong>Evacuation Rate:</strong> {{ "%.1f"|format(comparison.hurricane2.outcomes.evacuation_rate * 100) }}%</p>
+            <p><strong>Casualties:</strong> {{ comparison.hurricane2.outcomes.casualties }}</p>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 2rem; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px;">
+    <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">Name Comparison</h3>
+    <p style="color: white; line-height: 1.8;">
+        <strong>More Masculine:</strong> {{ comparison.name_comparison.more_masculine }}<br>
+        <strong>More Memorable:</strong> {{ comparison.name_comparison.more_memorable }}<br>
+        <strong>Gender Difference:</strong> {{ "%.2f"|format(comparison.name_comparison.gender_difference) }}<br>
+        <strong>Syllable Difference:</strong> {{ comparison.name_comparison.syllable_difference }}
+    </p>
+</div>
+{% endif %}
+{% endblock %}
+

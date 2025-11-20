@@ -1,0 +1,641 @@
+{% extends "base.html" %}
+
+{% block title %}Narrative Determinism Explorations{% endblock %}
+
+{% block extra_head %}
+<style>
+.explorations-hero {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(236, 72, 153, 0.1));
+    border: 2px solid rgba(147, 51, 234, 0.3);
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.explorations-hero h1 {
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+}
+
+.explorations-hero .subtitle {
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 60px 0 20px;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    opacity: 0.7;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.exploration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.exploration-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.exploration-card:hover {
+    border-color: rgba(147, 51, 234, 0.4);
+    transform: translateY(-5px);
+}
+
+.exploration-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.exploration-name {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.exploration-badge {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.badge-validated {
+    background: rgba(5, 150, 105, 0.2);
+    color: #059669;
+}
+
+.badge-measured {
+    background: rgba(147, 51, 234, 0.2);
+    color: #9333ea;
+}
+
+.badge-incomplete {
+    background: rgba(236, 72, 153, 0.2);
+    color: #ec4899;
+}
+
+.badge-bookend {
+    background: rgba(8, 145, 178, 0.2);
+    color: #0891b2;
+}
+
+.exploration-metric {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 10px 0;
+}
+
+.exploration-finding {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+.exploration-insight {
+    background: rgba(147, 51, 234, 0.05);
+    border-left: 3px solid rgba(147, 51, 234, 0.4);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.spectrum-viz {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.spectrum-bar {
+    height: 8px;
+    background: linear-gradient(90deg, 
+        rgba(239, 68, 68, 0.3),
+        rgba(236, 72, 153, 0.3),
+        rgba(147, 51, 234, 0.3),
+        rgba(8, 145, 178, 0.3),
+        rgba(5, 150, 105, 0.3)
+    );
+    border-radius: 4px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.spectrum-point {
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background: white;
+    top: -6px;
+    transform: translateX(-50%);
+}
+
+.spectrum-label {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .exploration-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="explorations-hero">
+    <h1>narrative determinism explorations</h1>
+    <p class="subtitle">
+        Testing the boundaries of where narrative structure influences outcomes across the π spectrum.
+        From pure physics (hurricanes) to pure perception (self-rated). Some domains validate the framework,
+        others reveal its limits. All contribute to understanding narrative agency.
+    </p>
+</div>
+
+<!-- SPECTRUM VISUALIZATION -->
+<div class="spectrum-viz">
+    <h3 style="text-align: center; font-weight: 300; letter-spacing: 2px; margin-bottom: 30px;">the narrativity spectrum (π)</h3>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+        <span style="font-size: 12px; opacity: 0.6;">constrained (physics dominates)</span>
+        <span style="font-size: 12px; opacity: 0.6;">open (narrative constructs reality)</span>
+    </div>
+    <div class="spectrum-bar">
+        <div class="spectrum-point" style="left: 30%;"></div>
+        <div class="spectrum-point" style="left: 52%;"></div>
+        <div class="spectrum-point" style="left: 65%;"></div>
+        <div class="spectrum-point" style="left: 76%;"></div>
+    </div>
+    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+        <div style="text-align: center;">
+            <div style="font-size: 18px; color: #ec4899;">π = 0.30</div>
+            <div class="spectrum-label">hurricanes</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 18px; color: #9333ea;">π = 0.52</div>
+            <div class="spectrum-label">supreme court</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 18px; color: #0891b2;">π = 0.65</div>
+            <div class="spectrum-label">movies</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 18px; color: #059669;">π = 0.76</div>
+            <div class="spectrum-label">startups</div>
+        </div>
+    </div>
+</div>
+
+<!-- VALIDATED RESEARCH DOMAINS -->
+<h2 class="section-header">validated research domains</h2>
+<p class="section-intro">
+    Domains that passed through the universal pipeline (Nov 2025) but aren't betting systems.
+    These validate narrative theory in non-market contexts.
+</p>
+
+<div class="exploration-grid">
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Hurricanes</div>
+            <div class="exploration-badge badge-validated">dual π validated</div>
+        </div>
+        <div class="exploration-metric">π: Storm 0.30 / Response 0.68 | n=819</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Name gender and phonetic properties affect evacuation decisions.
+            Female-named hurricanes show lower evacuation intent (34% vs 56% for male names).
+            Validates nominative determinism in life-death contexts.
+        </div>
+        <div class="exploration-insight">
+            Dual π framework: Storm itself is physics-constrained (0.30), but human response
+            is moderately narrative (0.68). Names shouldn't matter for physics, but they matter
+            for perception and decisions.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Supreme Court</div>
+            <div class="exploration-badge badge-validated">r = 0.785</div>
+        </div>
+        <div class="exploration-metric">π: 0.52 | R² = 61.6% | n=26 opinions</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Narrative quality predicts forward citations. Better-written
+            opinions get cited more often. Works in evidence-weighted adversarial system.
+        </div>
+        <div class="exploration-insight">
+            Moderate narrativity (π=0.52) in legal domain. Evidence matters, but how you tell
+            the legal story affects long-term impact. Narrative doesn't determine outcome, but
+            influences legacy and citation.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Startups</div>
+            <div class="exploration-badge badge-validated">marginal (n=258)</div>
+        </div>
+        <div class="exploration-metric">π: 0.76 | Effect ~0.13 | 4 patterns (expected 21)</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Small sample limits conclusions. Previous r=0.980 NOT replicated
+            in universal pipeline. Product-market fit constrains narrative freedom.
+        </div>
+        <div class="exploration-insight">
+            High π (0.76) suggests narrative should matter, but market reality constrains (κ low).
+            Good products enable good stories, but you can't narrative a bad product into success.
+            Needs 1000+ samples for robust validation.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Movies</div>
+            <div class="exploration-badge badge-validated">20 patterns</div>
+        </div>
+        <div class="exploration-metric">π: 0.65 | Effect: 0.40 median | n=2,000</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> 20 distinct narrative patterns. Strong effects (-0.899 to +0.631).
+            Plot structure, genre conventions, and narrative arcs predict success.
+        </div>
+        <div class="exploration-insight">
+            Entertainment domain where story IS the product. Genre/budget dominate but narrative
+            patterns add significant signal. Success pattern: +12.8%, Failure pattern: -17.6%.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Golf</div>
+            <div class="exploration-badge badge-validated">20 patterns</div>
+        </div>
+        <div class="exploration-metric">π: 0.70 | Effect: 0.07 median | n=5,000</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Individual sport with mental game awareness. Moderate narrative
+            effects detected. 20 patterns, strongest +0.117 to -0.107 range.
+        </div>
+        <div class="exploration-insight">
+            High π (0.70) individual sport where mental state and narrative matter for performance.
+            Effects are moderate (7%) - skill dominates but story influences outcomes at margins.
+        </div>
+    </div>
+</div>
+
+<!-- MEASURED BUT NOT VALIDATED RECENTLY -->
+<h2 class="section-header">measured domains (awaiting revalidation)</h2>
+<p class="section-intro">
+    Domains analyzed pre-Nov 2025 that showed interesting patterns but need current pipeline validation.
+</p>
+
+<div class="exploration-grid">
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Dinosaurs</div>
+            <div class="exploration-badge badge-measured">62% R² from names</div>
+        </div>
+        <div class="exploration-metric">π: 0.75 (estimated) | n=950</div>
+        <div class="exploration-finding">
+            <strong>Previous Finding:</strong> Names contribute 62.3% R² - 156x MORE than scientific
+            importance! Jurassic Park effect: +67.7%. Nickname effect: +11.5%.
+        </div>
+        <div class="exploration-insight">
+            Educational transmission domain. Which dinosaurs we remember depends more on their
+            names and movie appearances than their scientific significance. First test of
+            narrative in education/cultural memory.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">UFC</div>
+            <div class="exploration-badge badge-measured">performance-dominated</div>
+        </div>
+        <div class="exploration-metric">π: 0.72 (high) | Δ = 0.025 (low)</div>
+        <div class="exploration-finding">
+            <strong>Key Lesson:</strong> HIGH π but tiny effect. Performance (87%) >> narrative (55%).
+            Despite rich narratives, physical skill dominates outcomes.
+        </div>
+        <div class="exploration-insight">
+            Critical insight: High narrativity doesn't guarantee high narrative agency. Combat
+            sports have compelling stories but physics/training determine winners. Teaches us
+            when narrative can't overcome constraints.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Poker</div>
+            <div class="exploration-badge badge-measured">variance-dominated</div>
+        </div>
+        <div class="exploration-metric">π: 0.835 (HIGHEST) | R² = 4.7% only</div>
+        <div class="exploration-finding">
+            <strong>Key Lesson:</strong> Highest π measured but narrative barely predicts outcomes.
+            Card variance dominates despite incredibly rich narrative context.
+        </div>
+        <div class="exploration-insight">
+            First skill+chance hybrid tested. Shows limits of narrative when randomness is
+            fundamental to domain structure. Even optimal narrative strategy can't overcome
+            card distribution.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Crypto</div>
+            <div class="exploration-badge badge-measured">AUC = 0.925</div>
+        </div>
+        <div class="exploration-metric">π: 0.76 | Previous analysis</div>
+        <div class="exploration-finding">
+            <strong>Previous Finding:</strong> Names predict returns. Speculation domain where
+            narrative constructs value in absence of fundamentals.
+        </div>
+        <div class="exploration-insight">
+            Pure narrative speculation. When there's no underlying cash flow, story becomes
+            primary driver. Needs revalidation with current pipeline + bear market data.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Oscars</div>
+            <div class="exploration-badge badge-measured">AUC = 1.00</div>
+        </div>
+        <div class="exploration-metric">π: 0.75 (estimated) | n=45</div>
+        <div class="exploration-finding">
+            <strong>Previous Finding:</strong> Perfect separation. Nominative features completely
+            separate winners from losers. Needs overfit testing on larger sample.
+        </div>
+        <div class="exploration-insight">
+            Prestige domain where judging narrative IS the task. Too-perfect results suggest
+            overfitting on small sample. Critical test case for when awareness amplifies
+            rather than suppresses narrative effects.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Tennis</div>
+            <div class="exploration-badge badge-measured">93% R²</div>
+        </div>
+        <div class="exploration-metric">π: 0.75 | Previous 127% ROI | n=74,906</div>
+        <div class="exploration-finding">
+            <strong>Previous Finding:</strong> 93.1% R² optimized, 127% ROI. Individual sport
+            with rich nominative context. High sample size supports findings.
+        </div>
+        <div class="exploration-insight">
+            Individual sport like golf but with even stronger effects. Mental game, momentum,
+            and narrative patterns dominate. Needs revalidation to confirm betting viability.
+        </div>
+    </div>
+</div>
+
+<!-- INCOMPLETE / EXPLORATORY -->
+<h2 class="section-header">exploratory domains</h2>
+<p class="section-intro">
+    Early-stage explorations testing narrative theory boundaries. Data collected, analysis incomplete or preliminary.
+</p>
+
+<div class="exploration-grid">
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Bible Stories</div>
+            <div class="exploration-badge badge-incomplete">cultural persistence</div>
+        </div>
+        <div class="exploration-metric">π: 0.87 (religious narrative) | n=47 stories</div>
+        <div class="exploration-finding">
+            <strong>Question:</strong> Do narrative quality metrics predict which biblical stories
+            persist in cultural memory? Measured Д=0.296.
+        </div>
+        <div class="exploration-insight">
+            Pure narrative domain for testing cultural transmission. Which stories survive
+            millennia? Preliminary analysis shows narrative structure matters for memorability.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Conspiracy Theories</div>
+            <div class="exploration-badge badge-incomplete">virality patterns</div>
+        </div>
+        <div class="exploration-metric">π: 0.68 (narrative virality)</div>
+        <div class="exploration-finding">
+            <strong>Question:</strong> Can narrative structure predict conspiracy theory spread?
+            Virality data collected, patterns identified.
+        </div>
+        <div class="exploration-insight">
+            Tests narrative in information warfare. Which conspiracy theories go viral? Are there
+            structural patterns in narratives that spread vs die out?
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Literary Corpus</div>
+            <div class="exploration-badge badge-incomplete">corpus collected</div>
+        </div>
+        <div class="exploration-metric">Multiple corpora: Gutenberg, CMU, WikiPlots, StereоTropes</div>
+        <div class="exploration-finding">
+            <strong>Status:</strong> Data collected from multiple sources. Ready for novel/story
+            analysis but feature extraction incomplete.
+        </div>
+        <div class="exploration-insight">
+            Foundation for testing narrative theory on pure fiction. Which novels endure?
+            Can we predict literary success from narrative structure alone?
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Boxing</div>
+            <div class="exploration-badge badge-incomplete">combat sport</div>
+        </div>
+        <div class="exploration-metric">Similar to UFC - performance-dominated expected</div>
+        <div class="exploration-finding">
+            <strong>Hypothesis:</strong> Like UFC, expect high π but performance dominance. Different
+            from UFC: longer rounds, more narrative buildup.
+        </div>
+        <div class="exploration-insight">
+            Test whether boxing's more theatrical nature (fewer but longer rounds, more showmanship)
+            creates more narrative agency than UFC's faster, more chaotic format.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Music / Spotify</div>
+            <div class="exploration-badge badge-measured">weak narrative</div>
+        </div>
+        <div class="exploration-metric">π: 0.70 | R² low | n=50,000</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Like movies but weaker effects. Genre matters more than
+            narrative patterns. Country 7.3% > Rock 6.4%.
+        </div>
+        <div class="exploration-insight">
+            Entertainment domain where music IS the experience. But unlike movies, narrative
+            structure in descriptions doesn't strongly predict success. Content quality dominates.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Housing (#13)</div>
+            <div class="exploration-badge badge-measured">nominative gravity</div>
+        </div>
+        <div class="exploration-metric">π: 0.92 (pure nominative) | $93K discount | n=50,000</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> House number 13 shows $93K average discount (15.6% Arch).
+            99.92% skip rate. Cleanest test of pure nominative determinism.
+        </div>
+        <div class="exploration-insight">
+            Irrational market behavior driven purely by nominative properties. No rational
+            reason for discount, yet persistent across massive sample. Pure superstition effect.
+        </div>
+    </div>
+</div>
+
+<!-- SPECTRUM BOOKENDS -->
+<h2 class="section-header">spectrum bookends</h2>
+<p class="section-intro">
+    Control domains at the extremes - testing where narrative has no power (physics) and maximum power (self-perception).
+</p>
+
+<div class="exploration-grid">
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Lottery / Coin Flips</div>
+            <div class="exploration-badge badge-bookend">π = 0.04-0.12</div>
+        </div>
+        <div class="exploration-metric">Pure randomness control | Д ≈ 0.00</div>
+        <div class="exploration-finding">
+            <strong>Control:</strong> Lucky numbers at expected frequency. Perfect control domain
+            where narrative should have zero effect. Validates framework lower bound.
+        </div>
+        <div class="exploration-insight">
+            Critical control: If we found effects here, framework would be invalidated. Clean
+            null result confirms we're measuring real signal, not noise.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Self-Rated Traits</div>
+            <div class="exploration-badge badge-bookend">π = 0.95</div>
+        </div>
+        <div class="exploration-metric">Identity domain | Д/π > 0.5 PASSES</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Narrator = judge. Perfect coupling enables narrative.
+            When you rate yourself, story constructs reality. Validates upper bound.
+        </div>
+        <div class="exploration-insight">
+            Upper bookend where narrative has maximum agency. No external judge means narrative
+            becomes reality. Shows what narrative CAN do when constraints are removed.
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">WWE (Wrestling)</div>
+            <div class="exploration-badge badge-bookend">π = 0.974</div>
+        </div>
+        <div class="exploration-metric">Prestige/Constructed | Д = 1.80+ | Arch = 1.85</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> $1B+ industry from predetermined outcomes. Everyone knows
+            it's scripted → Still works. Kayfabe: maintained narrative despite meta-awareness.
+        </div>
+        <div class="exploration-insight">
+            Highest π measured. Pure narrative domain where "fake" generates real value. Tests
+            whether awareness destroys narrative (it doesn't - awareness can amplify when
+            narrative appreciation IS the point).
+        </div>
+    </div>
+
+    <div class="exploration-card">
+        <div class="exploration-header">
+            <div class="exploration-name">Aviation</div>
+            <div class="exploration-badge badge-bookend">π = 0.12</div>
+        </div>
+        <div class="exploration-metric">Engineering | λ > 0.8 | n=1,743</div>
+        <div class="exploration-finding">
+            <strong>Finding:</strong> Complete nominative suppression. Engineering dominates entirely.
+            Physics/aerodynamics leave zero room for narrative effects.
+        </div>
+        <div class="exploration-insight">
+            Lower bookend showing maximum constraint. Like lottery but with skill - yet constraints
+            are so strong that narrative disappears. Validates that high λ suppresses narrative.
+        </div>
+    </div>
+</div>
+
+<!-- FRAMEWORK INSIGHTS -->
+<h2 class="section-header">what we've learned</h2>
+
+<div style="max-width: 900px; margin: 40px auto;">
+    <div class="exploration-card" style="background: rgba(147, 51, 234, 0.05); border-color: rgba(147, 51, 234, 0.3);">
+        <h3 style="font-size: 20px; font-weight: 300; margin-bottom: 20px;">Framework Validation</h3>
+        
+        <div style="font-size: 14px; line-height: 1.8; opacity: 0.9;">
+            <p style="margin: 15px 0;">
+                <strong>The Spectrum is Real:</strong> From π=0.04 (lottery) to π=0.974 (WWE), we see continuous
+                gradation from pure physics to pure narrative. No sharp boundaries - domains blend along spectrum.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                <strong>High π ≠ High Agency:</strong> UFC (π=0.72, Δ=0.025) and Poker (π=0.835, R²=0.047) show
+                that narrative openness doesn't guarantee narrative influence. Constraints (λ) and variance matter.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                <strong>Dual π Framework:</strong> Hurricanes validated split narrativity - storm physics (π=0.30)
+                vs human response (π=0.68). Same domain, different aspects, different narrative potential.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                <strong>Sample Size Matters:</strong> Startups (n=258) shows need for large samples. Tennis (n=74,906)
+                and Golf (n=5,000) have robust conclusions. Small n requires more skepticism.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                <strong>Context is Everything:</strong> Sub-domain optimization reveals 3x-5x stronger effects than
+                generic analysis. Horror films, 1980s movies, heavyweight boxing show context-specific narrative rules.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                <strong>Bookends Validate:</strong> Clean null at lower bound (lottery) and strong signal at upper
+                bound (self-rated, WWE) confirm we're measuring real phenomenon, not systematic bias.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

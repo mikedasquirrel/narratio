@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imdb narrative analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+            text-transform: lowercase;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: #06b6d4;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: #06b6d4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #fff;
+        }
+        
+        .chart-container {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .chart-title {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #06b6d4;
+            margin-bottom: 1.5rem;
+            text-transform: lowercase;
+        }
+        
+        .search-box {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            color: #fff;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+        
+        .search-results {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .movie-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .movie-item:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .movie-title {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.3rem;
+        }
+        
+        .movie-meta {
+            font-size: 0.85rem;
+            color: #06b6d4;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #06b6d4;
+        }
+        
+        .error {
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            color: #ff6b6b;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 2px solid #06b6d4;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .feature-name {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        
+        .feature-coef {
+            color: #06b6d4;
+            font-weight: 500;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .nav-link {
+            color: #06b6d4;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: rgba(6, 182, 212, 0.1);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>imdb narrative analysis</h1>
+            <div class="subtitle">cmu movie summaries • 42k films • narrative optimization framework</div>
+        </header>
+
+        {% if not data_available %}
+        <div class="error">
+            Dataset not available. Please run the data loader first.
+        </div>
+        {% else %}
+        
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">movies analyzed</div>
+                <div class="stat-value">{{ "{:,}".format(stats.total_movies) if stats.total_movies else "—" }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">year range</div>
+                <div class="stat-value">{{ stats.year_range if stats.year_range else "—" }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">genres</div>
+                <div class="stat-value">{{ stats.genres if stats.genres else "—" }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">avg box office</div>
+                <div class="stat-value">{{ stats.avg_box_office if stats.avg_box_office else "—" }}</div>
+            </div>
+            {% if results_available %}
+            <div class="stat-card">
+                <div class="stat-label">narrativity (п)</div>
+                <div class="stat-value">{{ "%.2f"|format(stats.narrativity) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">optimal α</div>
+                <div class="stat-value">{{ "%.3f"|format(stats.optimal_alpha) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">correlation (r)</div>
+                <div class="stat-value">{{ "%.3f"|format(stats.r_test) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">bridge (Д)</div>
+                <div class="stat-value">{{ "%.3f"|format(stats.D_test) }}</div>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Search -->
+        <div class="chart-container">
+            <div class="chart-title">search movies</div>
+            <input type="text" id="searchBox" class="search-box" placeholder="search by title...">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <!-- Charts -->
+        <div class="chart-container">
+            <div class="chart-title">genre distribution</div>
+            <div id="genreChart"></div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">movies by decade</div>
+            <div id="decadeChart"></div>
+        </div>
+
+        {% if results_available %}
+        <div class="chart-container">
+            <div class="chart-title">top predictive features</div>
+            <div id="featuresChart"></div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">alpha curve (narrative vs statistical)</div>
+            <div id="alphaChart"></div>
+        </div>
+        {% endif %}
+
+        <div class="nav-links">
+            <a href="/" class="nav-link">← home</a>
+            <a href="/oscars" class="nav-link">oscars →</a>
+        </div>
+
+        {% endif %}
+    </div>
+
+    <script>
+        // Search functionality
+        let searchTimeout;
+        const searchBox = document.getElementById('searchBox');
+        const searchResults = document.getElementById('searchResults');
+
+        if (searchBox) {
+            searchBox.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                const query = this.value.trim();
+                
+                if (query.length < 2) {
+                    searchResults.innerHTML = '';
+                    return;
+                }
+                
+                searchTimeout = setTimeout(() => {
+                    fetch(`/imdb/api/search?q=${encodeURIComponent(query)}&limit=10`)
+                        .then(r => r.json())
+                        .then(data => {
+                            if (data.results && data.results.length > 0) {
+                                searchResults.innerHTML = data.results.map(m => `
+                                    <div class="movie-item" onclick="window.location='/imdb/movie/${m.wikipedia_id}'">
+                                        <div class="movie-title">${m.title}</div>
+                                        <div class="movie-meta">
+                                            ${m.release_year} • ${m.primary_genre} • 
+                                            $${(m.box_office_revenue / 1000000).toFixed(1)}M • 
+                                            Score: ${m.success_score.toFixed(3)}
+                                        </div>
+                                    </div>
+                                `).join('');
+                            } else {
+                                searchResults.innerHTML = '<div style="padding:1rem;color:#666;">no results found</div>';
+                            }
+                        });
+                }, 300);
+            });
+        }
+
+        // Load charts
+        {% if data_available %}
+        fetch('/imdb/api/stats')
+            .then(r => r.json())
+            .then(data => {
+                // Genre chart
+                const genreData = data.genre_distribution;
+                const genreTrace = {
+                    x: Object.keys(genreData),
+                    y: Object.values(genreData),
+                    type: 'bar',
+                    marker: { color: '#06b6d4' }
+                };
+                Plotly.newPlot('genreChart', [genreTrace], {
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: '#fff', family: 'Monaco' },
+                    xaxis: { showgrid: false },
+                    yaxis: { showgrid: true, gridcolor: 'rgba(255,255,255,0.1)' },
+                    margin: { t: 20, b: 80, l: 60, r: 20 }
+                }, { responsive: true });
+
+                // Decade chart
+                const decadeData = data.decade_distribution;
+                const decadeTrace = {
+                    x: Object.keys(decadeData).map(d => d + 's'),
+                    y: Object.values(decadeData),
+                    type: 'bar',
+                    marker: { color: '#e540ff' }
+                };
+                Plotly.newPlot('decadeChart', [decadeTrace], {
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: '#fff', family: 'Monaco' },
+                    xaxis: { showgrid: false },
+                    yaxis: { showgrid: true, gridcolor: 'rgba(255,255,255,0.1)' },
+                    margin: { t: 20, b: 60, l: 60, r: 20 }
+                }, { responsive: true });
+            });
+
+        {% if results_available %}
+        fetch('/imdb/api/formula')
+            .then(r => r.json())
+            .then(data => {
+                // Top features
+                const features = data.top_features.slice(0, 15);
+                const featTrace = {
+                    y: features.map(f => f.name.split('_').slice(0, 3).join('_')),
+                    x: features.map(f => Math.abs(f.coefficient)),
+                    type: 'bar',
+                    orientation: 'h',
+                    marker: { color: '#06b6d4' }
+                };
+                Plotly.newPlot('featuresChart', [featTrace], {
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: '#fff', family: 'Monaco', size: 10 },
+                    xaxis: { showgrid: true, gridcolor: 'rgba(255,255,255,0.1)' },
+                    yaxis: { showgrid: false },
+                    margin: { t: 20, b: 60, l: 180, r: 20 }
+                }, { responsive: true });
+
+                // Alpha curve
+                const alphaTrace = {
+                    x: data.alpha_analysis.alpha_values,
+                    y: data.alpha_analysis.scores,
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    line: { color: '#06b6d4' },
+                    marker: { color: '#e540ff', size: 6 }
+                };
+                const optimalAlpha = data.alpha_analysis.optimal_alpha;
+                Plotly.newPlot('alphaChart', [alphaTrace], {
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: '#fff', family: 'Monaco' },
+                    xaxis: { 
+                        title: 'α (0=narrative, 1=statistical)',
+                        showgrid: true,
+                        gridcolor: 'rgba(255,255,255,0.1)' 
+                    },
+                    yaxis: {
+                        title: 'correlation',
+                        showgrid: true,
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    shapes: [{
+                        type: 'line',
+                        x0: optimalAlpha,
+                        x1: optimalAlpha,
+                        y0: 0,
+                        y1: 1,
+                        yref: 'paper',
+                        line: { color: '#e540ff', width: 2, dash: 'dash' }
+                    }],
+                    annotations: [{
+                        x: optimalAlpha,
+                        y: 1,
+                        yref: 'paper',
+                        text: `optimal α = ${optimalAlpha.toFixed(3)}`,
+                        showarrow: false,
+                        yshift: -20,
+                        font: { color: '#e540ff' }
+                    }],
+                    margin: { t: 20, b: 60, l: 60, r: 20 }
+                }, { responsive: true });
+            });
+        {% endif %}
+        {% endif %}
+    </script>
+</body>
+</html>
+

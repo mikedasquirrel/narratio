@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}No Results - Universal Narrative Analyzer{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 100px auto; text-align: center; padding: 40px;">
+    <div style="font-size: 5rem; margin-bottom: 20px;">📝</div>
+    <h1 style="font-size: 2rem; margin-bottom: 15px; color: #333;">No Analysis Found</h1>
+    <p style="color: #666; margin-bottom: 30px; line-height: 1.6;">
+        You haven't analyzed any narratives yet. Start by entering a narrative to analyze.
+    </p>
+    <a href="/analyze" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 700;">
+        🔬 Analyze a Narrative
+    </a>
+</div>
+{% endblock %}
+

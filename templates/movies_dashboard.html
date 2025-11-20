@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie narrative analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+            text-transform: lowercase;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: #06b6d4;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(6, 182, 212, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #06b6d4;
+        }
+        
+        .stat-detail {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: #ec4899;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+        }
+        
+        .formula-box {
+            background: rgba(6, 182, 212, 0.05);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'Monaco', monospace;
+            margin: 1rem 0;
+        }
+        
+        .formula-box code {
+            color: #06b6d4;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-item {
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 3px solid #06b6d4;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .feature-name {
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+        
+        .feature-value {
+            font-size: 0.85rem;
+            color: #06b6d4;
+            font-weight: 600;
+        }
+        
+        .chart-container {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.01);
+            border-radius: 8px;
+        }
+        
+        .btn {
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid #06b6d4;
+            color: #06b6d4;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-family: 'Monaco', monospace;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            background: rgba(6, 182, 212, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            border-color: #ec4899;
+            color: #ec4899;
+            background: rgba(236, 72, 153, 0.1);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(236, 72, 153, 0.2);
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #666;
+        }
+        
+        .no-data h2 {
+            margin-bottom: 1rem;
+            color: #ec4899;
+        }
+        
+        .no-data p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .tab {
+            padding: 1rem 1.5rem;
+            background: transparent;
+            border: none;
+            color: #666;
+            font-family: 'Monaco', monospace;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab:hover {
+            color: #06b6d4;
+        }
+        
+        .tab.active {
+            color: #06b6d4;
+            border-bottom-color: #06b6d4;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> movie narrative analysis</h1>
+            <p class="subtitle">discovering the formula for cinematic success</p>
+        </header>
+        
+        {% if data_available %}
+        
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">total movies analyzed</div>
+                <div class="stat-value">{{ stats.total_movies | number_format }}</div>
+                <div class="stat-detail">{{ stats.genres }} genres • {{ stats.year_range }}</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">narrative contribution</div>
+                <div class="stat-value">{{ (stats.narrative_r2 * 100) | round(1) }}%</div>
+                <div class="stat-detail">r² = {{ stats.narrative_r2 | round(4) }}</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">statistical baseline</div>
+                <div class="stat-value">{{ (stats.statistical_r2 * 100) | round(1) }}%</div>
+                <div class="stat-detail">r² = {{ stats.statistical_r2 | round(4) }}</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">combined model</div>
+                <div class="stat-value">{{ (stats.combined_r2 * 100) | round(1) }}%</div>
+                <div class="stat-detail">r² = {{ stats.combined_r2 | round(4) }}</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">optimal α (narrative weight)</div>
+                <div class="stat-value">{{ stats.optimal_alpha | round(3) }}</div>
+                <div class="stat-detail">{{ (stats.optimal_alpha * 100) | round(1) }}% narrative / {{ ((1 - stats.optimal_alpha) * 100) | round(1) }}% statistical</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">cross-validation</div>
+                <div class="stat-value">{{ (stats.cv_score * 100) | round(1) }}%</div>
+                <div class="stat-detail">10-fold cv r²</div>
+            </div>
+        </div>
+        
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('overview')">overview</button>
+            <button class="tab" onclick="switchTab('formula')">the formula</button>
+            <button class="tab" onclick="switchTab('features')">top features</button>
+            <button class="tab" onclick="switchTab('genres')">by genre</button>
+        </div>
+        
+        <!-- Tab: Overview -->
+        <div id="tab-overview" class="tab-content active">
+            <div class="section">
+                <h2 class="section-title"> the discovery</h2>
+                
+                <div class="formula-box">
+                    <code>
+                        movie_success = α × narrative_quality + (1-α) × statistical_features<br><br>
+                        where α = {{ stats.optimal_alpha | round(3) }}<br><br>
+                        → {{ (stats.optimal_alpha * 100) | round(1) }}% of success comes from narrative structure<br>
+                        → {{ ((1 - stats.optimal_alpha) * 100) | round(1) }}% from traditional metrics (budget, genre, etc.)
+                    </code>
+                </div>
+                
+                <p style="color: #888; line-height: 1.6; margin-top: 1rem;">
+                    analyzing {{ stats.total_movies }} films using 379 narrative features + 500 statistical features,
+                    we discovered that <strong style="color: #06b6d4;">narrative structure matters</strong>. 
+                    the way a story is told — character agency, temporal dynamics, semantic patterns — 
+                    predicts success beyond genre and budget alone.
+                </p>
+                
+                <div style="margin-top: 2rem;">
+                    <a href="/movies/formula" class="btn">view complete formula</a>
+                    <a href="/movies/explore" class="btn btn-secondary">explore movies</a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"> model performance</h2>
+                <div id="performance-chart" class="chart-container"></div>
+            </div>
+        </div>
+        
+        <!-- Tab: Formula -->
+        <div id="tab-formula" class="tab-content">
+            <div class="section">
+                <h2 class="section-title">⚗️ the narrative formula</h2>
+                
+                <p style="color: #888; margin-bottom: 2rem; line-height: 1.6;">
+                    success is not random. through analysis of {{ stats.total_movies }} films,
+                    we identified 379 narrative features that predict box office, ratings, and awards.
+                </p>
+                
+                <div class="formula-box">
+                    <code>
+                        success_score = 0.40 × roi + 0.30 × ratings + 0.30 × awards<br><br>
+                        
+                        narrative_features (379):<br>
+                        • phonetic (91) - sound patterns in titles<br>
+                        • temporal evolution (30) - how story unfolds<br>
+                        • information theory (25) - entropy & complexity<br>
+                        • social status (20) - class markers<br>
+                        • namespace ecology (35) - naming patterns<br>
+                        • anticipatory communication (25) - commitment signals<br>
+                        • nominative (24) - semantic fields<br>
+                        • self-perception (21) - protagonist agency<br>
+                        • narrative potential (35) - growth & openness<br>
+                        • linguistic (26) - voice & style<br>
+                        • relational (9) - complementarity<br>
+                        • ensemble (12) - cast diversity<br>
+                        • optics (15) - visual language<br>
+                        • framing (12) - perspective markers<br><br>
+                        
+                        statistical_features (500):<br>
+                        • tf-idf vectors from synopses<br>
+                        • genre, budget, cast metadata<br>
+                        • temporal context (release year, runtime)<br>
+                    </code>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab: Features -->
+        <div id="tab-features" class="tab-content">
+            <div class="section">
+                <h2 class="section-title"> most predictive narrative features</h2>
+                <div id="features-loading">loading top features...</div>
+                <div id="features-chart" class="chart-container"></div>
+            </div>
+        </div>
+        
+        <!-- Tab: Genres -->
+        <div id="tab-genres" class="tab-content">
+            <div class="section">
+                <h2 class="section-title">🎭 genre-specific patterns</h2>
+                <div id="genres-loading">loading genre analysis...</div>
+                <div id="genres-chart" class="chart-container"></div>
+            </div>
+        </div>
+        
+        {% else %}
+        
+        <!-- No Data Available -->
+        <div class="section no-data">
+            <h2>⚠️ data not yet available</h2>
+            <p>the movie dataset has not been collected and analyzed yet.</p>
+            <p>to generate the narrative analysis, run the following commands:</p>
+            
+            <div class="formula-box">
+                <code>
+                    # 1. collect movie data (4-6 hours)<br>
+                    export TMDB_API_KEY='your_key_here'<br>
+                    export OMDB_API_KEY='your_key_here'<br>
+                    python collect_movie_data.py<br><br>
+                    
+                    # 2. clean data (1-2 hours)<br>
+                    python clean_movie_data.py<br><br>
+                    
+                    # 3. extract features (2-3 hours)<br>
+                    python extract_movie_features.py<br><br>
+                    
+                    # 4. discover formula (2-3 hours)<br>
+                    python discover_movie_formula.py<br><br>
+                    
+                    # 5. validate findings (1-2 hours)<br>
+                    python validate_movie_findings.py<br><br>
+                    
+                    # 6. refresh this page<br>
+                </code>
+            </div>
+            
+            <p style="margin-top: 2rem; color: #666;">
+                get api keys:<br>
+                • tmdb: <a href="https://www.themoviedb.org/settings/api" style="color: #06b6d4;">themoviedb.org/settings/api</a><br>
+                • omdb: <a href="http://www.omdbapi.com/apikey.aspx" style="color: #06b6d4;">omdbapi.com/apikey.aspx</a>
+            </p>
+        </div>
+        
+        {% endif %}
+    </div>
+    
+    <script>
+        // Tab switching
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById('tab-' + tabName).classList.add('active');
+            event.target.classList.add('active');
+            
+            // Load data if needed
+            if (tabName === 'features') {
+                loadTopFeatures();
+            } else if (tabName === 'genres') {
+                loadGenreAnalysis();
+            }
+        }
+        
+        {% if data_available %}
+        
+        // Load performance comparison chart
+        function loadPerformanceChart() {
+            const data = [
+                {
+                    x: ['Narrative Only', 'Statistical Only', 'Combined'],
+                    y: [{{ stats.narrative_r2 }}, {{ stats.statistical_r2 }}, {{ stats.combined_r2 }}],
+                    type: 'bar',
+                    marker: {
+                        color: ['#06b6d4', '#ec4899', '#10b981']
+                    },
+                    text: [
+                        '{{ (stats.narrative_r2 * 100) | round(1) }}%',
+                        '{{ (stats.statistical_r2 * 100) | round(1) }}%',
+                        '{{ (stats.combined_r2 * 100) | round(1) }}%'
+                    ],
+                    textposition: 'outside'
+                }
+            ];
+            
+            const layout = {
+                title: {
+                    text: 'model performance (r² score)',
+                    font: { color: '#fff', size: 14, family: 'Monaco' }
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                xaxis: { 
+                    color: '#666',
+                    gridcolor: 'rgba(255,255,255,0.05)'
+                },
+                yaxis: {
+                    title: 'r² score',
+                    color: '#666',
+                    gridcolor: 'rgba(255,255,255,0.1)',
+                    range: [0, Math.max({{ stats.combined_r2 }}, 1.0) * 1.1]
+                },
+                font: { family: 'Monaco', color: '#fff' }
+            };
+            
+            Plotly.newPlot('performance-chart', data, layout, { responsive: true });
+        }
+        
+        // Load top features
+        function loadTopFeatures() {
+            fetch('/movies/api/formula')
+                .then(res => res.json())
+                .then(data => {
+                    const features = data.top_narrative_features.slice(0, 15);
+                    const names = features.map(f => f[0].substring(0, 40));
+                    const values = features.map(f => f[1]);
+                    
+                    const plotData = [{
+                        x: values.reverse(),
+                        y: names.reverse(),
+                        type: 'bar',
+                        orientation: 'h',
+                        marker: { color: '#06b6d4' }
+                    }];
+                    
+                    const layout = {
+                        title: {
+                            text: 'top 15 predictive narrative features',
+                            font: { color: '#fff', size: 14, family: 'Monaco' }
+                        },
+                        paper_bgcolor: 'rgba(0,0,0,0)',
+                        plot_bgcolor: 'rgba(0,0,0,0)',
+                        xaxis: {
+                            title: 'importance',
+                            color: '#666',
+                            gridcolor: 'rgba(255,255,255,0.1)'
+                        },
+                        yaxis: {
+                            color: '#666'
+                        },
+                        margin: { l: 300 },
+                        height: 600,
+                        font: { family: 'Monaco', color: '#fff', size: 10 }
+                    };
+                    
+                    document.getElementById('features-loading').style.display = 'none';
+                    Plotly.newPlot('features-chart', plotData, layout, { responsive: true });
+                })
+                .catch(err => {
+                    document.getElementById('features-loading').textContent = 'error loading features';
+                });
+        }
+        
+        // Load genre analysis
+        function loadGenreAnalysis() {
+            fetch('/movies/api/formula')
+                .then(res => res.json())
+                .then(data => {
+                    const genres = Object.keys(data.genre_performance);
+                    const r2_scores = genres.map(g => data.genre_performance[g].r2);
+                    
+                    const plotData = [{
+                        x: genres,
+                        y: r2_scores,
+                        type: 'bar',
+                        marker: { color: '#ec4899' }
+                    }];
+                    
+                    const layout = {
+                        title: {
+                            text: 'narrative prediction by genre',
+                            font: { color: '#fff', size: 14, family: 'Monaco' }
+                        },
+                        paper_bgcolor: 'rgba(0,0,0,0)',
+                        plot_bgcolor: 'rgba(0,0,0,0)',
+                        xaxis: {
+                            color: '#666'
+                        },
+                        yaxis: {
+                            title: 'r² score',
+                            color: '#666',
+                            gridcolor: 'rgba(255,255,255,0.1)'
+                        },
+                        font: { family: 'Monaco', color: '#fff' }
+                    };
+                    
+                    document.getElementById('genres-loading').style.display = 'none';
+                    Plotly.newPlot('genres-chart', plotData, layout, { responsive: true });
+                })
+                .catch(err => {
+                    document.getElementById('genres-loading').textContent = 'error loading genre data';
+                });
+        }
+        
+        // Load initial chart
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPerformanceChart();
+        });
+        
+        {% endif %}
+    </script>
+</body>
+</html>
+

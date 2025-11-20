@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block title %}Hurricane Predictor{% endblock %}
+
+{% block extra_head %}
+<style>
+    .predictor-form {
+        background: rgba(0,0,0,0.4);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 2px solid rgba(0,255,255,0.3);
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+        display: block;
+        color: var(--accent-cyan);
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(0,255,255,0.5);
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .predict-btn {
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .predict-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(255,0,255,0.5);
+    }
+    
+    .prediction-result {
+        background: rgba(0,0,0,0.4);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 2px solid rgba(255,0,255,0.5);
+        margin-top: 2rem;
+        display: none;
+    }
+    
+    .prediction-result.show {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 style="color: var(--accent-cyan); margin-bottom: 2rem; text-align: center;"> Hurricane Impact Predictor</h1>
+
+<p style="color: white; text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">
+    Predict evacuation rates and potential casualties based on hurricane name and severity
+</p>
+
+<div class="predictor-form">
+    <div class="form-group">
+        <label for="hurricane-name">Hurricane Name</label>
+        <input type="text" id="hurricane-name" placeholder="e.g., Katrina, Andrew, Sandy" value="Katrina">
+    </div>
+    
+    <div class="form-group">
+        <label for="category">Saffir-Simpson Category</label>
+        <select id="category">
+            <option value="1">Category 1 (74-95 mph)</option>
+            <option value="2">Category 2 (96-110 mph)</option>
+            <option value="3" selected>Category 3 (111-129 mph)</option>
+            <option value="4">Category 4 (130-156 mph)</option>
+            <option value="5">Category 5 (157+ mph)</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="wind-speed">Maximum Wind Speed (mph)</label>
+        <input type="number" id="wind-speed" min="74" max="200" value="120">
+    </div>
+    
+    <button class="predict-btn" onclick="predictImpact()">Predict Impact</button>
+</div>
+
+<div id="prediction-result" class="prediction-result">
+    <h2 style="color: var(--accent-purple); margin-bottom: 1.5rem;">Prediction Results</h2>
+    <div id="result-content"></div>
+</div>
+
+<script>
+async function predictImpact() {
+    const name = document.getElementById('hurricane-name').value;
+    const category = parseInt(document.getElementById('category').value);
+    const windSpeed = parseInt(document.getElementById('wind-speed').value);
+    
+    if (!name) {
+        alert('Please enter a hurricane name');
+        return;
+    }
+    
+    try {
+        const response = await fetch('/hurricanes/api/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                category: category,
+                wind_speed: windSpeed
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            const pred = data.prediction;
+            const resultDiv = document.getElementById('result-content');
+            
+            resultDiv.innerHTML = `
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-purple);">${(pred.perceived_threat * 100).toFixed(0)}%</div>
+                        <div style="color: var(--accent-cyan);">Perceived Threat</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-purple);">${(pred.predicted_evacuation_rate * 100).toFixed(1)}%</div>
+                        <div style="color: var(--accent-cyan);">Predicted Evacuation</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-purple);">${pred.estimated_casualties}</div>
+                        <div style="color: var(--accent-cyan);">Estimated Casualties</div>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">Name Analysis</h3>
+                    <p style="color: white; line-height: 1.8;">
+                        <strong>Gender Category:</strong> ${pred.gender_category}<br>
+                        <strong>Gender Effect:</strong> ${(pred.gender_effect * 100).toFixed(1)}% adjustment to evacuation
+                    </p>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
+                    <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">Explanation</h3>
+                    <pre style="white-space: pre-wrap; color: white; line-height: 1.6; font-family: inherit;">${pred.explanation}</pre>
+                </div>
+            `;
+            
+            document.getElementById('prediction-result').classList.add('show');
+        } else {
+            alert('Prediction failed: ' + data.error);
+        }
+    } catch (error) {
+        alert('Error making prediction: ' + error.message);
+    }
+}
+</script>
+{% endblock %}
+

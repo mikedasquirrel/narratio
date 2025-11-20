@@ -1,0 +1,824 @@
+{% extends "base.html" %}
+
+{% block title %}Live Betting Opportunities{% endblock %}
+
+{% block extra_head %}
+<style>
+/* Override base container to remove extra padding for this page */
+main.container {
+    padding: 0;
+    max-width: 100%;
+}
+
+.live-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.live-hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.live-hero h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 12px;
+    opacity: 0.5;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.controls-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.control-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.panel-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.status-item {
+    font-size: 13px;
+}
+
+.status-label {
+    opacity: 0.6;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.status-value {
+    font-weight: 500;
+    color: #0ea5e9;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid;
+    text-align: center;
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: rgba(30, 64, 175, 0.2);
+    border-color: rgba(30, 64, 175, 0.4);
+    color: #60a5fa;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: rgba(30, 64, 175, 0.3);
+}
+
+.btn-success {
+    background: rgba(5, 150, 105, 0.2);
+    border-color: rgba(5, 150, 105, 0.4);
+    color: #10b981;
+}
+
+.btn-success:hover:not(:disabled) {
+    background: rgba(5, 150, 105, 0.3);
+}
+
+.allocation-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.allocation-input-group {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    flex: 1;
+}
+
+.input-wrapper label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+}
+
+.allocation-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.allocation-input:focus {
+    outline: none;
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.allocation-results {
+    display: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.allocation-results.visible {
+    display: block;
+}
+
+.allocation-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.summary-card-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.summary-card-value {
+    font-size: 20px;
+    font-weight: 500;
+    color: #10b981;
+}
+
+.allocation-list {
+    display: grid;
+    gap: 10px;
+}
+
+.allocation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.allocation-item-bet {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.allocation-item-amount {
+    font-weight: 600;
+    color: #22c55e;
+}
+
+.tier-section {
+    margin-bottom: 40px;
+}
+
+.tier-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+
+.tier-elite .tier-header {
+    background: rgba(34, 197, 94, 0.06);
+    border-left: 3px solid #22c55e;
+}
+
+.tier-strong .tier-header {
+    background: rgba(14, 165, 233, 0.06);
+    border-left: 3px solid #0ea5e9;
+}
+
+.tier-moderate .tier-header {
+    background: rgba(245, 158, 11, 0.06);
+    border-left: 3px solid #f59e0b;
+}
+
+.tier-badge {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.tier-elite .tier-badge {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #22c55e;
+}
+
+.tier-strong .tier-badge {
+    background: rgba(14, 165, 233, 0.15);
+    border: 1px solid rgba(14, 165, 233, 0.3);
+    color: #0ea5e9;
+}
+
+.tier-moderate .tier-badge {
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #f59e0b;
+}
+
+.tier-description {
+    font-size: 13px;
+    opacity: 0.65;
+}
+
+.tier-count {
+    margin-left: auto;
+    font-size: 12px;
+    padding: 5px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    opacity: 0.7;
+}
+
+.opp-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 12px;
+    transition: all 0.25s;
+}
+
+.opp-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+}
+
+.opp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.matchup {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.bet-type-tag {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+.bet-type-moneyline {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.bet-type-puck_line {
+    background: rgba(236, 72, 153, 0.15);
+    border: 1px solid rgba(236, 72, 153, 0.3);
+    color: #ec4899;
+}
+
+.bet-type-total {
+    background: rgba(168, 85, 247, 0.15);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    color: #a855f7;
+}
+
+.opp-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.stat-box {
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+}
+
+.stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    opacity: 0.5;
+    margin-bottom: 7px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.stat-value.highlight {
+    color: #22c55e;
+    font-size: 20px;
+}
+
+.opp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.model-tag {
+    padding: 5px 12px;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 6px;
+    font-size: 11px;
+    color: #a855f7;
+    font-weight: 500;
+}
+
+.game-time {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.no-opps {
+    text-align: center;
+    padding: 80px 20px;
+    opacity: 0.5;
+}
+
+.no-opps-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.loading {
+    text-align: center;
+    padding: 80px;
+    opacity: 0.6;
+}
+
+.loading-spinner {
+    font-size: 32px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.info-box {
+    margin-top: 50px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.info-box h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    font-size: 13px;
+    line-height: 1.9;
+    opacity: 0.55;
+}
+
+.info-box strong {
+    opacity: 0.85;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="live-container">
+    <div class="live-hero">
+        <h1>live opportunities</h1>
+        <p class="subtitle">real-time odds | multiple bet types | tiered by value</p>
+    </div>
+
+    <div class="controls-section">
+    <div class="control-panel">
+        <div class="panel-title">system status</div>
+        <div class="status-grid">
+            <div class="status-item">
+                <div class="status-label">last refresh</div>
+                <div class="status-value" id="last-update">—</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">data age</div>
+                <div class="status-value" id="data-age">—</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">opportunities</div>
+                <div class="status-value" id="opp-count">—</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">games</div>
+                <div class="status-value" id="game-count">—</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="control-panel">
+        <div class="panel-title">actions</div>
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="loadOpportunities()">refresh data</button>
+            <button class="btn btn-success" id="generate-btn" onclick="generateFreshPicks()">generate picks</button>
+        </div>
+    </div>
+</div>
+
+<div class="allocation-panel" id="allocation-panel">
+    <div class="panel-title">bet allocation calculator</div>
+    <div class="allocation-input-group">
+        <div class="input-wrapper">
+            <label for="total-bankroll">total bankroll ($)</label>
+            <input type="number" id="total-bankroll" class="allocation-input" placeholder="1000" min="10" step="10">
+        </div>
+        <div class="input-wrapper">
+            <label for="strategy-select">sizing strategy</label>
+            <select id="strategy-select" class="allocation-input">
+                <option value="proportional">proportional (edge-weighted)</option>
+                <option value="quarter-kelly">quarter-kelly</option>
+                <option value="flat">flat (equal weight)</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" onclick="calculateAllocation()" style="height: 48px;">calculate</button>
+    </div>
+    
+    <div class="allocation-results" id="allocation-results">
+        <div class="allocation-summary">
+            <div class="summary-card">
+                <div class="summary-card-label">total allocated</div>
+                <div class="summary-card-value" id="allocated-total">$0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-card-label">number of bets</div>
+                <div class="summary-card-value" id="allocated-count">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-card-label">avg bet size</div>
+                <div class="summary-card-value" id="allocated-avg">$0</div>
+            </div>
+        </div>
+        <div class="allocation-list" id="allocation-list"></div>
+    </div>
+</div>
+
+<div id="opportunities-container">
+    <div class="loading">
+        <div class="loading-spinner">⏳</div>
+        <div style="margin-top: 15px;">loading opportunities...</div>
+    </div>
+</div>
+
+<div class="info-box">
+    <h3>tier system</h3>
+    <p>
+        <strong style="color: #22c55e;">Elite</strong>: ≥60% confidence, ≥10% edge — highest conviction plays with significant market advantage<br>
+        <strong style="color: #0ea5e9;">Strong</strong>: ≥55% confidence, ≥8% edge — solid value opportunities with good edge<br>
+        <strong style="color: #f59e0b;">Moderate</strong>: ≥52% confidence, ≥5% edge — reasonable value with positive expected return
+    </p>
+</div>
+
+<script>
+let allOpportunities = [];
+
+async function loadOpportunities() {
+    const container = document.getElementById('opportunities-container');
+    container.innerHTML = '<div class="loading"><div class="loading-spinner">⏳</div><div style="margin-top: 15px;">loading opportunities...</div></div>';
+    
+    try {
+        const response = await fetch('/api/live/opportunities?league=nhl&min_edge=0&min_confidence=0');
+        const data = await response.json();
+        
+        allOpportunities = data.opportunities || [];
+        
+        // Update status
+        document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+        const age = data.predictions_age_hours;
+        if (age !== null) {
+            const ageText = age < 1 ? '< 1hr' : `${age.toFixed(1)}hr`;
+            document.getElementById('data-age').textContent = ageText;
+        }
+        
+        // Count unique games
+        const uniqueGames = new Set(allOpportunities.map(o => o.game_id)).size;
+        document.getElementById('opp-count').textContent = allOpportunities.length;
+        document.getElementById('game-count').textContent = uniqueGames;
+        
+        // Group by tier
+        const tiers = {
+            elite: allOpportunities.filter(o => o.tier === 'elite'),
+            strong: allOpportunities.filter(o => o.tier === 'strong'),
+            moderate: allOpportunities.filter(o => o.tier === 'moderate')
+        };
+        
+        // Build HTML
+        let html = '';
+        
+        if (allOpportunities.length === 0) {
+            html = `
+                <div class="no-opps">
+                    <div class="no-opps-icon">🎯</div>
+                    <div style="font-size: 18px; margin-bottom: 10px;">no opportunities available</div>
+                    <div style="font-size: 13px;">click "generate picks" to fetch fresh games</div>
+                </div>
+            `;
+        } else {
+            if (tiers.elite.length > 0) {
+                html += renderTier('elite', 'Elite Picks', 'Highest conviction — ≥60% confidence, ≥10% edge', tiers.elite);
+            }
+            
+            if (tiers.strong.length > 0) {
+                html += renderTier('strong', 'Strong Value', 'Solid opportunities — ≥55% confidence, ≥8% edge', tiers.strong);
+            }
+            
+            if (tiers.moderate.length > 0) {
+                html += renderTier('moderate', 'Moderate Value', 'Reasonable bets — ≥52% confidence, ≥5% edge', tiers.moderate);
+            }
+        }
+        
+        container.innerHTML = html;
+        
+    } catch (error) {
+        console.error('Error loading opportunities:', error);
+        container.innerHTML = `
+            <div class="no-opps">
+                <div class="no-opps-icon">⚠️</div>
+                <div style="font-size: 18px; margin-bottom: 10px; color: #dc2626;">error loading data</div>
+                <div style="font-size: 13px;">${error.message}</div>
+            </div>
+        `;
+    }
+}
+
+function renderTier(tierClass, tierName, tierDesc, opportunities) {
+    let html = `
+        <div class="tier-section tier-${tierClass}">
+            <div class="tier-header">
+                <div class="tier-badge">${tierName}</div>
+                <div class="tier-description">${tierDesc}</div>
+                <div class="tier-count">${opportunities.length} pick${opportunities.length !== 1 ? 's' : ''}</div>
+            </div>
+    `;
+    
+    opportunities.forEach(opp => {
+        const gameTime = new Date(opp.game_time).toLocaleString('en-US', { 
+            month: 'short', 
+            day: 'numeric',
+            hour: 'numeric', 
+            minute: '2-digit' 
+        });
+        
+        const betTypeClass = `bet-type-${opp.bet_type}`;
+        const betTypeLabel = opp.bet_type.replace('_', ' ');
+        
+        html += `
+            <div class="opp-card" data-opp-id="${opp.game_id}-${opp.bet_type}">
+                <div class="opp-header">
+                    <div class="matchup">${opp.matchup}</div>
+                    <div class="bet-type-tag ${betTypeClass}">${betTypeLabel}</div>
+                </div>
+                <div class="opp-body">
+                    <div class="stat-box">
+                        <div class="stat-label">Pick</div>
+                        <div class="stat-value highlight">${opp.recommended_pick}</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Confidence</div>
+                        <div class="stat-value">${(opp.confidence * 100).toFixed(1)}%</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Edge</div>
+                        <div class="stat-value">+${opp.edge_pct}%</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Odds</div>
+                        <div class="stat-value">${opp.odds > 0 ? '+' : ''}${opp.odds}</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Game Time</div>
+                        <div class="stat-value" style="font-size: 13px;">${gameTime}</div>
+                    </div>
+                </div>
+                <div class="opp-footer">
+                    <div class="model-tag">${opp.model.replace('narrative_', '').replace('_', ' ')}</div>
+                    <div class="game-time">${opp.game_id}</div>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function calculateAllocation() {
+    const bankroll = parseFloat(document.getElementById('total-bankroll').value);
+    const strategy = document.getElementById('strategy-select').value;
+    
+    if (!bankroll || bankroll <= 0 || allOpportunities.length === 0) {
+        alert('Please enter a valid bankroll and ensure opportunities are loaded.');
+        return;
+    }
+    
+    // Filter to significant opportunities only
+    const significantOpps = allOpportunities.filter(o => o.tier === 'elite' || o.tier === 'strong');
+    
+    if (significantOpps.length === 0) {
+        alert('No significant opportunities (Elite or Strong tier) available for allocation.');
+        return;
+    }
+    
+    let allocations = [];
+    
+    if (strategy === 'proportional') {
+        // Weight by edge × confidence
+        const totalWeight = significantOpps.reduce((sum, o) => sum + (o.edge_pct * o.confidence), 0);
+        allocations = significantOpps.map(o => {
+            const weight = (o.edge_pct * o.confidence) / totalWeight;
+            const amount = bankroll * weight * 0.15; // Use 15% of bankroll total
+            return { opp: o, amount: amount, weight: weight };
+        });
+    } else if (strategy === 'quarter-kelly') {
+        // Kelly fraction per bet
+        allocations = significantOpps.map(o => {
+            const edge = o.edge_pct / 100;
+            const prob = o.confidence;
+            const decimalOdds = o.odds > 0 ? (o.odds / 100) + 1 : (100 / Math.abs(o.odds)) + 1;
+            const kellyFraction = (prob * decimalOdds - 1) / (decimalOdds - 1);
+            const quarterKelly = Math.max(0, Math.min(kellyFraction * 0.25, 0.05)); // Cap at 5% per bet
+            const amount = bankroll * quarterKelly;
+            return { opp: o, amount: amount, weight: quarterKelly };
+        });
+    } else { // flat
+        const amount = (bankroll * 0.10) / significantOpps.length; // Use 10% of bankroll total
+        allocations = significantOpps.map(o => ({ opp: o, amount: amount, weight: 1/significantOpps.length }));
+    }
+    
+    // Sort by amount descending
+    allocations.sort((a, b) => b.amount - a.amount);
+    
+    // Update UI
+    const totalAllocated = allocations.reduce((sum, a) => sum + a.amount, 0);
+    const avgBet = totalAllocated / allocations.length;
+    
+    document.getElementById('allocated-total').textContent = `$${totalAllocated.toFixed(0)}`;
+    document.getElementById('allocated-count').textContent = allocations.length;
+    document.getElementById('allocated-avg').textContent = `$${avgBet.toFixed(0)}`;
+    
+    const listHtml = allocations.map(a => {
+        const betTypeLabel = a.opp.bet_type.replace('_', ' ');
+        return `
+            <div class="allocation-item">
+                <div class="allocation-item-bet">
+                    <span style="font-weight: 500;">${a.opp.matchup}</span>
+                    <span style="opacity: 0.5;">•</span>
+                    <span style="color: #a855f7; font-size: 11px;">${betTypeLabel}</span>
+                    <span style="opacity: 0.5;">•</span>
+                    <span style="color: #22c55e;">${a.opp.recommended_pick}</span>
+                </div>
+                <div class="allocation-item-amount">$${a.amount.toFixed(0)}</div>
+            </div>
+        `;
+    }).join('');
+    
+    document.getElementById('allocation-list').innerHTML = listHtml;
+    document.getElementById('allocation-results').classList.add('visible');
+}
+
+async function generateFreshPicks() {
+    const btn = document.getElementById('generate-btn');
+    const originalText = btn.textContent;
+    
+    btn.textContent = 'generating...';
+    btn.disabled = true;
+    btn.style.opacity = '0.5';
+    
+    try {
+        const response = await fetch('/api/live/generate-predictions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await response.json();
+        
+        if (data.success) {
+            btn.textContent = `✓ ${data.n_predictions} picks`;
+            btn.style.background = 'rgba(5, 150, 105, 0.25)';
+            
+            setTimeout(() => {
+                loadOpportunities();
+                btn.textContent = originalText;
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.background = '';
+            }, 2000);
+        } else {
+            btn.textContent = '✗ failed';
+            btn.style.background = 'rgba(220, 38, 38, 0.25)';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.background = '';
+            }, 3000);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        btn.textContent = '✗ error';
+        btn.style.background = 'rgba(220, 38, 38, 0.25)';
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            btn.style.background = '';
+        }, 3000);
+    }
+}
+
+// Load on page load
+document.addEventListener('DOMContentLoaded', loadOpportunities);
+
+// Auto-refresh every 3 minutes
+setInterval(loadOpportunities, 180000);
+</script>
+{% endblock %}

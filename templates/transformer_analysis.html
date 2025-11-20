@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}transformer analysis{% endblock %}
+
+{% block extra_head %}
+<style>
+.transformer-hero {
+    background: rgba(30, 64, 175, 0.05);
+    border: 1px solid rgba(30, 64, 175, 0.15);
+    padding: 60px 40px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.transformer-hero h1 {
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: lowercase;
+}
+
+.transformer-hero .subtitle {
+    font-size: 15px;
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.section-header {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 60px 0 30px 0;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 42px;
+    font-weight: 200;
+    color: #0891b2;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+.stat-detail {
+    font-size: 11px;
+    opacity: 0.4;
+    margin-top: 8px;
+}
+
+.domain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.domain-table th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.domain-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.domain-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-validated {
+    background: rgba(5, 150, 105, 0.15);
+    color: #059669;
+}
+
+.status-processed {
+    background: rgba(8, 145, 178, 0.15);
+    color: #0891b2;
+}
+
+.doc-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 15px 0;
+}
+
+.doc-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #0891b2;
+}
+
+.doc-text {
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.6;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="transformer-hero">
+    <h1>transformer analysis</h1>
+    <p class="subtitle">79 specialized transformers | 7,745 processed samples | production betting systems</p>
+</div>
+
+<!-- Summary Stats -->
+<div class="stat-grid">
+    <div class="stat-box">
+        <div class="stat-value">{{ total_transformers }}</div>
+        <div class="stat-label">total transformers</div>
+        <div class="stat-detail">universal + domain-specific</div>
+    </div>
+    
+    <div class="stat-box">
+        <div class="stat-value">{{ domains_processed }}</div>
+        <div class="stat-label">domains processed</div>
+        <div class="stat-detail">feature extraction complete</div>
+    </div>
+    
+    <div class="stat-box">
+        <div class="stat-value">{{ "{:,}".format(total_samples) }}</div>
+        <div class="stat-label">samples processed</div>
+        <div class="stat-detail">across all domains</div>
+    </div>
+    
+    <div class="stat-box">
+        <div class="stat-value">{{ "{:,}".format(total_features) }}</div>
+        <div class="stat-label">features extracted</div>
+        <div class="stat-detail">high-dimensional space</div>
+    </div>
+</div>
+
+<!-- Domains Table -->
+<h2 class="section-header">processed domains</h2>
+
+<table class="domain-table">
+    <thead>
+        <tr>
+            <th>domain</th>
+            <th>samples</th>
+            <th>features</th>
+            <th>outcomes</th>
+            <th>status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for domain in domains %}
+        <tr>
+            <td><strong>{{ domain.name }}</strong></td>
+            <td>{{ "{:,}".format(domain.samples) }}</td>
+            <td>{{ domain.features }}</td>
+            <td>
+                {% if domain.has_outcomes %}
+                    <span class="status-badge status-validated">validated</span>
+                {% else %}
+                    <span class="status-badge status-processed">processed</span>
+                {% endif %}
+            </td>
+            <td style="opacity: 0.5;">
+                {{ domain.file }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Key Findings -->
+<h2 class="section-header">transformer effectiveness</h2>
+
+<div class="doc-card">
+    <div class="doc-title">nhl betting transformers</div>
+    <div class="doc-text">
+        79 transformers deployed for NHL: 50 performance metrics (goals, shots, saves, special teams) + 
+        29 nominative features (Stanley Cups, Original Six status, franchise age). 
+        Meta-Ensemble combines Random Forest, Gradient Boosting, and Logistic Regression. 
+        Validated: 69.4% win rate, 32.5% ROI on 2,779 holdout games.
+    </div>
+</div>
+
+<div class="doc-card">
+    <div class="doc-title">supervised vs unsupervised</div>
+    <div class="doc-text">
+        Supervised transformers (with outcome labels) enable direct prediction models for betting. 
+        Unsupervised transformers (without labels) extract narrative structure for exploratory analysis. 
+        NHL system uses supervised pipeline with temporal holdout validation to prevent look-ahead bias.
+    </div>
+</div>
+
+<div class="doc-card">
+    <div class="doc-title">feature importance</div>
+    <div class="doc-text">
+        Top transformers by importance: transformer_848 (4.22% - historical gravity composite), 
+        transformer_866 (4.14% - momentum decay), feature_698 (1.98% - franchise prestige). 
+        Nominative features create market inefficiency edge when combined with performance metrics via ensemble learning.
+    </div>
+</div>
+
+<div class="doc-card">
+    <div class="doc-title">supervised transformers (phase 7)</div>
+    <div class="doc-text">
+        <strong>6 supervised transformers awaiting integration (Nov 2025):</strong><br><br>
+        
+        • <strong>AlphaTransformer:</strong> Label-aware feature strength calculation (needs y during fit)<br>
+        • <strong>GoldenNarratioTransformer:</strong> Discovers archetypal perfection patterns from winners<br>
+        • <strong>ContextPatternTransformer:</strong> Supervised pattern discovery across contexts<br>
+        • <strong>MetaFeatureInteractionTransformer:</strong> Interaction effects between feature groups<br>
+        • <strong>EnsembleMetaTransformer:</strong> Stacked ensemble meta-learning<br>
+        • <strong>CrossDomainEmbeddingTransformer:</strong> Genome-based cross-domain transfer learning<br><br>
+        
+        These require supervised pipeline with outcome labels. Infrastructure complete (SupervisedFeatureExtractionPipeline),
+        ready for domain reprocessing. See docs/SUPERVISED_TRANSFORMER_HANDOFF.md for integration details.
+    </div>
+</div>
+
+<!-- Resources -->
+<h2 class="section-header">documentation</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+    <a href="/transformers/catalog" style="display: block; padding: 25px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; text-decoration: none; color: var(--text-primary); transition: all 0.2s;">
+        <div style="font-size: 16px; font-weight: 400; margin-bottom: 10px; opacity: 0.8;">transformer catalog</div>
+        <div style="font-size: 13px; opacity: 0.6; line-height: 1.6;">complete list of {{ total_transformers }} transformers with metadata</div>
+    </a>
+    
+    <a href="/betting/methodology" style="display: block; padding: 25px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; text-decoration: none; color: var(--text-primary); transition: all 0.2s;">
+        <div style="font-size: 16px; font-weight: 400; margin-bottom: 10px; opacity: 0.8;">betting methodology</div>
+        <div style="font-size: 13px; opacity: 0.6; line-height: 1.6;">feature engineering pipeline and model architecture</div>
+    </a>
+    
+    <a href="/formulas" style="display: block; padding: 25px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; text-decoration: none; color: var(--text-primary); transition: all 0.2s;">
+        <div style="font-size: 16px; font-weight: 400; margin-bottom: 10px; opacity: 0.8;">formula framework</div>
+        <div style="font-size: 13px; opacity: 0.6; line-height: 1.6;">narrative agency theory and domain formulas</div>
+    </a>
+</div>
+
+{% endblock %}

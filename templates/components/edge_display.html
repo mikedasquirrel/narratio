@@ -1,0 +1,157 @@
+<!-- Edge Display Component - Shows betting edge percentage prominently -->
+
+<div class="edge-display-component">
+    <style>
+        .edge-display-component {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .edge-banner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .edge-metric {
+            text-align: center;
+            color: white;
+        }
+        
+        .edge-value {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .edge-positive { color: #4CAF50; }
+        .edge-marginal { color: #ff9800; }
+        .edge-negative { color: #f44336; }
+        
+        .edge-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .probability-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .prob-card {
+            background: #252526;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .prob-card.model {
+            border: 2px solid #4FC3F7;
+        }
+        
+        .prob-card.market {
+            border: 2px solid #ff9800;
+        }
+        
+        .prob-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4FC3F7;
+            margin: 15px 0;
+        }
+        
+        .market .prob-value {
+            color: #ff9800;
+        }
+        
+        .edge-explanation {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .recommendation-box {
+            background: {{ '#c8e6c9' if edge >= 5 else '#fff3cd' if edge > 0 else '#ffcdd2' }};
+            color: {{ '#1b5e20' if edge >= 5 else '#f57c00' if edge > 0 else '#c62828' }};
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    
+    <div class="edge-banner">
+        <div class="edge-metric">
+            <div class="edge-label">Model Probability</div>
+            <div class="edge-value" style="color: #4FC3F7;">{{ (model_prob * 100)|round(1) }}%</div>
+        </div>
+        
+        <div class="edge-metric">
+            <div class="edge-value" style="font-size: 2em;">−</div>
+        </div>
+        
+        <div class="edge-metric">
+            <div class="edge-label">Market Probability</div>
+            <div class="edge-value" style="color: #ff9800;">{{ (market_prob * 100)|round(1) }}%</div>
+        </div>
+        
+        <div class="edge-metric">
+            <div class="edge-value" style="font-size: 2em;">=</div>
+        </div>
+        
+        <div class="edge-metric">
+            <div class="edge-label">BETTING EDGE</div>
+            <div class="edge-value edge-{{ 'positive' if edge >= 5 else 'marginal' if edge > 0 else 'negative' }}">
+                {{ edge|round(1) }}%
+            </div>
+        </div>
+    </div>
+    
+    <div class="recommendation-box">
+        {% if edge >= 5 %}
+        ✅ STRONG BET: {{ edge|round(1) }}% edge over market
+        {% elif edge > 0 %}
+        ⚠️ MARGINAL: {{ edge|round(1) }}% edge (consider if confident)
+        {% else %}
+        ❌ SKIP: {{ edge|round(1) }}% negative edge (market favors opponent)
+        {% endif %}
+    </div>
+    
+    <div class="edge-explanation">
+        <h4 style="color: #4FC3F7; margin-top: 0;">What This Means</h4>
+        <p style="color: #d4d4d4;">
+            {% if edge >= 5 %}
+            The model thinks this team/player has a <strong>{{ edge|round(1) }}% better chance</strong> of winning than the betting market does. 
+            This represents a <strong>significant edge</strong> - the kind of discrepancy that creates long-term profit.
+            {% elif edge > 0 %}
+            The model thinks this team/player has a <strong>{{ edge|round(1) }}% better chance</strong> of winning than the market. 
+            This is a <strong>small edge</strong> - may be worth betting if you trust the model highly.
+            {% else %}
+            The model thinks this team/player has a <strong>{{ edge|round(1) }}% WORSE chance</strong> of winning than the market. 
+            <strong>Do not bet</strong> - the market disagrees with your model.
+            {% endif %}
+        </p>
+        
+        <h4 style="color: #4FC3F7;">Expected Value</h4>
+        <p style="color: #d4d4d4;">
+            On a $100 bet: <strong>${{ expected_value|round(2) }}</strong> expected profit
+            {% if expected_value > 0 %}
+            (Positive EV = profitable long-term)
+            {% else %}
+            (Negative EV = losing proposition)
+            {% endif %}
+        </p>
+    </div>
+</div>
+

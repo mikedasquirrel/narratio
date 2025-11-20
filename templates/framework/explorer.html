@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+        }
+        
+        .viz-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .viz-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .viz-card.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .viz-title {
+            font-size: 1.5em;
+            color: var(--accent-cyan);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .plot-container {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 400px;
+        }
+        
+        .domain-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .domain-card:hover {
+            background: rgba(0, 255, 255, 0.05);
+            border-color: rgba(0, 255, 255, 0.4);
+            transform: translateX(5px);
+        }
+        
+        .domain-name {
+            font-size: 1.3em;
+            color: var(--accent-purple);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .force-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        
+        .force-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .force-label {
+            width: 80px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .bar-track {
+            flex: 1;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.6s ease;
+        }
+        
+        .bar-fill.gravity {
+            background: linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-purple) 100%);
+        }
+        
+        .bar-fill.awareness {
+            background: linear-gradient(90deg, var(--accent-cyan) 0%, var(--accent-cyan) 100%);
+        }
+        
+        .bar-fill.constraints {
+            background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+        }
+        
+        .force-value {
+            width: 50px;
+            text-align: right;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .prediction {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.95em;
+        }
+        
+        .prediction-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .prediction-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85em;
+        }
+        
+        .prediction-value {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .error-good { color: var(--accent-emerald); }
+        .error-fair { color: #ffff00; }
+        .error-poor { color: #ff0088; }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .nav-link {
+            padding: 15px 30px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        
+        .legend {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .legend-symbol {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .legend-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Three-Force Model Explorer</h1>
+            <div class="subtitle">Interactive analysis of ة, θ, and λ across all domains</div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="/framework-story" class="nav-link">Read the Story</a>
+            <a href="/framework-quickref" class="nav-link">Quick Reference</a>
+            <a href="/three-realms" class="nav-link">Three Realms Visual</a>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-symbol" style="color: var(--accent-purple);">ة</span>
+                <span class="legend-text">Nominative Gravity (narrative pull)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-symbol" style="color: var(--accent-cyan);">θ</span>
+                <span class="legend-text">Awareness Resistance (free will)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-symbol" style="color: #ffffff;">λ</span>
+                <span class="legend-text">Fundamental Constraints (physics)</span>
+            </div>
+        </div>
+        
+        <div class="viz-grid">
+            <div class="viz-card full-width">
+                <div class="viz-title">Three-Dimensional Force Space</div>
+                <div class="plot-container" id="plot3d"></div>
+            </div>
+            
+            <div class="viz-card full-width">
+                <div class="viz-title">Domain Force Breakdowns</div>
+                <div id="domain-cards"></div>
+            </div>
+            
+            <div class="viz-card">
+                <div class="viz-title">Predicted vs Observed</div>
+                <div class="plot-container" id="plot-prediction"></div>
+            </div>
+            
+            <div class="viz-card">
+                <div class="viz-title">Model Accuracy</div>
+                <div class="plot-container" id="plot-error"></div>
+            </div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="/" class="nav-link">← Back Home</a>
+        </div>
+    </div>
+    
+    <script>
+        // Load data from API
+        fetch('/api/three-forces')
+            .then(r => r.json())
+            .then(data => {
+                renderVisualization(data);
+            });
+        
+        function renderVisualization(domains) {
+            // Prepare data arrays
+            const domainNames = [];
+            const gravity = [];
+            const awareness = [];
+            const constraints = [];
+            const predicted = [];
+            const observed = [];
+            const errors = [];
+            
+            for (const [name, forces] of Object.entries(domains)) {
+                domainNames.push(name);
+                gravity.push(forces.nominative_gravity);
+                awareness.push(forces.awareness_resistance);
+                constraints.push(forces.fundamental_constraints);
+                predicted.push(forces.predicted_bridge);
+                observed.push(forces.observed_bridge || 0);
+                errors.push(forces.model_error || 0);
+            }
+            
+            // 3D scatter plot
+            const trace3d = {
+                x: gravity,
+                y: awareness,
+                z: constraints,
+                text: domainNames,
+                mode: 'markers+text',
+                type: 'scatter3d',
+                marker: {
+                    size: 10,
+                    color: predicted,
+                    colorscale: [
+                        [0, '#000000'],
+                        [0.5, 'var(--accent-cyan)'],
+                        [1, 'var(--accent-purple)']
+                    ],
+                    showscale: true,
+                    colorbar: {
+                        title: 'Predicted Д',
+                        tickfont: { color: '#ffffff' }
+                    }
+                },
+                textposition: 'top center',
+                textfont: { color: 'var(--accent-cyan)', size: 10 }
+            };
+            
+            const layout3d = {
+                scene: {
+                        xaxis: { title: 'ة (Nominative Gravity)', color: 'var(--accent-purple)' },
+                    yaxis: { title: 'θ (Awareness)', color: 'var(--accent-cyan)' },
+                    zaxis: { title: 'λ (Constraints)', color: '#ffffff' },
+                    bgcolor: 'rgba(0,0,0,0.5)'
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#ffffff' },
+                height: 600
+            };
+            
+            Plotly.newPlot('plot3d', [trace3d], layout3d, {displayModeBar: false});
+            
+            // Predicted vs Observed
+            const tracePredObs = {
+                x: predicted,
+                y: observed,
+                text: domainNames,
+                mode: 'markers+text',
+                type: 'scatter',
+                marker: {
+                    size: 12,
+                    color: 'var(--accent-cyan)',
+                    line: { color: 'var(--accent-purple)', width: 2 }
+                },
+                textposition: 'top center',
+                textfont: { color: 'var(--accent-cyan)', size: 10 }
+            };
+            
+            // Add perfect prediction line
+            const maxVal = Math.max(...predicted, ...observed);
+            const traceLine = {
+                x: [0, maxVal],
+                y: [0, maxVal],
+                mode: 'lines',
+                line: { color: 'rgba(255,255,255,0.3)', dash: 'dash' },
+                showlegend: false
+            };
+            
+            const layoutPredObs = {
+                xaxis: { title: 'Predicted Д', color: '#ffffff' },
+                yaxis: { title: 'Observed Д', color: '#ffffff' },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0.3)',
+                font: { color: '#ffffff' },
+                height: 400
+            };
+            
+            Plotly.newPlot('plot-prediction', [traceLine, tracePredObs], layoutPredObs, {displayModeBar: false});
+            
+            // Error distribution
+            const traceError = {
+                x: domainNames,
+                y: errors,
+                type: 'bar',
+                marker: {
+                    color: errors.map(e => e < 0.10 ? 'var(--accent-emerald)' : e < 0.20 ? '#ffff00' : '#ff0088')
+                }
+            };
+            
+            const layoutError = {
+                xaxis: { tickangle: -45, color: '#ffffff' },
+                yaxis: { title: 'Model Error (MAE)', color: '#ffffff' },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0.3)',
+                font: { color: '#ffffff' },
+                height: 400
+            };
+            
+            Plotly.newPlot('plot-error', [traceError], layoutError, {displayModeBar: false});
+            
+            // Render domain cards
+            renderDomainCards(domains);
+        }
+        
+        function renderDomainCards(domains) {
+            const container = document.getElementById('domain-cards');
+            
+            for (const [name, forces] of Object.entries(domains)) {
+                const card = document.createElement('div');
+                card.className = 'domain-card';
+                
+                const errorClass = forces.model_error < 0.10 ? 'error-good' : 
+                                  forces.model_error < 0.20 ? 'error-fair' : 'error-poor';
+                
+                card.innerHTML = `
+                    <div class="domain-name">${name.toUpperCase()}</div>
+                    <div class="force-bars">
+                        <div class="force-bar">
+                            <div class="force-label">ة Gravity</div>
+                            <div class="bar-track">
+                                <div class="bar-fill gravity" style="width: ${forces.nominative_gravity * 100}%"></div>
+                            </div>
+                            <div class="force-value">${forces.nominative_gravity.toFixed(3)}</div>
+                        </div>
+                        <div class="force-bar">
+                            <div class="force-label">θ Awareness</div>
+                            <div class="bar-track">
+                                <div class="bar-fill awareness" style="width: ${forces.awareness_resistance * 100}%"></div>
+                            </div>
+                            <div class="force-value">${forces.awareness_resistance.toFixed(3)}</div>
+                        </div>
+                        <div class="force-bar">
+                            <div class="force-label">λ Constraints</div>
+                            <div class="bar-track">
+                                <div class="bar-fill constraints" style="width: ${forces.fundamental_constraints * 100}%"></div>
+                            </div>
+                            <div class="force-value">${forces.fundamental_constraints.toFixed(3)}</div>
+                        </div>
+                    </div>
+                    <div class="prediction">
+                        <div class="prediction-item">
+                            <span class="prediction-label">Predicted Д</span>
+                            <span class="prediction-value">${forces.predicted_bridge.toFixed(3)}</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="prediction-label">Observed Д</span>
+                            <span class="prediction-value">${forces.observed_bridge ? forces.observed_bridge.toFixed(3) : 'N/A'}</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="prediction-label">Model Error</span>
+                            <span class="prediction-value ${errorClass}">${forces.model_error ? forces.model_error.toFixed(3) : 'N/A'}</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="prediction-label">Dominant Force</span>
+                            <span class="prediction-value">${forces.dominant_force}</span>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            }
+        }
+    </script>
+</body>
+</html>
+

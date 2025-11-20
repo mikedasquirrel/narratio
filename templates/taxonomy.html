@@ -1,0 +1,718 @@
+{% extends "base.html" %}
+
+{% block title %}narrative taxonomy - {{ app_name }}{% endblock %}
+
+{% block extra_head %}
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+.taxonomy-hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+}
+
+.taxonomy-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: #fff;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.02em;
+}
+
+.taxonomy-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-transform: lowercase;
+}
+
+.viz-section {
+    margin: 3rem 0;
+}
+
+.viz-section h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+}
+
+.viz-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    min-height: 400px;
+}
+
+.viz-card h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-transform: lowercase;
+}
+
+.kingdom-legend {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--glass-bg);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.organism-list {
+    display: grid;
+    gap: 1rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.organism-card {
+    padding: 1rem 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.organism-card:hover {
+    background: var(--glass-hover);
+    border-color: var(--glass-border-hover);
+    transform: translateX(4px);
+}
+
+.organism-species {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.organism-meta {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#gravitationalNetwork {
+    min-height: 600px;
+    background: var(--glass-bg);
+    border-radius: 12px;
+}
+
+#phylogeneticTree {
+    min-height: 600px;
+    background: var(--glass-bg);
+    border-radius: 12px;
+    overflow: auto;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    stroke-width: 2px;
+}
+
+.node text {
+    font-size: 12px;
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.link {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-width: 1.5px;
+}
+
+.dna-comparator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dna-select {
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+.dna-select h4 {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.overlap-result {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(147, 51, 234, 0.1));
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.overlap-percentage {
+    font-size: 5rem;
+    font-weight: 200;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.overlap-relationship {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.overlap-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.overlap-detail {
+    padding: 1rem;
+    background: var(--glass-bg);
+    border-radius: 8px;
+}
+
+.overlap-detail-label {
+    font-size: 0.75rem;
+    color: var(--text-subtle);
+    margin-bottom: 0.5rem;
+}
+
+.overlap-detail-value {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--accent-cyan);
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="taxonomy-hero">
+    <h1>narrative taxonomy</h1>
+    <p class="taxonomy-subtitle">the living ecosystem of narrative organisms</p>
+</div>
+
+<!-- Ecosystem Statistics -->
+<div class="stats-grid" id="statsGrid">
+    <div class="stat-card">
+        <div class="stat-value" id="totalOrganisms">--</div>
+        <div class="stat-label">total organisms</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" id="totalKingdoms">--</div>
+        <div class="stat-label">kingdoms</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" id="avgGenomeLength">--</div>
+        <div class="stat-label">avg genome length</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" id="supermassiveCount">--</div>
+        <div class="stat-label">supermassive organisms</div>
+    </div>
+</div>
+
+<!-- Kingdom Legend -->
+<div class="kingdom-legend" id="kingdomLegend"></div>
+
+<!-- Gravitational Network -->
+<div class="viz-section">
+    <h2>gravitational network</h2>
+    <div class="viz-card">
+        <h3>force-directed clustering — size = narrative weight, edges = dna overlap</h3>
+        <div id="gravitationalNetwork"></div>
+    </div>
+</div>
+
+<!-- Phylogenetic Tree -->
+<div class="viz-section">
+    <h2>phylogenetic tree</h2>
+    <div class="viz-card">
+        <h3>evolutionary relationships — kingdom → phylum → mass class → species</h3>
+        <div id="phylogeneticTree"></div>
+    </div>
+</div>
+
+<!-- DNA Comparison Tool -->
+<div class="viz-section">
+    <h2>dna overlap calculator</h2>
+    <div class="viz-card">
+        <h3>compare genetic similarity between any two organisms</h3>
+        
+        <div class="dna-comparator">
+            <div class="dna-select">
+                <h4>organism 1</h4>
+                <select id="organism1Select" class="form-control"></select>
+            </div>
+            <div class="dna-select">
+                <h4>organism 2</h4>
+                <select id="organism2Select" class="form-control"></select>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 1.5rem 0;">
+            <button id="compareBtn" class="btn btn-primary">calculate dna overlap</button>
+        </div>
+        
+        <div id="overlapResult" style="display: none;">
+            <div class="overlap-result">
+                <div class="overlap-percentage" id="overlapPercentage">--</div>
+                <div class="overlap-relationship" id="overlapRelationship">--</div>
+                
+                <div class="overlap-details">
+                    <div class="overlap-detail">
+                        <div class="overlap-detail-label">genetic distance</div>
+                        <div class="overlap-detail-value" id="geneticDistance">--</div>
+                    </div>
+                    <div class="overlap-detail">
+                        <div class="overlap-detail-label">pattern correlation</div>
+                        <div class="overlap-detail-value" id="patternCorrelation">--</div>
+                    </div>
+                    <div class="overlap-detail">
+                        <div class="overlap-detail-label">same kingdom</div>
+                        <div class="overlap-detail-value" id="sameKingdom">--</div>
+                    </div>
+                    <div class="overlap-detail">
+                        <div class="overlap-detail-label">same phylum</div>
+                        <div class="overlap-detail-value" id="samePhylum">--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Organisms -->
+<div class="viz-section">
+    <h2>recent organisms</h2>
+    <div class="viz-card">
+        <h3>newest additions to the ecosystem</h3>
+        <div id="recentOrganisms" class="organism-list"></div>
+    </div>
+</div>
+
+<script>
+// Global data
+let ecosystemData = null;
+
+// Load ecosystem on page load
+async function loadEcosystem() {
+    try {
+        const response = await fetch('/taxonomy/api/ecosystem');
+        const data = await response.json();
+        
+        if (data.success) {
+            ecosystemData = data.ecosystem;
+            displayStatistics(ecosystemData.statistics);
+            displayKingdomLegend(ecosystemData.statistics);
+            populateOrganismSelects(ecosystemData.organisms);
+            displayRecentOrganisms(ecosystemData.organisms);
+            createGravitationalNetwork(ecosystemData.gravitational_network);
+            createPhylogeneticTree(ecosystemData.phylogenetic_tree);
+        } else {
+            console.error('Failed to load ecosystem:', data.error);
+            showEmptyState();
+        }
+    } catch (error) {
+        console.error('Error loading ecosystem:', error);
+        showEmptyState();
+    }
+}
+
+function displayStatistics(stats) {
+    if (!stats || stats.total_organisms === 0) {
+        document.getElementById('totalOrganisms').textContent = '0';
+        document.getElementById('totalKingdoms').textContent = '0';
+        document.getElementById('avgGenomeLength').textContent = '--';
+        document.getElementById('supermassiveCount').textContent = '0';
+        return;
+    }
+    
+    document.getElementById('totalOrganisms').textContent = stats.total_organisms;
+    document.getElementById('totalKingdoms').textContent = stats.kingdoms;
+    document.getElementById('avgGenomeLength').textContent = Math.round(stats.avg_genome_length);
+    
+    const supermassive = stats.gravitational_distribution.supermassive || 0;
+    document.getElementById('supermassiveCount').textContent = supermassive;
+}
+
+function displayKingdomLegend(stats) {
+    const legend = document.getElementById('kingdomLegend');
+    legend.innerHTML = '';
+    
+    if (!stats || !stats.kingdom_distribution) return;
+    
+    const colors = {
+        'sports': '#06b6d4',
+        'products': '#9333ea',
+        'profiles': '#ec4899',
+        'brands': '#10b981',
+        'locations': '#f59e0b',
+        'content': '#8b5cf6',
+        'text': '#6b7280'
+    };
+    
+    for (const [kingdom, count] of Object.entries(stats.kingdom_distribution)) {
+        const item = document.createElement('div');
+        item.className = 'legend-item';
+        item.innerHTML = `
+            <div class="legend-color" style="background: ${colors[kingdom] || '#6b7280'};"></div>
+            <span>${kingdom}: ${count} organisms</span>
+        `;
+        legend.appendChild(item);
+    }
+}
+
+function populateOrganismSelects(organisms) {
+    const select1 = document.getElementById('organism1Select');
+    const select2 = document.getElementById('organism2Select');
+    
+    select1.innerHTML = '<option value="">Select organism...</option>';
+    select2.innerHTML = '<option value="">Select organism...</option>';
+    
+    organisms.forEach(org => {
+        const option1 = document.createElement('option');
+        option1.value = org.organism_id;
+        option1.textContent = `${org.species_name} (${org.kingdom}/${org.phylum})`;
+        select1.appendChild(option1);
+        
+        const option2 = option1.cloneNode(true);
+        select2.appendChild(option2);
+    });
+}
+
+function displayRecentOrganisms(organisms) {
+    const container = document.getElementById('recentOrganisms');
+    container.innerHTML = '';
+    
+    if (!organisms || organisms.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 2rem;">No organisms yet. Run some comparisons to populate the ecosystem!</div>';
+        return;
+    }
+    
+    // Sort by timestamp (newest first)
+    const sorted = [...organisms].sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+    
+    sorted.slice(0, 10).forEach(org => {
+        const card = document.createElement('div');
+        card.className = 'organism-card';
+        card.innerHTML = `
+            <div class="organism-species">${org.species_name}</div>
+            <div class="organism-meta">
+                <span>🧬 ${org.genome_summary.genome_length} genes</span>
+                <span>⚖️ ${org.narrative_weight.toFixed(2)}x gravity</span>
+                <span>📁 ${org.kingdom}/${org.phylum}</span>
+                <span>⏰ ${new Date(org.timestamp).toLocaleTimeString()}</span>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+function createGravitationalNetwork(network) {
+    const container = document.getElementById('gravitationalNetwork');
+    container.innerHTML = '';
+    
+    if (!network || !network.nodes || network.nodes.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 4rem;">Ecosystem empty. Create comparisons to see gravitational clustering!</div>';
+        return;
+    }
+    
+    const width = container.clientWidth || 800;
+    const height = 600;
+    
+    const svg = d3.select('#gravitationalNetwork')
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', height)
+        .attr('viewBox', [0, 0, width, height]);
+    
+    // Create force simulation
+    const simulation = d3.forceSimulation(network.nodes)
+        .force('link', d3.forceLink(network.links).id(d => d.id).distance(d => d.distance || 100))
+        .force('charge', d3.forceManyBody().strength(-300))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(d => d.size || 20));
+    
+    // Add links
+    const link = svg.append('g')
+        .selectAll('line')
+        .data(network.links)
+        .join('line')
+        .attr('stroke', 'rgba(255, 255, 255, 0.2)')
+        .attr('stroke-width', d => Math.max(1, d.value / 20));
+    
+    // Add nodes
+    const node = svg.append('g')
+        .selectAll('circle')
+        .data(network.nodes)
+        .join('circle')
+        .attr('r', d => d.size || 20)
+        .attr('fill', d => d.color || '#06b6d4')
+        .attr('stroke', 'rgba(255, 255, 255, 0.5)')
+        .attr('stroke-width', 2)
+        .call(drag(simulation));
+    
+    // Add labels
+    const label = svg.append('g')
+        .selectAll('text')
+        .data(network.nodes)
+        .join('text')
+        .text(d => d.species)
+        .attr('font-size', 11)
+        .attr('fill', 'rgba(255, 255, 255, 0.8)')
+        .attr('text-anchor', 'middle')
+        .attr('dy', d => (d.size || 20) + 15);
+    
+    // Tooltips
+    node.append('title')
+        .text(d => `${d.species}\nWeight: ${d.weight.toFixed(2)}x\nKingdom: ${d.kingdom}`);
+    
+    // Update positions
+    simulation.on('tick', () => {
+        link
+            .attr('x1', d => d.source.x)
+            .attr('y1', d => d.source.y)
+            .attr('x2', d => d.target.x)
+            .attr('y2', d => d.target.y);
+        
+        node
+            .attr('cx', d => d.x)
+            .attr('cy', d => d.y);
+        
+        label
+            .attr('x', d => d.x)
+            .attr('y', d => d.y);
+    });
+    
+    function drag(simulation) {
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+        
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+        
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+        
+        return d3.drag()
+            .on('start', dragstarted)
+            .on('drag', dragged)
+            .on('end', dragended);
+    }
+}
+
+function createPhylogeneticTree(tree) {
+    const container = document.getElementById('phylogeneticTree');
+    container.innerHTML = '';
+    
+    if (!tree || !tree.children || tree.children.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 4rem;">No organisms yet. The phylogenetic tree will grow as you create comparisons!</div>';
+        return;
+    }
+    
+    const width = container.clientWidth || 800;
+    const height = 600;
+    
+    const svg = d3.select('#phylogeneticTree')
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', height)
+        .attr('viewBox', [0, 0, width, height]);
+    
+    const treeLayout = d3.tree().size([height - 100, width - 200]);
+    const root = d3.hierarchy(tree);
+    treeLayout(root);
+    
+    // Links
+    svg.append('g')
+        .selectAll('path')
+        .data(root.links())
+        .join('path')
+        .attr('d', d3.linkHorizontal()
+            .x(d => d.y + 100)
+            .y(d => d.x + 50))
+        .attr('fill', 'none')
+        .attr('stroke', 'rgba(255, 255, 255, 0.2)')
+        .attr('stroke-width', 1.5);
+    
+    // Nodes
+    const node = svg.append('g')
+        .selectAll('g')
+        .data(root.descendants())
+        .join('g')
+        .attr('transform', d => `translate(${d.y + 100},${d.x + 50})`);
+    
+    node.append('circle')
+        .attr('r', d => d.data.type === 'organism' ? 8 : 5)
+        .attr('fill', d => getNodeColor(d.data.type))
+        .attr('stroke', 'rgba(255, 255, 255, 0.5)')
+        .attr('stroke-width', 1.5);
+    
+    node.append('text')
+        .attr('dy', '0.31em')
+        .attr('x', d => d.children ? -10 : 10)
+        .attr('text-anchor', d => d.children ? 'end' : 'start')
+        .text(d => d.data.name)
+        .attr('font-size', d => d.data.type === 'organism' ? 10 : 11)
+        .attr('fill', 'rgba(255, 255, 255, 0.7)');
+}
+
+function getNodeColor(type) {
+    const colors = {
+        'kingdom': '#06b6d4',
+        'phylum': '#9333ea',
+        'mass_class': '#ec4899',
+        'organism': '#10b981'
+    };
+    return colors[type] || '#6b7280';
+}
+
+// DNA Comparison
+document.getElementById('compareBtn').addEventListener('click', async () => {
+    const org1 = document.getElementById('organism1Select').value;
+    const org2 = document.getElementById('organism2Select').value;
+    
+    if (!org1 || !org2) {
+        alert('Please select both organisms');
+        return;
+    }
+    
+    if (org1 === org2) {
+        alert('Please select different organisms');
+        return;
+    }
+    
+    try {
+        const response = await fetch('/taxonomy/api/dna_overlap', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({organism_id_1: org1, organism_id_2: org2})
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            displayOverlapResult(data.overlap);
+        } else {
+            alert('Error: ' + (data.error || 'Unknown error'));
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+});
+
+function displayOverlapResult(overlap) {
+    const resultDiv = document.getElementById('overlapResult');
+    resultDiv.style.display = 'block';
+    
+    document.getElementById('overlapPercentage').textContent = overlap.overlap_percentage.toFixed(1) + '%';
+    document.getElementById('overlapRelationship').textContent = overlap.relationship;
+    document.getElementById('geneticDistance').textContent = overlap.genetic_distance.toFixed(2);
+    document.getElementById('patternCorrelation').textContent = overlap.pattern_correlation.toFixed(3);
+    document.getElementById('sameKingdom').textContent = overlap.same_kingdom ? 'Yes' : 'No';
+    document.getElementById('samePhylum').textContent = overlap.same_phylum ? 'Yes' : 'No';
+    
+    // Scroll to result
+    resultDiv.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+}
+
+function showEmptyState() {
+    document.getElementById('totalOrganisms').textContent = '0';
+    document.getElementById('totalKingdoms').textContent = '0';
+    document.getElementById('avgGenomeLength').textContent = '--';
+    document.getElementById('supermassiveCount').textContent = '0';
+    
+    const networkContainer = document.getElementById('gravitationalNetwork');
+    networkContainer.innerHTML = `
+        <div style="text-align: center; padding: 4rem;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🧬</div>
+            <div style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem;">ecosystem empty</div>
+            <div style="color: var(--text-secondary);">
+                <a href="/analyze/compare" style="color: var(--accent-cyan);">Create some comparisons</a> to populate the narrative taxonomy!
+            </div>
+        </div>
+    `;
+    
+    const treeContainer = document.getElementById('phylogeneticTree');
+    treeContainer.innerHTML = networkContainer.innerHTML;
+    
+    const recentContainer = document.getElementById('recentOrganisms');
+    recentContainer.innerHTML = networkContainer.innerHTML;
+}
+
+// Load ecosystem on page load
+loadEcosystem();
+</script>
+{% endblock %}
+

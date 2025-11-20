@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Hurricane Explorer{% endblock %}
+
+{% block content %}
+<h1 style="color: var(--accent-cyan); margin-bottom: 2rem;">🔍 Hurricane Data Explorer</h1>
+
+<div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+    <h3 style="color: var(--accent-purple); margin-bottom: 1rem;">Filters</h3>
+    <form method="get" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div>
+            <label style="color: var(--accent-cyan);">Min Category:</label>
+            <input type="number" name="min_category" min="1" max="5" value="{{ request.args.get('min_category', 1) }}" 
+                   style="padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: 1px solid var(--accent-cyan); color: white;">
+        </div>
+        <div>
+            <label style="color: var(--accent-cyan);">Max Category:</label>
+            <input type="number" name="max_category" min="1" max="5" value="{{ request.args.get('max_category', 5) }}" 
+                   style="padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: 1px solid var(--accent-cyan); color: white;">
+        </div>
+        <div>
+            <label style="color: var(--accent-cyan);">Gender:</label>
+            <select name="gender" style="padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: 1px solid var(--accent-cyan); color: white;">
+                <option value="all">All</option>
+                <option value="masculine" {% if request.args.get('gender') == 'masculine' %}selected{% endif %}>Masculine</option>
+                <option value="neutral" {% if request.args.get('gender') == 'neutral' %}selected{% endif %}>Neutral</option>
+                <option value="feminine" {% if request.args.get('gender') == 'feminine' %}selected{% endif %}>Feminine</option>
+            </select>
+        </div>
+        <button type="submit" style="padding: 0.5rem 2rem; background: var(--accent-purple); color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Apply Filters
+        </button>
+    </form>
+    <p style="margin-top: 1rem; color: var(--accent-cyan);">Showing {{ filtered }} of {{ total }} hurricanes</p>
+</div>
+
+<div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.3); border-radius: 10px; overflow: hidden;">
+        <thead>
+            <tr style="background: rgba(255,0,255,0.2);">
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Name</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Year</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Category</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Gender Rating</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Syllables</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Evacuation Rate</th>
+                <th style="padding: 1rem; text-align: left; color: var(--accent-purple);">Casualties</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for h in hurricanes %}
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 1rem; color: var(--accent-cyan); font-weight: bold;">{{ h.name }}</td>
+                <td style="padding: 1rem; color: white;">{{ h.year }}</td>
+                <td style="padding: 1rem; color: white;">{{ h.actual_severity.category }}</td>
+                <td style="padding: 1rem; color: white;">{{ "%.2f"|format(h.gender_rating) }}</td>
+                <td style="padding: 1rem; color: white;">{{ h.syllables }}</td>
+                <td style="padding: 1rem; color: white;">{{ "%.1f"|format(h.outcomes.evacuation_rate * 100) }}%</td>
+                <td style="padding: 1rem; color: white;">{{ h.outcomes.casualties }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+

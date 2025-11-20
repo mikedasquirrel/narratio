@@ -1,0 +1,400 @@
+{% extends "base.html" %}
+
+{% block title %}Compare Narratives - Universal Narrative Analyzer{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: #f8f9fa;
+    }
+    
+    .compare-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .compare-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .compare-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    
+    .inputs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .input-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .input-label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 15px;
+    }
+    
+    .narrative-textarea {
+        width: 100%;
+        min-height: 250px;
+        padding: 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        resize: vertical;
+        transition: all 0.3s;
+    }
+    
+    .narrative-textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    .char-count {
+        color: #999;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    
+    .compare-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 18px 60px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .compare-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+    }
+    
+    .compare-button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    
+    .results-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .result-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .result-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 20px;
+    }
+    
+    .quality-score {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #667eea;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .winner-badge {
+        display: inline-block;
+        background: #4caf50;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .metric-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .metric-name {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .metric-value {
+        font-weight: 700;
+        color: #667eea;
+    }
+    
+    .loading {
+        display: none;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .loading-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #667eea;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @media (max-width: 768px) {
+        .inputs-grid, .results-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="compare-container">
+    <div class="compare-header">
+        <h1 class="compare-title">⚖️ Compare Narratives</h1>
+        <p style="opacity: 0.9; font-size: 1.2rem;">Analyze two narratives side-by-side to see which one is stronger</p>
+    </div>
+    
+    <div class="inputs-grid">
+        <div class="input-card">
+            <div class="input-label">📝 Narrative A</div>
+            <textarea 
+                id="narrative1" 
+                class="narrative-textarea" 
+                placeholder="Enter first narrative..."
+            ></textarea>
+            <div class="char-count"><span id="count1">0</span> / 10,000 characters</div>
+        </div>
+        
+        <div class="input-card">
+            <div class="input-label">📝 Narrative B</div>
+            <textarea 
+                id="narrative2" 
+                class="narrative-textarea" 
+                placeholder="Enter second narrative..."
+            ></textarea>
+            <div class="char-count"><span id="count2">0</span> / 10,000 characters</div>
+        </div>
+    </div>
+    
+    <button id="compareButton" class="compare-button">
+        ⚖️ Compare Narratives
+    </button>
+    
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <h3>Analyzing both narratives...</h3>
+    </div>
+    
+    <div id="resultsSection" style="display: none;">
+        <h2 style="text-align: center; font-size: 2rem; margin: 60px 0 30px; color: #333;">
+            📊 Comparison Results
+        </h2>
+        
+        <div class="results-grid">
+            <div class="result-card" id="result1"></div>
+            <div class="result-card" id="result2"></div>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center;">
+            <button class="compare-button" onclick="window.location.href='/analyze/compare'">
+                🔄 Compare Different Narratives
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const narrative1 = document.getElementById('narrative1');
+const narrative2 = document.getElementById('narrative2');
+const compareButton = document.getElementById('compareButton');
+const loading = document.getElementById('loading');
+const resultsSection = document.getElementById('resultsSection');
+
+// Character counters
+narrative1.addEventListener('input', () => {
+    document.getElementById('count1').textContent = narrative1.value.length;
+});
+
+narrative2.addEventListener('input', () => {
+    document.getElementById('count2').textContent = narrative2.value.length;
+});
+
+// Compare button
+compareButton.addEventListener('click', async () => {
+    const text1 = narrative1.value.trim();
+    const text2 = narrative2.value.trim();
+    
+    // Validation
+    if (text1.length < 50 || text2.length < 50) {
+        alert('Both narratives must be at least 50 characters');
+        return;
+    }
+    
+    if (text1.length > 10000 || text2.length > 10000) {
+        alert('Both narratives must be under 10,000 characters');
+        return;
+    }
+    
+    // Show loading
+    loading.style.display = 'block';
+    compareButton.disabled = true;
+    resultsSection.style.display = 'none';
+    
+    try {
+        // Analyze both narratives
+        const [result1, result2] = await Promise.all([
+            analyzeNarrative(text1),
+            analyzeNarrative(text2)
+        ]);
+        
+        // Display results
+        displayResults(result1, result2);
+        
+        // Show results
+        loading.style.display = 'none';
+        resultsSection.style.display = 'block';
+        
+        // Scroll to results
+        resultsSection.scrollIntoView({ behavior: 'smooth' });
+        
+    } catch (error) {
+        alert('Analysis failed: ' + error.message);
+        loading.style.display = 'none';
+    } finally {
+        compareButton.disabled = false;
+    }
+});
+
+async function analyzeNarrative(text) {
+    const response = await fetch('/analyze/api/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: text })
+    });
+    
+    const data = await response.json();
+    if (!data.success) {
+        throw new Error(data.error);
+    }
+    return data;
+}
+
+function displayResults(result1, result2) {
+    const q1 = result1.narrative_quality.overall;
+    const q2 = result2.narrative_quality.overall;
+    
+    const winner = q1 > q2 ? 1 : 2;
+    
+    // Result 1
+    document.getElementById('result1').innerHTML = `
+        <div class="result-title">Narrative A</div>
+        ${winner === 1 ? '<span class="winner-badge">🏆 Higher Quality</span>' : ''}
+        <div class="quality-score">${Math.round(q1 * 100)}</div>
+        <div style="text-align: center; color: #666; margin-bottom: 20px;">
+            ${result1.narrative_quality.percentile}th percentile
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Complexity</span>
+            <span class="metric-value">${Math.round(result1.narrative_quality.complexity * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Richness</span>
+            <span class="metric-value">${Math.round(result1.narrative_quality.richness * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Variation</span>
+            <span class="metric-value">${Math.round(result1.narrative_quality.variation * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Peak Strength</span>
+            <span class="metric-value">${Math.round(result1.narrative_quality.peak_strength * 100)}%</span>
+        </div>
+        <div style="margin-top: 20px;">
+            <strong>Patterns Detected:</strong>
+            ${result1.patterns.length > 0 ? result1.patterns.map(p => 
+                `<div style="padding: 8px; background: #f8f9fa; border-radius: 6px; margin-top: 8px;">
+                    ${p.name} (${Math.round(p.confidence * 100)}%)
+                </div>`
+            ).join('') : '<p style="color: #999;">No strong patterns detected</p>'}
+        </div>
+    `;
+    
+    // Result 2
+    document.getElementById('result2').innerHTML = `
+        <div class="result-title">Narrative B</div>
+        ${winner === 2 ? '<span class="winner-badge">🏆 Higher Quality</span>' : ''}
+        <div class="quality-score">${Math.round(q2 * 100)}</div>
+        <div style="text-align: center; color: #666; margin-bottom: 20px;">
+            ${result2.narrative_quality.percentile}th percentile
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Complexity</span>
+            <span class="metric-value">${Math.round(result2.narrative_quality.complexity * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Richness</span>
+            <span class="metric-value">${Math.round(result2.narrative_quality.richness * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Variation</span>
+            <span class="metric-value">${Math.round(result2.narrative_quality.variation * 100)}%</span>
+        </div>
+        <div class="metric-row">
+            <span class="metric-name">Peak Strength</span>
+            <span class="metric-value">${Math.round(result2.narrative_quality.peak_strength * 100)}%</span>
+        </div>
+        <div style="margin-top: 20px;">
+            <strong>Patterns Detected:</strong>
+            ${result2.patterns.length > 0 ? result2.patterns.map(p => 
+                `<div style="padding: 8px; background: #f8f9fa; border-radius: 6px; margin-top: 8px;">
+                    ${p.name} (${Math.round(p.confidence * 100)}%)
+                </div>`
+            ).join('') : '<p style="color: #999;">No strong patterns detected</p>'}
+        </div>
+    `;
+}
+</script>
+{% endblock %}
+

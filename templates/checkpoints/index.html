@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Checkpoint Feeds · Narrative Optimization{% endblock %}
+
+{% block content %}
+<section class="checkpoint-feed">
+    <div class="checkpoint-feed-header">
+        <div>
+            <p class="eyebrow">sports narrative rail</p>
+            <h2>Checkpoint Feed Directory</h2>
+        </div>
+        <div class="feed-meta">
+            <span class="feed-pill">Live after every period/quarter</span>
+        </div>
+    </div>
+
+    <div class="checkpoint-grid">
+        {% for feed in feeds %}
+        <article class="checkpoint-card">
+            <div class="checkpoint-card__header">
+                <div>
+                    <p class="eyebrow">{{ feed.league }}</p>
+                    <h3>{{ feed.title }}</h3>
+                </div>
+            </div>
+            <p class="synthetic-narrative">{{ feed.description }}</p>
+            <a href="/sports/checkpoints/{{ feed.key }}" class="btn btn-primary mt-2">Open feed</a>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
+

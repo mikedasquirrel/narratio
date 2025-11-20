@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Reference | Narrative Optimization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .var-section {
+            margin: 60px 0;
+        }
+        
+        .var-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 25px 0;
+        }
+        
+        .var-symbol {
+            font-size: 72px;
+            font-weight: 200;
+            text-align: center;
+            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px 0;
+        }
+        
+        .var-name {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-transform: lowercase;
+        }
+        
+        .definition-row {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.01);
+            border-left: 3px solid rgba(0, 255, 136, 0.3);
+            border-radius: 4px;
+        }
+        
+        .def-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-cyan);
+            margin-bottom: 8px;
+        }
+        
+        .def-content {
+            font-size: 15px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+        
+        .math-formula {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>variable reference</h1>
+        <p class="subtitle">plain english + mathematical definitions</p>
+        
+        <!-- ORGANISM VARIABLES -->
+        <div class="var-section">
+            <h2 style="text-align: center; font-weight: 200; font-size: 32px; margin-bottom: 40px;">organism variables</h2>
+            <p style="text-align: center; opacity: 0.7; margin-bottom: 50px;">for each instance (company, game, person, entry)</p>
+            
+            {% for var in variables.organism_level %}
+            <div class="var-card">
+                <div class="var-symbol">{{ var.symbol }}</div>
+                <div class="var-name">{{ var.name }}</div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Plain English</div>
+                    <div class="def-content">{{ var.plain_english }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Mathematical Definition</div>
+                    <div class="math-formula">{{ var.mathematical }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Example</div>
+                    <div class="def-content">{{ var.example }}</div>
+                </div>
+                
+                {% if var.extracted_by %}
+                <div class="definition-row">
+                    <div class="def-label">How Obtained</div>
+                    <div class="def-content">{{ var.extracted_by }}</div>
+                </div>
+                {% endif %}
+                
+                {% if var.computed_by %}
+                <div class="definition-row">
+                    <div class="def-label">How Computed</div>
+                    <div class="def-content">{{ var.computed_by }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- DOMAIN VARIABLES -->
+        <div class="var-section">
+            <h2 style="text-align: center; font-weight: 200; font-size: 32px; margin-bottom: 40px;">domain variables</h2>
+            <p style="text-align: center; opacity: 0.7; margin-bottom: 50px;">properties of entire genus/domain</p>
+            
+            {% for var in variables.domain_level %}
+            <div class="var-card" {% if var.symbol == 'Д' %}style="border: 2px solid var(--accent-emerald);"{% endif %}>
+                <div class="var-symbol">{{ var.symbol }}</div>
+                <div class="var-name">{{ var.name }}</div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Plain English</div>
+                    <div class="def-content">{{ var.plain_english }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Mathematical Definition</div>
+                    <div class="math-formula">{{ var.mathematical }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Example</div>
+                    <div class="def-content">{{ var.example }}</div>
+                </div>
+                
+                {% if var.determines %}
+                <div class="definition-row">
+                    <div class="def-label">What It Determines</div>
+                    <div class="def-content">{{ var.determines }}</div>
+                </div>
+                {% endif %}
+                
+                {% if var.interpretation %}
+                <div class="definition-row">
+                    <div class="def-label">Interpretation</div>
+                    <div class="def-content">{{ var.interpretation }}</div>
+                </div>
+                {% endif %}
+                
+                {% if var.status %}
+                <div class="definition-row" style="border-color: #ff8800;">
+                    <div class="def-label" style="color: #ff8800;">Current Status</div>
+                    <div class="def-content">{{ var.status }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- THREE FORCES (θ, λ, ة) -->
+        <div class="var-section">
+            <h2 style="text-align: center; font-weight: 200; font-size: 32px; margin-bottom: 40px;">three forces (Phase 7 Discovery)</h2>
+            <p style="text-align: center; opacity: 0.7; margin-bottom: 50px;">fundamental forces that determine narrative effects</p>
+            
+            <div style="background: rgba(0, 255, 136, 0.03); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 25px; margin-bottom: 40px; text-align: center;">
+                <div style="font-size: 20px; margin-bottom: 15px;">Δ = π × |r| × κ (standard)</div>
+                <div style="font-size: 16px; opacity: 0.8;">Can also be decomposed as: Δ = ة - θ - λ (or ة + θ - λ for prestige domains)</div>
+            </div>
+            
+            {% for var in variables.three_forces %}
+            <div class="var-card">
+                <div class="var-symbol">{{ var.symbol }}</div>
+                <div class="var-name">{{ var.name }}</div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Plain English</div>
+                    <div class="def-content">{{ var.plain_english }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Mathematical Definition</div>
+                    <div class="math-formula">{{ var.mathematical }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Example (Validated Domains)</div>
+                    <div class="def-content">{{ var.example }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Role in Framework</div>
+                    <div class="def-content">{{ var.role }}</div>
+                </div>
+                
+                {% if var.discovered_by %}
+                <div class="definition-row">
+                    <div class="def-label">How Measured</div>
+                    <div class="def-content">{{ var.discovered_by }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- GRAVITATIONAL VARIABLES -->
+        <div class="var-section">
+            <h2 style="text-align: center; font-weight: 200; font-size: 32px; margin-bottom: 40px;">gravitational forces</h2>
+            <p style="text-align: center; opacity: 0.7; margin-bottom: 50px;">attraction between organisms</p>
+            
+            {% for var in variables.gravitational %}
+            <div class="var-card">
+                <div class="var-symbol">{{ var.symbol }}</div>
+                <div class="var-name">{{ var.name }}</div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Plain English</div>
+                    <div class="def-content">{{ var.plain_english }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Mathematical Formula</div>
+                    <div class="math-formula">{{ var.mathematical }}</div>
+                </div>
+                
+                {% if var.creates %}
+                <div class="definition-row">
+                    <div class="def-label">Creates / Determines</div>
+                    <div class="def-content">{{ var.creates }}</div>
+                </div>
+                {% endif %}
+                
+                {% if var.determines %}
+                <div class="definition-row">
+                    <div class="def-label">Determines</div>
+                    <div class="def-content">{{ var.determines }}</div>
+                </div>
+                {% endif %}
+                
+                {% if var.example %}
+                <div class="definition-row">
+                    <div class="def-label">Example</div>
+                    <div class="def-content">{{ var.example }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- THEORETICAL ANCHOR -->
+        <div class="var-section">
+            <h2 style="text-align: center; font-weight: 200; font-size: 32px; margin-bottom: 40px;">theoretical anchor</h2>
+            
+            {% for var in variables.theoretical %}
+            <div class="var-card" style="border: 3px solid #FFD700;">
+                <div class="var-symbol" style="background: linear-gradient(135deg, #FFD700, #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">{{ var.symbol }}</div>
+                <div class="var-name" style="color: #FFD700;">{{ var.name }}</div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Plain English</div>
+                    <div class="def-content">{{ var.plain_english }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Mathematical</div>
+                    <div class="math-formula">{{ var.mathematical }}</div>
+                </div>
+                
+                <div class="definition-row" style="border-color: #FFD700;">
+                    <div class="def-label" style="color: #FFD700;">Status</div>
+                    <div class="def-content">{{ var.status }}</div>
+                </div>
+                
+                <div class="definition-row">
+                    <div class="def-label">Hypothesis</div>
+                    <div class="def-content">{{ var.hypothesis }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- RELATIONSHIPS -->
+        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 40px; margin: 60px 0;">
+            <h2 style="text-align: center; font-weight: 200; margin-bottom: 30px;">how variables relate</h2>
+            
+            <div class="math-formula" style="font-size: 16px; line-height: 2; text-align: center;">
+                <strong>Flow:</strong> ж (genome) → ю (quality) → ❊ (outcome)<br><br>
+                
+                <strong>Main Formula:</strong> Δ = π × |r| × κ<br>
+                <strong>Threshold:</strong> Δ/π > 0.5 means narrative matters<br><br>
+                
+                <strong>Three Forces (Alternative View):</strong><br>
+                Δ = ة - θ - λ (regular domains)<br>
+                Δ = ة + θ - λ (prestige domains)<br><br>
+                
+                <strong>Gravitational System:</strong><br>
+                ф + ة create gravitational field<br>
+                Instances cluster by similarity<br>
+                Ξ represents theoretical perfection<br><br>
+                
+                <strong>Validated on 8 domains (Nov 2025):</strong><br>
+                NHL, NFL, NBA, Golf, Movies, Hurricanes, Supreme Court, IMDB
+            </div>
+        </div>
+        
+        <div style="background: rgba(255, 200, 0, 0.05); border: 1px solid rgba(255, 200, 0, 0.3); border-radius: 12px; padding: 25px; margin: 40px 0;">
+            <h3 style="text-align: center; margin-bottom: 15px;">⚠️ Narrative ≠ Text Story</h3>
+            <p style="text-align: center; line-height: 1.7; opacity: 0.9;">
+                "Narrative" (ж genome) means ALL information about an instance - structured data, relationships, temporal context, nominative features. 
+                Text descriptions are just ONE part of the genome, not the whole narrative.
+                <br><br>
+                <strong>See:</strong> <a href="/framework-story" style="color: var(--accent-emerald);">docs/NARRATIVE_DEFINITION.md</a> for full explanation.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

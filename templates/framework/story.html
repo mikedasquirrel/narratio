@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+        }
+        
+        .reading-time {
+            margin-top: 20px;
+            color: rgba(0, 255, 255, 0.6);
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+        
+        .story-content {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 60px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .story-content h2 {
+            color: var(--accent-cyan);
+            font-size: 2.5em;
+            font-weight: 300;
+            margin: 60px 0 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+        }
+        
+        .story-content h3 {
+            color: var(--accent-purple);
+            font-size: 1.8em;
+            font-weight: 400;
+            margin: 40px 0 20px 0;
+        }
+        
+        .story-content h4 {
+            color: rgba(0, 255, 255, 0.8);
+            font-size: 1.3em;
+            font-weight: 500;
+            margin: 30px 0 15px 0;
+        }
+        
+        .story-content p {
+            margin: 20px 0;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1em;
+        }
+        
+        .story-content blockquote {
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 30px;
+            margin: 30px 0;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3em;
+        }
+        
+        .story-content code {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: var(--accent-cyan);
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        
+        .story-content pre {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        .story-content pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-cyan);
+        }
+        
+        .story-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .story-content th {
+            background: rgba(0, 255, 255, 0.15);
+            color: var(--accent-cyan);
+            padding: 15px;
+            text-align: left;
+            font-weight: 500;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+        }
+        
+        .story-content td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .story-content tr:hover {
+            background: rgba(255, 0, 255, 0.05);
+        }
+        
+        .story-content ul, .story-content ol {
+            margin: 20px 0 20px 40px;
+        }
+        
+        .story-content li {
+            margin: 10px 0;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .story-content strong {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .story-content em {
+            color: var(--accent-cyan);
+            font-style: italic;
+        }
+        
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-cyan) 100%);
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .nav-link {
+            padding: 15px 30px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid rgba(0, 255, 255, 0.2);
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progress"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>{{ title }}</h1>
+            <div class="subtitle">A journey from a simple question to understanding the architecture of reality</div>
+            <div class="reading-time">Reading time: 90 minutes</div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="/framework-explorer" class="nav-link">Three-Force Explorer</a>
+            <a href="/framework-quickref" class="nav-link">Quick Reference</a>
+            <a href="/three-realms" class="nav-link">Three Realms Visual</a>
+        </div>
+        
+        <div class="story-content">
+            {{ story_html|safe }}
+        </div>
+        
+        <div class="nav-links">
+            <a href="/framework-explorer" class="nav-link">Explore the Model →</a>
+            <a href="/" class="nav-link">← Back Home</a>
+        </div>
+    </div>
+    
+    <script>
+        // Reading progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress').style.width = scrolled + '%';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

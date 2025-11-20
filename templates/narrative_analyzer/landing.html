@@ -1,0 +1,592 @@
+{% extends "base.html" %}
+
+{% block title %}Universal Narrative Analyzer - Narrative Optimization Framework{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+        opacity: 0.95;
+        max-width: 800px;
+        margin: 0 auto 30px;
+    }
+    
+    .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .stat-item {
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: block;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .analyzer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .input-section {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .narrative-input {
+        width: 100%;
+        min-height: 300px;
+        padding: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-family: 'Georgia', serif;
+        line-height: 1.8;
+        resize: vertical;
+        transition: all 0.3s;
+    }
+    
+    .narrative-input:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    .input-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        color: #666;
+        font-size: 0.9rem;
+    }
+    
+    .char-count {
+        font-weight: 600;
+    }
+    
+    .analyze-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 18px 60px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        display: block;
+        margin: 30px auto 0;
+    }
+    
+    .analyze-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+    }
+    
+    .analyze-button:active {
+        transform: translateY(0);
+    }
+    
+    .analyze-button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
+    
+    .loading-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .loading-content {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+    }
+    
+    .loading-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #667eea;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .examples-section {
+        background: #f8f9fa;
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .example-card {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+    }
+    
+    .example-card:hover {
+        border-color: #667eea;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .example-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+    
+    .example-text {
+        color: #666;
+        font-style: italic;
+        line-height: 1.6;
+    }
+    
+    .example-badge {
+        display: inline-block;
+        background: #667eea;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .feature-card {
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .feature-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .feature-description {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    .error-message {
+        background: #fee;
+        border: 2px solid #f88;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+        color: #c33;
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+        }
+        
+        .input-section {
+            padding: 25px;
+        }
+        
+        .analyze-button {
+            padding: 15px 40px;
+            font-size: 1rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="analyzer-container">
+        <h1 class="hero-title">Universal Narrative Analyzer</h1>
+        <p class="hero-subtitle">
+            Analyze any narrative using 55 transformers across 41 domains.
+            Get instant insights, cross-domain predictions, and actionable recommendations.
+        </p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">55</span>
+                <span class="stat-label">Transformers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">41</span>
+                <span class="stat-label">Domains</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Features</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Possibilities</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="analyzer-container">
+    <div class="input-section">
+        <h2 class="section-title">📝 Enter Your Narrative</h2>
+        <p style="color: #666; margin-bottom: 25px;">
+            Paste any story, pitch, game preview, profile, or narrative. Minimum 50 characters, maximum 10,000.
+        </p>
+        
+        <textarea 
+            id="narrativeInput" 
+            class="narrative-input" 
+            placeholder="Paste your narrative here...
+
+Examples:
+• A startup pitch describing your vision
+• A sports game preview or matchup analysis
+• A movie synopsis or story idea
+• A personal profile or bio
+• Any narrative you want analyzed"
+        ></textarea>
+        
+        <div class="input-meta">
+            <span class="char-count">
+                <span id="charCount">0</span> / 10,000 characters
+            </span>
+            <span id="wordCount">0 words</span>
+        </div>
+        
+        <button id="analyzeButton" class="analyze-button">
+            🔬 Analyze Narrative
+        </button>
+        
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+    
+    <div class="examples-section">
+        <h2 class="section-title">💡 Example Narratives</h2>
+        <p style="color: #666; margin-bottom: 25px;">
+            Click any example to analyze it instantly
+        </p>
+        
+        <div class="example-card" data-text="We are revolutionizing the way people interact with AI through natural language understanding. Our founding team combines 20 years of experience from Google, Stanford, and OpenAI. We've built a product that makes AI accessible to everyone, regardless of technical background. In just 6 months, we've grown to 10,000 active users and $500K ARR. Our vision is to democratize artificial intelligence, putting the power of advanced AI into the hands of individuals and small businesses. We're not just building a product—we're building a movement.">
+            <div class="example-title">🚀 Startup Pitch</div>
+            <div class="example-text">
+                "We are revolutionizing the way people interact with AI... Our founding team combines 20 years of experience from Google, Stanford, and OpenAI..."
+            </div>
+            <span class="example-badge">Startups Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="The Lakers face the Celtics tonight in a historic rivalry matchup that could define both teams' seasons. LeBron James returns after missing three games with a knee injury, facing a young Celtics team riding a 7-game winning streak. Both teams are desperate for playoff positioning with just 15 games remaining. The Celtics' fast-paced offense will test the Lakers' aging roster, while LA's experience could be decisive in crunch time. This isn't just a game—it's a clash of basketball philosophies, old guard versus new.">
+            <div class="example-title">🏀 Sports Preview</div>
+            <div class="example-text">
+                "The Lakers face the Celtics tonight in a historic rivalry matchup... LeBron returns after missing three games, facing a young Celtics team on a 7-game streak..."
+            </div>
+            <span class="example-badge">NBA Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="In a world where memories can be bought and sold, a young programmer named Ada discovers she has the rare ability to manipulate reality through code. As powerful corporations hunt her to weaponize her gift, Ada must decide whether to use her power to liberate humanity from digital tyranny or protect the people she loves. Joined by a rogue memory dealer and a conflicted corporate insider, Ada races against time to prevent her ability from falling into the wrong hands. But the deeper she goes, the more she realizes that reality itself may be nothing more than someone else's program.">
+            <div class="example-title">🎬 Movie Synopsis</div>
+            <div class="example-text">
+                "A young programmer discovers she has the ability to manipulate reality through code. As corporations hunt her, she must decide whether to use her power to liberate humanity..."
+            </div>
+            <span class="example-badge">Movies Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="Sarah Chen is a product designer who believes that technology should amplify human creativity, not replace it. After 8 years at major tech companies, she combines deep empathy for users with rigorous design thinking. She's passionate about building tools that help people tell their stories and express their unique perspectives. Outside of work, Sarah mentors aspiring designers and writes about the intersection of technology and humanity. Her personal mission: create products that make people feel more capable, not more dependent.">
+            <div class="example-title">👤 Personal Profile</div>
+            <div class="example-text">
+                "Sarah Chen is a product designer who believes that technology should amplify human creativity... After 8 years at major tech companies, she combines deep empathy..."
+            </div>
+            <span class="example-badge">Character Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="In the final round of the Masters, Tiger Woods finds himself three strokes behind with just six holes remaining. The weight of history presses down—it's been five years since his last major championship win. The Augusta crowd knows they're witnessing something special as Woods attacks each pin with surgical precision. His comeback story writes itself with every birdie, every fist pump, every roar from the gallery. This isn't just golf. This is redemption in real time.">
+            <div class="example-title">⛳ Golf Tournament</div>
+            <div class="example-text">
+                "Tiger Woods finds himself three strokes behind with six holes remaining. The weight of history presses down—it's been five years since his last major championship..."
+            </div>
+            <span class="example-badge">Golf Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="In tonight's poker final table, amateur player Chris Moneymaker faces professional legends with decades of experience. He's the underdog everyone's rooting for—a $40 satellite qualifier who turned his online entry into a seat at poker's biggest stage. Every bluff tells a story. Every all-in decision carries the weight of his mortgage, his family's future, his one shot at the American dream. This is more than poker. This is narrative poker, where the story matters as much as the cards.">
+            <div class="example-title">🃏 Poker Tournament</div>
+            <div class="example-text">
+                "Amateur player Chris Moneymaker faces professional legends... A $40 satellite qualifier who turned his online entry into poker's biggest stage..."
+            </div>
+            <span class="example-badge">Poker Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="The Undertaker's undefeated WrestleMania streak stands at 21-0. For two decades, this narrative has defined WWE's biggest event. Tonight's challenger isn't just fighting The Undertaker—they're fighting legacy itself, fighting mythology, fighting the weight of 21 years of storytelling. The crowd knows the outcome before the bell rings, yet they're captivated. Because in WWE, the story is the substance. The narrative is the reality. Entertainment elevated to art through pure, unapologetic storytelling.">
+            <div class="example-title">🤼 WWE Storyline</div>
+            <div class="example-text">
+                "The Undertaker's undefeated WrestleMania streak stands at 21-0... Tonight's challenger isn't just fighting The Undertaker—they're fighting legacy itself, fighting mythology..."
+            </div>
+            <span class="example-badge">WWE Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="'Nomadland' was a quiet film about grief and survival, made for just $5 million by a director telling a story that mattered to her. It had no stars, no special effects, no marketing blitz. What it had was authenticity. What it had was humanity. What it had was Frances McDormand embodying a woman who loses everything and finds herself. The Academy recognized not just a film, but a moment. Not just entertainment, but truth. This is why narrative matters—even in objective domains, stories find a way.">
+            <div class="example-title">🏆 Oscar Winner</div>
+            <div class="example-text">
+                "'Nomadland' was a quiet film about grief and survival, made for just $5 million... It had no stars, no special effects, no marketing blitz. What it had was authenticity..."
+            </div>
+            <span class="example-badge">Oscars Domain</span>
+        </div>
+        
+        <div class="example-card" data-text="We hold that the Constitution protects a woman's right to choose whether to terminate her pregnancy. This right is fundamental and cannot be infringed without compelling state interest. The State argues public health concerns, but the evidence shows medical procedures are safe. In prior cases, we have established that fundamental rights require strict scrutiny. Although the dissent raises concerns about moral implications, we find these arguments insufficient to override constitutional protection. The liberty interest at stake is profound—the right to make intimate personal decisions free from government intrusion. Following our precedent in Griswold and Eisenstadt, we conclude that this decision belongs to the individual, not the state.">
+            <div class="example-title">⚖️ Supreme Court Opinion</div>
+            <div class="example-text">
+                "We hold that the Constitution protects a woman's right to choose... This right is fundamental and cannot be infringed without compelling state interest..."
+            </div>
+            <span class="example-badge">Supreme Court Domain</span>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="/analyze/examples" style="display: inline-block; padding: 15px 40px; background: white; color: #667eea; border: 2px solid #667eea; border-radius: 50px; text-decoration: none; font-weight: 700; transition: all 0.3s;">
+            📚 View All Examples
+        </a>
+        <a href="/analyze/compare" style="display: inline-block; padding: 15px 40px; background: white; color: #667eea; border: 2px solid #667eea; border-radius: 50px; text-decoration: none; font-weight: 700; transition: all 0.3s; margin-left: 15px;">
+            ⚖️ Compare Mode
+        </a>
+        <a href="/analyze/api" style="display: inline-block; padding: 15px 40px; background: white; color: #667eea; border: 2px solid #667eea; border-radius: 50px; text-decoration: none; font-weight: 700; transition: all 0.3s; margin-left: 15px;">
+            📖 API Docs
+        </a>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-title">Quality Score</div>
+            <div class="feature-description">
+                Get a comprehensive narrative quality score (ю) with percentile ranking
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <div class="feature-title">Cross-Domain Predictions</div>
+            <div class="feature-description">
+                See how your narrative would perform in startups, movies, sports, and more
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🎭</div>
+            <div class="feature-title">Pattern Detection</div>
+            <div class="feature-description">
+                Identify hero's journey, underdog, rivalry, and other universal patterns
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <div class="feature-title">Feature Breakdown</div>
+            <div class="feature-description">
+                Understand which narrative features are strongest and weakest
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <div class="feature-title">Recommendations</div>
+            <div class="feature-description">
+                Get actionable advice for improving your narrative
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <div class="feature-title">Archetype Matching</div>
+            <div class="feature-description">
+                Match your narrative to classic archetypes and story types
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h3>Analyzing Your Narrative</h3>
+        <p>Running 55 transformers across all domains...</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const narrativeInput = document.getElementById('narrativeInput');
+const charCount = document.getElementById('charCount');
+const wordCount = document.getElementById('wordCount');
+const analyzeButton = document.getElementById('analyzeButton');
+const errorMessage = document.getElementById('errorMessage');
+const loadingOverlay = document.getElementById('loadingOverlay');
+
+// Update character and word count
+narrativeInput.addEventListener('input', function() {
+    const text = this.value;
+    const chars = text.length;
+    const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+    
+    charCount.textContent = chars;
+    wordCount.textContent = words + ' words';
+    
+    // Update char count color
+    if (chars > 10000) {
+        charCount.style.color = '#c33';
+    } else if (chars < 50) {
+        charCount.style.color = '#999';
+    } else {
+        charCount.style.color = '#667eea';
+    }
+});
+
+// Example card click handlers
+document.querySelectorAll('.example-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const text = this.dataset.text;
+        narrativeInput.value = text;
+        narrativeInput.dispatchEvent(new Event('input'));
+        narrativeInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+});
+
+// Analyze button
+analyzeButton.addEventListener('click', async function() {
+    const text = narrativeInput.value.trim();
+    
+    // Validation
+    if (text.length < 50) {
+        showError('Please enter at least 50 characters');
+        return;
+    }
+    
+    if (text.length > 10000) {
+        showError('Please keep your narrative under 10,000 characters');
+        return;
+    }
+    
+    // Show loading
+    loadingOverlay.style.display = 'flex';
+    analyzeButton.disabled = true;
+    errorMessage.style.display = 'none';
+    
+    try {
+        const response = await fetch('/analyze/api/analyze', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text: text })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            // Redirect to results page
+            window.location.href = '/analyze/results';
+        } else {
+            showError(data.error || 'Analysis failed');
+            loadingOverlay.style.display = 'none';
+            analyzeButton.disabled = false;
+        }
+    } catch (error) {
+        showError('Network error: ' + error.message);
+        loadingOverlay.style.display = 'none';
+        analyzeButton.disabled = false;
+    }
+});
+
+function showError(message) {
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'block';
+    errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Enter key to analyze (with Ctrl/Cmd)
+narrativeInput.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        analyzeButton.click();
+    }
+});
+</script>
+{% endblock %}
+

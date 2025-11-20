@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .catalog-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+        
+        .category-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .category-header {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .transformer-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        
+        .transformer-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .transformer-name {
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .transformer-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .meta-badge {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            font-size: 32px;
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        .stat-box p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="catalog-container">
+        <div class="page-header mb-4">
+            <h1><i class="fas fa-layer-group"></i> Transformer Catalog</h1>
+            <p class="text-muted">Complete registry of all {{ catalog.summary.total_transformers }} narrative transformers</p>
+        </div>
+        
+        <div class="summary-stats">
+            <div class="stat-box">
+                <h3>{{ catalog.summary.total_transformers }}</h3>
+                <p>Total Transformers</p>
+            </div>
+            <div class="stat-box">
+                <h3>{{ catalog.summary.by_workspace.main }}</h3>
+                <p>Main Workspace</p>
+            </div>
+            <div class="stat-box">
+                <h3>{{ catalog.summary.by_workspace.crypto }}</h3>
+                <p>Crypto-Specific</p>
+            </div>
+            <div class="stat-box">
+                <h3>{{ catalog.summary.by_category | length }}</h3>
+                <p>Categories</p>
+            </div>
+        </div>
+        
+        {% for category, transformers in catalog.transformers.items() %}
+        <div class="category-section">
+            <h2 class="category-header">
+                <i class="fas fa-folder-open"></i> {{ category|replace('_', ' ')|title }}
+                <span class="badge bg-primary ms-2">{{ transformers|length }} transformers</span>
+            </h2>
+            
+            {% for transformer in transformers %}
+            <div class="transformer-card">
+                <div class="transformer-name">
+                    <i class="fas fa-cog"></i> {{ transformer.name }}
+                </div>
+                <p class="text-muted mb-2">{{ transformer.description }}</p>
+                
+                <div class="transformer-meta">
+                    <span class="meta-badge bg-primary text-white">
+                        <i class="fas fa-th"></i> {{ transformer.feature_count }} features
+                    </span>
+                    <span class="meta-badge bg-info text-white">
+                        <i class="fas fa-database"></i> {{ transformer.data_type }}
+                    </span>
+                    <span class="meta-badge bg-{% if transformer.computational_cost == 'low' %}success{% elif transformer.computational_cost == 'medium' %}warning{% else %}danger{% endif %} text-white">
+                        <i class="fas fa-tachometer-alt"></i> {{ transformer.computational_cost }} cost
+                    </span>
+                    {% if transformer.phase %}
+                    <span class="meta-badge bg-secondary text-white">
+                        <i class="fas fa-flag"></i> Phase {{ transformer.phase }}
+                    </span>
+                    {% endif %}
+                </div>
+                
+                {% if transformer.best_domains %}
+                <div class="mt-2">
+                    <small class="text-muted">
+                        <i class="fas fa-star"></i> Best for: {{ transformer.best_domains|join(', ') }}
+                    </small>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        
+        <div class="text-center mt-4">
+            <a href="/transformers/analysis" class="btn btn-primary me-2">
+                <i class="fas fa-chart-bar"></i> View Analysis
+            </a>
+            <a href="/" class="btn btn-outline-primary">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

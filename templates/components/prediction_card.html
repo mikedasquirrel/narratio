@@ -1,0 +1,183 @@
+<!-- Prediction Card Component - Reusable for displaying individual game predictions -->
+<div class="prediction-card-component" data-game-id="{{ game_id }}">
+    <style>
+        .prediction-card-component {
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        
+        .pred-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3e3e42;
+            margin-bottom: 20px;
+        }
+        
+        .pred-match-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #4FC3F7;
+        }
+        
+        .pred-outcome-badge {
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .pred-win { background: #4CAF50; color: white; }
+        .pred-loss { background: #f44336; color: white; }
+        
+        .pred-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .pred-metric {
+            background: #2d2d30;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .pred-metric-label {
+            color: #858585;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+        
+        .pred-metric-value {
+            color: #4FC3F7;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        .pred-confidence-bar {
+            background: #3e3e42;
+            height: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .pred-confidence-fill {
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        
+        .pred-features-summary {
+            background: #1e1e1e;
+            border: 1px solid #4FC3F7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .pred-feature-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #3e3e42;
+        }
+        
+        .pred-feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .pred-feature-name {
+            color: #9CDCFE;
+            font-weight: 500;
+        }
+        
+        .pred-feature-value {
+            color: #CE9178;
+            font-weight: bold;
+        }
+        
+        .pred-expand-button {
+            background: #007ACC;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .pred-expand-button:hover {
+            background: #005a9e;
+        }
+    </style>
+    
+    <div class="pred-header">
+        <div class="pred-match-title">{{ match_description }}</div>
+        <div class="pred-outcome-badge pred-{{ outcome|lower }}">{{ outcome }}</div>
+    </div>
+    
+    <div class="pred-grid">
+        <div class="pred-metric">
+            <div class="pred-metric-label">Predicted Winner</div>
+            <div class="pred-metric-value">{{ predicted_winner }}</div>
+        </div>
+        <div class="pred-metric">
+            <div class="pred-metric-label">Actual Winner</div>
+            <div class="pred-metric-value">{{ actual_winner }}</div>
+        </div>
+        <div class="pred-metric">
+            <div class="pred-metric-label">Confidence</div>
+            <div class="pred-metric-value">{{ (confidence * 100)|round(1) }}%</div>
+        </div>
+        <div class="pred-metric">
+            <div class="pred-metric-label">Bet Result</div>
+            <div class="pred-metric-value" style="color: {{ '#4CAF50' if outcome == 'WIN' else '#f44336' }};">
+                {{ bet_result }}
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <strong style="color: #4FC3F7;">Confidence Level:</strong>
+        <div class="pred-confidence-bar">
+            <div class="pred-confidence-fill" style="width: {{ (confidence * 100)|round }}%;">
+                {{ (confidence * 100)|round }}%
+            </div>
+        </div>
+    </div>
+    
+    <div class="pred-features-summary">
+        <strong style="color: #4FC3F7;">Top Contributing Features:</strong>
+        <div style="margin-top: 10px;">
+            {% for feature in top_features %}
+            <div class="pred-feature-item">
+                <span class="pred-feature-name">{{ loop.index }}. {{ feature.name }}</span>
+                <span class="pred-feature-value">{{ feature.value }} ({{ feature.contribution }})</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div style="margin-top: 15px; font-size: 0.9em; color: #858585;">
+        <strong>Feature Dimensions:</strong> {{ feature_count }} total ({{ archetype_features }} archetype + {{ statistical_features }} statistical)
+    </div>
+    
+    <button class="pred-expand-button" onclick="location.href='/betting/predictions/{{ domain }}#game-{{ game_id }}'">
+        View Full Feature Breakdown
+    </button>
+</div>
+

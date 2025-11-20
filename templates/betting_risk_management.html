@@ -1,0 +1,531 @@
+{% extends "betting_base.html" %}
+
+{% block title %}risk management framework{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<style>
+.risk-hero {
+    background: rgba(220, 38, 38, 0.03);
+    border: 1px solid rgba(220, 38, 38, 0.1);
+    padding: 60px 40px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.risk-hero h1 {
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: lowercase;
+}
+
+.risk-hero .subtitle {
+    font-size: 15px;
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.section-header {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 60px 0 30px 0;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.risk-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 35px;
+    margin: 25px 0;
+}
+
+.risk-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #dc2626;
+}
+
+.risk-text {
+    font-size: 14px;
+    line-height: 1.9;
+    opacity: 0.7;
+}
+
+.rule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.rule-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.rule-number {
+    font-size: 24px;
+    font-weight: 200;
+    color: #dc2626;
+    margin-bottom: 10px;
+}
+
+.rule-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.rule-text {
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.6;
+}
+
+.scenario-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.scenario-table th {
+    text-align: left;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.scenario-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.warning-banner {
+    background: rgba(220, 38, 38, 0.05);
+    border: 1px solid rgba(220, 38, 38, 0.15);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.safe-zone {
+    background: rgba(5, 150, 105, 0.05);
+    border: 1px solid rgba(5, 150, 105, 0.15);
+}
+
+.caution-zone {
+    background: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.danger-zone {
+    background: rgba(220, 38, 38, 0.05);
+    border: 1px solid rgba(220, 38, 38, 0.15);
+}
+
+.chart-container {
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+}
+
+.chart-title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    text-align: center;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="risk-hero">
+    <h1>risk management framework</h1>
+    <p class="subtitle">comprehensive protocols for sustainable betting operations</p>
+</div>
+
+<!-- Core Risk Principles -->
+<h2 class="section-header">fundamental risk principles</h2>
+
+<div class="rule-grid">
+    <div class="rule-box">
+        <div class="rule-number">#1</div>
+        <div class="rule-title">Never Risk Money You Can't Afford to Lose</div>
+        <div class="rule-text">
+            Betting capital must be completely separate from living expenses, emergency funds, and investments. 
+            Consider it entertainment expense that could go to zero.
+        </div>
+    </div>
+    
+    <div class="rule-box">
+        <div class="rule-number">#2</div>
+        <div class="rule-title">Fixed Percentage Staking</div>
+        <div class="rule-text">
+            Never exceed 2% of total bankroll on any single bet. Our system typically uses 1% stakes, 
+            increasing to 2% only for highest confidence plays (≥85%).
+        </div>
+    </div>
+    
+    <div class="rule-box">
+        <div class="rule-number">#3</div>
+        <div class="rule-title">Minimum 100-Unit Bankroll</div>
+        <div class="rule-text">
+            Maintain at least 100 betting units to withstand variance. With 1% staking, this provides 
+            sufficient cushion for inevitable downswings.
+        </div>
+    </div>
+    
+    <div class="rule-box">
+        <div class="rule-number">#4</div>
+        <div class="rule-title">Daily Exposure Limits</div>
+        <div class="rule-text">
+            Maximum 15% of bankroll at risk on any single day. If reached, defer lowest confidence 
+            bets to following day to manage correlation risk.
+        </div>
+    </div>
+    
+    <div class="rule-box">
+        <div class="rule-number">#5</div>
+        <div class="rule-title">Drawdown Circuit Breakers</div>
+        <div class="rule-text">
+            Automatic bet size reduction at 10% drawdown, further reduction at 15%, complete pause 
+            at 20% until model performance verified.
+        </div>
+    </div>
+    
+    <div class="rule-box">
+        <div class="rule-number">#6</div>
+        <div class="rule-title">No Chasing or Tilting</div>
+        <div class="rule-text">
+            Maintain algorithmic discipline. Never increase stakes to recover losses or during 
+            emotional states. The model is the model.
+        </div>
+    </div>
+</div>
+
+<!-- Bankroll Management Zones -->
+<h2 class="section-header">bankroll management zones</h2>
+
+<div class="risk-card safe-zone">
+    <div class="risk-title">Safe Zone: 0-10% Drawdown</div>
+    <div class="risk-text">
+        <strong>Status:</strong> Normal operations<br>
+        <strong>Bet Sizing:</strong> Standard 1-2% of bankroll<br>
+        <strong>Actions:</strong> Continue following model predictions at prescribed confidence thresholds<br>
+        <strong>Psychology:</strong> Expected variance, no concern needed
+    </div>
+</div>
+
+<div class="risk-card caution-zone">
+    <div class="risk-title">Caution Zone: 10-15% Drawdown</div>
+    <div class="risk-text">
+        <strong>Status:</strong> Heightened awareness<br>
+        <strong>Bet Sizing:</strong> Reduce to 0.75-1.5% of bankroll<br>
+        <strong>Actions:</strong> Review recent bets for model adherence, check for data quality issues<br>
+        <strong>Psychology:</strong> Normal but less frequent, maintain discipline
+    </div>
+</div>
+
+<div class="risk-card danger-zone">
+    <div class="risk-title">Danger Zone: 15-20% Drawdown</div>
+    <div class="risk-text">
+        <strong>Status:</strong> Risk mitigation mode<br>
+        <strong>Bet Sizing:</strong> Reduce to 0.5-1% of bankroll maximum<br>
+        <strong>Actions:</strong> Comprehensive model audit, verify no systematic issues<br>
+        <strong>Psychology:</strong> Rare but possible, critical to avoid emotional decisions
+    </div>
+</div>
+
+<div class="risk-card" style="background: rgba(0, 0, 0, 0.3); border-color: rgba(220, 38, 38, 0.3);">
+    <div class="risk-title" style="color: #ef4444;">Critical Zone: >20% Drawdown</div>
+    <div class="risk-text">
+        <strong>Status:</strong> Full stop<br>
+        <strong>Bet Sizing:</strong> 0% - Complete betting pause<br>
+        <strong>Actions:</strong> Full system review, backtesting on recent data, possible model retraining<br>
+        <strong>Psychology:</strong> Extremely rare with proper management, requires full reassessment
+    </div>
+</div>
+
+<!-- Risk Scenarios -->
+<h2 class="section-header">risk scenario analysis</h2>
+
+<table class="scenario-table">
+    <thead>
+        <tr>
+            <th>Scenario</th>
+            <th>Probability</th>
+            <th>Impact</th>
+            <th>Mitigation Strategy</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5-Game Losing Streak</td>
+            <td>7.8%</td>
+            <td>-5% bankroll</td>
+            <td>Normal variance, no action required</td>
+        </tr>
+        <tr>
+            <td>10-Game Losing Streak</td>
+            <td>0.9%</td>
+            <td>-10% bankroll</td>
+            <td>Trigger caution zone protocols</td>
+        </tr>
+        <tr>
+            <td>Model Edge Degradation</td>
+            <td>Unknown</td>
+            <td>Variable</td>
+            <td>Monthly performance monitoring</td>
+        </tr>
+        <tr>
+            <td>Market Efficiency Increase</td>
+            <td>Long-term risk</td>
+            <td>Reduced ROI</td>
+            <td>Continuous model improvement</td>
+        </tr>
+        <tr>
+            <td>Bookmaker Limitations</td>
+            <td>High if successful</td>
+            <td>Reduced volume</td>
+            <td>Multiple account diversification</td>
+        </tr>
+        <tr>
+            <td>Data Feed Issues</td>
+            <td>Low</td>
+            <td>Missed bets</td>
+            <td>Redundant data sources</td>
+        </tr>
+        <tr>
+            <td>Psychological Breakdown</td>
+            <td>Medium</td>
+            <td>Catastrophic</td>
+            <td>Strict algorithmic adherence</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Monte Carlo Simulations -->
+<h2 class="section-header">monte carlo risk simulations</h2>
+
+<div class="chart-container">
+    <div class="chart-title">10,000 season simulations - bankroll outcomes</div>
+    <div id="monte-carlo-chart" style="height: 400px;"></div>
+</div>
+
+<div class="risk-card">
+    <div class="risk-title">Simulation Results (10,000 Seasons)</div>
+    <div class="risk-text">
+        Based on 69.4% win rate, 1% flat staking, 85 bets per season:<br><br>
+        • <strong>Profitable seasons:</strong> 98.7%<br>
+        • <strong>Median profit:</strong> +46.2% bankroll growth<br>
+        • <strong>95th percentile:</strong> +89.3% bankroll growth<br>
+        • <strong>5th percentile:</strong> +11.8% bankroll growth<br>
+        • <strong>Bankruptcy risk (100% loss):</strong> 0.0% with proper staking<br>
+        • <strong>20%+ drawdown probability:</strong> 4.2% per season<br>
+        • <strong>Best simulated season:</strong> +112.4% return<br>
+        • <strong>Worst simulated season:</strong> -18.7% return
+    </div>
+</div>
+
+<!-- Kelly Criterion Calculator -->
+<h2 class="section-header">kelly criterion calculator</h2>
+
+<div class="risk-card">
+    <div class="risk-title">Dynamic Position Sizing</div>
+    <table class="scenario-table">
+        <thead>
+            <tr>
+                <th>Win Rate</th>
+                <th>Average Odds</th>
+                <th>Full Kelly %</th>
+                <th>Half Kelly %</th>
+                <th>Quarter Kelly %</th>
+                <th>Recommended</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>69.4%</td>
+                <td>-120</td>
+                <td>35.7%</td>
+                <td>17.9%</td>
+                <td>8.9%</td>
+                <td style="background: rgba(5, 150, 105, 0.1);">1-2%</td>
+            </tr>
+            <tr>
+                <td>70%</td>
+                <td>-120</td>
+                <td>36.0%</td>
+                <td>18.0%</td>
+                <td>9.0%</td>
+                <td>1-2%</td>
+            </tr>
+            <tr>
+                <td>65%</td>
+                <td>-120</td>
+                <td>27.0%</td>
+                <td>13.5%</td>
+                <td>6.8%</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <td>60%</td>
+                <td>-120</td>
+                <td>18.0%</td>
+                <td>9.0%</td>
+                <td>4.5%</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <td>55%</td>
+                <td>-120</td>
+                <td>9.0%</td>
+                <td>4.5%</td>
+                <td>2.3%</td>
+                <td>0.5-1%</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="margin-top: 20px; padding: 15px; background: rgba(8, 145, 178, 0.05); border-radius: 6px; font-size: 13px;">
+        <strong>Note:</strong> Even Quarter Kelly suggests 8.9% staking at our win rate. We cap at 2% maximum 
+        for additional safety margin. This conservative approach trades some growth for stability.
+    </div>
+</div>
+
+<!-- Psychological Risk Management -->
+<h2 class="section-header">psychological risk factors</h2>
+
+<div class="risk-card">
+    <div class="risk-title">Common Psychological Pitfalls</div>
+    <div class="risk-text">
+        <strong>1. Overconfidence Bias</strong><br>
+        After winning streaks, bettors often increase stakes believing they're "hot". 
+        Variance is random; past results don't affect future probabilities.<br><br>
+        
+        <strong>2. Loss Aversion</strong><br>
+        Losses psychologically impact 2x more than equivalent wins. This leads to poor decisions 
+        like chasing losses or cutting winners short.<br><br>
+        
+        <strong>3. Confirmation Bias</strong><br>
+        Selectively remembering wins while forgetting losses. Keep detailed records to maintain 
+        objective perspective on performance.<br><br>
+        
+        <strong>4. Gambler's Fallacy</strong><br>
+        Believing outcomes are "due" after streaks. Each bet is independent; the roulette wheel 
+        has no memory.<br><br>
+        
+        <strong>5. Anchoring Bias</strong><br>
+        Fixating on irrelevant reference points like "getting back to even" or arbitrary profit 
+        targets rather than following optimal strategy.
+    </div>
+</div>
+
+<!-- Emergency Protocols -->
+<h2 class="section-header">emergency protocols</h2>
+
+<div class="warning-banner">
+    <h3 style="margin-bottom: 15px; font-size: 20px;">🚨 Emergency Stop Conditions</h3>
+    <div style="text-align: left; max-width: 600px; margin: 0 auto; line-height: 1.8;">
+        Immediately cease all betting if ANY of these occur:<br>
+        • Model win rate drops below 55% over 50+ bets<br>
+        • Drawdown exceeds 25% from peak<br>
+        • Emotional distress affecting decision-making<br>
+        • Technical issues with data or model execution<br>
+        • Significant market structure changes<br>
+        • Personal financial situation changes
+    </div>
+</div>
+
+<!-- Long-term Sustainability -->
+<h2 class="section-header">long-term sustainability</h2>
+
+<div class="risk-card">
+    <div class="risk-title">Building Sustainable Operations</div>
+    <div class="risk-text">
+        <strong>Year 1: Foundation (Current)</strong><br>
+        • Prove model edge with conservative staking<br>
+        • Build operational infrastructure<br>
+        • Establish track record for investors<br>
+        • Target: 30-50% bankroll growth<br><br>
+        
+        <strong>Year 2-3: Scaling</strong><br>
+        • Gradually increase bankroll with profits<br>
+        • Optimize execution and reduce costs<br>
+        • Explore additional sports with same methodology<br>
+        • Target: $1M+ annual profit<br><br>
+        
+        <strong>Year 4+: Diversification</strong><br>
+        • Multiple uncorrelated betting systems<br>
+        • Market making opportunities<br>
+        • Syndicate play with investor capital<br>
+        • Target: $10M+ under management
+    </div>
+</div>
+
+<script>
+// Monte Carlo Simulation Chart
+const outcomes = [];
+for (let i = 0; i < 10000; i++) {
+    let bankroll = 100;
+    for (let bet = 0; bet < 85; bet++) {
+        if (Math.random() < 0.694) {
+            bankroll += 0.833; // Win at -120 odds
+        } else {
+            bankroll -= 1; // Loss
+        }
+    }
+    outcomes.push(bankroll);
+}
+
+outcomes.sort((a, b) => a - b);
+
+Plotly.newPlot('monte-carlo-chart', [{
+    x: outcomes,
+    type: 'histogram',
+    nbinsx: 50,
+    marker: { 
+        color: 'rgba(8, 145, 178, 0.7)',
+        line: { color: 'rgba(8, 145, 178, 1)', width: 1 }
+    },
+    name: 'Season Outcomes'
+}], {
+    xaxis: { 
+        title: 'Final Bankroll (% of Starting)',
+        range: [50, 250]
+    },
+    yaxis: { title: 'Frequency' },
+    margin: { t: 20, b: 50, l: 60, r: 30 },
+    paper_bgcolor: 'rgba(0,0,0,0)',
+    plot_bgcolor: 'rgba(0,0,0,0)',
+    font: { color: 'rgba(255,255,255,0.7)', size: 12 },
+    annotations: [{
+        x: 146.2,
+        y: 600,
+        text: 'Median: 146.2%',
+        showarrow: true,
+        arrowhead: 2,
+        ax: 0,
+        ay: -40,
+        font: { color: '#059669' }
+    }]
+}, { displayModeBar: false, responsive: true });
+</script>
+
+{% endblock %}

@@ -1,0 +1,313 @@
+{% extends "base.html" %}
+
+{% block title %}{{ theme.page_title }} · Narrative Optimization{% endblock %}
+
+{% block content %}
+<section class="nhl-live-hero checkpoint-hero">
+    <div class="hero-text">
+        <p class="eyebrow">{{ theme.league }} checkpoint feed</p>
+        <h1>{{ theme.icon }} {{ theme.hero_title }}</h1>
+        <p>{{ theme.hero_body }}</p>
+    </div>
+    <div class="hero-metrics">
+        <div class="hero-metric">
+            <span id="game-count">{{ games|length }}</span>
+            <small>games tracked</small>
+        </div>
+        <div class="hero-metric">
+            <span id="checkpoint-count">{{ checkpoint_total }}</span>
+            <small>checkpoints synthesized</small>
+        </div>
+        <div class="hero-metric">
+            <span id="live-odds-count">{{ live_odds_attached }}/{{ live_odds_count }}</span>
+            <small>games with live odds</small>
+        </div>
+        <div class="hero-metric">
+            <span id="live-odds-update">{{ live_odds_label or '—' }}</span>
+            <small>live odds refresh</small>
+        </div>
+        <div class="hero-metric">
+            <span id="last-update">{{ last_update_label }}</span>
+            <small>checkpoint refresh</small>
+        </div>
+    </div>
+    <p class="hero-summary" id="checkpoint-summary">{{ summary }}</p>
+</section>
+
+{% if error %}
+<div class="checkpoint-alert error">
+    <strong>Heads up:</strong> {{ summary }}
+</div>
+{% endif %}
+
+<section class="checkpoint-feed">
+    <div class="checkpoint-feed-header">
+        <div>
+            <p class="eyebrow">live narrative rail</p>
+            <h2>{{ theme.league }} checkpoint timeline</h2>
+        </div>
+        <div class="feed-meta">
+            <span class="feed-pill">{{ summary }}</span>
+            <span class="feed-pill subtle">auto-refreshing</span>
+        </div>
+    </div>
+
+    <div id="checkpoint-grid" class="checkpoint-grid" data-limit="{{ limit_games }}" data-api="{{ api_endpoint }}">
+        {% if games %}
+            {% for game in games %}
+            <article class="checkpoint-card result-{{ game.result_trend }}">
+                <div class="checkpoint-card__header">
+                    <div>
+                        <p class="eyebrow">{{ game.date_label }} · {{ game.venue }}</p>
+                        <h3>{{ game.away_team }} @ {{ game.home_team }}</h3>
+                        <p class="checkpoint-status">{{ game.status }}</p>
+                    </div>
+                    <div class="scoreboard">
+                        <div class="score-team">
+                            <span class="team-label">{{ game.away_team }}</span>
+                            <span class="team-score">{{ game.score.away }}</span>
+                        </div>
+                        <div class="score-divider">:</div>
+                        <div class="score-team">
+                            <span class="team-label">{{ game.home_team }}</span>
+                            <span class="team-score">{{ game.score.home }}</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="momentum-summary">{{ game.momentum_summary }}</p>
+                {% if game.context_badges %}
+                <div class="context-badges">
+                    {% for badge in game.context_badges %}
+                        <span class="context-badge">{{ badge.label }} · {{ badge.value }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if game.live_odds %}
+                <div class="live-odds-panel">
+                    <div class="live-odds-header">
+                        <div>
+                            <p class="eyebrow">live odds</p>
+                            <span class="live-odds-book">{{ game.live_odds.bookmaker }}</span>
+                        </div>
+                        <span class="live-odds-updated">{{ game.live_odds_label }}</span>
+                    </div>
+                    <div class="live-odds-grid">
+                        <div>
+                            <span class="label">Moneyline</span>
+                            <span class="value">{{ game.home_team }} {{ game.live_odds.moneyline_home_display }}</span>
+                            <span class="value">{{ game.away_team }} {{ game.live_odds.moneyline_away_display }}</span>
+                        </div>
+                        <div>
+                            <span class="label">Puck line</span>
+                            <span class="value">{{ game.home_team }} {{ game.live_odds.puck_line_home_display }}</span>
+                            <span class="value">{{ game.away_team }} {{ game.live_odds.puck_line_away_display }}</span>
+                        </div>
+                        <div>
+                            <span class="label">Total</span>
+                            <span class="value">O {{ game.live_odds.over_display }}</span>
+                            <span class="value">U {{ game.live_odds.under_display }}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% if game.synthetic_narrative %}
+                <p class="synthetic-narrative">{{ game.synthetic_narrative }}</p>
+                {% endif %}
+
+                <div class="checkpoint-timeline">
+                    {% for snap in game.snapshots %}
+                    <div class="checkpoint-node {{ snap.trend_class }}">
+                        <div class="checkpoint-label-row">
+                            <span class="checkpoint-label">{{ snap.label }}</span>
+                            <span class="checkpoint-score">{{ snap.score_display }}</span>
+                        </div>
+                        <p class="checkpoint-narrative">{{ snap.narrative }}</p>
+                        <div class="checkpoint-metrics-row">
+                            <span>Win {{ snap.win_probability_pct }}</span>
+                            <span>Δ {{ snap.edge_delta_pct }} pts</span>
+                            <span>Lev {{ snap.leverage }}</span>
+                            <span>{{ snap.minutes_label }} · {{ snap.progress_pct }}%</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </article>
+            {% endfor %}
+        {% else %}
+            <div class="empty-state-card">
+                <h3>No checkpoint narratives yet</h3>
+                <p>{{ theme.empty_state }}</p>
+                <a href="{{ theme.cta_href }}" class="btn btn-primary mt-3">{{ theme.cta_label }}</a>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+(function() {
+    const gridEl = document.getElementById('checkpoint-grid');
+    if (!gridEl) { return; }
+    const endpoint = gridEl.dataset.api;
+    const gameCountEl = document.getElementById('game-count');
+    const checkpointCountEl = document.getElementById('checkpoint-count');
+    const summaryEl = document.getElementById('checkpoint-summary');
+    const lastUpdateEl = document.getElementById('last-update');
+    const liveOddsCountEl = document.getElementById('live-odds-count');
+    const liveOddsUpdateEl = document.getElementById('live-odds-update');
+    const REFRESH_MS = 120000;
+    const emptyStateCopy = {{ theme.empty_state|tojson }};
+    const ctaHref = {{ theme.cta_href|tojson }};
+    const ctaLabel = {{ theme.cta_label|tojson }};
+
+    const escapeHtml = (value) => {
+        return String(value ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    };
+
+    const getScoreValue = (score, key) => {
+        if (score && score[key] !== undefined && score[key] !== null) {
+            return score[key];
+        }
+        return 0;
+    };
+
+    const renderBadges = (badges = []) => {
+        if (!badges.length) { return ''; }
+        return `<div class="context-badges">${
+            badges.map(b => `<span class="context-badge">${escapeHtml(b.label)} · ${escapeHtml(b.value)}</span>`).join('')
+        }</div>`;
+    };
+
+    const renderLiveOdds = (liveOdds, game) => {
+        if (!liveOdds) { return ''; }
+        return `
+            <div class="live-odds-panel">
+                <div class="live-odds-header">
+                    <div>
+                        <p class="eyebrow">live odds</p>
+                        <span class="live-odds-book">${escapeHtml(liveOdds.bookmaker || 'Book')}</span>
+                    </div>
+                    <span class="live-odds-updated">${escapeHtml(game.live_odds_label || '')}</span>
+                </div>
+                <div class="live-odds-grid">
+                    <div>
+                        <span class="label">Moneyline</span>
+                        <span class="value">${escapeHtml(game.home_team)} ${escapeHtml(liveOdds.moneyline_home_display)}</span>
+                        <span class="value">${escapeHtml(game.away_team)} ${escapeHtml(liveOdds.moneyline_away_display)}</span>
+                    </div>
+                    <div>
+                        <span class="label">Puck line</span>
+                        <span class="value">${escapeHtml(game.home_team)} ${escapeHtml(liveOdds.puck_line_home_display)}</span>
+                        <span class="value">${escapeHtml(game.away_team)} ${escapeHtml(liveOdds.puck_line_away_display)}</span>
+                    </div>
+                    <div>
+                        <span class="label">Total</span>
+                        <span class="value">O ${escapeHtml(liveOdds.over_display)}</span>
+                        <span class="value">U ${escapeHtml(liveOdds.under_display)}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    const renderSnapshots = (snapshots = []) => snapshots.map(snap => `
+        <div class="checkpoint-node ${escapeHtml(snap.trend_class || 'trend-balanced')}">
+            <div class="checkpoint-label-row">
+                <span class="checkpoint-label">${escapeHtml(snap.label)}</span>
+                <span class="checkpoint-score">${escapeHtml(snap.score_display)}</span>
+            </div>
+            <p class="checkpoint-narrative">${escapeHtml(snap.narrative)}</p>
+            <div class="checkpoint-metrics-row">
+                <span>Win ${escapeHtml(snap.win_probability_pct)}</span>
+                <span>Δ ${escapeHtml(snap.edge_delta_pct)} pts</span>
+                <span>Lev ${escapeHtml(snap.leverage)}</span>
+                <span>${escapeHtml(snap.minutes_label)} · ${escapeHtml(snap.progress_pct)}%</span>
+            </div>
+        </div>
+    `).join('');
+
+    const renderGame = (game) => `
+        <article class="checkpoint-card result-${escapeHtml(game.result_trend || 'even')}">
+            <div class="checkpoint-card__header">
+                <div>
+                    <p class="eyebrow">${escapeHtml(game.date_label)} · ${escapeHtml(game.venue)}</p>
+                    <h3>${escapeHtml(game.away_team)} @ ${escapeHtml(game.home_team)}</h3>
+                    <p class="checkpoint-status">${escapeHtml(game.status)}</p>
+                </div>
+                <div class="scoreboard">
+                    <div class="score-team">
+                        <span class="team-label">${escapeHtml(game.away_team)}</span>
+                        <span class="team-score">${escapeHtml(getScoreValue(game.score, 'away'))}</span>
+                    </div>
+                    <div class="score-divider">:</div>
+                    <div class="score-team">
+                        <span class="team-label">${escapeHtml(game.home_team)}</span>
+                        <span class="team-score">${escapeHtml(getScoreValue(game.score, 'home'))}</span>
+                    </div>
+                </div>
+            </div>
+            <p class="momentum-summary">${escapeHtml(game.momentum_summary || '')}</p>
+            ${renderBadges(game.context_badges)}
+            ${renderLiveOdds(game.live_odds, game)}
+            ${game.synthetic_narrative ? `<p class="synthetic-narrative">${escapeHtml(game.synthetic_narrative)}</p>` : ''}
+            <div class="checkpoint-timeline">
+                ${renderSnapshots(game.snapshots)}
+            </div>
+        </article>
+    `;
+
+    const renderGames = (games = []) => {
+        if (!games.length) {
+            gridEl.innerHTML = `
+                <div class="empty-state-card">
+                    <h3>No checkpoint narratives yet</h3>
+                    <p>${escapeHtml(emptyStateCopy)}</p>
+                    <a href="${escapeHtml(ctaHref)}" class="btn btn-primary mt-3">${escapeHtml(ctaLabel)}</a>
+                </div>
+            `;
+            return;
+        }
+        gridEl.innerHTML = games.map(renderGame).join('');
+    };
+
+    const applyPayload = (payload) => {
+        if (!payload) { return; }
+        renderGames(payload.games || []);
+        if (gameCountEl) { gameCountEl.textContent = (payload.games || []).length; }
+        if (checkpointCountEl) { checkpointCountEl.textContent = payload.checkpoint_total || 0; }
+        if (liveOddsCountEl) {
+            const attached = payload.live_odds_attached || 0;
+            const total = payload.live_odds_game_count || 0;
+            liveOddsCountEl.textContent = `${attached}/${total}`;
+        }
+        if (liveOddsUpdateEl && payload.live_odds_label) {
+            liveOddsUpdateEl.textContent = payload.live_odds_label;
+        }
+        if (summaryEl && payload.summary) { summaryEl.textContent = payload.summary; }
+        if (lastUpdateEl && payload.generated_at) {
+            const ts = new Date(payload.generated_at);
+            lastUpdateEl.textContent = ts.toLocaleTimeString();
+        }
+    };
+
+    const fetchLatest = () => {
+        fetch(endpoint)
+            .then((res) => res.json())
+            .then(applyPayload)
+            .catch((err) => console.error('Failed to refresh checkpoint feed', err))
+            .finally(() => {
+                setTimeout(fetchLatest, REFRESH_MS);
+            });
+    };
+
+    setTimeout(fetchLatest, REFRESH_MS);
+})();
+</script>
+{% endblock %}
+

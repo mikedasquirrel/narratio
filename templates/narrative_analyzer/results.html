@@ -1,0 +1,876 @@
+{% extends "base.html" %}
+
+{% block title %}Analysis Results - Universal Narrative Analyzer{% endblock %}
+
+{% block extra_css %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+    body {
+        background: #f8f9fa;
+    }
+    
+    .results-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .results-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .results-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    
+    .text-preview {
+        background: rgba(255,255,255,0.2);
+        padding: 20px;
+        border-radius: 12px;
+        font-style: italic;
+        max-height: 120px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .text-preview::after {
+        content: '...';
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+    
+    .score-section {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .quality-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .quality-gauge {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    .gauge-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: conic-gradient(
+            #667eea 0deg,
+            #667eea calc(var(--score) * 3.6deg),
+            #e0e0e0 calc(var(--score) * 3.6deg)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gauge-inner {
+        width: 160px;
+        height: 160px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gauge-score {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #667eea;
+    }
+    
+    .gauge-label {
+        font-size: 0.9rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .quality-breakdown {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .quality-metric {
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 12px;
+    }
+    
+    .metric-label {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .metric-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .metric-bar {
+        height: 8px;
+        background: #e0e0e0;
+        border-radius: 4px;
+        margin-top: 8px;
+        overflow: hidden;
+    }
+    
+    .metric-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        border-radius: 4px;
+        transition: width 0.8s ease-out;
+    }
+    
+    .predictions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .prediction-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 25px;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+    }
+    
+    .prediction-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-color: #667eea;
+    }
+    
+    .prediction-domain {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 15px;
+    }
+    
+    .prediction-probability {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .prediction-verdict {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .prediction-explanation {
+        font-size: 0.85rem;
+        color: #999;
+        line-height: 1.5;
+    }
+    
+    .patterns-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .pattern-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 12px;
+        padding: 25px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .pattern-strength {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: rgba(255,255,255,0.3);
+    }
+    
+    .pattern-strength-fill {
+        height: 100%;
+        background: rgba(255,255,255,0.9);
+    }
+    
+    .pattern-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .pattern-confidence {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+    
+    .pattern-details {
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+    
+    .no-patterns {
+        text-align: center;
+        padding: 40px;
+        color: #999;
+    }
+    
+    .recommendations-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .recommendation-card {
+        background: #f8f9fa;
+        border-left: 4px solid #667eea;
+        border-radius: 8px;
+        padding: 25px;
+    }
+    
+    .recommendation-card.priority-high {
+        border-left-color: #f44336;
+        background: #fff5f5;
+    }
+    
+    .recommendation-card.priority-medium {
+        border-left-color: #ff9800;
+        background: #fff9f0;
+    }
+    
+    .recommendation-card.priority-low {
+        border-left-color: #4caf50;
+        background: #f5fff5;
+    }
+    
+    .recommendation-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 15px;
+    }
+    
+    .recommendation-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .priority-badge {
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .priority-high {
+        background: #f44336;
+        color: white;
+    }
+    
+    .priority-medium {
+        background: #ff9800;
+        color: white;
+    }
+    
+    .priority-low {
+        background: #4caf50;
+        color: white;
+    }
+    
+    .recommendation-description {
+        color: #666;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+    
+    .recommendation-action {
+        background: white;
+        padding: 12px 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #667eea;
+        border-left: 3px solid #667eea;
+    }
+    
+    .archetypes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .archetype-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 25px;
+        border: 2px solid #e0e0e0;
+    }
+    
+    .archetype-name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+    
+    .archetype-score {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #333;
+        margin-bottom: 12px;
+    }
+    
+    .archetype-description {
+        color: #666;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    
+    .feature-breakdown-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .top-features {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 25px;
+    }
+    
+    .feature-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .feature-name {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .feature-value {
+        font-weight: 700;
+        color: #667eea;
+    }
+    
+    .category-breakdown {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 25px;
+    }
+    
+    .category-item {
+        margin-bottom: 20px;
+    }
+    
+    .category-name {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .action-buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    
+    .action-button {
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: none;
+    }
+    
+    .action-button.primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    .action-button.secondary {
+        background: white;
+        color: #667eea;
+        border: 2px solid #667eea;
+    }
+    
+    .action-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .export-options {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .export-button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 0 10px;
+        background: white;
+        border: 2px solid #667eea;
+        border-radius: 8px;
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .export-button:hover {
+        background: #667eea;
+        color: white;
+        transform: translateY(-2px);
+    }
+    
+    .share-link {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+        border: 2px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .share-link input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        font-family: monospace;
+        font-size: 0.9rem;
+    }
+    
+    .copy-button {
+        padding: 8px 16px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .copy-button:hover {
+        background: #5568d3;
+    }
+    
+    @media (max-width: 768px) {
+        .quality-display {
+            grid-template-columns: 1fr;
+        }
+        
+        .chart-container {
+            max-width: 250px;
+        }
+        
+        .quality-breakdown {
+            grid-template-columns: 1fr;
+        }
+        
+        .feature-breakdown-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .action-buttons {
+            flex-direction: column;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="results-container">
+    <div class="results-header">
+        <h1 class="results-title">📊 Analysis Complete</h1>
+        <div class="text-preview">{{ text_preview }}</div>
+    </div>
+    
+    <!-- Quality Score Section -->
+    <div class="score-section">
+        <h2 class="section-title">🎯 Narrative Quality Score</h2>
+        <div class="quality-display">
+            <div class="quality-gauge">
+                <div class="gauge-circle" style="--score: {{ (results.narrative_quality.overall * 100) | int }}">
+                    <div class="gauge-inner">
+                        <div class="gauge-score">{{ (results.narrative_quality.overall * 100) | int }}</div>
+                        <div class="gauge-label">Quality</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="qualityRadarChart"></canvas>
+            </div>
+            
+            <div class="quality-breakdown">
+                <div class="quality-metric">
+                    <div class="metric-label">Percentile</div>
+                    <div class="metric-value">{{ results.narrative_quality.percentile }}th</div>
+                    <div class="metric-bar">
+                        <div class="metric-fill" style="width: {{ results.narrative_quality.percentile }}%"></div>
+                    </div>
+                </div>
+                
+                <div class="quality-metric">
+                    <div class="metric-label">Complexity</div>
+                    <div class="metric-value">{{ (results.narrative_quality.complexity * 100) | int }}%</div>
+                    <div class="metric-bar">
+                        <div class="metric-fill" style="width: {{ (results.narrative_quality.complexity * 100) | int }}%"></div>
+                    </div>
+                </div>
+                
+                <div class="quality-metric">
+                    <div class="metric-label">Richness</div>
+                    <div class="metric-value">{{ (results.narrative_quality.richness * 100) | int }}%</div>
+                    <div class="metric-bar">
+                        <div class="metric-fill" style="width: {{ (results.narrative_quality.richness * 100) | int }}%"></div>
+                    </div>
+                </div>
+                
+                <div class="quality-metric">
+                    <div class="metric-label">Peak Strength</div>
+                    <div class="metric-value">{{ (results.narrative_quality.peak_strength * 100) | int }}%</div>
+                    <div class="metric-bar">
+                        <div class="metric-fill" style="width: {{ (results.narrative_quality.peak_strength * 100) | int }}%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cross-Domain Predictions -->
+    <div class="score-section">
+        <h2 class="section-title">🌐 Cross-Domain Predictions</h2>
+        <p style="color: #666; margin-bottom: 20px;">How your narrative would perform in different domains</p>
+        
+        <div class="predictions-grid">
+            {% for prediction in results.domain_predictions[:6] %}
+            <div class="prediction-card">
+                <div class="prediction-domain">{{ prediction.domain_name }}</div>
+                <div class="prediction-probability">{{ (prediction.probability * 100) | int }}%</div>
+                <div class="prediction-verdict">{{ prediction.success_verdict }}</div>
+                <div class="prediction-explanation">{{ prediction.explanation }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Pattern Detection -->
+    <div class="score-section">
+        <h2 class="section-title">🎭 Detected Narrative Patterns</h2>
+        
+        {% if results.patterns %}
+        <div class="patterns-container">
+            {% for pattern in results.patterns %}
+            <div class="pattern-card">
+                <div class="pattern-strength">
+                    <div class="pattern-strength-fill" style="width: {{ (pattern.strength * 100) | int }}%"></div>
+                </div>
+                <div class="pattern-name">{{ pattern.name }}</div>
+                <div class="pattern-confidence">{{ (pattern.confidence * 100) | int }}%</div>
+                <div class="pattern-details">
+                    {{ pattern.markers_found }}/{{ pattern.markers_total }} markers detected
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-patterns">
+            <p>No strong narrative patterns detected. Consider adding more archetypal story elements.</p>
+        </div>
+        {% endif %}
+    </div>
+    
+    <!-- Recommendations -->
+    <div class="score-section">
+        <h2 class="section-title">💡 Recommendations</h2>
+        <p style="color: #666; margin-bottom: 20px;">Actionable insights to improve your narrative</p>
+        
+        <div class="recommendations-list">
+            {% for rec in results.recommendations %}
+            <div class="recommendation-card priority-{{ rec.priority }}">
+                <div class="recommendation-header">
+                    <div class="recommendation-title">{{ rec.title }}</div>
+                    <span class="priority-badge priority-{{ rec.priority }}">{{ rec.priority }}</span>
+                </div>
+                <div class="recommendation-description">{{ rec.description }}</div>
+                <div class="recommendation-action">💡 Action: {{ rec.action }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Archetypes -->
+    {% if results.archetypes %}
+    <div class="score-section">
+        <h2 class="section-title">👥 Archetype Matches</h2>
+        <p style="color: #666; margin-bottom: 20px;">Your narrative aligns with these classic archetypes</p>
+        
+        <div class="archetypes-grid">
+            {% for archetype in results.archetypes %}
+            <div class="archetype-card">
+                <div class="archetype-name">{{ archetype.name }}</div>
+                <div class="archetype-score">{{ (archetype.match_score * 100) | int }}% match</div>
+                <div class="archetype-description">{{ archetype.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- Feature Breakdown -->
+    <div class="score-section">
+        <h2 class="section-title">📊 Feature Analysis</h2>
+        
+        <div class="feature-breakdown-grid">
+            <div class="top-features">
+                <h3 style="margin-bottom: 20px; color: #333;">Top Features</h3>
+                {% for feature in results.feature_breakdown.top_features[:10] %}
+                <div class="feature-item">
+                    <span class="feature-name">{{ feature.name }} ({{ feature.category }})</span>
+                    <span class="feature-value">{{ "%.3f" | format(feature.value) }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="category-breakdown">
+                <h3 style="margin-bottom: 20px; color: #333;">By Category</h3>
+                {% for category, value in results.feature_breakdown.category_breakdown.items() %}
+                <div class="category-item">
+                    <div class="category-name">
+                        <span>{{ category.title() }}</span>
+                        <span>{{ (value * 100) | int }}%</span>
+                    </div>
+                    <div class="metric-bar">
+                        <div class="metric-fill" style="width: {{ (value * 100) | int }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Export & Share -->
+    <div class="score-section">
+        <h2 class="section-title">📤 Export & Share</h2>
+        <div class="export-options">
+            <p style="color: #666; margin-bottom: 20px;">Save or share your analysis results</p>
+            <button class="export-button" onclick="exportJSON()">
+                📥 Download JSON
+            </button>
+            <button class="export-button" onclick="copyShareLink()">
+                🔗 Copy Share Link
+            </button>
+            <div id="shareLinkContainer" style="display: none;" class="share-link">
+                <input type="text" id="shareLink" readonly>
+                <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button class="action-button primary" onclick="window.location.href='/analyze'">
+            🔬 Analyze Another Narrative
+        </button>
+        <button class="action-button secondary" onclick="window.location.href='/analyze/compare'">
+            ⚖️ Compare Narratives
+        </button>
+        <button class="action-button secondary" onclick="window.print()">
+            📄 Print Results
+        </button>
+    </div>
+</div>
+
+<!-- Hidden data for export -->
+<script id="resultsData" type="application/json">
+{{ results | tojson }}
+</script>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Results data
+const resultsData = JSON.parse(document.getElementById('resultsData').textContent);
+
+// Animate metric bars on load
+document.addEventListener('DOMContentLoaded', function() {
+    const fills = document.querySelectorAll('.metric-fill');
+    fills.forEach(fill => {
+        const width = fill.style.width;
+        fill.style.width = '0';
+        setTimeout(() => {
+            fill.style.width = width;
+        }, 100);
+    });
+    
+    // Create radar chart
+    createQualityRadarChart();
+});
+
+// Create quality radar chart
+function createQualityRadarChart() {
+    const ctx = document.getElementById('qualityRadarChart');
+    if (!ctx) return;
+    
+    const quality = resultsData.narrative_quality;
+    
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Complexity', 'Richness', 'Variation', 'Peak Strength'],
+            datasets: [{
+                label: 'Quality Metrics',
+                data: [
+                    quality.complexity * 100,
+                    quality.richness * 100,
+                    quality.variation * 100,
+                    quality.peak_strength * 100
+                ],
+                backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                borderColor: 'rgba(102, 126, 234, 1)',
+                borderWidth: 2,
+                pointBackgroundColor: 'rgba(102, 126, 234, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(102, 126, 234, 1)'
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        stepSize: 25
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+}
+
+// Export as JSON
+function exportJSON() {
+    const dataStr = JSON.stringify(resultsData, null, 2);
+    const dataBlob = new Blob([dataStr], {type: 'application/json'});
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'narrative-analysis-results.json';
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
+// Copy share link
+function copyShareLink() {
+    const container = document.getElementById('shareLinkContainer');
+    const input = document.getElementById('shareLink');
+    
+    // Generate shareable URL (in production, this would be a real short URL)
+    const shareUrl = window.location.origin + '/analyze/results?id=' + Date.now();
+    input.value = shareUrl;
+    
+    container.style.display = 'flex';
+    setTimeout(() => {
+        input.select();
+    }, 100);
+}
+
+// Copy to clipboard
+function copyToClipboard() {
+    const input = document.getElementById('shareLink');
+    input.select();
+    document.execCommand('copy');
+    
+    const button = event.target;
+    const originalText = button.textContent;
+    button.textContent = '✓ Copied!';
+    button.style.background = '#4caf50';
+    
+    setTimeout(() => {
+        button.textContent = originalText;
+        button.style.background = '#667eea';
+    }, 2000);
+}
+</script>
+{% endblock %}
+

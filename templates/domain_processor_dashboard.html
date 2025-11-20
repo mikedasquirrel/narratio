@@ -1,0 +1,770 @@
+{% extends "base.html" %}
+
+{% block title %}Domain Processing Pipeline - Narrative Framework{% endblock %}
+
+{% block extra_css %}
+<style>
+    .processor-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .config-panel {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .domain-select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+    
+    .config-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .config-item label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    
+    .config-item input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    
+    .config-item input[type="checkbox"] {
+        width: auto;
+        margin-right: 8px;
+    }
+    
+    .start-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .start-button:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    
+    .start-button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    
+    .progress-panel {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none;
+    }
+    
+    .progress-panel.active {
+        display: block;
+    }
+    
+    .progress-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .status-badge {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .status-running {
+        background: #e3f2fd;
+        color: #1976d2;
+    }
+    
+    .status-completed {
+        background: #e8f5e9;
+        color: #388e3c;
+    }
+    
+    .status-failed {
+        background: #ffebee;
+        color: #d32f2f;
+    }
+    
+    .status-cancelled {
+        background: #fff3e0;
+        color: #f57c00;
+    }
+    
+    .progress-bar-container {
+        background: #f0f0f0;
+        border-radius: 10px;
+        height: 30px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        transition: width 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .step-indicator {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .step {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        background: #f5f5f5;
+        margin: 0 5px;
+        position: relative;
+    }
+    
+    .step.active {
+        background: #667eea;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .step.completed {
+        background: #4caf50;
+        color: white;
+    }
+    
+    .timing-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .timing-card {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+    }
+    
+    .timing-label {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    
+    .timing-value {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .log-viewer {
+        background: #1e1e1e;
+        color: #d4d4d4;
+        border-radius: 6px;
+        padding: 15px;
+        max-height: 400px;
+        overflow-y: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .log-entry {
+        padding: 4px 0;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    
+    .log-entry:last-child {
+        border-bottom: none;
+    }
+    
+    .log-level-INFO {
+        color: #4ec9b0;
+    }
+    
+    .log-level-WARNING {
+        color: #f0ad4e;
+    }
+    
+    .log-level-ERROR {
+        color: #f44336;
+    }
+    
+    .log-level-DEBUG {
+        color: #888;
+    }
+    
+    .error-panel {
+        background: #ffebee;
+        border-left: 4px solid #d32f2f;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+        display: none;
+    }
+    
+    .error-panel.show {
+        display: block;
+    }
+    
+    .error-title {
+        font-weight: 700;
+        color: #d32f2f;
+        margin-bottom: 10px;
+    }
+    
+    .error-message {
+        color: #333;
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+    }
+    
+    .job-history {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .job-list {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    
+    .job-item {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    
+    .job-item:hover {
+        background: #f5f5f5;
+    }
+    
+    .job-info {
+        flex: 1;
+    }
+    
+    .job-domain {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .job-meta {
+        font-size: 13px;
+        color: #666;
+    }
+    
+    .cancel-button {
+        padding: 8px 16px;
+        background: #ff5252;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .cancel-button:hover {
+        background: #d32f2f;
+    }
+    
+    .domain-info {
+        background: #e3f2fd;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #1976d2;
+    }
+    
+    .results-preview {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 6px;
+        margin-top: 15px;
+        display: none;
+    }
+    
+    .results-preview.show {
+        display: block;
+    }
+    
+    .auto-scroll-toggle {
+        padding: 8px 16px;
+        background: #455a64;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .auto-scroll-toggle.active {
+        background: #667eea;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="processor-container">
+    <h1 style="margin-bottom: 10px;">🚀 Domain Processing Pipeline</h1>
+    <p style="color: #666; margin-bottom: 30px;">
+        Process any story domain with comprehensive transformer pipelines, real-time progress tracking, and detailed logging.
+    </p>
+    
+    <!-- Configuration Panel -->
+    <div class="config-panel">
+        <h2 style="margin-top: 0;">Configuration</h2>
+        
+        <label for="domain-select" style="font-weight: 600; display: block; margin-bottom: 8px;">
+            Select Domain
+        </label>
+        <select id="domain-select" class="domain-select">
+            <option value="">Loading domains...</option>
+        </select>
+        
+        <div class="domain-info" id="domain-info" style="display: none;">
+            <strong>π (Narrativity):</strong> <span id="domain-pi"></span> | 
+            <strong>Type:</strong> <span id="domain-type"></span> | 
+            <strong>Est. Time:</strong> <span id="domain-time"></span>
+        </div>
+        
+        <div class="config-grid">
+            <div class="config-item">
+                <label for="sample-size">Sample Size</label>
+                <input type="number" id="sample-size" value="1000" min="10" max="10000" step="10">
+            </div>
+            
+            <div class="config-item">
+                <label for="timeout">Timeout (minutes)</label>
+                <input type="number" id="timeout" value="" placeholder="Auto" min="5" max="120">
+            </div>
+            
+            <div class="config-item">
+                <label>
+                    <input type="checkbox" id="fail-fast">
+                    Fail Fast (stop on first error)
+                </label>
+            </div>
+        </div>
+        
+        <button class="start-button" id="start-button" disabled>
+            Select a domain to begin
+        </button>
+    </div>
+    
+    <!-- Progress Panel -->
+    <div class="progress-panel" id="progress-panel">
+        <div class="progress-header">
+            <h2 style="margin: 0;">Processing: <span id="current-domain"></span></h2>
+            <div>
+                <span class="status-badge status-running" id="status-badge">Running</span>
+                <button class="cancel-button" id="cancel-button" style="margin-left: 10px;">
+                    Cancel
+                </button>
+            </div>
+        </div>
+        
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar" style="width: 0%;">
+                0%
+            </div>
+        </div>
+        
+        <div class="step-indicator">
+            <div class="step" data-step="loading">Loading</div>
+            <div class="step" data-step="feature_extraction">Features</div>
+            <div class="step" data-step="pattern_discovery">Patterns</div>
+            <div class="step" data-step="validation">Validation</div>
+            <div class="step" data-step="complete">Complete</div>
+        </div>
+        
+        <div class="timing-info">
+            <div class="timing-card">
+                <div class="timing-label">Elapsed</div>
+                <div class="timing-value" id="elapsed-time">0s</div>
+            </div>
+            <div class="timing-card">
+                <div class="timing-label">Remaining</div>
+                <div class="timing-value" id="remaining-time">--</div>
+            </div>
+            <div class="timing-card">
+                <div class="timing-label">Progress</div>
+                <div class="timing-value" id="progress-percent">0%</div>
+            </div>
+        </div>
+        
+        <h3>Live Logs</h3>
+        <button class="auto-scroll-toggle" id="auto-scroll-toggle">
+            Auto-scroll: ON
+        </button>
+        <div class="log-viewer" id="log-viewer">
+            <div class="log-entry">Waiting for logs...</div>
+        </div>
+        
+        <div class="error-panel" id="error-panel">
+            <div class="error-title">Errors Detected</div>
+            <div class="error-message" id="error-message"></div>
+        </div>
+        
+        <div class="results-preview" id="results-preview">
+            <h3 style="margin-top: 0;">Results Summary</h3>
+            <div id="results-content"></div>
+        </div>
+    </div>
+    
+    <!-- Job History -->
+    <div class="job-history">
+        <h2 style="margin-top: 0;">Recent Jobs</h2>
+        <div class="job-list" id="job-list">
+            <div style="text-align: center; color: #999; padding: 40px;">
+                Loading job history...
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let currentJobId = null;
+let eventSource = null;
+let autoScroll = true;
+let domains = [];
+
+// Load domains on page load
+document.addEventListener('DOMContentLoaded', () => {
+    loadDomains();
+    loadJobHistory();
+    
+    // Auto-scroll toggle
+    document.getElementById('auto-scroll-toggle').addEventListener('click', () => {
+        autoScroll = !autoScroll;
+        const button = document.getElementById('auto-scroll-toggle');
+        button.textContent = `Auto-scroll: ${autoScroll ? 'ON' : 'OFF'}`;
+        button.classList.toggle('active', autoScroll);
+    });
+    
+    // Start button
+    document.getElementById('start-button').addEventListener('click', startProcessing);
+    
+    // Cancel button
+    document.getElementById('cancel-button').addEventListener('click', cancelProcessing);
+    
+    // Domain select change
+    document.getElementById('domain-select').addEventListener('change', updateDomainInfo);
+});
+
+async function loadDomains() {
+    try {
+        const response = await fetch('/process/api/domain-list');
+        const data = await response.json();
+        domains = data.domains;
+        
+        const select = document.getElementById('domain-select');
+        select.innerHTML = '<option value="">-- Select a domain --</option>';
+        
+        domains.forEach(domain => {
+            const option = document.createElement('option');
+            option.value = domain.name;
+            option.textContent = `${domain.name} (π=${domain.pi.toFixed(2)})`;
+            option.disabled = !domain.data_exists;
+            if (!domain.data_exists) {
+                option.textContent += ' - No data';
+            }
+            select.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error loading domains:', error);
+    }
+}
+
+function updateDomainInfo() {
+    const select = document.getElementById('domain-select');
+    const domainName = select.value;
+    
+    if (!domainName) {
+        document.getElementById('domain-info').style.display = 'none';
+        document.getElementById('start-button').disabled = true;
+        document.getElementById('start-button').textContent = 'Select a domain to begin';
+        return;
+    }
+    
+    const domain = domains.find(d => d.name === domainName);
+    if (domain) {
+        document.getElementById('domain-pi').textContent = domain.pi.toFixed(3);
+        document.getElementById('domain-type').textContent = domain.type;
+        document.getElementById('domain-time').textContent = `~${domain.estimated_timeout_minutes}min`;
+        document.getElementById('domain-info').style.display = 'block';
+        
+        document.getElementById('start-button').disabled = false;
+        document.getElementById('start-button').textContent = `Process ${domainName}`;
+    }
+}
+
+async function startProcessing() {
+    const domain = document.getElementById('domain-select').value;
+    const sampleSize = parseInt(document.getElementById('sample-size').value);
+    const timeout = document.getElementById('timeout').value || null;
+    const failFast = document.getElementById('fail-fast').checked;
+    
+    if (!domain) return;
+    
+    // Disable start button
+    document.getElementById('start-button').disabled = true;
+    document.getElementById('start-button').textContent = 'Starting...';
+    
+    try {
+        const response = await fetch('/process/api/process-domain', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                domain,
+                sample_size: sampleSize,
+                timeout_minutes: timeout ? parseInt(timeout) : null,
+                fail_fast: failFast
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+            currentJobId = data.job_id;
+            showProgressPanel(domain);
+            startStatusUpdates(data.job_id);
+        } else {
+            alert('Error: ' + data.error);
+            document.getElementById('start-button').disabled = false;
+            document.getElementById('start-button').textContent = `Process ${domain}`;
+        }
+    } catch (error) {
+        console.error('Error starting processing:', error);
+        alert('Failed to start processing');
+        document.getElementById('start-button').disabled = false;
+    }
+}
+
+function showProgressPanel(domain) {
+    document.getElementById('current-domain').textContent = domain;
+    document.getElementById('progress-panel').classList.add('active');
+    document.getElementById('log-viewer').innerHTML = '';
+    document.getElementById('error-panel').classList.remove('show');
+    document.getElementById('results-preview').classList.remove('show');
+    
+    // Reset progress
+    document.getElementById('progress-bar').style.width = '0%';
+    document.getElementById('progress-bar').textContent = '0%';
+    
+    // Reset steps
+    document.querySelectorAll('.step').forEach(step => {
+        step.classList.remove('active', 'completed');
+    });
+    
+    // Scroll to progress panel
+    document.getElementById('progress-panel').scrollIntoView({ behavior: 'smooth' });
+}
+
+function startStatusUpdates(jobId) {
+    if (eventSource) {
+        eventSource.close();
+    }
+    
+    eventSource = new EventSource(`/process/api/process-status/${jobId}`);
+    
+    eventSource.onmessage = (event) => {
+        const status = JSON.parse(event.data);
+        updateProgress(status);
+        
+        // Update logs
+        if (status.logs) {
+            appendLogs(status.logs);
+        }
+    };
+    
+    eventSource.onerror = () => {
+        eventSource.close();
+        loadJobHistory();
+    };
+}
+
+function updateProgress(status) {
+    // Update progress bar
+    const percent = Math.round(status.progress * 100);
+    document.getElementById('progress-bar').style.width = `${percent}%`;
+    document.getElementById('progress-bar').textContent = `${percent}%`;
+    document.getElementById('progress-percent').textContent = `${percent}%`;
+    
+    // Update status badge
+    const badge = document.getElementById('status-badge');
+    badge.className = `status-badge status-${status.status}`;
+    badge.textContent = status.status.charAt(0).toUpperCase() + status.status.slice(1);
+    
+    // Update timing
+    if (status.elapsed_formatted) {
+        document.getElementById('elapsed-time').textContent = status.elapsed_formatted;
+    }
+    if (status.eta_formatted) {
+        document.getElementById('remaining-time').textContent = status.eta_formatted;
+    }
+    
+    // Update steps
+    updateSteps(status.step);
+    
+    // Show/hide cancel button
+    document.getElementById('cancel-button').style.display = 
+        status.status === 'running' ? 'inline-block' : 'none';
+    
+    // Re-enable start button when complete
+    if (['completed', 'failed', 'cancelled', 'timeout'].includes(status.status)) {
+        document.getElementById('start-button').disabled = false;
+        const domain = document.getElementById('domain-select').value;
+        document.getElementById('start-button').textContent = `Process ${domain}`;
+        
+        // Stop event source
+        if (eventSource) {
+            eventSource.close();
+        }
+        
+        // Reload job history
+        loadJobHistory();
+    }
+}
+
+function updateSteps(currentStep) {
+    const stepOrder = ['loading', 'feature_extraction', 'pattern_discovery', 'validation', 'complete'];
+    const currentIndex = stepOrder.indexOf(currentStep);
+    
+    document.querySelectorAll('.step').forEach((step, index) => {
+        const stepName = step.dataset.step;
+        const stepIndex = stepOrder.indexOf(stepName);
+        
+        if (stepIndex < currentIndex) {
+            step.classList.add('completed');
+            step.classList.remove('active');
+        } else if (stepIndex === currentIndex) {
+            step.classList.add('active');
+            step.classList.remove('completed');
+        } else {
+            step.classList.remove('active', 'completed');
+        }
+    });
+}
+
+function appendLogs(logs) {
+    const viewer = document.getElementById('log-viewer');
+    
+    logs.forEach(log => {
+        const entry = document.createElement('div');
+        entry.className = `log-entry log-level-${log.level}`;
+        entry.textContent = `[${log.timestamp.split('T')[1].split('.')[0]}] ${log.message}`;
+        viewer.appendChild(entry);
+    });
+    
+    // Auto-scroll
+    if (autoScroll) {
+        viewer.scrollTop = viewer.scrollHeight;
+    }
+}
+
+async function cancelProcessing() {
+    if (!currentJobId) return;
+    
+    if (!confirm('Are you sure you want to cancel this job?')) return;
+    
+    try {
+        const response = await fetch(`/process/api/cancel-job/${currentJobId}`, {
+            method: 'POST'
+        });
+        
+        if (response.ok) {
+            // Event source will handle status update
+        } else {
+            const data = await response.json();
+            alert('Error cancelling job: ' + data.error);
+        }
+    } catch (error) {
+        console.error('Error cancelling job:', error);
+    }
+}
+
+async function loadJobHistory() {
+    try {
+        const response = await fetch('/process/api/job-history?limit=20');
+        const data = await response.json();
+        
+        const list = document.getElementById('job-list');
+        list.innerHTML = '';
+        
+        if (data.jobs.length === 0) {
+            list.innerHTML = '<div style="text-align: center; color: #999; padding: 40px;">No jobs yet</div>';
+            return;
+        }
+        
+        data.jobs.forEach(job => {
+            const item = document.createElement('div');
+            item.className = 'job-item';
+            item.innerHTML = `
+                <div class="job-info">
+                    <div class="job-domain">${job.domain}</div>
+                    <div class="job-meta">
+                        ${job.sample_size} samples | 
+                        ${job.duration_formatted || 'N/A'} | 
+                        ${new Date(job.start_time).toLocaleString()}
+                    </div>
+                </div>
+                <span class="status-badge status-${job.status}">${job.status}</span>
+            `;
+            list.appendChild(item);
+        });
+    } catch (error) {
+        console.error('Error loading job history:', error);
+    }
+}
+</script>
+{% endblock %}
+

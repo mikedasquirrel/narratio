@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Analysis | When Everyone Knows It's Fake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        .wwe-hero {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(25px);
+            border: 3px solid rgba(236, 72, 153, 0.5);
+            border-radius: 28px;
+            padding: 70px 50px;
+            margin: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wwe-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .billion-revenue {
+            font-size: 108px;
+            font-weight: 100;
+            background: linear-gradient(135deg, #ec4899, #a855f7, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 30px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .highest-pi {
+            font-size: 72px;
+            color: #ec4899;
+            font-weight: 200;
+            margin: 40px 0;
+        }
+        
+        .kayfabe-card {
+            background: rgba(168, 85, 247, 0.15);
+            border: 2px solid rgba(168, 85, 247, 0.4);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .meta-awareness {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .awareness-level {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid;
+        }
+        
+        .prestige-viz {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+            border: 2px solid rgba(168, 85, 247, 0.4);
+            border-radius: 20px;
+            padding: 50px;
+            margin: 50px 0;
+        }
+        
+        @media (max-width: 968px) {
+            .meta-awareness {
+                grid-template-columns: 1fr;
+            }
+            .billion-revenue {
+                font-size: 64px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HERO -->
+        <div class="wwe-hero">
+            <h1 style="font-size: 52px; font-weight: 200; margin: 0; position: relative; z-index: 1;">when everyone knows it's fake</h1>
+            <div class="billion-revenue">$1B+</div>
+            <p style="font-size: 26px; opacity: 0.95; margin: 10px 0; position: relative; z-index: 1;">annual revenue from acknowledged fiction</p>
+            
+            <div class="highest-pi">π = 0.974</div>
+            <p style="font-size: 20px; opacity: 0.9; position: relative; z-index: 1;">HIGHEST NARRATIVITY EVER MEASURED</p>
+            
+            <p style="font-size: 16px; margin-top: 50px; opacity: 0.7; position: relative; z-index: 1;">1,250 entities analyzed | prestige domain dynamics</p>
+        </div>
+        
+        <!-- DOMAIN SIGNATURE -->
+        <div style="background: rgba(168, 85, 247, 0.15); border: 3px solid #a855f7; border-radius: 20px; padding: 50px; margin: 50px 0; text-align: center;">
+            <h2 style="margin: 0; font-weight: 200; font-size: 36px; color: #a855f7;">prestige domain</h2>
+            <div style="font-size: 108px; font-weight: 100; color: #a855f7; margin: 40px 0;">Д = Ν + Ψ - Λ</div>
+            <p style="font-size: 22px; opacity: 0.95; margin: 20px 0;">awareness amplifies (doesn't suppress)</p>
+            <p style="opacity: 0.85; margin-top: 30px; font-size: 18px;">"I know it's fake AND I appreciate the craft"</p>
+        </div>
+        
+        <!-- THE FINDING -->
+        <h2 style="font-size: 40px; font-weight: 200; margin: 70px 0 40px 0;">the finding</h2>
+        
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-value">0.974</div>
+                <div class="stat-label">narrativity (π)</div>
+                <div style="font-size: 13px; margin-top: 10px; opacity: 0.8;">highest ever measured</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1.80</div>
+                <div class="stat-label">The Arch (Д)</div>
+                <div style="font-size: 13px; margin-top: 10px; opacity: 0.8;">prestige equation</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">+9.0%</div>
+                <div class="stat-label">quality effect</div>
+                <div style="font-size: 13px; margin-top: 10px; opacity: 0.8;">better stories win</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1,250</div>
+                <div class="stat-label">entities analyzed</div>
+                <div style="font-size: 13px; margin-top: 10px; opacity: 0.8;">events + storylines</div>
+            </div>
+        </div>
+        
+        <!-- KAYFABE EXPLAINED -->
+        <div class="kayfabe-card">
+            <h2 style="margin: 0 0 30px 0; font-weight: 200; font-size: 42px; color: #a855f7;">kayfabe</h2>
+            <p style="font-size: 24px; opacity: 0.95; margin: 20px 0; font-weight: 300;">treating fake as real despite knowing it's fake</p>
+            
+            <div style="margin: 50px 0;">
+                <div style="font-size: 18px; opacity: 0.9; margin: 20px 0;">❌ Not blind faith <span style="opacity: 0.6;">(low Ψ, thinking it's real)</span></div>
+                <div style="font-size: 18px; opacity: 0.9; margin: 20px 0;">❌ Not cynical dismissal <span style="opacity: 0.6;">(high Ψ, rejecting it)</span></div>
+                <div style="font-size: 22px; color: #a855f7; margin: 30px 0; font-weight: 400;">✓ Conscious narrative choice <span style="opacity: 0.8; font-weight: 300;">(meta-Ψ, choosing to engage)</span></div>
+            </div>
+            
+            <p style="font-size: 17px; opacity: 0.85; margin-top: 40px; font-style: italic;">"I know The Undertaker isn't supernatural AND I choose to enjoy the story anyway"</p>
+        </div>
+        
+        <!-- META-AWARENESS LEVELS -->
+        <h2 style="font-size: 40px; font-weight: 200; margin: 70px 0 40px 0;">levels of awareness</h2>
+        
+        <div class="meta-awareness">
+            <div class="awareness-level" style="border-color: rgba(236, 72, 153, 0.4);">
+                <h3 style="color: #ec4899; margin: 0 0 20px 0; font-weight: 300;">Ψ₁ (First-Order)</h3>
+                <div style="font-size: 56px; color: #ec4899; margin: 20px 0;">0.90</div>
+                <p style="opacity: 0.9; font-size: 15px;">Knowing it's constructed</p>
+                <p style="opacity: 0.7; font-size: 13px; margin-top: 15px;">"Everyone knows<br>it's scripted"</p>
+            </div>
+            
+            <div style="font-size: 48px; color: #a855f7; font-weight: 100;">→</div>
+            
+            <div class="awareness-level" style="border-color: rgba(168, 85, 247, 0.5); background: rgba(168, 85, 247, 0.1);">
+                <h3 style="color: #a855f7; margin: 0 0 20px 0; font-weight: 300;">Ψ₂ (Meta-Awareness)</h3>
+                <div style="font-size: 56px; color: #a855f7; margin: 20px 0;">0.95</div>
+                <p style="opacity: 0.95; font-size: 15px;">Choosing to engage anyway</p>
+                <p style="opacity: 0.8; font-size: 13px; margin-top: 15px; color: #a855f7;"><strong>"I choose which<br>reality to inhabit"</strong></p>
+            </div>
+        </div>
+        
+        <p style="text-align: center; opacity: 0.85; margin: 40px 0; font-size: 18px;">
+            This is the highest form of consciousness:<br>
+            <strong style="color: #a855f7;">Knowing + Choosing = Liberation</strong>
+        </p>
+        
+        <!-- THE PRESTIGE EQUATION -->
+        <div class="prestige-viz">
+            <h2 style="margin: 0 0 40px 0; text-align: center; font-weight: 200; font-size: 38px;">the prestige equation</h2>
+            
+            <div style="text-align: center; font-size: 28px; font-family: monospace; margin: 40px 0; line-height: 2;">
+                <div>Regular: <span style="color: #06b6d4;">Д = Ν - Ψ - Λ</span></div>
+                <div style="opacity: 0.6; font-size: 16px; margin: 15px 0;">(awareness suppresses)</div>
+                
+                <div style="margin: 50px 0; font-size: 48px; color: #a855f7;">↓</div>
+                
+                <div style="color: #a855f7;">Prestige: <span style="font-weight: 500;">Д = Ν + Ψ - Λ</span></div>
+                <div style="opacity: 0.9; font-size: 16px; margin: 15px 0; color: #a855f7;">(awareness amplifies!)</div>
+            </div>
+            
+            <div style="text-align: center; margin: 50px 0;">
+                <div style="font-size: 64px; color: #a855f7; margin: 20px 0;">1.80</div>
+                <p style="font-size: 20px; opacity: 0.9;">= 0.95 + 0.90 - 0.05</p>
+                <p style="opacity: 0.8; margin-top: 20px;">Highest Arch ever measured</p>
+            </div>
+        </div>
+        
+        <!-- EMPIRICAL RESULTS -->
+        <h2 style="font-size: 40px; font-weight: 200; margin: 70px 0 40px 0;">empirical validation</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 40px 0;">
+            <div style="text-align: center; padding: 35px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(6, 182, 212, 0.4); border-radius: 18px;">
+                <div style="font-size: 52px; color: #06b6d4; margin-bottom: 15px;">0.14</div>
+                <p style="opacity: 0.85;">Correlation (ю → ❊)</p>
+                <p style="font-size: 13px; opacity: 0.6; margin-top: 12px;">p = 0.028 (significant)</p>
+            </div>
+            
+            <div style="text-align: center; padding: 35px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(236, 72, 153, 0.4); border-radius: 18px;">
+                <div style="font-size: 52px; color: #ec4899; margin-bottom: 15px;">+9.0%</div>
+                <p style="opacity: 0.85;">High vs Low Quality</p>
+                <p style="font-size: 13px; opacity: 0.6; margin-top: 12px;">better stories → more engagement</p>
+            </div>
+            
+            <div style="text-align: center; padding: 35px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 18px;">
+                <div style="font-size: 52px; color: #a855f7; margin-bottom: 15px;">250</div>
+                <p style="opacity: 0.85;">Storylines Analyzed</p>
+                <p style="font-size: 13px; opacity: 0.6; margin-top: 12px;">complete ж extraction</p>
+            </div>
+        </div>
+        
+        <!-- PERFECT BOOKENDS -->
+        <h2 style="font-size: 40px; font-weight: 200; margin: 70px 0 40px 0;">the perfect bookends</h2>
+        <p style="opacity: 0.85; margin-bottom: 50px; font-size: 18px; text-align: center;">Both involve performance - opposite outcomes</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 50px 0;">
+            <div style="background: rgba(6, 182, 212, 0.1); border: 2px solid #06b6d4; border-radius: 24px; padding: 45px; text-align: center;">
+                <h3 style="margin: 0 0 25px 0; color: #06b6d4; font-weight: 300; font-size: 28px;">Lottery</h3>
+                <div style="font-size: 56px; color: #06b6d4; margin: 25px 0; font-weight: 100;">π = 0.04</div>
+                <p style="opacity: 0.95; margin: 15px 0;">Lowest narrativity</p>
+                
+                <div style="margin: 35px 0; padding: 25px; background: rgba(0, 0, 0, 0.3); border-radius: 14px; text-align: left;">
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Λ</strong> (Physics): 0.95 ━━━━━━━━━━</div>
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Ψ</strong> (Mind): 0.70 ━━━━━━━</div>
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Ν</strong> (Meaning): 0.05 ━</div>
+                </div>
+                
+                <div style="font-size: 64px; color: #06b6d4; margin: 35px 0; font-weight: 100;">Д = 0.00</div>
+                <p style="font-size: 19px; font-weight: 400;">Everyone knows luck<br>doesn't work<br><strong style="color: #06b6d4;">→ It doesn't</strong></p>
+            </div>
+            
+            <div style="background: rgba(168, 85, 247, 0.15); border: 2px solid #a855f7; border-radius: 24px; padding: 45px; text-align: center;">
+                <h3 style="margin: 0 0 25px 0; color: #a855f7; font-weight: 300; font-size: 28px;">WWE</h3>
+                <div style="font-size: 56px; color: #a855f7; margin: 25px 0; font-weight: 100;">π = 0.974</div>
+                <p style="opacity: 0.95; margin: 15px 0;">Highest narrativity</p>
+                
+                <div style="margin: 35px 0; padding: 25px; background: rgba(0, 0, 0, 0.3); border-radius: 14px; text-align: left;">
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Λ</strong> (Physics): 0.05 ━</div>
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Ψ</strong> (Mind): 0.90 ━━━━━━━━━</div>
+                    <div style="margin: 12px 0; font-size: 15px;"><strong>Ν</strong> (Meaning): 0.95 ━━━━━━━━━━</div>
+                </div>
+                
+                <div style="font-size: 64px; color: #a855f7; margin: 35px 0; font-weight: 100;">Д = 1.80</div>
+                <p style="font-size: 19px; font-weight: 400;">Everyone knows it's fake<br><strong style="color: #a855f7;">→ $1B revenue</strong></p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; padding: 45px; background: rgba(168, 85, 247, 0.1); border-radius: 18px; margin: 50px 0;">
+            <p style="font-size: 26px; font-weight: 300; margin: 0; color: #a855f7;">π explains everything</p>
+            <p style="font-size: 18px; opacity: 0.85; margin: 30px 0;">When π is low → physics wins<br>When π is high → narrative wins</p>
+        </div>
+        
+        <!-- WHY PRESTIGE -->
+        <h2 style="font-size: 40px; font-weight: 200; margin: 70px 0 40px 0;">why prestige domain?</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 40px 0;">
+            <div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 18px; padding: 35px;">
+                <h4 style="color: #a855f7; margin: 0 0 18px 0; font-size: 18px;">Evaluating Narrative IS The Task</h4>
+                <p style="opacity: 0.9; font-size: 15px;">Fans explicitly judge "good booking" vs "bad booking" - narrative quality is what's being evaluated</p>
+            </div>
+            
+            <div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 18px; padding: 35px;">
+                <h4 style="color: #a855f7; margin: 0 0 18px 0; font-size: 18px;">Awareness Legitimizes</h4>
+                <p style="opacity: 0.9; font-size: 15px;">"I know it's fake" becomes "I appreciate the craft of storytelling" - sophistication justifies engagement</p>
+            </div>
+            
+            <div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 18px; padding: 35px;">
+                <h4 style="color: #a855f7; margin: 0 0 18px 0; font-size: 18px;">Smart Marks Engage MORE</h4>
+                <p style="opacity: 0.9; font-size: 15px;">Most sophisticated fans ("smart marks") don't dismiss - they engage more deeply with narrative nuance</p>
+            </div>
+            
+            <div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 18px; padding: 35px;">
+                <h4 style="color: #a855f7; margin: 0 0 18px 0; font-size: 18px;">Meta-Awareness Part of Product</h4>
+                <p style="opacity: 0.9; font-size: 15px;">Knowing enhances rather than breaks immersion - "I see how they're doing it" adds layer of appreciation</p>
+            </div>
+        </div>
+        
+        <!-- THE INSIGHT -->
+        <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(168, 85, 247, 0.2)); border: 3px solid rgba(168, 85, 247, 0.5); border-radius: 24px; padding: 60px; margin: 70px 0; text-align: center;">
+            <h2 style="margin: 0; font-weight: 200; font-size: 38px;">at π > 0.95</h2>
+            <p style="font-size: 28px; opacity: 0.95; margin: 40px 0; font-weight: 300;">
+                Construction becomes reality
+            </p>
+            <p style="font-size: 19px; opacity: 0.85; margin: 30px 0;">
+                Explicit fakeness doesn't reduce effects<br>
+                Awareness doesn't suppress engagement<br>
+                <strong style="color: #a855f7;">The constructed narrative IS the reality</strong>
+            </p>
+        </div>
+        
+        <!-- API -->
+        <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 18px; padding: 35px; margin: 70px 0;">
+            <h3 style="margin: 0 0 25px 0; font-weight: 300;">API Access</h3>
+            <p style="opacity: 0.85; margin-bottom: 18px;">Get complete WWE framework data:</p>
+            <pre style="background: rgba(0, 0, 0, 0.6); padding: 22px; border-radius: 10px; overflow-x: auto; border: 1px solid rgba(6, 182, 212, 0.2);"><code>GET /api/domains/wwe</code></pre>
+            <p style="opacity: 0.7; font-size: 14px; margin-top: 18px;">Returns π, forces, prestige equation, kayfabe analysis</p>
+        </div>
+        
+        <!-- BOTTOM LINE -->
+        <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25)); border: 3px solid rgba(168, 85, 247, 0.5); border-radius: 24px; padding: 60px; margin: 70px 0; text-align: center;">
+            <h2 style="margin: 0; font-weight: 200; font-size: 36px;">The Framework Works</h2>
+            <p style="font-size: 22px; opacity: 0.95; margin: 40px 0; line-height: 1.6;">
+                Predicted: π=0.974 (highest) + prestige equation → massive engagement<br>
+                Observed: Better stories → +9% engagement, $1B+ revenue<br>
+                <strong style="color: #a855f7;">Awareness amplifies when narrative IS the task</strong>
+            </p>
+            <p style="opacity: 0.85; margin-top: 40px; font-size: 17px;">
+                Fake can be real at extreme high-π<br>
+                Knowing + Choosing = Conscious narrative engagement
+            </p>
+        </div>
+        
+        <div style="text-align: center; margin: 70px 0;">
+            <a href="/framework-story" style="display: inline-block; padding: 18px 45px; background: rgba(168, 85, 247, 0.2); border: 2px solid #a855f7; border-radius: 14px; text-decoration: none; color: #a855f7; font-weight: 300; font-size: 17px; margin-right: 20px;">Read Framework</a>
+            <a href="/housing" style="display: inline-block; padding: 18px 45px; background: rgba(236, 72, 153, 0.2); border: 2px solid #ec4899; border-radius: 14px; text-decoration: none; color: #ec4899; font-weight: 300; font-size: 17px;">Compare to Housing</a>
+        </div>
+    </div>
+</body>
+</html>
+

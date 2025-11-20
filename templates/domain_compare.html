@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Comparison Matrix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .compare-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .domain-selector {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .selector-box {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        .selector-box select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px solid #667eea;
+            font-size: 1.1em;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .domain-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .domain-card h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .stat-label {
+            font-weight: bold;
+            color: #666;
+        }
+        .stat-value {
+            color: #333;
+            font-size: 1.1em;
+        }
+        .chart-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .insight-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .winner-badge {
+            background: #28a745;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="compare-container">
+        <div class="hero">
+            <h1> Domain Comparison Matrix</h1>
+            <p>Compare any two domains across all framework dimensions</p>
+        </div>
+
+        <div class="controls">
+            <div class="domain-selector">
+                <div class="selector-box">
+                    <label><strong>Select Domain 1:</strong></label>
+                    <select id="domain1" onchange="updateComparison()">
+                        <option value="golf" selected>Golf (97.7% R² - Benchmark)</option>
+                        <option value="tennis">Tennis (93% R² - High Performance)</option>
+                        <option value="boxing">Boxing (Individual Combat - Testing)</option>
+                        <option value="nba">NBA (15% R² - Team Sport)</option>
+                        <option value="startups">Startups (98% R² - Business)</option>
+                        <option value="wwe">WWE (π=0.974 - Highest π)</option>
+                        <option value="housing">Housing ($93K - Pure Nominative)</option>
+                        <option value="lottery">Lottery (0% - Control)</option>
+                    </select>
+                </div>
+                <div class="selector-box">
+                    <label><strong>Select Domain 2:</strong></label>
+                    <select id="domain2" onchange="updateComparison()">
+                        <option value="golf">Golf (97.7% R² - Benchmark)</option>
+                        <option value="tennis" selected>Tennis (93% R² - High Performance)</option>
+                        <option value="boxing">Boxing (Individual Combat - Testing)</option>
+                        <option value="nba">NBA (15% R² - Team Sport)</option>
+                        <option value="startups">Startups (98% R² - Business)</option>
+                        <option value="wwe">WWE (π=0.974 - Highest π)</option>
+                        <option value="housing">Housing ($93K - Pure Nominative)</option>
+                        <option value="lottery">Lottery (0% - Control)</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="updateComparison()" style="width: 100%; padding: 12px; background: #667eea; color: white; border: none; border-radius: 6px; font-size: 1.1em; cursor: pointer;">
+                Compare Selected Domains
+            </button>
+        </div>
+
+        <div id="comparison-results">
+            <div class="comparison-grid">
+                <!-- Golf Card -->
+                <div class="domain-card">
+                    <h3>🏌️ Golf <span class="winner-badge"> BENCHMARK</span></h3>
+                    <div class="stat-row">
+                        <span class="stat-label">π (Narrativity)</span>
+                        <span class="stat-value">0.700</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">R² Performance</span>
+                        <span class="stat-value" style="color: #28a745; font-weight: bold;">97.7%</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Agency</span>
+                        <span class="stat-value">1.00 (Individual)</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">θ (Awareness)</span>
+                        <span class="stat-value">0.573</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">λ (Constraints)</span>
+                        <span class="stat-value">0.689</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Sample Size</span>
+                        <span class="stat-value">7,700</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Key Factor</span>
+                        <span class="stat-value">Rich nominatives (+58.1%)</span>
+                    </div>
+                </div>
+
+                <!-- Tennis Card -->
+                <div class="domain-card">
+                    <h3> Tennis <span class="winner-badge"> HIGH ROI</span></h3>
+                    <div class="stat-row">
+                        <span class="stat-label">π (Narrativity)</span>
+                        <span class="stat-value">0.750</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">R² Performance</span>
+                        <span class="stat-value" style="color: #28a745; font-weight: bold;">93.1%</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Agency</span>
+                        <span class="stat-value">1.00 (Individual)</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">θ (Awareness)</span>
+                        <span class="stat-value">0.515</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">λ (Constraints)</span>
+                        <span class="stat-value">0.531</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Sample Size</span>
+                        <span class="stat-value">74,906</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Key Factor</span>
+                        <span class="stat-value">127% ROI betting edge</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>π Component Comparison</h2>
+                <canvas id="componentsChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h2>Three-Force Model Comparison</h2>
+                <canvas id="forcesChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="insight-box">
+                <h3> Key Insights: Golf vs Tennis</h3>
+                <ul>
+                    <li><strong>Similarity:</strong> Both individual sports (Agency = 1.00) with high R² (>90%)</li>
+                    <li><strong>π Difference:</strong> Tennis slightly higher (0.750 vs 0.700) due to higher interpretive component</li>
+                    <li><strong>Performance Gap:</strong> Golf 4.6% higher R² (97.7% vs 93.1%) - nominative richness explains difference</li>
+                    <li><strong>Force Pattern:</strong> Golf has higher θ+λ (expertise pattern), Tennis more balanced</li>
+                    <li><strong>Sample Size:</strong> Tennis 10x larger sample (74,906 vs 7,700) but similar performance</li>
+                    <li><strong>Practical Application:</strong> Golf = theoretical ceiling, Tennis = profitable betting (127% ROI)</li>
+                    <li><strong>Agency Validation:</strong> Both achieve 90%+ R² with individual agency - proves agency hypothesis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>All Domains: π vs R² Spectrum</h2>
+            <canvas id="spectrumChart" width="400" height="300"></canvas>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{{ url_for('domain_index') }}" style="display: inline-block; padding: 12px 30px; background: #667eea; color: white; text-decoration: none; border-radius: 6px; margin: 10px;">
+                ← Back to Domain Index
+            </a>
+            <a href="{{ url_for('home_bp.home') }}" style="display: inline-block; padding: 12px 30px; background: #764ba2; color: white; text-decoration: none; border-radius: 6px; margin: 10px;">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Components Comparison Chart
+        const componentsCtx = document.getElementById('componentsChart').getContext('2d');
+        new Chart(componentsCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Structural', 'Temporal', 'Agency', 'Interpretive', 'Format'],
+                datasets: [{
+                    label: 'Golf',
+                    data: [0.40, 0.75, 1.00, 0.70, 0.65],
+                    backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                    borderColor: 'rgb(102, 126, 234)',
+                    pointBackgroundColor: 'rgb(102, 126, 234)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(102, 126, 234)'
+                }, {
+                    label: 'Tennis',
+                    data: [0.45, 0.70, 1.00, 0.85, 0.70],
+                    backgroundColor: 'rgba(118, 75, 162, 0.2)',
+                    borderColor: 'rgb(118, 75, 162)',
+                    pointBackgroundColor: 'rgb(118, 75, 162)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(118, 75, 162)'
+                }]
+            },
+            options: {
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 1
+                    }
+                }
+            }
+        });
+
+        // Forces Comparison Chart
+        const forcesCtx = document.getElementById('forcesChart').getContext('2d');
+        new Chart(forcesCtx, {
+            type: 'bar',
+            data: {
+                labels: ['ة (Nominative Gravity)', 'θ (Awareness)', 'λ (Constraints)'],
+                datasets: [{
+                    label: 'Golf',
+                    data: [0.450, 0.573, 0.689],
+                    backgroundColor: 'rgba(102, 126, 234, 0.8)'
+                }, {
+                    label: 'Tennis',
+                    data: [0.420, 0.515, 0.531],
+                    backgroundColor: 'rgba(118, 75, 162, 0.8)'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 1
+                    }
+                }
+            }
+        });
+
+        // Spectrum Chart (All Domains)
+        const spectrumCtx = document.getElementById('spectrumChart').getContext('2d');
+        new Chart(spectrumCtx, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Individual Sports',
+                    data: [
+                        {x: 0.70, y: 97.7, label: 'Golf'},
+                        {x: 0.75, y: 93.1, label: 'Tennis'}
+                    ],
+                    backgroundColor: 'rgba(40, 167, 69, 0.8)',
+                    borderColor: 'rgb(40, 167, 69)',
+                    pointRadius: 8
+                }, {
+                    label: 'Team Sports',
+                    data: [
+                        {x: 0.49, y: 15, label: 'NBA'},
+                        {x: 0.57, y: 14, label: 'NFL'}
+                    ],
+                    backgroundColor: 'rgba(220, 53, 69, 0.8)',
+                    borderColor: 'rgb(220, 53, 69)',
+                    pointRadius: 8
+                }, {
+                    label: 'Prestige',
+                    data: [
+                        {x: 0.974, y: 100, label: 'WWE'},
+                        {x: 0.75, y: 100, label: 'Oscars'}
+                    ],
+                    backgroundColor: 'rgba(255, 193, 7, 0.8)',
+                    borderColor: 'rgb(255, 193, 7)',
+                    pointRadius: 8
+                }, {
+                    label: 'Controls',
+                    data: [
+                        {x: 0.04, y: 0, label: 'Lottery'},
+                        {x: 0.12, y: 0, label: 'Aviation'}
+                    ],
+                    backgroundColor: 'rgba(108, 117, 125, 0.8)',
+                    borderColor: 'rgb(108, 117, 125)',
+                    pointRadius: 8
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'π (Narrativity)'
+                        },
+                        min: 0,
+                        max: 1
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'R² Performance (%)'
+                        },
+                        min: 0,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.data[context.dataIndex].label + 
+                                       ': π=' + context.parsed.x.toFixed(3) + 
+                                       ', R²=' + context.parsed.y + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        function updateComparison() {
+            // This would fetch data and update charts dynamically
+            // For now, static display works
+            console.log('Updating comparison...');
+        }
+    </script>
+</body>
+</html>
+

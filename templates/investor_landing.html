@@ -1,0 +1,311 @@
+{% extends "betting_base.html" %}
+
+{% block title %}investor materials{% endblock %}
+
+{% block extra_head %}
+<style>
+.investor-hero {
+    background: rgba(5, 150, 105, 0.05);
+    border: 1px solid rgba(5, 150, 105, 0.15);
+    padding: 60px 40px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.investor-hero h1 {
+    font-size: 52px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: lowercase;
+}
+
+.investor-hero .subtitle {
+    font-size: 16px;
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 50px 0 30px 0;
+    text-transform: lowercase;
+}
+
+.validation-summary {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 35px;
+    margin: 30px 0;
+}
+
+.validation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.validation-row:last-child {
+    border-bottom: none;
+}
+
+.validation-label {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.validation-value {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0891b2;
+}
+
+.projection-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.projection-table th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.projection-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.projection-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.risk-framework {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.risk-item {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.risk-item-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.risk-item-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.6;
+}
+
+.document-link {
+    display: block;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.document-link:hover {
+    border-color: rgba(30, 64, 175, 0.3);
+    background: rgba(30, 64, 175, 0.05);
+}
+
+.document-title {
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.document-desc {
+    font-size: 12px;
+    opacity: 0.5;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="investor-hero">
+    <h1>investor materials</h1>
+    <p class="subtitle">nhl betting system | validated november 2025</p>
+</div>
+
+<!-- Executive Summary -->
+<h2 class="section-title">executive summary</h2>
+
+<div class="validation-summary">
+    <div class="validation-row">
+        <span class="validation-label">system</span>
+        <span class="validation-value">NHL Meta-Ensemble (≥65% confidence)</span>
+    </div>
+    <div class="validation-row">
+        <span class="validation-label">validation date</span>
+        <span class="validation-value">November 20, 2025</span>
+    </div>
+    <div class="validation-row">
+        <span class="validation-label">holdout test</span>
+        <span class="validation-value">2,779 games | 85 bets</span>
+    </div>
+    <div class="validation-row">
+        <span class="validation-label">win rate</span>
+        <span class="validation-value">69.4% (59-26 record)</span>
+    </div>
+    <div class="validation-row">
+        <span class="validation-label">roi</span>
+        <span class="validation-value">+32.5% per bet</span>
+    </div>
+    <div class="validation-row">
+        <span class="validation-label">statistical significance</span>
+        <span class="validation-value">p < 0.001 (binomial test)</span>
+    </div>
+</div>
+
+<!-- Projections -->
+<h2 class="section-title">bankroll projections</h2>
+
+<p style="font-size: 14px; opacity: 0.6; line-height: 1.8; margin-bottom: 30px;">
+    Conservative scenario: $1M initial capital, ≥65% confidence threshold (85 bets/season), 32.5% ROI per bet
+</p>
+
+<table class="projection-table">
+    <thead>
+        <tr>
+            <th>year</th>
+            <th>portfolio value</th>
+            <th>annual return</th>
+            <th>total gain</th>
+            <th>multiple</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Year 1</td>
+            <td>$1,339,300</td>
+            <td>+33.9%</td>
+            <td>$339,300</td>
+            <td>1.34x</td>
+        </tr>
+        <tr>
+            <td>Year 2</td>
+            <td>$1,793,600</td>
+            <td>+26.5%</td>
+            <td>$793,600</td>
+            <td>1.79x</td>
+        </tr>
+        <tr style="background: rgba(5, 150, 105, 0.05);">
+            <td><strong>Year 3</strong></td>
+            <td><strong>$2,402,600</strong></td>
+            <td><strong>+19.9%</strong></td>
+            <td><strong>$1,402,600</strong></td>
+            <td><strong>2.40x</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="padding: 20px; background: rgba(5, 150, 105, 0.05); border: 1px solid rgba(5, 150, 105, 0.15); border-radius: 12px; margin: 30px 0;">
+    <p style="font-size: 13px; line-height: 1.8; opacity: 0.7;">
+        <strong style="opacity: 1;">Assumptions:</strong> 85 bets per season at $10,000 initial bet size (1% of $1M bankroll). 
+        Continuous reinvestment with proportional scaling. No edge degradation. 32.5% ROI maintained (validated on holdout). 
+        Conservative threshold minimizes risk while capturing strong edge.
+    </p>
+</div>
+
+<!-- Risk Management -->
+<h2 class="section-title">risk management</h2>
+
+<div class="risk-framework">
+    <div class="risk-item">
+        <div class="risk-item-title">position sizing</div>
+        <div class="risk-item-desc">
+            1-2% of bankroll per bet using Kelly Criterion with fractional multiplier (0.25-0.5x). 
+            Maximum single bet: 2% regardless of confidence. Scales proportionally with bankroll.
+        </div>
+    </div>
+    
+    <div class="risk-item">
+        <div class="risk-item-title">confidence threshold</div>
+        <div class="risk-item-desc">
+            ≥65% threshold balances quality with volume (85 bets/season, 69.4% win rate, 32.5% ROI). 
+            Lower thresholds (≥60%) increase volume to 406 bets but reduce ROI to 26.5%.
+        </div>
+    </div>
+    
+    <div class="risk-item">
+        <div class="risk-item-title">stop loss protocol</div>
+        <div class="risk-item-desc">
+            Pause betting if bankroll drops >20% from peak. Reassess models and market conditions. 
+            Resume only after validation of continued edge. Protects against unexpected market efficiency shifts.
+        </div>
+    </div>
+    
+    <div class="risk-item">
+        <div class="risk-item-title">temporal validation</div>
+        <div class="risk-item-desc">
+            Holdout test spans complete 2024-25 season (2,779 games). Training data pre-September 2024 (4,966 games). 
+            No look-ahead bias. Models never see test data during training.
+        </div>
+    </div>
+</div>
+
+<!-- Technical Documentation -->
+<h2 class="section-title">technical documentation</h2>
+
+<div style="margin: 30px 0;">
+    <a href="/docs/investor/TECHNICAL_VALIDATION_REPORT.md" class="document-link">
+        <div class="document-title">technical validation report</div>
+        <div class="document-desc">Complete statistical methodology, model architecture, feature engineering</div>
+    </a>
+    
+    <a href="/docs/investor/verification/nhl_holdout_metrics.json" class="document-link">
+        <div class="document-title">holdout metrics (json)</div>
+        <div class="document-desc">Exportable validation results with confidence thresholds and performance data</div>
+    </a>
+    
+    <a href="/analysis/EXECUTIVE_SUMMARY_BACKTEST.md" class="document-link">
+        <div class="document-title">executive summary</div>
+        <div class="document-desc">High-level overview of validation process and key findings</div>
+    </a>
+    
+    <a href="/analysis/NHL_EVIDENCE_READINESS.md" class="document-link">
+        <div class="document-title">evidence readiness checklist</div>
+        <div class="document-desc">Reproducibility requirements and verification status</div>
+    </a>
+</div>
+
+<!-- Disclaimer -->
+<div style="margin: 60px 0; padding: 25px; background: rgba(202, 138, 4, 0.05); border: 1px solid rgba(202, 138, 4, 0.15); border-radius: 12px;">
+    <h3 style="font-size: 14px; font-weight: 500; margin-bottom: 12px; opacity: 0.8;">disclaimer</h3>
+    <p style="font-size: 12px; line-height: 1.8; opacity: 0.6;">
+        Past performance does not guarantee future results. All projections based on historical holdout validation. 
+        Actual returns may vary. Sports betting involves substantial risk of loss. Only invest capital you can afford to lose. 
+        Edge degradation, market efficiency improvements, and regulatory changes may impact performance. 
+        Projections assume continuous reinvestment and do not account for taxes, fees, or transaction costs.
+    </p>
+</div>
+
+{% endblock %}
