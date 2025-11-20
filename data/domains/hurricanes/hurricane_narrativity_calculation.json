@@ -1,0 +1,36 @@
+{
+  "domain": "hurricanes",
+  "calculation_date": "2025-11-12T23:09:22.962443",
+  "dual_pi_approach": true,
+  "storm_pi": {
+    "value": 0.425,
+    "components": {
+      "structural": 0.3,
+      "temporal": 0.7,
+      "agency": 0.0,
+      "interpretive": 0.9,
+      "format": 0.6
+    },
+    "classification": "moderate",
+    "interpretation": "Low agency (0.00) creates low \u03c0 despite high interpretive complexity"
+  },
+  "response_pi": {
+    "value": 0.677,
+    "components": {
+      "structural": 0.4,
+      "temporal": 0.75,
+      "agency": 0.8,
+      "interpretive": 0.95,
+      "format": 0.65
+    },
+    "classification": "moderate-high",
+    "interpretation": "High agency (0.80) and extreme interpretive (0.95) create moderate-high \u03c0"
+  },
+  "theoretical_contribution": "First domain with dual \u03c0 calculation - tests nominative effects on both nature and human response to nature",
+  "hypothesis": "Storm names affect human response (\u03c0=0.655) even though they cannot affect the storm itself (\u03c0=0.425)",
+  "expected_performance": {
+    "storm_r_squared": 0.0,
+    "response_r_squared": 0.22,
+    "mechanism": "Nominative determinism operates through perception \u2192 behavior, not through physical causation"
+  }
+}

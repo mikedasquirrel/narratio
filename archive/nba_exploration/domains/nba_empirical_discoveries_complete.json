@@ -1,0 +1,518 @@
+{
+  "total_contexts": 56,
+  "top_contexts": [
+    {
+      "rank": 1,
+      "name": "game_closeness=Blowout",
+      "dimension": "game_closeness",
+      "r": -0.9999999994349796,
+      "r_squared": 0.9999999988699593,
+      "n": 785,
+      "p": 0.0,
+      "significant": true
+    },
+    {
+      "rank": 2,
+      "name": "game_closeness=Nail-biter",
+      "dimension": "game_closeness",
+      "r": 0.9999999983513062,
+      "r_squared": 0.9999999967026123,
+      "n": 779,
+      "p": 0.0,
+      "significant": true
+    },
+    {
+      "rank": 3,
+      "name": "game_closeness=Close",
+      "dimension": "game_closeness",
+      "r": -0.3354724289345704,
+      "r_squared": 0.11254175057526039,
+      "n": 1436,
+      "p": 4.146162055849631e-39,
+      "significant": true
+    },
+    {
+      "rank": 4,
+      "name": "team=DEN",
+      "dimension": "team",
+      "r": -0.2316735943176537,
+      "r_squared": 0.053672654304060784,
+      "n": 118,
+      "p": 0.011593846835703399,
+      "significant": true
+    },
+    {
+      "rank": 5,
+      "name": "points_category=Low",
+      "dimension": "points_category",
+      "r": -0.23044476862348195,
+      "r_squared": 0.053104791385930133,
+      "n": 780,
+      "p": 7.341303783451381e-11,
+      "significant": true
+    },
+    {
+      "rank": 6,
+      "name": "team=OKC",
+      "dimension": "team",
+      "r": -0.22284381793514726,
+      "r_squared": 0.049659367191913065,
+      "n": 93,
+      "p": 0.03179015525443234,
+      "significant": true
+    },
+    {
+      "rank": 7,
+      "name": "team=LAL",
+      "dimension": "team",
+      "r": -0.2212001593982376,
+      "r_squared": 0.04892951051780572,
+      "n": 100,
+      "p": 0.026989834230124365,
+      "significant": true
+    },
+    {
+      "rank": 8,
+      "name": "team=CHA",
+      "dimension": "team",
+      "r": -0.21446143004714394,
+      "r_squared": 0.045993704977866014,
+      "n": 90,
+      "p": 0.042376625692671976,
+      "significant": true
+    },
+    {
+      "rank": 9,
+      "name": "season=2020-21",
+      "dimension": "season",
+      "r": -0.17729112220626114,
+      "r_squared": 0.031432142013155424,
+      "n": 252,
+      "p": 0.0047604321466753,
+      "significant": true
+    },
+    {
+      "rank": 10,
+      "name": "team=BOS",
+      "dimension": "team",
+      "r": 0.1707375834037973,
+      "r_squared": 0.02915132238656864,
+      "n": 89,
+      "p": 0.10965733982018812,
+      "significant": false
+    },
+    {
+      "rank": 11,
+      "name": "team=HOU",
+      "dimension": "team",
+      "r": -0.16288839189001159,
+      "r_squared": 0.02653262821251399,
+      "n": 93,
+      "p": 0.11875229555611505,
+      "significant": false
+    },
+    {
+      "rank": 12,
+      "name": "points_category=High",
+      "dimension": "points_category",
+      "r": 0.16203095547633314,
+      "r_squared": 0.026254030532573455,
+      "n": 1373,
+      "p": 1.5567663052332796e-09,
+      "significant": true
+    },
+    {
+      "rank": 13,
+      "name": "team=MIA",
+      "dimension": "team",
+      "r": -0.15601677200504147,
+      "r_squared": 0.02434123314687309,
+      "n": 114,
+      "p": 0.09739577489753569,
+      "significant": false
+    },
+    {
+      "rank": 14,
+      "name": "team=PHX",
+      "dimension": "team",
+      "r": -0.13331989403307762,
+      "r_squared": 0.017774194144991044,
+      "n": 100,
+      "p": 0.18605201307463046,
+      "significant": false
+    },
+    {
+      "rank": 15,
+      "name": "team=SAC",
+      "dimension": "team",
+      "r": -0.1332692328052862,
+      "r_squared": 0.01776068841250957,
+      "n": 91,
+      "p": 0.2079006427757162,
+      "significant": false
+    },
+    {
+      "rank": 16,
+      "name": "team=NYK",
+      "dimension": "team",
+      "r": -0.13211565753310026,
+      "r_squared": 0.01745454696540343,
+      "n": 86,
+      "p": 0.22528834582829557,
+      "significant": false
+    },
+    {
+      "rank": 17,
+      "name": "team=GSW",
+      "dimension": "team",
+      "r": 0.11526305591058168,
+      "r_squared": 0.01328557205784588,
+      "n": 93,
+      "p": 0.27124726235306934,
+      "significant": false
+    },
+    {
+      "rank": 18,
+      "name": "season=2018-19",
+      "dimension": "season",
+      "r": -0.10799234961417944,
+      "r_squared": 0.011662347575191164,
+      "n": 316,
+      "p": 0.05514674857412284,
+      "significant": false
+    },
+    {
+      "rank": 19,
+      "name": "points_category=Medium",
+      "dimension": "points_category",
+      "r": -0.10011375189158458,
+      "r_squared": 0.010022763317809756,
+      "n": 847,
+      "p": 0.003537959953849314,
+      "significant": true
+    },
+    {
+      "rank": 20,
+      "name": "season=2016-17",
+      "dimension": "season",
+      "r": -0.0962096975055804,
+      "r_squared": 0.009256305894115283,
+      "n": 318,
+      "p": 0.08673387799569723,
+      "significant": false
+    },
+    {
+      "rank": 21,
+      "name": "team=MIN",
+      "dimension": "team",
+      "r": -0.09465257192217326,
+      "r_squared": 0.008959109371482182,
+      "n": 100,
+      "p": 0.3488970590698632,
+      "significant": false
+    },
+    {
+      "rank": 22,
+      "name": "team=ORL",
+      "dimension": "team",
+      "r": 0.0922560252145346,
+      "r_squared": 0.008511174188384844,
+      "n": 104,
+      "p": 0.35162195399927193,
+      "significant": false
+    },
+    {
+      "rank": 23,
+      "name": "team=LAC",
+      "dimension": "team",
+      "r": 0.08521258014929117,
+      "r_squared": 0.007261183815699372,
+      "n": 116,
+      "p": 0.3630946559696279,
+      "significant": false
+    },
+    {
+      "rank": 24,
+      "name": "season=2019-20",
+      "dimension": "season",
+      "r": -0.08334551308466245,
+      "r_squared": 0.00694647455134564,
+      "n": 271,
+      "p": 0.17128715169705022,
+      "significant": false
+    },
+    {
+      "rank": 25,
+      "name": "month=November",
+      "dimension": "month",
+      "r": -0.07988403344509397,
+      "r_squared": 0.006381458799456892,
+      "n": 524,
+      "p": 0.06767225042970468,
+      "significant": false
+    },
+    {
+      "rank": 26,
+      "name": "team=NOP",
+      "dimension": "team",
+      "r": -0.0770442184683793,
+      "r_squared": 0.005935811599403359,
+      "n": 84,
+      "p": 0.4860670045330572,
+      "significant": false
+    },
+    {
+      "rank": 27,
+      "name": "home_game=False",
+      "dimension": "home_game",
+      "r": -0.07507242287662139,
+      "r_squared": 0.005635868676566266,
+      "n": 1518,
+      "p": 0.0034262674467406603,
+      "significant": true
+    },
+    {
+      "rank": 28,
+      "name": "team=MIL",
+      "dimension": "team",
+      "r": -0.07127141943846661,
+      "r_squared": 0.005079615228773837,
+      "n": 109,
+      "p": 0.4614543535687065,
+      "significant": false
+    },
+    {
+      "rank": 29,
+      "name": "season=2021-22",
+      "dimension": "season",
+      "r": -0.06942879759156274,
+      "r_squared": 0.004820357935010189,
+      "n": 305,
+      "p": 0.2266618917323534,
+      "significant": false
+    },
+    {
+      "rank": 30,
+      "name": "month=April",
+      "dimension": "month",
+      "r": -0.06902085242925035,
+      "r_squared": 0.004763878070060354,
+      "n": 253,
+      "p": 0.2740812292126699,
+      "significant": false
+    },
+    {
+      "rank": 31,
+      "name": "month=January",
+      "dimension": "month",
+      "r": -0.067339043433918,
+      "r_squared": 0.004534546770595095,
+      "n": 554,
+      "p": 0.11337808869381581,
+      "significant": false
+    },
+    {
+      "rank": 32,
+      "name": "season=2022-23",
+      "dimension": "season",
+      "r": 0.06704514229617478,
+      "r_squared": 0.004495051105514325,
+      "n": 312,
+      "p": 0.23767065174984908,
+      "significant": false
+    },
+    {
+      "rank": 33,
+      "name": "team=PHI",
+      "dimension": "team",
+      "r": -0.06697793522536669,
+      "r_squared": 0.004486043807053416,
+      "n": 112,
+      "p": 0.4828884931588767,
+      "significant": false
+    },
+    {
+      "rank": 34,
+      "name": "team=BKN",
+      "dimension": "team",
+      "r": -0.0660451770564194,
+      "r_squared": 0.004361965412413787,
+      "n": 93,
+      "p": 0.5293557302735798,
+      "significant": false
+    },
+    {
+      "rank": 35,
+      "name": "month=March",
+      "dimension": "month",
+      "r": -0.06512339196264079,
+      "r_squared": 0.004241056180719747,
+      "n": 525,
+      "p": 0.13617431110279604,
+      "significant": false
+    },
+    {
+      "rank": 36,
+      "name": "team=DET",
+      "dimension": "team",
+      "r": 0.06435981464672459,
+      "r_squared": 0.004142185741360745,
+      "n": 106,
+      "p": 0.512179235515255,
+      "significant": false
+    },
+    {
+      "rank": 37,
+      "name": "team=WAS",
+      "dimension": "team",
+      "r": 0.0629151103854846,
+      "r_squared": 0.003958311114817712,
+      "n": 104,
+      "p": 0.5257642657652523,
+      "significant": false
+    },
+    {
+      "rank": 38,
+      "name": "season=2014-15",
+      "dimension": "season",
+      "r": -0.06128167669272944,
+      "r_squared": 0.003755443898272219,
+      "n": 307,
+      "p": 0.2844537448282059,
+      "significant": false
+    },
+    {
+      "rank": 39,
+      "name": "team=CHI",
+      "dimension": "team",
+      "r": -0.0559908987324188,
+      "r_squared": 0.0031349807408639777,
+      "n": 103,
+      "p": 0.5742853227528845,
+      "significant": false
+    },
+    {
+      "rank": 40,
+      "name": "team=DAL",
+      "dimension": "team",
+      "r": -0.05162591372769463,
+      "r_squared": 0.0026652349682193687,
+      "n": 106,
+      "p": 0.5991871550613027,
+      "significant": false
+    },
+    {
+      "rank": 41,
+      "name": "season_phase=Early Season",
+      "dimension": "season_phase",
+      "r": -0.050311970417828845,
+      "r_squared": 0.002531294367324485,
+      "n": 3000,
+      "p": 0.005845983951709779,
+      "significant": true
+    },
+    {
+      "rank": 42,
+      "name": "team=IND",
+      "dimension": "team",
+      "r": -0.04728710942612245,
+      "r_squared": 0.0022360707178780788,
+      "n": 99,
+      "p": 0.6420850861036683,
+      "significant": false
+    },
+    {
+      "rank": 43,
+      "name": "month=October",
+      "dimension": "month",
+      "r": 0.04561140632951035,
+      "r_squared": 0.0020804003873556966,
+      "n": 159,
+      "p": 0.5680693093036031,
+      "significant": false
+    },
+    {
+      "rank": 44,
+      "name": "team=SAS",
+      "dimension": "team",
+      "r": 0.04522413901633818,
+      "r_squared": 0.002045222749769081,
+      "n": 100,
+      "p": 0.6550308055352323,
+      "significant": false
+    },
+    {
+      "rank": 45,
+      "name": "team=CLE",
+      "dimension": "team",
+      "r": -0.044027491117819104,
+      "r_squared": 0.00193841997412964,
+      "n": 80,
+      "p": 0.6981757019507879,
+      "significant": false
+    },
+    {
+      "rank": 46,
+      "name": "season=2015-16",
+      "dimension": "season",
+      "r": -0.04320468242467186,
+      "r_squared": 0.0018666445834167496,
+      "n": 304,
+      "p": 0.4529255746759908,
+      "significant": false
+    },
+    {
+      "rank": 47,
+      "name": "team=POR",
+      "dimension": "team",
+      "r": -0.042664219086817376,
+      "r_squared": 0.001820235590287952,
+      "n": 103,
+      "p": 0.6687202139451494,
+      "significant": false
+    },
+    {
+      "rank": 48,
+      "name": "team=MEM",
+      "dimension": "team",
+      "r": -0.03818689547243233,
+      "r_squared": 0.0014582389858224726,
+      "n": 109,
+      "p": 0.693410953302343,
+      "significant": false
+    },
+    {
+      "rank": 49,
+      "name": "season=2017-18",
+      "dimension": "season",
+      "r": 0.037328914866535785,
+      "r_squared": 0.0013934478851130763,
+      "n": 311,
+      "p": 0.5119010778027036,
+      "significant": false
+    },
+    {
+      "rank": 50,
+      "name": "season=2023-24",
+      "dimension": "season",
+      "r": -0.03583612251517776,
+      "r_squared": 0.0012842276769228303,
+      "n": 304,
+      "p": 0.5336459694720822,
+      "significant": false
+    }
+  ],
+  "passing_contexts": [
+    {
+      "context": "game_closeness=Nail-biter",
+      "r_measured": 0.9999999983513062,
+      "\u043f_inferred": 0.9,
+      "\u03ba_inferred": 0.6,
+      "\u0414": 0.5399999991097053,
+      "efficiency": 0.5999999990107837,
+      "n": 779
+    }
+  ],
+  "approach": "pure_empirical_discovery",
+  "principle": "Data leads, theory explains"
+}

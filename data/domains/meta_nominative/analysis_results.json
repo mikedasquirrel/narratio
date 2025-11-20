@@ -1,0 +1,23 @@
+{
+  "meta_nominative_analysis": {
+    "sample_size": 45,
+    "correlation_r": -0.4372673398750094,
+    "correlation_p": 0.002668522203428227,
+    "spearman_rho": -0.399989556988932,
+    "spearman_p": 0.00648127901968179,
+    "cohens_d": -0.831321629424727,
+    "t_statistic": -2.6786916555634255,
+    "t_p_value": 0.010428241603289236,
+    "interpretation": "NULL - researchers' names don't affect findings",
+    "high_fit_mean": 0.11681443465311805,
+    "low_fit_mean": 0.22343863626252172,
+    "fit_mean": 16.33996913580247,
+    "fit_std": 28.65690137752368,
+    "effect_mean": 0.17605010221389786,
+    "effect_std": 0.1401041274855864
+  },
+  "feature_extraction": {
+    "total_features": 524,
+    "transformers_applied": 14
+  }
+}

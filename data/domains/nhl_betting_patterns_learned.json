@@ -1,0 +1,373 @@
+[
+  {
+    "name": "GBM Confidence \u226560%",
+    "description": "Games where model predicts home win with 60%+ confidence",
+    "n_games": 225,
+    "wins": 225,
+    "losses": 0,
+    "win_rate": 1.0,
+    "win_rate_pct": 100.0,
+    "roi": 0.909,
+    "roi_pct": 90.9,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "ml_confidence",
+    "model_threshold": 0.6
+  },
+  {
+    "name": "Feature_1149 > Q3 (75th percentile)",
+    "description": "Games where Feature_1149 is > q3 (75th percentile)",
+    "feature": "Feature_1149",
+    "feature_idx": 1149,
+    "threshold": "> Q3 (75th percentile)",
+    "n_games": 106,
+    "wins": 69,
+    "losses": 37,
+    "win_rate": 0.6509433962264151,
+    "win_rate_pct": 65.09433962264151,
+    "roi": 0.2426509433962264,
+    "roi_pct": 24.26509433962264,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "Low Feature_726 + High Feature_825",
+    "description": "Games with low feature_726 + high feature_825",
+    "features": [
+      "Feature_726",
+      "Feature_825"
+    ],
+    "feature_indices": [
+      726,
+      825
+    ],
+    "n_games": 83,
+    "wins": 54,
+    "losses": 29,
+    "win_rate": 0.6506024096385542,
+    "win_rate_pct": 65.06024096385542,
+    "roi": 0.242,
+    "roi_pct": 24.2,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Low Feature_726 + High Feature_840",
+    "description": "Games with low feature_726 + high feature_840",
+    "features": [
+      "Feature_726",
+      "Feature_840"
+    ],
+    "feature_indices": [
+      726,
+      840
+    ],
+    "n_games": 82,
+    "wins": 53,
+    "losses": 29,
+    "win_rate": 0.6463414634146342,
+    "win_rate_pct": 64.63414634146342,
+    "roi": 0.23386585365853663,
+    "roi_pct": 23.386585365853662,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Low Feature_726 + High Feature_839",
+    "description": "Games with low feature_726 + high feature_839",
+    "features": [
+      "Feature_726",
+      "Feature_839"
+    ],
+    "feature_indices": [
+      726,
+      839
+    ],
+    "n_games": 83,
+    "wins": 53,
+    "losses": 30,
+    "win_rate": 0.6385542168674698,
+    "win_rate_pct": 63.85542168674698,
+    "roi": 0.21899999999999997,
+    "roi_pct": 21.9,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Feature_1124 < Q1 (25th percentile)",
+    "description": "Games where Feature_1124 is < q1 (25th percentile)",
+    "feature": "Feature_1124",
+    "feature_idx": 1124,
+    "threshold": "< Q1 (25th percentile)",
+    "n_games": 98,
+    "wins": 61,
+    "losses": 37,
+    "win_rate": 0.6224489795918368,
+    "win_rate_pct": 62.244897959183675,
+    "roi": 0.1882551020408164,
+    "roi_pct": 18.82551020408164,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "Feature_1124 < Median",
+    "description": "Games where Feature_1124 is < median",
+    "feature": "Feature_1124",
+    "feature_idx": 1124,
+    "threshold": "< Median",
+    "n_games": 208,
+    "wins": 129,
+    "losses": 79,
+    "win_rate": 0.6201923076923077,
+    "win_rate_pct": 62.019230769230774,
+    "roi": 0.1839471153846154,
+    "roi_pct": 18.39471153846154,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "Feature_297 < Q1 (25th percentile)",
+    "description": "Games where Feature_297 is < q1 (25th percentile)",
+    "feature": "Feature_297",
+    "feature_idx": 297,
+    "threshold": "< Q1 (25th percentile)",
+    "n_games": 106,
+    "wins": 65,
+    "losses": 41,
+    "win_rate": 0.6132075471698113,
+    "win_rate_pct": 61.32075471698113,
+    "roi": 0.1706132075471698,
+    "roi_pct": 17.06132075471698,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "Feature_840 > Q3 (75th percentile)",
+    "description": "Games where Feature_840 is > q3 (75th percentile)",
+    "feature": "Feature_840",
+    "feature_idx": 840,
+    "threshold": "> Q3 (75th percentile)",
+    "n_games": 106,
+    "wins": 64,
+    "losses": 42,
+    "win_rate": 0.6037735849056604,
+    "win_rate_pct": 60.37735849056604,
+    "roi": 0.15260377358490562,
+    "roi_pct": 15.260377358490562,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "High Feature_840 + Low Feature_824",
+    "description": "Games with high feature_840 + low feature_824",
+    "features": [
+      "Feature_840",
+      "Feature_824"
+    ],
+    "feature_indices": [
+      840,
+      824
+    ],
+    "n_games": 138,
+    "wins": 83,
+    "losses": 55,
+    "win_rate": 0.6014492753623188,
+    "win_rate_pct": 60.14492753623188,
+    "roi": 0.14816666666666667,
+    "roi_pct": 14.816666666666666,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Feature_301 > Q3 (75th percentile)",
+    "description": "Games where Feature_301 is > q3 (75th percentile)",
+    "feature": "Feature_301",
+    "feature_idx": 301,
+    "threshold": "> Q3 (75th percentile)",
+    "n_games": 106,
+    "wins": 63,
+    "losses": 43,
+    "win_rate": 0.5943396226415094,
+    "win_rate_pct": 59.43396226415094,
+    "roi": 0.13459433962264145,
+    "roi_pct": 13.459433962264145,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "High Feature_825 + Low Feature_824",
+    "description": "Games with high feature_825 + low feature_824",
+    "features": [
+      "Feature_825",
+      "Feature_824"
+    ],
+    "feature_indices": [
+      825,
+      824
+    ],
+    "n_games": 134,
+    "wins": 79,
+    "losses": 55,
+    "win_rate": 0.5895522388059702,
+    "win_rate_pct": 58.95522388059702,
+    "roi": 0.12545522388059716,
+    "roi_pct": 12.545522388059716,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "High Feature_838 + Low Feature_824",
+    "description": "Games with high feature_838 + low feature_824",
+    "features": [
+      "Feature_838",
+      "Feature_824"
+    ],
+    "feature_indices": [
+      838,
+      824
+    ],
+    "n_games": 136,
+    "wins": 80,
+    "losses": 56,
+    "win_rate": 0.5882352941176471,
+    "win_rate_pct": 58.82352941176471,
+    "roi": 0.12294117647058833,
+    "roi_pct": 12.294117647058833,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Feature_840 > Median",
+    "description": "Games where Feature_840 is > median",
+    "feature": "Feature_840",
+    "feature_idx": 840,
+    "threshold": "> Median",
+    "n_games": 211,
+    "wins": 122,
+    "losses": 89,
+    "win_rate": 0.5781990521327014,
+    "win_rate_pct": 57.81990521327014,
+    "roi": 0.10378199052132697,
+    "roi_pct": 10.378199052132697,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "High Feature_825 + High Feature_840",
+    "description": "Games with high feature_825 + high feature_840",
+    "features": [
+      "Feature_825",
+      "Feature_840"
+    ],
+    "feature_indices": [
+      825,
+      840
+    ],
+    "n_games": 207,
+    "wins": 118,
+    "losses": 89,
+    "win_rate": 0.5700483091787439,
+    "win_rate_pct": 57.00483091787439,
+    "roi": 0.0882222222222222,
+    "roi_pct": 8.82222222222222,
+    "confidence": "HIGH",
+    "unit_recommendation": 2,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Feature_1149 > Median",
+    "description": "Games where Feature_1149 is > median",
+    "feature": "Feature_1149",
+    "feature_idx": 1149,
+    "threshold": "> Median",
+    "n_games": 211,
+    "wins": 120,
+    "losses": 91,
+    "win_rate": 0.5687203791469194,
+    "win_rate_pct": 56.872037914691944,
+    "roi": 0.08568720379146921,
+    "roi_pct": 8.56872037914692,
+    "confidence": "MEDIUM",
+    "unit_recommendation": 1,
+    "pattern_type": "threshold"
+  },
+  {
+    "name": "High Feature_825 + High Feature_838",
+    "description": "Games with high feature_825 + high feature_838",
+    "features": [
+      "Feature_825",
+      "Feature_838"
+    ],
+    "feature_indices": [
+      825,
+      838
+    ],
+    "n_games": 208,
+    "wins": 118,
+    "losses": 90,
+    "win_rate": 0.5673076923076923,
+    "win_rate_pct": 56.730769230769226,
+    "roi": 0.08299038461538455,
+    "roi_pct": 8.299038461538455,
+    "confidence": "MEDIUM",
+    "unit_recommendation": 1,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "High Feature_840 + High Feature_838",
+    "description": "Games with high feature_840 + high feature_838",
+    "features": [
+      "Feature_840",
+      "Feature_838"
+    ],
+    "feature_indices": [
+      840,
+      838
+    ],
+    "n_games": 204,
+    "wins": 115,
+    "losses": 89,
+    "win_rate": 0.5637254901960784,
+    "win_rate_pct": 56.372549019607845,
+    "roi": 0.07615196078431374,
+    "roi_pct": 7.615196078431374,
+    "confidence": "MEDIUM",
+    "unit_recommendation": 1,
+    "pattern_type": "combination"
+  },
+  {
+    "name": "Low Feature_726 + High Feature_824",
+    "description": "Games with low feature_726 + high feature_824",
+    "features": [
+      "Feature_726",
+      "Feature_824"
+    ],
+    "feature_indices": [
+      726,
+      824
+    ],
+    "n_games": 88,
+    "wins": 49,
+    "losses": 39,
+    "win_rate": 0.5568181818181818,
+    "win_rate_pct": 55.68181818181818,
+    "roi": 0.06296590909090904,
+    "roi_pct": 6.296590909090904,
+    "confidence": "MEDIUM",
+    "unit_recommendation": 1,
+    "pattern_type": "combination"
+  }
+]

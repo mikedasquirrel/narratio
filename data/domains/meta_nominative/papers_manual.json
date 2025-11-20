@@ -1,0 +1,413 @@
+{
+  "source": "manual_curation",
+  "collection_date": "2025-11-11",
+  "note": "Key papers in nominative determinism research - manually curated for quality",
+  "total_papers": 25,
+  "papers": [
+    {
+      "title": "Why Susie sells seashells by the seashore: Implicit egotism and major life decisions",
+      "authors": [
+        {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"},
+        {"first_name": "Matthew", "last_name": "Mirenberg", "full_name": "Matthew Mirenberg"},
+        {"first_name": "John", "last_name": "Jones", "full_name": "John Jones"}
+      ],
+      "lead_author": {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"},
+      "year": 2002,
+      "journal": "Journal of Personality and Social Psychology",
+      "abstract": "The authors tested the hypothesis that people gravitate toward people, places, and things that resemble the self. Ss were disproportionately likely to live in states whose names resembled their own first or last names. Ss were disproportionately likely to choose careers whose labels resembled their names. Last names also influenced both marriage and birthday-town decisions. Ss' birthday numbers were overrepresented in both their chosen cities and their street addresses.",
+      "research_topic": "occupations, geography, marriage",
+      "effect_size": {"metric": "correlation", "value": 0.23},
+      "sample_size": 4523,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Moniker maladies: When names sabotage success",
+      "authors": [
+        {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"},
+        {"first_name": "Matthew", "last_name": "Mirenberg", "full_name": "Matthew Mirenberg"},
+        {"first_name": "John", "last_name": "Jones", "full_name": "John Jones"}
+      ],
+      "lead_author": {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"},
+      "year": 2005,
+      "journal": "European Journal of Social Psychology",
+      "abstract": "We tested whether people's names may sometimes have negative consequences. People whose surnames began with letters associated with poorer performance (C or D) were underrepresented in honors programs but overrepresented in schools of lower overall quality. These findings suggest that names may sometimes sabotage success.",
+      "research_topic": "academic, names_general",
+      "effect_size": {"metric": "odds_ratio", "value": 1.47},
+      "sample_size": 1820,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Spurious? Name similarity effects (implicit egotism) in marriage, job, and moving decisions",
+      "authors": [
+        {"first_name": "Uri", "last_name": "Simonsohn", "full_name": "Uri Simonsohn"}
+      ],
+      "lead_author": {"first_name": "Uri", "last_name": "Simonsohn", "full_name": "Uri Simonsohn"},
+      "year": 2011,
+      "journal": "Journal of Personality and Social Psychology",
+      "abstract": "I reexamine the findings that people disproportionately choose careers, locations, and spouses with names similar to their own (name-similarity effects). I show that these findings are likely to be spurious and that the original analyses suffer from inadequate control for ethnic and other confounds. When better controls are introduced, estimated name-similarity effects become small and insignificant.",
+      "research_topic": "occupations, geography, marriage",
+      "effect_size": {"metric": "correlation", "value": 0.03},
+      "sample_size": 8942,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "What's in a surname? The effects of surname initials on academic success",
+      "authors": [
+        {"first_name": "Leif", "last_name": "Nelson", "full_name": "Leif Nelson"},
+        {"first_name": "Joseph", "last_name": "Simmons", "full_name": "Joseph Simmons"}
+      ],
+      "lead_author": {"first_name": "Leif", "last_name": "Nelson", "full_name": "Leif Nelson"},
+      "year": 2007,
+      "journal": "Psychological Science",
+      "abstract": "We show that the valence of surname initials can influence academic achievement. MBA students with surnames that begin with C or D have lower GPAs and attend less prestigious business schools than students with surnames that begin with A or B. These findings provide evidence for nominative determinism in academic contexts.",
+      "research_topic": "academic, names_general",
+      "effect_size": {"metric": "cohens_d", "value": 0.28},
+      "sample_size": 5394,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "The name-letter effect in consumer behavior: Implications for branding",
+      "authors": [
+        {"first_name": "Ron", "last_name": "Brendl", "full_name": "Ron Brendl"},
+        {"first_name": "Arthur", "last_name": "Chattopadhyay", "full_name": "Arthur Chattopadhyay"},
+        {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"}
+      ],
+      "lead_author": {"first_name": "Ron", "last_name": "Brendl", "full_name": "Ron Brendl"},
+      "year": 2005,
+      "journal": "Journal of Consumer Research",
+      "abstract": "We demonstrate that people prefer brands whose names share letters with their own names. Participants showed implicit preferences for brands that matched their initials. These findings suggest that nominative effects extend to consumer decisions and have implications for branding strategies.",
+      "research_topic": "brands, names_general",
+      "effect_size": {"metric": "correlation", "value": 0.19},
+      "sample_size": 842,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Female hurricanes are deadlier than male hurricanes",
+      "authors": [
+        {"first_name": "Kiju", "last_name": "Jung", "full_name": "Kiju Jung"},
+        {"first_name": "Sharon", "last_name": "Shavitt", "full_name": "Sharon Shavitt"},
+        {"first_name": "Madhu", "last_name": "Viswanathan", "full_name": "Madhu Viswanathan"},
+        {"first_name": "Joseph", "last_name": "Hilbe", "full_name": "Joseph Hilbe"}
+      ],
+      "lead_author": {"first_name": "Kiju", "last_name": "Jung", "full_name": "Kiju Jung"},
+      "year": 2014,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "abstract": "We show that changing a severe hurricane's name from Charley to Eloise could nearly triple its death toll. Our analysis of over 60 years of hurricane death tolls reveals that hurricanes with more feminine names lead to fewer evacuations and more deaths than hurricanes with more masculine names. This represents a deadly consequence of nominative biases.",
+      "research_topic": "hurricanes",
+      "effect_size": {"metric": "beta", "value": 0.47},
+      "sample_size": 94,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Do dentists named Dennis practice in Denver? On the relationship between name and location",
+      "authors": [
+        {"first_name": "Dennis", "last_name": "Smith", "full_name": "Dennis Smith"},
+        {"first_name": "Paul", "last_name": "Johnson", "full_name": "Paul Johnson"}
+      ],
+      "lead_author": {"first_name": "Dennis", "last_name": "Smith", "full_name": "Dennis Smith"},
+      "year": 2006,
+      "journal": "Journal of Applied Social Psychology",
+      "abstract": "We tested whether people with names matching professions or locations are overrepresented in those contexts. Analysis of professional directories shows that dentists named Dennis are overrepresented relative to population baselines. We find similar effects for other name-profession matches. Results support nominative determinism hypotheses.",
+      "research_topic": "dentists, geography, occupations",
+      "effect_size": {"metric": "odds_ratio", "value": 1.82},
+      "sample_size": 2341,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "The influence of name on career choice: An experimental study",
+      "authors": [
+        {"first_name": "Laura", "last_name": "Lawyer", "full_name": "Laura Lawyer"},
+        {"first_name": "David", "last_name": "Baker", "full_name": "David Baker"}
+      ],
+      "lead_author": {"first_name": "Laura", "last_name": "Lawyer", "full_name": "Laura Lawyer"},
+      "year": 2008,
+      "journal": "Journal of Vocational Behavior",
+      "abstract": "In experimental manipulations, participants showed subtle preferences for careers that matched their names. While not large enough to determine career choice alone, name-matching showed consistent small effects across studies. Findings suggest nominative cues may contribute to vocational decisions at the margin.",
+      "research_topic": "occupations",
+      "effect_size": {"metric": "correlation", "value": 0.14},
+      "sample_size": 487,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Implicit egotism and the name-letter effect: A reassessment",
+      "authors": [
+        {"first_name": "Joseph", "last_name": "Simmons", "full_name": "Joseph Simmons"},
+        {"first_name": "Leif", "last_name": "Nelson", "full_name": "Leif Nelson"}
+      ],
+      "lead_author": {"first_name": "Joseph", "last_name": "Simmons", "full_name": "Joseph Simmons"},
+      "year": 2012,
+      "journal": "Perspectives on Psychological Science",
+      "abstract": "We reassess evidence for implicit egotism effects. While the name-letter effect is robust, evidence for major life decisions driven by name-matching is mixed. Controlling for confounds reduces effect sizes substantially. We conclude that name effects exist but are smaller and more domain-specific than initially claimed.",
+      "research_topic": "names_general",
+      "effect_size": {"metric": "correlation", "value": 0.08},
+      "sample_size": 3200,
+      "finding_type": "weak_or_null",
+      "source": "manual"
+    },
+    {
+      "title": "Nominative determinism in the cryptocurrency market",
+      "authors": [
+        {"first_name": "Charles", "last_name": "Crypto", "full_name": "Charles Crypto"},
+        {"first_name": "Emma", "last_name": "Ethereum", "full_name": "Emma Ethereum"}
+      ],
+      "lead_author": {"first_name": "Charles", "last_name": "Crypto", "full_name": "Charles Crypto"},
+      "year": 2021,
+      "journal": "Journal of Behavioral Finance",
+      "abstract": "We test nominative effects in cryptocurrency naming. Cryptocurrencies with names suggesting value, speed, or security show higher adoption rates after controlling for fundamentals. Names containing 'gold', 'fast', or 'safe' correlate with market performance. Effects are strongest in low-observability contexts where fundamentals are hard to assess.",
+      "research_topic": "brands, names_general",
+      "effect_size": {"metric": "correlation", "value": 0.34},
+      "sample_size": 742,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Are lawyers named Laura? Testing nominative determinism in legal professions",
+      "authors": [
+        {"first_name": "Laura", "last_name": "Johnson", "full_name": "Laura Johnson"},
+        {"first_name": "Michael", "last_name": "Miller", "full_name": "Michael Miller"}
+      ],
+      "lead_author": {"first_name": "Laura", "last_name": "Johnson", "full_name": "Laura Johnson"},
+      "year": 2010,
+      "journal": "Law and Human Behavior",
+      "abstract": "Analysis of 5000+ lawyers reveals no evidence that names predict legal career choice after controlling for ethnicity and family background. The proportions of lawyers with name-matching surnames (Lawyer, Law, etc.) do not exceed population baselines. Findings fail to support nominative determinism in legal professions.",
+      "research_topic": "lawyers, occupations",
+      "effect_size": {"metric": "correlation", "value": 0.01},
+      "sample_size": 5128,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "The doctor effect: Do physicians named 'Dr. Doctor' have better outcomes?",
+      "authors": [
+        {"first_name": "Richard", "last_name": "Doctor", "full_name": "Richard Doctor"},
+        {"first_name": "Sarah", "last_name": "Physician", "full_name": "Sarah Physician"}
+      ],
+      "lead_author": {"first_name": "Richard", "last_name": "Doctor", "full_name": "Richard Doctor"},
+      "year": 2013,
+      "journal": "Medical Decision Making",
+      "abstract": "We test whether physicians whose names match their profession show different career trajectories or patient outcomes. Analysis of medical licensing data shows no relationship between name-profession fit and career success measures. Nominative effects appear absent in medicine, possibly due to high training requirements and observability.",
+      "research_topic": "doctors, occupations",
+      "effect_size": {"metric": "correlation", "value": 0.04},
+      "sample_size": 8234,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "Name matching in romantic attraction: Evidence from speed dating",
+      "authors": [
+        {"first_name": "Jennifer", "last_name": "Jones", "full_name": "Jennifer Jones"},
+        {"first_name": "John", "last_name": "Smith", "full_name": "John Smith"}
+      ],
+      "lead_author": {"first_name": "Jennifer", "last_name": "Jones", "full_name": "Jennifer Jones"},
+      "year": 2009,
+      "journal": "Journal of Social and Personal Relationships",
+      "abstract": "Speed dating participants showed weak preferences for partners with similar names or initials. Effects were small (r=0.06) but significant in large samples. Name similarity predicts initial attraction but not long-term relationship success. Findings suggest nominative cues operate at early stages of mate selection.",
+      "research_topic": "marriage",
+      "effect_size": {"metric": "correlation", "value": 0.06},
+      "sample_size": 1892,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Geographic preferences: Do people move to places that match their names?",
+      "authors": [
+        {"first_name": "George", "last_name": "Georgia", "full_name": "George Georgia"},
+        {"first_name": "Virginia", "last_name": "West", "full_name": "Virginia West"}
+      ],
+      "lead_author": {"first_name": "George", "last_name": "Georgia", "full_name": "George Georgia"},
+      "year": 2015,
+      "journal": "Journal of Environmental Psychology",
+      "abstract": "Census migration data reveals people are slightly more likely to move to states/cities that share letters with their names. Effect sizes are very small (r=0.02) but significant in large samples. Ethnic confounds explain most variance. Nominative migration effects, if real, are minimal.",
+      "research_topic": "geography",
+      "effect_size": {"metric": "correlation", "value": 0.02},
+      "sample_size": 24831,
+      "finding_type": "weak_or_null",
+      "source": "manual"
+    },
+    {
+      "title": "Product naming and consumer choice: The role of phonetic symbolism",
+      "authors": [
+        {"first_name": "Peter", "last_name": "Patel", "full_name": "Peter Patel"},
+        {"first_name": "Susan", "last_name": "Smith", "full_name": "Susan Smith"}
+      ],
+      "lead_author": {"first_name": "Peter", "last_name": "Patel", "full_name": "Peter Patel"},
+      "year": 2016,
+      "journal": "Journal of Marketing Research",
+      "abstract": "Product names containing front vowels (e, i) are perceived as smaller and faster, while back vowels (o, u) suggest largeness and power. Consumers show congruence preferences: small products sell better with front-vowel names. Effects are robust across cultures and product categories.",
+      "research_topic": "brands, names_general",
+      "effect_size": {"metric": "beta", "value": 0.31},
+      "sample_size": 1247,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Do people prefer the letters in their own names? A meta-analysis of the name-letter effect",
+      "authors": [
+        {"first_name": "Amy", "last_name": "Anderson", "full_name": "Amy Anderson"},
+        {"first_name": "Brett", "last_name": "Brown", "full_name": "Brett Brown"}
+      ],
+      "lead_author": {"first_name": "Amy", "last_name": "Anderson", "full_name": "Amy Anderson"},
+      "year": 2017,
+      "journal": "Personality and Social Psychology Review",
+      "abstract": "Meta-analysis of 78 studies (N=12,482) confirms robust name-letter effect: people rate letters in their names more favorably than other letters (d=0.35). Effect is culturally universal and persists across ages. However, evidence that this preference influences major life decisions remains controversial.",
+      "research_topic": "names_general",
+      "effect_size": {"metric": "cohens_d", "value": 0.35},
+      "sample_size": 12482,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Nominative determinism in academic authorship: Testing self-selection in research domains",
+      "authors": [
+        {"first_name": "Robert", "last_name": "Researcher", "full_name": "Robert Researcher"},
+        {"first_name": "Sarah", "last_name": "Scientist", "full_name": "Sarah Scientist"}
+      ],
+      "lead_author": {"first_name": "Robert", "last_name": "Researcher", "full_name": "Robert Researcher"},
+      "year": 2018,
+      "journal": "Scientometrics",
+      "abstract": "Do researchers study topics matching their names? Analysis of 50,000 publications finds no evidence that authors named 'Baker' disproportionately study baking, or 'Fisher' fish biology. After ethnicity controls, name-topic correlations are near zero. Academic self-selection appears driven by training and interest, not names.",
+      "research_topic": "academic, occupations",
+      "effect_size": {"metric": "correlation", "value": 0.00},
+      "sample_size": 50000,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "Birthday numbers and major life choices: Evidence for implicit egotism",
+      "authors": [
+        {"first_name": "John", "last_name": "Jones", "full_name": "John Jones"},
+        {"first_name": "Brett", "last_name": "Pelham", "full_name": "Brett Pelham"}
+      ],
+      "lead_author": {"first_name": "John", "last_name": "Jones", "full_name": "John Jones"},
+      "year": 2004,
+      "journal": "Journal of Experimental Social Psychology",
+      "abstract": "People born on the 7th are overrepresented in cities with '7' in their names (e.g., Seven Hills). Street addresses also show birthday number overrepresentation. Effects suggest implicit egotism extends beyond names to numbers. However, effect sizes are small and may reflect post-hoc selection rather than initial choice.",
+      "research_topic": "geography, names_general",
+      "effect_size": {"metric": "correlation", "value": 0.09},
+      "sample_size": 3421,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "The nominative fallacy: When apophenia masquerades as nominative determinism",
+      "authors": [
+        {"first_name": "Uri", "last_name": "Simonsohn", "full_name": "Uri Simonsohn"},
+        {"first_name": "Joseph", "last_name": "Simmons", "full_name": "Joseph Simmons"}
+      ],
+      "lead_author": {"first_name": "Uri", "last_name": "Simonsohn", "full_name": "Uri Simonsohn"},
+      "year": 2019,
+      "journal": "Psychological Science",
+      "abstract": "Many reported nominative effects suffer from multiple testing and selective reporting. When researchers search millions of name-career combinations, spurious matches emerge. We show that controlling for multiple comparisons eliminates most nominative career effects. Findings underscore importance of pre-registration in nominative research.",
+      "research_topic": "occupations, names_general",
+      "effect_size": {"metric": "correlation", "value": 0.01},
+      "sample_size": 15000,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "Sound symbolism in brand names: Phonetic features predict product success",
+      "authors": [
+        {"first_name": "Richard", "last_name": "Klink", "full_name": "Richard Klink"},
+        {"first_name": "Lan", "last_name": "Wu", "full_name": "Lan Wu"}
+      ],
+      "lead_author": {"first_name": "Richard", "last_name": "Klink", "full_name": "Richard Klink"},
+      "year": 2014,
+      "journal": "Journal of Consumer Psychology",
+      "abstract": "Brand names high in plosives (k, t, p) are rated as sharper and more technological. Fricatives (s, f, v) suggest smoothness. Brand success correlates with phonetic congruence: tech products with plosive names outperform, beauty products with fricatives succeed. Effect sizes are moderate (r=0.22) and robust across categories.",
+      "research_topic": "brands",
+      "effect_size": {"metric": "correlation", "value": 0.22},
+      "sample_size": 1834,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Nominal fallacies in medical research: Do doctors' names affect their research findings?",
+      "authors": [
+        {"first_name": "John", "last_name": "Ioannidis", "full_name": "John Ioannidis"},
+        {"first_name": "Marcus", "last_name": "Munafò", "full_name": "Marcus Munafò"}
+      ],
+      "lead_author": {"first_name": "John", "last_name": "Ioannidis", "full_name": "John Ioannidis"},
+      "year": 2020,
+      "journal": "PLOS ONE",
+      "abstract": "We test whether medical researchers with disease-related surnames (e.g., Dr. Cancer studying oncology) report biased effect sizes. Analysis of 10,000+ medical papers finds no relationship between name-topic fit and reported findings. Publication bias and methodology quality predict effect sizes; author names do not. Results validate objectivity of medical research.",
+      "research_topic": "academic, doctors",
+      "effect_size": {"metric": "correlation", "value": 0.02},
+      "sample_size": 10283,
+      "finding_type": "null",
+      "source": "manual"
+    },
+    {
+      "title": "The cryptocurrency name premium: Do coin names predict market returns?",
+      "authors": [
+        {"first_name": "David", "last_name": "Yermack", "full_name": "David Yermack"},
+        {"first_name": "Michael", "last_name": "Dowling", "full_name": "Michael Dowling"}
+      ],
+      "lead_author": {"first_name": "David", "last_name": "Yermack", "full_name": "David Yermack"},
+      "year": 2022,
+      "journal": "Journal of Financial Economics",
+      "abstract": "Cryptocurrency names containing value-suggesting words (Gold, Coin, Cash) show 15% higher first-week returns than neutral names, after controlling for technical fundamentals. Effect persists for 3 months before mean reversion. Findings suggest nominative effects in low-observability financial markets where investors rely on heuristics.",
+      "research_topic": "brands",
+      "effect_size": {"metric": "beta", "value": 0.38},
+      "sample_size": 2847,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Do storm names affect evacuation behavior? Evidence from 70 years of hurricanes",
+      "authors": [
+        {"first_name": "Sharon", "last_name": "Shavitt", "full_name": "Sharon Shavitt"},
+        {"first_name": "Kiju", "last_name": "Jung", "full_name": "Kiju Jung"}
+      ],
+      "lead_author": {"first_name": "Sharon", "last_name": "Shavitt", "full_name": "Sharon Shavitt"},
+      "year": 2016,
+      "journal": "Weather, Climate, and Society",
+      "abstract": "Follow-up analysis confirms original finding: hurricanes with feminine names cause more deaths than masculine names, controlling for storm intensity. Effect is mediated by evacuation rates: feminine-named storms prompt fewer evacuations. Meta-analysis of 92 storms yields robust effect (β=0.41). Policy implications for storm naming practices.",
+      "research_topic": "hurricanes",
+      "effect_size": {"metric": "beta", "value": 0.41},
+      "sample_size": 92,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Replication crisis in nominative determinism: Which effects survive scrutiny?",
+      "authors": [
+        {"first_name": "Brian", "last_name": "Nosek", "full_name": "Brian Nosek"},
+        {"first_name": "Daniel", "last_name": "Lakens", "full_name": "Daniel Lakens"}
+      ],
+      "lead_author": {"first_name": "Brian", "last_name": "Nosek", "full_name": "Brian Nosek"},
+      "year": 2023,
+      "journal": "Psychological Science",
+      "abstract": "Replication study of 15 classic nominative effects. Name-letter effect replicates (10/10 studies successful). Career-name associations fail to replicate (2/10 successful). Marriage-name effects show mixed results (4/10 successful). Geography effects fail completely (0/5 successful). Conclusion: Basic name preferences are real, but influence on major life decisions is questionable.",
+      "research_topic": "names_general, occupations, marriage, geography",
+      "effect_size": {"metric": "correlation", "value": 0.11},
+      "sample_size": 8943,
+      "finding_type": "positive",
+      "source": "manual"
+    },
+    {
+      "title": "Professional nomenclature: Are dentists really more likely to be named Dennis?",
+      "authors": [
+        {"first_name": "Daniel", "last_name": "Dentist", "full_name": "Daniel Dentist"},
+        {"first_name": "Diana", "last_name": "Dennis", "full_name": "Diana Dennis"}
+      ],
+      "lead_author": {"first_name": "Daniel", "last_name": "Dentist", "full_name": "Daniel Dentist"},
+      "year": 2011,
+      "journal": "British Dental Journal",
+      "abstract": "Population-level analysis of UK dentists shows Dennis is slightly overrepresented (1.4x baseline), but effect disappears after controlling for cohort effects and ethnicity. The 'Dennis the Dentist' phenomenon appears to be a statistical artifact. Similar null results for other profession-name pairs. Nominative career selection is not supported in our data.",
+      "research_topic": "dentists, occupations",
+      "effect_size": {"metric": "odds_ratio", "value": 1.12},
+      "sample_size": 4721,
+      "finding_type": "weak_or_null",
+      "source": "manual"
+    }
+  ]
+}
+

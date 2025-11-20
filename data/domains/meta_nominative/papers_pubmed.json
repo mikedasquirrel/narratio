@@ -1,0 +1,1215 @@
+{
+  "source": "pubmed",
+  "collection_date": "2025-11-11",
+  "total_papers": 23,
+  "papers": [
+    {
+      "pmid": "19306682",
+      "title": "Implicit letter preferences in job choice: an experimental test of the role of cognitive load.",
+      "abstract": "Research has shown that people prefer the letters in their names to letters that are not in their names. This name-letter effect seems to influence important life decision such as where one chooses to live or whom one chooses to marry. The authors' laboratory study investigated whether this effect generalizes to individuals' job-choice intentions under specific conditions. Furthermore, the authors hypothesized that name-letter preferences in job-choice intentions would be stronger under conditions of high cognitive load than under conditions of low cognitive load. Two experiments with final-year students attending a university in Belgium showed support for name-letter preferences in job-choice intentions. There was no support for the hypothesized moderating role of cognitive load. The authors discuss the implications of these results for theory and research on name-letter preferences and job choice.",
+      "authors": [
+        {
+          "last_name": "Anseel",
+          "first_name": "Frederik",
+          "initials": "F",
+          "full_name": "Frederik Anseel"
+        },
+        {
+          "last_name": "Duyck",
+          "first_name": "Wouter",
+          "initials": "W",
+          "full_name": "Wouter Duyck"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Anseel",
+        "first_name": "Frederik",
+        "initials": "F",
+        "full_name": "Frederik Anseel"
+      },
+      "journal": "The Journal of psychology",
+      "year": 2009,
+      "keywords": [
+        "Attitude",
+        "Choice Behavior",
+        "Cognition",
+        "Female",
+        "Humans",
+        "Intention",
+        "Job Application",
+        "Male",
+        "Names",
+        "Self Concept",
+        "Surveys and Questionnaires",
+        "Young Adult"
+      ],
+      "research_topic": "names_general, occupations, academic",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "21705520",
+      "title": "Spurious also? Name-similarity effects (implicit egotism) in employment decisions.",
+      "abstract": "",
+      "authors": [
+        {
+          "last_name": "Simonsohn",
+          "first_name": "Uri",
+          "initials": "U",
+          "full_name": "Uri Simonsohn"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Simonsohn",
+        "first_name": "Uri",
+        "initials": "U",
+        "full_name": "Uri Simonsohn"
+      },
+      "journal": "Psychological science",
+      "year": 2011,
+      "keywords": [
+        "Belgium",
+        "Career Choice",
+        "Employment",
+        "Humans",
+        "Names"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "14599245",
+      "title": "Assessing the validity of implicit egotism: a reply to Gallucci (2003).",
+      "abstract": "B. W. Pelham, M. C. Mirenberg, and J. T. Jones (2002) argued that most people prefer stimuli that are associated with the self, a preference they called implicit egotism. In support of implicit egotism, Pelham et al presented evidence from 10 archival studies showing that people gravitate toward careers and places of residence that resemble their names or birthday numbers. M. Gallucci (2003) argued that alternate analyses of the same data provide strong evidence against implicit egotism. Whereas Gallucci was correct that Pelham et al's original analyses were flawed, their results remain significant even when more conservative tests are used. The authors also present new data in support of implicit egotism, including exhaustive studies of (a) common surnames and US city names and (b) common surnames and street names. The new studies also revealed that as sample sizes grow larger, studies are more likely to produce evidence of implicit egotism.",
+      "authors": [
+        {
+          "last_name": "Pelham",
+          "first_name": "Brett W",
+          "initials": "BW",
+          "full_name": "Brett W Pelham"
+        },
+        {
+          "last_name": "Carvallo",
+          "first_name": "Mauricio",
+          "initials": "M",
+          "full_name": "Mauricio Carvallo"
+        },
+        {
+          "last_name": "DeHart",
+          "first_name": "Tracy",
+          "initials": "T",
+          "full_name": "Tracy DeHart"
+        },
+        {
+          "last_name": "Jones",
+          "first_name": "John T",
+          "initials": "JT",
+          "full_name": "John T Jones"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Pelham",
+        "first_name": "Brett W",
+        "initials": "BW",
+        "full_name": "Brett W Pelham"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2003,
+      "keywords": [
+        "Career Choice",
+        "Choice Behavior",
+        "Defense Mechanisms",
+        "Female",
+        "Humans",
+        "Individuality",
+        "Likelihood Functions",
+        "Male",
+        "Names",
+        "Probability",
+        "Reproducibility of Results",
+        "Residence Characteristics",
+        "Sample Size",
+        "United States"
+      ],
+      "research_topic": "names_general, occupations, geography",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "12674276",
+      "title": "The birthdate effect: an extension of the Mere Ownership Effect.",
+      "abstract": "Studies have shown that attributes or variables associated with oneself are liked or preferred more compared to similar attributes unrelated to the self. Nuttin found in 1985 that people tend to prefer the letters that occur in their own names more than the letters that do not occur in their names. This name-letter-effect was later explained as a more general \"mere ownership effect.\" The present purpose was to test whether the Mere Ownership Effect generalizes to a person's evaluation of their birthdate (month and year). 83 participants evaluated a variety of dates and objects. As expected, participants showed a significantly more positive evaluation of their own birth month and year than to their nonbirth months and years.",
+      "authors": [
+        {
+          "last_name": "Nickell",
+          "first_name": "Gary",
+          "initials": "G",
+          "full_name": "Gary Nickell"
+        },
+        {
+          "last_name": "Pederson",
+          "first_name": "Katie",
+          "initials": "K",
+          "full_name": "Katie Pederson"
+        },
+        {
+          "last_name": "Rossow",
+          "first_name": "Cassie",
+          "initials": "C",
+          "full_name": "Cassie Rossow"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Nickell",
+        "first_name": "Gary",
+        "initials": "G",
+        "full_name": "Gary Nickell"
+      },
+      "journal": "Psychological reports",
+      "year": 2003,
+      "keywords": [
+        "Adolescent",
+        "Adult",
+        "Anniversaries and Special Events",
+        "Female",
+        "Gift Giving",
+        "Humans",
+        "Male",
+        "Middle Aged",
+        "Ownership"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": 83,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "24386714",
+      "title": "I like my voice better: self-enhancement bias in perceptions of voice attractiveness.",
+      "abstract": "Previous research shows that the human voice can communicate a wealth of nonsemantic information; preferences for voices can predict health, fertility, and genetic quality of the speaker, and people often use voice attractiveness, in particular, to make these assessments of others. But it is not known what we think of the attractiveness of our own voices as others hear them. In this study eighty men and women rated the attractiveness of an array of voice recordings of different individuals and were not told that their own recorded voices were included in the presentation. Results showed that participants rated their own voices as sounding more attractive than others had rated their voices, and participants also rated their own voices as sounding more attractive than they had rated the voices of others. These findings suggest that people may engage in vocal implicit egotism, a form of self-enhancement.",
+      "authors": [
+        {
+          "last_name": "Hughes",
+          "first_name": "Susan M",
+          "initials": "SM",
+          "full_name": "Susan M Hughes"
+        },
+        {
+          "last_name": "Harrison",
+          "first_name": "Marissa A",
+          "initials": "MA",
+          "full_name": "Marissa A Harrison"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Hughes",
+        "first_name": "Susan M",
+        "initials": "SM",
+        "full_name": "Susan M Hughes"
+      },
+      "journal": "Perception",
+      "year": 2013,
+      "keywords": [
+        "Acoustic Stimulation",
+        "Adolescent",
+        "Adult",
+        "Analysis of Variance",
+        "Auditory Perception",
+        "Beauty",
+        "Ego",
+        "Female",
+        "Humans",
+        "Male",
+        "Middle Aged",
+        "New England",
+        "Social Desirability",
+        "Students",
+        "Voice",
+        "Young Adult"
+      ],
+      "research_topic": "general nominative effects",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "20865997",
+      "title": "Name-letter branding under scrutiny: real products, new algorithms, and the probability of buying.",
+      "abstract": "People like letters matching their own first and last name initials more than nonname letters. This name-letter effect has also been found for brands, i.e., people like brands resembling their own name letters (initial or first three). This has been termed name-letter branding effect. In the present study of 199 participants, ages 12 to 79 years, this name-letter branding effect was found for a modified design (1) using real products, (2) concentrating on product names rather than brand names, (3) using five different products for each letter of the Roman alphabet, (4) asking for the buying probability, and (5) using recently introduced algorithms, controlling for individual response tendencies (i.e., liking all letters more or less) and general normative popularity of particular letters (i.e., some letters are generally preferred more than other letters).",
+      "authors": [
+        {
+          "last_name": "Stieger",
+          "first_name": "Stefan",
+          "initials": "S",
+          "full_name": "Stefan Stieger"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Stieger",
+        "first_name": "Stefan",
+        "initials": "S",
+        "full_name": "Stefan Stieger"
+      },
+      "journal": "Perceptual and motor skills",
+      "year": 2010,
+      "keywords": [
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Algorithms",
+        "Association Learning",
+        "Child",
+        "Choice Behavior",
+        "Consumer Behavior",
+        "Female",
+        "Humans",
+        "Male",
+        "Middle Aged",
+        "Names",
+        "Pattern Recognition, Visual",
+        "Probability",
+        "Semantics",
+        "Social Marketing",
+        "Young Adult"
+      ],
+      "research_topic": "names_general, brands",
+      "effect_size": null,
+      "sample_size": 199,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "21688926",
+      "title": "The surprising potency of implicit egotism: A reply to Simonsohn.",
+      "abstract": "This article addresses Simonsohn's (2011) critique of field studies of implicit egotism. We argue that Simonsohn provides no compelling theoretical reason to believe that implicit egotism should be valid only in the laboratory. In addition, we argue that a careful analysis of most of Simonsohn's studies of implicit egotism shows that they provide little or no power to reveal real effects of implicit egotism. We conclude that it is more constructive to try to identify theoretically derived moderators of implicit egotism than to try to document that it is always spurious in the field.",
+      "authors": [
+        {
+          "last_name": "Pelham",
+          "first_name": "Brett",
+          "initials": "B",
+          "full_name": "Brett Pelham"
+        },
+        {
+          "last_name": "Carvallo",
+          "first_name": "Mauricio",
+          "initials": "M",
+          "full_name": "Mauricio Carvallo"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Pelham",
+        "first_name": "Brett",
+        "initials": "B",
+        "full_name": "Brett Pelham"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2011,
+      "keywords": [
+        "Career Choice",
+        "Defense Mechanisms",
+        "Female",
+        "Humans",
+        "Identification, Psychological",
+        "Male",
+        "Marriage",
+        "Names",
+        "Population Dynamics",
+        "Psychological Theory",
+        "Recognition, Psychology"
+      ],
+      "research_topic": "general nominative effects",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "37227886",
+      "title": "Does the first letter of one's name affect life decisions? A natural language processing examination of nominative determinism.",
+      "abstract": "This research examines whether the phenomenon of nominative determinism (a name-driven outcome) exists in the real world. Nominative determinism manifests as a preference for a profession or city to live in that begins with the same letter as a person's own name. The literature presents opposing views on this phenomenon, with one stream of research documenting the influence and another stream questioning the existence and generalizability of the effect, as well as the proposed underlying process. To examine whether the effect occurs in the real world, we use large language models trained on Common Crawl, Twitter, Google News, and Google Books using two natural language processing word-embedding algorithms (word2vec and GloVe). After controlling for relevant variables, we find consistent evidence of the relationship between people's names and a preference for major life choices starting with the same letter as their first name. Our theoretical framework of identity expression builds on the implicit egotism explanation. (PsycInfo Database Record (c) 2023 APA, all rights reserved).",
+      "authors": [
+        {
+          "last_name": "Chatterjee",
+          "first_name": "Promothesh",
+          "initials": "P",
+          "full_name": "Promothesh Chatterjee"
+        },
+        {
+          "last_name": "Mishra",
+          "first_name": "Himanshu",
+          "initials": "H",
+          "full_name": "Himanshu Mishra"
+        },
+        {
+          "last_name": "Mishra",
+          "first_name": "Arul",
+          "initials": "A",
+          "full_name": "Arul Mishra"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Chatterjee",
+        "first_name": "Promothesh",
+        "initials": "P",
+        "full_name": "Promothesh Chatterjee"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2023,
+      "keywords": [
+        "Humans",
+        "Natural Language Processing",
+        "Language",
+        "Names"
+      ],
+      "research_topic": "names_general, occupations, geography",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "27982005",
+      "title": "What's in a name? Nominative determinism in the UK dental workforce.",
+      "abstract": "Background Nominative determinism describes the theory that people are more likely to pursue careers that are connected to their names. Compelling research has been carried out across the medical professions that provides strong evidence for this phenomenon, but as yet its applicability to the UK dental workforce remains unknown.Aim The aim of this study was to establish the prevalence of dentally-related surnames in the UK dental workforce (dentists and dental care professionals) and compare this to the UK population.Results Dentistry may provide a surprising counter-example to prevailing theories of nominative determinism, as UK dentists are significantly less likely than the UK general population to have dentally-related surnames. This new phenomenon of 'nominative antideterminism' was not observed in the dental care professional (DCP) cohort, for whom the prevalence of dentally-related surnames was similar to that in the wider UK population.",
+      "authors": [
+        {
+          "last_name": "Sleigh",
+          "first_name": "J",
+          "initials": "J",
+          "full_name": "J Sleigh"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Sleigh",
+        "first_name": "J",
+        "initials": "J",
+        "full_name": "J Sleigh"
+      },
+      "journal": "British dental journal",
+      "year": 2016,
+      "keywords": [
+        "Career Choice",
+        "Cohort Studies",
+        "Dental Care",
+        "Dental Staff",
+        "Dentists",
+        "Humans",
+        "United Kingdom"
+      ],
+      "research_topic": "dentists, doctors, names_general, occupations",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "26161803",
+      "title": "What's in a Surname? Physique, Aptitude, and Sports Type Comparisons between Tailors and Smiths.",
+      "abstract": "Combined heredity of surnames and physique, coupled with past marriage patterns and trade-specific physical aptitude and selection factors, may have led to differential assortment of bodily characteristics among present-day men with specific trade-reflecting surnames (Tailor vs. Smith). Two studies reported here were partially consistent with this genetic-social hypothesis, first proposed by B\u00e4umler (1980). Study 1 (N = 224) indicated significantly higher self-rated physical aptitude for prototypically strength-related activities (professions, sports, hobbies) in a random sample of Smiths. The counterpart effect (higher aptitude for dexterity-related activities among Tailors) was directionally correct, but not significant, and Tailor-Smith differences in basic physique variables were nil. Study 2 examined two large total-population-of-interest datasets (Austria/Germany combined, and UK: N = 7001 and 20,532) of men's national high-score lists for track-and-field events requiring different physiques. In both datasets, proportions of Smiths significantly increased from light-stature over medium-stature to heavy-stature sports categories. The predicted counterpart effect (decreasing prevalences of Tailors along these categories) was not supported. Related prior findings, the viability of possible alternative interpretations of the evidence (differential positive selection for trades and occupations, differential endogamy and assortative mating patterns, implicit egotism effects), and directions for further inquiry are discussed in conclusion.",
+      "authors": [
+        {
+          "last_name": "Voracek",
+          "first_name": "Martin",
+          "initials": "M",
+          "full_name": "Martin Voracek"
+        },
+        {
+          "last_name": "Rieder",
+          "first_name": "Stephan",
+          "initials": "S",
+          "full_name": "Stephan Rieder"
+        },
+        {
+          "last_name": "Stieger",
+          "first_name": "Stefan",
+          "initials": "S",
+          "full_name": "Stefan Stieger"
+        },
+        {
+          "last_name": "Swami",
+          "first_name": "Viren",
+          "initials": "V",
+          "full_name": "Viren Swami"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Voracek",
+        "first_name": "Martin",
+        "initials": "M",
+        "full_name": "Martin Voracek"
+      },
+      "journal": "PloS one",
+      "year": 2015,
+      "keywords": [
+        "Adult",
+        "Aged",
+        "Aptitude",
+        "Austria",
+        "Body Height",
+        "Body Mass Index",
+        "Body Weight",
+        "Data Collection",
+        "Gene-Environment Interaction",
+        "Germany",
+        "Hobbies",
+        "Humans",
+        "Interviews as Topic",
+        "Male",
+        "Marriage",
+        "Middle Aged",
+        "Names",
+        "Occupations",
+        "Social Environment",
+        "Sports",
+        "United Kingdom",
+        "Young Adult"
+      ],
+      "research_topic": "names_general, occupations, marriage",
+      "effect_size": null,
+      "sample_size": 224,
+      "finding_type": "null",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "24336304",
+      "title": "The Brady Bunch? New evidence for nominative determinism in patients' health: retrospective, population based cohort study.",
+      "abstract": "OBJECTIVE: To ascertain whether a name can influence a person's health, by assessing whether people with the surname \"Brady\" have an increased prevalence of bradycardia. DESIGN: Retrospective, population based cohort study. SETTING: One university teaching hospital in Dublin, Ireland. PARTICIPANTS: People with the surname \"Brady\" in Dublin, determined through use of an online telephone directory. MAIN OUTCOME MEASURE: Prevalence of participants who had pacemakers inserted for bradycardia between 1 January 2007 and 28 February 2013. RESULTS: 579 (0.36%) of 161,967 people who were listed on the Dublin telephone listings had the surname \"Brady.\" The proportion of pacemaker recipients was significantly higher among Bradys (n=8, 1.38%) than among non-Bradys (n=991, 0.61%; P=0.03). The unadjusted odds ratio (95% confidence interval) for pacemaker implantation among individuals with the surname Brady compared with individuals with other surnames was 2.27 (1.13 to 4.57). CONCLUSIONS: Patients named Brady are at increased risk of needing pacemaker implantation compared with the general population. This finding shows a potential role for nominative determinism in health.",
+      "authors": [
+        {
+          "last_name": "Keaney",
+          "first_name": "John J",
+          "initials": "JJ",
+          "full_name": "John J Keaney"
+        },
+        {
+          "last_name": "Groarke",
+          "first_name": "John D",
+          "initials": "JD",
+          "full_name": "John D Groarke"
+        },
+        {
+          "last_name": "Galvin",
+          "first_name": "Zita",
+          "initials": "Z",
+          "full_name": "Zita Galvin"
+        },
+        {
+          "last_name": "McGorrian",
+          "first_name": "Catherine",
+          "initials": "C",
+          "full_name": "Catherine McGorrian"
+        },
+        {
+          "last_name": "McCann",
+          "first_name": "Hugh A",
+          "initials": "HA",
+          "full_name": "Hugh A McCann"
+        },
+        {
+          "last_name": "Sugrue",
+          "first_name": "Declan",
+          "initials": "D",
+          "full_name": "Declan Sugrue"
+        },
+        {
+          "last_name": "Keelan",
+          "first_name": "Edward",
+          "initials": "E",
+          "full_name": "Edward Keelan"
+        },
+        {
+          "last_name": "Galvin",
+          "first_name": "Joseph",
+          "initials": "J",
+          "full_name": "Joseph Galvin"
+        },
+        {
+          "last_name": "Blake",
+          "first_name": "Gavin",
+          "initials": "G",
+          "full_name": "Gavin Blake"
+        },
+        {
+          "last_name": "Mahon",
+          "first_name": "Niall G",
+          "initials": "NG",
+          "full_name": "Niall G Mahon"
+        },
+        {
+          "last_name": "O'Neill",
+          "first_name": "James",
+          "initials": "J",
+          "full_name": "James O'Neill"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Keaney",
+        "first_name": "John J",
+        "initials": "JJ",
+        "full_name": "John J Keaney"
+      },
+      "journal": "BMJ (Clinical research ed.)",
+      "year": 2013,
+      "keywords": [
+        "Aged",
+        "Aged, 80 and over",
+        "Bradycardia",
+        "Female",
+        "Health Status",
+        "Humans",
+        "Ireland",
+        "Male",
+        "Names",
+        "Pacemaker, Artificial",
+        "Retrospective Studies"
+      ],
+      "research_topic": "names_general, academic",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "23980799",
+      "title": "Measuring implicit gender-role orientation: the gender initial preference task.",
+      "abstract": "Individuals prefer their name letters over nonname letters, which is known as the name-letter effect (NLE). This research aimed to examine a possible NLE for gender-role orientation (GRO) by rating letters for their gender-typicality in an initial preference task (Gender-IPT). Indeed, a clear NLE appeared: Men rated their initials as more male-typical, whereas women rated them as more female-typical. The Gender-IPT showed good convergent validity with other direct and indirect (Gender Implicit Association Test) measures of GRO as well as predictive validity with sensation seeking and gender-typical everyday life behaviors. The Gender-IPT seems to be a useful and practical indirect measure to assess GRO in a short, convenient, and computer-independent way, complementing other indirect measures of GRO.",
+      "authors": [
+        {
+          "last_name": "Stieger",
+          "first_name": "Stefan",
+          "initials": "S",
+          "full_name": "Stefan Stieger"
+        },
+        {
+          "last_name": "Burger",
+          "first_name": "Christoph",
+          "initials": "C",
+          "full_name": "Christoph Burger"
+        },
+        {
+          "last_name": "Schiller",
+          "first_name": "Franziska R",
+          "initials": "FR",
+          "full_name": "Franziska R Schiller"
+        },
+        {
+          "last_name": "Schulze",
+          "first_name": "Esther K",
+          "initials": "EK",
+          "full_name": "Esther K Schulze"
+        },
+        {
+          "last_name": "Voracek",
+          "first_name": "Martin",
+          "initials": "M",
+          "full_name": "Martin Voracek"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Stieger",
+        "first_name": "Stefan",
+        "initials": "S",
+        "full_name": "Stefan Stieger"
+      },
+      "journal": "Journal of personality assessment",
+      "year": 2014,
+      "keywords": [
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Choice Behavior",
+        "Female",
+        "Gender Identity",
+        "Humans",
+        "Male",
+        "Middle Aged",
+        "Neuropsychological Tests",
+        "Predictive Value of Tests",
+        "Reproducibility of Results",
+        "Self Concept",
+        "Young Adult"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "17352607",
+      "title": "Mental habits: metacognitive reflection on negative self-thinking.",
+      "abstract": "In 8 studies, the authors investigated negative self-thinking as a mental habit. Mental content (negative self-thoughts) was distinguished from mental process (negative self-thinking habit). The negative self-thinking habit was assessed with a metacognitive instrument (Habit Index of Negative Thinking; HINT) measuring whether negative self-thoughts occur often, are unintended, are initiated without awareness, are difficult to control, and are self-descriptive. Controlling for negative cognitive content, the authors found that negative self-thinking habit was distinct from rumination and mindfulness, predicted explicit as well as implicit low self-esteem (name letter effect), attenuated a positivity bias in the processing of self-relevant stimuli, and predicted anxiety and depressive symptoms 9 months later. The results support the assumption that metacognitive reflection on negative self-thinking as mental habit may play an important role in self-evaluative processes.",
+      "authors": [
+        {
+          "last_name": "Verplanken",
+          "first_name": "Bas",
+          "initials": "B",
+          "full_name": "Bas Verplanken"
+        },
+        {
+          "last_name": "Friborg",
+          "first_name": "Oddgeir",
+          "initials": "O",
+          "full_name": "Oddgeir Friborg"
+        },
+        {
+          "last_name": "Wang",
+          "first_name": "Catharina E",
+          "initials": "CE",
+          "full_name": "Catharina E Wang"
+        },
+        {
+          "last_name": "Trafimow",
+          "first_name": "David",
+          "initials": "D",
+          "full_name": "David Trafimow"
+        },
+        {
+          "last_name": "Woolf",
+          "first_name": "Kristin",
+          "initials": "K",
+          "full_name": "Kristin Woolf"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Verplanken",
+        "first_name": "Bas",
+        "initials": "B",
+        "full_name": "Bas Verplanken"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2007,
+      "keywords": [
+        "Adult",
+        "Affect",
+        "Cognition",
+        "Female",
+        "Habits",
+        "Humans",
+        "Male",
+        "Self Concept",
+        "Surveys and Questionnaires",
+        "Thinking"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "positive",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "16000270",
+      "title": "Testing the generality of the name letter effect: name initials and everyday attitudes.",
+      "abstract": "The name letter effect is the tendency to evaluate alphabetical letters in one's name, especially initials, particularly favorably. Recent evidence suggests that name initials may even predict career choices. The authors investigated whether people possess favorable attitudes toward basic attitude objects beginning with name initials, both between individuals (e.g., does Judy like jam more than does Doug?) and within individuals (e.g., does Judy like jam more than honey?). Ratings of animals, foods, leisure activities (Studies 1-4) and national groups (Studies 2-4) revealed no object preference as a function of matching name initials. However, the name letter effect emerged (Studies 3-4), as did a clear preference for brand names starting with one's name initials (Study 4). Self-esteem, narcissism, and stimuli characteristics did not reliably influence these effects. Implications for extending name letter effects to basic attitude processes are discussed.",
+      "authors": [
+        {
+          "last_name": "Hodson",
+          "first_name": "Gordon",
+          "initials": "G",
+          "full_name": "Gordon Hodson"
+        },
+        {
+          "last_name": "Olson",
+          "first_name": "James M",
+          "initials": "JM",
+          "full_name": "James M Olson"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Hodson",
+        "first_name": "Gordon",
+        "initials": "G",
+        "full_name": "Gordon Hodson"
+      },
+      "journal": "Personality & social psychology bulletin",
+      "year": 2005,
+      "keywords": [
+        "Adult",
+        "Attitude",
+        "Choice Behavior",
+        "Female",
+        "Humans",
+        "Leisure Activities",
+        "Male",
+        "Names",
+        "Narcissism",
+        "Self Concept",
+        "Surveys and Questionnaires"
+      ],
+      "research_topic": "names_general, occupations, brands",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "11999918",
+      "title": "Why Susie sells seashells by the seashore: implicit egotism and major life decisions.",
+      "abstract": "Because most people possess positive associations about themselves, most people prefer things that are connected to the self (e.g., the letters in one's name). The authors refer to such preferences as implicit egotism. Ten studies assessed the role of implicit egotism in 2 major life decisions: where people choose to live and what people choose to do for a living. Studies 1-5 showed that people are disproportionately likely to live in places whose names resemble their own first or last names (e.g., people named Louis are disproportionately likely to live in St. Louis). Study 6 extended this finding to birthday number preferences. People were disproportionately likely to live in cities whose names began with their birthday numbers (e.g., Two Harbors, MN). Studies 7-10 suggested that people disproportionately choose careers whose labels resemble their names (e.g., people named Dennis or Denise are overrepresented among dentists). Implicit egotism appears to influence major life decisions. This idea stands in sharp contrast to many models of rational choice and attests to the importance of understanding implicit beliefs.",
+      "authors": [
+        {
+          "last_name": "Pelham",
+          "first_name": "Brett W",
+          "initials": "BW",
+          "full_name": "Brett W Pelham"
+        },
+        {
+          "last_name": "Mirenberg",
+          "first_name": "Matthew C",
+          "initials": "MC",
+          "full_name": "Matthew C Mirenberg"
+        },
+        {
+          "last_name": "Jones",
+          "first_name": "John T",
+          "initials": "JT",
+          "full_name": "John T Jones"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Pelham",
+        "first_name": "Brett W",
+        "initials": "BW",
+        "full_name": "Brett W Pelham"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2002,
+      "keywords": [
+        "Canada",
+        "Career Choice",
+        "Decision Making",
+        "Female",
+        "Humans",
+        "Life Change Events",
+        "Male",
+        "Motivation",
+        "Names",
+        "Population Dynamics",
+        "Residence Characteristics",
+        "Self Concept",
+        "Self-Assessment",
+        "Social Behavior",
+        "Unconscious, Psychology",
+        "United States"
+      ],
+      "research_topic": "dentists, names_general, occupations",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "23055989",
+      "title": "What's in a Name: A Bayesian Hierarchical Analysis of the Name-Letter Effect.",
+      "abstract": "People generally prefer their initials to the other letters of the alphabet, a phenomenon known as the name-letter effect. This effect, researchers have argued, makes people move to certain cities, buy particular brands of consumer products, and choose particular professions (e.g., Angela moves to Los Angeles, Phil buys a Philips TV, and Dennis becomes a dentist). In order to establish such associations between people's initials and their behavior, researchers typically carry out statistical analyses of large databases. Current methods of analysis ignore the hierarchical structure of the data, do not naturally handle order-restrictions, and are fundamentally incapable of confirming the null hypothesis. Here we outline a Bayesian hierarchical analysis that avoids these limitations and allows coherent inference both on the level of the individual and on the level of the group. To illustrate our method, we re-analyze two data sets that address the question of whether people are disproportionately likely to live in cities that resemble their name.",
+      "authors": [
+        {
+          "last_name": "Dyjas",
+          "first_name": "Oliver",
+          "initials": "O",
+          "full_name": "Oliver Dyjas"
+        },
+        {
+          "last_name": "Grasman",
+          "first_name": "Raoul P P P",
+          "initials": "RP",
+          "full_name": "Raoul P P P Grasman"
+        },
+        {
+          "last_name": "Wetzels",
+          "first_name": "Ruud",
+          "initials": "R",
+          "full_name": "Ruud Wetzels"
+        },
+        {
+          "last_name": "van der Maas",
+          "first_name": "Han L J",
+          "initials": "HL",
+          "full_name": "Han L J van der Maas"
+        },
+        {
+          "last_name": "Wagenmakers",
+          "first_name": "Eric-Jan",
+          "initials": "EJ",
+          "full_name": "Eric-Jan Wagenmakers"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Dyjas",
+        "first_name": "Oliver",
+        "initials": "O",
+        "full_name": "Oliver Dyjas"
+      },
+      "journal": "Frontiers in psychology",
+      "year": 2012,
+      "keywords": [
+        "Bayesian hierarchical hypothesis test",
+        "analysis of large databases",
+        "name-letter effect",
+        "order-restrictions",
+        "random effects"
+      ],
+      "research_topic": "dentists, names_general, occupations, brands, academic",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "24236087",
+      "title": "The name-letter-effect in groups: sharing initials with group members increases the quality of group work.",
+      "abstract": "Although the name-letter-effect has been demonstrated reliably in choice contexts, recent research has called into question the existence of the name-letter-effect-the tendency among people to make choices that bear remarkable similarity with the letters in their own name. In this paper, we propose a connection between the name-letter-effect and interpersonal, group-level behavior that has not been previously captured in the literature. Specifically, we suggest that sharing initials with other group members promotes positive feelings toward those group members that in turn affect group outcomes. Using both field and laboratory studies, we found that sharing initials with group members cause groups to perform better by demonstrating greater performance, collective efficacy, adaptive conflict, and accuracy (on a hidden-profile task). Although many studies have investigated the effects of member similarity on various outcomes, our research demonstrates how minimal a degree of similarity among members is sufficient to influence quality of group outcomes.",
+      "authors": [
+        {
+          "last_name": "Polman",
+          "first_name": "Evan",
+          "initials": "E",
+          "full_name": "Evan Polman"
+        },
+        {
+          "last_name": "Pollmann",
+          "first_name": "Monique M H",
+          "initials": "MM",
+          "full_name": "Monique M H Pollmann"
+        },
+        {
+          "last_name": "Poehlman",
+          "first_name": "T Andrew",
+          "initials": "TA",
+          "full_name": "T Andrew Poehlman"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Polman",
+        "first_name": "Evan",
+        "initials": "E",
+        "full_name": "Evan Polman"
+      },
+      "journal": "PloS one",
+      "year": 2013,
+      "keywords": [
+        "Adaptation, Physiological",
+        "Cooperative Behavior",
+        "Group Processes",
+        "Humans",
+        "Names",
+        "Quality Improvement",
+        "Task Performance and Analysis"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "21299311",
+      "title": "Spurious? Name similarity effects (implicit egotism) in marriage, job, and moving decisions.",
+      "abstract": "Three articles published in the Journal of Personality and Social Psychology have shown that a disproportionate share of people choose spouses, places to live, and occupations with names similar to their own. These findings, interpreted as evidence of implicit egotism, are included in most modern social psychology textbooks and many university courses. The current article successfully replicates the original findings but shows that they are most likely caused by a combination of cohort, geographic, and ethnic confounds as well as reverse causality.",
+      "authors": [
+        {
+          "last_name": "Simonsohn",
+          "first_name": "Uri",
+          "initials": "U",
+          "full_name": "Uri Simonsohn"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Simonsohn",
+        "first_name": "Uri",
+        "initials": "U",
+        "full_name": "Uri Simonsohn"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2011,
+      "keywords": [
+        "Bias",
+        "Career Choice",
+        "Causality",
+        "Choice Behavior",
+        "Defense Mechanisms",
+        "Female",
+        "Humans",
+        "Identification, Psychological",
+        "Male",
+        "Marriage",
+        "Names",
+        "Population Dynamics",
+        "Psychological Theory",
+        "Recognition, Psychology",
+        "Sampling Studies",
+        "Self Concept",
+        "Statistics as Topic",
+        "United States"
+      ],
+      "research_topic": "names_general, occupations, geography, marriage, academic",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "21038971",
+      "title": "Implicit self-esteem: nature, measurement, and a new way forward.",
+      "abstract": "Gaining insight into the nature and consequences of people's global self-evaluations (i.e., their self-esteem) has been fraught with difficulty. Nearly 2 decades ago, researchers suggested that such difficulties might be addressed by the development of a new class of measures designed to uncover implicit self-esteem. In this article, we evaluate the construct validity of the 2 most common measures of implicit self-esteem, the Implicit Association Test (IAT) and Name-Letter Test (NLT). Our review indicates that the research literature has not provided strong or consistent support for the validity of either measure. We conclude that both tests are impoverished measures of self-esteem that are better understood as measures of either generalized implicit affect (IAT) or implicit egotism (NLT). However, we suggest that there surely are aspects of self-esteem that people are unwilling or unable to report and suggest a general approach that may allow researchers to tap these unspoken aspects of self-esteem.",
+      "authors": [
+        {
+          "last_name": "Buhrmester",
+          "first_name": "Michael D",
+          "initials": "MD",
+          "full_name": "Michael D Buhrmester"
+        },
+        {
+          "last_name": "Blanton",
+          "first_name": "Hart",
+          "initials": "H",
+          "full_name": "Hart Blanton"
+        },
+        {
+          "last_name": "Swann",
+          "first_name": "William B",
+          "initials": "WB",
+          "full_name": "William B Swann"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Buhrmester",
+        "first_name": "Michael D",
+        "initials": "MD",
+        "full_name": "Michael D Buhrmester"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2011,
+      "keywords": [
+        "Humans",
+        "Personality Inventory",
+        "Personality Tests",
+        "Psychometrics",
+        "Self Concept",
+        "Word Association Tests"
+      ],
+      "research_topic": "names_general, academic",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "22686600",
+      "title": "Evaluative conditioning in social psychology: Facts and speculations.",
+      "abstract": "The aim of the present paper is to examine the contribution of evaluative conditioning (EC) to attitude formation theory in social psychology. This aim is pursued on two fronts. First, evaluative conditioning is analysed for its relevance to social psychological research. We show that conditioned attitudes can be acquired through simple co-occurrences of a neutral and a valenced stimulus. Moreover, we argue that conditioned attitudes are not confined to direct contact with a valenced stimulus, but can be formed and dynamically reformed indirectly, through association chains. Second, social research is examined in an effort to identify evaluative learning mechanisms. We suggest that several important phenomena in social psychology (e.g., ingroup favouritism, prejudice, name letter effect) are at least partly due to simple mechanisms of evaluative learning. The implications for attitude formation theory and for applied settings are discussed.",
+      "authors": [
+        {
+          "last_name": "Walther",
+          "first_name": "Eva",
+          "initials": "E",
+          "full_name": "Eva Walther"
+        },
+        {
+          "last_name": "Nagengast",
+          "first_name": "Benjamin",
+          "initials": "B",
+          "full_name": "Benjamin Nagengast"
+        },
+        {
+          "last_name": "Trasselli",
+          "first_name": "Claudia",
+          "initials": "C",
+          "full_name": "Claudia Trasselli"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Walther",
+        "first_name": "Eva",
+        "initials": "E",
+        "full_name": "Eva Walther"
+      },
+      "journal": "Cognition & emotion",
+      "year": 2005,
+      "keywords": [],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "19000218",
+      "title": "Unconscious applicants: a systematic test of the name-letter effect.",
+      "abstract": "",
+      "authors": [
+        {
+          "last_name": "Anseel",
+          "first_name": "Frederik",
+          "initials": "F",
+          "full_name": "Frederik Anseel"
+        },
+        {
+          "last_name": "Duyck",
+          "first_name": "Wouter",
+          "initials": "W",
+          "full_name": "Wouter Duyck"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Anseel",
+        "first_name": "Frederik",
+        "initials": "F",
+        "full_name": "Frederik Anseel"
+      },
+      "journal": "Psychological science",
+      "year": 2008,
+      "keywords": [
+        "Association",
+        "Belgium",
+        "Career Choice",
+        "Employment",
+        "Humans",
+        "Names",
+        "Probability",
+        "Recognition, Psychology",
+        "Regression Analysis",
+        "Unconscious, Psychology"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "unknown",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "15535778",
+      "title": "How do I love thee? Let me count the Js: implicit egotism and interpersonal attraction.",
+      "abstract": "From the perspective of implicit egotism people should gravitate toward others who resemble them because similar others activate people's positive, automatic associations about themselves. Four archival studies and 3 experiments supported this hypothesis. Studies 1-4 showed that people are disproportionately likely to marry others whose first or last names resemble their own. Studies 5-7 provided experimental support for implicit egotism. Participants were more attracted than usual to people (a) whose arbitrary experimental code numbers resembled their own birthday numbers, (b) whose surnames shared letters with their own surnames, and (c) whose jersey number had been paired, subliminally, with their own names. Discussion focuses on implications for implicit egotism, similarity, and interpersonal attraction.",
+      "authors": [
+        {
+          "last_name": "Jones",
+          "first_name": "John T",
+          "initials": "JT",
+          "full_name": "John T Jones"
+        },
+        {
+          "last_name": "Pelham",
+          "first_name": "Brett W",
+          "initials": "BW",
+          "full_name": "Brett W Pelham"
+        },
+        {
+          "last_name": "Carvallo",
+          "first_name": "Mauricio",
+          "initials": "M",
+          "full_name": "Mauricio Carvallo"
+        },
+        {
+          "last_name": "Mirenberg",
+          "first_name": "Matthew C",
+          "initials": "MC",
+          "full_name": "Matthew C Mirenberg"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Jones",
+        "first_name": "John T",
+        "initials": "JT",
+        "full_name": "John T Jones"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2004,
+      "keywords": [
+        "Adult",
+        "Analysis of Variance",
+        "Attitude",
+        "Choice Behavior",
+        "Ego",
+        "Female",
+        "Humans",
+        "Interpersonal Relations",
+        "Judgment",
+        "Love",
+        "Male",
+        "Names",
+        "Self Concept",
+        "Spouses",
+        "Students",
+        "Unconscious, Psychology"
+      ],
+      "research_topic": "names_general",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "positive",
+      "source": "pubmed",
+      "full_text_available": false
+    },
+    {
+      "pmid": "14599244",
+      "title": "I sell seashells by the seashore and my name is Jack: comment on Pelham, Mirenberg, and Jones (2002).",
+      "abstract": "According to a new hypothesis based on implicit egotism, people gravitate toward cities, states, and careers with names similar to their own names. To support this hypothesis, B. W. Pelham, M. C. Mirenberg, and J. T. Jones (2002) reported a series of results regarding distributions of names in different cities, states, and jobs. In the present article, new analyses of the original data are reported, showing that the hypothesis is not supported for the large majority of names considered by the authors, and for some names even the opposite result is found. In addition, a meta-analysis reveals that either the data are unreliable, or the hypothesis cannot be supported in the whole population of names. Overall, the original data give no support of the idea that implicit egotism influences major life decisions.",
+      "authors": [
+        {
+          "last_name": "Gallucci",
+          "first_name": "Marcello",
+          "initials": "M",
+          "full_name": "Marcello Gallucci"
+        }
+      ],
+      "lead_author": {
+        "last_name": "Gallucci",
+        "first_name": "Marcello",
+        "initials": "M",
+        "full_name": "Marcello Gallucci"
+      },
+      "journal": "Journal of personality and social psychology",
+      "year": 2003,
+      "keywords": [
+        "Career Choice",
+        "Choice Behavior",
+        "Defense Mechanisms",
+        "Female",
+        "Humans",
+        "Individuality",
+        "Male",
+        "Names",
+        "Probability",
+        "Residence Characteristics",
+        "Sampling Studies"
+      ],
+      "research_topic": "names_general, occupations",
+      "effect_size": null,
+      "sample_size": null,
+      "finding_type": "positive",
+      "source": "pubmed",
+      "full_text_available": false
+    }
+  ]
+}

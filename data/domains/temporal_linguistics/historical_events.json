@@ -1,0 +1,55 @@
+{
+  "wars": [
+    {"name": "American Civil War", "start": 1861, "end": 1865, "midpoint": 1863},
+    {"name": "World War I", "start": 1914, "end": 1918, "midpoint": 1916},
+    {"name": "World War II", "start": 1939, "end": 1945, "midpoint": 1942},
+    {"name": "Vietnam War", "start": 1955, "end": 1975, "midpoint": 1965},
+    {"name": "Gulf War", "start": 1990, "end": 1991, "midpoint": 1991},
+    {"name": "Iraq/Afghanistan", "start": 2001, "end": 2021, "midpoint": 2011}
+  ],
+  
+  "economic_crises": [
+    {"name": "Panic of 1837", "year": 1837},
+    {"name": "Panic of 1873", "year": 1873},
+    {"name": "Panic of 1893", "year": 1893},
+    {"name": "Panic of 1907", "year": 1907},
+    {"name": "Great Depression", "year": 1929},
+    {"name": "1973 Oil Crisis", "year": 1973},
+    {"name": "Black Monday", "year": 1987},
+    {"name": "Dot-com Crash", "year": 2000},
+    {"name": "Financial Crisis", "year": 2008},
+    {"name": "COVID Crash", "year": 2020}
+  ],
+  
+  "tech_revolutions": [
+    {"name": "Printing Press", "year": 1440},
+    {"name": "Telegraph", "year": 1837},
+    {"name": "Telephone", "year": 1876},
+    {"name": "Radio", "year": 1920},
+    {"name": "Television", "year": 1950},
+    {"name": "Personal Computer", "year": 1980},
+    {"name": "Internet/Web", "year": 1995},
+    {"name": "Mobile/Smartphone", "year": 2007},
+    {"name": "AI/LLMs", "year": 2022}
+  ],
+  
+  "cultural_periods": [
+    {"name": "Renaissance", "start": 1400, "end": 1600, "narrativity": 0.80},
+    {"name": "Enlightenment", "start": 1650, "end": 1800, "narrativity": 0.85},
+    {"name": "Victorian Era", "start": 1837, "end": 1901, "narrativity": 0.75},
+    {"name": "Modernism", "start": 1900, "end": 1950, "narrativity": 0.82},
+    {"name": "Post-War", "start": 1950, "end": 1970, "narrativity": 0.55},
+    {"name": "Information Age", "start": 1995, "end": 2024, "narrativity": 0.90}
+  ],
+  
+  "generation_markers": [
+    {"name": "Lost Generation", "birth_years": [1880, 1900], "peak_influence": 1920},
+    {"name": "Greatest Generation", "birth_years": [1900, 1925], "peak_influence": 1950},
+    {"name": "Silent Generation", "birth_years": [1925, 1945], "peak_influence": 1960},
+    {"name": "Baby Boomers", "birth_years": [1945, 1965], "peak_influence": 1980},
+    {"name": "Generation X", "birth_years": [1965, 1980], "peak_influence": 1995},
+    {"name": "Millennials", "birth_years": [1980, 1995], "peak_influence": 2010},
+    {"name": "Generation Z", "birth_years": [1995, 2010], "peak_influence": 2020}
+  ]
+}
+

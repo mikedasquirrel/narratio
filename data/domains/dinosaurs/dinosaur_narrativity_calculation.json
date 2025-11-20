@@ -1,0 +1,40 @@
+{
+  "domain": "dinosaurs_educational",
+  "calculation_date": "2025-11-12T23:30:03.018818",
+  "components": {
+    "structural": 0.55,
+    "temporal": 0.75,
+    "agency": 1.0,
+    "interpretive": 0.85,
+    "format": 0.6
+  },
+  "weights": {
+    "structural": 0.3,
+    "temporal": 0.2,
+    "agency": 0.25,
+    "interpretive": 0.15,
+    "format": 0.1
+  },
+  "calculated_pi": 0.753,
+  "classification": "high_narrativity",
+  "target_achieved": true,
+  "expected_forces": {
+    "theta": 0.4,
+    "lambda": 0.3,
+    "ta_marbuta": 0.85
+  },
+  "expected_performance": {
+    "r_squared": 0.73,
+    "range": [
+      0.68,
+      0.78
+    ]
+  },
+  "key_characteristics": [
+    "Perfect individual agency (1.00) - kids choose freely",
+    "Educational/learning domain (first of its kind)",
+    "Names dominate experience (extinct = only names remain)",
+    "Multi-generational transmission",
+    "Jurassic Park as temporal landmark (1993)"
+  ]
+}

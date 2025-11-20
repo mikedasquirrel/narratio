@@ -1,0 +1,1184 @@
+{
+  "patterns": [
+    {
+      "name": "GBM Confidence \u226560%",
+      "description": "Games where model predicts home win with 60%+ confidence",
+      "n_games": 179,
+      "wins": 163,
+      "losses": 16,
+      "win_rate": 0.9106145251396648,
+      "win_rate_pct": 91.06145251396647,
+      "roi": 0.7383631284916201,
+      "roi_pct": 73.83631284916201,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "ml_confidence",
+      "model_threshold": 0.6,
+      "validation": {
+        "pattern_name": "GBM Confidence \u226560%",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "GBM Confidence \u226555%",
+      "description": "Games where model predicts home win with 55%+ confidence",
+      "n_games": 196,
+      "wins": 172,
+      "losses": 24,
+      "win_rate": 0.8775510204081632,
+      "win_rate_pct": 87.75510204081633,
+      "roi": 0.6752448979591836,
+      "roi_pct": 67.52448979591836,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "ml_confidence",
+      "model_threshold": 0.55,
+      "validation": {
+        "pattern_name": "GBM Confidence \u226555%",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "GBM Confidence \u226550%",
+      "description": "Games where model predicts home win with 50%+ confidence",
+      "n_games": 222,
+      "wins": 185,
+      "losses": 37,
+      "win_rate": 0.8333333333333334,
+      "win_rate_pct": 83.33333333333334,
+      "roi": 0.5908333333333334,
+      "roi_pct": 59.08333333333334,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "ml_confidence",
+      "model_threshold": 0.5,
+      "validation": {
+        "pattern_name": "GBM Confidence \u226550%",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High cup_history_diff + High away_is_expansion",
+      "description": "Games with high cup_history_diff + high away_is_expansion",
+      "features": [
+        "cup_history_diff",
+        "away_is_expansion"
+      ],
+      "feature_indices": [
+        62,
+        56
+      ],
+      "n_games": 62,
+      "wins": 42,
+      "losses": 20,
+      "win_rate": 0.6774193548387096,
+      "win_rate_pct": 67.74193548387096,
+      "roi": 0.29319354838709666,
+      "roi_pct": 29.319354838709664,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High cup_history_diff + High away_is_expansion",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High cup_history_diff + Low home_brand_weight",
+      "description": "Games with high cup_history_diff + low home_brand_weight",
+      "features": [
+        "cup_history_diff",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        62,
+        64
+      ],
+      "n_games": 31,
+      "wins": 21,
+      "losses": 10,
+      "win_rate": 0.6774193548387096,
+      "win_rate_pct": 67.74193548387096,
+      "roi": 0.29319354838709666,
+      "roi_pct": 29.319354838709664,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High cup_history_diff + Low home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_cup_history + High away_star_power",
+      "description": "Games with low away_cup_history + high away_star_power",
+      "features": [
+        "away_cup_history",
+        "away_star_power"
+      ],
+      "feature_indices": [
+        52,
+        58
+      ],
+      "n_games": 24,
+      "wins": 16,
+      "losses": 8,
+      "win_rate": 0.6666666666666666,
+      "win_rate_pct": 66.66666666666666,
+      "roi": 0.2726666666666666,
+      "roi_pct": 27.266666666666662,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_cup_history + High away_star_power",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low total_nominative_gravity + High away_star_power",
+      "description": "Games with low total_nominative_gravity + high away_star_power",
+      "features": [
+        "total_nominative_gravity",
+        "away_star_power"
+      ],
+      "feature_indices": [
+        78,
+        58
+      ],
+      "n_games": 38,
+      "wins": 25,
+      "losses": 13,
+      "win_rate": 0.6578947368421053,
+      "win_rate_pct": 65.78947368421053,
+      "roi": 0.25592105263157905,
+      "roi_pct": 25.592105263157904,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low total_nominative_gravity + High away_star_power",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low combined_brand_gravity + High cup_history_diff",
+      "description": "Games with low combined_brand_gravity + high cup_history_diff",
+      "features": [
+        "combined_brand_gravity",
+        "cup_history_diff"
+      ],
+      "feature_indices": [
+        61,
+        62
+      ],
+      "n_games": 64,
+      "wins": 42,
+      "losses": 22,
+      "win_rate": 0.65625,
+      "win_rate_pct": 65.625,
+      "roi": 0.25278125000000007,
+      "roi_pct": 25.278125000000006,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low combined_brand_gravity + High cup_history_diff",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_cup_history + High away_is_expansion",
+      "description": "Games with low away_cup_history + high away_is_expansion",
+      "features": [
+        "away_cup_history",
+        "away_is_expansion"
+      ],
+      "feature_indices": [
+        52,
+        56
+      ],
+      "n_games": 83,
+      "wins": 54,
+      "losses": 29,
+      "win_rate": 0.6506024096385542,
+      "win_rate_pct": 65.06024096385542,
+      "roi": 0.242,
+      "roi_pct": 24.2,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_cup_history + High away_is_expansion",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_cup_history + High cup_history_diff",
+      "description": "Games with low away_cup_history + high cup_history_diff",
+      "features": [
+        "away_cup_history",
+        "cup_history_diff"
+      ],
+      "feature_indices": [
+        52,
+        62
+      ],
+      "n_games": 94,
+      "wins": 61,
+      "losses": 33,
+      "win_rate": 0.648936170212766,
+      "win_rate_pct": 64.8936170212766,
+      "roi": 0.23881914893617018,
+      "roi_pct": 23.88191489361702,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_cup_history + High cup_history_diff",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "away_cup_history < Median",
+      "description": "Games where away_cup_history is < median",
+      "feature": "away_cup_history",
+      "feature_idx": 52,
+      "threshold": "< Median",
+      "n_games": 143,
+      "wins": 89,
+      "losses": 54,
+      "win_rate": 0.6223776223776224,
+      "win_rate_pct": 62.23776223776224,
+      "roi": 0.1881188811188812,
+      "roi_pct": 18.81188811188812,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "away_cup_history < Median",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low combined_brand_gravity + High home_brand_weight",
+      "description": "Games with low combined_brand_gravity + high home_brand_weight",
+      "features": [
+        "combined_brand_gravity",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        61,
+        64
+      ],
+      "n_games": 31,
+      "wins": 19,
+      "losses": 12,
+      "win_rate": 0.6129032258064516,
+      "win_rate_pct": 61.29032258064516,
+      "roi": 0.17003225806451616,
+      "roi_pct": 17.003225806451617,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low combined_brand_gravity + High home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "cup_history_diff > Q3 (75th percentile)",
+      "description": "Games where cup_history_diff is > q3 (75th percentile)",
+      "feature": "cup_history_diff",
+      "feature_idx": 62,
+      "threshold": "> Q3 (75th percentile)",
+      "n_games": 91,
+      "wins": 55,
+      "losses": 36,
+      "win_rate": 0.6043956043956044,
+      "win_rate_pct": 60.43956043956044,
+      "roi": 0.15379120879120878,
+      "roi_pct": 15.379120879120878,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "cup_history_diff > Q3 (75th percentile)",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low total_nominative_gravity + High home_brand_weight",
+      "description": "Games with low total_nominative_gravity + high home_brand_weight",
+      "features": [
+        "total_nominative_gravity",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        78,
+        64
+      ],
+      "n_games": 30,
+      "wins": 18,
+      "losses": 12,
+      "win_rate": 0.6,
+      "win_rate_pct": 60.0,
+      "roi": 0.14539999999999997,
+      "roi_pct": 14.539999999999997,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low total_nominative_gravity + High home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low total_nominative_gravity + High away_is_expansion",
+      "description": "Games with low total_nominative_gravity + high away_is_expansion",
+      "features": [
+        "total_nominative_gravity",
+        "away_is_expansion"
+      ],
+      "feature_indices": [
+        78,
+        56
+      ],
+      "n_games": 92,
+      "wins": 55,
+      "losses": 37,
+      "win_rate": 0.5978260869565217,
+      "win_rate_pct": 59.78260869565217,
+      "roi": 0.14125,
+      "roi_pct": 14.124999999999998,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low total_nominative_gravity + High away_is_expansion",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "away_is_expansion > Median",
+      "description": "Games where away_is_expansion is > median",
+      "feature": "away_is_expansion",
+      "feature_idx": 56,
+      "threshold": "> Median",
+      "n_games": 108,
+      "wins": 64,
+      "losses": 44,
+      "win_rate": 0.5925925925925926,
+      "win_rate_pct": 59.25925925925925,
+      "roi": 0.1312592592592592,
+      "roi_pct": 13.12592592592592,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "away_is_expansion > Median",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_cup_history + High home_brand_weight",
+      "description": "Games with low away_cup_history + high home_brand_weight",
+      "features": [
+        "away_cup_history",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        52,
+        64
+      ],
+      "n_games": 66,
+      "wins": 39,
+      "losses": 27,
+      "win_rate": 0.5909090909090909,
+      "win_rate_pct": 59.09090909090909,
+      "roi": 0.12804545454545457,
+      "roi_pct": 12.804545454545458,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_cup_history + High home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High away_is_expansion + High home_brand_weight",
+      "description": "Games with high away_is_expansion + high home_brand_weight",
+      "features": [
+        "away_is_expansion",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        56,
+        64
+      ],
+      "n_games": 46,
+      "wins": 27,
+      "losses": 19,
+      "win_rate": 0.5869565217391305,
+      "win_rate_pct": 58.69565217391305,
+      "roi": 0.12050000000000016,
+      "roi_pct": 12.050000000000017,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High away_is_expansion + High home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High away_is_expansion + Low home_brand_weight",
+      "description": "Games with high away_is_expansion + low home_brand_weight",
+      "features": [
+        "away_is_expansion",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        56,
+        64
+      ],
+      "n_games": 45,
+      "wins": 26,
+      "losses": 19,
+      "win_rate": 0.5777777777777777,
+      "win_rate_pct": 57.77777777777777,
+      "roi": 0.10297777777777772,
+      "roi_pct": 10.297777777777773,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High away_is_expansion + Low home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "combined_brand_gravity < Median",
+      "description": "Games where combined_brand_gravity is < median",
+      "feature": "combined_brand_gravity",
+      "feature_idx": 61,
+      "threshold": "< Median",
+      "n_games": 198,
+      "wins": 114,
+      "losses": 84,
+      "win_rate": 0.5757575757575758,
+      "win_rate_pct": 57.57575757575758,
+      "roi": 0.09912121212121228,
+      "roi_pct": 9.912121212121228,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "combined_brand_gravity < Median",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_cup_history + High total_nominative_gravity",
+      "description": "Games with low away_cup_history + high total_nominative_gravity",
+      "features": [
+        "away_cup_history",
+        "total_nominative_gravity"
+      ],
+      "feature_indices": [
+        52,
+        78
+      ],
+      "n_games": 40,
+      "wins": 23,
+      "losses": 17,
+      "win_rate": 0.575,
+      "win_rate_pct": 57.49999999999999,
+      "roi": 0.09767499999999996,
+      "roi_pct": 9.767499999999995,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_cup_history + High total_nominative_gravity",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "Low away_star_power + High home_brand_weight",
+      "description": "Games with low away_star_power + high home_brand_weight",
+      "features": [
+        "away_star_power",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        58,
+        64
+      ],
+      "n_games": 68,
+      "wins": 39,
+      "losses": 29,
+      "win_rate": 0.5735294117647058,
+      "win_rate_pct": 57.35294117647059,
+      "roi": 0.09486764705882345,
+      "roi_pct": 9.486764705882344,
+      "confidence": "HIGH",
+      "unit_recommendation": 2,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "Low away_star_power + High home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High total_nominative_gravity + High away_is_expansion",
+      "description": "Games with high total_nominative_gravity + high away_is_expansion",
+      "features": [
+        "total_nominative_gravity",
+        "away_is_expansion"
+      ],
+      "feature_indices": [
+        78,
+        56
+      ],
+      "n_games": 16,
+      "wins": 9,
+      "losses": 7,
+      "win_rate": 0.5625,
+      "win_rate_pct": 56.25,
+      "roi": 0.07381250000000006,
+      "roi_pct": 7.381250000000006,
+      "confidence": "MEDIUM",
+      "unit_recommendation": 1,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High total_nominative_gravity + High away_is_expansion",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "away_brand_weight < Median",
+      "description": "Games where away_brand_weight is < median",
+      "feature": "away_brand_weight",
+      "feature_idx": 50,
+      "threshold": "< Median",
+      "n_games": 171,
+      "wins": 96,
+      "losses": 75,
+      "win_rate": 0.5614035087719298,
+      "win_rate_pct": 56.14035087719298,
+      "roi": 0.07171929824561396,
+      "roi_pct": 7.171929824561396,
+      "confidence": "MEDIUM",
+      "unit_recommendation": 1,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "away_brand_weight < Median",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "High away_star_power + Low home_brand_weight",
+      "description": "Games with high away_star_power + low home_brand_weight",
+      "features": [
+        "away_star_power",
+        "home_brand_weight"
+      ],
+      "feature_indices": [
+        58,
+        64
+      ],
+      "n_games": 68,
+      "wins": 38,
+      "losses": 30,
+      "win_rate": 0.5588235294117647,
+      "win_rate_pct": 55.88235294117647,
+      "roi": 0.06679411764705889,
+      "roi_pct": 6.67941176470589,
+      "confidence": "MEDIUM",
+      "unit_recommendation": 1,
+      "pattern_type": "combination",
+      "validation": {
+        "pattern_name": "High away_star_power + Low home_brand_weight",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    },
+    {
+      "name": "home_cup_history > Q3 (75th percentile)",
+      "description": "Games where home_cup_history is > q3 (75th percentile)",
+      "feature": "home_cup_history",
+      "feature_idx": 66,
+      "threshold": "> Q3 (75th percentile)",
+      "n_games": 92,
+      "wins": 51,
+      "losses": 41,
+      "win_rate": 0.5543478260869565,
+      "win_rate_pct": 55.434782608695656,
+      "roi": 0.058250000000000024,
+      "roi_pct": 5.825000000000003,
+      "confidence": "MEDIUM",
+      "unit_recommendation": 1,
+      "pattern_type": "threshold",
+      "validation": {
+        "pattern_name": "home_cup_history > Q3 (75th percentile)",
+        "train": {
+          "n_games": 2494,
+          "wins": 1346,
+          "losses": 1148,
+          "win_rate": 0.5396952686447474,
+          "win_rate_pct": 53.96952686447474,
+          "roi": 0.030278267842822726,
+          "roi_pct": 3.0278267842822726
+        },
+        "test": {
+          "n_games": 605,
+          "wins": 329,
+          "losses": 276,
+          "win_rate": 0.543801652892562,
+          "win_rate_pct": 54.3801652892562,
+          "roi": 0.03811735537190086,
+          "roi_pct": 3.8117355371900863
+        },
+        "win_rate_drift": 0.004106384247814621,
+        "consistent": true,
+        "both_profitable": true,
+        "validated": true
+      }
+    }
+  ],
+  "summary": {
+    "total_patterns": 26,
+    "validated": 26,
+    "failed": 0,
+    "validation_rate": 1.0,
+    "train_period": "2014-2022",
+    "test_period": "2023-2024",
+    "validation_period": "2024-2025"
+  }
+}

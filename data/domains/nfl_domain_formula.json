@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-16T16:07:45.650748",
+  "domain": "NFL",
+  "total_games": 3160,
+  "narrativity": {
+    "pi": 0.5800000000000001,
+    "components": {
+      "subjectivity": 0.45,
+      "agency": 0.6,
+      "observability": 0.9,
+      "generativity": 0.5,
+      "constraint": 0.45
+    }
+  },
+  "correlation": {
+    "r": 0.019975287725494395,
+    "p_value": 0.26162606630357027,
+    "interpretation": "Very weak/no correlation"
+  },
+  "coupling": {
+    "kappa": 0.6,
+    "rationale": "Narrative influences but performance dominates"
+  },
+  "narrative_agency": {
+    "delta": 0.00695140012847205,
+    "formula": "\u0414 = \u043f \u00d7 |r| \u00d7 \u03ba",
+    "calculation": "0.580 \u00d7 0.0200 \u00d7 0.60 = 0.0070"
+  },
+  "threshold_test": {
+    "ratio": 0.011985172635296635,
+    "threshold": 0.5,
+    "passes": false,
+    "interpretation": "Performance dominates, narrative creates market inefficiencies"
+  },
+  "verdict": {
+    "narrative_matters": false,
+    "efficiency": 0.011985172635296635,
+    "conclusion": "Better performance wins, but narrative creates exploitable patterns"
+  }
+}

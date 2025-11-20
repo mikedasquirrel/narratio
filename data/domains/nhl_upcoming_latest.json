@@ -1,0 +1,770 @@
+[
+  {
+    "game_id": "fada3121c5e0cb9ba6fff552d43ffc96",
+    "commence_time": "2025-11-21T00:10:00Z",
+    "home_team": "TOR",
+    "away_team": "CBJ",
+    "home_team_full": "Toronto Maple Leafs",
+    "away_team_full": "Columbus Blue Jackets",
+    "odds": {
+      "moneyline_home": -113,
+      "moneyline_away": -110,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 225,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -295,
+      "total": 6.5,
+      "over_odds": -105,
+      "under_odds": -120
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -113,
+      "moneyline_away": -110,
+      "total": 6.5,
+      "over_odds": -105,
+      "under_odds": -120,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 225,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -295
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "CBJ @ TOR"
+  },
+  {
+    "game_id": "8a22b7924bea68b6761edbb59484e07f",
+    "commence_time": "2025-11-21T00:10:00Z",
+    "home_team": "DET",
+    "away_team": "NYI",
+    "home_team_full": "Detroit Red Wings",
+    "away_team_full": "New York Islanders",
+    "odds": {
+      "moneyline_home": -134,
+      "moneyline_away": 108,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 185,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -240,
+      "total": 6.0,
+      "over_odds": -112,
+      "under_odds": -112
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -134,
+      "moneyline_away": 108,
+      "total": 6.0,
+      "over_odds": -112,
+      "under_odds": -112,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 185,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -240
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "NYI @ DET"
+  },
+  {
+    "game_id": "688c329bcb1860abe45d05be7297814d",
+    "commence_time": "2025-11-21T00:10:00Z",
+    "home_team": "FLA",
+    "away_team": "NJD",
+    "home_team_full": "Florida Panthers",
+    "away_team_full": "New Jersey Devils",
+    "odds": {
+      "moneyline_home": -152,
+      "moneyline_away": 123,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 165,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -205,
+      "total": 5.5,
+      "over_odds": -125,
+      "under_odds": 102
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -152,
+      "moneyline_away": 123,
+      "total": 5.5,
+      "over_odds": -125,
+      "under_odds": 102,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 165,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -205
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "NJD @ FLA"
+  },
+  {
+    "game_id": "a796fd73eb237f89885826fd14e8abeb",
+    "commence_time": "2025-11-21T00:10:00Z",
+    "home_team": "MON",
+    "away_team": "WSH",
+    "home_team_full": "Montr\u00e9al Canadiens",
+    "away_team_full": "Washington Capitals",
+    "odds": {
+      "moneyline_home": -130,
+      "moneyline_away": 105,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 190,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -245,
+      "total": 6.0,
+      "over_odds": -122,
+      "under_odds": 100
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -130,
+      "moneyline_away": 105,
+      "total": 6.0,
+      "over_odds": -122,
+      "under_odds": 100,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 190,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -245
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "WSH @ MON"
+  },
+  {
+    "game_id": "5522fb1a10f5c187605df6ddb50c2741",
+    "commence_time": "2025-11-21T00:10:00Z",
+    "home_team": "PHI",
+    "away_team": "STL",
+    "home_team_full": "Philadelphia Flyers",
+    "away_team_full": "St Louis Blues",
+    "odds": {
+      "moneyline_home": -124,
+      "moneyline_away": 100,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 200,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -250,
+      "total": 5.5,
+      "over_odds": -114,
+      "under_odds": -109
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -124,
+      "moneyline_away": 100,
+      "total": 5.5,
+      "over_odds": -114,
+      "under_odds": -109,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 200,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -250
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "STL @ PHI"
+  },
+  {
+    "game_id": "e1b8715f5a766a496a772b078b063d8e",
+    "commence_time": "2025-11-21T00:40:00Z",
+    "home_team": "TBL",
+    "away_team": "EDM",
+    "home_team_full": "Tampa Bay Lightning",
+    "away_team_full": "Edmonton Oilers",
+    "odds": {
+      "moneyline_home": -155,
+      "moneyline_away": 125,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 160,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -200,
+      "total": 6.0,
+      "over_odds": -118,
+      "under_odds": -106
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -155,
+      "moneyline_away": 125,
+      "total": 6.0,
+      "over_odds": -118,
+      "under_odds": -106,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 160,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -200
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "EDM @ TBL"
+  },
+  {
+    "game_id": "5d535e69f2f5fa2be6f6fbe12fb4eaac",
+    "commence_time": "2025-11-21T01:10:00Z",
+    "home_team": "CHI",
+    "away_team": "SEA",
+    "home_team_full": "Chicago Blackhawks",
+    "away_team_full": "Seattle Kraken",
+    "odds": {
+      "moneyline_home": -115,
+      "moneyline_away": -108,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 210,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -275,
+      "total": 5.5,
+      "over_odds": -122,
+      "under_odds": -103
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -115,
+      "moneyline_away": -108,
+      "total": 5.5,
+      "over_odds": -122,
+      "under_odds": -103,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 210,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -275
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "SEA @ CHI"
+  },
+  {
+    "game_id": "d662f149c37f482147c5e724e9ae5b53",
+    "commence_time": "2025-11-21T02:10:00Z",
+    "home_team": "COL",
+    "away_team": "NYR",
+    "home_team_full": "Colorado Avalanche",
+    "away_team_full": "New York Rangers",
+    "odds": {
+      "moneyline_home": -230,
+      "moneyline_away": 180,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 115,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -143,
+      "total": 6.0,
+      "over_odds": -118,
+      "under_odds": -106
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -230,
+      "moneyline_away": 180,
+      "total": 6.0,
+      "over_odds": -118,
+      "under_odds": -106,
+      "puck_line_home": -1.5,
+      "puck_line_home_odds": 115,
+      "puck_line_away": 1.5,
+      "puck_line_away_odds": -143
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "NYR @ COL"
+  },
+  {
+    "game_id": "006b1675167b3910a0b7d18686b6b25f",
+    "commence_time": "2025-11-21T02:10:00Z",
+    "home_team": "UTA",
+    "away_team": "VGK",
+    "home_team_full": "Utah Mammoth",
+    "away_team_full": "Vegas Golden Knights",
+    "odds": {
+      "moneyline_home": -110,
+      "moneyline_away": -113,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -278,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 215,
+      "total": 6.0,
+      "over_odds": -120,
+      "under_odds": -105
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -110,
+      "moneyline_away": -113,
+      "total": 6.0,
+      "over_odds": -120,
+      "under_odds": -105,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -278,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 215
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "VGK @ UTA"
+  },
+  {
+    "game_id": "be2bee10632ca2f750181680bf7259b9",
+    "commence_time": "2025-11-21T03:10:00Z",
+    "home_team": "ANA",
+    "away_team": "OTT",
+    "home_team_full": "Anaheim Ducks",
+    "away_team_full": "Ottawa Senators",
+    "odds": {
+      "moneyline_home": 104,
+      "moneyline_away": -129,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -245,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 190,
+      "total": 6.5,
+      "over_odds": -105,
+      "under_odds": -120
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": 104,
+      "moneyline_away": -129,
+      "total": 6.5,
+      "over_odds": -105,
+      "under_odds": -120,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -245,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 190
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "OTT @ ANA"
+  },
+  {
+    "game_id": "be124f7540029fb3ae7418fddac0b13f",
+    "commence_time": "2025-11-21T03:10:00Z",
+    "home_team": "VAN",
+    "away_team": "DAL",
+    "home_team_full": "Vancouver Canucks",
+    "away_team_full": "Dallas Stars",
+    "odds": {
+      "moneyline_home": 130,
+      "moneyline_away": -165,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -195,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 155,
+      "total": 6.0,
+      "over_odds": -122,
+      "under_odds": 100
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": 130,
+      "moneyline_away": -165,
+      "total": 6.0,
+      "over_odds": -122,
+      "under_odds": 100,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -195,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 155
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "DAL @ VAN"
+  },
+  {
+    "game_id": "9cb2d13cab0ff84fecb32fa6580973f7",
+    "commence_time": "2025-11-21T03:10:00Z",
+    "home_team": "SJS",
+    "away_team": "LAK",
+    "home_team_full": "San Jose Sharks",
+    "away_team_full": "Los Angeles Kings",
+    "odds": {
+      "moneyline_home": 150,
+      "moneyline_away": -190,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -175,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 135,
+      "total": 5.5,
+      "over_odds": -125,
+      "under_odds": 100
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": 150,
+      "moneyline_away": -190,
+      "total": 5.5,
+      "over_odds": -125,
+      "under_odds": 100,
+      "puck_line_home": 1.5,
+      "puck_line_home_odds": -175,
+      "puck_line_away": -1.5,
+      "puck_line_away_odds": 135
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "LAK @ SJS"
+  },
+  {
+    "game_id": "6ac3a1aa8dd538821b9053ecfb565bfd",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "BUF",
+    "away_team": "CHI",
+    "home_team_full": "Buffalo Sabres",
+    "away_team_full": "Chicago Blackhawks",
+    "odds": {
+      "moneyline_home": -167,
+      "moneyline_away": 135,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -167,
+      "moneyline_away": 135,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "CHI @ BUF"
+  },
+  {
+    "game_id": "1170b462998e64bc0691d2ab58d9af2b",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "PIT",
+    "away_team": "MIN",
+    "home_team_full": "Pittsburgh Penguins",
+    "away_team_full": "Minnesota Wild",
+    "odds": {
+      "moneyline_home": -117,
+      "moneyline_away": -107,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -117,
+      "moneyline_away": -107,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "MIN @ PIT"
+  },
+  {
+    "game_id": "ab53cd83a77bf98680a2e0b12142e779",
+    "commence_time": "2025-11-22T01:00:00Z",
+    "home_team": "WPG",
+    "away_team": "CAR",
+    "home_team_full": "Winnipeg Jets",
+    "away_team_full": "Carolina Hurricanes",
+    "odds": {
+      "moneyline_home": -112,
+      "moneyline_away": -112,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -112,
+      "moneyline_away": -112,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "CAR @ WPG"
+  },
+  {
+    "game_id": "8ab28f816f034cdaa48ac9577f5b1f02",
+    "commence_time": "2025-11-22T03:30:00Z",
+    "home_team": "LAK",
+    "away_team": "BOS",
+    "home_team_full": "Los Angeles Kings",
+    "away_team_full": "Boston Bruins",
+    "odds": {
+      "moneyline_home": -195,
+      "moneyline_away": 150,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null
+    },
+    "bookmaker": "BetRivers",
+    "betting_odds": {
+      "moneyline_home": -195,
+      "moneyline_away": 150,
+      "total": null,
+      "over_odds": null,
+      "under_odds": null,
+      "puck_line_home": null,
+      "puck_line_home_odds": null,
+      "puck_line_away": null,
+      "puck_line_away_odds": null
+    },
+    "home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "home_home_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "away_away_record": {
+      "wins": 0,
+      "losses": 0
+    },
+    "matchup": "BOS @ LAK"
+  }
+]

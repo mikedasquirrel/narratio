@@ -1,0 +1,758 @@
+{
+  "companies": [
+    {
+      "id": 31022,
+      "name": "JSX Tool",
+      "slug": "jsx-tool",
+      "website": "https://jsxtool.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/336184b5090a4103bd3801bd555ccb2323dee7f4.png",
+      "oneLiner": "AI-First In-Browser IDE for React Development",
+      "longDescription": "JSX Tool is a browser extension that hooks into your React project, so you can easily locate any React component and file with just a click. This gives developers the ability to articulate visual requests to LLMs that without JSX Tool, are either vague or cumbersome to communicate in English and code snippets. On top of that JSX Tool is a full featured IDE tailored specifically for React Development, so users never have to leave the context of their browser when developing React code.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/jsx-tool",
+      "batch": "F25",
+      "tags": [
+        "Developer Tools",
+        "Web Development",
+        "AI"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [],
+      "locations": [],
+      "badges": []
+    },
+    {
+      "id": 31021,
+      "name": "Zephyr Fusion",
+      "slug": "zephyr-fusion",
+      "website": "https://www.zephyrfusion.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f3bc97204b0d665ad12d9be818e42b4dccfcd7ba.png",
+      "oneLiner": "Powering tomorrow's industrial revolution in space",
+      "longDescription": "Zephyr Fusion is building the first in-orbit fusion power source: a megawatt-class reactor enabling large-scale industry in space, at a fraction of the cost of equivalent solar.\r\n\r\nFounded by former physicists from Lawrence Livermore and Oak Ridge National Laboratories, Zephyr leverages decades of fusion research to deliver a compact magnetic confinement system designed to take advantage of the space environment.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/zephyr-fusion",
+      "batch": "F25",
+      "tags": [
+        "Fusion Energy",
+        "Hard Tech",
+        "Satellites",
+        "Aerospace"
+      ],
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Energy"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Diego, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31018,
+      "name": "item",
+      "slug": "item",
+      "website": "https://item.app",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/489b44af8e973c25eda472f6d5b28122caeafb54.png",
+      "oneLiner": "The AI-Native CRM that works for you",
+      "longDescription": "item connects to all your customer tools, gathers and enriches context automatically, and becomes your company’s source of truth — one place where your team and your AI agents share the full picture to act autonomously.\r\n\r\nAt the center is the Assistant — your sidekick for daily work. It can send follow-ups, research leads, or add deals with a simple prompt. No complex UI, drop-downs or fields, simply ask.\r\n\r\nFor repeatable work, you build Agents that you can train like new hires, simply by writing documents that describe your processes. item Agents run business processes across sales, support, and account management autonomously.",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/item",
+      "batch": "F25",
+      "tags": [
+        "B2B",
+        "Automation",
+        "AI Assistant"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Sales"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightLatinx"
+      ]
+    },
+    {
+      "id": 31013,
+      "name": "Rivet",
+      "slug": "rivet-design",
+      "website": "https://rivet.design/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/27852a72a2c3864e7f9b2c7273ec39951f3e8d68.png",
+      "oneLiner": "Rivet helps product designers change software without coding.",
+      "longDescription": "Rivet is a visual tool that sits above a codebase. It's a bridge that lets product designers own any UI change to the software they work on. \r\n\r\nDesigners use Rivet today to shortcut painful design handoffs and just make any visual change themselves. This saves time for designers and engineers and makes it radically easier to build software with great design and taste. \r\n\r\nThis becomes the next design tool because it lets designers break out of static tools and prototype like frontend engineers.  Use real components from your existing codebase to design remarkably complex interactions, and then ship it yourself.  ",
+      "teamSize": null,
+      "url": "https://www.ycombinator.com/companies/rivet-design",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Design",
+        "Design Tools"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31011,
+      "name": "Openroll",
+      "slug": "openroll",
+      "website": "https://www.openroll.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/e85636cc8d85e40e183c3547b34d3f05a5aa19c6.png",
+      "oneLiner": "The world's first Agentic compensation platform",
+      "longDescription": "Openroll gives companies real-time intelligence on compensation, what competitors pay, who they’re targeting, and how they’re expanding.\r\n\r\nInstead of guessing, Openroll helps you win the talent game with hard data and actionable insights.\r\n\r\nLearn more at https://www.openroll.com",
+      "teamSize": 4,
+      "url": "https://www.ycombinator.com/companies/openroll",
+      "batch": "F25",
+      "tags": [
+        "B2B",
+        "HR Tech",
+        "Data Visualization",
+        "AI"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "Sweden",
+        "Europe"
+      ],
+      "locations": [
+        "Stockholm, Sweden"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31010,
+      "name": "Fixpoint",
+      "slug": "fixpoint",
+      "website": "https://fixpoint.co/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/51f1eaa6d1493780832479f97fca83170e4ebe91.png",
+      "oneLiner": "Source and manage experts for AI training jobs",
+      "longDescription": "Fixpoint helps AI training data companies hire the expert humans that create AI training data. We handle sourcing, vetting, and all HR for expert annotator teams, so our customers can focus just on creating training data.\r\n\r\nWe build AI agents to automate sourcing and interviewing, and a recruiting + HR system to keep track of annotators, assign them to projects, manage payroll, and everything else needed to run a human data project.\r\n\r\nYou can embed Fixpoint's APIs into an existing human data ops workflow or use our white-gloving staffing so you can just send us job requirements and get an expert team delivered to you.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/fixpoint",
+      "batch": "F25",
+      "tags": [],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Human Resources"
+      ],
+      "regions": [],
+      "locations": [],
+      "badges": [
+        "isHiring"
+      ]
+    },
+    {
+      "id": 31009,
+      "name": "Bear",
+      "slug": "bear",
+      "website": "https://usebear.ai",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/7696654f248acf11e5913502b817690c5caf5763.png",
+      "oneLiner": "Market to AI Agents",
+      "longDescription": "Bear AI helps companies show up AI search engines like ChatGPT, Perplexity, and Google AI Overviews. \r\n\r\nWe provide analytics to track your brand's visibility, competitive intelligence to understand why competitors rank higher, and ways to improve your content for AI-powered search.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/bear",
+      "batch": "F25",
+      "tags": [
+        "Generative AI",
+        "SaaS",
+        "B2B"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31008,
+      "name": "Moss",
+      "slug": "moss",
+      "website": "https://usemoss.dev",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/df3b300791985ce328fa08da12278e2c8cc8ddc9.png",
+      "oneLiner": "Real-time semantic search for Conversational AI",
+      "longDescription": "Moss is building the real-time semantic search runtime for conversational and multimodal AI. Our system enables voice agents, copilots, and chat interfaces to retrieve, reason, and respond in sub-10 ms, delivering the responsiveness that makes AI interactions feel truly natural.\r\n\r\nIf you’ve ever built a conversational or voice AI product, you’ve felt the lag. That moment when an agent pauses and the illusion of intelligence breaks. The bottleneck is almost always retrieval. Each query hops across networks and databases, adding delay and cost. Moss eliminates that gap by keeping retrieval close to where the agent runs.\r\n\r\nMoss runs natively across browsers, mobile devices, and servers with an optimized vector index built in Rust and WebAssembly. It enables teams to build AI products that feel instant, contextual, and adaptive. The experiences that sustain engagement and unlock new kinds of interaction. For our customers, this translates into tangible business value: stronger user retention, higher conversion, and entirely new product categories made possible by real-time understanding. Moss is already powering production pilots across voice AI and developer platforms, achieving sub-10 ms retrieval and 70–90% token savings compared to traditional pipelines.",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/moss",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Developer Tools",
+        "SaaS"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Mateo, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31007,
+      "name": "Zarna",
+      "slug": "zarna",
+      "website": "https://www.zarnaai.com/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/d20374e923bd141960c3c8fd2965f8288e95aa58.png",
+      "oneLiner": "AI Private Equity Associates",
+      "longDescription": "Zarna is private equity’s first AI associate class.\r\n\r\nOur agents plug directly into your firm’s data and work like a deal team that never sleeps. Zarna’s agents analyze CIMs, build LBOs, update CRMs, draft IC memos, & act based on decades of proprietary firm knowledge. \r\n\r\nThe result: investors spend less time buried in decks and spreadsheets, and more time on judgment, relationships, and winning deals. \r\n",
+      "teamSize": 4,
+      "url": "https://www.ycombinator.com/companies/zarna",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Investments"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Finance and Accounting"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31005,
+      "name": "MarkIt",
+      "slug": "markit",
+      "website": "https://markittrade.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/7e5614f0ff0430254c23e0743e5e0490fb5f826c.png",
+      "oneLiner": "Silver Bullet for Trade Compliance",
+      "longDescription": "MarkIt builds AI agents that work directly inside the workflows trade professionals use every day — Excel, PDFs, broker portals, and more. \r\nFrom defensible classification, ACE report audits, and a self-updating system of record, it serves trade professionals end to end with agents intelligent enough to work in the complex environment. \r\n\r\nMarkIt brings reasoning, memory, and automation to global trade compliance, helping Suppliers, Brokers, and OEMs reduce errors, save time, and streamline operations in the growingly intense world of Global Trade.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/markit",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Workflow Automation",
+        "Logistics"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Supply Chain and Logistics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightBlack",
+        "highlightLatinx"
+      ]
+    },
+    {
+      "id": 31004,
+      "name": "Dome",
+      "slug": "dome",
+      "website": "https://domeapi.io",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/7dc9ddeb09c634cfdedc5563ec8d3c525a7e8189.png",
+      "oneLiner": "A unified API for prediction markets, like Kalshi and Polymarket",
+      "longDescription": "Dome makes it easy to build on prediction markets like Polymarket and Kalshi. We provide the developer infrastructure to access, analyze, and build on prediction markets. \r\n\r\nWith our unified API, developers can access live and historical data, including granular datasets not available natively, across multiple platforms at once. Dome makes it simple to trade, embed market data into products, and deploy strategies across multiple platforms through one interface.\r\n",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/dome",
+      "batch": "F25",
+      "tags": [
+        "Developer Tools",
+        "Fintech"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "New York, NY, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31002,
+      "name": "Clicks",
+      "slug": "clicks",
+      "website": "https://goclicks.ai/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/5305c55b4b60ebbe6d4f336c1c814b90415438cb.png",
+      "oneLiner": "Computer use agents to automate all back-office work",
+      "longDescription": "Clicks automates your back-office using your existing tools and processes without requiring any IT integrations.\r\n\r\nWhat We Do:\r\nThink of Clicks as your back-office worker that can handle any repetitive task. Simply describe your process via video call or share documentation, and our forward-deployed engineering team ensures it's automated exactly your way.\r\nOur AI agents work 24/7 and can be kicked-off via email, Slack, or our web app, handling tasks like CRM updates, report generation, and data entry while adapting to your existing software.\r\n\r\nInitial Focus:\r\nWe're starting with recruiting and executive search firms, automating candidate codification, assessment reports, and administrative workflows that typically consume hours of manual work each day.\r\n\r\nValue Proposition:\r\nOur pricing is 100% outcome based: you only pay for the work outputs we complete (e.g., candidates added to CRM, reports generate, etc.). Current customers are already live and saving an average of 60% in costs compared to human workers, with full automation deployed within one week.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/clicks",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Workflow Automation",
+        "Recruiting",
+        "Automation"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Productivity"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 31001,
+      "name": "Fastshot",
+      "slug": "fastshot",
+      "website": "https://www.fastshot.ai/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/bac15cb365c68f8004b888ffdda5946e5ec65b76.png",
+      "oneLiner": "Lovable for mobile apps",
+      "longDescription": "Fastshot is a no-code mobile development platform.\r\nOur mission is to \"Democratize mobile app creation with AI\"\r\nAnyone can develop a mobile app from idea to App Stores within days just by chatting with AI.\r\n\r\n",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/fastshot",
+      "batch": "F25",
+      "tags": [
+        "Developer Tools",
+        "No-code",
+        "AI",
+        "AI Assistant"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [
+        "Remote",
+        "Partly Remote"
+      ],
+      "locations": [],
+      "badges": [
+        "highlightWomen"
+      ]
+    },
+    {
+      "id": 30999,
+      "name": "Claybird",
+      "slug": "claybird",
+      "website": "https://claybird.com/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/c99aaf789dfc9ef524dff38a9121909c0f00745c.png",
+      "oneLiner": "AI-native video ad agency",
+      "longDescription": "Claybird is an agent that plans, generates, and edits your AI video ad.\r\n\r\nMarketers often rely on agencies to produce video ads - a slow, expensive process involving endless revisions, actors, and shoots.\r\n\r\nClaybird is like Lovable for AI ads: it collaborates with marketers on creative direction, generates shots using Veo, Sora, and other top models, and intelligently edits them into a studio-quality video.\r\n\r\nWhen most people try making AI content, it looks like “slop”. But Claybird Agent, like an expert director, understands quality: it knows which camera angle, shot type, and lighting is necessary for each scene.\r\n\r\nGet started at claybird.com",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/claybird",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "SaaS",
+        "Video",
+        "Marketing",
+        "Advertising"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30997,
+      "name": "LunaBill",
+      "slug": "lunabill",
+      "website": "https://lunabill.com/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/847fd92cf2043da7d18f115344b4d983d4eccc7c.png",
+      "oneLiner": "Automating Calls for Healthcare Billing Teams",
+      "longDescription": "",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/lunabill",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Healthcare",
+        "Healthcare IT"
+      ],
+      "status": "Active",
+      "industries": [
+        "Healthcare",
+        "Healthcare IT"
+      ],
+      "regions": [],
+      "locations": [],
+      "badges": []
+    },
+    {
+      "id": 30996,
+      "name": "Axial Composites Industries",
+      "slug": "axial-composites-industries",
+      "website": "https://www.axialcomposite.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/007bb2c508bd83c57c360e94b7f692b23ba29ca1.png",
+      "oneLiner": "Manufacturing cell for automated carbon fiber parts production",
+      "longDescription": "At Axial Composites Industries we are building the first non-planar manufacturing cell to automate advanced thermoplastic composites production.\r\n\r\nWe believe in the following:\r\n\r\n•\tComposites are the apex material for drone-related applications\r\n•\tCarbon fiber manufacturing technology is still in its infancy\r\n\r\nOur mission is to develop novel composite manufacturing methods that will act as the foundation for the upcoming cambrian explosion in aerospace and robotics.\r\n\r\n\r\nOur method can produce stronger and lighter parts by leveraging fiber anisotropy to our advantage. This not only allows for shorter lead times and iteration cycles, but it unlocks new possibilities for composite manufacturing.\r\n\r\n",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/axial-composites-industries",
+      "batch": "F25",
+      "tags": [
+        "Hard Tech",
+        "Manufacturing",
+        "Aerospace"
+      ],
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Aviation and Space"
+      ],
+      "regions": [],
+      "locations": [],
+      "badges": []
+    },
+    {
+      "id": 30995,
+      "name": "Velvet",
+      "slug": "velvet",
+      "website": "https://velvet.video",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/2f333f0eb8eb873e8e242bef88d7d4fbf13bfc08.png",
+      "oneLiner": "The single platform for companies to create AI videos.",
+      "longDescription": "Velvet is a platform for companies to collaborate on AI video creation, like Figma does for design. Our team has worked on video generation at Meta FAIR and infra at Adobe, and we’re building the single tool companies need to produce AI video assets",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/velvet",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Video",
+        "Media",
+        "Advertising",
+        "Enterprise Software"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightLatinx"
+      ]
+    },
+    {
+      "id": 30993,
+      "name": "DiligenceSquared Inc.",
+      "slug": "diligencesquared-inc",
+      "website": "https://diligencesquared.com/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/e75ae93d8e056556c69cc8d6215f5c6787ea95eb.png",
+      "oneLiner": "AI-powered market due diligence for investment decisions",
+      "longDescription": "DiligenceSquared delivers AI-powered market due diligence for investment decisions - like the $1M McKinsey reports, but automated, auditable, and at a fraction of the cost.\r\n\r\nWhen Private Equity funds evaluate deals, they pay firms like McKinsey, BCG, and Bain $500K-$1M for market due diligence. The process takes weeks, and the output is a static PowerPoint that's impossible to audit. A single large-cap PE fund can spend >$30M annually on this and the total market is $10B+ per year.\r\n\r\nOur AI agents conduct expert interviews and synthesize insights with every claim linked to source transcripts. No black box, no \"trust me\" slides, and no 10x mark-up for human labor.\r\n\r\nFrederik bought these reports as a Principal at Blackstone. Soren sold them as a Principal at BCG. Harshil is a repeat founder and former Software Engineer at Google. We've seen both sides and know what matters in due diligence - and now we automate it.\r\n\r\nOur clients already include two of the world's five largest PE funds, and several mid-market funds - demonstrating broad appeal of our technology. Potential clients with users on our platform represent 60% of the top-30 PE funds globally.",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/diligencesquared-inc",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Analytics",
+        "Market Research"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Analytics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30992,
+      "name": "Amera",
+      "slug": "amera",
+      "website": "https://amerahealthsolutions.com/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/8d11b3366a660003662af3941c9320ee9f871e73.png",
+      "oneLiner": "Automating claims processing workflows for health insurance payers.",
+      "longDescription": "Amera automates claims processing for health insurance payers, converting messy data into clean, usable formats that speed up operations, reduce costs, and make them more transparent. \r\n\r\nWe are already working with payers representing tens of thousands of members, giving them access to more affordable care options.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/amera",
+      "batch": "F25",
+      "tags": [
+        "Workflow Automation",
+        "Health Insurance",
+        "Healthcare IT"
+      ],
+      "status": "Active",
+      "industries": [
+        "Fintech",
+        "Insurance"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightWomen"
+      ]
+    },
+    {
+      "id": 30991,
+      "name": "Forge Robotics",
+      "slug": "forge-robotics",
+      "website": "https://forge-robotics.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/c02750d438079c212fed98a30cb270db92c521c3.png",
+      "oneLiner": "A robotics intelligence layer for metal fabrication",
+      "longDescription": "Forge Robotics is changing the way that metal parts are fabricated. We are enabling a future where our intelligent robotic system completes all steps needed to take raw metal stock and transform it into fully welded parts. \r\n\r\nBeginning with welding, we are building a robot-mounted vision system and AI feature detection that creates a real-time 3D map and tells the arm exactly where to go at every instant.",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/forge-robotics",
+      "batch": "F25",
+      "tags": [
+        "Robotic Process Automation",
+        "Robotics",
+        "Industrial"
+      ],
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30990,
+      "name": "Stratus Aviation",
+      "slug": "stratus-aviation",
+      "website": "https://getstratus.ai/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/3c0263995ad129e471cb270750ec3dbd054d86ad.png",
+      "oneLiner": "AI-powered intelligence layer for airports",
+      "longDescription": "Airports are among the most data-rich yet information-poor environments in transportation. Thousands of radio transmissions, aircraft movements, and sensor signals occur every second, but these systems remain siloed. Most airfields still rely on manual logs and calls to understand what’s happening on the ground, creating blind spots that slow coordination and limit safety oversight.\r\n\r\nThe result is a growing safety and efficiency gap. The FAA records four to five runway incursions every day, and over 90% of air traffic control facilities are operating below target staffing levels. Despite $20 billion in modernization programs like NextGen and Safety Management Systems, airports still lack a unified data backbone that connects communication, movement, and intent across the airfield.\r\n\r\nStratus provides the missing layer of intelligence for airport and airside operations — unifying data, communication, and movement into one shared, real-time picture.\r\n\r\nFor airports, this means faster decisions, clearer accountability, and safer, more efficient operations.\r\nFor aviation as a whole, it’s the foundation for connected, data-driven infrastructure that can finally keep pace with modern airside complexity.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/stratus-aviation",
+      "batch": "F25",
+      "tags": [
+        "Hardware",
+        "Aerospace",
+        "AI"
+      ],
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Aviation and Space"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30989,
+      "name": "Bluma",
+      "slug": "bluma",
+      "website": "https://www.getbluma.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/2fb4b30a87ff49eecaaa2a8e93e689ddecfde446.png",
+      "oneLiner": "Automating Short-Form Video Ads at Scale",
+      "longDescription": "Bluma makes it effortless for SaaS founders to launch TikTok and Instagram organic campaigns that actually go viral.\r\n\r\nShare us viral faceless videos you would like to recreate and we’ll make them into scalable ad templates. Or choose from our growing library of templates like Peter Griffin explainers and slideshows.\r\n\r\nThese templates generate thousands of videos each month that promote your product. Then we handle posting across a network of accounts.\r\n\r\n📩 Contact us at alisa@getbluma.com to set up a call.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/bluma",
+      "batch": "F25",
+      "tags": [
+        "B2B",
+        "Social Media",
+        "Video",
+        "Marketing",
+        "AI"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightWomen"
+      ]
+    },
+    {
+      "id": 30987,
+      "name": "Lightberry",
+      "slug": "lightberry",
+      "website": "https://lightberry.com",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/d547e87dd8a95aef15364dc6867d855165863209.png",
+      "oneLiner": "The social brain for robots.",
+      "longDescription": "We build brains for robots.\r\n\r\nWe work with manufacturers like Unitree to make robots listen, speak, and act. You can program your robot out of the box by literally talking to it, no coding involved.\r\n\r\nRobots running Lightberry are emotionally intelligent, always on, and fully autonomous. Just like in Star Wars!",
+      "teamSize": 3,
+      "url": "https://www.ycombinator.com/companies/lightberry",
+      "batch": "F25",
+      "tags": [
+        "Robotics",
+        "Conversational AI"
+      ],
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30986,
+      "name": "The Hog",
+      "slug": "the-hog",
+      "website": "https://thehog.ai/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/6ba9edbf42a04ad97bf80ea5c1940458e14f3f70.png",
+      "oneLiner": "Your Go-To-Market Command Center",
+      "longDescription": "The Hog maps your ICP, channels, and opportunities across the internet, monitors competitors, communities, keywords, and turns signals into ranked actionable game plans.\r\n\r\nThe future of go-to-market is command centers, not dashboards. The Hog gives one person the power of an entire sales and marketing team and compresses research into execution in minutes. You control an army of AI sales and marketing copilots that research, write, and execute.\r\n\r\nWhy now:\r\n\r\nStanding out in a crowded market is harder and more important than ever. Companies need fast, adaptable go to market playbooks because buyer behavior and channels change constantly, and what works today may stall tomorrow. The way to stay ahead is for sales, marketing, and growth to operate on the same platform with the same information so insights become coordinated actions in minutes.\r\n\r\nBuilt by operators:\r\n\r\n“Head of Growth” is in our name for a reason. The Hog is the dream tool Hudson wished he had when he scaled a startup from about $900K ARR to $7M+ in three months as a solo growth hire, and helped another company pivot to profitability with only two months of runway left. Current customers call the insight “f****** good” and “on another level.”\r\n\r\n\r\nWhat we do today:\r\n\r\n- Find where your ICP spends time and how they behave across Reddit, LinkedIn, X, forums, and review sites\r\n- Continuous market and competitor monitoring with daily briefs\r\n- Social listening, sentiment tracking, and brand awareness trends\r\n- Strategic positioning and a living Brand and Messaging Guide\r\n- SEO research plus on-brand blog and content drafts\r\n- Digital marketing and PPC planning with keywords and budgets\r\n- Auto-drafts for posts, comments, replies, and community engagement\r\n- Channel strategies for multi-channel motions beyond paid ads\r\n\r\n\r\nThe Hog Guarantee:\r\nFind at least one qualified customer in 30 days or get your money back.\r\n",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/the-hog",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Sales",
+        "Sales Enablement",
+        "Marketing",
+        "Advertising"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": []
+    },
+    {
+      "id": 30983,
+      "name": "Telemetron",
+      "slug": "telemetron-ai",
+      "website": "https://www.telemetron.ai/",
+      "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/db4f19af21f2acf6ffe0cf95e59e6961ae9e1f89.png",
+      "oneLiner": "Customer Support Platform Built for Hardware",
+      "longDescription": "Telemetron is an AI-powered support platform tailored for hardware products (medical devices, consumer electronics, industrial hardware, robotics, and more). \r\n\r\nOur platform unifies ticketing, device diagnostics, order tracking, and product documentation into one intelligent system. Our AI agents connect directly to devices, APIs, and backend systems to deliver faster resolutions, smarter routing, and better support experiences.",
+      "teamSize": 2,
+      "url": "https://www.ycombinator.com/companies/telemetron-ai",
+      "batch": "F25",
+      "tags": [
+        "Artificial Intelligence",
+        "Hardware",
+        "B2B",
+        "Customer Success",
+        "Customer Support"
+      ],
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "locations": [
+        "San Francisco, CA, USA"
+      ],
+      "badges": [
+        "highlightWomen"
+      ]
+    }
+  ],
+  "nextPage": "https://api.ycombinator.com/v0.1/companies?page=2",
+  "page": 1,
+  "totalPages": 223
+}

@@ -1,0 +1,38 @@
+{
+  "\u03c0": 0.245,
+  "components": {
+    "\u03c0_structural": 0.2,
+    "\u03c0_temporal": 0.4,
+    "\u03c0_agency": 0.3,
+    "\u03c0_interpretation": 0.1,
+    "\u03c0_format": 0.15
+  },
+  "weights": {
+    "w_structural": 0.3,
+    "w_temporal": 0.2,
+    "w_agency": 0.25,
+    "w_interpretation": 0.15,
+    "w_format": 0.1
+  },
+  "interpretation": {
+    "category": "circumscribed",
+    "comparison": {
+      "dice_rolls": 0.12,
+      "coin_flips": 0.15,
+      "aviation": 0.245,
+      "nba_games": 0.5,
+      "startups": 0.76,
+      "character_arcs": 0.88
+    },
+    "expected_narrative_effects": "minimal to none (high observability)",
+    "hypothesis": "Aviation should FAIL narrative law (\u0414/\u03c0 < 0.5)",
+    "scientific_value": "Validates observability moderation theory"
+  },
+  "reasoning": {
+    "structural": "Codes assigned by authorities, not strategic choice. Very constrained.",
+    "temporal": "Some evolution over time (reputation, incidents), but core identity fixed.",
+    "agency": "Limited agency. Engineering/regulation determine outcomes, not names.",
+    "interpretation": "Objective metrics. Incidents are facts, not interpretations. High observability.",
+    "format": "Rigid format (3-letter IATA, 4-letter ICAO codes). Industry conventions."
+  }
+}

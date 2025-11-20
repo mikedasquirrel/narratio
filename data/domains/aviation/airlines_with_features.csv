@@ -1,0 +1,199 @@
+id,name,iata_code,icao_code,country,fleet_size,incident_count,fatal_incidents,avg_delay_minutes,on_time_performance_pct,incidents_per_million_flights,airline_id,name_memorability_score,name_trustworthiness_score,name_luxury_score,name_budget_score
+1,American Airlines,AA,AAL,United States,950,0,0,,,0.0,1,53.88235294117647,75.0,30.0,30.0
+2,Delta Air Lines,DL,DAL,United States,900,0,0,,,0.0,2,57.6,50.0,30.0,30.0
+3,United Airlines,UA,UAL,United States,850,0,0,,,0.0,3,57.86666666666667,75.0,30.0,30.0
+4,Southwest Airlines,WN,SWA,United States,750,0,0,,,0.0,4,59.55555555555556,50.0,30.0,30.0
+5,British Airways,BA,BAW,United Kingdom,280,0,0,,,0.0,5,57.6,50.0,30.0,30.0
+6,Lufthansa,LH,DLH,Germany,280,0,0,,,0.0,6,75.33333333333334,50.0,30.0,30.0
+7,Emirates,EK,UAE,United Arab Emirates,270,0,0,,,0.0,7,80.0,50.0,30.0,30.0
+8,Air France,AF,AFR,France,220,0,0,,,0.0,8,77.6,50.0,30.0,30.0
+9,Qantas,QF,QFA,Australia,130,0,0,,,0.0,9,87.33333333333334,50.0,30.0,30.0
+10,BudgetAir,1K,BG1,Germany,100,0,0,,,0.0,10,77.77777777777777,30.0,30.0,50.0
+11,1Time Airline,1T,RNX,South Africa,30,0,0,,,0.0,11,61.84615384615385,50.0,30.0,30.0
+12,40-Mile Air,Q5,MLA,United States,30,0,0,,,0.0,12,67.45454545454545,50.0,30.0,30.0
+13,Ansett Australia,AN,AAA,Australia,30,0,0,,,0.0,13,68.75,50.0,30.0,30.0
+14,Abacus International,1B,,Singapore,30,0,0,,,0.0,14,47.8,90.0,30.0,30.0
+15,Aigle Azur,ZI,AAF,France,30,0,0,,,0.0,15,78.0,50.0,30.0,30.0
+16,Aloha Airlines,AQ,AAH,United States,30,0,0,,,0.0,16,60.0,50.0,30.0,30.0
+17,Asiana Airlines,OZ,AAR,Republic of Korea,30,0,0,,,0.0,17,58.13333333333334,50.0,30.0,30.0
+18,Askari Aviation,4K,AAS,Pakistan,30,0,0,,,0.0,18,58.13333333333334,50.0,30.0,30.0
+19,Afriqiyah Airways,8U,AAW,Libya,30,0,0,,,0.0,19,54.117647058823536,50.0,30.0,30.0
+20,Allegiant Air,G4,AAY,United States,30,0,0,,,0.0,20,66.84615384615384,50.0,30.0,30.0
+21,ABSA - Aerolinhas Brasileiras,M3,TUS,Brazil,30,0,0,,,0.0,21,29.655172413793107,50.0,30.0,30.0
+22,Astral Aviation,8V,ACP,Kenya,30,0,0,,,0.0,22,55.86666666666667,50.0,30.0,30.0
+23,Air Tindi,8T,,Canadian Territories,30,0,0,,,0.0,23,77.77777777777777,50.0,30.0,30.0
+24,Ada Air,ZY,ADE,Albania,30,0,0,,,0.0,24,80.0,50.0,30.0,30.0
+25,Adria Airways,JP,ADR,Slovenia,30,0,0,,,0.0,25,62.15384615384616,50.0,30.0,30.0
+26,Air Europa,UX,AEA,Spain,30,0,0,,,0.0,26,90.0,50.0,30.0,30.0
+27,Aero Benin,EM,AEB,Benin,30,0,0,,,0.0,27,80.0,50.0,30.0,30.0
+28,Aegean Airlines,A3,AEE,Greece,30,0,0,,,0.0,28,58.13333333333334,50.0,30.0,30.0
+29,Air Europe,PE,AEL,Italy,30,0,0,,,0.0,29,80.0,50.0,30.0,30.0
+30,Alaska Central Express,KO,AER,United States,30,0,0,,,0.0,30,46.27272727272727,50.0,30.0,30.0
+31,Astraeus,5W,AEU,United Kingdom,30,0,0,,,0.0,31,76.0,50.0,30.0,30.0
+32,Aerosvit Airlines,VV,AEW,Ukraine,30,0,0,,,0.0,32,53.88235294117647,50.0,30.0,30.0
+33,Air Italy,I9,AEY,Italy,30,0,0,,,0.0,33,80.0,50.0,30.0,30.0
+34,Alliance Airlines,QQ,UTY,Australia,30,0,0,,,0.0,34,58.88235294117647,50.0,30.0,30.0
+35,Ariana Afghan Airlines,FG,AFG,Afghanistan,30,0,0,,,0.0,35,41.81818181818182,50.0,30.0,30.0
+36,Aeroflot Russian Airlines,SU,AFL,Russia,30,0,0,,,0.0,36,42.760000000000005,50.0,30.0,30.0
+37,Air Bosna,JA,BON,Bosnia and Herzegovina,30,0,0,,,0.0,37,87.77777777777777,50.0,30.0,30.0
+38,Air Caledonie International,SB,ACI,France,30,0,0,,,0.0,38,33.925925925925924,90.0,30.0,30.0
+39,Air Salone,2O,,Sierra Leone,30,0,0,,,0.0,39,80.0,50.0,30.0,30.0
+40,Air Cargo Carriers,2Q,SNC,United States,30,0,0,,,0.0,40,56.55555555555556,50.0,30.0,30.0
+41,Air Namibia,SW,NMB,Namibia,30,0,0,,,0.0,41,78.0,50.0,30.0,30.0
+42,Aerolitoral,5D,SLI,Mexico,30,0,0,,,0.0,42,68.0,50.0,30.0,30.0
+43,Air Glaciers,7T,AGV,Switzerland,30,0,0,,,0.0,43,63.66666666666667,50.0,30.0,30.0
+44,Aeroper,PL,PLI,Peru,30,0,0,,,0.0,44,80.0,50.0,30.0,30.0
+45,Atlas Blue,8A,BMM,Morocco,30,0,0,,,0.0,45,77.6,50.0,30.0,30.0
+46,Azerbaijan Airlines,J2,AHY,Azerbaijan,30,0,0,,,0.0,46,49.89473684210526,50.0,30.0,30.0
+47,Avies,U3,AIA,Estonia,30,0,0,,,0.0,47,90.0,50.0,30.0,30.0
+48,Airblue,ED,ABQ,Pakistan,30,0,0,,,0.0,48,76.28571428571429,50.0,30.0,30.0
+49,Air Berlin,AB,BER,Germany,30,0,0,,,0.0,49,77.6,50.0,30.0,30.0
+50,Air India Limited,AI,AIC,India,30,0,0,,,0.0,50,53.88235294117647,50.0,30.0,30.0
+51,Air Bourbon,ZB,BUB,Reunion,30,0,0,,,0.0,51,65.81818181818181,50.0,30.0,30.0
+52,Air Atlanta Icelandic,CC,ABD,Iceland,30,0,0,,,0.0,52,45.714285714285715,50.0,30.0,30.0
+53,Air Tahiti Nui,TN,THT,France,30,0,0,,,0.0,53,62.0,50.0,30.0,30.0
+54,Arkia Israel Airlines,IZ,AIZ,Israel,30,0,0,,,0.0,54,45.904761904761905,50.0,30.0,30.0
+55,Air Jamaica,JM,AJM,Jamaica,30,0,0,,,0.0,55,78.0,50.0,30.0,30.0
+56,Air One,AP,ADH,Italy,30,0,0,,,0.0,56,80.0,50.0,30.0,30.0
+57,Air Sahara,S2,RSH,India,30,0,0,,,0.0,57,90.0,50.0,30.0,30.0
+58,Air Malta,KM,AMC,Malta,30,0,0,,,0.0,58,87.77777777777777,50.0,30.0,30.0
+59,Air Japan,NQ,AJX,Japan,30,0,0,,,0.0,59,79.77777777777777,50.0,30.0,30.0
+60,Air Kiribati,4A,AKL,Kiribati,30,0,0,,,0.0,60,66.0,50.0,30.0,30.0
+61,America West Airlines,HP,AWE,United States,30,0,0,,,0.0,61,45.714285714285715,50.0,30.0,30.0
+62,Air Wisconsin,ZW,AWI,United States,30,0,0,,,0.0,62,61.53846153846154,50.0,30.0,30.0
+63,Tatarstan Airlines,U9,TAK,Russia,30,0,0,,,0.0,63,49.55555555555556,50.0,30.0,30.0
+64,Air Libert,VD,,France,30,0,0,,,0.0,64,77.6,50.0,30.0,30.0
+65,Air Malawi,QM,AML,Malawi,30,0,0,,,0.0,65,80.0,50.0,30.0,30.0
+66,Air Sicilia,BM,,Italy,30,0,0,,,0.0,66,78.0,50.0,30.0,30.0
+67,Air Macau,NX,AMU,Macao,30,0,0,,,0.0,67,80.0,50.0,30.0,30.0
+68,Air Seychelles,HM,SEY,Seychelles,30,0,0,,,0.0,68,64.71428571428572,50.0,30.0,30.0
+69,AeroMéxico,AM,AMX,Mexico,30,0,0,,,0.0,69,76.0,50.0,30.0,30.0
+70,All Nippon Airways,NH,ANA,Japan,30,0,0,,,0.0,70,56.55555555555556,50.0,30.0,30.0
+71,Air Nostrum,YW,ANE,Spain,30,0,0,,,0.0,71,63.45454545454545,50.0,30.0,30.0
+72,Air Niugini,PX,ANG,Papua New Guinea,30,0,0,,,0.0,72,68.0,50.0,30.0,30.0
+73,Air Arabia,G9,ABY,United Arab Emirates,30,0,0,,,0.0,73,90.0,50.0,30.0,30.0
+74,Air Canada,AC,ACA,Canada,30,0,0,,,0.0,74,90.0,50.0,30.0,30.0
+75,Air Baltic,BT,BTI,Latvia,30,0,0,,,0.0,75,77.6,50.0,30.0,30.0
+76,Air Nippon,EL,ANK,Japan,30,0,0,,,0.0,76,82.6,50.0,30.0,30.0
+77,Airnorth,TL,ANO,Australia,30,0,0,,,0.0,77,75.5,50.0,30.0,30.0
+78,Air North Charter - Canada,4N,ANT,Canada,30,0,0,,,0.0,78,43.23076923076923,50.0,30.0,30.0
+79,Air New Zealand,NZ,ANZ,New Zealand,30,0,0,,,0.0,79,57.6,50.0,30.0,30.0
+80,Alitalia Express,XM,SMX,Italy,30,0,0,,,0.0,80,58.75,50.0,30.0,30.0
+81,Aero Flight,GV,ARF,Germany,30,0,0,,,0.0,81,63.45454545454545,50.0,30.0,30.0
+82,Arrow Air,JW,APW,United States,30,0,0,,,0.0,82,82.77777777777777,50.0,30.0,30.0
+83,Aerocondor,2B,ARD,Portugal,30,0,0,,,0.0,83,78.0,50.0,30.0,30.0
+84,Aires,4C,ARE, S.A.,30,0,0,,,0.0,84,90.0,50.0,30.0,30.0
+85,Aerolineas Argentinas,AR,ARG,Argentina,30,0,0,,,0.0,85,45.904761904761905,50.0,30.0,30.0
+86,Alaska Airlines,AS,ASA,ALASKA,30,0,0,,,0.0,86,57.86666666666667,50.0,30.0,30.0
+87,Air Sinai,4D,ASD,Egypt,30,0,0,,,0.0,87,80.0,50.0,30.0,30.0
+88,Atlantic Southeast Airlines,EV,ASQ,United States,30,0,0,,,0.0,88,33.62962962962963,50.0,30.0,30.0
+89,Astrakhan Airlines,OB,ASZ,Russia,30,0,0,,,0.0,89,49.55555555555556,50.0,30.0,30.0
+90,Air Tanzania,TC,ATC,Tanzania,30,0,0,,,0.0,90,74.0,50.0,30.0,30.0
+91,Air Burkina,2J,VBW,Burkina Faso,30,0,0,,,0.0,91,75.81818181818181,50.0,30.0,30.0
+92,Airlines Of Tasmania,FO,ATM,Australia,30,0,0,,,0.0,92,57.8,50.0,30.0,30.0
+93,Air Saint Pierre,PJ,SPM,France,30,0,0,,,0.0,93,60.75,50.0,30.0,30.0
+94,Austrian Airlines,OS,AUA,Austria,30,0,0,,,0.0,94,51.88235294117647,50.0,30.0,30.0
+95,Augsburg Airways,IQ,AUB,Germany,30,0,0,,,0.0,95,53.75,50.0,30.0,30.0
+96,Abu Dhabi Amiri Flight,MO,AUH,United Arab Emirates,30,0,0,,,0.0,96,41.45454545454545,50.0,30.0,30.0
+97,Aeroflot-Nord,5N,AUL,Russia,30,0,0,,,0.0,97,61.53846153846154,50.0,30.0,30.0
+98,Aurigny Air Services,GR,AUR,United Kingdom,30,0,0,,,0.0,98,47.8,50.0,30.0,30.0
+99,Austral Lineas Aereas,AU,AUT,Argentina,30,0,0,,,0.0,99,43.904761904761905,50.0,30.0,30.0
+100,Avianca - Aerovias Nacionales de Colombia,AV,AVA,AVIANCA,30,0,0,,,0.0,100,15.853658536585368,50.0,30.0,30.0
+101,Air Vanuatu,NF,AVN,Vanuatu,30,0,0,,,0.0,101,68.0,50.0,30.0,30.0
+102,Air Bangladesh,B9,BGD,Bangladesh,30,0,0,,,0.0,102,57.42857142857143,50.0,30.0,30.0
+103,Air Mediterranee,DR,BIE,France,30,0,0,,,0.0,103,61.0,50.0,30.0,30.0
+104,Aeroline GmbH,7E,AWU,Germany,30,0,0,,,0.0,104,57.53846153846154,50.0,30.0,30.0
+105,Air Wales,6G,AWW,United Kingdom,30,0,0,,,0.0,105,79.77777777777777,50.0,30.0,30.0
+106,Air Caraïbes,TX,FWI,France,30,0,0,,,0.0,106,63.66666666666667,50.0,30.0,30.0
+107,Air India Express,IX,AXB,India,30,0,0,,,0.0,107,56.64705882352941,50.0,30.0,30.0
+108,Air Exel,XT,AXL,Netherlands,30,0,0,,,0.0,108,80.0,50.0,30.0,30.0
+109,AirAsia,AK,AXM,Malaysia,30,0,0,,,0.0,109,90.0,50.0,30.0,30.0
+110,Atlant-Soyuz Airlines,3G,AYZ,Russia,30,0,0,,,0.0,110,45.714285714285715,50.0,30.0,30.0
+111,Alitalia,AZ,AZA,Italy,30,0,0,,,0.0,111,90.0,50.0,30.0,30.0
+112,Amaszonas,Z8,AZN,Bolivia,30,0,0,,,0.0,112,77.77777777777777,50.0,30.0,30.0
+113,Air Zimbabwe,UM,AZW,Zimbabwe,30,0,0,,,0.0,113,63.66666666666667,50.0,30.0,30.0
+114,Aserca Airlines,R7,OCA,Venezuela,30,0,0,,,0.0,114,57.86666666666667,50.0,30.0,30.0
+115,Rossiya-Russian Airlines,FV,SDM,Russia,30,0,0,,,0.0,115,44.833333333333336,50.0,30.0,30.0
+116,American Eagle Airlines,MQ,EGF,United States,30,0,0,,,0.0,116,41.913043478260875,75.0,30.0,30.0
+117,Air Ivoire,VU,VUN,Ivory Coast,30,0,0,,,0.0,117,80.0,50.0,30.0,30.0
+118,Air Botswana,BP,BOT,Botswana,30,0,0,,,0.0,118,71.66666666666667,50.0,30.0,30.0
+119,Air Foyle,GS,UPA,United Kingdom,30,0,0,,,0.0,119,80.0,50.0,30.0,30.0
+120,Air Tahiti,VT,VTA,French Polynesia,30,0,0,,,0.0,120,80.0,50.0,30.0,30.0
+121,Air VIA,VL,VIM,Bulgaria,30,0,0,,,0.0,121,90.0,50.0,30.0,30.0
+122,Africa West,FK,WTA,Togo,30,0,0,,,0.0,122,65.45454545454545,50.0,30.0,30.0
+123,ATRAN Cargo Airlines,V8,VAS,Russian Federation,30,0,0,,,0.0,123,47.6,50.0,30.0,30.0
+124,Air China,CA,CCA,China,30,0,0,,,0.0,124,87.77777777777777,50.0,30.0,30.0
+125,Aero Condor Peru,Q6,CDP,Peru,30,0,0,,,0.0,125,55.75,50.0,30.0,30.0
+126,Air Chathams,CV,CVA,New Zealand,30,0,0,,,0.0,126,63.333333333333336,50.0,30.0,30.0
+127,Air Marshall Islands,CW,CWM,Marshall Islands,30,0,0,,,0.0,127,50.2,50.0,30.0,30.0
+128,Access Air,ZA,CYD,United States,30,0,0,,,0.0,128,82.6,50.0,30.0,30.0
+129,Air Algerie,AH,DAH,Algeria,30,0,0,,,0.0,129,66.18181818181819,50.0,30.0,30.0
+130,Adam Air,KI,DHI,Indonesia,30,0,0,,,0.0,130,80.0,50.0,30.0,30.0
+131,Air Dolomiti,EN,DLA,Italy,30,0,0,,,0.0,131,66.0,50.0,30.0,30.0
+132,Aeroflot-Don,D9,DNV,Russia,30,0,0,,,0.0,132,63.66666666666667,50.0,30.0,30.0
+133,Air Madrid,NM,DRD,Spain,30,0,0,,,0.0,133,77.6,50.0,30.0,30.0
+134,Aer Lingus,EI,EIN,Ireland,30,0,0,,,0.0,134,77.6,50.0,30.0,30.0
+135,Air Finland,OF,FIF,Finland,30,0,0,,,0.0,135,65.45454545454545,50.0,30.0,30.0
+136,Air Pacific,FJ,FJI,Fiji,30,0,0,,,0.0,136,67.81818181818181,50.0,30.0,30.0
+137,Atlantic Airways,RC,FLI,Faroe Islands,30,0,0,,,0.0,137,55.75,50.0,30.0,30.0
+138,Air Florida,QH,FLZ,United States,30,0,0,,,0.0,138,75.81818181818181,50.0,30.0,30.0
+139,Air Iceland,NY,FXI,Iceland,30,0,0,,,0.0,139,65.81818181818181,50.0,30.0,30.0
+140,Air Philippines,2P,GAP,Philippines,30,0,0,,,0.0,140,62.6,50.0,30.0,30.0
+141,Air Guinee Express,2U,GIP,Guinea,30,0,0,,,0.0,141,54.77777777777778,50.0,30.0,30.0
+142,Air Greenland,GL,GRL,Denmark,30,0,0,,,0.0,142,66.53846153846155,50.0,30.0,30.0
+143,Atlas Air,5Y,GTI,United States,30,0,0,,,0.0,143,77.77777777777777,50.0,30.0,30.0
+144,Air Guyane,GG,GUY,French Guiana,30,0,0,,,0.0,144,80.0,50.0,30.0,30.0
+145,Air Bagan,W9,JAB,Myanmar,30,0,0,,,0.0,145,79.77777777777777,50.0,30.0,30.0
+146,Air Canada Jazz,QK,JZA,Canada,30,0,0,,,0.0,146,62.6,50.0,30.0,30.0
+147,Atlasjet,KK,KKK,Turkey,30,0,0,,,0.0,147,77.5,50.0,30.0,30.0
+148,Air Koryo,JS,KOR,Democratic People's Republic of Korea,30,0,0,,,0.0,148,80.0,50.0,30.0,30.0
+149,Air Astana,KC,KZR,Kazakhstan,30,0,0,,,0.0,149,88.0,50.0,30.0,30.0
+150,Albanian Airlines,LV,LBC,Albania,30,0,0,,,0.0,150,53.88235294117647,50.0,30.0,30.0
+151,Aerolane,XL,LNE,Ecuador,30,0,0,,,0.0,151,80.0,50.0,30.0,30.0
+152,Atlantis European Airways,TD,LUR,Armenia,30,0,0,,,0.0,152,37.92,50.0,30.0,30.0
+153,Air Luxor,LK,LXR,Portugal,30,0,0,,,0.0,153,79.77777777777777,50.0,30.0,30.0
+154,Air Mauritius,MK,MAU,Mauritius,30,0,0,,,0.0,154,64.0,50.0,30.0,30.0
+155,Air Madagascar,MD,MDG,Madagascar,30,0,0,,,0.0,155,59.714285714285715,50.0,30.0,30.0
+156,Air Moldova,9U,MLD,Moldova,30,0,0,,,0.0,156,75.81818181818181,50.0,30.0,30.0
+157,Air Plus Comet,A7,MPD,Spain,30,0,0,,,0.0,157,59.42857142857143,50.0,30.0,30.0
+158,Astair,8D,,Russian Federation,30,0,0,,,0.0,158,88.0,50.0,30.0,30.0
+159,Aero Contractors,AJ,NIG,Nigeria,30,0,0,,,0.0,159,53.5,50.0,30.0,30.0
+160,Aeropelican Air Services,OT,PEL,Australia,30,0,0,,,0.0,160,39.833333333333336,50.0,30.0,30.0
+161,Aer Arann,RE,REA,Ireland,30,0,0,,,0.0,161,82.77777777777777,50.0,30.0,30.0
+162,Air Austral,UU,REU,France,30,0,0,,,0.0,162,63.81818181818182,50.0,30.0,30.0
+163,Asian Spirit,6K,RIT,Philippines,30,0,0,,,0.0,163,63.66666666666667,30.0,30.0,50.0
+164,Air Afrique,RK,RKA,Ivory Coast,30,0,0,,,0.0,164,66.18181818181819,50.0,30.0,30.0
+165,Airlinair,A5,RLA,France,30,0,0,,,0.0,165,78.22222222222223,50.0,30.0,30.0
+166,Aero Lanka,QL,RLN,Sri Lanka,30,0,0,,,0.0,166,88.0,50.0,30.0,30.0
+167,Armavia,U8,RNV,Armenia,30,0,0,,,0.0,167,88.28571428571429,50.0,30.0,30.0
+168,AeroRep,P5,RPB,Colombia,30,0,0,,,0.0,168,80.0,50.0,30.0,30.0
+169,Aero-Service,BF,RSR,Republic of the Congo,30,0,0,,,0.0,169,64.0,50.0,30.0,30.0
+170,Aerosur,5L,RSU,Bolivia,30,0,0,,,0.0,170,80.0,50.0,30.0,30.0
+171,Avient Aviation,Z3,SMJ,Zimbabwe,30,0,0,,,0.0,171,58.13333333333334,50.0,30.0,30.0
+172,Aircompany Yakutia,R3,SYL,Russia,30,0,0,,,0.0,172,62.22222222222223,50.0,30.0,30.0
+173,Aeromar,VW,TAO,Mexico,30,0,0,,,0.0,173,80.0,50.0,30.0,30.0
+174,Arkefly,OR,TFL,Netherlands,30,0,0,,,0.0,174,77.71428571428572,50.0,30.0,30.0
+175,Airlines PNG,CG,TOK,Papua New Guinea,30,0,0,,,0.0,175,61.333333333333336,50.0,30.0,30.0
+176,AirTran Airways,FL,TRS,United States,30,0,0,,,0.0,176,55.86666666666667,50.0,30.0,30.0
+177,Air Transat,TS,TSC,Canada,30,0,0,,,0.0,177,65.45454545454545,50.0,30.0,30.0
+178,Avialeasing Aviation Company,EC,TWN,Uzbekistan,30,0,0,,,0.0,178,32.0,50.0,30.0,30.0
+179,Tyrolean Airways,VO,TYR,Austria,30,0,0,,,0.0,179,56.0,50.0,30.0,30.0
+180,Aerolineas Galapagos (Aerogal),2K,GLG,Ecuador,30,0,0,,,0.0,180,29.866666666666667,50.0,30.0,30.0
+181,Alrosa Mirny Air Enterprise,6R,DRU,Russia,30,0,0,,,0.0,181,31.629629629629633,50.0,30.0,30.0
+182,Biman Bangladesh Airlines,BG,BBC,Bangladesh,30,0,0,,,0.0,182,35.44,50.0,30.0,30.0
+183,Belair Airlines,4T,BHP,Switzerland,30,0,0,,,0.0,183,57.86666666666667,50.0,30.0,30.0
+184,Bahamasair,UP,BHS,Bahamas,30,0,0,,,0.0,184,80.0,50.0,30.0,30.0
+185,Balkan Bulgarian Airlines,LZ,,,30,0,0,,,0.0,185,37.6,50.0,30.0,30.0
+186,British International Helicopters,BS,BIH,United Kingdom,30,0,0,,,0.0,186,21.454545454545457,90.0,30.0,30.0
+187,Bangkok Airways,PG,BKP,Thailand,30,0,0,,,0.0,187,55.6,50.0,30.0,30.0
+188,Blue1,KF,BLF,Finland,30,0,0,,,0.0,188,87.6,50.0,30.0,30.0
+189,Bearskin Lake Air Service,JV,BLS,Canada,30,0,0,,,0.0,189,35.6,50.0,30.0,30.0
+190,Bellview Airlines,B3,BLV,Nigeria,30,0,0,,,0.0,190,56.64705882352941,50.0,30.0,30.0
+191,bmi,BD,BMA,United Kingdom,30,0,0,,,0.0,191,87.33333333333334,50.0,30.0,30.0
+192,bmibaby,WW,BMI,United Kingdom,30,0,0,,,0.0,192,77.71428571428572,50.0,30.0,30.0
+193,Bemidji Airlines,CH,BMJ,United States,30,0,0,,,0.0,193,55.75,50.0,30.0,30.0
+194,Blue Panorama Airlines,BV,BPA,Italy,30,0,0,,,0.0,194,43.81818181818182,50.0,30.0,30.0
+195,Bering Air,8E,BRG,United States,30,0,0,,,0.0,195,77.6,50.0,30.0,30.0
+196,Belavia Belarusian Airlines,B2,BRU,Belarus,30,0,0,,,0.0,196,33.925925925925924,50.0,30.0,30.0
+197,Metro Batavia,7P,BTV,Indonesia,30,0,0,,,0.0,197,61.84615384615385,50.0,30.0,30.0
+198,Berjaya Air,J8,BVT,Malaysia,30,0,0,,,0.0,198,66.18181818181819,50.0,30.0,30.0

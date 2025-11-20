@@ -1,0 +1,259 @@
+{
+  "total_contexts": 34,
+  "airport_contexts": 19,
+  "airline_contexts": 15,
+  "contexts": {
+    "airports_traffic_mega_hub": {
+      "n": 21,
+      "incident_rate": 0.5714285714285714,
+      "description": "Airports - Mega Hub"
+    },
+    "airports_traffic_regional": {
+      "n": 470,
+      "incident_rate": 0.5,
+      "description": "Airports - Regional"
+    },
+    "airports_phonetics_harsh": {
+      "n": 193,
+      "incident_rate": 0.5233160621761658,
+      "description": "Airports - Harsh Phonetics"
+    },
+    "airports_phonetics_moderate": {
+      "n": 208,
+      "incident_rate": 0.4951923076923077,
+      "description": "Airports - Moderate Phonetics"
+    },
+    "airports_phonetics_soft": {
+      "n": 99,
+      "incident_rate": 0.46464646464646464,
+      "description": "Airports - Soft Phonetics"
+    },
+    "airports_type_international": {
+      "n": 492,
+      "incident_rate": 0.5020325203252033,
+      "description": "Airports - International"
+    },
+    "airports_country_Mexico": {
+      "n": 55,
+      "incident_rate": 0.45454545454545453,
+      "description": "Airports - Mexico"
+    },
+    "airports_country_Canada": {
+      "n": 20,
+      "incident_rate": 0.4,
+      "description": "Airports - Canada"
+    },
+    "airports_country_Brazil": {
+      "n": 18,
+      "incident_rate": 0.5,
+      "description": "Airports - Brazil"
+    },
+    "airports_country_United_States": {
+      "n": 15,
+      "incident_rate": 0.4666666666666667,
+      "description": "Airports - United States"
+    },
+    "airports_country_Peru": {
+      "n": 12,
+      "incident_rate": 0.75,
+      "description": "Airports - Peru"
+    },
+    "airports_country_Russia": {
+      "n": 12,
+      "incident_rate": 0.5833333333333334,
+      "description": "Airports - Russia"
+    },
+    "airports_country_Italy": {
+      "n": 10,
+      "incident_rate": 0.5,
+      "description": "Airports - Italy"
+    },
+    "airports_country_Colombia": {
+      "n": 10,
+      "incident_rate": 0.5,
+      "description": "Airports - Colombia"
+    },
+    "airports_country_Venezuela": {
+      "n": 10,
+      "incident_rate": 0.4,
+      "description": "Airports - Venezuela"
+    },
+    "airports_country_India": {
+      "n": 10,
+      "incident_rate": 0.3,
+      "description": "Airports - India"
+    },
+    "airports_pattern_all_consonants": {
+      "n": 198,
+      "incident_rate": 0.51010101010101,
+      "description": "Airports - All Consonants"
+    },
+    "airports_pattern_has_vowels": {
+      "n": 302,
+      "incident_rate": 0.49337748344370863,
+      "description": "Airports - Has Vowels"
+    },
+    "airports_pattern_repeating_letters": {
+      "n": 55,
+      "incident_rate": 0.509090909090909,
+      "description": "Airports - Repeating Letters"
+    },
+    "airlines_fleet_small": {
+      "n": 189,
+      "incident_rate": 0.49206349206349204,
+      "description": "Airlines - Small Fleet"
+    },
+    "airlines_brand_legacy": {
+      "n": 43,
+      "incident_rate": 0.627906976744186,
+      "description": "Airlines - Legacy Brand"
+    },
+    "airlines_brand_regional": {
+      "n": 151,
+      "incident_rate": 0.47019867549668876,
+      "description": "Airlines - Regional Brand"
+    },
+    "airlines_semantic_trust_words": {
+      "n": 62,
+      "incident_rate": 0.45161290322580644,
+      "description": "Airlines - Trust Words"
+    },
+    "airlines_semantic_neutral": {
+      "n": 136,
+      "incident_rate": 0.5220588235294118,
+      "description": "Airlines - Neutral"
+    },
+    "airlines_country_United_States": {
+      "n": 20,
+      "incident_rate": 0.6,
+      "description": "Airlines - United States"
+    },
+    "airlines_country_France": {
+      "n": 10,
+      "incident_rate": 0.4,
+      "description": "Airlines - France"
+    },
+    "airlines_country_Russia": {
+      "n": 9,
+      "incident_rate": 0.6666666666666666,
+      "description": "Airlines - Russia"
+    },
+    "airlines_country_United_Kingdom": {
+      "n": 8,
+      "incident_rate": 0.125,
+      "description": "Airlines - United Kingdom"
+    },
+    "airlines_country_Italy": {
+      "n": 8,
+      "incident_rate": 0.5,
+      "description": "Airlines - Italy"
+    },
+    "airlines_country_Germany": {
+      "n": 6,
+      "incident_rate": 0.16666666666666666,
+      "description": "Airlines - Germany"
+    },
+    "airlines_country_Australia": {
+      "n": 6,
+      "incident_rate": 0.6666666666666666,
+      "description": "Airlines - Australia"
+    },
+    "airlines_country_Canada": {
+      "n": 5,
+      "incident_rate": 0.8,
+      "description": "Airlines - Canada"
+    },
+    "airlines_country_Spain": {
+      "n": 4,
+      "incident_rate": 1.0,
+      "description": "Airlines - Spain"
+    },
+    "airlines_country_United_Arab_Emirates": {
+      "n": 3,
+      "incident_rate": 0.0,
+      "description": "Airlines - United Arab Emirates"
+    }
+  },
+  "top_10": [
+    {
+      "rank": 1,
+      "context_id": "airlines_country_Spain",
+      "n": 4,
+      "incident_rate": 1.0,
+      "description": "Airlines - Spain",
+      "deviation_from_baseline": 0.5
+    },
+    {
+      "rank": 2,
+      "context_id": "airlines_country_United_Arab_Emirates",
+      "n": 3,
+      "incident_rate": 0.0,
+      "description": "Airlines - United Arab Emirates",
+      "deviation_from_baseline": 0.5
+    },
+    {
+      "rank": 3,
+      "context_id": "airlines_country_United_Kingdom",
+      "n": 8,
+      "incident_rate": 0.125,
+      "description": "Airlines - United Kingdom",
+      "deviation_from_baseline": 0.375
+    },
+    {
+      "rank": 4,
+      "context_id": "airlines_country_Germany",
+      "n": 6,
+      "incident_rate": 0.16666666666666666,
+      "description": "Airlines - Germany",
+      "deviation_from_baseline": 0.33333333333333337
+    },
+    {
+      "rank": 5,
+      "context_id": "airlines_country_Canada",
+      "n": 5,
+      "incident_rate": 0.8,
+      "description": "Airlines - Canada",
+      "deviation_from_baseline": 0.30000000000000004
+    },
+    {
+      "rank": 6,
+      "context_id": "airports_country_Peru",
+      "n": 12,
+      "incident_rate": 0.75,
+      "description": "Airports - Peru",
+      "deviation_from_baseline": 0.25
+    },
+    {
+      "rank": 7,
+      "context_id": "airports_country_India",
+      "n": 10,
+      "incident_rate": 0.3,
+      "description": "Airports - India",
+      "deviation_from_baseline": 0.2
+    },
+    {
+      "rank": 8,
+      "context_id": "airlines_country_Russia",
+      "n": 9,
+      "incident_rate": 0.6666666666666666,
+      "description": "Airlines - Russia",
+      "deviation_from_baseline": 0.16666666666666663
+    },
+    {
+      "rank": 9,
+      "context_id": "airlines_country_Australia",
+      "n": 6,
+      "incident_rate": 0.6666666666666666,
+      "description": "Airlines - Australia",
+      "deviation_from_baseline": 0.16666666666666663
+    },
+    {
+      "rank": 10,
+      "context_id": "airlines_brand_legacy",
+      "n": 43,
+      "incident_rate": 0.627906976744186,
+      "description": "Airlines - Legacy Brand",
+      "deviation_from_baseline": 0.12790697674418605
+    }
+  ]
+}

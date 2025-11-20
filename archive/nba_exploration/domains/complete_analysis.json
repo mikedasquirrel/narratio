@@ -1,0 +1,153 @@
+{
+  "domain": "nba",
+  "\u043f": 0.15,
+  "n_samples": 1000,
+  "n_features": 776,
+  "is_binary": true,
+  "combined": {
+    "n_features": 776,
+    "score": 1.0,
+    "score_train": 1.0,
+    "score_cv": 1.0,
+    "baseline": 0.58,
+    "D": 0.42000000000000004
+  },
+  "transformers": {
+    "universal_nominative": {
+      "n_features": 116,
+      "score": 0.5,
+      "score_train": 0.5,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": -0.07999999999999996
+    },
+    "hierarchical_nominative": {
+      "n_features": 41,
+      "score": 0.8609019697315385,
+      "score_train": 0.8609019697315385,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.2809019697315386
+    },
+    "nominative_analysis": {
+      "n_features": 51,
+      "score": 0.8122730966133105,
+      "score_train": 0.8122730966133105,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.23227309661331053
+    },
+    "phonetic": {
+      "n_features": 91,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "emotional": {
+      "n_features": 34,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "authenticity": {
+      "n_features": 30,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "conflict": {
+      "n_features": 28,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "cultural": {
+      "n_features": 34,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "suspense": {
+      "n_features": 25,
+      "score": 0.5031521308404482,
+      "score_train": 0.5031521308404482,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": -0.07684786915955177
+    },
+    "self_perception": {
+      "n_features": 21,
+      "score": 0.796446397764889,
+      "score_train": 0.796446397764889,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.21644639776488905
+    },
+    "narrative_potential": {
+      "n_features": 35,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "linguistic": {
+      "n_features": 36,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "ensemble": {
+      "n_features": 25,
+      "score": 0.7962422597676029,
+      "score_train": 0.7962422597676029,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.21624225976760292
+    },
+    "relational": {
+      "n_features": 17,
+      "score": 0.508759921707074,
+      "score_train": 0.508759921707074,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": -0.071240078292926
+    },
+    "statistical": {
+      "n_features": 150,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "temporal": {
+      "n_features": 30,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    },
+    "framing": {
+      "n_features": 12,
+      "score": 1.0,
+      "score_train": 1.0,
+      "score_cv": null,
+      "baseline": 0.58,
+      "D": 0.42000000000000004
+    }
+  }
+}

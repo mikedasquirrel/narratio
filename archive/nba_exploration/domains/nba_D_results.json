@@ -1,0 +1,11 @@
+{
+  "domain": "nba",
+  "n_games": 2000,
+  "narrativity": 0.48,
+  "coupling": 0.7,
+  "r_measured": -0.04778624923829505,
+  "p_value": 0.03260199408045261,
+  "D_agency": -0.016056179744067135,
+  "efficiency": -0.03345037446680653,
+  "passes_threshold": false
+}

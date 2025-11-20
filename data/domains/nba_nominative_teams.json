@@ -1,0 +1,591 @@
+{
+  "Cleveland Cavaliers": {
+    "name_analysis": {
+      "name": "Cleveland Cavaliers",
+      "syllables": 7,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": true,
+      "memorability": -0.9,
+      "name_power_score": 3.3
+    },
+    "colors": {
+      "primary": "wine",
+      "secondary": "gold",
+      "intimidation": "regal"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Cavaliers"
+  },
+  "Detroit Pistons": {
+    "name_analysis": {
+      "name": "Detroit Pistons",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.5,
+      "name_power_score": 5.5
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "red",
+      "intimidation": "industrial"
+    },
+    "championships": 3,
+    "archetype": "standard",
+    "short_name": "Pistons"
+  },
+  "Toronto Raptors": {
+    "name_analysis": {
+      "name": "Toronto Raptors",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.5,
+      "name_power_score": 9.5
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "black",
+      "intimidation": "predator"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Raptors"
+  },
+  "Houston Rockets": {
+    "name_analysis": {
+      "name": "Houston Rockets",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.5,
+      "name_power_score": 5.5
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "white",
+      "intimidation": "bold"
+    },
+    "championships": 2,
+    "archetype": "standard",
+    "short_name": "Rockets"
+  },
+  "Boston Celtics": {
+    "name_analysis": {
+      "name": "Boston Celtics",
+      "syllables": 4,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": true,
+      "memorability": -0.4,
+      "name_power_score": 3.4000000000000004
+    },
+    "colors": {
+      "primary": "green",
+      "secondary": "white",
+      "intimidation": "classic"
+    },
+    "championships": 17,
+    "archetype": "historic_powerhouse",
+    "short_name": "Celtics"
+  },
+  "Los Angeles Lakers": {
+    "name_analysis": {
+      "name": "Los Angeles Lakers",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": true,
+      "memorability": -0.8,
+      "name_power_score": 3.1999999999999997
+    },
+    "colors": {
+      "primary": "purple",
+      "secondary": "gold",
+      "intimidation": "royal"
+    },
+    "championships": 17,
+    "archetype": "historic_powerhouse",
+    "short_name": "Lakers"
+  },
+  "Portland Trail Blazers": {
+    "name_analysis": {
+      "name": "Portland Trail Blazers",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -1.2,
+      "name_power_score": -0.6000000000000001
+    },
+    "colors": {
+      "primary": "unknown",
+      "secondary": "unknown",
+      "intimidation": "standard"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Blazers"
+  },
+  "Atlanta Hawks": {
+    "name_analysis": {
+      "name": "Atlanta Hawks",
+      "syllables": 4,
+      "is_power_name": true,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.3,
+      "name_power_score": 9.6
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "black",
+      "intimidation": "predator"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Hawks"
+  },
+  "Philadelphia 76ers": {
+    "name_analysis": {
+      "name": "Philadelphia 76ers",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.8,
+      "name_power_score": 0.19999999999999973
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "red",
+      "intimidation": "patriotic"
+    },
+    "championships": 3,
+    "archetype": "standard",
+    "short_name": "76ers"
+  },
+  "Indiana Pacers": {
+    "name_analysis": {
+      "name": "Indiana Pacers",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.4,
+      "name_power_score": 0.9999999999999998
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "gold",
+      "intimidation": "speed"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Pacers"
+  },
+  "LA Clippers": {
+    "name_analysis": {
+      "name": "LA Clippers",
+      "syllables": 3,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.1,
+      "name_power_score": 0.7
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "blue",
+      "intimidation": "aggressive"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Clippers"
+  },
+  "New Orleans Pelicans": {
+    "name_analysis": {
+      "name": "New Orleans Pelicans",
+      "syllables": 7,
+      "is_power_name": false,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -1.0,
+      "name_power_score": 4.1
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "red",
+      "intimidation": "regional"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Pelicans"
+  },
+  "Golden State Warriors": {
+    "name_analysis": {
+      "name": "Golden State Warriors",
+      "syllables": 7,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -1.1,
+      "name_power_score": 4.8999999999999995
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "gold",
+      "intimidation": "electric"
+    },
+    "championships": 7,
+    "archetype": "modern_dynasty",
+    "short_name": "Warriors"
+  },
+  "Minnesota Timberwolves": {
+    "name_analysis": {
+      "name": "Minnesota Timberwolves",
+      "syllables": 8,
+      "is_power_name": false,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -1.2,
+      "name_power_score": 4.0
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "green",
+      "intimidation": "wild"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Timberwolves"
+  },
+  "Charlotte Hornets": {
+    "name_analysis": {
+      "name": "Charlotte Hornets",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.7,
+      "name_power_score": 9.1
+    },
+    "colors": {
+      "primary": "teal",
+      "secondary": "purple",
+      "intimidation": "unique"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Hornets"
+  },
+  "Utah Jazz": {
+    "name_analysis": {
+      "name": "Utah Jazz",
+      "syllables": 3,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": 0.1,
+      "name_power_score": 1.0999999999999999
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "gold",
+      "intimidation": "traditional"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Jazz"
+  },
+  "Memphis Grizzlies": {
+    "name_analysis": {
+      "name": "Memphis Grizzlies",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.7,
+      "name_power_score": 9.1
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "gold",
+      "intimidation": "gritty"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Grizzlies"
+  },
+  "Denver Nuggets": {
+    "name_analysis": {
+      "name": "Denver Nuggets",
+      "syllables": 4,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.4,
+      "name_power_score": 0.3999999999999999
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "gold",
+      "intimidation": "mountain"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Nuggets"
+  },
+  "Washington Wizards": {
+    "name_analysis": {
+      "name": "Washington Wizards",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.8,
+      "name_power_score": 4.9
+    },
+    "colors": {
+      "primary": "navy",
+      "secondary": "red",
+      "intimidation": "magical"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Wizards"
+  },
+  "Phoenix Suns": {
+    "name_analysis": {
+      "name": "Phoenix Suns",
+      "syllables": 4,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.2,
+      "name_power_score": 0.7999999999999999
+    },
+    "colors": {
+      "primary": "orange",
+      "secondary": "purple",
+      "intimidation": "vibrant"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Suns"
+  },
+  "Miami Heat": {
+    "name_analysis": {
+      "name": "Miami Heat",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": 0.0,
+      "name_power_score": 6.5
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "black",
+      "intimidation": "aggressive"
+    },
+    "championships": 3,
+    "archetype": "championship_culture",
+    "short_name": "Heat"
+  },
+  "Dallas Mavericks": {
+    "name_analysis": {
+      "name": "Dallas Mavericks",
+      "syllables": 5,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.6,
+      "name_power_score": 0.30000000000000004
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "silver",
+      "intimidation": "modern"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Mavericks"
+  },
+  "Brooklyn Nets": {
+    "name_analysis": {
+      "name": "Brooklyn Nets",
+      "syllables": 3,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.3,
+      "name_power_score": 0.29999999999999993
+    },
+    "colors": {
+      "primary": "black",
+      "secondary": "white",
+      "intimidation": "sleek"
+    },
+    "championships": 0,
+    "archetype": "rebuilding_ambition",
+    "short_name": "Nets"
+  },
+  "Sacramento Kings": {
+    "name_analysis": {
+      "name": "Sacramento Kings",
+      "syllables": 5,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": true,
+      "memorability": -0.6,
+      "name_power_score": 3.3
+    },
+    "colors": {
+      "primary": "purple",
+      "secondary": "silver",
+      "intimidation": "royal"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Kings"
+  },
+  "Oklahoma City Thunder": {
+    "name_analysis": {
+      "name": "Oklahoma City Thunder",
+      "syllables": 7,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -1.1,
+      "name_power_score": 4.8999999999999995
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "orange",
+      "intimidation": "electric"
+    },
+    "championships": 1,
+    "archetype": "standard",
+    "short_name": "Thunder"
+  },
+  "Orlando Magic": {
+    "name_analysis": {
+      "name": "Orlando Magic",
+      "syllables": 5,
+      "is_power_name": true,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.3,
+      "name_power_score": 5.9
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "black",
+      "intimidation": "mystical"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Magic"
+  },
+  "Los Angeles Clippers": {
+    "name_analysis": {
+      "name": "Los Angeles Clippers",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -1.0,
+      "name_power_score": -0.20000000000000018
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "blue",
+      "intimidation": "aggressive"
+    },
+    "championships": 0,
+    "archetype": "standard",
+    "short_name": "Clippers"
+  },
+  "Chicago Bulls": {
+    "name_analysis": {
+      "name": "Chicago Bulls",
+      "syllables": 4,
+      "is_power_name": true,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.3,
+      "name_power_score": 9.6
+    },
+    "colors": {
+      "primary": "red",
+      "secondary": "black",
+      "intimidation": "fierce"
+    },
+    "championships": 6,
+    "archetype": "legendary_past",
+    "short_name": "Bulls"
+  },
+  "San Antonio Spurs": {
+    "name_analysis": {
+      "name": "San Antonio Spurs",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": false,
+      "memorability": -0.7,
+      "name_power_score": 0.3999999999999999
+    },
+    "colors": {
+      "primary": "black",
+      "secondary": "silver",
+      "intimidation": "professional"
+    },
+    "championships": 5,
+    "archetype": "sustained_excellence",
+    "short_name": "Spurs"
+  },
+  "Milwaukee Bucks": {
+    "name_analysis": {
+      "name": "Milwaukee Bucks",
+      "syllables": 6,
+      "is_power_name": false,
+      "is_animal": true,
+      "is_prestige": false,
+      "memorability": -0.5,
+      "name_power_score": 4.8
+    },
+    "colors": {
+      "primary": "green",
+      "secondary": "cream",
+      "intimidation": "natural"
+    },
+    "championships": 2,
+    "archetype": "standard",
+    "short_name": "Bucks"
+  },
+  "New York Knicks": {
+    "name_analysis": {
+      "name": "New York Knicks",
+      "syllables": 3,
+      "is_power_name": false,
+      "is_animal": false,
+      "is_prestige": true,
+      "memorability": -0.5,
+      "name_power_score": 2.9
+    },
+    "colors": {
+      "primary": "blue",
+      "secondary": "orange",
+      "intimidation": "bold"
+    },
+    "championships": 2,
+    "archetype": "sleeping_giant",
+    "short_name": "Knicks"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "narrativity": 0.6734027516570577,
+  "selection_effects": {
+    "observed_pct": 0.061224489795918366,
+    "expected_pct": 0.075,
+    "chi2": 0.26806398234969636,
+    "p_value": 0.6046334357303708,
+    "odds_ratio": 0.8043478260869565
+  },
+  "specific_pairs": [
+    {
+      "name": "Dennis",
+      "topic": "dentist",
+      "matches": 2,
+      "total_with_name": 2,
+      "match_rate": 1.0,
+      "expected_rate": 0.1326530612244898
+    },
+    {
+      "name": "Laura",
+      "topic": "lawyer",
+      "matches": 1,
+      "total_with_name": 2,
+      "match_rate": 0.5,
+      "expected_rate": 0.02040816326530612
+    },
+    {
+      "name": "Doctor",
+      "topic": "doctor",
+      "matches": 1,
+      "total_with_name": 1,
+      "match_rate": 1.0,
+      "expected_rate": 0.05102040816326531
+    },
+    {
+      "name": "Baker",
+      "topic": "baker",
+      "matches": 0,
+      "total_with_name": 1,
+      "match_rate": 0.0,
+      "expected_rate": 0.0
+    },
+    {
+      "name": "Research",
+      "topic": "research",
+      "matches": 0,
+      "total_with_name": 1,
+      "match_rate": 0.0,
+      "expected_rate": 0.0
+    }
+  ]
+}
