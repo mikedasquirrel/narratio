@@ -1,0 +1,163 @@
+{
+  "schema_name": "feature_domain_schema",
+  "schema_version": "1.0.0",
+  "format_type": "B",
+  "description": "Standard schema for pre-extracted feature matrices (embeddings, statistical features, mixed)",
+  
+  "data_structure": {
+    "required_fields": {
+      "X": {
+        "type": "array",
+        "item_type": "array_of_numbers",
+        "description": "Feature matrix (n_samples x n_features)",
+        "shape": ["n_samples", "n_features"],
+        "example": [[0.1, 0.5, 0.3], [0.2, 0.4, 0.6]]
+      },
+      "y": {
+        "type": "array",
+        "item_type": "integer_or_float",
+        "description": "Labels (classification or regression)",
+        "example": [0, 1, 0, 1]
+      }
+    },
+    "optional_fields": {
+      "feature_names": {
+        "type": "array",
+        "item_type": "string",
+        "description": "Names for each feature column",
+        "length": "n_features",
+        "example": ["feature_0", "feature_1", "feature_2"]
+      },
+      "feature_descriptions": {
+        "type": "object",
+        "description": "Detailed description of what each feature represents",
+        "example": {
+          "feature_0": "User age normalized to 0-1",
+          "feature_1": "Activity level score",
+          "feature_2": "Engagement metric"
+        }
+      },
+      "feature_groups": {
+        "type": "object",
+        "description": "Group features by type or source",
+        "example": {
+          "demographics": [0, 1, 2],
+          "behavioral": [3, 4, 5],
+          "embeddings": [6, 7, 8, 9, 10]
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Dataset and feature metadata",
+        "fields": {
+          "n_samples": "integer",
+          "n_features": "integer",
+          "feature_type": "string (embeddings|statistical|mixed)",
+          "source": "string",
+          "extraction_method": "string"
+        }
+      }
+    }
+  },
+  
+  "recommended_transformers": [
+    {
+      "name": "FeatureScaling",
+      "priority": 1,
+      "use_case": "preprocessing",
+      "rationale": "Normalize features if not already scaled",
+      "sklearn_equivalent": "StandardScaler or MinMaxScaler"
+    },
+    {
+      "name": "FeatureSelection",
+      "priority": 2,
+      "use_case": "dimensionality_reduction",
+      "rationale": "Select most informative features",
+      "sklearn_equivalent": "SelectKBest or PCA"
+    }
+  ],
+  
+  "applicable_hypotheses": [
+    "H4",
+    "H5",
+    "H6",
+    "H8"
+  ],
+  
+  "validation_rules": {
+    "min_samples": 20,
+    "min_features": 1,
+    "max_features": 10000,
+    "allow_missing_values": false,
+    "allow_infinite_values": false,
+    "require_numeric_only": true,
+    "consistent_dimensions": true
+  },
+  
+  "example_complete": {
+    "features": {
+      "X": [
+        [0.25, 0.67, 0.89, 0.12, 0.45],
+        [0.78, 0.34, 0.56, 0.90, 0.23],
+        [0.45, 0.89, 0.12, 0.67, 0.78],
+        [0.12, 0.45, 0.78, 0.34, 0.56]
+      ],
+      "y": [1, 0, 1, 0],
+      "feature_names": [
+        "age_normalized",
+        "activity_level",
+        "engagement_score",
+        "diversity_index",
+        "quality_metric"
+      ],
+      "feature_descriptions": {
+        "age_normalized": "User age normalized to 0-1 range",
+        "activity_level": "Weekly activity score (0-1)",
+        "engagement_score": "Engagement metric based on interactions",
+        "diversity_index": "Simpson's diversity index for content",
+        "quality_metric": "Overall quality assessment score"
+      },
+      "feature_groups": {
+        "demographics": [0],
+        "behavioral": [1, 2],
+        "derived_metrics": [3, 4]
+      }
+    },
+    "metadata": {
+      "n_samples": 4,
+      "n_features": 5,
+      "feature_type": "mixed",
+      "source": "user_analytics_pipeline",
+      "extraction_method": "automated_feature_engineering_v2"
+    }
+  },
+  
+  "integration_notes": {
+    "preprocessing": [
+      "Check for NaN/Inf values and handle appropriately",
+      "Verify all features are numeric",
+      "Consider scaling if features have different ranges",
+      "Remove constant features (zero variance)"
+    ],
+    "validation": [
+      "Ensure X.shape[0] == len(y)",
+      "Verify feature_names length matches X.shape[1]",
+      "Check for duplicate samples",
+      "Validate label distribution"
+    ],
+    "common_issues": [
+      "Mixed data types in feature array",
+      "Feature names don't match array dimensions",
+      "Missing values not handled",
+      "Features not scaled (very large/small values)",
+      "Sparse vs dense matrix confusion"
+    ],
+    "format_conversions": {
+      "from_csv": "pandas.read_csv() then X = df.drop('target', axis=1).values, y = df['target'].values",
+      "from_numpy": "X = np.load('features.npy'), y = np.load('labels.npy')",
+      "from_pandas": "X = df.iloc[:, :-1].values, y = df.iloc[:, -1].values",
+      "from_sparse": "X = sparse_matrix.toarray() if needed"
+    }
+  }
+}
+

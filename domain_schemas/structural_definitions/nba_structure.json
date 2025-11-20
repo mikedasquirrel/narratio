@@ -1,0 +1,79 @@
+{
+  "domain_name": "nba",
+  "domain_type": "team_sports",
+  "description": "National Basketball Association",
+  
+  "hierarchy_levels": ["franchise", "season", "game", "quarter"],
+  
+  "game_context_types": [
+    "finals",
+    "conference_finals",
+    "conference_semifinals",
+    "conference_first_round",
+    "regular_season_playoff_race",
+    "division_rivalry",
+    "conference_matchup",
+    "national_tv",
+    "regular_season"
+  ],
+  
+  "relational_structure": "team_vs_team",
+  "competitors_per_event": 2,
+  "home_advantage_exists": true,
+  
+  "temporal_coupling": "sequential",
+  
+  "season_structure": {
+    "regular_season_games": 82,
+    "playoff_teams": 16,
+    "divisions": 6,
+    "conferences": 2
+  },
+  
+  "available_metrics": [
+    "point_differential",
+    "field_goal_percentage",
+    "three_point_percentage",
+    "free_throw_percentage",
+    "rebounds",
+    "assists",
+    "turnovers",
+    "steals",
+    "blocks",
+    "lead_changes",
+    "largest_lead",
+    "largest_deficit_overcome",
+    "pace",
+    "offensive_rating",
+    "defensive_rating",
+    "net_rating",
+    "games_back_from_playoff",
+    "head_to_head_history",
+    "rest_days",
+    "back_to_back_flag"
+  ],
+  
+  "intensity_indicators": [
+    "comeback_occurred",
+    "comeback_deficit_points",
+    "final_margin",
+    "lead_changes_count",
+    "overtime",
+    "late_season_playoff_race_flag",
+    "playoff_elimination_possible"
+  ],
+  
+  "relational_feature_types": {
+    "differential": ["numeric metrics can be subtracted"],
+    "ratios": ["numeric metrics can be divided"],
+    "interactions": ["categorical x categorical, numeric x categorical"]
+  },
+  
+  "entity_types": [
+    "star_player",
+    "head_coach",
+    "referee",
+    "team_name"
+  ]
+}
+

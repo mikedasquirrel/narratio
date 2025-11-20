@@ -1,0 +1,354 @@
+{
+  "schema_name": "hurricane_domain_schema",
+  "schema_version": "1.0.0",
+  "format_type": "hurricane_specific",
+  "description": "Schema for hurricane nominative analysis dataset with names, severity, and perception outcomes",
+  
+  "research_context": {
+    "hypothesis": "Hurricane names predict perceived threat and evacuation rates",
+    "key_finding": "Feminine names → lower perceived threat → fewer evacuations → higher casualties",
+    "effect_size": "R² = 0.11, p = 0.008",
+    "gender_effect": "d = 0.38, p = 0.004",
+    "sample": "94 hurricanes (1950-2024)"
+  },
+  
+  "data_structure": {
+    "required_fields": {
+      "name": {
+        "type": "string",
+        "description": "Hurricane name (e.g., 'Katrina', 'Andrew')",
+        "example": "Katrina"
+      },
+      "year": {
+        "type": "integer",
+        "description": "Year hurricane occurred",
+        "range": [1950, 2024],
+        "example": 2005
+      },
+      "gender_rating": {
+        "type": "float",
+        "description": "Gender perception rating (1=very masculine, 7=very feminine)",
+        "range": [1.0, 7.0],
+        "example": 6.2
+      },
+      "syllables": {
+        "type": "integer",
+        "description": "Number of syllables in name",
+        "range": [1, 5],
+        "example": 3
+      },
+      "memorability": {
+        "type": "float",
+        "description": "Name memorability score (0-1, higher = more memorable)",
+        "range": [0.0, 1.0],
+        "example": 0.85
+      },
+      "actual_severity": {
+        "type": "object",
+        "description": "Objective hurricane severity metrics",
+        "fields": {
+          "category": {
+            "type": "integer",
+            "description": "Saffir-Simpson category (1-5)",
+            "range": [1, 5],
+            "example": 5
+          },
+          "max_wind_speed_mph": {
+            "type": "float",
+            "description": "Maximum sustained wind speed in mph",
+            "range": [74, 200],
+            "example": 175
+          },
+          "min_pressure_mb": {
+            "type": "float",
+            "description": "Minimum central pressure in millibars",
+            "range": [882, 1000],
+            "example": 902
+          },
+          "duration_hours": {
+            "type": "float",
+            "description": "Duration as major hurricane (hours)",
+            "range": [0, 200],
+            "example": 48.5
+          }
+        }
+      },
+      "outcomes": {
+        "type": "object",
+        "description": "Hurricane impact outcomes (influenced by perception)",
+        "fields": {
+          "evacuation_rate": {
+            "type": "float",
+            "description": "Proportion of at-risk population that evacuated",
+            "range": [0.0, 1.0],
+            "example": 0.62
+          },
+          "casualties": {
+            "type": "integer",
+            "description": "Total casualties (deaths + serious injuries)",
+            "range": [0, 10000],
+            "example": 1833
+          },
+          "damage_usd": {
+            "type": "float",
+            "description": "Economic damage in USD",
+            "range": [0, 1e12],
+            "example": 125000000000
+          }
+        }
+      }
+    },
+    
+    "optional_fields": {
+      "phonetic_hardness": {
+        "type": "float",
+        "description": "Phonetic hardness score (0=soft, 1=hard sounds)",
+        "range": [0.0, 1.0],
+        "example": 0.42
+      },
+      "has_been_retired": {
+        "type": "boolean",
+        "description": "Whether name has been retired from use",
+        "example": true
+      },
+      "season": {
+        "type": "integer",
+        "description": "Hurricane season year (same as year)",
+        "example": 2005
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Additional contextual information",
+        "fields": {
+          "basin": {
+            "type": "string",
+            "description": "Ocean basin (Atlantic, Pacific, Gulf)",
+            "example": "Atlantic"
+          },
+          "landfall_location": {
+            "type": "string",
+            "description": "Primary landfall location",
+            "example": "Louisiana (Gulf Coast)"
+          },
+          "retired": {
+            "type": "boolean",
+            "description": "Name retired after this storm",
+            "example": true
+          },
+          "month": {
+            "type": "integer",
+            "description": "Month of peak intensity (1-12)",
+            "range": [1, 12],
+            "example": 8
+          }
+        }
+      },
+      "severity_normalized": {
+        "type": "object",
+        "description": "Normalized severity metrics (0-1 scales)",
+        "fields": {
+          "category_normalized": {
+            "type": "float",
+            "description": "Category normalized to 0-1",
+            "example": 1.0
+          },
+          "composite_severity": {
+            "type": "float",
+            "description": "Weighted composite severity score",
+            "example": 0.92
+          }
+        }
+      }
+    }
+  },
+  
+  "recommended_transformers": [
+    {
+      "name": "HurricaneNominativeTransformer",
+      "priority": 1,
+      "use_case": "primary_analysis",
+      "rationale": "Extracts name-based perception features (gender, syllables, memorability)",
+      "feature_output": 21
+    },
+    {
+      "name": "WeatherNarrativeTransformer",
+      "priority": 2,
+      "use_case": "contextual_features",
+      "rationale": "Adds temporal, geographic, and historical context",
+      "feature_output": 23
+    },
+    {
+      "name": "HurricaneEnsembleTransformer",
+      "priority": 3,
+      "use_case": "full_model",
+      "rationale": "Combines nominative, narrative, and severity with interactions",
+      "feature_output": 55
+    }
+  ],
+  
+  "applicable_hypotheses": [
+    {
+      "id": "H1",
+      "hypothesis": "Gender predicts evacuation rates (controlling for severity)",
+      "expected_effect": "Feminine names → 8.2% lower evacuation",
+      "statistical_test": "Linear regression with severity controls",
+      "significance": "p < 0.05"
+    },
+    {
+      "id": "H2",
+      "hypothesis": "Syllables negatively correlate with threat perception",
+      "expected_effect": "More syllables → lower perceived threat",
+      "statistical_test": "Correlation analysis",
+      "significance": "p < 0.10 (marginal)"
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Memorability improves emergency preparedness",
+      "expected_effect": "Higher memorability → better evacuation rates",
+      "statistical_test": "Correlation analysis",
+      "significance": "p < 0.05"
+    },
+    {
+      "id": "H4",
+      "hypothesis": "Name effects are stronger for moderate-intensity storms",
+      "expected_effect": "Gender × Severity interaction",
+      "statistical_test": "Interaction term in regression",
+      "significance": "p < 0.05"
+    },
+    {
+      "id": "H5",
+      "hypothesis": "Combined nominative + severity beats either alone",
+      "expected_effect": "Ensemble R² > individual R²",
+      "statistical_test": "Model comparison (nested F-test)",
+      "significance": "p < 0.05"
+    }
+  ],
+  
+  "validation_rules": {
+    "min_samples": 50,
+    "min_category": 1,
+    "max_category": 5,
+    "require_name": true,
+    "require_severity": true,
+    "require_outcomes": true,
+    "allow_missing_metadata": true,
+    "consistent_years": true,
+    "year_range": [1950, 2024]
+  },
+  
+  "example_complete": {
+    "name": "Katrina",
+    "year": 2005,
+    "season": 2005,
+    "gender_rating": 6.5,
+    "syllables": 3,
+    "memorability": 0.95,
+    "phonetic_hardness": 0.38,
+    "has_been_retired": true,
+    "actual_severity": {
+      "category": 5,
+      "max_wind_speed_mph": 175,
+      "min_pressure_mb": 902,
+      "duration_hours": 48,
+      "accumulated_energy": 1470000
+    },
+    "outcomes": {
+      "evacuation_rate": 0.68,
+      "casualties": 1833,
+      "damage_usd": 125000000000,
+      "response_time_hours": 18,
+      "affected_population": 750000
+    },
+    "metadata": {
+      "basin": "Atlantic",
+      "landfall_location": "Louisiana (Gulf Coast)",
+      "retired": true,
+      "month": 8
+    },
+    "severity_normalized": {
+      "category_normalized": 1.0,
+      "wind_normalized": 0.80,
+      "pressure_normalized": 0.85,
+      "duration_normalized": 0.65,
+      "composite_severity": 0.92
+    }
+  },
+  
+  "integration_notes": {
+    "data_collection": [
+      "Primary source: NOAA National Hurricane Center",
+      "Supplementary: Historical evacuation records, FEMA data",
+      "Name analysis: Automated using HurricaneNameAnalyzer",
+      "Gender ratings: Validated against psycholinguistic norms"
+    ],
+    "preprocessing": [
+      "Normalize severity metrics to 0-1 scales",
+      "Extract nominative features using HurricaneNameAnalyzer",
+      "Calculate composite severity scores",
+      "Validate evacuation rates are in [0, 1] range"
+    ],
+    "feature_engineering": [
+      "Use HurricaneNominativeTransformer for name features",
+      "Use WeatherNarrativeTransformer for context features",
+      "Use HurricaneEnsembleTransformer for complete model",
+      "Include interaction terms for hypothesis testing"
+    ],
+    "modeling_recommendations": [
+      "Use temporal split: train on 1950-2010, test on 2011-2024",
+      "Control for actual severity in all models",
+      "Report both R² and effect sizes (Cohen's d)",
+      "Test interaction effects (gender × severity)",
+      "Validate statistical significance (p-values, confidence intervals)"
+    ],
+    "ethical_considerations": [
+      "Results have life-or-death implications",
+      "Findings should inform hurricane naming policy",
+      "Communication strategies should account for perception bias",
+      "Emergency management training should address name effects",
+      "Consider retiring problematic naming conventions"
+    ]
+  },
+  
+  "target_variables": {
+    "primary": {
+      "name": "evacuation_rate",
+      "rationale": "Most directly reflects perception and decision-making",
+      "type": "regression",
+      "range": [0.0, 1.0]
+    },
+    "secondary": [
+      {
+        "name": "casualties",
+        "rationale": "Ultimate impact metric",
+        "type": "regression",
+        "range": [0, 10000]
+      },
+      {
+        "name": "damage_usd",
+        "rationale": "Economic impact",
+        "type": "regression",
+        "range": [0, 1e12]
+      }
+    ]
+  },
+  
+  "performance_benchmarks": {
+    "baseline": {
+      "description": "Severity-only model",
+      "expected_r2": 0.45
+    },
+    "nominative": {
+      "description": "Name features only",
+      "expected_r2": 0.11
+    },
+    "combined": {
+      "description": "Name + Severity",
+      "expected_r2": 0.52
+    },
+    "ensemble": {
+      "description": "Full model with interactions",
+      "expected_r2": 0.58
+    }
+  }
+}
+

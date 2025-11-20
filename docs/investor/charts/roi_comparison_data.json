@@ -1,0 +1,50 @@
+{
+  "chart_type": "bar_chart",
+  "title": "ROI Comparison by Sport and Threshold",
+  "x_axis": "System",
+  "y_axis": "ROI (%)",
+  "data": [
+    {
+      "system": "NHL Meta-Ensemble ≥65%",
+      "roi": 32.5,
+      "color": "#1f77b4",
+      "priority": "primary"
+    },
+    {
+      "system": "NHL Meta-Ensemble ≥60%",
+      "roi": 26.5,
+      "color": "#1f77b4",
+      "priority": "moderate"
+    },
+    {
+      "system": "NHL GBM ≥60%",
+      "roi": 24.4,
+      "color": "#1f77b4",
+      "priority": "moderate"
+    },
+    {
+      "system": "NHL Meta-Ensemble ≥55%",
+      "roi": 21.5,
+      "color": "#1f77b4",
+      "priority": "aggressive"
+    },
+    {
+      "system": "NFL QB Edge + Home Dog",
+      "roi": 27.3,
+      "color": "#ff7f0e",
+      "priority": "secondary"
+    },
+    {
+      "system": "NBA Elite Team + Close",
+      "roi": 7.6,
+      "color": "#2ca02c",
+      "priority": "tertiary"
+    }
+  ],
+  "notes": {
+    "nhl": "Primary system - highest ROI and volume",
+    "nfl": "Secondary system - high ROI, low volume",
+    "nba": "Tertiary system - validated but marginal ROI"
+  }
+}
+

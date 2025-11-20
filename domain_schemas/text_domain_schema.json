@@ -1,0 +1,120 @@
+{
+  "schema_name": "text_domain_schema",
+  "schema_version": "1.0.0",
+  "format_type": "A",
+  "description": "Standard schema for text classification domains (news, documents, content)",
+  
+  "data_structure": {
+    "required_fields": {
+      "texts": {
+        "type": "array",
+        "item_type": "string",
+        "description": "Array of text documents",
+        "min_length": 1,
+        "example": ["First document text...", "Second document text..."]
+      },
+      "labels": {
+        "type": "array",
+        "item_type": "integer",
+        "description": "Integer class labels",
+        "min_length": 1,
+        "example": [0, 1, 2, 0, 1]
+      }
+    },
+    "optional_fields": {
+      "label_names": {
+        "type": "array",
+        "item_type": "string",
+        "description": "Human-readable class names",
+        "example": ["category_a", "category_b", "category_c"]
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Dataset metadata",
+        "fields": {
+          "n_samples": "integer",
+          "n_classes": "integer",
+          "description": "string",
+          "source": "string"
+        }
+      }
+    }
+  },
+  
+  "recommended_transformers": [
+    {
+      "name": "StatisticalTransformer",
+      "priority": 1,
+      "use_case": "baseline",
+      "rationale": "Pure statistical baseline for comparison"
+    },
+    {
+      "name": "SemanticNarrativeTransformer",
+      "priority": 2,
+      "use_case": "semantic_understanding",
+      "rationale": "Capture semantic meaning and topic structure"
+    },
+    {
+      "name": "DomainTextNarrativeTransformer",
+      "priority": 3,
+      "use_case": "quality_assessment",
+      "rationale": "Analyze writing style, structure, and coherence"
+    }
+  ],
+  
+  "applicable_hypotheses": [
+    "H1",
+    "H8",
+    "H9",
+    "H10"
+  ],
+  
+  "validation_rules": {
+    "min_samples": 50,
+    "min_classes": 2,
+    "text_min_length": 10,
+    "text_max_length": 100000,
+    "allow_empty_texts": false,
+    "require_balanced_classes": false
+  },
+  
+  "example_complete": {
+    "data": {
+      "texts": [
+        "NASA announced a new Mars mission focusing on sample collection...",
+        "The latest graphics rendering techniques improve real-time performance...",
+        "Philosophical discussions about the nature of consciousness continue...",
+        "Space exploration has always captured human imagination and drive..."
+      ],
+      "labels": [2, 1, 3, 2],
+      "label_names": ["alt.atheism", "comp.graphics", "sci.space", "talk.religion"]
+    },
+    "metadata": {
+      "n_samples": 4,
+      "n_classes": 4,
+      "description": "Sample news classification data",
+      "source": "synthetic_example"
+    }
+  },
+  
+  "integration_notes": {
+    "preprocessing": [
+      "Remove HTML tags if present",
+      "Normalize whitespace",
+      "Ensure UTF-8 encoding",
+      "Optional: remove very short documents (< 10 words)"
+    ],
+    "splitting": [
+      "Use stratified train/test split",
+      "Recommended: 80/20 or 70/30 split",
+      "Ensure all classes represented in both sets"
+    ],
+    "common_issues": [
+      "Empty strings in text array",
+      "Label indices out of range",
+      "Class imbalance (>10:1 ratio)",
+      "Mixed encoding (non-UTF-8)"
+    ]
+  }
+}
+

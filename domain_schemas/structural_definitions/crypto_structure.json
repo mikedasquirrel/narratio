@@ -1,0 +1,77 @@
+{
+  "domain_name": "crypto",
+  "domain_type": "financial_markets",
+  "description": "Cryptocurrency markets - 24/7 continuous trading",
+  
+  "hierarchy_levels": ["asset_lifecycle", "market_cycle", "trading_day", "hour", "minute"],
+  
+  "game_context_types": [
+    "major_announcement",
+    "regulatory_news",
+    "technical_breakout",
+    "whale_movement",
+    "exchange_listing",
+    "network_upgrade",
+    "bear_market",
+    "bull_market",
+    "consolidation",
+    "normal_trading"
+  ],
+  
+  "relational_structure": "vs_market",
+  "competitors_per_event": "variable",
+  "home_advantage_exists": false,
+  
+  "temporal_coupling": "continuous",
+  
+  "market_structure": {
+    "trading_hours": "24/7",
+    "major_exchanges": "variable",
+    "asset_classes": ["bitcoin", "altcoins", "stablecoins", "defi_tokens"]
+  },
+  
+  "available_metrics": [
+    "price_usd",
+    "market_cap",
+    "trading_volume_24h",
+    "price_change_24h",
+    "price_change_7d",
+    "price_change_30d",
+    "all_time_high_distance",
+    "all_time_low_distance",
+    "volatility",
+    "liquidity",
+    "social_media_mentions",
+    "developer_activity",
+    "network_activity",
+    "holder_distribution",
+    "exchange_inflow",
+    "exchange_outflow",
+    "correlation_to_bitcoin",
+    "correlation_to_market"
+  ],
+  
+  "intensity_indicators": [
+    "flash_crash_occurred",
+    "pump_dump_pattern",
+    "whale_activity_spike",
+    "volume_spike",
+    "social_sentiment_shift",
+    "technical_pattern_breakout",
+    "news_catalyst_present"
+  ],
+  
+  "relational_feature_types": {
+    "differential": ["vs bitcoin, vs market cap weighted average"],
+    "ratios": ["vs bitcoin, vs ethereum, vs market"],
+    "interactions": ["price momentum x volume x sentiment"]
+  },
+  
+  "entity_types": [
+    "token_name",
+    "project_name",
+    "founder_name",
+    "exchange_name"
+  ]
+}
+

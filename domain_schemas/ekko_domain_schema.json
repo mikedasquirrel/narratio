@@ -1,0 +1,362 @@
+{
+  "schema_name": "ekko_domain_schema",
+  "schema_version": "1.0.0",
+  "format_type": "C",
+  "domain": "ekko_dating_matching",
+  "description": "Schema for Ekko dating platform user profile and matching data",
+  
+  "domain_narrative": {
+    "primary_hypothesis": "Narrative quality in self-presentation predicts matching success",
+    "secondary_hypotheses": [
+      "Authentic self-perception correlates with better matches",
+      "Openness and possibility language attracts compatible partners",
+      "Diverse interests and match history predict success",
+      "Complementarity between profiles predicts compatibility"
+    ],
+    "key_insights": [
+      "Bio quality matters more than demographics alone",
+      "Self-awareness in profiles indicates relationship readiness",
+      "Future-oriented language correlates with match success",
+      "Relational value indicates complementarity potential"
+    ]
+  },
+  
+  "data_structure": {
+    "required_fields": {
+      "bio": {
+        "type": "string",
+        "description": "User's profile bio/self-description",
+        "min_length": 50,
+        "max_length": 5000,
+        "example": "I'm an adventurous person who loves hiking..."
+      },
+      "match_success": {
+        "type": "integer",
+        "description": "Binary label: 1=successful matches, 0=unsuccessful",
+        "values": [0, 1],
+        "example": 1
+      }
+    },
+    "recommended_fields": {
+      "interests": {
+        "type": "array",
+        "item_type": "string",
+        "description": "List of user interests/hobbies",
+        "example": ["hiking", "photography", "reading"]
+      },
+      "age": {
+        "type": "integer",
+        "description": "User age in years",
+        "range": [18, 99],
+        "example": 28
+      },
+      "match_history": {
+        "type": "array",
+        "item_type": "object",
+        "description": "History of past matches",
+        "example": [
+          {"matched_with": "user_123", "success": true, "duration_days": 45},
+          {"matched_with": "user_456", "success": false, "duration_days": 7}
+        ]
+      }
+    },
+    "optional_fields": {
+      "location": {
+        "type": "string",
+        "description": "User location/city",
+        "example": "San Francisco, CA"
+      },
+      "education_level": {
+        "type": "string",
+        "description": "Highest education level",
+        "example": "Bachelor's Degree"
+      },
+      "relationship_goals": {
+        "type": "string",
+        "description": "What user seeks (long-term, casual, etc.)",
+        "example": "long-term relationship"
+      },
+      "personality_traits": {
+        "type": "object",
+        "description": "Big Five or similar personality scores",
+        "example": {
+          "openness": 0.75,
+          "conscientiousness": 0.65,
+          "extraversion": 0.80,
+          "agreeableness": 0.70,
+          "neuroticism": 0.35
+        }
+      }
+    }
+  },
+  
+  "computed_features": {
+    "description": "Features to compute from raw data",
+    "features": [
+      {
+        "name": "age_normalized",
+        "computation": "age / 100.0",
+        "description": "Normalized age for ML"
+      },
+      {
+        "name": "n_interests",
+        "computation": "len(interests)",
+        "description": "Number of listed interests"
+      },
+      {
+        "name": "match_success_rate",
+        "computation": "sum(m['success'] for m in match_history) / (len(match_history) + 1)",
+        "description": "Historical match success rate"
+      },
+      {
+        "name": "avg_match_duration",
+        "computation": "mean([m['duration_days'] for m in match_history if m['success']])",
+        "description": "Average duration of successful matches"
+      },
+      {
+        "name": "interest_diversity",
+        "computation": "Simpson's diversity index on interest categories",
+        "description": "Diversity of interest types"
+      },
+      {
+        "name": "bio_length",
+        "computation": "len(bio.split())",
+        "description": "Word count in bio"
+      }
+    ]
+  },
+  
+  "recommended_transformers": [
+    {
+      "name": "SelfPerceptionTransformer",
+      "priority": 1,
+      "parameters": {
+        "track_attribution": true,
+        "track_growth": true,
+        "track_coherence": true
+      },
+      "rationale": "Analyze self-presentation authenticity and self-awareness in bios",
+      "expected_features": 20,
+      "applies_to": "bio"
+    },
+    {
+      "name": "NarrativePotentialTransformer",
+      "priority": 2,
+      "parameters": {
+        "track_modality": true,
+        "track_flexibility": true,
+        "track_arc_position": true
+      },
+      "rationale": "Measure openness, possibility, and growth orientation",
+      "expected_features": 25,
+      "applies_to": "bio"
+    },
+    {
+      "name": "RelationalValueTransformer",
+      "priority": 3,
+      "parameters": {
+        "n_features": 100,
+        "complementarity_threshold": 0.3
+      },
+      "rationale": "Assess complementarity and relational potential",
+      "expected_features": 9,
+      "applies_to": "bio"
+    },
+    {
+      "name": "DomainTextNarrativeTransformer",
+      "priority": 4,
+      "parameters": {
+        "n_topics": 15,
+        "style_features": true,
+        "structure_features": true
+      },
+      "rationale": "Capture writing quality and communication style",
+      "expected_features": 35,
+      "applies_to": "bio"
+    },
+    {
+      "name": "EnsembleNarrativeTransformer",
+      "priority": 5,
+      "parameters": {
+        "n_top_terms": 50,
+        "network_metrics": true,
+        "diversity_metrics": true
+      },
+      "rationale": "Analyze interest diversity and match history patterns",
+      "expected_features": 11,
+      "applies_to": "interests + match_history (as text)"
+    }
+  ],
+  
+  "applicable_hypotheses": [
+    {
+      "id": "H1",
+      "name": "Story quality predicts better than demographics",
+      "test": "Compare narrative features vs age/location only"
+    },
+    {
+      "id": "H2",
+      "name": "Character role complementarity",
+      "test": "Analyze self-perception patterns for complementary pairs"
+    },
+    {
+      "id": "H4",
+      "name": "Ensemble diversity predicts openness",
+      "test": "Correlate interest diversity with match success"
+    },
+    {
+      "id": "H7",
+      "name": "Priming effects matter",
+      "test": "Analyze recent match history impact on next match"
+    }
+  ],
+  
+  "example_data_point": {
+    "user_id": "ekko_001",
+    "bio": "I'm an adventurous person who loves hiking and exploring new places. Looking for someone who shares my passion for the outdoors and meaningful conversations. I value authenticity and deep connections. Currently working as a software engineer but love to disconnect on weekends. Excited to meet someone who can challenge me intellectually and join me on adventures.",
+    "interests": ["hiking", "photography", "reading", "cooking", "travel", "technology"],
+    "age": 28,
+    "location": "San Francisco, CA",
+    "education_level": "Bachelor's Degree",
+    "relationship_goals": "long-term relationship",
+    "match_history": [
+      {"matched_with": "ekko_045", "success": true, "duration_days": 120},
+      {"matched_with": "ekko_103", "success": false, "duration_days": 14},
+      {"matched_with": "ekko_167", "success": true, "duration_days": 90},
+      {"matched_with": "ekko_234", "success": false, "duration_days": 7}
+    ],
+    "personality_traits": {
+      "openness": 0.82,
+      "conscientiousness": 0.71,
+      "extraversion": 0.65,
+      "agreeableness": 0.78,
+      "neuroticism": 0.35
+    },
+    "match_success": 1
+  },
+  
+  "computed_features_example": {
+    "age_normalized": 0.28,
+    "n_interests": 6,
+    "match_success_rate": 0.50,
+    "avg_match_duration": 105.0,
+    "interest_diversity": 0.85,
+    "bio_length": 62
+  },
+  
+  "integration_pipeline": {
+    "step1_data_loading": {
+      "description": "Load Ekko data from database or JSON",
+      "function": "load_ekko_data()",
+      "output": "raw_ekko_data"
+    },
+    "step2_formatting": {
+      "description": "Convert to framework-compatible format",
+      "function": "format_ekko_for_framework()",
+      "operations": [
+        "Extract bios as texts array",
+        "Compute numerical features",
+        "Create metadata objects",
+        "Extract labels"
+      ],
+      "output": "formatted_data (Format C)"
+    },
+    "step3_pipeline_building": {
+      "description": "Build narrative pipeline",
+      "transformers": [
+        "SelfPerceptionTransformer",
+        "NarrativePotentialTransformer",
+        "RelationalValueTransformer"
+      ],
+      "classifier": "GradientBoostingClassifier",
+      "output": "ekko_pipeline"
+    },
+    "step4_experiment": {
+      "description": "Run experiment with cross-validation",
+      "cv_strategy": "StratifiedKFold(n_splits=5)",
+      "metrics": ["f1_macro", "accuracy", "roc_auc", "precision", "recall"],
+      "output": "experiment_results"
+    },
+    "step5_analysis": {
+      "description": "Analyze results and generate insights",
+      "analyses": [
+        "Compare narrative vs demographic features",
+        "Identify most predictive narrative features",
+        "Generate interpretability report",
+        "Create visualizations"
+      ],
+      "output": "ekko_insights"
+    },
+    "step6_export": {
+      "description": "Export results back to Ekko project",
+      "formats": ["JSON", "Markdown", "Pickle"],
+      "destination": "ekko_project/narrative_results/"
+    }
+  },
+  
+  "validation_rules": {
+    "bio_validation": {
+      "min_length": 50,
+      "max_length": 5000,
+      "require_alphabetic": true,
+      "min_words": 10
+    },
+    "data_validation": {
+      "min_samples": 200,
+      "min_positive_class": 50,
+      "max_class_imbalance": 0.8,
+      "require_match_history": false
+    },
+    "quality_checks": {
+      "check_duplicate_bios": true,
+      "check_template_bios": true,
+      "check_empty_fields": true,
+      "check_outliers": true
+    }
+  },
+  
+  "performance_expectations": {
+    "baseline_demographics": {
+      "expected_f1": 0.55,
+      "description": "Using only age, location, education"
+    },
+    "narrative_features": {
+      "expected_f1": 0.68,
+      "description": "Using narrative transformers on bios",
+      "improvement": "+13 points over baseline"
+    },
+    "combined": {
+      "expected_f1": 0.72,
+      "description": "Combining narrative + demographics",
+      "improvement": "+17 points over baseline"
+    }
+  },
+  
+  "integration_notes": {
+    "data_collection": [
+      "Ensure user consent for data usage",
+      "Anonymize user_ids",
+      "Remove PII from bios",
+      "Validate match_success labels"
+    ],
+    "preprocessing": [
+      "Clean bios (remove emojis, URLs, email)",
+      "Normalize age ranges",
+      "Encode categorical features",
+      "Handle missing match history"
+    ],
+    "feature_engineering": [
+      "Compute success rate from match history",
+      "Extract interest categories",
+      "Calculate engagement metrics",
+      "Create temporal features"
+    ],
+    "model_deployment": [
+      "Save trained pipeline for production",
+      "Create API endpoint for bio scoring",
+      "Implement batch prediction for matching",
+      "Monitor model performance over time"
+    ]
+  }
+}
+

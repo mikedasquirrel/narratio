@@ -1,0 +1,77 @@
+{
+  "domain_name": "tennis",
+  "domain_type": "individual_sports",
+  "description": "Professional tennis - ATP/WTA tours",
+  
+  "hierarchy_levels": ["career", "season", "tournament", "match", "set", "game", "point"],
+  
+  "game_context_types": [
+    "grand_slam_final",
+    "grand_slam_semifinal",
+    "grand_slam_quarterfinal",
+    "grand_slam_early_round",
+    "masters_1000_final",
+    "masters_1000_semifinal",
+    "masters_1000_early",
+    "atp_500_final",
+    "atp_250_final",
+    "regular_tour_match"
+  ],
+  
+  "relational_structure": "1v1",
+  "competitors_per_event": 2,
+  "home_advantage_exists": false,
+  
+  "temporal_coupling": "episodic",
+  
+  "tournament_structure": {
+    "grand_slams_per_year": 4,
+    "masters_1000_per_year": 9,
+    "atp_500_events": 13,
+    "atp_250_events": 39
+  },
+  
+  "available_metrics": [
+    "ranking_position",
+    "ranking_points",
+    "sets_won",
+    "games_won",
+    "aces",
+    "double_faults",
+    "first_serve_percentage",
+    "first_serve_points_won",
+    "second_serve_points_won",
+    "break_points_saved",
+    "break_points_converted",
+    "service_games_won",
+    "return_games_won",
+    "total_points_won",
+    "form_last_10_matches",
+    "head_to_head_record",
+    "surface_record",
+    "tournament_history"
+  ],
+  
+  "intensity_indicators": [
+    "comeback_from_set_deficit",
+    "sets_deficit_count",
+    "tiebreak_occurred",
+    "saved_match_points",
+    "match_duration_minutes",
+    "games_per_set_average",
+    "close_sets_count"
+  ],
+  
+  "relational_feature_types": {
+    "differential": ["numeric metrics can be subtracted"],
+    "ratios": ["numeric metrics can be divided"],
+    "interactions": ["categorical x categorical, numeric x categorical"]
+  },
+  
+  "entity_types": [
+    "player_name",
+    "coach_name",
+    "tournament_name"
+  ]
+}
+

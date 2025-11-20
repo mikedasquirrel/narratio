@@ -1,0 +1,73 @@
+{
+  "domain_name": "boxing",
+  "domain_type": "individual_combat_sports",
+  "description": "Professional boxing - championship and non-title bouts",
+  
+  "hierarchy_levels": ["career", "championship_reign", "bout", "round"],
+  
+  "game_context_types": [
+    "undisputed_championship",
+    "unified_championship",
+    "world_title_fight",
+    "mandatory_defense",
+    "voluntary_defense",
+    "title_eliminator",
+    "non_title_bout"
+  ],
+  
+  "relational_structure": "1v1",
+  "competitors_per_event": 2,
+  "home_advantage_exists": false,
+  
+  "temporal_coupling": "episodic",
+  
+  "bout_structure": {
+    "championship_rounds": 12,
+    "non_title_rounds": 10,
+    "round_duration_minutes": 3,
+    "major_sanctioning_bodies": 4
+  },
+  
+  "available_metrics": [
+    "professional_record_wins",
+    "professional_record_losses",
+    "professional_record_draws",
+    "knockouts",
+    "title_defenses",
+    "championship_belts_held",
+    "punches_landed",
+    "punches_thrown",
+    "punch_accuracy",
+    "power_punch_percentage",
+    "rounds_won",
+    "knockdowns_scored",
+    "head_to_head_history",
+    "weight_class_ranking",
+    "pound_for_pound_ranking"
+  ],
+  
+  "intensity_indicators": [
+    "knockout_occurred",
+    "knockout_round",
+    "knockdowns_in_bout",
+    "comeback_after_knockdown",
+    "split_decision",
+    "controversial_decision",
+    "close_rounds_count",
+    "bout_went_distance"
+  ],
+  
+  "relational_feature_types": {
+    "differential": ["numeric metrics can be subtracted"],
+    "ratios": ["numeric metrics can be divided"],
+    "interactions": ["categorical x categorical, numeric x categorical"]
+  },
+  
+  "entity_types": [
+    "fighter_name",
+    "trainer_name",
+    "promoter_name",
+    "venue_name"
+  ]
+}
+

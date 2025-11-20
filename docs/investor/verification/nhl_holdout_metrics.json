@@ -1,0 +1,38 @@
+{
+  "generated_at": "2025-11-20T11:02:24.576884Z",
+  "cutoff_date": "2024-09-01",
+  "train_games": 4966,
+  "test_games": 1265,
+  "feature_count": 34,
+  "thresholds": [
+    {
+      "threshold": 0.55,
+      "bets": 683,
+      "win_rate": 0.6456808199121523,
+      "roi": 0.2913616398243045
+    },
+    {
+      "threshold": 0.6,
+      "bets": 479,
+      "win_rate": 0.6805845511482255,
+      "roi": 0.36116910229645094
+    },
+    {
+      "threshold": 0.65,
+      "bets": 228,
+      "win_rate": 0.7280701754385965,
+      "roi": 0.45614035087719296
+    },
+    {
+      "threshold": 0.7,
+      "bets": 104,
+      "win_rate": 0.7596153846153846,
+      "roi": 0.5192307692307693
+    }
+  ],
+  "source_feature_matrix": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/modeling_datasets/nhl_feature_matrix.parquet",
+  "feature_summary": {
+    "total_features": null,
+    "breakdown": null
+  }
+}

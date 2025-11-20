@@ -1,0 +1,72 @@
+{
+  "domain_name": "nfl",
+  "domain_type": "team_sports",
+  "description": "National Football League - American football",
+  
+  "hierarchy_levels": ["franchise", "season", "game", "quarter"],
+  
+  "game_context_types": [
+    "super_bowl",
+    "conference_championship",
+    "divisional_playoff",
+    "wild_card",
+    "regular_season_playoff_implications",
+    "division_rivalry",
+    "conference_matchup",
+    "primetime",
+    "regular_season"
+  ],
+  
+  "relational_structure": "team_vs_team",
+  "competitors_per_event": 2,
+  "home_advantage_exists": true,
+  
+  "temporal_coupling": "sequential",
+  
+  "season_structure": {
+    "regular_season_games": 17,
+    "playoff_teams": 14,
+    "divisions": 8,
+    "conferences": 2
+  },
+  
+  "available_metrics": [
+    "point_differential",
+    "time_of_possession",
+    "turnover_margin",
+    "lead_changes",
+    "largest_lead",
+    "largest_deficit_overcome",
+    "division_standings_position",
+    "conference_standings_position",
+    "games_back_from_playoff",
+    "head_to_head_history",
+    "weather_conditions",
+    "rest_days"
+  ],
+  
+  "intensity_indicators": [
+    "comeback_occurred",
+    "comeback_deficit_points",
+    "game_winning_drive",
+    "overtime",
+    "final_margin",
+    "lead_changes_count",
+    "late_season_flag",
+    "playoff_elimination_possible"
+  ],
+  
+  "relational_feature_types": {
+    "differential": ["numeric metrics can be subtracted"],
+    "ratios": ["numeric metrics can be divided"],
+    "interactions": ["categorical x categorical, numeric x categorical"]
+  },
+  
+  "entity_types": [
+    "quarterback",
+    "head_coach",
+    "star_player",
+    "referee",
+    "team_name"
+  ]
+}

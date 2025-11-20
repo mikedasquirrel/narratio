@@ -1,0 +1,82 @@
+{
+  "chart_type": "scatter_plot",
+  "title": "Volume vs ROI Tradeoff",
+  "x_axis": "Bets per Season",
+  "y_axis": "ROI (%)",
+  "data": [
+    {
+      "system": "NHL ≥65%",
+      "bets_per_season": 85,
+      "roi": 32.5,
+      "win_rate": 69.4,
+      "color": "#1f77b4",
+      "size": 200,
+      "label": "Ultra-Conservative"
+    },
+    {
+      "system": "NHL ≥60%",
+      "bets_per_season": 577,
+      "roi": 24.4,
+      "win_rate": 65.2,
+      "color": "#1f77b4",
+      "size": 300,
+      "label": "Moderate"
+    },
+    {
+      "system": "NHL ≥55%",
+      "bets_per_season": 1356,
+      "roi": 21.5,
+      "win_rate": 63.6,
+      "color": "#1f77b4",
+      "size": 400,
+      "label": "Aggressive"
+    },
+    {
+      "system": "NFL QB Edge",
+      "bets_per_season": 20,
+      "roi": 27.3,
+      "win_rate": 66.7,
+      "color": "#ff7f0e",
+      "size": 150,
+      "label": "Low Volume, High ROI"
+    },
+    {
+      "system": "NBA Elite Team",
+      "bets_per_season": 11,
+      "roi": 7.6,
+      "win_rate": 54.5,
+      "color": "#2ca02c",
+      "size": 100,
+      "label": "Marginal"
+    }
+  ],
+  "trend_line": {
+    "show": true,
+    "color": "#d62728",
+    "style": "dashed",
+    "label": "Tradeoff Trend"
+  },
+  "interpretation": {
+    "insight": "Higher volume comes with slightly lower ROI but all options are profitable",
+    "recommendation": "Start conservative (≥65%), scale up if performance holds"
+  },
+  "quadrants": {
+    "high_roi_low_volume": {
+      "label": "Premium Bets",
+      "systems": ["NHL ≥65%", "NFL QB Edge"]
+    },
+    "high_roi_high_volume": {
+      "label": "Optimal",
+      "systems": ["NHL ≥60%"]
+    },
+    "low_roi_high_volume": {
+      "label": "Volume Play",
+      "systems": ["NHL ≥55%"]
+    },
+    "low_roi_low_volume": {
+      "label": "Marginal",
+      "systems": ["NBA Elite Team"]
+    }
+  }
+}
+

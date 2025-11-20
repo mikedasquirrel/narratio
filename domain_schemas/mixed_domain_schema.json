@@ -1,0 +1,250 @@
+{
+  "schema_name": "mixed_domain_schema",
+  "schema_version": "1.0.0",
+  "format_type": "C",
+  "description": "Standard schema for mixed domain data combining text, features, and metadata",
+  
+  "data_structure": {
+    "required_fields": {
+      "texts": {
+        "type": "array",
+        "item_type": "string",
+        "description": "Text data (bios, descriptions, content)",
+        "min_length": 1,
+        "example": ["User bio text...", "Another description..."]
+      },
+      "labels": {
+        "type": "array",
+        "item_type": "integer_or_float",
+        "description": "Target variable (classification or regression)",
+        "example": [0, 1, 1, 0]
+      }
+    },
+    "optional_fields": {
+      "features": {
+        "type": "array",
+        "item_type": "array_of_numbers",
+        "description": "Pre-computed numerical features",
+        "shape": ["n_samples", "n_features"],
+        "example": [[0.1, 0.5], [0.2, 0.4]]
+      },
+      "metadata": {
+        "type": "array",
+        "item_type": "object",
+        "description": "Per-sample metadata",
+        "example": [
+          {"user_id": "001", "timestamp": "2024-01-01", "context": {}},
+          {"user_id": "002", "timestamp": "2024-01-02", "context": {}}
+        ]
+      }
+    }
+  },
+  
+  "schema_definition": {
+    "required": {
+      "text_field": {
+        "type": "string",
+        "description": "Name of the primary text field",
+        "example": "bio"
+      },
+      "label_field": {
+        "type": "string",
+        "description": "Name of the label/target field",
+        "example": "match_success"
+      }
+    },
+    "optional": {
+      "feature_fields": {
+        "type": "array",
+        "description": "Names of numerical feature fields",
+        "example": ["age_norm", "activity_level", "engagement"]
+      },
+      "metadata_fields": {
+        "type": "array",
+        "description": "Names of metadata fields",
+        "example": ["user_id", "timestamp", "context"]
+      },
+      "text_fields_secondary": {
+        "type": "array",
+        "description": "Additional text fields to include",
+        "example": ["interests", "goals", "preferences"]
+      }
+    }
+  },
+  
+  "recommended_transformers": [
+    {
+      "name": "SelfPerceptionTransformer",
+      "priority": 1,
+      "use_case": "user_profiles",
+      "rationale": "Analyze self-presentation in text",
+      "applies_to": "text"
+    },
+    {
+      "name": "NarrativePotentialTransformer",
+      "priority": 2,
+      "use_case": "growth_assessment",
+      "rationale": "Measure openness and possibility",
+      "applies_to": "text"
+    },
+    {
+      "name": "RelationalValueTransformer",
+      "priority": 3,
+      "use_case": "matching_systems",
+      "rationale": "Assess complementarity potential",
+      "applies_to": "text"
+    },
+    {
+      "name": "EnsembleNarrativeTransformer",
+      "priority": 4,
+      "use_case": "diversity_analysis",
+      "rationale": "Analyze diversity in features",
+      "applies_to": "both"
+    },
+    {
+      "name": "FeatureUnion",
+      "priority": 5,
+      "use_case": "combining_modalities",
+      "rationale": "Combine text and numerical features",
+      "applies_to": "both"
+    }
+  ],
+  
+  "applicable_hypotheses": [
+    "H1",
+    "H2",
+    "H4",
+    "H5",
+    "H6",
+    "H7"
+  ],
+  
+  "validation_rules": {
+    "min_samples": 50,
+    "text_min_length": 10,
+    "allow_missing_text": false,
+    "allow_missing_features": true,
+    "allow_missing_metadata": true,
+    "require_consistent_lengths": true
+  },
+  
+  "example_complete": {
+    "data": {
+      "texts": [
+        "I love hiking and outdoor adventures. Looking for someone who shares my passion for nature and meaningful conversations.",
+        "Creative professional seeking intellectual connection. Enjoy art, philosophy, and deep discussions about life.",
+        "Fitness enthusiast and foodie. Love trying new restaurants and staying active. Want to meet someone adventurous."
+      ],
+      "features": [
+        [0.28, 0.75, 15, 0.67],
+        [0.32, 0.85, 23, 0.82],
+        [0.26, 0.65, 8, 0.50]
+      ],
+      "metadata": [
+        {
+          "user_id": "user_001",
+          "age": 28,
+          "location": "NYC",
+          "interactions": 15,
+          "match_history": [0, 1, 0, 1, 1]
+        },
+        {
+          "user_id": "user_002",
+          "age": 32,
+          "location": "SF",
+          "interactions": 23,
+          "match_history": [1, 1, 0, 1, 1, 0]
+        },
+        {
+          "user_id": "user_003",
+          "age": 26,
+          "location": "LA",
+          "interactions": 8,
+          "match_history": [1, 0, 1]
+        }
+      ],
+      "labels": [1, 1, 0]
+    },
+    "schema": {
+      "text_field": "bio",
+      "feature_fields": ["age_norm", "openness_score", "interactions", "success_rate"],
+      "metadata_fields": ["user_id", "age", "location", "interactions", "match_history"],
+      "label_field": "match_success"
+    },
+    "metadata": {
+      "domain": "dating_matching",
+      "n_samples": 3,
+      "task": "binary_classification",
+      "description": "User profile data for match success prediction"
+    }
+  },
+  
+  "integration_notes": {
+    "preprocessing": {
+      "text": [
+        "Clean and normalize text",
+        "Handle empty strings",
+        "Concatenate multiple text fields if needed"
+      ],
+      "features": [
+        "Scale numerical features",
+        "Handle missing values",
+        "Ensure consistent dimensions"
+      ],
+      "metadata": [
+        "Extract relevant metadata features if needed",
+        "Compute derived features from metadata",
+        "Use for stratification or analysis"
+      ]
+    },
+    "pipeline_assembly": {
+      "text_only": "Use text transformers directly",
+      "features_only": "Use feature scaling and selection",
+      "combined": "Use FeatureUnion to combine text and feature pipelines",
+      "example": "FeatureUnion([('text', text_pipeline), ('features', feature_scaler)])"
+    },
+    "common_issues": [
+      "Text and features arrays different lengths",
+      "Metadata not aligned with data",
+      "Missing values in required fields",
+      "Schema definition doesn't match actual data structure",
+      "Inconsistent data types across samples"
+    ],
+    "best_practices": [
+      "Keep text and features separate in pipeline",
+      "Use metadata for stratified splitting",
+      "Document feature engineering steps",
+      "Validate schema before processing",
+      "Test pipeline with small sample first"
+    ]
+  },
+  
+  "example_pipeline": {
+    "description": "Example pipeline for mixed domain data",
+    "code": "FeatureUnion([('text', SelfPerceptionTransformer()), ('features', StandardScaler())])",
+    "components": [
+      {
+        "name": "text_branch",
+        "transformers": ["SelfPerceptionTransformer", "NarrativePotentialTransformer"],
+        "input": "texts"
+      },
+      {
+        "name": "feature_branch",
+        "transformers": ["StandardScaler", "SelectKBest"],
+        "input": "features"
+      },
+      {
+        "name": "combiner",
+        "method": "FeatureUnion",
+        "output": "combined_features"
+      },
+      {
+        "name": "classifier",
+        "method": "RandomForestClassifier",
+        "input": "combined_features",
+        "output": "predictions"
+      }
+    ]
+  }
+}
+

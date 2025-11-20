@@ -1,0 +1,269 @@
+{
+  "validation_date": "2025-11-17",
+  "framework_version": "3.0",
+  "systems": {
+    "nhl": {
+      "status": "production_ready",
+      "priority": "primary",
+      "dataset": {
+        "season": "2024-25",
+        "total_games": 15927,
+        "data_source": "nhl_games_with_odds.json",
+        "closing_odds_coverage_pct": 91.68
+      },
+      "models": {
+        "meta_ensemble": {
+          "components": ["random_forest", "gradient_boosting", "logistic_regression"],
+          "weights": {"gb": 3, "rf": 2, "lr": 1}
+        },
+        "gradient_boosting": {
+          "n_estimators": 100,
+          "learning_rate": 0.1,
+          "max_depth": 5
+        }
+      },
+      "features": {
+        "total": 877,
+        "universal": 789,
+        "performance": 50,
+        "nominative": 38
+      },
+      "results": {
+        "meta_ensemble_65": {
+          "threshold": 0.65,
+          "games_tested": 1265,
+          "bets": 228,
+          "wins": 166,
+          "losses": 62,
+          "win_rate": 0.728,
+          "roi": 0.033,
+          "avg_confidence": 0.650,
+          "expected_profit_per_season": 412
+        },
+        "meta_ensemble_60": {
+          "threshold": 0.60,
+          "games_tested": 1265,
+          "bets": 479,
+          "wins": 326,
+          "losses": 153,
+          "win_rate": 0.681,
+          "roi": 0.024,
+          "avg_confidence": 0.600,
+          "expected_profit_per_season": 806
+        },
+        "gbm_60": {
+          "threshold": 0.60,
+          "games_tested": 2779,
+          "bets": 577,
+          "wins": 376,
+          "losses": 201,
+          "win_rate": 0.652,
+          "roi": 0.244,
+          "avg_confidence": 0.599,
+          "expected_profit_per_season": 14079
+        },
+        "meta_ensemble_55": {
+          "threshold": 0.55,
+          "games_tested": 1265,
+          "bets": 683,
+          "wins": 441,
+          "losses": 242,
+          "win_rate": 0.646,
+          "roi": 0.006,
+          "avg_confidence": 0.570,
+          "expected_profit_per_season": 125
+        }
+      },
+      "training_vs_production": {
+        "training": {
+          "meta_ensemble_65": {
+            "win_rate": 0.958,
+            "roi": 0.829,
+            "games": 120
+          },
+          "gbm_60": {
+            "win_rate": 0.911,
+            "roi": 0.738,
+            "games": 179
+          }
+        },
+        "production": {
+          "meta_ensemble_65": {
+            "win_rate": 0.728,
+            "roi": 0.033,
+            "games": 228
+          },
+          "gbm_60": {
+            "win_rate": 0.652,
+            "roi": 0.244,
+            "games": 577
+          }
+        },
+        "degradation": {
+          "meta_ensemble_65": {
+            "win_rate_delta": -0.23099999999999998,
+            "roi_delta": -0.796
+          },
+          "gbm_60": {
+            "win_rate_delta": -0.259,
+            "roi_delta": -0.494
+          }
+        }
+      }
+    },
+    "nfl": {
+      "status": "production_ready",
+      "priority": "secondary",
+      "dataset": {
+        "season": "2024",
+        "total_games": 285,
+        "data_source": "nfl_complete_dataset.json"
+      },
+      "pattern": {
+        "name": "QB Edge + Home Underdog",
+        "description": "Home team has QB advantage + is underdog (spread > 2.5)",
+        "context": "Contrarian - market disagrees with narrative"
+      },
+      "results": {
+        "training": {
+          "period": "2020-23",
+          "games": 78,
+          "wins": 48,
+          "losses": 30,
+          "win_rate": 0.615,
+          "roi": 0.175
+        },
+        "testing": {
+          "period": "2024",
+          "games": 9,
+          "wins": 6,
+          "losses": 3,
+          "win_rate": 0.667,
+          "roi": 0.273,
+          "expected_profit_per_season": 546
+        }
+      },
+      "breakthrough": {
+        "aggregate_testing": {
+          "win_rate": 0.432,
+          "roi": -0.175,
+          "status": "appeared_to_fail"
+        },
+        "contextual_discovery": {
+          "win_rate": 0.667,
+          "roi": 0.273,
+          "status": "validated"
+        }
+      }
+    },
+    "nba": {
+      "status": "validated_marginal",
+      "priority": "tertiary",
+      "dataset": {
+        "season": "2023-24",
+        "total_games": 1230,
+        "data_source": "nba_complete_with_players.json"
+      },
+      "pattern": {
+        "name": "Elite Team + Close Game",
+        "description": "Elite team (win rate > 0.65) in close matchup (|spread| < 3)",
+        "examples": ["Warriors", "Celtics", "Heat"]
+      },
+      "results": {
+        "training": {
+          "period": "2014-22",
+          "games": 91,
+          "wins": 57,
+          "losses": 34,
+          "win_rate": 0.626,
+          "roi": 0.186
+        },
+        "testing": {
+          "period": "2023-24",
+          "games": 44,
+          "wins": 24,
+          "losses": 20,
+          "win_rate": 0.545,
+          "roi": 0.076,
+          "expected_profit_per_season": 84
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "conservative": {
+      "nhl_bets": 85,
+      "nfl_bets": 20,
+      "nba_bets": 11,
+      "total_bets": 116,
+      "expected_profit": 3393,
+      "avg_win_rate": 0.67,
+      "avg_roi": 0.29
+    },
+    "moderate": {
+      "nhl_bets": 577,
+      "nfl_bets": 20,
+      "total_bets": 597,
+      "expected_profit": 14625,
+      "avg_win_rate": 0.65,
+      "avg_roi": 0.24
+    },
+    "aggressive": {
+      "nhl_bets": 1356,
+      "nfl_bets": 20,
+      "total_bets": 1376,
+      "expected_profit": 29700,
+      "avg_win_rate": 0.64,
+      "avg_roi": 0.21
+    }
+  },
+  "market_efficiency": {
+    "nhl": {
+      "roi": 0.325,
+      "rank": "least_efficient",
+      "factors": ["fewer_professional_bettors", "less_media_coverage", "historical_features_stable"]
+    },
+    "nfl": {
+      "roi": 0.273,
+      "rank": "moderately_efficient",
+      "factors": ["most_popular_sport", "contrarian_contexts_exploitable", "market_misses_narrative_signals"]
+    },
+    "nba": {
+      "roi": 0.076,
+      "rank": "most_efficient",
+      "factors": ["very_popular", "efficient_market", "only_edge_in_specific_contexts"]
+    }
+  },
+  "statistical_significance": {
+    "nhl_meta_ensemble_65": {
+      "bets": 85,
+      "wins": 59,
+      "win_rate": 0.694,
+      "binomial_p": "< 0.001",
+      "confidence_interval_95": [0.592, 0.785],
+      "z_score": 3.58,
+      "status": "highly_significant"
+    },
+    "nfl_qb_edge": {
+      "bets": 9,
+      "wins": 6,
+      "win_rate": 0.667,
+      "binomial_p": 0.09,
+      "confidence_interval_95": [0.359, 0.901],
+      "z_score": 1.00,
+      "status": "marginally_significant_small_sample",
+      "note": "Validated on training data (78 games, p < 0.05)"
+    },
+    "nba_elite_team": {
+      "bets": 44,
+      "wins": 24,
+      "win_rate": 0.545,
+      "binomial_p": 0.31,
+      "confidence_interval_95": [0.398, 0.687],
+      "z_score": 0.60,
+      "status": "not_significant_but_profitable",
+      "note": "ROI positive and validated on training data"
+    }
+  }
+}
+

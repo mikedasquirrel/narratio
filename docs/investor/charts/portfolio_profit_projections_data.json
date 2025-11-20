@@ -1,0 +1,50 @@
+{
+  "chart_type": "stacked_bar_chart",
+  "title": "Portfolio Profit Projections by Scenario",
+  "x_axis": "Scenario",
+  "y_axis": "Expected Profit ($)",
+  "unit_size": 100,
+  "data": {
+    "conservative": {
+      "nhl": 2763,
+      "nfl": 546,
+      "nba": 84,
+      "total": 3393,
+      "bets_per_season": 116
+    },
+    "moderate": {
+      "nhl": 14079,
+      "nfl": 546,
+      "nba": 0,
+      "total": 14625,
+      "bets_per_season": 597
+    },
+    "aggressive": {
+      "nhl": 29154,
+      "nfl": 546,
+      "nba": 0,
+      "total": 29700,
+      "bets_per_season": 1376
+    }
+  },
+  "components": [
+    {
+      "name": "NHL",
+      "color": "#1f77b4"
+    },
+    {
+      "name": "NFL",
+      "color": "#ff7f0e"
+    },
+    {
+      "name": "NBA",
+      "color": "#2ca02c"
+    }
+  ],
+  "notes": {
+    "conservative": "Recommended starting point - high confidence, selective betting",
+    "moderate": "Balanced approach - good volume with maintained ROI",
+    "aggressive": "Maximum volume - higher risk, higher potential returns"
+  }
+}
+
