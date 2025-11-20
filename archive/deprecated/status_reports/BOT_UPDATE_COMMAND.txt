@@ -1,0 +1,29 @@
+================================================================================
+COMMAND FOR ANOTHER BOT TO UPDATE INVESTOR DASHBOARD
+================================================================================
+
+SIMPLE COMMAND:
+cd /Users/michaelsmerconish/Desktop/RandomCode/novelization && python3 scripts/generate_investor_dashboard.py
+
+WHAT THIS DOES:
+- Reads latest backtest data from analysis/ and docs/investor/data/
+- Generates 11 interactive Plotly charts
+- Creates beautiful HTML dashboard with all visualizations
+- Outputs to: docs/investor/INTERACTIVE_DASHBOARD.html
+- Takes 3-5 seconds to complete
+
+RESULT:
+A 221KB standalone HTML file with:
+- Interactive charts (hover, zoom, pan)
+- Complete statistical analysis
+- Financial projections ($1M bankroll)
+- All validation data and metrics
+
+TO VIEW:
+open docs/investor/INTERACTIVE_DASHBOARD.html
+
+TO VERIFY:
+ls -lh docs/investor/INTERACTIVE_DASHBOARD.html
+
+================================================================================
+

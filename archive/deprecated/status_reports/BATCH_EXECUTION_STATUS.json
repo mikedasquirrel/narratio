@@ -1,0 +1,47 @@
+{
+  "current_batch": null,
+  "current_domain": null,
+  "last_updated": "2025-11-20T12:31:25Z",
+  "domains": {
+    "nba": {
+      "name": "nba",
+      "pi": 0.49,
+      "domain_type": "sports_team",
+      "status": "pending",
+      "data_path": "data/domains/nba_pregame_narratives.json",
+      "text_field": "rich_narrative",
+      "text_fields": [
+        "rich_narrative",
+        "pregame_narrative",
+        "narrative"
+      ],
+      "outcome_field": "won",
+      "sample_size": 21896,
+      "notes": "Auto-generated fallback configuration"
+    },
+    "nfl": {
+      "name": "nfl",
+      "pi": 0.57,
+      "domain_type": "sports_team",
+      "status": "completed",
+      "data_path": "data/domains/nfl_games_rich_narratives.json",
+      "text_field": "rich_narrative",
+      "text_fields": [
+        "rich_narrative",
+        "narrative",
+        "description"
+      ],
+      "outcome_field": "home_won",
+      "sample_size": 3010,
+      "transformers_completed": 37,
+      "transformers_failed": 0,
+      "total_features": 1885,
+      "duration_seconds": 54.78,
+      "output_file": "narrative_optimization/data/features/nfl_all_features.npz",
+      "results_file": "narrative_optimization/data/features/nfl_processing_results.json",
+      "completed_at": "2025-11-17T17:27:46Z",
+      "notes": "Restored configuration using enriched narrative dataset"
+    }
+  },
+  "batches": {}
+}
