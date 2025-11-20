@@ -40,14 +40,29 @@ class NHLPropOddsFetcher:
         self.base_url = BASE_URL
         self.sport = SPORTS['nhl']
         
-        # Prop markets we care about
-        self.prop_markets = [
-            'player_points_over_under',
-            'player_assists_over_under', 
-            'player_shots_on_goal_over_under',
-            'player_goals_over_under',
-            'player_saves_over_under',
-        ]
+        # Prop markets we care about (canonical key -> fallback variants)
+        self.prop_market_variants = {
+            'player_points': [
+                'player_points',  # Current Odds API key
+                'player_points_over_under',  # Legacy key (Nov 2024)
+            ],
+            'player_assists': [
+                'player_assists',
+                'player_assists_over_under',
+            ],
+            'player_shots_on_goal': [
+                'player_shots_on_goal',
+                'player_shots_on_goal_over_under',
+            ],
+            'player_goals': [
+                'player_goals',
+                'player_goals_over_under',
+            ],
+            'player_saves': [
+                'player_saves',
+                'player_saves_over_under',
+            ],
+        }
         
     def fetch_games_with_props(self) -> List[Dict]:
         """
@@ -105,31 +120,52 @@ class NHLPropOddsFetcher:
         
         all_props = {}
         
-        # Fetch each prop market
-        for market in self.prop_markets:
-            url = f"{self.base_url}/sports/{self.sport}/events/{event_id}/odds"
+        for canonical_market, variants in self.prop_market_variants.items():
+            market_data = None
             
-            params = {
-                'apiKey': self.api_key,
-                'regions': 'us',
-                'markets': market,
-                'oddsFormat': 'american',
-            }
+            for market_key in variants:
+                market_data = self._request_market(event_id, market_key)
+                
+                if market_data:
+                    break  # Stop after first successful variant
             
-            try:
-                response = requests.get(url, params=params, timeout=10)
-                response.raise_for_status()
+            if market_data:
+                parsed = self._parse_prop_odds(market_data, canonical_market)
                 
-                data = response.json()
-                
-                if data.get('bookmakers'):
-                    all_props[market] = self._parse_prop_odds(data, market)
-                    print(f"      ✓ {market}: {len(all_props[market])} player props")
-                    
-            except Exception as e:
-                print(f"      ✗ Error fetching {market}: {e}")
+                if parsed:
+                    all_props[canonical_market] = parsed
+                    print(f"      ✓ {canonical_market}: {len(parsed)} player props")
+            else:
+                print(f"      ✗ No odds returned for {canonical_market} (checked {', '.join(variants)})")
                 
         return all_props
+    
+    def _request_market(self, event_id: str, market: str) -> Optional[Dict]:
+        """Request a single market, handling legacy keys gracefully."""
+        url = f"{self.base_url}/sports/{self.sport}/events/{event_id}/odds"
+        params = {
+            'apiKey': self.api_key,
+            'regions': 'us',
+            'markets': market,
+            'oddsFormat': 'american',
+        }
+        
+        try:
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            if data.get('bookmakers'):
+                return data
+        except requests.HTTPError as http_err:  # type: ignore
+            status = getattr(http_err.response, 'status_code', None)
+            if status == 422:
+                print(f"      • Market '{market}' not supported by API (422)")
+            else:
+                print(f"      ✗ HTTP error for market '{market}': {http_err}")
+        except Exception as e:
+            print(f"      ✗ Error fetching market '{market}': {e}")
+        
+        return None
         
     def _parse_prop_odds(self, data: Dict, market: str) -> List[Dict]:
         """Parse prop odds from API response"""

@@ -469,10 +469,10 @@ main.container {
 
 {% block content %}
 <div class="live-container">
-    <div class="live-hero">
-        <h1>live opportunities</h1>
-        <p class="subtitle">real-time odds | multiple bet types | tiered by value</p>
-    </div>
+<div class="live-hero">
+    <h1>Today's Top 5 Picks</h1>
+    <p class="subtitle">Highest edge opportunities | Sorted by value | Daily selection</p>
+</div>
 
     <div class="controls-section">
     <div class="control-panel">
@@ -487,7 +487,7 @@ main.container {
                 <div class="status-value" id="data-age">—</div>
             </div>
             <div class="status-item">
-                <div class="status-label">opportunities</div>
+                <div class="status-label">today's picks</div>
                 <div class="status-value" id="opp-count">—</div>
             </div>
             <div class="status-item">
@@ -507,21 +507,22 @@ main.container {
 </div>
 
 <div class="allocation-panel" id="allocation-panel">
-    <div class="panel-title">bet allocation calculator</div>
-    <div class="allocation-input-group">
-        <div class="input-wrapper">
-            <label for="total-bankroll">total bankroll ($)</label>
-            <input type="number" id="total-bankroll" class="allocation-input" placeholder="1000" min="10" step="10">
+    <div class="panel-title">Bet Allocation Calculator</div>
+    <p style="font-size: 13px; opacity: 0.7; margin-bottom: 20px;">Automatically allocates to today's top 5 picks by edge</p>
+    
+    <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+        <div class="input-wrapper" style="flex: 2;">
+            <label for="total-bankroll">Bankroll ($)</label>
+            <input type="number" id="total-bankroll" class="allocation-input" placeholder="1000" min="100" step="100" value="1000">
         </div>
-        <div class="input-wrapper">
-            <label for="strategy-select">sizing strategy</label>
+        <div class="input-wrapper" style="flex: 3;">
+            <label for="strategy-select">Sizing Strategy</label>
             <select id="strategy-select" class="allocation-input">
-                <option value="proportional">proportional (edge-weighted)</option>
-                <option value="quarter-kelly">quarter-kelly</option>
-                <option value="flat">flat (equal weight)</option>
+                <option value="conservative">Conservative (1-2% per bet)</option>
+                <option value="kelly">Kelly Criterion (optimal growth)</option>
             </select>
         </div>
-        <button class="btn btn-primary" onclick="calculateAllocation()" style="height: 48px;">calculate</button>
+        <button class="btn btn-primary" onclick="calculateAllocation()" style="height: 48px; flex-shrink: 0; padding: 0 30px;">Calculate</button>
     </div>
     
     <div class="allocation-results" id="allocation-results">
@@ -551,11 +552,14 @@ main.container {
 </div>
 
 <div class="info-box">
-    <h3>tier system</h3>
+    <h3>Our Approach</h3>
     <p>
-        <strong style="color: #22c55e;">Elite</strong>: ≥60% confidence, ≥10% edge — highest conviction plays with significant market advantage<br>
-        <strong style="color: #0ea5e9;">Strong</strong>: ≥55% confidence, ≥8% edge — solid value opportunities with good edge<br>
-        <strong style="color: #f59e0b;">Moderate</strong>: ≥52% confidence, ≥5% edge — reasonable value with positive expected return
+        <strong>Selective & Disciplined:</strong> We show only the top 5 opportunities by edge each day. This prevents over-betting and focuses capital on the best value.<br><br>
+        
+        <strong>Conservative Strategy:</strong> Fixed 1.5% per bet (~7.5% total exposure). Safe for most bettors.<br>
+        <strong>Kelly Strategy:</strong> Mathematically optimal bet sizing based on edge and odds. Higher risk/reward.<br><br>
+        
+        All picks are sorted by edge (highest first) and pre-selected for the calculator.
     </p>
 </div>
 
@@ -570,7 +574,14 @@ async function loadOpportunities() {
         const response = await fetch('/api/live/opportunities?league=nhl&min_edge=0&min_confidence=0');
         const data = await response.json();
         
-        allOpportunities = data.opportunities || [];
+        let rawOpportunities = data.opportunities || [];
+        
+        // Sort by edge descending and take top 5 ONLY
+        allOpportunities = rawOpportunities
+            .sort((a, b) => b.edge_pct - a.edge_pct)
+            .slice(0, 5);
+        
+        console.log(`[TOP 5] Showing only top 5 of ${rawOpportunities.length} opportunities`);
         
         // Update status
         document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
@@ -580,19 +591,12 @@ async function loadOpportunities() {
             document.getElementById('data-age').textContent = ageText;
         }
         
-        // Count unique games
-        const uniqueGames = new Set(allOpportunities.map(o => o.game_id)).size;
-        document.getElementById('opp-count').textContent = allOpportunities.length;
+        // Count based on all available, display only top 5
+        const uniqueGames = new Set(rawOpportunities.map(o => o.game_id)).size;
+        document.getElementById('opp-count').textContent = `${allOpportunities.length} shown`;
         document.getElementById('game-count').textContent = uniqueGames;
         
-        // Group by tier
-        const tiers = {
-            elite: allOpportunities.filter(o => o.tier === 'elite'),
-            strong: allOpportunities.filter(o => o.tier === 'strong'),
-            moderate: allOpportunities.filter(o => o.tier === 'moderate')
-        };
-        
-        // Build HTML
+        // Build HTML - single ranked list
         let html = '';
         
         if (allOpportunities.length === 0) {
@@ -604,17 +608,13 @@ async function loadOpportunities() {
                 </div>
             `;
         } else {
-            if (tiers.elite.length > 0) {
-                html += renderTier('elite', 'Elite Picks', 'Highest conviction — ≥60% confidence, ≥10% edge', tiers.elite);
-            }
-            
-            if (tiers.strong.length > 0) {
-                html += renderTier('strong', 'Strong Value', 'Solid opportunities — ≥55% confidence, ≥8% edge', tiers.strong);
-            }
-            
-            if (tiers.moderate.length > 0) {
-                html += renderTier('moderate', 'Moderate Value', 'Reasonable bets — ≥52% confidence, ≥5% edge', tiers.moderate);
-            }
+            html = `
+                <div style="margin-bottom: 20px; padding: 20px; background: rgba(34, 197, 94, 0.04); border-left: 3px solid #22c55e; border-radius: 8px;">
+                    <h3 style="font-size: 16px; font-weight: 500; margin-bottom: 8px;">Today's Top 5 Picks</h3>
+                    <p style="font-size: 13px; opacity: 0.7;">Highest edge opportunities • Pre-selected for calculator</p>
+                </div>
+            `;
+            html += renderTopPicks(allOpportunities);
         }
         
         container.innerHTML = html;
@@ -631,17 +631,11 @@ async function loadOpportunities() {
     }
 }
 
-function renderTier(tierClass, tierName, tierDesc, opportunities) {
-    let html = `
-        <div class="tier-section tier-${tierClass}">
-            <div class="tier-header">
-                <div class="tier-badge">${tierName}</div>
-                <div class="tier-description">${tierDesc}</div>
-                <div class="tier-count">${opportunities.length} pick${opportunities.length !== 1 ? 's' : ''}</div>
-            </div>
-    `;
+function renderTopPicks(opportunities) {
+    let html = '';
     
-    opportunities.forEach(opp => {
+    opportunities.forEach((opp, idx) => {
+        const rank = idx + 1;
         const gameTime = new Date(opp.game_time).toLocaleString('en-US', { 
             month: 'short', 
             day: 'numeric',
@@ -652,8 +646,15 @@ function renderTier(tierClass, tierName, tierDesc, opportunities) {
         const betTypeClass = `bet-type-${opp.bet_type}`;
         const betTypeLabel = opp.bet_type.replace('_', ' ');
         
+        // Rank color based on position
+        let rankColor = '#22c55e';
+        if (rank === 1) rankColor = '#c084fc'; // Purple for #1
+        else if (rank === 2) rankColor = '#22c55e'; // Green for #2
+        else if (rank === 3) rankColor = '#0ea5e9'; // Cyan for #3
+        
         html += `
-            <div class="opp-card" data-opp-id="${opp.game_id}-${opp.bet_type}">
+            <div class="opp-card" data-opp-id="${opp.game_id}-${opp.bet_type}" style="position: relative; padding-left: 60px; margin-bottom: 15px;">
+                <div style="position: absolute; top: 15px; left: 15px; width: 32px; height: 32px; line-height: 32px; text-align: center; background: rgba(34, 197, 94, 0.15); border: 2px solid ${rankColor}; border-radius: 50%; font-size: 15px; font-weight: 700; color: ${rankColor};">${rank}</div>
                 <div class="opp-header">
                     <div class="matchup">${opp.matchup}</div>
                     <div class="bet-type-tag ${betTypeClass}">${betTypeLabel}</div>
@@ -663,13 +664,13 @@ function renderTier(tierClass, tierName, tierDesc, opportunities) {
                         <div class="stat-label">Pick</div>
                         <div class="stat-value highlight">${opp.recommended_pick}</div>
                     </div>
+                    <div class="stat-box" style="background: rgba(34, 197, 94, 0.1); border-color: rgba(34, 197, 94, 0.3);">
+                        <div class="stat-label">Edge</div>
+                        <div class="stat-value" style="color: #22c55e; font-weight: 600; font-size: 20px;">+${opp.edge_pct}%</div>
+                    </div>
                     <div class="stat-box">
                         <div class="stat-label">Confidence</div>
                         <div class="stat-value">${(opp.confidence * 100).toFixed(1)}%</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Edge</div>
-                        <div class="stat-value">+${opp.edge_pct}%</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-label">Odds</div>
@@ -680,15 +681,10 @@ function renderTier(tierClass, tierName, tierDesc, opportunities) {
                         <div class="stat-value" style="font-size: 13px;">${gameTime}</div>
                     </div>
                 </div>
-                <div class="opp-footer">
-                    <div class="model-tag">${opp.model.replace('narrative_', '').replace('_', ' ')}</div>
-                    <div class="game-time">${opp.game_id}</div>
-                </div>
             </div>
         `;
     });
     
-    html += '</div>';
     return html;
 }
 
@@ -696,47 +692,43 @@ function calculateAllocation() {
     const bankroll = parseFloat(document.getElementById('total-bankroll').value);
     const strategy = document.getElementById('strategy-select').value;
     
-    if (!bankroll || bankroll <= 0 || allOpportunities.length === 0) {
-        alert('Please enter a valid bankroll and ensure opportunities are loaded.');
+    if (!bankroll || bankroll <= 0) {
+        alert('Please enter a valid bankroll ($100+ recommended).');
         return;
     }
     
-    // Filter to significant opportunities only
-    const significantOpps = allOpportunities.filter(o => o.tier === 'elite' || o.tier === 'strong');
-    
-    if (significantOpps.length === 0) {
-        alert('No significant opportunities (Elite or Strong tier) available for allocation.');
+    if (allOpportunities.length === 0) {
+        alert('No opportunities loaded. Click "generate picks" first.');
         return;
     }
+    
+    // Use all top 5 picks (already sorted by edge)
+    const selectedOpps = allOpportunities;
+    
+    console.log(`[ALLOCATION] Allocating to all ${selectedOpps.length} top picks`);
     
     let allocations = [];
     
-    if (strategy === 'proportional') {
-        // Weight by edge × confidence
-        const totalWeight = significantOpps.reduce((sum, o) => sum + (o.edge_pct * o.confidence), 0);
-        allocations = significantOpps.map(o => {
-            const weight = (o.edge_pct * o.confidence) / totalWeight;
-            const amount = bankroll * weight * 0.15; // Use 15% of bankroll total
-            return { opp: o, amount: amount, weight: weight };
+    if (strategy === 'conservative') {
+        // Fixed 1.5% per bet regardless of edge
+        allocations = selectedOpps.map(o => {
+            const amount = bankroll * 0.015; // 1.5% per bet
+            return { opp: o, amount: amount };
         });
-    } else if (strategy === 'quarter-kelly') {
-        // Kelly fraction per bet
-        allocations = significantOpps.map(o => {
-            const edge = o.edge_pct / 100;
+    } else { // kelly
+        // Full Kelly Criterion for optimal growth
+        allocations = selectedOpps.map(o => {
             const prob = o.confidence;
             const decimalOdds = o.odds > 0 ? (o.odds / 100) + 1 : (100 / Math.abs(o.odds)) + 1;
-            const kellyFraction = (prob * decimalOdds - 1) / (decimalOdds - 1);
-            const quarterKelly = Math.max(0, Math.min(kellyFraction * 0.25, 0.05)); // Cap at 5% per bet
-            const amount = bankroll * quarterKelly;
-            return { opp: o, amount: amount, weight: quarterKelly };
+            const kellyFraction = Math.max(0, (prob * decimalOdds - 1) / (decimalOdds - 1));
+            const kellyPct = Math.min(kellyFraction, 0.05); // Cap at 5% per bet for safety
+            const amount = bankroll * kellyPct;
+            return { opp: o, amount: amount };
         });
-    } else { // flat
-        const amount = (bankroll * 0.10) / significantOpps.length; // Use 10% of bankroll total
-        allocations = significantOpps.map(o => ({ opp: o, amount: amount, weight: 1/significantOpps.length }));
     }
     
-    // Sort by amount descending
-    allocations.sort((a, b) => b.amount - a.amount);
+    // Keep in edge order (don't re-sort)
+    console.log(`[ALLOCATION] Strategy: ${strategy}, Total: $${allocations.reduce((sum, a) => sum + a.amount, 0).toFixed(2)}`);
     
     // Update UI
     const totalAllocated = allocations.reduce((sum, a) => sum + a.amount, 0);

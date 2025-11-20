@@ -327,3 +327,10 @@
 - Significant: 26
 - Validation: False
 
+
+## 2025-11-20 12:35 - nba (n=21,896)
+
+- Patterns: 20
+- Significant: 26
+- Validation: False
+

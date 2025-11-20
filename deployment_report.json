@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-11-20T12:28:26.785945",
+  "readiness_pct": 28.57142857142857,
+  "status": "PASS",
+  "results": {
+    "dependencies": false,
+    "data_collection": false,
+    "feature_extraction": false,
+    "prop_models": false,
+    "api_endpoints": true,
+    "odds_fetching": false,
+    "sample_prediction": true
+  },
+  "recommendations": []
+}

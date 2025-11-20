@@ -93,10 +93,17 @@ class NHLPlayerDataCollector:
         if data and 'featuredStats' in data:
             stats = data['featuredStats']['regularSeason']['subSeason']
             
+            first = data.get('firstName', '')
+            last = data.get('lastName', '')
+            if isinstance(first, dict):
+                first = first.get('default', '')
+            if isinstance(last, dict):
+                last = last.get('default', '')
+            
             # Extract key stats for props
             return {
                 'player_id': player_id,
-                'player_name': data.get('firstName', '') + ' ' + data.get('lastName', ''),
+                'player_name': f"{first} {last}".strip(),
                 'position': data.get('position', ''),
                 'games_played': stats.get('gamesPlayed', 0),
                 'goals': stats.get('goals', 0),

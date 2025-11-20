@@ -20,19 +20,24 @@ Date: November 16, 2025
 """
 
 from flask import Blueprint, jsonify, request
+import json
+import os
 import sys
 import numpy as np
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 # Add project to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from narrative_optimization.feature_engineering.cross_domain_features import CrossDomainFeatureExtractor
 from narrative_optimization.betting.kelly_criterion import KellyCriterion
+from narrative_optimization.betting.prop_kelly_criterion import PropKellyCriterion, PropBet
 from scripts.live_game_monitor import LiveGameMonitor
 from scripts.live_odds_fetcher import LiveOddsFetcher
+from scripts import nhl_daily_prop_predictions as nhl_prop_pipeline
 
 # Create Blueprint
 live_betting_api_bp = Blueprint('live_betting_api', __name__, url_prefix='/api/live')
@@ -40,11 +45,20 @@ live_betting_api_bp = Blueprint('live_betting_api', __name__, url_prefix='/api/l
 # Initialize components (in production, these would be singleton instances)
 cross_domain_extractor = CrossDomainFeatureExtractor()
 kelly = KellyCriterion()
+prop_kelly = PropKellyCriterion()
 game_monitor = LiveGameMonitor(update_frequency=120)
 odds_fetcher = LiveOddsFetcher()
 
 # Model cache (load models at startup)
 MODEL_CACHE = {}
+PROP_CACHE_SECONDS = int(os.getenv('PROP_CACHE_DURATION', '180'))
+MAX_PROPS_PER_SLATE = int(os.getenv('MAX_PROPS_PER_SLATE', '20'))
+
+_prop_prediction_cache: Dict[str, Optional[object]] = {
+    'timestamp': None,
+    'edges': [],
+    'metadata': {},
+}
 
 
 def load_models():
@@ -59,6 +73,145 @@ def get_mock_prediction(game_data: Dict, league: str) -> float:
     """Generate mock prediction (replace with actual model inference)."""
     # Simple mock: home team favored 55%
     return 0.55 + np.random.uniform(-0.1, 0.1)
+
+
+def _american_to_probability(odds: float) -> float:
+    """Convert American odds to implied probability."""
+    if odds > 0:
+        return 100.0 / (odds + 100.0)
+    return abs(odds) / (abs(odds) + 100.0)
+
+
+def _decode_game_matchup(game_id: str) -> Tuple[str, str]:
+    """Infer away/home team abbreviations from game_id if possible."""
+    try:
+        date_part, away, home = game_id.split('-', 2)
+        return away, home
+    except ValueError:
+        return "AWAY", "HOME"
+
+
+def _tier_prop_edge(edge: Dict) -> str:
+    """Classify prop edge into tiers."""
+    edge_pct = edge.get('edge_pct', edge.get('edge', 0) * 100)
+    confidence = edge.get('confidence', 0)
+    if edge_pct >= 8 and confidence >= 0.65:
+        return 'elite'
+    if edge_pct >= 6 and confidence >= 0.60:
+        return 'strong'
+    if edge_pct >= 4 and confidence >= 0.55:
+        return 'moderate'
+    return 'speculative'
+
+
+def _load_prop_edges(force_refresh: bool = False) -> Dict:
+    """Run (or reuse) the prop prediction pipeline."""
+    global _prop_prediction_cache
+    now = datetime.utcnow()
+    cache_ts = _prop_prediction_cache.get('timestamp')
+    if (
+        not force_refresh
+        and cache_ts
+        and isinstance(cache_ts, datetime)
+        and (now - cache_ts).total_seconds() < PROP_CACHE_SECONDS
+    ):
+        return _prop_prediction_cache
+
+    try:
+        games = nhl_prop_pipeline.fetch_todays_games()
+        if not games:
+            _prop_prediction_cache = {
+                'timestamp': now,
+                'edges': [],
+                'metadata': {
+                    'message': 'No NHL games scheduled today',
+                    'n_games': 0,
+                    'n_players': 0,
+                    'n_predictions': 0,
+                    'n_edges': 0,
+                },
+            }
+            return _prop_prediction_cache
+
+        player_data = nhl_prop_pipeline.collect_player_data(games)
+        predictions = nhl_prop_pipeline.generate_prop_predictions(player_data)
+        edges = nhl_prop_pipeline.fetch_prop_odds_and_calculate_edges(predictions)
+
+        _prop_prediction_cache = {
+            'timestamp': now,
+            'edges': edges,
+            'metadata': {
+                'n_games': len(games),
+                'n_players': len(player_data.get('players', [])),
+                'n_predictions': len(predictions),
+                'n_edges': len(edges),
+            },
+        }
+        return _prop_prediction_cache
+    except Exception as exc:
+        # Bubble up error after logging
+        print(f"[PROP PIPELINE] Error generating prop predictions: {exc}")
+        raise
+
+
+def _prepare_prop_response(
+    edges: List[Dict],
+    *,
+    game_filter: Optional[List[str]] = None,
+    min_edge: float = 0.04,
+    min_confidence: float = 0.0,
+    limit: Optional[int] = None,
+) -> Dict:
+    """Filter and annotate prop edges for API responses."""
+    game_set = set(g.upper() for g in game_filter) if game_filter else None
+    filtered: List[Dict] = []
+
+    for edge in edges:
+        if game_set and edge.get('game_id', '').upper() not in game_set:
+            continue
+        if edge.get('edge', 0.0) < min_edge:
+            continue
+        if edge.get('confidence', 0.0) < min_confidence:
+            continue
+
+        record = dict(edge)
+        tier = _tier_prop_edge(record)
+        record['tier'] = tier
+        record['edge_pct'] = round(record.get('edge_pct', record.get('edge', 0) * 100), 2)
+        record['confidence'] = round(record.get('confidence', 0.0), 3)
+        away, home = _decode_game_matchup(record.get('game_id', ''))
+        record['matchup'] = f"{away} @ {home}"
+        filtered.append(record)
+
+    filtered.sort(key=lambda e: e.get('edge', 0.0), reverse=True)
+    total_filtered = len(filtered)
+    if limit:
+        filtered = filtered[:limit]
+
+    tier_counts: Dict[str, int] = {}
+    game_counts: Dict[str, Dict[str, object]] = {}
+
+    for edge in filtered:
+        tier_counts[edge['tier']] = tier_counts.get(edge['tier'], 0) + 1
+        game_ref = game_counts.setdefault(
+            edge['game_id'],
+            {
+                'game_id': edge['game_id'],
+                'matchup': edge['matchup'],
+                'prop_count': 0,
+            },
+        )
+        game_ref['prop_count'] += 1
+
+    return {
+        'props': filtered,
+        'summary': {
+            'tier_counts': tier_counts,
+            'game_counts': list(game_counts.values()),
+            'returned': len(filtered),
+            'filtered_total': total_filtered,
+        },
+    }
 
 
 @live_betting_api_bp.route('/health', methods=['GET'])
@@ -108,6 +261,64 @@ def get_active_games():
         'n_games': len(games_with_features),
         'games': games_with_features,
         'response_time_ms': round(response_time, 2)
+    })
+
+
+@live_betting_api_bp.route('/props/predictions', methods=['POST'])
+def get_prop_predictions():
+    """
+    Generate NHL prop predictions (pre-game) and return filtered edges.
+    
+    Request body (all optional):
+    {
+        "games": ["20241120-BOS-TOR"],   # filter specific game_ids
+        "min_edge": 0.04,                # minimum edge threshold
+        "min_confidence": 0.55,          # minimum model confidence
+        "limit": 20,                     # max props to return
+        "force_refresh": false           # bypass cache
+    }
+    """
+    start_time = time.time()
+    payload = request.get_json(silent=True) or {}
+    
+    games_filter = payload.get('games')
+    min_edge = float(payload.get('min_edge', 0.04))
+    min_confidence = float(payload.get('min_confidence', 0.0))
+    limit = int(payload.get('limit', MAX_PROPS_PER_SLATE))
+    force_refresh = bool(payload.get('force_refresh', False))
+    
+    try:
+        cache = _load_prop_edges(force_refresh=force_refresh)
+        response = _prepare_prop_response(
+            cache.get('edges', []),
+            game_filter=games_filter,
+            min_edge=min_edge,
+            min_confidence=min_confidence,
+            limit=limit,
+        )
+    except Exception as exc:
+        return jsonify({
+            'success': False,
+            'error': str(exc),
+            'solution': 'Run python scripts/nhl_daily_prop_predictions.py to inspect logs'
+        }), 500
+    
+    timestamp = cache.get('timestamp')
+    response_time = (time.time() - start_time) * 1000
+    
+    return jsonify({
+        'success': True,
+        'generated_at': timestamp.isoformat() if isinstance(timestamp, datetime) else None,
+        'metadata': cache.get('metadata', {}),
+        'filters': {
+            'games': games_filter,
+            'min_edge': min_edge,
+            'min_confidence': min_confidence,
+            'limit': limit,
+        },
+        'props': response['props'],
+        'summary': response['summary'],
+        'response_time_ms': round(response_time, 2),
     })
 
 
@@ -561,10 +772,14 @@ def get_opportunities():
     league = request.args.get('league', 'nhl').lower()
     min_edge = float(request.args.get('min_edge', 0.05))
     min_confidence = float(request.args.get('min_confidence', 0.65))
+    include_props = request.args.get('include_props', 'false').lower() == 'true'
+    max_props = int(request.args.get('max_props', MAX_PROPS_PER_SLATE))
     
     opportunities = []
     predictions_age_hours = None
     auto_refreshed = False
+    prop_summary = None
+    prop_error = None
     
     # Load actual NHL predictions from existing pipeline
     if league == 'nhl':
@@ -672,6 +887,44 @@ def get_opportunities():
                     
                     opportunities.append(opp_data)
     
+    if include_props:
+        try:
+            prop_cache = _load_prop_edges(force_refresh=False)
+            prop_response = _prepare_prop_response(
+                prop_cache.get('edges', []),
+                min_edge=min_edge,
+                min_confidence=min_confidence,
+                limit=max_props,
+            )
+            prop_summary = {
+                **prop_response['summary'],
+                'generated_at': prop_cache.get('timestamp').isoformat()
+                if isinstance(prop_cache.get('timestamp'), datetime)
+                else None,
+            }
+            
+            for prop in prop_response['props']:
+                prob_key = 'prob_over' if prop.get('side') == 'over' else 'prob_under'
+                opportunities.append({
+                    'game_id': prop.get('game_id'),
+                    'matchup': prop.get('matchup'),
+                    'player_name': prop.get('player_name'),
+                    'bet_type': 'prop',
+                    'prop_type': prop.get('prop_type'),
+                    'line': prop.get('line'),
+                    'side': prop.get('side'),
+                    'recommended_pick': f"{prop.get('player_name')} {prop.get('prop_type', '').upper()} {prop.get('side', '').upper()} {prop.get('line')}",
+                    'confidence': prop.get('confidence'),
+                    'probability': round(prop.get(prob_key, 0), 3),
+                    'edge_pct': prop.get('edge_pct'),
+                    'odds': prop.get('odds'),
+                    'bookmaker': prop.get('bookmaker'),
+                    'tier': prop.get('tier'),
+                    'expected_value': prop.get('expected_value'),
+                })
+        except Exception as exc:
+            prop_error = str(exc)
+    
     response_time = (time.time() - start_time) * 1000
     
     return jsonify({
@@ -680,13 +933,17 @@ def get_opportunities():
         'opportunities': opportunities,
         'filters': {
             'min_edge': min_edge,
-            'min_confidence': min_confidence
+            'min_confidence': min_confidence,
+            'include_props': include_props,
+            'max_props': max_props
         },
         'response_time_ms': round(response_time, 2),
         'source': 'nhl_upcoming_predictions.json',
         'predictions_age_hours': round(predictions_age_hours, 1) if predictions_age_hours else None,
         'auto_refreshed': auto_refreshed,
-        'needs_refresh': predictions_age_hours > 24 if predictions_age_hours else True
+        'needs_refresh': predictions_age_hours > 24 if predictions_age_hours else True,
+        'prop_summary': prop_summary,
+        'prop_error': prop_error
     })
 
 
@@ -720,6 +977,7 @@ def calculate_kelly_size():
     odds = float(data['american_odds'])
     bankroll = float(data['bankroll'])
     kelly_fraction = data.get('kelly_fraction')
+    bet_type = data.get('bet_type', 'moneyline').lower()
     
     # Validate
     if not (0 < win_prob < 1):
@@ -728,7 +986,81 @@ def calculate_kelly_size():
     if bankroll <= 0:
         return jsonify({'error': 'bankroll must be positive'}), 400
     
-    # Calculate Kelly bet
+    if bet_type == 'prop':
+        prop_details = data.get('prop_details') or {}
+        required_prop_fields = ['player_name', 'prop_type', 'line', 'side']
+        for field in required_prop_fields:
+            if field not in prop_details:
+                return jsonify({'error': f'prop_details.{field} required'}), 400
+        
+        implied_prob = _american_to_probability(odds)
+        prop_edge = win_prob - implied_prob
+        confidence = float(prop_details.get('confidence', 0.6))
+        book_limit = float(prop_details.get('book_limit', 500))
+        
+        prop_bet = PropBet(
+            player_name=prop_details['player_name'],
+            game_id=game_id,
+            prop_type=prop_details['prop_type'],
+            line=float(prop_details['line']),
+            side=prop_details['side'],
+            odds=int(odds),
+            probability=win_prob,
+            edge=prop_edge,
+            confidence=confidence,
+            book_limit=book_limit,
+        )
+        
+        existing_props_input = prop_details.get('existing_props') or []
+        existing_props = []
+        for existing in existing_props_input:
+            try:
+                existing_props.append(PropBet(
+                    player_name=existing['player_name'],
+                    game_id=existing.get('game_id', game_id),
+                    prop_type=existing['prop_type'],
+                    line=float(existing['line']),
+                    side=existing['side'],
+                    odds=int(existing['odds']),
+                    probability=float(existing['probability']),
+                    edge=float(existing['edge']),
+                    confidence=float(existing.get('confidence', 0.6)),
+                ))
+            except Exception:
+                continue
+        
+        result = prop_kelly.calculate_prop_kelly(prop_bet, bankroll, existing_props or None)
+        response_time = (time.time() - start_time) * 1000
+        
+        return jsonify({
+            'bet_type': 'prop',
+            'game_id': game_id,
+            'player_name': prop_details['player_name'],
+            'prop': {
+                'prop_type': prop_details['prop_type'],
+                'line': float(prop_details['line']),
+                'side': prop_details['side'],
+                'odds': odds,
+                'probability': win_prob,
+                'edge': round(prop_edge, 4),
+                'confidence': confidence,
+                'book_limit': book_limit,
+            },
+            'kelly_sizing': {
+                'full_kelly': round(result.kelly_fraction * 100, 2),
+                'recommended_fraction': round(result.recommended_fraction * 100, 2),
+                'bet_amount': result.bet_amount,
+                'expected_value': result.expected_value,
+            },
+            'risk': {
+                'score': round(result.risk_score, 3),
+                'adjustments': result.adjustments,
+                'reasoning': result.reasoning,
+            },
+            'response_time_ms': round(response_time, 2),
+        })
+    
+    # Calculate Kelly bet for moneyline/puckline/totals (default)
     bet = kelly.calculate_bet(
         game_id=game_id,
         bet_type='moneyline',
@@ -742,6 +1074,7 @@ def calculate_kelly_size():
     response_time = (time.time() - start_time) * 1000
     
     return jsonify({
+        'bet_type': 'moneyline',
         'game_id': game_id,
         'kelly_sizing': {
             'full_kelly': round(bet.bankroll_fraction_full * 100, 2),
