@@ -1,0 +1,148 @@
+# {{ domain_name|title }} - Validation Report
+
+**Domain**: {{ domain_name }}  
+**Date**: {{ date }}  
+**Analyst**: {{ analyst|default('Automated') }}  
+**Dataset**: {{ sample_size|default('N/A') }} organisms
+
+---
+
+## I. Hypothesis (Presumption)
+
+**Presumption**: Narrative laws should apply to {{ domain_name }}
+
+**Test**: Д/п > 0.5 (narrative efficiency threshold)
+
+**Expectation**:
+- Expected narrativity (п): {{ pi|round(3) }}
+- Expected coupling (κ): {{ coupling|default(0.5)|round(2) }}
+- Predicted Д: {{ predicted_D|default('N/A') }}
+
+**If TRUE**: Better {{ domain_name }} narratives predict outcomes  
+**If FALSE**: Reality constraints dominate
+
+---
+
+## II. Domain Characteristics
+
+### Narrativity Calculation (п)
+
+Component scores:
+- **п_structural**: {{ narrativity.structural|round(2) }} - How many narrative paths possible?
+- **п_temporal**: {{ narrativity.temporal|round(2) }} - Does it unfold over time?
+- **п_agency**: {{ narrativity.agency|round(2) }} - Do actors have choice?
+- **п_interpretation**: {{ narrativity.interpretive|round(2) }} - Is judgment subjective?
+- **п_format**: {{ narrativity.format|round(2) }} - How flexible is the medium?
+
+**Calculated п**: {{ pi|round(3) }}
+
+```
+п = 0.30×п_structural + 0.20×п_temporal + 
+    0.25×п_agency + 0.15×п_interpretation + 
+    0.10×п_format
+```
+
+### Transformer Selection
+
+**Selected Transformers** ({{ transformer_count|default('N/A') }}):
+{% for transformer in transformers %}
+- **{{ transformer.name }}** ({{ transformer.feature_count }} features)
+  - **Why**: {{ transformer.rationale }}
+{% endfor %}
+
+**Total Features**: {{ total_features|default('N/A') }}
+
+---
+
+## III. Empirical Results
+
+### Data Extracted
+
+- **Genomes (ж)**: {{ n_organisms|default('N/A') }} × {{ n_features|default('N/A') }} matrix
+- **Story Quality (ю)**: Computed with п-based weighting
+- **Outcomes (❊)**: {{ outcome_type|default('Binary/Continuous') }} outcomes
+
+### Measured Correlation
+
+- **r (narrative correlation)**: {{ r_narrative|round(3) }}
+- **p-value**: {{ p_value|default('N/A') }}
+- **Baseline (r_baseline)**: {{ r_baseline|default('N/A')|round(3) }}
+
+### Calculated Variables
+
+- **Narrativity (п)**: {{ pi|round(3) }}
+- **Correlation (r)**: {{ r_narrative|round(3) }}
+- **Coupling (κ)**: {{ coupling|default(0.5)|round(2) }}
+- **Narrative Agency (Д)**: п × r × κ = {{ D|round(3) }}
+- **Efficiency**: Д/п = {{ efficiency|round(3) }}
+
+---
+
+## IV. Validation Result
+
+### Efficiency Test
+
+```
+Д/п = {{ efficiency|round(3) }}
+Threshold = 0.5
+```
+
+**Result**: {% if efficiency > 0.5 %}✓ PASS{% else %}❌ FAIL{% endif %}
+
+### Interpretation
+
+{% if efficiency > 0.5 %}
+- Narrative quality influences outcomes
+- Better stories predict success
+- Framework validated for this domain
+{% else %}
+- Reality constraints dominate
+- External factors matter more
+- Narrative has limited causal impact
+{% endif %}
+
+---
+
+## V. Multi-Perspective Analysis
+
+{% if ю_perspectives %}
+**Perspective Scores**:
+{% for persp_name, ю_p in ю_perspectives.items() %}
+- **{{ persp_name }}**: mean={{ ю_p.mean()|round(3) }}, r={{ perspective_importance[persp_name].correlation|round(3) if perspective_importance else 'N/A' }}
+{% endfor %}
+{% endif %}
+
+{% if ю_methods %}
+**Method Scores**:
+{% for method_name, ю_m in ю_methods.items() %}
+- **{{ method_name }}**: mean={{ ю_m.mean()|round(3) }}, r={{ method_importance[method_name].correlation|round(3) if method_importance else 'N/A' }}
+{% endfor %}
+{% endif %}
+
+---
+
+## VI. Key Findings
+
+### Top Narrative Features
+
+{% for feature in top_features[:3] %}
+{{ loop.index }}. **{{ feature.name }}**: β = {{ feature.coefficient|round(3) }}, p = {{ feature.p_value|round(4) }}
+   - {{ feature.interpretation }}
+{% endfor %}
+
+---
+
+## VII. Conclusion
+
+**Hypothesis Status**: {% if efficiency > 0.5 %}VALIDATED{% else %}REJECTED{% endif %}
+
+**Summary**: {% if efficiency > 0.5 %}Narrative laws apply to {{ domain_name }}. Better stories predict outcomes.{% else %}Reality constraints dominate in {{ domain_name }}. Narrative has limited impact.{% endif %}
+
+**Confidence**: {{ confidence|default('Medium') }}
+
+---
+
+**Validated by**: {{ analyst|default('Automated System') }}  
+**Date**: {{ date }}  
+**Status**: ✓ Complete
+

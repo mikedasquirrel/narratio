@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ domain_name|title }} - Narrative Optimization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{{ domain_name|title }} Domain Analysis</h1>
+            <p class="subtitle">Narrative Optimization Framework</p>
+        </header>
+
+        <section id="domain-overview">
+            <h2>Domain Overview</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Narrativity (п)</h3>
+                    <p class="metric-value">{{ pi|round(3) }}</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Correlation (r)</h3>
+                    <p class="metric-value">{{ r_narrative|round(3) }}</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Bridge (Д)</h3>
+                    <p class="metric-value">{{ D|round(3) }}</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Efficiency</h3>
+                    <p class="metric-value">{{ efficiency|round(3) }}</p>
+                    <p class="metric-status {% if efficiency > 0.5 %}pass{% else %}fail{% endif %}">
+                        {% if efficiency > 0.5 %}✓ PASS{% else %}❌ FAIL{% endif %}
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        {% if ю_perspectives %}
+        <section id="perspectives">
+            <h2>Multi-Perspective Analysis</h2>
+            <div class="perspectives-grid">
+                {% for persp_name, ю_p in ю_perspectives.items() %}
+                <div class="perspective-card">
+                    <h3>{{ persp_name|title }}</h3>
+                    <p class="perspective-score">{{ ю_p.mean()|round(3) }}</p>
+                    {% if perspective_importance and persp_name in perspective_importance %}
+                    <p class="perspective-correlation">
+                        r = {{ perspective_importance[persp_name].correlation|round(3) }}
+                    </p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        {% if top_features %}
+        <section id="top-features">
+            <h2>Top Narrative Features</h2>
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Coefficient</th>
+                        <th>P-value</th>
+                        <th>Importance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for feature in top_features[:10] %}
+                    <tr>
+                        <td>{{ feature.name }}</td>
+                        <td>{{ feature.coefficient|round(3) }}</td>
+                        <td>{{ feature.p_value|round(4) }}</td>
+                        <td>{{ feature.importance|round(3) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        {% endif %}
+
+        <section id="interpretation">
+            <h2>Interpretation</h2>
+            <div class="interpretation-box">
+                {% if efficiency > 0.5 %}
+                <p class="success-message">
+                    ✓ Narrative laws apply to {{ domain_name }}. Better stories predict outcomes.
+                </p>
+                {% else %}
+                <p class="info-message">
+                    ⚠ Reality constraints dominate in {{ domain_name }}. Narrative has limited impact.
+                </p>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
