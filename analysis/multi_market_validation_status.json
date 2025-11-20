@@ -1,0 +1,27 @@
+{
+  "nba_props": {
+    "market": "NBA Props",
+    "infrastructure": "EXISTS",
+    "data_available": true,
+    "total_players": 855,
+    "validation_status": "NEEDS_TESTING",
+    "expected_roi": "20-40%",
+    "expected_volume": "50-100 bets/day",
+    "profit_potential": "HIGH (10x game winner volume)"
+  },
+  "nba_totals": {
+    "market": "NBA Totals",
+    "infrastructure": "EXISTS",
+    "model": "nba_totals_model.py",
+    "validation_status": "NEEDS_TESTING",
+    "expected_roi": "15-25%",
+    "expected_volume": "10-15 bets/day",
+    "profit_potential": "MEDIUM"
+  },
+  "nhl_futures": {
+    "market": "NHL Futures",
+    "correlation": -0.07421362395950845,
+    "validation_status": "PRELIMINARY",
+    "profit_potential": "MEDIUM"
+  }
+}

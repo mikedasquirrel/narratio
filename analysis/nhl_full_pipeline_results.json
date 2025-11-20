@@ -1,0 +1,99 @@
+{
+  "feature_count": 354,
+  "universal_attempted": true,
+  "results": [
+    {
+      "model": "Meta-Ensemble",
+      "threshold": 0.5,
+      "bets": 2779,
+      "wins": 1402,
+      "win_rate": 0.5044980208708169,
+      "roi": -0.036913278157610585
+    },
+    {
+      "model": "GBM",
+      "threshold": 0.5,
+      "bets": 2779,
+      "wins": 1423,
+      "win_rate": 0.5120546959337892,
+      "roi": -0.022487585462396487
+    },
+    {
+      "model": "Meta-Ensemble",
+      "threshold": 0.55,
+      "bets": 2609,
+      "wins": 1320,
+      "win_rate": 0.5059409735530854,
+      "roi": -0.03415868148715989
+    },
+    {
+      "model": "GBM",
+      "threshold": 0.55,
+      "bets": 1952,
+      "wins": 1007,
+      "win_rate": 0.5158811475409836,
+      "roi": -0.015182889344262318
+    },
+    {
+      "model": "Meta-Ensemble",
+      "threshold": 0.6,
+      "bets": 2425,
+      "wins": 1226,
+      "win_rate": 0.5055670103092783,
+      "roi": -0.034872577319587705
+    },
+    {
+      "model": "GBM",
+      "threshold": 0.6,
+      "bets": 1215,
+      "wins": 648,
+      "win_rate": 0.5333333333333333,
+      "roi": 0.018133333333333335
+    },
+    {
+      "model": "Meta-Ensemble",
+      "threshold": 0.65,
+      "bets": 2241,
+      "wins": 1131,
+      "win_rate": 0.5046854082998661,
+      "roi": -0.03655555555555562
+    },
+    {
+      "model": "GBM",
+      "threshold": 0.65,
+      "bets": 688,
+      "wins": 390,
+      "win_rate": 0.5668604651162791,
+      "roi": 0.08213662790697673
+    },
+    {
+      "model": "Meta-Ensemble",
+      "threshold": 0.7,
+      "bets": 2039,
+      "wins": 1033,
+      "win_rate": 0.506620892594409,
+      "roi": -0.0328607160372732
+    },
+    {
+      "model": "GBM",
+      "threshold": 0.7,
+      "bets": 321,
+      "wins": 185,
+      "win_rate": 0.5763239875389408,
+      "roi": 0.10020249221183797
+    }
+  ],
+  "best_result": {
+    "model": "GBM",
+    "threshold": 0.7,
+    "bets": 321,
+    "wins": 185,
+    "win_rate": 0.5763239875389408,
+    "roi": 0.10020249221183797
+  },
+  "comparison_to_original": {
+    "original_roi": 0.325,
+    "full_pipeline_roi": 0.10020249221183797,
+    "improvement": -22.479750778816204
+  }
+}

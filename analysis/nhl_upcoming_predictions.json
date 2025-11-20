@@ -1,0 +1,548 @@
+[
+  {
+    "game_id": "fada3121c5e0cb9ba6fff552d43ffc96",
+    "matchup": "CBJ @ TOR",
+    "date": null,
+    "commence_time": "2025-11-21T00:10:00Z",
+    "moneyline_home": -113,
+    "moneyline_away": -110,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.558,
+        "edge": 0.0275,
+        "odds": -113,
+        "implied_prob": 0.5305
+      }
+    ]
+  },
+  {
+    "game_id": "688c329bcb1860abe45d05be7297814d",
+    "matchup": "NJD @ FLA",
+    "date": null,
+    "commence_time": "2025-11-21T00:10:00Z",
+    "moneyline_home": -152,
+    "moneyline_away": 123,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.1168,
+        "odds": -152,
+        "implied_prob": 0.6032
+      },
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "puck_line",
+        "prob": 0.57,
+        "edge": 0.1926,
+        "odds": 165,
+        "implied_prob": 0.3774,
+        "spread": -1.5
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.5471,
+        "edge": 0.0986,
+        "odds": 123,
+        "implied_prob": 0.4484
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "under",
+        "bet_type": "total",
+        "prob": 0.52,
+        "edge": 0.025,
+        "odds": 102,
+        "implied_prob": 0.495,
+        "total_line": 5.5
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.515,
+        "edge": 0.0666,
+        "odds": 123,
+        "implied_prob": 0.4484
+      }
+    ]
+  },
+  {
+    "game_id": "a796fd73eb237f89885826fd14e8abeb",
+    "matchup": "WSH @ MON",
+    "date": null,
+    "commence_time": "2025-11-21T00:10:00Z",
+    "moneyline_home": -130,
+    "moneyline_away": 105,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.5899,
+        "edge": 0.0246,
+        "odds": -130,
+        "implied_prob": 0.5652
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.5524,
+        "edge": 0.0646,
+        "odds": 105,
+        "implied_prob": 0.4878
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "under",
+        "bet_type": "total",
+        "prob": 0.52,
+        "edge": 0.02,
+        "odds": 100,
+        "implied_prob": 0.5,
+        "total_line": 6.0
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.54,
+        "edge": 0.0522,
+        "odds": 105,
+        "implied_prob": 0.4878
+      }
+    ]
+  },
+  {
+    "game_id": "5522fb1a10f5c187605df6ddb50c2741",
+    "matchup": "STL @ PHI",
+    "date": null,
+    "commence_time": "2025-11-21T00:10:00Z",
+    "moneyline_home": -124,
+    "moneyline_away": 100,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.22,
+        "odds": 100,
+        "implied_prob": 0.5
+      },
+      {
+        "model": "narrative_logistic",
+        "side": "over",
+        "bet_type": "total",
+        "prob": 0.5596,
+        "edge": 0.0269,
+        "odds": -114,
+        "implied_prob": 0.5327,
+        "total_line": 5.5
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.594,
+        "edge": 0.0404,
+        "odds": -124,
+        "implied_prob": 0.5536
+      }
+    ]
+  },
+  {
+    "game_id": "e1b8715f5a766a496a772b078b063d8e",
+    "matchup": "EDM @ TBL",
+    "date": null,
+    "commence_time": "2025-11-21T00:40:00Z",
+    "moneyline_home": -155,
+    "moneyline_away": 125,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.2756,
+        "odds": 125,
+        "implied_prob": 0.4444
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.637,
+        "edge": 0.0291,
+        "odds": -155,
+        "implied_prob": 0.6078
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "puck_line",
+        "prob": 0.487,
+        "edge": 0.1023,
+        "odds": 160,
+        "implied_prob": 0.3846,
+        "spread": -1.5
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.4875,
+        "edge": 0.0431,
+        "odds": 125,
+        "implied_prob": 0.4444
+      }
+    ]
+  },
+  {
+    "game_id": "d662f149c37f482147c5e724e9ae5b53",
+    "matchup": "NYR @ COL",
+    "date": null,
+    "commence_time": "2025-11-21T02:10:00Z",
+    "moneyline_home": -230,
+    "moneyline_away": 180,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.3629,
+        "odds": 180,
+        "implied_prob": 0.3571
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "puck_line",
+        "prob": 0.5222,
+        "edge": 0.0571,
+        "odds": 115,
+        "implied_prob": 0.4651,
+        "spread": -1.5
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.515,
+        "edge": 0.1579,
+        "odds": 180,
+        "implied_prob": 0.3571
+      }
+    ]
+  },
+  {
+    "game_id": "be2bee10632ca2f750181680bf7259b9",
+    "matchup": "OTT @ ANA",
+    "date": null,
+    "commence_time": "2025-11-21T03:10:00Z",
+    "moneyline_home": 104,
+    "moneyline_away": -129,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.1567,
+        "odds": -129,
+        "implied_prob": 0.5633
+      },
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "puck_line",
+        "prob": 0.57,
+        "edge": 0.2252,
+        "odds": 190,
+        "implied_prob": 0.3448,
+        "spread": -1.5
+      },
+      {
+        "model": "narrative_logistic",
+        "side": "over",
+        "bet_type": "total",
+        "prob": 0.5596,
+        "edge": 0.0474,
+        "odds": -105,
+        "implied_prob": 0.5122,
+        "total_line": 6.5
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.516,
+        "edge": 0.0258,
+        "odds": 104,
+        "implied_prob": 0.4902
+      }
+    ]
+  },
+  {
+    "game_id": "be124f7540029fb3ae7418fddac0b13f",
+    "matchup": "DAL @ VAN",
+    "date": null,
+    "commence_time": "2025-11-21T03:10:00Z",
+    "moneyline_home": 130,
+    "moneyline_away": -165,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.5453,
+        "edge": 0.1105,
+        "odds": 130,
+        "implied_prob": 0.4348
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.5649,
+        "edge": 0.1301,
+        "odds": 130,
+        "implied_prob": 0.4348
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "under",
+        "bet_type": "total",
+        "prob": 0.52,
+        "edge": 0.02,
+        "odds": 100,
+        "implied_prob": 0.5,
+        "total_line": 6.0
+      },
+      {
+        "model": "narrative_forest",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.495,
+        "edge": 0.0602,
+        "odds": 130,
+        "implied_prob": 0.4348
+      }
+    ]
+  },
+  {
+    "game_id": "9cb2d13cab0ff84fecb32fa6580973f7",
+    "matchup": "LAK @ SJS",
+    "date": null,
+    "commence_time": "2025-11-21T03:10:00Z",
+    "moneyline_home": 150,
+    "moneyline_away": -190,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.32,
+        "odds": 150,
+        "implied_prob": 0.4
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.32,
+        "odds": 150,
+        "implied_prob": 0.4
+      },
+      {
+        "model": "narrative_forest",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.475,
+        "edge": 0.075,
+        "odds": 150,
+        "implied_prob": 0.4
+      }
+    ]
+  },
+  {
+    "game_id": "1170b462998e64bc0691d2ab58d9af2b",
+    "matchup": "MIN @ PIT",
+    "date": null,
+    "commence_time": "2025-11-22T00:00:00Z",
+    "moneyline_home": -127,
+    "moneyline_away": 102,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.225,
+        "odds": 102,
+        "implied_prob": 0.495
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.5852,
+        "edge": 0.0257,
+        "odds": -127,
+        "implied_prob": 0.5595
+      }
+    ]
+  },
+  {
+    "game_id": "ab53cd83a77bf98680a2e0b12142e779",
+    "matchup": "CAR @ WPG",
+    "date": null,
+    "commence_time": "2025-11-22T01:00:00Z",
+    "moneyline_home": -112,
+    "moneyline_away": -112,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.1917,
+        "odds": -112,
+        "implied_prob": 0.5283
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.6345,
+        "edge": 0.1062,
+        "odds": -112,
+        "implied_prob": 0.5283
+      }
+    ]
+  },
+  {
+    "game_id": "8ab28f816f034cdaa48ac9577f5b1f02",
+    "matchup": "BOS @ LAK",
+    "date": null,
+    "commence_time": "2025-11-22T03:30:00Z",
+    "moneyline_home": -195,
+    "moneyline_away": 150,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_logistic",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.059,
+        "odds": -195,
+        "implied_prob": 0.661
+      },
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.72,
+        "edge": 0.059,
+        "odds": -195,
+        "implied_prob": 0.661
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.475,
+        "edge": 0.075,
+        "odds": 150,
+        "implied_prob": 0.4
+      }
+    ]
+  },
+  {
+    "game_id": "8a22b7924bea68b6761edbb59484e07f",
+    "matchup": "NYI @ DET",
+    "date": null,
+    "commence_time": "2025-11-21T00:10:00Z",
+    "moneyline_home": -134,
+    "moneyline_away": 108,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_gradient",
+        "side": "home",
+        "bet_type": "moneyline",
+        "prob": 0.5928,
+        "edge": 0.0201,
+        "odds": -134,
+        "implied_prob": 0.5726
+      }
+    ]
+  },
+  {
+    "game_id": "6ac3a1aa8dd538821b9053ecfb565bfd",
+    "matchup": "CHI @ BUF",
+    "date": null,
+    "commence_time": "2025-11-22T00:00:00Z",
+    "moneyline_home": -159,
+    "moneyline_away": 128,
+    "source_dataset": "the-odds-api-live",
+    "exported_at": "2025-11-20T11:47:14.382056",
+    "recommendations": [
+      {
+        "model": "narrative_gradient",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.4789,
+        "edge": 0.0403,
+        "odds": 128,
+        "implied_prob": 0.4386
+      },
+      {
+        "model": "narrative_forest",
+        "side": "away",
+        "bet_type": "moneyline",
+        "prob": 0.55,
+        "edge": 0.1114,
+        "odds": 128,
+        "implied_prob": 0.4386
+      }
+    ]
+  }
+]

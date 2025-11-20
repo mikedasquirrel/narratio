@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-11-20T12:00:00Z",
+  "cutoff_date": "2024-01-01",
+  "train_games": 255,
+  "test_games": 9,
+  "feature_count": 47,
+  "context": "QB Edge + Home Underdog",
+  "thresholds": [
+    {
+      "threshold": 0.55,
+      "bets": 20,
+      "win_rate": 0.667,
+      "roi": 0.273
+    }
+  ],
+  "source": "Context-specific validation from EXECUTIVE_SUMMARY_BACKTEST.md",
+  "training_performance": {
+    "games": 78,
+    "win_rate": 0.615,
+    "roi": 0.175
+  },
+  "testing_performance": {
+    "games": 9,
+    "win_rate": 0.667,
+    "roi": 0.273
+  }
+}
+

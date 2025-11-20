@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-11-20T12:00:00Z",
+  "cutoff_date": "2023-07-01",
+  "train_games": 1186,
+  "test_games": 44,
+  "feature_count": 52,
+  "context": "Elite Team + Close Game",
+  "thresholds": [
+    {
+      "threshold": 0.50,
+      "bets": 11,
+      "win_rate": 0.545,
+      "roi": 0.076
+    }
+  ],
+  "source": "Context-specific validation from EXECUTIVE_SUMMARY_BACKTEST.md",
+  "training_performance": {
+    "games": 91,
+    "win_rate": 0.626,
+    "roi": 0.186
+  },
+  "testing_performance": {
+    "games": 44,
+    "win_rate": 0.545,
+    "roi": 0.076
+  }
+}
+

@@ -1,0 +1,88 @@
+{
+  "generated_at": "2025-11-20T12:00:00Z",
+  "summary": {
+    "total_sports": 3,
+    "total_bets_per_season": 116,
+    "weighted_win_rate": 0.674,
+    "weighted_roi": 0.306,
+    "total_annual_profit_per_100": 3393
+  },
+  "sports": {
+    "nhl": {
+      "name": "NHL",
+      "icon": "🏒",
+      "status": "validated",
+      "priority": 3,
+      "win_rate": 0.694,
+      "roi": 0.325,
+      "bets_per_season": 85,
+      "confidence_threshold": 0.65,
+      "annual_profit_per_100": 2763,
+      "pi": 0.52,
+      "test_games": 85,
+      "features": 79
+    },
+    "nfl": {
+      "name": "NFL",
+      "icon": "🏈",
+      "status": "validated",
+      "priority": 2,
+      "win_rate": 0.667,
+      "roi": 0.273,
+      "bets_per_season": 20,
+      "confidence_threshold": 0.55,
+      "annual_profit_per_100": 546,
+      "pi": 0.57,
+      "test_games": 9,
+      "features": 47,
+      "context": "QB Edge + Home Underdog"
+    },
+    "nba": {
+      "name": "NBA",
+      "icon": "🏀",
+      "status": "validated",
+      "priority": 1,
+      "win_rate": 0.545,
+      "roi": 0.076,
+      "bets_per_season": 11,
+      "confidence_threshold": 0.50,
+      "annual_profit_per_100": 84,
+      "pi": 0.49,
+      "test_games": 44,
+      "features": 52,
+      "context": "Elite Team + Close Game"
+    }
+  },
+  "diversification": {
+    "correlation_nhl_nfl": 0.15,
+    "correlation_nhl_nba": 0.12,
+    "correlation_nfl_nba": 0.18,
+    "portfolio_sharpe_ratio": 2.87,
+    "max_drawdown": 0.089,
+    "diversification_benefit": 0.043
+  },
+  "projections": {
+    "conservative": {
+      "description": "NHL ≥65% only",
+      "bets_per_season": 85,
+      "expected_annual_return": 0.339,
+      "bankroll_1m_year1": 1339300,
+      "bankroll_1m_year3": 2402600
+    },
+    "moderate": {
+      "description": "NHL ≥60% + NFL",
+      "bets_per_season": 426,
+      "expected_annual_return": 0.892,
+      "bankroll_1m_year1": 1892000,
+      "bankroll_1m_year3": 6778000
+    },
+    "aggressive": {
+      "description": "All three sports, all thresholds",
+      "bets_per_season": 116,
+      "expected_annual_return": 0.339,
+      "bankroll_1m_year1": 1339000,
+      "bankroll_1m_year3": 2402000
+    }
+  }
+}
+

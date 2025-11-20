@@ -1,0 +1,37 @@
+{
+  "nba": {
+    "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_enhanced_betting_data.json",
+    "total_entries": 11979,
+    "win_rate": 0.5044661490942483,
+    "moneyline_roi": 0.12281652133988216,
+    "favorite_roi": -0.08132726698272666,
+    "underdog_roi": 0.35210740872031193,
+    "form_breakdown": {
+      "cold": {
+        "games": 4475,
+        "win_rate": 0.4223463687150838
+      },
+      "average": {
+        "games": 5073,
+        "win_rate": 0.5196136408436822
+      },
+      "hot": {
+        "games": 2431,
+        "win_rate": 0.6240230357877417
+      }
+    }
+  },
+  "nfl": {
+    "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nfl_games_with_odds.json",
+    "total_games": 3010,
+    "home_win_rate": 0.5514950166112956,
+    "favorite_games": 1636,
+    "favorite_win_rate": 0.965158924205379,
+    "favorite_cover_rate": 0.42603911980440096,
+    "underdog_games": 1374,
+    "underdog_win_rate": 0.05895196506550218,
+    "underdog_cover_rate": 0.5276564774381368,
+    "close_spread_games": 553
+  },
+  "generated_at": "2025-11-19T10:05:23.604713"
+}

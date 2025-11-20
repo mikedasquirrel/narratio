@@ -1,0 +1,50 @@
+{
+  "feature_count": 88,
+  "nominative_features": 38,
+  "performance_features": 50,
+  "test_results": [
+    {
+      "threshold": 0.5,
+      "bets": 2779,
+      "wins": 1519,
+      "win_rate": 0.5465994962216625,
+      "roi": 0.04345843828715368
+    },
+    {
+      "threshold": 0.55,
+      "bets": 2210,
+      "wins": 1214,
+      "win_rate": 0.5493212669683258,
+      "roi": 0.048654298642534066
+    },
+    {
+      "threshold": 0.6,
+      "bets": 1731,
+      "wins": 978,
+      "win_rate": 0.5649913344887348,
+      "roi": 0.07856845753899488
+    },
+    {
+      "threshold": 0.65,
+      "bets": 1153,
+      "wins": 635,
+      "win_rate": 0.5507372072853426,
+      "roi": 0.05135732870771903
+    },
+    {
+      "threshold": 0.7,
+      "bets": 720,
+      "wins": 393,
+      "win_rate": 0.5458333333333333,
+      "roi": 0.04199583333333323
+    }
+  ],
+  "best_result": {
+    "threshold": 0.6,
+    "bets": 1731,
+    "wins": 978,
+    "win_rate": 0.5649913344887348,
+    "roi": 0.07856845753899488
+  },
+  "improvement_vs_original": -24.64315424610051
+}
