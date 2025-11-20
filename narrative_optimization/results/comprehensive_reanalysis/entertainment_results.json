@@ -1,0 +1,21 @@
+{
+  "movies": {
+    "domain": "movies",
+    "n_patterns": 20,
+    "significant_patterns": 19,
+    "pi": 0.65,
+    "sample_size": 1500,
+    "used_transformers": true,
+    "fast_mode": false,
+    "timestamp": "2025-11-16T08:53:19.353085"
+  },
+  "oscars": {
+    "error": "Found array with 0 sample(s) (shape=(0, 5000)) while a minimum of 1 is required by TfidfTransformer."
+  },
+  "music": {
+    "error": "Failed to load domain"
+  },
+  "wwe": {
+    "error": "Failed to load domain"
+  }
+}

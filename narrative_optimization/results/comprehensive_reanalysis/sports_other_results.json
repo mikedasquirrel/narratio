@@ -1,0 +1,17 @@
+{
+  "golf": {
+    "error": "empty vocabulary; perhaps the documents only contain stop words"
+  },
+  "ufc": {
+    "error": "empty vocabulary; perhaps the documents only contain stop words"
+  },
+  "mlb": {
+    "error": "empty vocabulary; perhaps the documents only contain stop words"
+  },
+  "boxing": {
+    "error": "Failed to load domain"
+  },
+  "poker": {
+    "error": "empty vocabulary; perhaps the documents only contain stop words"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "generated_at": "2025-11-18T17:53:51.485899Z",
+  "domains": [
+    {
+      "name": "nhl",
+      "pi": 0.52,
+      "theta": 0.6045223120694819,
+      "lambda": 0.5323957810145655,
+      "context_strength": 0.061419405056234,
+      "nominative_richness": -0.0015067805123053502,
+      "effect_size": 0.061419405056234
+    },
+    {
+      "name": "nfl",
+      "pi": 0.57,
+      "theta": 0.9817945383615084,
+      "lambda": 0.5617529880478087,
+      "context_strength": 0.4302995217502128,
+      "nominative_richness": 0.010624169986719778,
+      "effect_size": 0.4302995217502128
+    },
+    {
+      "name": "nba",
+      "pi": 0.49,
+      "theta": 0.9991723224631683,
+      "lambda": 0.5602671118530885,
+      "context_strength": 0.4947061733689201,
+      "nominative_richness": 0.0006677796327212437,
+      "effect_size": 0.4947061733689201
+    },
+    {
+      "name": "mlb",
+      "pi": 0.55,
+      "theta": 0.0,
+      "lambda": 0.0,
+      "context_strength": 0.0,
+      "nominative_richness": 0.0,
+      "effect_size": 0.0
+    },
+    {
+      "name": "golf",
+      "pi": 0.7,
+      "theta": 0.9987577639751553,
+      "lambda": 0.985974025974026,
+      "context_strength": 0.984472049689441,
+      "nominative_richness": 0.0,
+      "effect_size": 0.984472049689441
+    },
+    {
+      "name": "startups",
+      "pi": 0.76,
+      "theta": 1.0,
+      "lambda": 0.7352941176470589,
+      "context_strength": 0.22304832713754652,
+      "nominative_richness": -0.014705882352941124,
+      "effect_size": 0.22304832713754652
+    },
+    {
+      "name": "stereotropes",
+      "pi": 0.78,
+      "theta": 2.0,
+      "lambda": 0.016881860912316582,
+      "context_strength": -1.9703485740153917,
+      "nominative_richness": -0.040812857831566074,
+      "effect_size": -1.9703485740153917
+    },
+    {
+      "name": "ml_research",
+      "pi": 0.74,
+      "theta": 0.0,
+      "lambda": -1.321477765674676,
+      "context_strength": 0.0,
+      "nominative_richness": -0.4598598556857496,
+      "effect_size": 0.0
+    },
+    {
+      "name": "wikiplots",
+      "pi": 0.81,
+      "theta": 2.6142585416726467,
+      "lambda": 0.2429363484349607,
+      "context_strength": 1.3611568620264678,
+      "nominative_richness": 0.16630752405006,
+      "effect_size": 1.3611568620264678
+    },
+    {
+      "name": "cmu_movies",
+      "pi": 0.78,
+      "theta": 510.134899869633,
+      "lambda": -0.041191209289389574,
+      "context_strength": 403.4913283374407,
+      "nominative_richness": 0.16654021013171127,
+      "effect_size": 403.4913283374407
+    },
+    {
+      "name": "supreme_court",
+      "pi": 0.52,
+      "theta": 0.0,
+      "lambda": 0.5179256553448353,
+      "context_strength": 0.0,
+      "nominative_richness": 0.6875771170116216,
+      "effect_size": 0.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "domain": "nba",
+  "metric": "accuracy",
+  "baseline": 0.5595993322203673,
+  "enriched": 0.5602671118530885,
+  "lift": 0.0006677796327212437,
+  "sample_size": 11979,
+  "feature_count": 41
+}

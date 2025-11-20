@@ -1,0 +1,27 @@
+{
+  "total_domains_tested": 5,
+  "domains_with_patterns": 5,
+  "total_patterns": 50,
+  "domains": {
+    "MLB": {
+      "patterns": 10,
+      "best_accuracy": 0.8490566037735849
+    },
+    "UFC": {
+      "patterns": 10,
+      "best_accuracy": 0.8518518518518519
+    },
+    "Golf": {
+      "patterns": 10,
+      "best_accuracy": 0.6666666666666666
+    },
+    "Crypto": {
+      "patterns": 10,
+      "best_accuracy": 0.7289719626168225
+    },
+    "Startups": {
+      "patterns": 10,
+      "best_accuracy": 0.8181818181818182
+    }
+  }
+}

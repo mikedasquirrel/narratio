@@ -1,0 +1,2899 @@
+{
+  "domain": "nhl",
+  "baseline_win_rate": 0.5431029070132479,
+  "patterns": [
+    {
+      "pattern_name": "nhl_context_1",
+      "conditions": {
+        "record_differential": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.58
+        }
+      },
+      "accuracy": 0.6045223120694819,
+      "sample_size": 6678,
+      "effect_size": 0.21388125317259893,
+      "edge_vs_baseline": 0.061419405056234,
+      "pi_mean": 0.5547297580524027,
+      "pi_std": 0.016029839065220004
+    },
+    {
+      "pattern_name": "nhl_context_2",
+      "conditions": {
+        "record_differential": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.58
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6045223120694819,
+      "sample_size": 6678,
+      "effect_size": 0.21388125317259893,
+      "edge_vs_baseline": 0.061419405056234,
+      "pi_mean": 0.5547297580524027,
+      "pi_std": 0.016029839065220004
+    },
+    {
+      "pattern_name": "nhl_context_3",
+      "conditions": {
+        "multi_scale_enhanced_micro_record_delta": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.58
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6045223120694819,
+      "sample_size": 6678,
+      "effect_size": 0.21388125317259893,
+      "edge_vs_baseline": 0.061419405056234,
+      "pi_mean": 0.5547297580524027,
+      "pi_std": 0.016029839065220004
+    },
+    {
+      "pattern_name": "nhl_context_4",
+      "conditions": {
+        "record_differential": {
+          "min": 0.0
+        },
+        "implied_prob": {
+          "min": 0.5381346960585476
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6045078888054095,
+      "sample_size": 6655,
+      "effect_size": 0.21329981141796428,
+      "edge_vs_baseline": 0.061404981792161584,
+      "pi_mean": 0.5547850311789455,
+      "pi_std": 0.016007991587451992
+    },
+    {
+      "pattern_name": "nhl_context_5",
+      "conditions": {
+        "record_differential": {
+          "min": 0.0
+        },
+        "implied_prob": {
+          "min": 0.5381346960585476
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6045078888054095,
+      "sample_size": 6655,
+      "effect_size": 0.21329981141796428,
+      "edge_vs_baseline": 0.061404981792161584,
+      "pi_mean": 0.5547850311789455,
+      "pi_std": 0.016007991587451992
+    },
+    {
+      "pattern_name": "nhl_context_6",
+      "conditions": {
+        "implied_prob": {
+          "min": 0.5381346960585476
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_record_delta": {
+          "min": 0.0
+        }
+      },
+      "accuracy": 0.6045078888054095,
+      "sample_size": 6655,
+      "effect_size": 0.21329981141796428,
+      "edge_vs_baseline": 0.061404981792161584,
+      "pi_mean": 0.5547850311789455,
+      "pi_std": 0.016007991587451992
+    },
+    {
+      "pattern_name": "nhl_context_7",
+      "conditions": {
+        "implied_prob": {
+          "min": 0.5381346960585476
+        },
+        "multi_scale_enhanced_micro_record_delta": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6045078888054095,
+      "sample_size": 6655,
+      "effect_size": 0.21329981141796428,
+      "edge_vs_baseline": 0.061404981792161584,
+      "pi_mean": 0.5547850311789455,
+      "pi_std": 0.016007991587451992
+    },
+    {
+      "pattern_name": "nhl_context_8",
+      "conditions": {
+        "rest_advantage": {
+          "min": -1.0
+        },
+        "record_differential": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6006581771354986,
+      "sample_size": 6989,
+      "effect_size": 0.20723152491753125,
+      "edge_vs_baseline": 0.0575552701222507,
+      "pi_mean": 0.5516539579899623,
+      "pi_std": 0.016601897885966683
+    },
+    {
+      "pattern_name": "nhl_context_9",
+      "conditions": {
+        "rest_advantage": {
+          "min": -1.0
+        },
+        "record_differential": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6006581771354986,
+      "sample_size": 6989,
+      "effect_size": 0.20723152491753125,
+      "edge_vs_baseline": 0.0575552701222507,
+      "pi_mean": 0.5516539579899623,
+      "pi_std": 0.016601897885966683
+    },
+    {
+      "pattern_name": "nhl_context_10",
+      "conditions": {
+        "rest_advantage": {
+          "min": -1.0
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_record_delta": {
+          "min": 0.0
+        }
+      },
+      "accuracy": 0.6006581771354986,
+      "sample_size": 6989,
+      "effect_size": 0.20723152491753125,
+      "edge_vs_baseline": 0.0575552701222507,
+      "pi_mean": 0.5516539579899623,
+      "pi_std": 0.016601897885966683
+    },
+    {
+      "pattern_name": "nhl_context_11",
+      "conditions": {
+        "rest_advantage": {
+          "min": -1.0
+        },
+        "multi_scale_enhanced_micro_record_delta": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_temporal_compression": {
+          "eq": 0
+        }
+      },
+      "accuracy": 0.6006581771354986,
+      "sample_size": 6989,
+      "effect_size": 0.20723152491753125,
+      "edge_vs_baseline": 0.0575552701222507,
+      "pi_mean": 0.5516539579899623,
+      "pi_std": 0.016601897885966683
+    },
+    {
+      "pattern_name": "nhl_context_12",
+      "conditions": {
+        "record_differential": {
+          "min": 0.0
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_rest_delta": {
+          "min": -0.2
+        }
+      },
+      "accuracy": 0.6006581771354986,
+      "sample_size": 6989,
+      "effect_size": 0.20723152491753125,
+      "edge_vs_baseline": 0.0575552701222507,
+      "pi_mean": 0.5516539579899623,
+      "pi_std": 0.016601897885966683
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_7",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_7",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_7",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_7",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_7",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6080038572806171,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0649009502673692,
+      "sample_size": 6222,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_8",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6078808265257087,
+      "baseline": 0.5431029070132479,
+      "lift": 0.06477791951246081,
+      "sample_size": 6243,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_2",
+      "win_rate": 0.6045223120694819,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061419405056234,
+      "sample_size": 6678,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_3",
+      "win_rate": 0.6045223120694819,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061419405056234,
+      "sample_size": 6678,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_3",
+      "win_rate": 0.6045223120694819,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061419405056234,
+      "sample_size": 6678,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_4",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_5",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_6",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_1",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_4",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_5",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_6",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_2",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_4",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_5",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_6",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_3",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_5",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_6",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_4",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_6",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_5",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_6",
+      "pattern_b": "nhl_context_7",
+      "win_rate": 0.6045078888054095,
+      "baseline": 0.5431029070132479,
+      "lift": 0.061404981792161584,
+      "sample_size": 6655,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_8",
+      "pattern_b": "nhl_context_9",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_8",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_8",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_8",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_9",
+      "pattern_b": "nhl_context_10",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_9",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_9",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_10",
+      "pattern_b": "nhl_context_11",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_10",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    },
+    {
+      "pattern_a": "nhl_context_11",
+      "pattern_b": "nhl_context_12",
+      "win_rate": 0.6006581771354986,
+      "baseline": 0.5431029070132479,
+      "lift": 0.0575552701222507,
+      "sample_size": 6989,
+      "classification": "supporting"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "nhl_context_1",
+      "ate": -0.385514533872089,
+      "att": 0.12325931483576352,
+      "control_mean": 0.47155477144451,
+      "treated_mean": 0.5948140862802735,
+      "uplift": 0.12325931483576352,
+      "sample_sizes": {
+        "treated": 6678,
+        "control": 9249,
+        "total": 15927
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nhl_context_1"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nhl_context_1",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nhl_context_1"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nhl_context_1"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nhl_context_1"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nhl_context_1"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "implied_prob",
+          "nhl_context_1"
+        ],
+        [
+          "implied_prob",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nhl_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nhl_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nhl_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nhl_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nhl_context_1"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nhl_context_1"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nhl_context_1"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nhl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nhl_context_2",
+      "ate": -0.385514533872089,
+      "att": 0.12325931483576352,
+      "control_mean": 0.47155477144451,
+      "treated_mean": 0.5948140862802735,
+      "uplift": 0.12325931483576352,
+      "sample_sizes": {
+        "treated": 6678,
+        "control": 9249,
+        "total": 15927
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nhl_context_2"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nhl_context_2",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nhl_context_2"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nhl_context_2"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nhl_context_2"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nhl_context_2"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "implied_prob",
+          "nhl_context_2"
+        ],
+        [
+          "implied_prob",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nhl_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nhl_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nhl_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nhl_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nhl_context_2"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nhl_context_2"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nhl_context_2"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nhl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nhl_context_3",
+      "ate": -0.385514533872089,
+      "att": 0.12325931483576352,
+      "control_mean": 0.47155477144451,
+      "treated_mean": 0.5948140862802735,
+      "uplift": 0.12325931483576352,
+      "sample_sizes": {
+        "treated": 6678,
+        "control": 9249,
+        "total": 15927
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nhl_context_3"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nhl_context_3",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nhl_context_3"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nhl_context_3"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nhl_context_3"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nhl_context_3"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "implied_prob",
+          "nhl_context_3"
+        ],
+        [
+          "implied_prob",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nhl_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nhl_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nhl_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nhl_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nhl_context_3"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nhl_context_3"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nhl_context_3"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nhl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nhl_context_4",
+      "ate": -0.3302466933640872,
+      "att": 0.13075783625941878,
+      "control_mean": 0.4663099044412636,
+      "treated_mean": 0.5970677407006824,
+      "uplift": 0.13075783625941878,
+      "sample_sizes": {
+        "treated": 6655,
+        "control": 9272,
+        "total": 15927
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nhl_context_4"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nhl_context_4",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nhl_context_4"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nhl_context_4"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nhl_context_4"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nhl_context_4"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "implied_prob",
+          "nhl_context_4"
+        ],
+        [
+          "implied_prob",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nhl_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nhl_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nhl_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nhl_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nhl_context_4"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nhl_context_4"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nhl_context_4"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nhl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nhl_context_5",
+      "ate": -0.3302466933640872,
+      "att": 0.13075783625941878,
+      "control_mean": 0.4663099044412636,
+      "treated_mean": 0.5970677407006824,
+      "uplift": 0.13075783625941878,
+      "sample_sizes": {
+        "treated": 6655,
+        "control": 9272,
+        "total": 15927
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nhl_context_5"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nhl_context_5",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nhl_context_5"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nhl_context_5"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nhl_context_5"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nhl_context_5"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "implied_prob",
+          "nhl_context_5"
+        ],
+        [
+          "implied_prob",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nhl_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nhl_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nhl_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nhl_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nhl_context_5"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nhl_context_5"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nhl_context_5"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nhl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

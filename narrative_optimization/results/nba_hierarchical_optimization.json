@@ -1,0 +1,358 @@
+{
+  "timestamp": "2025-11-10T04:17:57.779623",
+  "n_games": 11979,
+  "alpha_optimization": {
+    "level": "game",
+    "optimal_alpha": 0.1,
+    "best_accuracy": 1.0,
+    "alpha_values": [
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35,
+      0.4,
+      0.45000000000000007,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "nominative_weight": 0.1,
+    "empirical_weight": 0.9
+  },
+  "feature_weights": {
+    "level": "game",
+    "n_features_total": 164,
+    "n_features_selected": 0,
+    "top_features": [],
+    "all_weights": {}
+  },
+  "constants_found": 0,
+  "top_constants": [],
+  "golden_ratios": [
+    {
+      "constant_name": "e",
+      "constant_value": 2.718,
+      "observed_ratio": 2.622887183725041,
+      "difference": 0.09511281627495904,
+      "features": [
+        "nom_11",
+        "ens_3"
+      ],
+      "interpretation": "nom_11/ens_3 \u2248 e (2.718)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.007705223627792135,
+      "features": [
+        "nom_13",
+        "rel_6"
+      ],
+      "interpretation": "nom_13/rel_6 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.08370522362779198,
+      "features": [
+        "nom_13",
+        "rel_6"
+      ],
+      "interpretation": "nom_13/rel_6 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.021333358511940625,
+      "features": [
+        "nom_13",
+        "rel_8"
+      ],
+      "interpretation": "nom_13/rel_8 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.09733335851194047,
+      "features": [
+        "nom_13",
+        "rel_8"
+      ],
+      "interpretation": "nom_13/rel_8 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.007705223627792135,
+      "features": [
+        "nom_22",
+        "rel_6"
+      ],
+      "interpretation": "nom_22/rel_6 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.08370522362779198,
+      "features": [
+        "nom_22",
+        "rel_6"
+      ],
+      "interpretation": "nom_22/rel_6 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.021333358511940625,
+      "features": [
+        "nom_22",
+        "rel_8"
+      ],
+      "interpretation": "nom_22/rel_8 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.09733335851194047,
+      "features": [
+        "nom_22",
+        "rel_8"
+      ],
+      "interpretation": "nom_22/rel_8 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "phi",
+      "constant_value": 1.618,
+      "observed_ratio": 1.6151744727882273,
+      "difference": 0.0028255272117727603,
+      "features": [
+        "np_22",
+        "rel_2"
+      ],
+      "interpretation": "np_22/rel_2 \u2248 phi (1.618)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.3450254724510307,
+      "difference": 0.06897452754896927,
+      "features": [
+        "ling_3",
+        "rel_1"
+      ],
+      "interpretation": "ling_3/rel_1 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.3450254724510307,
+      "difference": 0.007025472451030579,
+      "features": [
+        "ling_3",
+        "rel_1"
+      ],
+      "interpretation": "ling_3/rel_1 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "phi",
+      "constant_value": 1.618,
+      "observed_ratio": 1.5619028291146242,
+      "difference": 0.05609717088537591,
+      "features": [
+        "ling_3",
+        "rel_6"
+      ],
+      "interpretation": "ling_3/rel_6 \u2248 phi (1.618)"
+    },
+    {
+      "constant_name": "phi",
+      "constant_value": 1.618,
+      "observed_ratio": 1.5768748655658869,
+      "difference": 0.04112513443411325,
+      "features": [
+        "ling_3",
+        "rel_8"
+      ],
+      "interpretation": "ling_3/rel_8 \u2248 phi (1.618)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.2514352242887725,
+      "difference": 0.08656477571122756,
+      "features": [
+        "ling_3",
+        "ens_3"
+      ],
+      "interpretation": "ling_3/ens_3 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.3450254724510307,
+      "difference": 0.06897452754896927,
+      "features": [
+        "ling_7",
+        "rel_1"
+      ],
+      "interpretation": "ling_7/rel_1 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.3450254724510307,
+      "difference": 0.007025472451030579,
+      "features": [
+        "ling_7",
+        "rel_1"
+      ],
+      "interpretation": "ling_7/rel_1 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "phi",
+      "constant_value": 1.618,
+      "observed_ratio": 1.5619028291146242,
+      "difference": 0.05609717088537591,
+      "features": [
+        "ling_7",
+        "rel_6"
+      ],
+      "interpretation": "ling_7/rel_6 \u2248 phi (1.618)"
+    },
+    {
+      "constant_name": "phi",
+      "constant_value": 1.618,
+      "observed_ratio": 1.5768748655658869,
+      "difference": 0.04112513443411325,
+      "features": [
+        "ling_7",
+        "rel_8"
+      ],
+      "interpretation": "ling_7/rel_8 \u2248 phi (1.618)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.2514352242887725,
+      "difference": 0.08656477571122756,
+      "features": [
+        "ling_7",
+        "ens_3"
+      ],
+      "interpretation": "ling_7/ens_3 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.007705223627792135,
+      "features": [
+        "rel_0",
+        "rel_6"
+      ],
+      "interpretation": "rel_0/rel_6 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.421705223627792,
+      "difference": 0.08370522362779198,
+      "features": [
+        "rel_0",
+        "rel_6"
+      ],
+      "interpretation": "rel_0/rel_6 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.021333358511940625,
+      "features": [
+        "rel_0",
+        "rel_8"
+      ],
+      "interpretation": "rel_0/rel_8 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.4353333585119405,
+      "difference": 0.09733335851194047,
+      "features": [
+        "rel_0",
+        "rel_8"
+      ],
+      "interpretation": "rel_0/rel_8 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "sqrt_2",
+      "constant_value": 1.414,
+      "observed_ratio": 1.413419190438266,
+      "difference": 0.0005808095617338971,
+      "features": [
+        "rel_2",
+        "ens_5"
+      ],
+      "interpretation": "rel_2/ens_5 \u2248 sqrt_2 (1.414)"
+    },
+    {
+      "constant_name": "user_constant",
+      "constant_value": 1.338,
+      "observed_ratio": 1.413419190438266,
+      "difference": 0.07541919043826595,
+      "features": [
+        "rel_2",
+        "ens_5"
+      ],
+      "interpretation": "rel_2/ens_5 \u2248 user_constant (1.338)"
+    },
+    {
+      "constant_name": "e",
+      "constant_value": 2.718,
+      "observed_ratio": 2.7621903209902374,
+      "difference": 0.04419032099023745,
+      "features": [
+        "ens_2",
+        "ens_3"
+      ],
+      "interpretation": "ens_2/ens_3 \u2248 e (2.718)"
+    }
+  ],
+  "formula_report": "======================================================================\nNBA HIERARCHICAL NARRATIVE FORMULAS (DISCOVERED)\n======================================================================\n\n## OPTIMAL \u03b1 PARAMETERS BY LEVEL\n\nGAME       \u03b1 = 0.100  (10% nominative, 90% empirical)\n\nPATTERN: \u03b1 decreases at higher levels \u2192 more narrative over time\n\n## TOP FEATURES BY LEVEL\n\n\n### GAME LEVEL\n\n## CONTEXT MULTIPLIERS\n\n\n## TEMPORAL CONSTANTS\n\n\n## THE HIERARCHICAL FORMULA\n\n```python\n# GAME LEVEL\nP_game = 0.100 * nominative + 0.900 * empirical\n       = 0.100 * (w1*f1 + w2*f2 + ...) + 0.900 * stats\n\n# SERIES LEVEL (accumulated)\n\n# SEASON LEVEL (long-term)\n```\n"
+}

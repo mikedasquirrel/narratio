@@ -1,0 +1,53 @@
+{
+  "domain": "supreme_court",
+  "status": "COMPLETE_WITH_WARNINGS",
+  "production_ready": "Research domain",
+  "results_source": "narrative_optimization/results/domains/supreme_court/n26_analysis.json",
+  "run_timestamp": "2025-11-17T20:18:54.749198",
+  "dataset": {
+    "sample_size": 26,
+    "requested_sample": 1000,
+    "total_available": 26
+  },
+  "metrics": {
+    "pi": 0.52,
+    "delta": 0.3061839753051118,
+    "primary_correlation": {
+      "metric": "Narrative quality → log citation count",
+      "r": 0.7850871161669534,
+      "r2": 0.6163539478241487
+    },
+    "predictive_model": {
+      "type": "RandomForestRegressor",
+      "target": "future citations",
+      "r": 0.983007389114243,
+      "r2": 0.7576575722655804,
+      "train_samples": 20,
+      "test_samples": 6
+    }
+  },
+  "pi_variance": {
+    "pi_unanimous": 0.52,
+    "pi_split": 0.52,
+    "pi_difference": 0.0,
+    "n_unanimous": 21,
+    "n_split": 5,
+    "interpretation": "π variance not confirmed; both case types behave identically at current sample size."
+  },
+  "validation": {
+    "safe_to_proceed": false,
+    "issues": [
+      "Only 3 clusters discovered (expected ~18 given π=0.52)."
+    ],
+    "warnings": [
+      "Small corpus (26 opinions) limits transformer diversity and inflates effect sizes."
+    ]
+  },
+  "notes": [
+    "Narrative quality shows strong positive correlation with forward citations despite limited sample.",
+    "Agency (Δ) reflects moderate leverage of narrative within an evidence-weighted system (π≈0.52).",
+    "Need more cleaned cases to reach requested n=1000 and stabilize cluster validation.",
+    "Split vs unanimous π variance not observed yet; evidence decomposition suggests split cases still use higher narrative quality."
+  ]
+}
+

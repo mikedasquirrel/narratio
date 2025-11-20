@@ -1,0 +1,2690 @@
+{
+  "domain": "cmu_movies",
+  "baseline_win_rate": 106.64357153219233,
+  "patterns": [
+    {
+      "pattern_name": "cmu_movies_context_1",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_2",
+      "conditions": {
+        "literary_length_alignment": {
+          "min": 1.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_3",
+      "conditions": {
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_micro_story_length": {
+          "min": 5.748333333333333
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_4",
+      "conditions": {
+        "narrative_length": {
+          "min": 384.0
+        },
+        "literary_length_alignment": {
+          "min": 1.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_5",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_macro_season_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_6",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_7",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_macro_league_hash": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_8",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_macro_variance_flag": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_9",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_meso_division_hash": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_10",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_meso_rivalry_flag": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_11",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_meso_streak_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    },
+    {
+      "pattern_name": "cmu_movies_context_12",
+      "conditions": {
+        "narrative_length": {
+          "min": 3449.0
+        },
+        "literary_density_delta": {
+          "min": -0.36454116666666664
+        },
+        "multi_scale_enhanced_meso_context_prestige": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 533.1172312685428,
+      "sample_size": 6452,
+      "effect_size": 0.4482209628225379,
+      "edge_vs_baseline": 426.4736597363505,
+      "pi_mean": 0.9081421574705519,
+      "pi_std": 0.02797876947116238
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_2",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_3",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_4",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_5",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_6",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_1",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_3",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_4",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_5",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_6",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_2",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_4",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_5",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_6",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_3",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_5",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_6",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_4",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_6",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_5",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_7",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_6",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_7",
+      "pattern_b": "cmu_movies_context_8",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_7",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_7",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_7",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_7",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_8",
+      "pattern_b": "cmu_movies_context_9",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_8",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_8",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_8",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_9",
+      "pattern_b": "cmu_movies_context_10",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_9",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_9",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_10",
+      "pattern_b": "cmu_movies_context_11",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_10",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "cmu_movies_context_11",
+      "pattern_b": "cmu_movies_context_12",
+      "win_rate": 533.1172312685428,
+      "baseline": 106.64357153219233,
+      "lift": 426.4736597363505,
+      "sample_size": 6452,
+      "classification": "amplifying"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "cmu_movies_context_1",
+      "ate": 39.088092339804774,
+      "att": 320.7179792406448,
+      "control_mean": 52.617180137056806,
+      "treated_mean": 373.3351593777016,
+      "uplift": 320.7179792406448,
+      "sample_sizes": {
+        "treated": 6452,
+        "control": 35854,
+        "total": 42306
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "cmu_movies_context_1"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "cmu_movies_context_1",
+          "target"
+        ],
+        [
+          "word_count",
+          "cmu_movies_context_1"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "cmu_movies_context_1"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "cmu_movies_context_1"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "cmu_movies_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "cmu_movies_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "cmu_movies_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "cmu_movies_context_2",
+      "ate": 39.088092339804774,
+      "att": 320.7179792406448,
+      "control_mean": 52.617180137056806,
+      "treated_mean": 373.3351593777016,
+      "uplift": 320.7179792406448,
+      "sample_sizes": {
+        "treated": 6452,
+        "control": 35854,
+        "total": 42306
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "cmu_movies_context_2"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "cmu_movies_context_2",
+          "target"
+        ],
+        [
+          "word_count",
+          "cmu_movies_context_2"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "cmu_movies_context_2"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "cmu_movies_context_2"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "cmu_movies_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "cmu_movies_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "cmu_movies_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "cmu_movies_context_3",
+      "ate": 39.088092339804774,
+      "att": 320.7179792406448,
+      "control_mean": 52.617180137056806,
+      "treated_mean": 373.3351593777016,
+      "uplift": 320.7179792406448,
+      "sample_sizes": {
+        "treated": 6452,
+        "control": 35854,
+        "total": 42306
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "cmu_movies_context_3"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "cmu_movies_context_3",
+          "target"
+        ],
+        [
+          "word_count",
+          "cmu_movies_context_3"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "cmu_movies_context_3"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "cmu_movies_context_3"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "cmu_movies_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "cmu_movies_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "cmu_movies_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "cmu_movies_context_4",
+      "ate": 39.088092339804774,
+      "att": 320.7179792406448,
+      "control_mean": 52.617180137056806,
+      "treated_mean": 373.3351593777016,
+      "uplift": 320.7179792406448,
+      "sample_sizes": {
+        "treated": 6452,
+        "control": 35854,
+        "total": 42306
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "cmu_movies_context_4"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "cmu_movies_context_4",
+          "target"
+        ],
+        [
+          "word_count",
+          "cmu_movies_context_4"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "cmu_movies_context_4"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "cmu_movies_context_4"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "cmu_movies_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "cmu_movies_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "cmu_movies_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "cmu_movies_context_5",
+      "ate": 39.088092339804774,
+      "att": 320.7179792406448,
+      "control_mean": 52.617180137056806,
+      "treated_mean": 373.3351593777016,
+      "uplift": 320.7179792406448,
+      "sample_sizes": {
+        "treated": 6452,
+        "control": 35854,
+        "total": 42306
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "cmu_movies_context_5"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "cmu_movies_context_5",
+          "target"
+        ],
+        [
+          "word_count",
+          "cmu_movies_context_5"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "cmu_movies_context_5"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "cmu_movies_context_5"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "cmu_movies_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "cmu_movies_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "cmu_movies_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

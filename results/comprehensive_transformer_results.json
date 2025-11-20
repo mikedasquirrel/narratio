@@ -1,0 +1,504 @@
+{
+  "test_date": "2025-11-16T13:50:48.332254",
+  "transformers_tested": 55,
+  "successful": 54,
+  "errors": 1,
+  "total_time_seconds": 151.72811603546143,
+  "results": [
+    {
+      "name": "Nominative Analysis",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.4897792339324951,
+      "features": 51,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Self Perception",
+      "category": "Core",
+      "status": "ERROR",
+      "time": 0.0,
+      "features": 0,
+      "accuracy": 0.0,
+      "error": "Found input variables with inconsistent numbers of samples: [1, 500]"
+    },
+    {
+      "name": "Narrative Potential",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.4434499740600586,
+      "features": 35,
+      "accuracy": 0.448,
+      "error": null
+    },
+    {
+      "name": "Linguistic Patterns",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.5227649211883545,
+      "features": 36,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Emotional Resonance",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.23273968696594238,
+      "features": 34,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Authenticity",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.12384223937988281,
+      "features": 30,
+      "accuracy": 0.488,
+      "error": null
+    },
+    {
+      "name": "Conflict Tension",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.09595489501953125,
+      "features": 28,
+      "accuracy": 0.56,
+      "error": null
+    },
+    {
+      "name": "Suspense Mystery",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.10027694702148438,
+      "features": 25,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Phonetic",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.23441219329833984,
+      "features": 91,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Universal Nominative",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.7148351669311523,
+      "features": 116,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Hierarchical Nominative",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.10332632064819336,
+      "features": 23,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Nominative Richness",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.14901185035705566,
+      "features": 15,
+      "accuracy": 0.576,
+      "error": null
+    },
+    {
+      "name": "Ensemble Narrative",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.01968979835510254,
+      "features": 25,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Statistical",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.022934913635253906,
+      "features": 852,
+      "accuracy": 0.456,
+      "error": null
+    },
+    {
+      "name": "Relational Value",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 1.081585168838501,
+      "features": 17,
+      "accuracy": 0.432,
+      "error": null
+    },
+    {
+      "name": "Information Theory",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.1489570140838623,
+      "features": 25,
+      "accuracy": 0.552,
+      "error": null
+    },
+    {
+      "name": "Namespace Ecology",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.039403676986694336,
+      "features": 35,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Cognitive Fluency",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.005728006362915039,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Discoverability",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.05269813537597656,
+      "features": 12,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Temporal Evolution",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.038787841796875,
+      "features": 30,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Optics",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.0702519416809082,
+      "features": 15,
+      "accuracy": 0.448,
+      "error": null
+    },
+    {
+      "name": "Framing",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.479032039642334,
+      "features": 12,
+      "accuracy": 0.48,
+      "error": null
+    },
+    {
+      "name": "Coupling Strength",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.1441948413848877,
+      "features": 12,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Narrative Mass",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.2760918140411377,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Gravitational Features",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.8337521553039551,
+      "features": 20,
+      "accuracy": 0.416,
+      "error": null
+    },
+    {
+      "name": "Awareness Resistance",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.5630929470062256,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Fundamental Constraints",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.0016460418701171875,
+      "features": 28,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Multi-Scale",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.007347822189331055,
+      "features": 40,
+      "accuracy": 0.544,
+      "error": null
+    },
+    {
+      "name": "Quantitative",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.021104812622070312,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Expertise Authority",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.11605095863342285,
+      "features": 32,
+      "accuracy": 0.544,
+      "error": null
+    },
+    {
+      "name": "Cultural Context",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.08368492126464844,
+      "features": 34,
+      "accuracy": 0.456,
+      "error": null
+    },
+    {
+      "name": "Anticipatory Communication",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.031047821044921875,
+      "features": 25,
+      "accuracy": 0.464,
+      "error": null
+    },
+    {
+      "name": "Social Status",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.06591796875,
+      "features": 20,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Context Pattern",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.049059152603149414,
+      "features": 60,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Hero Journey",
+      "category": "Archetype",
+      "status": "SUCCESS",
+      "time": 0.24728918075561523,
+      "features": 58,
+      "accuracy": 0.536,
+      "error": null
+    },
+    {
+      "name": "Character Archetype",
+      "category": "Archetype",
+      "status": "SUCCESS",
+      "time": 0.1331498622894287,
+      "features": 51,
+      "accuracy": 0.432,
+      "error": null
+    },
+    {
+      "name": "Plot Archetype",
+      "category": "Archetype",
+      "status": "SUCCESS",
+      "time": 0.6858060359954834,
+      "features": 40,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Thematic Archetype",
+      "category": "Archetype",
+      "status": "SUCCESS",
+      "time": 0.24739718437194824,
+      "features": 21,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Structural Beat",
+      "category": "Archetype",
+      "status": "SUCCESS",
+      "time": 0.3495347499847412,
+      "features": 29,
+      "accuracy": 0.512,
+      "error": null
+    },
+    {
+      "name": "Multi-Perspective",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 0.00927734375,
+      "features": 50,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Scale Interaction",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 0.030652284622192383,
+      "features": 30,
+      "accuracy": 0.48,
+      "error": null
+    },
+    {
+      "name": "Temporal Momentum Enhanced",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 5.699678897857666,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Agency Quantifier",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 5.330660104751587,
+      "features": 5,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Stakes Hierarchy",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 7.253395318984985,
+      "features": 5,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Meta Narrative",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 5.936663866043091,
+      "features": 6,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Cultural Resonance",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 5.666639089584351,
+      "features": 5,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Moral Complexity",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 6.862673759460449,
+      "features": 8,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Narrative Devices",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 45.45185208320618,
+      "features": 8,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Conflict Typology",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 10.709517002105713,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Universal Themes",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 0.0010139942169189453,
+      "features": 20,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Character Complexity",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 6.9026780128479,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Origin Story",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 8.759938955307007,
+      "features": 10,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Reputation Prestige",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 5.045305967330933,
+      "features": 12,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Scarcity Exclusivity",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 10.309127807617188,
+      "features": 10,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Community Network",
+      "category": "Specialized",
+      "status": "SUCCESS",
+      "time": 11.259655952453613,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    }
+  ]
+}

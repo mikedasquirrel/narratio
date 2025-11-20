@@ -1,0 +1,9 @@
+{
+  "domain": "stereotropes",
+  "metric": "r2",
+  "baseline": 0.057694718743882656,
+  "enriched": 0.016881860912316582,
+  "lift": -0.040812857831566074,
+  "sample_size": 4376,
+  "feature_count": 41
+}

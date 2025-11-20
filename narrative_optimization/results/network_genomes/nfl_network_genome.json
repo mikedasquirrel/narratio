@@ -1,0 +1,109 @@
+{
+  "graph_metadata": {
+    "n_nodes": 35,
+    "n_edges": 573,
+    "density": 0.9630252100840336
+  },
+  "sample_nodes": {
+    "GB": {
+      "degree": 195.0,
+      "centrality": 0.03169397489242932,
+      "clustering": 0.1848592007869457
+    },
+    "SEA": {
+      "degree": 192.0,
+      "centrality": 0.03161588148189034,
+      "clustering": 0.1823300937555921
+    },
+    "ATL": {
+      "degree": 185.0,
+      "centrality": 0.03017633364026256,
+      "clustering": 0.18809042773608636
+    },
+    "NO": {
+      "degree": 187.0,
+      "centrality": 0.0304763178456997,
+      "clustering": 0.18747083210993204
+    },
+    "BAL": {
+      "degree": 191.0,
+      "centrality": 0.03130832173726747,
+      "clustering": 0.18181098598393908
+    },
+    "CIN": {
+      "degree": 188.0,
+      "centrality": 0.030831667223491725,
+      "clustering": 0.1808364167250745
+    },
+    "BUF": {
+      "degree": 193.0,
+      "centrality": 0.031406484141344164,
+      "clustering": 0.1925242666544828
+    },
+    "CHI": {
+      "degree": 182.0,
+      "centrality": 0.029875552667070274,
+      "clustering": 0.17668143621547577
+    },
+    "HOU": {
+      "degree": 190.0,
+      "centrality": 0.030962452015161693,
+      "clustering": 0.19031008188177262
+    },
+    "WAS": {
+      "degree": 185.0,
+      "centrality": 0.03025138448864938,
+      "clustering": 0.18648341276464933
+    },
+    "KC": {
+      "degree": 205.0,
+      "centrality": 0.03397709964670538,
+      "clustering": 0.19422090347713203
+    },
+    "TEN": {
+      "degree": 187.0,
+      "centrality": 0.030539614837049256,
+      "clustering": 0.1894345275147187
+    },
+    "MIA": {
+      "degree": 183.0,
+      "centrality": 0.030131073567039618,
+      "clustering": 0.1868772522373687
+    },
+    "NE": {
+      "degree": 196.0,
+      "centrality": 0.03184158379129661,
+      "clustering": 0.19647128347915147
+    },
+    "NYJ": {
+      "degree": 180.0,
+      "centrality": 0.029578173513328018,
+      "clustering": 0.18427282040683082
+    },
+    "OAK": {
+      "degree": 97.0,
+      "centrality": 0.018362843887231042,
+      "clustering": 0.12021466376644901
+    },
+    "JAX": {
+      "degree": 185.0,
+      "centrality": 0.03034431596145782,
+      "clustering": 0.18865665497337533
+    },
+    "PHI": {
+      "degree": 195.0,
+      "centrality": 0.03158331574188619,
+      "clustering": 0.1940663273255355
+    },
+    "CLE": {
+      "degree": 183.0,
+      "centrality": 0.030179870728448504,
+      "clustering": 0.17705147610954614
+    },
+    "PIT": {
+      "degree": 191.0,
+      "centrality": 0.031251174593358334,
+      "clustering": 0.1806785014223171
+    }
+  }
+}

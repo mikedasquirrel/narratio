@@ -1,0 +1,18 @@
+{
+  "nba": {
+    "domain": "nba",
+    "n_patterns": 20,
+    "significant_patterns": 19,
+    "pi": 0.49,
+    "sample_size": 2000,
+    "used_transformers": true,
+    "fast_mode": false,
+    "timestamp": "2025-11-16T07:53:12.487953"
+  },
+  "nfl": {
+    "error": "Found array with 0 sample(s) (shape=(0, 176)) while a minimum of 1 is required by TfidfTransformer."
+  },
+  "tennis": {
+    "error": "Found array with 0 sample(s) (shape=(0, 176)) while a minimum of 1 is required by TfidfTransformer."
+  }
+}

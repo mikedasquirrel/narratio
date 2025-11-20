@@ -1,0 +1,10 @@
+{
+  "relative_accuracy": 0.551219512195122,
+  "relative_p_value": 3.3846062264065107e-06,
+  "baseline": 0.5056910569105691,
+  "comparison_to_absolute": {
+    "absolute_rich": 0.544,
+    "relative": 0.551219512195122,
+    "difference": 0.007219512195121958
+  }
+}

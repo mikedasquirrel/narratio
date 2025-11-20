@@ -1,0 +1,367 @@
+{
+  "domain": "supreme_court",
+  "sample_size": 26,
+  "timestamp": "2025-11-17T22:50:44.053502",
+  "domain_info": {
+    "name": "supreme_court",
+    "estimated_pi": 0.52,
+    "sample_size": 26,
+    "total_available": 26,
+    "outcome_type": "continuous",
+    "used_transformers": true,
+    "fast_mode": false
+  },
+  "n_patterns": 3,
+  "patterns": [
+    {
+      "id": "pattern_0",
+      "size": 20,
+      "size_pct": 0.7692307692307693,
+      "centroid_latent": [
+        -1346906.958713676,
+        16068.074863154412,
+        -3.1265315264761285e-06,
+        3.564129670508009e-07,
+        1.558018450609211e-06,
+        -7.051216659337278e-07,
+        -2.285260861101257e-09,
+        -4.9113848870336016e-26,
+        -7.496324301261813e-26,
+        5.169878828456423e-27,
+        -1.2924697071141057e-26,
+        -2.843433355651033e-26,
+        4.7821379163221915e-26,
+        8.045623926785308e-26,
+        6.72084247699335e-26,
+        -4.168214805442991e-26,
+        -3.877409121342317e-26,
+        3.877409121342317e-27,
+        -9.04728794979874e-26,
+        7.827519663709803e-26,
+        -1.7367561689345796e-25,
+        -4.513079768742344e-15,
+        1.5509636485369268e-26,
+        2.6188667440399567e-25,
+        2.4574838708980166e-10
+      ],
+      "variance": 69742850725.1247,
+      "std": 264088.71752713085,
+      "density": 0.008083371529612807,
+      "separation": 1.0,
+      "coherence": 0.007682307900532558,
+      "example_narratives": [
+        "The question presented is whether the lower court erred in its interpretation of the statute.\n            We hold that it did not. The statutory language is clear and unambiguous. When Congress enacted\n            this provision, it intended to cover situations like this one. The legislative history supports\n            this interpretation. The practical consequences of the alternative interpretation would be\n            unworkable and contrary to the statute's purpose.\n            \n            The petitioner argues that we should adopt a different reading, but this argument is unpersuasive.\n            The text does not support it, and our precedents counsel against it. In prior cases, we have\n            consistently interpreted similar language in the same way. See United States v. Prior Case (2005).\n            \n            Therefore, we affirm the judgment of the Court of Appeals. The statute applies as the lower court\n            held, and the petitioner's claim fails. This interpretation is consistent with the statutory\n            scheme and congressional intent. Justice Smith concurs. Case 0 decided.",
+        "The question presented is whether the lower court erred in its interpretation of the statute.\n            We hold that it did not. The statutory language is clear and unambiguous. When Congress enacted\n            this provision, it intended to cover situations like this one. The legislative history supports\n            this interpretation. The practical consequences of the alternative interpretation would be\n            unworkable and contrary to the statute's purpose.\n            \n            The petitioner argues that we should adopt a different reading, but this argument is unpersuasive.\n            The text does not support it, and our precedents counsel against it. In prior cases, we have\n            consistently interpreted similar language in the same way. See United States v. Prior Case (2005).\n            \n            Therefore, we affirm the judgment of the Court of Appeals. The statute applies as the lower court\n            held, and the petitioner's claim fails. This interpretation is consistent with the statutory\n            scheme and congressional intent. Justice Smith concurs. Case 1 decided.",
+        "The question presented is whether the lower court erred in its interpretation of the statute.\n            We hold that it did not. The statutory language is clear and unambiguous. When Congress enacted\n            this provision, it intended to cover situations like this one. The legislative history supports\n            this interpretation. The practical consequences of the alternative interpretation would be\n            unworkable and contrary to the statute's purpose.\n            \n            The petitioner argues that we should adopt a different reading, but this argument is unpersuasive.\n            The text does not support it, and our precedents counsel against it. In prior cases, we have\n            consistently interpreted similar language in the same way. See United States v. Prior Case (2005).\n            \n            Therefore, we affirm the judgment of the Court of Appeals. The statute applies as the lower court\n            held, and the petitioner's claim fails. This interpretation is consistent with the statutory\n            scheme and congressional intent. Justice Smith concurs. Case 2 decided.",
+        "The question presented is whether the lower court erred in its interpretation of the statute.\n            We hold that it did not. The statutory language is clear and unambiguous. When Congress enacted\n            this provision, it intended to cover situations like this one. The legislative history supports\n            this interpretation. The practical consequences of the alternative interpretation would be\n            unworkable and contrary to the statute's purpose.\n            \n            The petitioner argues that we should adopt a different reading, but this argument is unpersuasive.\n            The text does not support it, and our precedents counsel against it. In prior cases, we have\n            consistently interpreted similar language in the same way. See United States v. Prior Case (2005).\n            \n            Therefore, we affirm the judgment of the Court of Appeals. The statute applies as the lower court\n            held, and the petitioner's claim fails. This interpretation is consistent with the statutory\n            scheme and congressional intent. Justice Smith concurs. Case 3 decided.",
+        "The question presented is whether the lower court erred in its interpretation of the statute.\n            We hold that it did not. The statutory language is clear and unambiguous. When Congress enacted\n            this provision, it intended to cover situations like this one. The legislative history supports\n            this interpretation. The practical consequences of the alternative interpretation would be\n            unworkable and contrary to the statute's purpose.\n            \n            The petitioner argues that we should adopt a different reading, but this argument is unpersuasive.\n            The text does not support it, and our precedents counsel against it. In prior cases, we have\n            consistently interpreted similar language in the same way. See United States v. Prior Case (2005).\n            \n            Therefore, we affirm the judgment of the Court of Appeals. The statute applies as the lower court\n            held, and the petitioner's claim fails. This interpretation is consistent with the statutory\n            scheme and congressional intent. Justice Smith concurs. Case 4 decided."
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3,
+          6,
+          24,
+          21,
+          23
+        ],
+        "dimension_values": [
+          -1346906.958713676,
+          16068.074863154412,
+          -3.1265315264761285e-06,
+          1.558018450609211e-06,
+          -7.051216659337278e-07,
+          3.564129670508009e-07,
+          -2.285260861101257e-09,
+          2.4574838708980166e-10,
+          -4.513079768742344e-15,
+          2.6188667440399567e-25
+        ],
+        "dimension_prominence": [
+          0.9882110277349189,
+          0.01178897226086342,
+          2.2939022721920605e-12,
+          1.143101239729946e-12,
+          5.173401189017497e-13,
+          2.614963284499567e-13,
+          1.6766711090036991e-15,
+          1.803029263447711e-16,
+          3.311197679740117e-21,
+          1.9214341271947343e-31
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_1",
+      "size": 5,
+      "size_pct": 0.19230769230769232,
+      "centroid_latent": [
+        4291193.143883081,
+        -368537.3278486666,
+        1.3448784301317573e-05,
+        -1.510958497874526e-06,
+        -7.51184529192983e-06,
+        2.7535348522178537e-06,
+        5.739682329419793e-09,
+        -4.7914556698920317e-26,
+        -7.259854940474899e-26,
+        9.135219214701464e-27,
+        -1.9081717778249488e-26,
+        -2.513833698712698e-26,
+        2.90936582323221e-26,
+        7.853972896835794e-26,
+        6.4667352592148e-26,
+        -3.749708302558507e-26,
+        -1.8643110710327775e-26,
+        1.8061358003606845e-27,
+        -8.964648142905363e-26,
+        8.751415378407483e-26,
+        -1.7028640485601678e-25,
+        -4.513079768735592e-15,
+        1.8888969005336737e-26,
+        2.5292050764785956e-25,
+        2.457483870898017e-10
+      ],
+      "variance": 717386773148.2756,
+      "std": 846986.8789705515,
+      "density": 0.0030890750621095264,
+      "separation": 1.0,
+      "coherence": 0.0019694809112030076,
+      "example_narratives": [
+        "We conclude that in the field of public education the doctrine of separate but equal has no place. \n        Separate educational facilities are inherently unequal. Therefore, we hold that the plaintiffs and \n        others similarly situated for whom the actions have been brought are, by reason of the segregation \n        complained of, deprived of the equal protection of the laws guaranteed by the Fourteenth Amendment.\n        \n        To separate children in grade and high schools from others of similar age and qualifications solely \n        because of their race generates a feeling of inferiority as to their status in the community that \n        may affect their hearts and minds in a way unlikely ever to be undone. Whatever may have been the \n        extent of psychological knowledge at the time of Plessy v. Ferguson, this finding is amply supported \n        by modern authority. Any language in Plessy contrary to this finding is rejected.\n        \n        We have now announced that such segregation is a denial of the equal protection of the laws. In order \n        that we may have the full assistance of the parties in formulating decrees, the cases will be restored \n        to the docket, and the parties are requested to present further argument.",
+        "We forthwith acknowledge our awareness of the sensitive and emotional nature of the abortion controversy, \n        of the vigorous opposing views, even among physicians, and of the deep and seemingly absolute convictions \n        that the subject inspires. One's philosophy, one's experiences, one's exposure to the raw edges of human \n        existence, one's religious training, one's attitudes toward life and family and their values, and the \n        moral standards one establishes and seeks to observe, are all likely to influence and to color one's \n        thinking and conclusions about abortion.\n        \n        The Constitution does not explicitly mention any right of privacy. However, the Court has recognized that \n        a right of personal privacy, or a guarantee of certain areas or zones of privacy, does exist under the \n        Constitution. This right of privacy is broad enough to encompass a woman's decision whether or not to \n        terminate her pregnancy. The detriment that the State would impose upon the pregnant woman by denying \n        this choice altogether is apparent. Specific and direct harm medically diagnosable even in early pregnancy \n        may be involved. Maternity, or additional offspring, may force upon the woman a distressful life and \n        future. Psychological harm may be imminent. Mental and physical health may be taxed by child care.\n        \n        We therefore conclude that the right of personal privacy includes the abortion decision, but that this \n        right is not unqualified and must be considered against important state interests in regulation. Where \n        certain fundamental rights are involved, the Court has held that regulation limiting these rights may be \n        justified only by a compelling state interest. We repeat that this right is not absolute and is subject \n        to some limitations, and that at some point the state interests as to protection of health, medical \n        standards, and prenatal life, become dominant.",
+        "The prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial \n        interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to \n        secure the privilege against self-incrimination. By custodial interrogation, we mean questioning initiated \n        by law enforcement officers after a person has been taken into custody or otherwise deprived of his freedom \n        of action in any significant way.\n        \n        As for the procedural safeguards to be employed, unless other fully effective means are devised to inform \n        accused persons of their right of silence and to assure a continuous opportunity to exercise it, the \n        following measures are required. Prior to any questioning, the person must be warned that he has a right \n        to remain silent, that any statement he does make may be used as evidence against him, and that he has a \n        right to the presence of an attorney, either retained or appointed.\n        \n        The warning of the right to remain silent must be accompanied by the explanation that anything said can \n        and will be used against the individual in court. This warning is needed in order to make him aware not \n        only of the privilege, but also of the consequences of forgoing it. It is only through an awareness of \n        these consequences that there can be any assurance of real understanding and intelligent exercise of the \n        privilege.",
+        "If the First Amendment has any force, it prohibits Congress from fining or jailing citizens, or \n        associations of citizens, for simply engaging in political speech. The Government may regulate corporate \n        political speech through disclaimer and disclosure requirements, but it may not suppress that speech \n        altogether. We find no basis for the proposition that, in the context of political speech, the Government \n        may impose restrictions on certain disfavored speakers.\n        \n        Speech is an essential mechanism of democracy, for it is the means to hold officials accountable to the \n        people. The right of citizens to inquire, to hear, to speak, and to use information to reach consensus \n        is a precondition to enlightened self-government and a necessary means to protect it. For these reasons, \n        political speech must prevail against laws that would suppress it, whether by design or inadvertence.\n        \n        When Government seeks to use its full power, including the criminal law, to command where a person may \n        get his or her information or what distrusted source he or she may not hear, it uses censorship to \n        control thought. This is unlawful. The First Amendment confirms the freedom to think for ourselves.",
+        "The Constitution promises liberty to all within its reach, a liberty that includes certain specific \n        rights that allow persons, within a lawful realm, to define and express their identity. The petitioners \n        in these cases seek to find that liberty by marrying someone of the same sex and having their marriages \n        deemed lawful on the same terms and conditions as marriages between persons of the opposite sex.\n        \n        The history of marriage is one of both continuity and change. Changes, such as the decline of arranged \n        marriages and the abandonment of the law of coverture, have worked deep transformations in the structure \n        of marriage, affecting aspects of marriage once viewed as essential. These new insights have strengthened, \n        not weakened, the institution of marriage. Indeed, changed understandings of marriage are characteristic \n        of a Nation where new dimensions of freedom become apparent to new generations.\n        \n        The nature of injustice is that we may not always see it in our own times. The generations that wrote \n        and ratified the Bill of Rights and the Fourteenth Amendment did not presume to know the extent of \n        freedom in all of its dimensions, and so they entrusted to future generations a charter protecting the \n        right of all persons to enjoy liberty as we learn its meaning. When new insight reveals discord between \n        the Constitution's central protections and a received legal stricture, a claim to liberty must be \n        addressed. The dynamic of our constitutional system is that individuals need not await legislative action \n        before asserting a fundamental right."
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3,
+          6,
+          24,
+          21,
+          23
+        ],
+        "dimension_values": [
+          4291193.143883081,
+          -368537.3278486666,
+          1.3448784301317573e-05,
+          -7.51184529192983e-06,
+          2.7535348522178537e-06,
+          -1.510958497874526e-06,
+          5.739682329419793e-09,
+          2.457483870898017e-10,
+          -4.513079768735592e-15,
+          2.5292050764785956e-25
+        ],
+        "dimension_prominence": [
+          0.9209101620560173,
+          0.07908983793856803,
+          2.8861721472586867e-12,
+          1.6120772086410921e-12,
+          5.909214854608569e-13,
+          3.242587757022801e-13,
+          1.231762730528835e-15,
+          5.273875572402814e-17,
+          9.68528071760749e-22,
+          5.427792641244642e-32
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_2",
+      "size": 1,
+      "size_pct": 0.038461538461538464,
+      "centroid_latent": [
+        5482173.454858107,
+        1521325.1419802427,
+        -4.71394481046354e-06,
+        4.2657374324683087e-07,
+        6.398437935854553e-06,
+        3.3488140148726634e-07,
+        1.6723498318085323e-08,
+        -4.809224145198428e-26,
+        -7.327304649719798e-26,
+        8.007245153908261e-27,
+        -1.886103926655428e-26,
+        -2.6782487597180676e-26,
+        2.957750055508821e-26,
+        7.932206520296559e-26,
+        6.621013392365479e-26,
+        -3.742356428386632e-26,
+        -2.1671468420008685e-26,
+        1.0653842155475028e-27,
+        -9.087866482126553e-26,
+        8.62391475065595e-26,
+        -1.7041324772683176e-25,
+        -4.513079768738689e-15,
+        1.5478096598324566e-26,
+        2.5241129652058384e-25,
+        2.45748387089802e-10
+      ],
+      "variance": 1216267850917.361,
+      "std": 1102845.3431544066,
+      "density": 0.0,
+      "separation": 1.0,
+      "coherence": 1.0,
+      "example_narratives": [
+        "The Second Amendment protects an individual right to possess a firearm unconnected with service in a \n        militia, and to use that arm for traditionally lawful purposes, such as self-defense within the home. \n        The Amendment's prefatory clause announces a purpose, but does not limit or expand the scope of the \n        second part, the operative clause. The operative clause's text and history demonstrate that it connotes \n        an individual right to keep and bear arms.\n        \n        The Constitution's text does not turn on the existence of a well regulated militia. The Second Amendment \n        protects \"the right of the people,\" which is exercised individually and belongs to all Americans. The \n        prefatory clause does not suggest that preserving the militia was the only reason Americans valued the \n        ancient right; most undoubtedly thought it even more important for self-defense and hunting. But the \n        threat that the new Federal Government would destroy the citizens' militia by taking away their arms \n        was the reason that right was codified in a written Constitution.\n        \n        We are aware of the problem of handgun violence in this country, and we take seriously the concerns \n        raised by the many amici who believe that prohibition of handgun ownership is a solution. The Constitution \n        leaves the District of Columbia a variety of tools for combating that problem, including some measures \n        regulating handguns. But the enshrinement of constitutional rights necessarily takes certain policy \n        choices off the table."
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          5,
+          6,
+          24,
+          21,
+          23
+        ],
+        "dimension_values": [
+          5482173.454858107,
+          1521325.1419802427,
+          6.398437935854553e-06,
+          -4.71394481046354e-06,
+          4.2657374324683087e-07,
+          3.3488140148726634e-07,
+          1.6723498318085323e-08,
+          2.45748387089802e-10,
+          -4.513079768738689e-15,
+          2.5241129652058384e-25
+        ],
+        "dimension_prominence": [
+          0.7827764051132479,
+          0.21722359488505427,
+          9.13605942426003e-13,
+          6.730842799888036e-13,
+          6.090866405523069e-14,
+          4.781630164641943e-14,
+          2.38787772808387e-15,
+          3.508937478767042e-17,
+          6.44403608614758e-22,
+          3.604074349841428e-32
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    }
+  ],
+  "significant_correlations": [
+    {
+      "pattern_id": "latent_dim_0",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.8394573924017986,
+      "p_value": 8.316022419472564e-08,
+      "significant": true,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 4.158011209736282e-07,
+      "p_value_fdr": 4.158011209736282e-07,
+      "significant_bonferroni": true,
+      "significant_fdr": true
+    },
+    {
+      "pattern_id": "latent_dim_4",
+      "correlation_type": "latent_dimension",
+      "effect_size": -0.4003854267493443,
+      "p_value": 0.042677398039693434,
+      "significant": true,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 0.21338699019846719,
+      "p_value_fdr": 0.10669349509923359,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    }
+  ],
+  "all_correlations": [
+    {
+      "pattern_id": "latent_dim_0",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.8394573924017986,
+      "p_value": 8.316022419472564e-08,
+      "significant": true,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 4.158011209736282e-07,
+      "p_value_fdr": 4.158011209736282e-07,
+      "significant_bonferroni": true,
+      "significant_fdr": true
+    },
+    {
+      "pattern_id": "latent_dim_4",
+      "correlation_type": "latent_dimension",
+      "effect_size": -0.4003854267493443,
+      "p_value": 0.042677398039693434,
+      "significant": true,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 0.21338699019846719,
+      "p_value_fdr": 0.10669349509923359,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_1",
+      "correlation_type": "latent_dimension",
+      "effect_size": -0.24983725924374472,
+      "p_value": 0.21835769976681962,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.10669349509923359,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_6",
+      "correlation_type": "latent_dimension",
+      "effect_size": -0.22236715731823337,
+      "p_value": 0.27490693023351576,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.34363366279189467,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_5",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.1126011603916282,
+      "p_value": 0.583922166578173,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.34363366279189467,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    }
+  ],
+  "validation": {
+    "safe_to_proceed": false,
+    "issues": [
+      "Too few patterns (3)"
+    ],
+    "warnings": [
+      "Low significance rate (0%)",
+      "Pattern count differs from \u03c0 prediction (exp 18, got 3)"
+    ]
+  }
+}

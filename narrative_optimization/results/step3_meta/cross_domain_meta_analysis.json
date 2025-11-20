@@ -1,0 +1,35 @@
+{
+  "step": 3,
+  "domains_compared": [
+    "movies",
+    "nba"
+  ],
+  "pattern_counts": {
+    "movies": 20,
+    "nba": 16,
+    "difference": 4
+  },
+  "effect_sizes": {
+    "movies_avg": 0.22017492700938823,
+    "nba_avg": 0.12964817827044658,
+    "movies_max": 0.4221468927846598,
+    "nba_max": 0.28390561590240815
+  },
+  "predictor_types": {
+    "movies": {
+      "cluster_patterns": 6,
+      "latent_dimensions": 6
+    },
+    "nba": {
+      "cluster_patterns": 5,
+      "latent_dimensions": 6
+    }
+  },
+  "interpretation": {
+    "pattern_discovery": "Works in both domains",
+    "\u03c0_effect": "Higher \u03c0 shows more patterns",
+    "prediction_strength": "Comparable across domains",
+    "mysterious_dimensions": "Predict without interpretation",
+    "universality": "Partially universal, partially domain-specific"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "NBA",
+  "sample_size": 1000,
+  "journey_completion_mean": 0.017493939393939395,
+  "learned_journey_weights": {
+    "ordinary_world": NaN,
+    "call_to_adventure": NaN,
+    "refusal_of_call": 0.018082658030748527,
+    "meeting_mentor": NaN,
+    "crossing_threshold": NaN,
+    "tests_allies_enemies": 0.49775719939251417,
+    "approach_inmost_cave": NaN,
+    "ordeal": 0.9999999999999918,
+    "reward": NaN,
+    "road_back": NaN,
+    "resurrection": 0.026498084744948202,
+    "return_with_elixir": NaN,
+    "supernatural_aid": 0.028030332102095042,
+    "belly_of_whale": NaN,
+    "meeting_goddess": NaN,
+    "woman_as_temptress": NaN,
+    "atonement_with_father": 0.9999999999999918,
+    "sequential_coherence": NaN
+  },
+  "plot_distribution": {
+    "quest": 1000
+  },
+  "archetype_distribution": {
+    "warrior": 485,
+    "magician": 66,
+    "rebel": 410,
+    "ruler": 39
+  },
+  "mythos_distribution": {
+    "romance": 513,
+    "tragedy": 487
+  },
+  "insights": [
+    "Journey completion: 1.7% (sports narratives are compressed)",
+    "Dominant plot: quest",
+    "Dominant archetype: warrior",
+    "Dominant mythos: romance"
+  ]
+}

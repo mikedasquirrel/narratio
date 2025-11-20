@@ -1,0 +1,109 @@
+{
+  "graph_metadata": {
+    "n_nodes": 4417,
+    "n_edges": 4417,
+    "density": 0.0004528985507246377
+  },
+  "sample_nodes": {
+    "TheMouseThatRoared": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "cluster:films": {
+      "degree": 1920.5,
+      "centrality": 0.3986794746078195,
+      "clustering": 0.0
+    },
+    "ToTheLimit": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "GangsOfWasseypur": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "EvanAlmighty": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "CaptainAmerica1990": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Gremlins": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Misery": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "TheDuchess": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "PracticalMagic": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Kingpin": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "TheGreatBeauty": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "KamenRider": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "TheCompanyOfWolves": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Scarecrow": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "TheCommitments": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "PorcoRosso": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Purgatory": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "Mulan": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    },
+    "AnneFrankTheWholeStory": {
+      "degree": 0.5,
+      "centrality": 0.00012258595644125744,
+      "clustering": 0.0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "domain": "supreme_court",
+  "metric": "r2",
+  "baseline": -0.16965146166678635,
+  "enriched": 0.5179256553448353,
+  "lift": 0.6875771170116216,
+  "sample_size": 26,
+  "feature_count": 41
+}

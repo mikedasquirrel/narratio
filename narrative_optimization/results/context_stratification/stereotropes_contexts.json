@@ -1,0 +1,2623 @@
+{
+  "domain": "stereotropes",
+  "baseline_win_rate": 3.9703485740153917,
+  "patterns": [
+    {
+      "pattern_name": "stereotropes_context_1",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "has_labels": {
+          "eq": 0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_2",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "literary_word_alignment": {
+          "min": 0.009434
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_3",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "literary_density_delta": {
+          "max": 0.0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_4",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "literary_pi_alignment": {
+          "min": 0.959438
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_5",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "literary_pi_zscore": {
+          "min": -1.492789
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_6",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "pi_effective": {
+          "min": 0.81344
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_7",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_season_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_8",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_9",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_league_hash": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_10",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_story_density": {
+          "min": 0.01
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_11",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_pi_signal": {
+          "min": 0.81344
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    },
+    {
+      "pattern_name": "stereotropes_context_12",
+      "conditions": {
+        "category_hash": {
+          "eq": 0.147
+        },
+        "multi_scale_enhanced_macro_variance_flag": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 2.0,
+      "sample_size": 3841,
+      "effect_size": 0.1016267259852325,
+      "edge_vs_baseline": -1.9703485740153917,
+      "pi_mean": 0.8136327649049727,
+      "pi_std": 0.0001671020121852223
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_2",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_3",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_4",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_5",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_6",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_1",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_3",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_4",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_5",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_6",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_2",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_4",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_5",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_6",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_3",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_5",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_6",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_4",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_6",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_5",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_7",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_6",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_7",
+      "pattern_b": "stereotropes_context_8",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_7",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_7",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_7",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_7",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_8",
+      "pattern_b": "stereotropes_context_9",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_8",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_8",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_8",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_9",
+      "pattern_b": "stereotropes_context_10",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_9",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_9",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_10",
+      "pattern_b": "stereotropes_context_11",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_10",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "stereotropes_context_11",
+      "pattern_b": "stereotropes_context_12",
+      "win_rate": 2.0,
+      "baseline": 3.9703485740153917,
+      "lift": -1.9703485740153917,
+      "sample_size": 3841,
+      "classification": "cancelling"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "stereotropes_context_1",
+      "ate": -0.4949671444290076,
+      "att": -15.048842474702795,
+      "control_mean": 17.048842474702795,
+      "treated_mean": 2.0,
+      "uplift": -15.048842474702795,
+      "sample_sizes": {
+        "treated": 3841,
+        "control": 577,
+        "total": 4418
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "stereotropes_context_1"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "stereotropes_context_1",
+          "target"
+        ],
+        [
+          "category_hash",
+          "stereotropes_context_1"
+        ],
+        [
+          "category_hash",
+          "target"
+        ],
+        [
+          "has_labels",
+          "stereotropes_context_1"
+        ],
+        [
+          "has_labels",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "stereotropes_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "stereotropes_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "stereotropes_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "stereotropes_context_2",
+      "ate": -0.4949671444290076,
+      "att": -15.048842474702795,
+      "control_mean": 17.048842474702795,
+      "treated_mean": 2.0,
+      "uplift": -15.048842474702795,
+      "sample_sizes": {
+        "treated": 3841,
+        "control": 577,
+        "total": 4418
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "stereotropes_context_2"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "stereotropes_context_2",
+          "target"
+        ],
+        [
+          "category_hash",
+          "stereotropes_context_2"
+        ],
+        [
+          "category_hash",
+          "target"
+        ],
+        [
+          "has_labels",
+          "stereotropes_context_2"
+        ],
+        [
+          "has_labels",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "stereotropes_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "stereotropes_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "stereotropes_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "stereotropes_context_3",
+      "ate": -0.4949671444290076,
+      "att": -15.048842474702795,
+      "control_mean": 17.048842474702795,
+      "treated_mean": 2.0,
+      "uplift": -15.048842474702795,
+      "sample_sizes": {
+        "treated": 3841,
+        "control": 577,
+        "total": 4418
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "stereotropes_context_3"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "stereotropes_context_3",
+          "target"
+        ],
+        [
+          "category_hash",
+          "stereotropes_context_3"
+        ],
+        [
+          "category_hash",
+          "target"
+        ],
+        [
+          "has_labels",
+          "stereotropes_context_3"
+        ],
+        [
+          "has_labels",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "stereotropes_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "stereotropes_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "stereotropes_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "stereotropes_context_4",
+      "ate": -0.4949671444290076,
+      "att": -15.048842474702795,
+      "control_mean": 17.048842474702795,
+      "treated_mean": 2.0,
+      "uplift": -15.048842474702795,
+      "sample_sizes": {
+        "treated": 3841,
+        "control": 577,
+        "total": 4418
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "stereotropes_context_4"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "stereotropes_context_4",
+          "target"
+        ],
+        [
+          "category_hash",
+          "stereotropes_context_4"
+        ],
+        [
+          "category_hash",
+          "target"
+        ],
+        [
+          "has_labels",
+          "stereotropes_context_4"
+        ],
+        [
+          "has_labels",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "stereotropes_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "stereotropes_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "stereotropes_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "stereotropes_context_5",
+      "ate": -0.4949671444290076,
+      "att": -15.048842474702795,
+      "control_mean": 17.048842474702795,
+      "treated_mean": 2.0,
+      "uplift": -15.048842474702795,
+      "sample_sizes": {
+        "treated": 3841,
+        "control": 577,
+        "total": 4418
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "stereotropes_context_5"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "stereotropes_context_5",
+          "target"
+        ],
+        [
+          "category_hash",
+          "stereotropes_context_5"
+        ],
+        [
+          "category_hash",
+          "target"
+        ],
+        [
+          "has_labels",
+          "stereotropes_context_5"
+        ],
+        [
+          "has_labels",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "stereotropes_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "stereotropes_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "stereotropes_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

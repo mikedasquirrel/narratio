@@ -1,0 +1,2770 @@
+{
+  "domain": "nba",
+  "baseline_win_rate": 0.5044661490942483,
+  "patterns": [
+    {
+      "pattern_name": "nba_context_1",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_2",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_story_coverage": {
+          "min": 0.06092333333333333
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_3",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "multi_scale_enhanced_micro_story_length": {
+          "min": 0.195
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_4",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "literary_sentence_alignment": {
+          "eq": 0.111111
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_5",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_macro_season_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_6",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_7",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_macro_league_hash": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_8",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_macro_variance_flag": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_9",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_meso_division_hash": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_10",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_meso_rivalry_flag": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_11",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_meso_streak_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    },
+    {
+      "pattern_name": "nba_context_12",
+      "conditions": {
+        "plus_minus": {
+          "min": 1.0
+        },
+        "literary_length_alignment": {
+          "min": 0.033923
+        },
+        "multi_scale_enhanced_meso_context_prestige": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.9991723224631683,
+      "sample_size": 6041,
+      "effect_size": 31.524266337835552,
+      "edge_vs_baseline": 0.4947061733689201,
+      "pi_mean": 0.5248669773216355,
+      "pi_std": 6.790064553753732e-05
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_2",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_3",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_4",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_5",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_6",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_1",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_3",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_4",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_5",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_6",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_2",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_4",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_5",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_6",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_3",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_5",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_6",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_4",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_6",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_5",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_7",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_6",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_7",
+      "pattern_b": "nba_context_8",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_7",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_7",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_7",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_7",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_8",
+      "pattern_b": "nba_context_9",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_8",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_8",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_8",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_9",
+      "pattern_b": "nba_context_10",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_9",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_9",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_10",
+      "pattern_b": "nba_context_11",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_10",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nba_context_11",
+      "pattern_b": "nba_context_12",
+      "win_rate": 0.9991723224631683,
+      "baseline": 0.5044661490942483,
+      "lift": 0.4947061733689201,
+      "sample_size": 6041,
+      "classification": "amplifying"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "nba_context_1",
+      "ate": 0.5064370137651522,
+      "att": 0.9914988467583117,
+      "control_mean": 0.006952246212172568,
+      "treated_mean": 0.9984510929704843,
+      "uplift": 0.9914988467583117,
+      "sample_sizes": {
+        "treated": 6041,
+        "control": 5938,
+        "total": 11979
+      },
+      "graph_edges": [
+        [
+          "season_win_pct",
+          "nba_context_1"
+        ],
+        [
+          "season_win_pct",
+          "target"
+        ],
+        [
+          "nba_context_1",
+          "target"
+        ],
+        [
+          "l10_win_pct",
+          "nba_context_1"
+        ],
+        [
+          "l10_win_pct",
+          "target"
+        ],
+        [
+          "games_played",
+          "nba_context_1"
+        ],
+        [
+          "games_played",
+          "target"
+        ],
+        [
+          "home_game",
+          "nba_context_1"
+        ],
+        [
+          "home_game",
+          "target"
+        ],
+        [
+          "points",
+          "nba_context_1"
+        ],
+        [
+          "points",
+          "target"
+        ],
+        [
+          "plus_minus",
+          "nba_context_1"
+        ],
+        [
+          "plus_minus",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nba_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nba_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nba_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nba_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nba_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nba_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nba_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nba_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nba_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nba_context_2",
+      "ate": 0.5064370137651522,
+      "att": 0.9914988467583117,
+      "control_mean": 0.006952246212172568,
+      "treated_mean": 0.9984510929704843,
+      "uplift": 0.9914988467583117,
+      "sample_sizes": {
+        "treated": 6041,
+        "control": 5938,
+        "total": 11979
+      },
+      "graph_edges": [
+        [
+          "season_win_pct",
+          "nba_context_2"
+        ],
+        [
+          "season_win_pct",
+          "target"
+        ],
+        [
+          "nba_context_2",
+          "target"
+        ],
+        [
+          "l10_win_pct",
+          "nba_context_2"
+        ],
+        [
+          "l10_win_pct",
+          "target"
+        ],
+        [
+          "games_played",
+          "nba_context_2"
+        ],
+        [
+          "games_played",
+          "target"
+        ],
+        [
+          "home_game",
+          "nba_context_2"
+        ],
+        [
+          "home_game",
+          "target"
+        ],
+        [
+          "points",
+          "nba_context_2"
+        ],
+        [
+          "points",
+          "target"
+        ],
+        [
+          "plus_minus",
+          "nba_context_2"
+        ],
+        [
+          "plus_minus",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nba_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nba_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nba_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nba_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nba_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nba_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nba_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nba_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nba_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nba_context_3",
+      "ate": 0.5064370137651522,
+      "att": 0.9914988467583117,
+      "control_mean": 0.006952246212172568,
+      "treated_mean": 0.9984510929704843,
+      "uplift": 0.9914988467583117,
+      "sample_sizes": {
+        "treated": 6041,
+        "control": 5938,
+        "total": 11979
+      },
+      "graph_edges": [
+        [
+          "season_win_pct",
+          "nba_context_3"
+        ],
+        [
+          "season_win_pct",
+          "target"
+        ],
+        [
+          "nba_context_3",
+          "target"
+        ],
+        [
+          "l10_win_pct",
+          "nba_context_3"
+        ],
+        [
+          "l10_win_pct",
+          "target"
+        ],
+        [
+          "games_played",
+          "nba_context_3"
+        ],
+        [
+          "games_played",
+          "target"
+        ],
+        [
+          "home_game",
+          "nba_context_3"
+        ],
+        [
+          "home_game",
+          "target"
+        ],
+        [
+          "points",
+          "nba_context_3"
+        ],
+        [
+          "points",
+          "target"
+        ],
+        [
+          "plus_minus",
+          "nba_context_3"
+        ],
+        [
+          "plus_minus",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nba_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nba_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nba_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nba_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nba_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nba_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nba_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nba_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nba_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nba_context_4",
+      "ate": 0.5064370137651522,
+      "att": 0.9914988467583117,
+      "control_mean": 0.006952246212172568,
+      "treated_mean": 0.9984510929704843,
+      "uplift": 0.9914988467583117,
+      "sample_sizes": {
+        "treated": 6041,
+        "control": 5938,
+        "total": 11979
+      },
+      "graph_edges": [
+        [
+          "season_win_pct",
+          "nba_context_4"
+        ],
+        [
+          "season_win_pct",
+          "target"
+        ],
+        [
+          "nba_context_4",
+          "target"
+        ],
+        [
+          "l10_win_pct",
+          "nba_context_4"
+        ],
+        [
+          "l10_win_pct",
+          "target"
+        ],
+        [
+          "games_played",
+          "nba_context_4"
+        ],
+        [
+          "games_played",
+          "target"
+        ],
+        [
+          "home_game",
+          "nba_context_4"
+        ],
+        [
+          "home_game",
+          "target"
+        ],
+        [
+          "points",
+          "nba_context_4"
+        ],
+        [
+          "points",
+          "target"
+        ],
+        [
+          "plus_minus",
+          "nba_context_4"
+        ],
+        [
+          "plus_minus",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nba_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nba_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nba_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nba_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nba_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nba_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nba_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nba_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nba_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nba_context_5",
+      "ate": 0.5064370137651522,
+      "att": 0.9914988467583117,
+      "control_mean": 0.006952246212172568,
+      "treated_mean": 0.9984510929704843,
+      "uplift": 0.9914988467583117,
+      "sample_sizes": {
+        "treated": 6041,
+        "control": 5938,
+        "total": 11979
+      },
+      "graph_edges": [
+        [
+          "season_win_pct",
+          "nba_context_5"
+        ],
+        [
+          "season_win_pct",
+          "target"
+        ],
+        [
+          "nba_context_5",
+          "target"
+        ],
+        [
+          "l10_win_pct",
+          "nba_context_5"
+        ],
+        [
+          "l10_win_pct",
+          "target"
+        ],
+        [
+          "games_played",
+          "nba_context_5"
+        ],
+        [
+          "games_played",
+          "target"
+        ],
+        [
+          "home_game",
+          "nba_context_5"
+        ],
+        [
+          "home_game",
+          "target"
+        ],
+        [
+          "points",
+          "nba_context_5"
+        ],
+        [
+          "points",
+          "target"
+        ],
+        [
+          "plus_minus",
+          "nba_context_5"
+        ],
+        [
+          "plus_minus",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nba_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nba_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nba_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nba_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nba_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nba_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nba_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nba_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nba_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

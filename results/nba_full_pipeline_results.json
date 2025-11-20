@@ -1,0 +1,318 @@
+{
+  "test_date": "2025-11-16T13:44:41.839459",
+  "dataset": "NBA games",
+  "train_samples": 500,
+  "test_samples": 125,
+  "transformers_tested": 34,
+  "successful": 33,
+  "errors": 1,
+  "total_time_seconds": 16.567657947540283,
+  "results": [
+    {
+      "name": "Nominative Analysis",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.14509987831115723,
+      "features": 51,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Self Perception",
+      "category": "Core",
+      "status": "ERROR",
+      "time": 0.0,
+      "features": 0,
+      "accuracy": 0.0,
+      "error": "Found input variables with inconsistent numbers of samples: [1, 500]"
+    },
+    {
+      "name": "Narrative Potential",
+      "category": "Core",
+      "status": "SUCCESS",
+      "time": 0.19768905639648438,
+      "features": 35,
+      "accuracy": 0.448,
+      "error": null
+    },
+    {
+      "name": "Linguistic Patterns",
+      "category": "Linguistic",
+      "status": "SUCCESS",
+      "time": 0.4209411144256592,
+      "features": 36,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Emotional Resonance",
+      "category": "Emotional",
+      "status": "SUCCESS",
+      "time": 0.2863779067993164,
+      "features": 34,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Authenticity",
+      "category": "Emotional",
+      "status": "SUCCESS",
+      "time": 0.09402871131896973,
+      "features": 30,
+      "accuracy": 0.488,
+      "error": null
+    },
+    {
+      "name": "Conflict Tension",
+      "category": "Emotional",
+      "status": "SUCCESS",
+      "time": 0.11090087890625,
+      "features": 28,
+      "accuracy": 0.56,
+      "error": null
+    },
+    {
+      "name": "Suspense Mystery",
+      "category": "Emotional",
+      "status": "SUCCESS",
+      "time": 0.05858922004699707,
+      "features": 25,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Phonetic",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "time": 0.22201919555664062,
+      "features": 91,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Universal Nominative",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "time": 0.6554632186889648,
+      "features": 116,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Hierarchical Nominative",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "time": 0.08756613731384277,
+      "features": 23,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Nominative Richness",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "time": 0.1359539031982422,
+      "features": 15,
+      "accuracy": 0.576,
+      "error": null
+    },
+    {
+      "name": "Ensemble Narrative",
+      "category": "Ensemble",
+      "status": "SUCCESS",
+      "time": 0.02195596694946289,
+      "features": 25,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Statistical",
+      "category": "Statistical",
+      "status": "SUCCESS",
+      "time": 0.021265029907226562,
+      "features": 852,
+      "accuracy": 0.456,
+      "error": null
+    },
+    {
+      "name": "Relational Value",
+      "category": "Relational",
+      "status": "SUCCESS",
+      "time": 0.9793679714202881,
+      "features": 17,
+      "accuracy": 0.432,
+      "error": null
+    },
+    {
+      "name": "Information Theory",
+      "category": "Information",
+      "status": "SUCCESS",
+      "time": 0.19716787338256836,
+      "features": 25,
+      "accuracy": 0.552,
+      "error": null
+    },
+    {
+      "name": "Namespace Ecology",
+      "category": "Information",
+      "status": "SUCCESS",
+      "time": 0.09246587753295898,
+      "features": 35,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Cognitive Fluency",
+      "category": "Cognitive",
+      "status": "SUCCESS",
+      "time": 0.018708229064941406,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Discoverability",
+      "category": "Cognitive",
+      "status": "SUCCESS",
+      "time": 0.10035991668701172,
+      "features": 12,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Temporal Evolution",
+      "category": "Temporal",
+      "status": "SUCCESS",
+      "time": 0.054080963134765625,
+      "features": 30,
+      "accuracy": 0.504,
+      "error": null
+    },
+    {
+      "name": "Optics",
+      "category": "Framing",
+      "status": "SUCCESS",
+      "time": 0.1902468204498291,
+      "features": 15,
+      "accuracy": 0.448,
+      "error": null
+    },
+    {
+      "name": "Framing",
+      "category": "Framing",
+      "status": "SUCCESS",
+      "time": 0.7803521156311035,
+      "features": 12,
+      "accuracy": 0.48,
+      "error": null
+    },
+    {
+      "name": "Coupling Strength",
+      "category": "Physics",
+      "status": "SUCCESS",
+      "time": 0.14588308334350586,
+      "features": 12,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Narrative Mass",
+      "category": "Physics",
+      "status": "SUCCESS",
+      "time": 0.2830479145050049,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Gravitational Features",
+      "category": "Physics",
+      "status": "SUCCESS",
+      "time": 0.6316590309143066,
+      "features": 20,
+      "accuracy": 0.416,
+      "error": null
+    },
+    {
+      "name": "Awareness Resistance",
+      "category": "Physics",
+      "status": "SUCCESS",
+      "time": 0.6122250556945801,
+      "features": 15,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Fundamental Constraints",
+      "category": "Physics",
+      "status": "SUCCESS",
+      "time": 0.0016667842864990234,
+      "features": 28,
+      "accuracy": 0.0,
+      "error": null
+    },
+    {
+      "name": "Multi-Scale",
+      "category": "Multi",
+      "status": "SUCCESS",
+      "time": 0.007279872894287109,
+      "features": 40,
+      "accuracy": 0.544,
+      "error": null
+    },
+    {
+      "name": "Quantitative",
+      "category": "Quantitative",
+      "status": "SUCCESS",
+      "time": 0.03375506401062012,
+      "features": 10,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Expertise Authority",
+      "category": "Authority",
+      "status": "SUCCESS",
+      "time": 0.1489548683166504,
+      "features": 32,
+      "accuracy": 0.544,
+      "error": null
+    },
+    {
+      "name": "Cultural Context",
+      "category": "Cultural",
+      "status": "SUCCESS",
+      "time": 0.08271002769470215,
+      "features": 34,
+      "accuracy": 0.456,
+      "error": null
+    },
+    {
+      "name": "Anticipatory Communication",
+      "category": "Communication",
+      "status": "SUCCESS",
+      "time": 0.027296066284179688,
+      "features": 25,
+      "accuracy": 0.464,
+      "error": null
+    },
+    {
+      "name": "Social Status",
+      "category": "Social",
+      "status": "SUCCESS",
+      "time": 0.06560826301574707,
+      "features": 20,
+      "accuracy": 0.472,
+      "error": null
+    },
+    {
+      "name": "Context Pattern",
+      "category": "Pattern",
+      "status": "SUCCESS",
+      "time": 0.1619880199432373,
+      "features": 60,
+      "accuracy": 0.0,
+      "error": null
+    }
+  ]
+}

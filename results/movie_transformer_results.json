@@ -1,0 +1,643 @@
+{
+  "metadata": {
+    "created_at": "2025-11-16T12:37:30.019667",
+    "dataset": "movies_merged_complete",
+    "total_movies": 81747,
+    "total_transformers": 23,
+    "successful_transformers": 19,
+    "failed_transformers": 4,
+    "execution_time": 105.413245
+  },
+  "results": [
+    {
+      "name": "Linguistic Patterns",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 36,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.07612228393554688,
+      "success": true
+    },
+    {
+      "name": "Nominative Analysis",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 51,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.07950067520141602,
+      "success": true
+    },
+    {
+      "name": "Emotional Resonance",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 34,
+      "train_r2": 0.004022662090210294,
+      "test_r2": -0.002473846086868736,
+      "train_rmse": 0.49514515812222515,
+      "test_rmse": 0.49379684991052936,
+      "time_seconds": 10.066215753555298,
+      "success": true
+    },
+    {
+      "name": "Conflict & Tension",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 28,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 1.6168386936187744,
+      "success": true
+    },
+    {
+      "name": "Suspense & Mystery",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 25,
+      "train_r2": 0.0035221314826637817,
+      "test_r2": -0.002124723612032975,
+      "train_rmse": 0.4952695606400652,
+      "test_rmse": 0.49371085734760356,
+      "time_seconds": 3.605245351791382,
+      "success": true
+    },
+    {
+      "name": "Narrative Potential",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 35,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.27821826934814453,
+      "success": true
+    },
+    {
+      "name": "Authenticity",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 30,
+      "train_r2": 0.008377070722666358,
+      "test_r2": -0.009253077655443143,
+      "train_rmse": 0.4940615862324369,
+      "test_rmse": 0.4954636877967164,
+      "time_seconds": 4.114319801330566,
+      "success": true
+    },
+    {
+      "name": "Cultural Context",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 34,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.16656708717346191,
+      "success": true
+    },
+    {
+      "name": "Phonetic Analysis",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "title"
+      ],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 91,
+      "train_r2": 0.2605435424652365,
+      "test_r2": 0.1386881077937514,
+      "train_rmse": 0.15858873363344758,
+      "test_rmse": 0.15972778627307374,
+      "time_seconds": 3.8294029235839844,
+      "success": true
+    },
+    {
+      "name": "Information Theory",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 25,
+      "train_r2": 0.03387568673595642,
+      "test_r2": 0.03604742609168965,
+      "train_rmse": 0.4876680619580308,
+      "test_rmse": 0.4842165435252373,
+      "time_seconds": 77.0583188533783,
+      "success": true
+    },
+    {
+      "name": "Statistical",
+      "category": "Statistical",
+      "data_type": "numerical",
+      "error": "max_df corresponds to < documents than min_df",
+      "time_seconds": 0.261188268661499,
+      "success": false
+    },
+    {
+      "name": "Quantitative",
+      "category": "Statistical",
+      "data_type": "numerical",
+      "requirements": [],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 10,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.06873297691345215,
+      "success": true
+    },
+    {
+      "name": "Social Status",
+      "category": "Social",
+      "data_type": "metadata",
+      "requirements": [
+        "has_cast"
+      ],
+      "valid_movies": 5987,
+      "train_size": 4789,
+      "test_size": 1198,
+      "features_generated": 20,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.08321619033813477,
+      "success": true
+    },
+    {
+      "name": "Optics",
+      "category": "Observability",
+      "data_type": "metadata",
+      "requirements": [],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 15,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.03825497627258301,
+      "success": true
+    },
+    {
+      "name": "Framing",
+      "category": "Framing",
+      "data_type": "metadata",
+      "requirements": [],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 12,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.046381235122680664,
+      "success": true
+    },
+    {
+      "name": "Discoverability",
+      "category": "Discovery",
+      "data_type": "metadata",
+      "requirements": [],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 12,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.04210495948791504,
+      "success": true
+    },
+    {
+      "name": "Nominative Richness",
+      "category": "Nominative",
+      "data_type": "text",
+      "error": "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+      "time_seconds": 1.0161011219024658,
+      "success": false
+    },
+    {
+      "name": "Hierarchical Nominative",
+      "category": "Nominative",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 23,
+      "train_r2": 0.03880352267241749,
+      "test_r2": 0.02315465870816069,
+      "train_rmse": 0.486422766504761,
+      "test_rmse": 0.4874439612218821,
+      "time_seconds": 1.3294949531555176,
+      "success": true
+    },
+    {
+      "name": "Cognitive Fluency",
+      "category": "Cognitive",
+      "data_type": "text",
+      "requirements": [
+        "title"
+      ],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 15,
+      "train_r2": 0.0034154249314514162,
+      "test_r2": -0.00355646251594699,
+      "train_rmse": 0.1841081901346351,
+      "test_rmse": 0.17241345581546821,
+      "time_seconds": 0.2673306465148926,
+      "success": true
+    },
+    {
+      "name": "Self-Perception",
+      "category": "Identity",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 21,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.06725525856018066,
+      "success": true
+    },
+    {
+      "name": "Expertise & Authority",
+      "category": "Authority",
+      "data_type": "metadata",
+      "requirements": [
+        "has_cast"
+      ],
+      "valid_movies": 5987,
+      "train_size": 4789,
+      "test_size": 1198,
+      "features_generated": 32,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.11390495300292969,
+      "success": true
+    },
+    {
+      "name": "Namespace Ecology",
+      "category": "Ecology",
+      "data_type": "text",
+      "error": "list index out of range",
+      "time_seconds": 0.0725090503692627,
+      "success": false
+    },
+    {
+      "name": "Relational Value",
+      "category": "Relational",
+      "data_type": "metadata",
+      "error": "max_df corresponds to < documents than min_df",
+      "time_seconds": 0.059664011001586914,
+      "success": false
+    }
+  ],
+  "top_10": [
+    {
+      "name": "Phonetic Analysis",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "title"
+      ],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 91,
+      "train_r2": 0.2605435424652365,
+      "test_r2": 0.1386881077937514,
+      "train_rmse": 0.15858873363344758,
+      "test_rmse": 0.15972778627307374,
+      "time_seconds": 3.8294029235839844,
+      "success": true
+    },
+    {
+      "name": "Information Theory",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 25,
+      "train_r2": 0.03387568673595642,
+      "test_r2": 0.03604742609168965,
+      "train_rmse": 0.4876680619580308,
+      "test_rmse": 0.4842165435252373,
+      "time_seconds": 77.0583188533783,
+      "success": true
+    },
+    {
+      "name": "Hierarchical Nominative",
+      "category": "Nominative",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 23,
+      "train_r2": 0.03880352267241749,
+      "test_r2": 0.02315465870816069,
+      "train_rmse": 0.486422766504761,
+      "test_rmse": 0.4874439612218821,
+      "time_seconds": 1.3294949531555176,
+      "success": true
+    },
+    {
+      "name": "Linguistic Patterns",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 36,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.07612228393554688,
+      "success": true
+    },
+    {
+      "name": "Nominative Analysis",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 51,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.07950067520141602,
+      "success": true
+    },
+    {
+      "name": "Conflict & Tension",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 28,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 1.6168386936187744,
+      "success": true
+    },
+    {
+      "name": "Narrative Potential",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 35,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.27821826934814453,
+      "success": true
+    },
+    {
+      "name": "Cultural Context",
+      "category": "NLP",
+      "data_type": "text",
+      "requirements": [
+        "has_plot"
+      ],
+      "valid_movies": 6051,
+      "train_size": 4840,
+      "test_size": 1211,
+      "features_generated": 34,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.16656708717346191,
+      "success": true
+    },
+    {
+      "name": "Quantitative",
+      "category": "Statistical",
+      "data_type": "numerical",
+      "requirements": [],
+      "valid_movies": 10000,
+      "train_size": 8000,
+      "test_size": 2000,
+      "features_generated": 10,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.06873297691345215,
+      "success": true
+    },
+    {
+      "name": "Social Status",
+      "category": "Social",
+      "data_type": "metadata",
+      "requirements": [
+        "has_cast"
+      ],
+      "valid_movies": 5987,
+      "train_size": 4789,
+      "test_size": 1198,
+      "features_generated": 20,
+      "train_r2": 0.0,
+      "test_r2": 0.0,
+      "train_rmse": 999.0,
+      "test_rmse": 999.0,
+      "time_seconds": 0.08321619033813477,
+      "success": true
+    }
+  ],
+  "category_summary": {
+    "NLP": {
+      "count": 10,
+      "avg_r2": 0.01608838865310962,
+      "max_r2": 0.1386881077937514,
+      "min_r2": -0.009253077655443143
+    },
+    "Statistical": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Social": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Observability": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Framing": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Discovery": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Nominative": {
+      "count": 1,
+      "avg_r2": 0.02315465870816069,
+      "max_r2": 0.02315465870816069,
+      "min_r2": 0.02315465870816069
+    },
+    "Cognitive": {
+      "count": 1,
+      "avg_r2": -0.00355646251594699,
+      "max_r2": -0.00355646251594699,
+      "min_r2": -0.00355646251594699
+    },
+    "Identity": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    },
+    "Authority": {
+      "count": 1,
+      "avg_r2": 0.0,
+      "max_r2": 0.0,
+      "min_r2": 0.0
+    }
+  },
+  "errors": [
+    {
+      "transformer": "Statistical",
+      "error": "max_df corresponds to < documents than min_df",
+      "timestamp": "2025-11-16T12:37:26.784722"
+    },
+    {
+      "transformer": "Nominative Richness",
+      "error": "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+      "timestamp": "2025-11-16T12:37:28.087837"
+    },
+    {
+      "transformer": "Namespace Ecology",
+      "error": "list index out of range",
+      "timestamp": "2025-11-16T12:37:29.952116"
+    },
+    {
+      "transformer": "Relational Value",
+      "error": "max_df corresponds to < documents than min_df",
+      "timestamp": "2025-11-16T12:37:30.012852"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "sample_size": 10,
+  "mean_journey_completion": 0.32706060606060605,
+  "mean_archetype_clarity": 0.3,
+  "learned_weights": {
+    "ordinary_world": 0.3317782725262898,
+    "call_to_adventure": 0.08106476811503338,
+    "refusal_of_call": 0.5732852656746122,
+    "meeting_mentor": 0.17924823805828086,
+    "crossing_threshold": 0.14702643463617113,
+    "tests_allies_enemies": 0.4795297516050085,
+    "approach_inmost_cave": 0.3137072055872124,
+    "ordeal": 0.10758564138470725,
+    "reward": 0.23358610941946373,
+    "road_back": 0.2551184482455684,
+    "resurrection": 0.18424627347507808,
+    "return_with_elixir": 0.3488004056135484,
+    "supernatural_aid": 0.11724086768960079,
+    "belly_of_whale": 0.5601120336112035,
+    "meeting_goddess": 0.168188855123101,
+    "woman_as_temptress": 0.5601120336112035,
+    "atonement_with_father": 0.05124846857991736,
+    "sequential_coherence": 0.13748707929929146
+  },
+  "plot_distribution": {
+    "quest": 10
+  },
+  "validation": "Sample demonstrates system works, larger dataset needed for full validation"
+}

@@ -1,0 +1,178 @@
+{
+  "domain": "ml_research",
+  "sample_size": 4,
+  "timestamp": "2025-11-18T18:00:13.097113",
+  "domain_info": {
+    "name": "ml_research",
+    "estimated_pi": 0.74,
+    "sample_size": 4,
+    "total_available": 4,
+    "outcome_type": "continuous",
+    "used_transformers": true,
+    "fast_mode": false
+  },
+  "n_patterns": 3,
+  "patterns": [
+    {
+      "id": "pattern_0",
+      "size": 2,
+      "size_pct": 0.5,
+      "centroid_latent": [
+        -70.66323217959692,
+        -229.36428704118453,
+        1.3078048005053198
+      ],
+      "variance": 9725.233665303505,
+      "std": 98.6165993395813,
+      "density": 0.02681439147633703,
+      "separation": 0.5359027175915,
+      "coherence": 0.013589391368204612,
+      "example_narratives": [
+        "Impactful and widely cited papers and literature on ML/DL/RL/AI\n\n**Widely cited and impactful papers/literature and free tutorials/books, related to Artificial intelligence (AI), statistical modeling, Machine Learning (ML), Deep learning (DL), Reinforcement learning (RL), and their various applications.**",
+        "Collector/maintainer\nPapers collected and maintained by [Dr. Tirthajyoti Sarkar](https://tirthajyoti.github.io).\n<br>Please feel free to [add me on LinkedIn](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/)\n\n![ML def](https://raw.githubusercontent.com/tirthajyoti/Papers-Literature-ML-DL-AI/master/Images/What-is-machine-learning_Definition.jpg)"
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          1,
+          0,
+          2
+        ],
+        "dimension_values": [
+          -229.36428704118453,
+          -70.66323217959692,
+          1.3078048005053198
+        ],
+        "dimension_prominence": [
+          0.7611596409619137,
+          0.23450032753081804,
+          0.00434003150726841
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_1",
+      "size": 1,
+      "size_pct": 0.25,
+      "centroid_latent": [
+        480.3199024940854,
+        150.04438143595038,
+        -0.9973816496731631
+      ],
+      "variance": 40395.7624468622,
+      "std": 200.98697083856507,
+      "density": 0.0,
+      "separation": 0.7084305208853154,
+      "coherence": 1.0,
+      "example_narratives": [
+        "- [Chapter 1: Introduction](http://bit.ly/theMLbook-Chapter-1)\n- [Chapter 2:  Notation and Definitions](http://bit.ly/theMLbook-Chapter-2)\n- [Chapter 3: Fundamental Algorithms](http://bit.ly/theMLbook-Chapter-3)\n- [Chapter 4: Anatomy of a Learning Algorithm](http://bit.ly/theMLbook-Chapter-4)\n- [Chapter 5: Basic Practice](http://bit.ly/theMLbook-Chapter-5)\n- [Chapter 6: Neural Networks and Deep Learning](http://bit.ly/theMLbook-Chapter-6)\n- [Chapter 7: Problems and Solutions](http://bit.ly/theMLbook-Chapter-7)\n- [Chapter 8: Advanced Practice](http://bit.ly/theMLbook-Chapter-8)\n- [Chapter 9: Unsupervised Learning](https://www.dropbox.com/s/y9a7b0hzmuksqar/Chapter9.pdf?dl=0)\n- [Chapter 10: Other Forms of Learning](http://bit.ly/theMLbook-Chapter-10)\n- [Chapter 11: Conclusion](http://bit.ly/theMLbook-Chapter-11)\n\n**Note**: The chapters are downloadable as PDFs but the contents are constantly updated by the author which is why the links."
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1,
+          2
+        ],
+        "dimension_values": [
+          480.3199024940854,
+          150.04438143595038,
+          -0.9973816496731631
+        ],
+        "dimension_prominence": [
+          0.7607682389982631,
+          0.23765202991566078,
+          0.0015797310860762809
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_2",
+      "size": 1,
+      "size_pct": 0.25,
+      "centroid_latent": [
+        -338.99343813489145,
+        308.68419264641886,
+        -1.6182279513374884
+      ],
+      "variance": 69955.1042321906,
+      "std": 264.490272471769,
+      "density": 0.0,
+      "separation": 0.5228111341437791,
+      "coherence": 1.0,
+      "example_narratives": [
+        "[![GitHub forks](https://img.shields.io/github/forks/tirthajyoti/Papers-Literature-ML-DL-RL-AI.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/network)\n[![GitHub stars](https://img.shields.io/github/stars/tirthajyoti/Papers-Literature-ML-DL-RL-AI.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/stargazers)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/pulls)"
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1,
+          2
+        ],
+        "dimension_values": [
+          -338.99343813489145,
+          308.68419264641886,
+          -1.6182279513374884
+        ],
+        "dimension_prominence": [
+          0.522093947736812,
+          0.47541377092553083,
+          0.0024922813376572067
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    }
+  ],
+  "significant_correlations": [],
+  "all_correlations": [
+    {
+      "pattern_id": "latent_dim_1",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.7418141059379021,
+      "p_value": 0.2581858940620978,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 0.7745576821862934,
+      "p_value_fdr": 0.7745576821862934,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_0",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.6546285993060458,
+      "p_value": 0.3453714006939541,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.5180571010409312,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_2",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.1455102374479388,
+      "p_value": 0.8544897625520611,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.8544897625520611,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    }
+  ],
+  "validation": {
+    "safe_to_proceed": false,
+    "issues": [
+      "Too few patterns (3)"
+    ],
+    "warnings": [
+      "Low significance rate (0%)",
+      "Pattern count differs from \u03c0 prediction (exp 21, got 3)"
+    ]
+  }
+}

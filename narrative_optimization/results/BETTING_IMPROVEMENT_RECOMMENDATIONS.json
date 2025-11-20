@@ -1,0 +1,132 @@
+[
+  {
+    "domain": "nba",
+    "current_performance": {
+      "R\u00b2": 0.15,
+      "ROI": null
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "nba narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "mythos_framing",
+        "reason": "nba uses romance framing - add mythos features",
+        "expected_improvement": "Small (1-3% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  },
+  {
+    "domain": "tennis",
+    "current_performance": {
+      "R\u00b2": 0.931,
+      "ROI": 1.277
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "tennis narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  },
+  {
+    "domain": "golf",
+    "current_performance": {
+      "R\u00b2": 0.977,
+      "ROI": null
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "golf narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  },
+  {
+    "domain": "ufc",
+    "current_performance": {
+      "R\u00b2": 0.025,
+      "ROI": null
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "ufc narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "mythos_framing",
+        "reason": "ufc uses romance framing - add mythos features",
+        "expected_improvement": "Small (1-3% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  },
+  {
+    "domain": "mlb",
+    "current_performance": {
+      "R\u00b2": null,
+      "ROI": null
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "mlb narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  },
+  {
+    "domain": "nfl",
+    "current_performance": {
+      "R\u00b2": null,
+      "ROI": null
+    },
+    "archetype_features_available": 225,
+    "recommended_additions": [
+      {
+        "feature_type": "quest_structure",
+        "reason": "nfl narratives are 100% quest - add quest completion score",
+        "expected_improvement": "Moderate (2-5% R\u00b2)"
+      },
+      {
+        "feature_type": "character_archetypes",
+        "reason": "Warrior/Ruler archetypes detected - may capture narrative intensity",
+        "expected_improvement": "Small to Moderate (1-4% R\u00b2)"
+      }
+    ]
+  }
+]

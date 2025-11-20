@@ -1,0 +1,9 @@
+{
+  "domain": "startups",
+  "metric": "accuracy",
+  "baseline": 0.75,
+  "enriched": 0.7352941176470589,
+  "lift": -0.014705882352941124,
+  "sample_size": 269,
+  "feature_count": 41
+}

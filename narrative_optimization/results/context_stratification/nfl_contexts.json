@@ -1,0 +1,2903 @@
+{
+  "domain": "nfl",
+  "baseline_win_rate": 0.5514950166112956,
+  "patterns": [
+    {
+      "pattern_name": "nfl_context_1",
+      "conditions": {
+        "is_playoff": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_2",
+      "conditions": {
+        "is_rivalry": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_3",
+      "conditions": {
+        "rest_advantage": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_4",
+      "conditions": {
+        "record_differential": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_5",
+      "conditions": {
+        "spread_line": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_6",
+      "conditions": {
+        "prime_time": {
+          "eq": 0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_7",
+      "conditions": {
+        "literary_length_alignment": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_8",
+      "conditions": {
+        "literary_sentence_alignment": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_9",
+      "conditions": {
+        "literary_word_alignment": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_10",
+      "conditions": {
+        "literary_density_delta": {
+          "eq": 0.0
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_11",
+      "conditions": {
+        "literary_pi_alignment": {
+          "eq": 0.672305
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    },
+    {
+      "pattern_name": "nfl_context_12",
+      "conditions": {
+        "literary_pi_zscore": {
+          "eq": -12.059971
+        },
+        "multi_scale_enhanced_micro_moneyline_delta": {
+          "max": -0.9625
+        }
+      },
+      "accuracy": 0.9817945383615084,
+      "sample_size": 1538,
+      "effect_size": 3.762283174572453,
+      "edge_vs_baseline": 0.4302995217502128,
+      "pi_mean": 0.5700000000000001,
+      "pi_std": 1.1105841314893568e-16
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_2",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_3",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_4",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_5",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_6",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_1",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_3",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_4",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_5",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_6",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_2",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_4",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_5",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_6",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_3",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_5",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_6",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_4",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_6",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_5",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_7",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_6",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_7",
+      "pattern_b": "nfl_context_8",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_7",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_7",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_7",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_7",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_8",
+      "pattern_b": "nfl_context_9",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_8",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_8",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_8",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_9",
+      "pattern_b": "nfl_context_10",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_9",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_9",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_10",
+      "pattern_b": "nfl_context_11",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_10",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "nfl_context_11",
+      "pattern_b": "nfl_context_12",
+      "win_rate": 0.9817945383615084,
+      "baseline": 0.5514950166112956,
+      "lift": 0.4302995217502128,
+      "sample_size": 1538,
+      "classification": "amplifying"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "nfl_context_1",
+      "ate": 0.4430635448890451,
+      "att": 0.8290260056336276,
+      "control_mean": 0.14800831777346302,
+      "treated_mean": 0.9770343234070906,
+      "uplift": 0.8290260056336276,
+      "sample_sizes": {
+        "treated": 1538,
+        "control": 1472,
+        "total": 3010
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nfl_context_1"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nfl_context_1",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nfl_context_1"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nfl_context_1"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nfl_context_1"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nfl_context_1"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "prime_time",
+          "nfl_context_1"
+        ],
+        [
+          "prime_time",
+          "target"
+        ],
+        [
+          "week",
+          "nfl_context_1"
+        ],
+        [
+          "week",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nfl_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nfl_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nfl_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nfl_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nfl_context_1"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nfl_context_1"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nfl_context_1"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nfl_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nfl_context_2",
+      "ate": 0.4430635448890451,
+      "att": 0.8290260056336276,
+      "control_mean": 0.14800831777346302,
+      "treated_mean": 0.9770343234070906,
+      "uplift": 0.8290260056336276,
+      "sample_sizes": {
+        "treated": 1538,
+        "control": 1472,
+        "total": 3010
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nfl_context_2"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nfl_context_2",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nfl_context_2"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nfl_context_2"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nfl_context_2"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nfl_context_2"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "prime_time",
+          "nfl_context_2"
+        ],
+        [
+          "prime_time",
+          "target"
+        ],
+        [
+          "week",
+          "nfl_context_2"
+        ],
+        [
+          "week",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nfl_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nfl_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nfl_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nfl_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nfl_context_2"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nfl_context_2"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nfl_context_2"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nfl_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nfl_context_3",
+      "ate": 0.4430635448890451,
+      "att": 0.8290260056336276,
+      "control_mean": 0.14800831777346302,
+      "treated_mean": 0.9770343234070906,
+      "uplift": 0.8290260056336276,
+      "sample_sizes": {
+        "treated": 1538,
+        "control": 1472,
+        "total": 3010
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nfl_context_3"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nfl_context_3",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nfl_context_3"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nfl_context_3"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nfl_context_3"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nfl_context_3"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "prime_time",
+          "nfl_context_3"
+        ],
+        [
+          "prime_time",
+          "target"
+        ],
+        [
+          "week",
+          "nfl_context_3"
+        ],
+        [
+          "week",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nfl_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nfl_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nfl_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nfl_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nfl_context_3"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nfl_context_3"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nfl_context_3"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nfl_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nfl_context_4",
+      "ate": 0.4430635448890451,
+      "att": 0.8290260056336276,
+      "control_mean": 0.14800831777346302,
+      "treated_mean": 0.9770343234070906,
+      "uplift": 0.8290260056336276,
+      "sample_sizes": {
+        "treated": 1538,
+        "control": 1472,
+        "total": 3010
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nfl_context_4"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nfl_context_4",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nfl_context_4"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nfl_context_4"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nfl_context_4"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nfl_context_4"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "prime_time",
+          "nfl_context_4"
+        ],
+        [
+          "prime_time",
+          "target"
+        ],
+        [
+          "week",
+          "nfl_context_4"
+        ],
+        [
+          "week",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nfl_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nfl_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nfl_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nfl_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nfl_context_4"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nfl_context_4"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nfl_context_4"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nfl_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "nfl_context_5",
+      "ate": 0.4430635448890451,
+      "att": 0.8290260056336276,
+      "control_mean": 0.14800831777346302,
+      "treated_mean": 0.9770343234070906,
+      "uplift": 0.8290260056336276,
+      "sample_sizes": {
+        "treated": 1538,
+        "control": 1472,
+        "total": 3010
+      },
+      "graph_edges": [
+        [
+          "is_playoff",
+          "nfl_context_5"
+        ],
+        [
+          "is_playoff",
+          "target"
+        ],
+        [
+          "nfl_context_5",
+          "target"
+        ],
+        [
+          "is_rivalry",
+          "nfl_context_5"
+        ],
+        [
+          "is_rivalry",
+          "target"
+        ],
+        [
+          "rest_advantage",
+          "nfl_context_5"
+        ],
+        [
+          "rest_advantage",
+          "target"
+        ],
+        [
+          "record_differential",
+          "nfl_context_5"
+        ],
+        [
+          "record_differential",
+          "target"
+        ],
+        [
+          "spread_line",
+          "nfl_context_5"
+        ],
+        [
+          "spread_line",
+          "target"
+        ],
+        [
+          "prime_time",
+          "nfl_context_5"
+        ],
+        [
+          "prime_time",
+          "target"
+        ],
+        [
+          "week",
+          "nfl_context_5"
+        ],
+        [
+          "week",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "nfl_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "nfl_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "nfl_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "nfl_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "home_centrality",
+          "nfl_context_5"
+        ],
+        [
+          "home_centrality",
+          "target"
+        ],
+        [
+          "away_centrality",
+          "nfl_context_5"
+        ],
+        [
+          "away_centrality",
+          "target"
+        ],
+        [
+          "rivalry_strength",
+          "nfl_context_5"
+        ],
+        [
+          "rivalry_strength",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "nfl_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

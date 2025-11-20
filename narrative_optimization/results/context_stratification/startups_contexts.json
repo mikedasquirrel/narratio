@@ -1,0 +1,2743 @@
+{
+  "domain": "startups",
+  "baseline_win_rate": 0.7769516728624535,
+  "patterns": [
+    {
+      "pattern_name": "startups_context_1",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "years_active": {
+          "eq": 5.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_2",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "yc_year": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_3",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_length_alignment": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_4",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_sentence_alignment": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_5",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_word_alignment": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_6",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_density_delta": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_7",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_pi_alignment": {
+          "eq": 0.935329
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_8",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_pi_zscore": {
+          "eq": -2.380043
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_9",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "literary_story_coverage": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_10",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "pi_effective": {
+          "eq": 0.793
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_11",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "multi_scale_enhanced_macro_season_norm": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    },
+    {
+      "pattern_name": "startups_context_12",
+      "conditions": {
+        "total_funding": {
+          "max": 0.0
+        },
+        "multi_scale_enhanced_macro_is_playoff_window": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 1.0,
+      "sample_size": 47,
+      "effect_size": 5.6704361519944975,
+      "edge_vs_baseline": 0.22304832713754652,
+      "pi_mean": 0.793,
+      "pi_std": 0.0
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_2",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_3",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_4",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_5",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_6",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_1",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_3",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_4",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_5",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_6",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_2",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_4",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_5",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_6",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_3",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_5",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_6",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_4",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_6",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_5",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_7",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_6",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_7",
+      "pattern_b": "startups_context_8",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_7",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_7",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_7",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_7",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_8",
+      "pattern_b": "startups_context_9",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_8",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_8",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_8",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_9",
+      "pattern_b": "startups_context_10",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_9",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_9",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_10",
+      "pattern_b": "startups_context_11",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_10",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    },
+    {
+      "pattern_a": "startups_context_11",
+      "pattern_b": "startups_context_12",
+      "win_rate": 0.0,
+      "baseline": 0.7769516728624535,
+      "lift": -0.7769516728624535,
+      "sample_size": 47,
+      "classification": "cancelling"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "startups_context_1",
+      "ate": -0.896624117188048,
+      "att": -0.8913461449939524,
+      "control_mean": 0.8913461449939524,
+      "treated_mean": 0.0,
+      "uplift": -0.8913461449939524,
+      "sample_sizes": {
+        "treated": 47,
+        "control": 222,
+        "total": 269
+      },
+      "graph_edges": [
+        [
+          "founder_count",
+          "startups_context_1"
+        ],
+        [
+          "founder_count",
+          "target"
+        ],
+        [
+          "startups_context_1",
+          "target"
+        ],
+        [
+          "total_funding",
+          "startups_context_1"
+        ],
+        [
+          "total_funding",
+          "target"
+        ],
+        [
+          "years_active",
+          "startups_context_1"
+        ],
+        [
+          "years_active",
+          "target"
+        ],
+        [
+          "market_hash",
+          "startups_context_1"
+        ],
+        [
+          "market_hash",
+          "target"
+        ],
+        [
+          "location_hash",
+          "startups_context_1"
+        ],
+        [
+          "location_hash",
+          "target"
+        ],
+        [
+          "yc_year",
+          "startups_context_1"
+        ],
+        [
+          "yc_year",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "startups_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "startups_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "startups_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "startups_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "startups_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "startups_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "startups_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "startups_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "startups_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "startups_context_2",
+      "ate": -0.896624117188048,
+      "att": -0.8913461449939524,
+      "control_mean": 0.8913461449939524,
+      "treated_mean": 0.0,
+      "uplift": -0.8913461449939524,
+      "sample_sizes": {
+        "treated": 47,
+        "control": 222,
+        "total": 269
+      },
+      "graph_edges": [
+        [
+          "founder_count",
+          "startups_context_2"
+        ],
+        [
+          "founder_count",
+          "target"
+        ],
+        [
+          "startups_context_2",
+          "target"
+        ],
+        [
+          "total_funding",
+          "startups_context_2"
+        ],
+        [
+          "total_funding",
+          "target"
+        ],
+        [
+          "years_active",
+          "startups_context_2"
+        ],
+        [
+          "years_active",
+          "target"
+        ],
+        [
+          "market_hash",
+          "startups_context_2"
+        ],
+        [
+          "market_hash",
+          "target"
+        ],
+        [
+          "location_hash",
+          "startups_context_2"
+        ],
+        [
+          "location_hash",
+          "target"
+        ],
+        [
+          "yc_year",
+          "startups_context_2"
+        ],
+        [
+          "yc_year",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "startups_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "startups_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "startups_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "startups_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "startups_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "startups_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "startups_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "startups_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "startups_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "startups_context_3",
+      "ate": -0.896624117188048,
+      "att": -0.8913461449939524,
+      "control_mean": 0.8913461449939524,
+      "treated_mean": 0.0,
+      "uplift": -0.8913461449939524,
+      "sample_sizes": {
+        "treated": 47,
+        "control": 222,
+        "total": 269
+      },
+      "graph_edges": [
+        [
+          "founder_count",
+          "startups_context_3"
+        ],
+        [
+          "founder_count",
+          "target"
+        ],
+        [
+          "startups_context_3",
+          "target"
+        ],
+        [
+          "total_funding",
+          "startups_context_3"
+        ],
+        [
+          "total_funding",
+          "target"
+        ],
+        [
+          "years_active",
+          "startups_context_3"
+        ],
+        [
+          "years_active",
+          "target"
+        ],
+        [
+          "market_hash",
+          "startups_context_3"
+        ],
+        [
+          "market_hash",
+          "target"
+        ],
+        [
+          "location_hash",
+          "startups_context_3"
+        ],
+        [
+          "location_hash",
+          "target"
+        ],
+        [
+          "yc_year",
+          "startups_context_3"
+        ],
+        [
+          "yc_year",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "startups_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "startups_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "startups_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "startups_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "startups_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "startups_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "startups_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "startups_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "startups_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "startups_context_4",
+      "ate": -0.896624117188048,
+      "att": -0.8913461449939524,
+      "control_mean": 0.8913461449939524,
+      "treated_mean": 0.0,
+      "uplift": -0.8913461449939524,
+      "sample_sizes": {
+        "treated": 47,
+        "control": 222,
+        "total": 269
+      },
+      "graph_edges": [
+        [
+          "founder_count",
+          "startups_context_4"
+        ],
+        [
+          "founder_count",
+          "target"
+        ],
+        [
+          "startups_context_4",
+          "target"
+        ],
+        [
+          "total_funding",
+          "startups_context_4"
+        ],
+        [
+          "total_funding",
+          "target"
+        ],
+        [
+          "years_active",
+          "startups_context_4"
+        ],
+        [
+          "years_active",
+          "target"
+        ],
+        [
+          "market_hash",
+          "startups_context_4"
+        ],
+        [
+          "market_hash",
+          "target"
+        ],
+        [
+          "location_hash",
+          "startups_context_4"
+        ],
+        [
+          "location_hash",
+          "target"
+        ],
+        [
+          "yc_year",
+          "startups_context_4"
+        ],
+        [
+          "yc_year",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "startups_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "startups_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "startups_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "startups_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "startups_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "startups_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "startups_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "startups_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "startups_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "startups_context_5",
+      "ate": -0.896624117188048,
+      "att": -0.8913461449939524,
+      "control_mean": 0.8913461449939524,
+      "treated_mean": 0.0,
+      "uplift": -0.8913461449939524,
+      "sample_sizes": {
+        "treated": 47,
+        "control": 222,
+        "total": 269
+      },
+      "graph_edges": [
+        [
+          "founder_count",
+          "startups_context_5"
+        ],
+        [
+          "founder_count",
+          "target"
+        ],
+        [
+          "startups_context_5",
+          "target"
+        ],
+        [
+          "total_funding",
+          "startups_context_5"
+        ],
+        [
+          "total_funding",
+          "target"
+        ],
+        [
+          "years_active",
+          "startups_context_5"
+        ],
+        [
+          "years_active",
+          "target"
+        ],
+        [
+          "market_hash",
+          "startups_context_5"
+        ],
+        [
+          "market_hash",
+          "target"
+        ],
+        [
+          "location_hash",
+          "startups_context_5"
+        ],
+        [
+          "location_hash",
+          "target"
+        ],
+        [
+          "yc_year",
+          "startups_context_5"
+        ],
+        [
+          "yc_year",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "startups_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "startups_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "startups_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "startups_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "startups_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "startups_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "startups_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "startups_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "startups_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

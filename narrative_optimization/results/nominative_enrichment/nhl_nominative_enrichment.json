@@ -1,0 +1,9 @@
+{
+  "domain": "nhl",
+  "metric": "accuracy",
+  "baseline": 0.5339025615268709,
+  "enriched": 0.5323957810145655,
+  "lift": -0.0015067805123053502,
+  "sample_size": 15927,
+  "feature_count": 41
+}

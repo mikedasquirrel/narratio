@@ -1,0 +1,43 @@
+{
+  "scaler_mean": [
+    0.6563636363636364,
+    47.21212775892499,
+    0.2537053558422359,
+    36.82509837295037,
+    0.04680285676638834
+  ],
+  "scaler_scale": [
+    0.11964133728263346,
+    146.39111391315885,
+    0.58723024071822,
+    115.95276196995007,
+    0.25540149730544165
+  ],
+  "feature_order": [
+    "pi",
+    "theta",
+    "lambda",
+    "context_strength",
+    "nominative_richness"
+  ],
+  "model_params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 8,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 300,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 7,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "r2": 0.833831469713747
+}

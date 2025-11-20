@@ -1,0 +1,5251 @@
+{
+  "total_patterns": 225,
+  "total_games_analyzed": 11976,
+  "baseline_accuracy": 0.5045090180360722,
+  "patterns": [
+    {
+      "rank": 1,
+      "features": [
+        "home",
+        "season_win_pct",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "l10_win_pct": {
+          "min": 0.3
+        }
+      },
+      "accuracy": 0.6434604555925262,
+      "sample_size": 3907,
+      "effect_size": 0.42296506229437764,
+      "p_value": 8.735530636932976e-73,
+      "score": 17.011713619604016
+    },
+    {
+      "rank": 2,
+      "features": [
+        "home",
+        "season_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        }
+      },
+      "accuracy": 0.6415906788247214,
+      "sample_size": 3948,
+      "effect_size": 0.41917710627284926,
+      "p_value": 1.200504424334826e-71,
+      "score": 16.898345020616325
+    },
+    {
+      "rank": 3,
+      "features": [
+        "home",
+        "season_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6415906788247214,
+      "sample_size": 3948,
+      "effect_size": 0.41917710627284926,
+      "p_value": 1.200504424334826e-71,
+      "score": 16.898345020616325
+    },
+    {
+      "rank": 4,
+      "features": [
+        "home",
+        "season_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6415906788247214,
+      "sample_size": 3948,
+      "effect_size": 0.41917710627284926,
+      "p_value": 1.200504424334826e-71,
+      "score": 16.898345020616325
+    },
+    {
+      "rank": 5,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6463909164639091,
+      "sample_size": 3699,
+      "effect_size": 0.4211996312672244,
+      "p_value": 8.102852384403382e-72,
+      "score": 16.55866777556387
+    },
+    {
+      "rank": 6,
+      "features": [
+        "home",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        }
+      },
+      "accuracy": 0.6473509933774835,
+      "sample_size": 3624,
+      "effect_size": 0.4202931568869493,
+      "p_value": 2.589511317710723e-71,
+      "score": 16.378956604412295
+    },
+    {
+      "rank": 7,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6473509933774835,
+      "sample_size": 3624,
+      "effect_size": 0.4202931568869493,
+      "p_value": 2.589511317710723e-71,
+      "score": 16.378956604412295
+    },
+    {
+      "rank": 8,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6473509933774835,
+      "sample_size": 3624,
+      "effect_size": 0.4202931568869493,
+      "p_value": 2.589511317710723e-71,
+      "score": 16.378956604412295
+    },
+    {
+      "rank": 9,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6425146510388918,
+      "sample_size": 3754,
+      "effect_size": 0.4119275295565432,
+      "p_value": 4.295574449287355e-69,
+      "score": 16.216270742729165
+    },
+    {
+      "rank": 10,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6523529411764706,
+      "sample_size": 3400,
+      "effect_size": 0.4241503956177697,
+      "p_value": 1.373354105527296e-71,
+      "score": 16.13399654886318
+    },
+    {
+      "rank": 11,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.642607995707003,
+      "sample_size": 3727,
+      "effect_size": 0.41083751673030033,
+      "p_value": 1.068464083688827e-68,
+      "score": 16.117434608665736
+    },
+    {
+      "rank": 12,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6442019099590723,
+      "sample_size": 3665,
+      "effect_size": 0.4126376774615071,
+      "p_value": 4.3890153892499374e-69,
+      "score": 16.09266156354856
+    },
+    {
+      "rank": 13,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.5
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6673525377229081,
+      "sample_size": 2916,
+      "effect_size": 0.4441805195431582,
+      "p_value": 2.96174501789214e-74,
+      "score": 16.006949833907147
+    },
+    {
+      "rank": 14,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6525751711818993,
+      "sample_size": 3359,
+      "effect_size": 0.42275414715553294,
+      "p_value": 5.966035445653138e-71,
+      "score": 15.989078124922353
+    },
+    {
+      "rank": 15,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      },
+      "accuracy": 0.6537404580152671,
+      "sample_size": 3275,
+      "effect_size": 0.4220544922766751,
+      "p_value": 2.8563700738177134e-70,
+      "score": 15.78990591750212
+    },
+    {
+      "rank": 16,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6474340388518411,
+      "sample_size": 3449,
+      "effect_size": 0.41171725416848687,
+      "p_value": 4.989098443585987e-68,
+      "score": 15.654571827129452
+    },
+    {
+      "rank": 17,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6476412347117064,
+      "sample_size": 3434,
+      "effect_size": 0.41160415247158844,
+      "p_value": 6.281543125041576e-68,
+      "score": 15.621199720901991
+    },
+    {
+      "rank": 18,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6529610309911016,
+      "sample_size": 3259,
+      "effect_size": 0.41894346379876696,
+      "p_value": 3.1001128641745906e-69,
+      "score": 15.61654160256872
+    },
+    {
+      "rank": 19,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6568123393316195,
+      "sample_size": 3112,
+      "effect_size": 0.4231263342662365,
+      "p_value": 1.5695374838937575e-69,
+      "score": 15.50354994971209
+    },
+    {
+      "rank": 20,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      },
+      "accuracy": 0.646954986760812,
+      "sample_size": 3399,
+      "effect_size": 0.40782333194187625,
+      "p_value": 1.2285125013868589e-66,
+      "score": 15.38231553068903
+    },
+    {
+      "rank": 21,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      },
+      "accuracy": 0.6582781456953642,
+      "sample_size": 3020,
+      "effect_size": 0.42294701789095424,
+      "p_value": 8.790428308376108e-69,
+      "score": 15.300262284641649
+    },
+    {
+      "rank": 22,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 0.6390791997807619,
+      "sample_size": 3649,
+      "effect_size": 0.3960167546107068,
+      "p_value": 4.742826405572119e-64,
+      "score": 15.288158435173044
+    },
+    {
+      "rank": 23,
+      "features": [
+        "home",
+        "season_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6486241306319928,
+      "sample_size": 3307,
+      "effect_size": 0.4083703426635795,
+      "p_value": 2.4141098950081374e-66,
+      "score": 15.232261735809178
+    },
+    {
+      "rank": 24,
+      "features": [
+        "home",
+        "season_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      },
+      "accuracy": 0.6464616303374141,
+      "sample_size": 3349,
+      "effect_size": 0.4039354286443078,
+      "p_value": 3.0150138495931747e-65,
+      "score": 15.1116634588539
+    },
+    {
+      "rank": 25,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6564051638530288,
+      "sample_size": 3021,
+      "effect_size": 0.41755645698319804,
+      "p_value": 3.3576345369794276e-67,
+      "score": 15.0647717325977
+    },
+    {
+      "rank": 26,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 0.6452380952380953,
+      "sample_size": 3360,
+      "effect_size": 0.4008052146240747,
+      "p_value": 2.2172462076846784e-64,
+      "score": 14.99073760423568
+    },
+    {
+      "rank": 27,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6552406064601186,
+      "sample_size": 3034,
+      "effect_size": 0.41479446375586265,
+      "p_value": 1.7204031146250857e-66,
+      "score": 14.970680541719426
+    },
+    {
+      "rank": 28,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      },
+      "accuracy": 0.6514668367346939,
+      "sample_size": 3136,
+      "effect_size": 0.40861712889876695,
+      "p_value": 2.1002734384392475e-65,
+      "score": 14.907228470360371
+    },
+    {
+      "rank": 29,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6461819288104654,
+      "sample_size": 3287,
+      "effect_size": 0.400165187927684,
+      "p_value": 7.88718565042999e-64,
+      "score": 14.8249748470727
+    },
+    {
+      "rank": 30,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      },
+      "accuracy": 0.6538842975206611,
+      "sample_size": 3025,
+      "effect_size": 0.41044065081366127,
+      "p_value": 3.7083008318714153e-65,
+      "score": 14.760938314716762
+    },
+    {
+      "rank": 31,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        }
+      },
+      "accuracy": 0.6126320845341018,
+      "sample_size": 4164,
+      "effect_size": 0.36549030545415506,
+      "p_value": 3.6187176009348287e-48,
+      "score": 14.448772734240725
+    },
+    {
+      "rank": 32,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6126320845341018,
+      "sample_size": 4164,
+      "effect_size": 0.36549030545415506,
+      "p_value": 3.6187176009348287e-48,
+      "score": 14.448772734240725
+    },
+    {
+      "rank": 33,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6126320845341018,
+      "sample_size": 4164,
+      "effect_size": 0.36549030545415506,
+      "p_value": 3.6187176009348287e-48,
+      "score": 14.448772734240725
+    },
+    {
+      "rank": 34,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6506420810009879,
+      "sample_size": 3037,
+      "effect_size": 0.4016209918174311,
+      "p_value": 1.0312554458523847e-62,
+      "score": 14.400611979798008
+    },
+    {
+      "rank": 35,
+      "features": [
+        "season_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6128064032016007,
+      "sample_size": 3998,
+      "effect_size": 0.3582563226755958,
+      "p_value": 1.8745423587409135e-46,
+      "score": 13.881568907320451
+    },
+    {
+      "rank": 36,
+      "features": [
+        "season_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6128064032016007,
+      "sample_size": 3998,
+      "effect_size": 0.3582563226755958,
+      "p_value": 1.8745423587409135e-46,
+      "score": 13.881568907320451
+    },
+    {
+      "rank": 37,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6128064032016007,
+      "sample_size": 3998,
+      "effect_size": 0.3582563226755958,
+      "p_value": 1.8745423587409135e-46,
+      "score": 13.881568907320451
+    },
+    {
+      "rank": 38,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6153234358430542,
+      "sample_size": 3772,
+      "effect_size": 0.35590624593408526,
+      "p_value": 7.636034097404442e-46,
+      "score": 13.45008125732139
+    },
+    {
+      "rank": 39,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6153234358430542,
+      "sample_size": 3772,
+      "effect_size": 0.35590624593408526,
+      "p_value": 7.636034097404442e-46,
+      "score": 13.45008125732139
+    },
+    {
+      "rank": 40,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6153234358430542,
+      "sample_size": 3772,
+      "effect_size": 0.35590624593408526,
+      "p_value": 7.636034097404442e-46,
+      "score": 13.45008125732139
+    },
+    {
+      "rank": 41,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6149577167019027,
+      "sample_size": 3784,
+      "effect_size": 0.35531266779605974,
+      "p_value": 1.0597323835825125e-45,
+      "score": 13.440997827117998
+    },
+    {
+      "rank": 42,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6149577167019027,
+      "sample_size": 3784,
+      "effect_size": 0.35531266779605974,
+      "p_value": 1.0597323835825125e-45,
+      "score": 13.440997827117998
+    },
+    {
+      "rank": 43,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6149577167019027,
+      "sample_size": 3784,
+      "effect_size": 0.35531266779605974,
+      "p_value": 1.0597323835825125e-45,
+      "score": 13.440997827117998
+    },
+    {
+      "rank": 44,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.603480714957667,
+      "sample_size": 4252,
+      "effect_size": 0.33994292429218076,
+      "p_value": 1.0607461034940174e-41,
+      "score": 13.377224948703388
+    },
+    {
+      "rank": 45,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.603480714957667,
+      "sample_size": 4252,
+      "effect_size": 0.33994292429218076,
+      "p_value": 1.0607461034940174e-41,
+      "score": 13.377224948703388
+    },
+    {
+      "rank": 46,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.603480714957667,
+      "sample_size": 4252,
+      "effect_size": 0.33994292429218076,
+      "p_value": 1.0607461034940174e-41,
+      "score": 13.377224948703388
+    },
+    {
+      "rank": 47,
+      "features": [
+        "season_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      },
+      "accuracy": 0.6211234640140433,
+      "sample_size": 3418,
+      "effect_size": 0.3579978687326275,
+      "p_value": 7.322584348993219e-46,
+      "score": 13.000031545109971
+    },
+    {
+      "rank": 48,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6211234640140433,
+      "sample_size": 3418,
+      "effect_size": 0.3579978687326275,
+      "p_value": 7.322584348993219e-46,
+      "score": 13.000031545109971
+    },
+    {
+      "rank": 49,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6211234640140433,
+      "sample_size": 3418,
+      "effect_size": 0.3579978687326275,
+      "p_value": 7.322584348993219e-46,
+      "score": 13.000031545109971
+    },
+    {
+      "rank": 50,
+      "features": [
+        "season_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6135382955771305,
+      "sample_size": 3708,
+      "effect_size": 0.34765275546347557,
+      "p_value": 9.48859321678305e-44,
+      "score": 12.98844662997146
+    },
+    {
+      "rank": 51,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6135382955771305,
+      "sample_size": 3708,
+      "effect_size": 0.34765275546347557,
+      "p_value": 9.48859321678305e-44,
+      "score": 12.98844662997146
+    },
+    {
+      "rank": 52,
+      "features": [
+        "season_win_pct",
+        "avg_experience",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6135382955771305,
+      "sample_size": 3708,
+      "effect_size": 0.34765275546347557,
+      "p_value": 9.48859321678305e-44,
+      "score": 12.98844662997146
+    },
+    {
+      "rank": 53,
+      "features": [
+        "l10_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6002821537738068,
+      "sample_size": 4253,
+      "effect_size": 0.32962101511167813,
+      "p_value": 2.9417645272764565e-39,
+      "score": 12.903811670761131
+    },
+    {
+      "rank": 54,
+      "features": [
+        "l10_win_pct",
+        "players_15plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6002821537738068,
+      "sample_size": 4253,
+      "effect_size": 0.32962101511167813,
+      "p_value": 2.9417645272764565e-39,
+      "score": 12.903811670761131
+    },
+    {
+      "rank": 55,
+      "features": [
+        "l10_win_pct",
+        "players_15plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6002821537738068,
+      "sample_size": 4253,
+      "effect_size": 0.32962101511167813,
+      "p_value": 2.9417645272764565e-39,
+      "score": 12.903811670761131
+    },
+    {
+      "rank": 56,
+      "features": [
+        "season_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6197552447552448,
+      "sample_size": 3432,
+      "effect_size": 0.3545476667680081,
+      "p_value": 4.890785806516607e-45,
+      "score": 12.872665436862505
+    },
+    {
+      "rank": 57,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "bench_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6197552447552448,
+      "sample_size": 3432,
+      "effect_size": 0.3545476667680081,
+      "p_value": 4.890785806516607e-45,
+      "score": 12.872665436862505
+    },
+    {
+      "rank": 58,
+      "features": [
+        "season_win_pct",
+        "avg_experience",
+        "bench_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6197552447552448,
+      "sample_size": 3432,
+      "effect_size": 0.3545476667680081,
+      "p_value": 4.890785806516607e-45,
+      "score": 12.872665436862505
+    },
+    {
+      "rank": 59,
+      "features": [
+        "season_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6128073493650366,
+      "sample_size": 3701,
+      "effect_size": 0.3451295826792167,
+      "p_value": 3.98116617664886e-43,
+      "score": 12.866656120496005
+    },
+    {
+      "rank": 60,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "players_used"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6128073493650366,
+      "sample_size": 3701,
+      "effect_size": 0.3451295826792167,
+      "p_value": 3.98116617664886e-43,
+      "score": 12.866656120496005
+    },
+    {
+      "rank": 61,
+      "features": [
+        "season_win_pct",
+        "avg_experience",
+        "players_used"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6128073493650366,
+      "sample_size": 3701,
+      "effect_size": 0.3451295826792167,
+      "p_value": 3.98116617664886e-43,
+      "score": 12.866656120496005
+    },
+    {
+      "rank": 62,
+      "features": [
+        "season_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6184248764893926,
+      "sample_size": 3441,
+      "effect_size": 0.35099266153360775,
+      "p_value": 3.505846645910868e-44,
+      "score": 12.73289986712682
+    },
+    {
+      "rank": 63,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6184248764893926,
+      "sample_size": 3441,
+      "effect_size": 0.35099266153360775,
+      "p_value": 3.505846645910868e-44,
+      "score": 12.73289986712682
+    },
+    {
+      "rank": 64,
+      "features": [
+        "season_win_pct",
+        "avg_experience",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6184248764893926,
+      "sample_size": 3441,
+      "effect_size": 0.35099266153360775,
+      "p_value": 3.505846645910868e-44,
+      "score": 12.73289986712682
+    },
+    {
+      "rank": 65,
+      "features": [
+        "l10_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6001906123421492,
+      "sample_size": 4197,
+      "effect_size": 0.3269055637269483,
+      "p_value": 1.076662559031343e-38,
+      "score": 12.711037353066823
+    },
+    {
+      "rank": 66,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6001906123421492,
+      "sample_size": 4197,
+      "effect_size": 0.3269055637269483,
+      "p_value": 1.076662559031343e-38,
+      "score": 12.711037353066823
+    },
+    {
+      "rank": 67,
+      "features": [
+        "l10_win_pct",
+        "avg_experience",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6001906123421492,
+      "sample_size": 4197,
+      "effect_size": 0.3269055637269483,
+      "p_value": 1.076662559031343e-38,
+      "score": 12.711037353066823
+    },
+    {
+      "rank": 68,
+      "features": [
+        "season_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        }
+      },
+      "accuracy": 0.6185747663551402,
+      "sample_size": 3424,
+      "effect_size": 0.3507238689773636,
+      "p_value": 4.4342730435715203e-44,
+      "score": 12.694757263486855
+    },
+    {
+      "rank": 69,
+      "features": [
+        "season_win_pct",
+        "players_10plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6185747663551402,
+      "sample_size": 3424,
+      "effect_size": 0.3507238689773636,
+      "p_value": 4.4342730435715203e-44,
+      "score": 12.694757263486855
+    },
+    {
+      "rank": 70,
+      "features": [
+        "season_win_pct",
+        "players_10plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6185747663551402,
+      "sample_size": 3424,
+      "effect_size": 0.3507238689773636,
+      "p_value": 4.4342730435715203e-44,
+      "score": 12.694757263486855
+    },
+    {
+      "rank": 71,
+      "features": [
+        "l10_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6005754015823543,
+      "sample_size": 4171,
+      "effect_size": 0.3270264323234019,
+      "p_value": 9.475950634711181e-39,
+      "score": 12.684416437599152
+    },
+    {
+      "rank": 72,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "players_used"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6005754015823543,
+      "sample_size": 4171,
+      "effect_size": 0.3270264323234019,
+      "p_value": 9.475950634711181e-39,
+      "score": 12.684416437599152
+    },
+    {
+      "rank": 73,
+      "features": [
+        "l10_win_pct",
+        "avg_experience",
+        "players_used"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6005754015823543,
+      "sample_size": 4171,
+      "effect_size": 0.3270264323234019,
+      "p_value": 9.475950634711181e-39,
+      "score": 12.684416437599152
+    },
+    {
+      "rank": 74,
+      "features": [
+        "season_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6155372838106039,
+      "sample_size": 3527,
+      "effect_size": 0.34601646703114525,
+      "p_value": 3.9677908702376474e-43,
+      "score": 12.648932095461708
+    },
+    {
+      "rank": 75,
+      "features": [
+        "season_win_pct",
+        "top2_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6155372838106039,
+      "sample_size": 3527,
+      "effect_size": 0.34601646703114525,
+      "p_value": 3.9677908702376474e-43,
+      "score": 12.648932095461708
+    },
+    {
+      "rank": 76,
+      "features": [
+        "season_win_pct",
+        "top2_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6155372838106039,
+      "sample_size": 3527,
+      "effect_size": 0.34601646703114525,
+      "p_value": 3.9677908702376474e-43,
+      "score": 12.648932095461708
+    },
+    {
+      "rank": 77,
+      "features": [
+        "l10_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6069125612587052,
+      "sample_size": 3877,
+      "effect_size": 0.3344982088786353,
+      "p_value": 1.2007884431780963e-40,
+      "score": 12.640603917249724
+    },
+    {
+      "rank": 78,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "bench_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6069125612587052,
+      "sample_size": 3877,
+      "effect_size": 0.3344982088786353,
+      "p_value": 1.2007884431780963e-40,
+      "score": 12.640603917249724
+    },
+    {
+      "rank": 79,
+      "features": [
+        "l10_win_pct",
+        "avg_experience",
+        "bench_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6069125612587052,
+      "sample_size": 3877,
+      "effect_size": 0.3344982088786353,
+      "p_value": 1.2007884431780963e-40,
+      "score": 12.640603917249724
+    },
+    {
+      "rank": 80,
+      "features": [
+        "season_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      },
+      "accuracy": 0.617612638970158,
+      "sample_size": 3418,
+      "effect_size": 0.34763712666910734,
+      "p_value": 2.5788525097123517e-43,
+      "score": 12.552445828404412
+    },
+    {
+      "rank": 81,
+      "features": [
+        "season_win_pct",
+        "top3_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.617612638970158,
+      "sample_size": 3418,
+      "effect_size": 0.34763712666910734,
+      "p_value": 2.5788525097123517e-43,
+      "score": 12.552445828404412
+    },
+    {
+      "rank": 82,
+      "features": [
+        "season_win_pct",
+        "top3_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.617612638970158,
+      "sample_size": 3418,
+      "effect_size": 0.34763712666910734,
+      "p_value": 2.5788525097123517e-43,
+      "score": 12.552445828404412
+    },
+    {
+      "rank": 83,
+      "features": [
+        "l10_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      },
+      "accuracy": 0.6049351310099211,
+      "sample_size": 3931,
+      "effect_size": 0.3306299786601917,
+      "p_value": 9.880461344572384e-40,
+      "score": 12.54014497805502
+    },
+    {
+      "rank": 84,
+      "features": [
+        "l10_win_pct",
+        "games_played",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6049351310099211,
+      "sample_size": 3931,
+      "effect_size": 0.3306299786601917,
+      "p_value": 9.880461344572384e-40,
+      "score": 12.54014497805502
+    },
+    {
+      "rank": 85,
+      "features": [
+        "l10_win_pct",
+        "games_played",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6049351310099211,
+      "sample_size": 3931,
+      "effect_size": 0.3306299786601917,
+      "p_value": 9.880461344572384e-40,
+      "score": 12.54014497805502
+    },
+    {
+      "rank": 86,
+      "features": [
+        "l10_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      },
+      "accuracy": 0.6063218390804598,
+      "sample_size": 3828,
+      "effect_size": 0.3306315337133255,
+      "p_value": 9.992055009614213e-40,
+      "score": 12.40319145782981
+    },
+    {
+      "rank": 87,
+      "features": [
+        "l10_win_pct",
+        "top3_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top3_points": {
+          "max": 25.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6063218390804598,
+      "sample_size": 3828,
+      "effect_size": 0.3306315337133255,
+      "p_value": 9.992055009614213e-40,
+      "score": 12.40319145782981
+    },
+    {
+      "rank": 88,
+      "features": [
+        "l10_win_pct",
+        "top3_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top3_points": {
+          "max": 25.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6063218390804598,
+      "sample_size": 3828,
+      "effect_size": 0.3306315337133255,
+      "p_value": 9.992055009614213e-40,
+      "score": 12.40319145782981
+    },
+    {
+      "rank": 89,
+      "features": [
+        "l10_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6018306636155606,
+      "sample_size": 3933,
+      "effect_size": 0.3210632877750979,
+      "p_value": 1.6232879198995456e-37,
+      "score": 12.117887977701598
+    },
+    {
+      "rank": 90,
+      "features": [
+        "l10_win_pct",
+        "top2_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6018306636155606,
+      "sample_size": 3933,
+      "effect_size": 0.3210632877750979,
+      "p_value": 1.6232879198995456e-37,
+      "score": 12.117887977701598
+    },
+    {
+      "rank": 91,
+      "features": [
+        "l10_win_pct",
+        "top2_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6018306636155606,
+      "sample_size": 3933,
+      "effect_size": 0.3210632877750979,
+      "p_value": 1.6232879198995456e-37,
+      "score": 12.117887977701598
+    },
+    {
+      "rank": 92,
+      "features": [
+        "l10_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6030295116218334,
+      "sample_size": 3829,
+      "effect_size": 0.3205654971524999,
+      "p_value": 2.1231349670599903e-37,
+      "score": 11.961841035451195
+    },
+    {
+      "rank": 93,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6030295116218334,
+      "sample_size": 3829,
+      "effect_size": 0.3205654971524999,
+      "p_value": 2.1231349670599903e-37,
+      "score": 11.961841035451195
+    },
+    {
+      "rank": 94,
+      "features": [
+        "l10_win_pct",
+        "avg_experience",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6030295116218334,
+      "sample_size": 3829,
+      "effect_size": 0.3205654971524999,
+      "p_value": 2.1231349670599903e-37,
+      "score": 11.961841035451195
+    },
+    {
+      "rank": 95,
+      "features": [
+        "l10_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        }
+      },
+      "accuracy": 0.6021756021756022,
+      "sample_size": 3861,
+      "effect_size": 0.3192244579751584,
+      "p_value": 4.235722165229552e-37,
+      "score": 11.944534100320558
+    },
+    {
+      "rank": 96,
+      "features": [
+        "l10_win_pct",
+        "players_10plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6021756021756022,
+      "sample_size": 3861,
+      "effect_size": 0.3192244579751584,
+      "p_value": 4.235722165229552e-37,
+      "score": 11.944534100320558
+    },
+    {
+      "rank": 97,
+      "features": [
+        "l10_win_pct",
+        "players_10plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6021756021756022,
+      "sample_size": 3861,
+      "effect_size": 0.3192244579751584,
+      "p_value": 4.235722165229552e-37,
+      "score": 11.944534100320558
+    },
+    {
+      "rank": 98,
+      "features": [
+        "season_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      },
+      "accuracy": 0.6101113967437874,
+      "sample_size": 3501,
+      "effect_size": 0.3288477239861001,
+      "p_value": 5.110313702608616e-39,
+      "score": 11.871347922048773
+    },
+    {
+      "rank": 99,
+      "features": [
+        "season_win_pct",
+        "top1_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6101113967437874,
+      "sample_size": 3501,
+      "effect_size": 0.3288477239861001,
+      "p_value": 5.110313702608616e-39,
+      "score": 11.871347922048773
+    },
+    {
+      "rank": 100,
+      "features": [
+        "season_win_pct",
+        "top1_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6101113967437874,
+      "sample_size": 3501,
+      "effect_size": 0.3288477239861001,
+      "p_value": 5.110313702608616e-39,
+      "score": 11.871347922048773
+    },
+    {
+      "rank": 101,
+      "features": [
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6264975334742777,
+      "sample_size": 2838,
+      "effect_size": 0.349755927237542,
+      "p_value": 1.0138881384963358e-41,
+      "score": 11.673219291418793
+    },
+    {
+      "rank": 102,
+      "features": [
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6264975334742777,
+      "sample_size": 2838,
+      "effect_size": 0.349755927237542,
+      "p_value": 1.0138881384963358e-41,
+      "score": 11.673219291418793
+    },
+    {
+      "rank": 103,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6264975334742777,
+      "sample_size": 2838,
+      "effect_size": 0.349755927237542,
+      "p_value": 1.0138881384963358e-41,
+      "score": 11.673219291418793
+    },
+    {
+      "rank": 104,
+      "features": [
+        "season_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6097560975609756,
+      "sample_size": 3403,
+      "effect_size": 0.32398713842498805,
+      "p_value": 9.793217766043e-38,
+      "score": 11.524309054720408
+    },
+    {
+      "rank": 105,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6097560975609756,
+      "sample_size": 3403,
+      "effect_size": 0.32398713842498805,
+      "p_value": 9.793217766043e-38,
+      "score": 11.524309054720408
+    },
+    {
+      "rank": 106,
+      "features": [
+        "season_win_pct",
+        "avg_experience",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6097560975609756,
+      "sample_size": 3403,
+      "effect_size": 0.32398713842498805,
+      "p_value": 9.793217766043e-38,
+      "score": 11.524309054720408
+    },
+    {
+      "rank": 107,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "top3_scoring_share": {
+          "max": 0.36254980079681276
+        }
+      },
+      "accuracy": 0.6161871640847297,
+      "sample_size": 3163,
+      "effect_size": 0.3081024039754043,
+      "p_value": 2.868446352445876e-39,
+      "score": 10.677198827132939
+    },
+    {
+      "rank": 108,
+      "features": [
+        "l10_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      },
+      "accuracy": 0.6263031275060145,
+      "sample_size": 2494,
+      "effect_size": 0.33636543284121073,
+      "p_value": 9.476814381927572e-37,
+      "score": 10.520688532197337
+    },
+    {
+      "rank": 109,
+      "features": [
+        "l10_win_pct",
+        "top1_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6263031275060145,
+      "sample_size": 2494,
+      "effect_size": 0.33636543284121073,
+      "p_value": 9.476814381927572e-37,
+      "score": 10.520688532197337
+    },
+    {
+      "rank": 110,
+      "features": [
+        "l10_win_pct",
+        "top1_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6263031275060145,
+      "sample_size": 2494,
+      "effect_size": 0.33636543284121073,
+      "p_value": 9.476814381927572e-37,
+      "score": 10.520688532197337
+    },
+    {
+      "rank": 111,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "top2_points": {
+          "max": 27.0
+        }
+      },
+      "accuracy": 0.6050955414012739,
+      "sample_size": 3454,
+      "effect_size": 0.28626964550729367,
+      "p_value": 3.2793024271139075e-35,
+      "score": 10.180296329938983
+    },
+    {
+      "rank": 112,
+      "features": [
+        "l10_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6246903385631709,
+      "sample_size": 2422,
+      "effect_size": 0.32953353726849666,
+      "p_value": 7.340032402152389e-35,
+      "score": 10.130980485111326
+    },
+    {
+      "rank": 113,
+      "features": [
+        "l10_win_pct",
+        "experienced_players",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6246903385631709,
+      "sample_size": 2422,
+      "effect_size": 0.32953353726849666,
+      "p_value": 7.340032402152389e-35,
+      "score": 10.130980485111326
+    },
+    {
+      "rank": 114,
+      "features": [
+        "l10_win_pct",
+        "avg_experience",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.3
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6246903385631709,
+      "sample_size": 2422,
+      "effect_size": 0.32953353726849666,
+      "p_value": 7.340032402152389e-35,
+      "score": 10.130980485111326
+    },
+    {
+      "rank": 115,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6163349347975292,
+      "sample_size": 2914,
+      "effect_size": 0.29995826238299056,
+      "p_value": 2.1517579759122694e-36,
+      "score": 9.979812634907447
+    },
+    {
+      "rank": 116,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "bench_points": {
+          "min": 105.0
+        }
+      },
+      "accuracy": 0.6084934903905765,
+      "sample_size": 3226,
+      "effect_size": 0.28839314976258135,
+      "p_value": 4.551814628466021e-35,
+      "score": 9.967197373852436
+    },
+    {
+      "rank": 117,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "top3_points": {
+          "max": 23.0
+        }
+      },
+      "accuracy": 0.6051450792701166,
+      "sample_size": 3343,
+      "effect_size": 0.28269422365591285,
+      "p_value": 3.6713050492787055e-34,
+      "score": 9.891100828760804
+    },
+    {
+      "rank": 118,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6140588036498817,
+      "sample_size": 2959,
+      "effect_size": 0.2951597846069999,
+      "p_value": 1.4944236298228483e-35,
+      "score": 9.859153526144341
+    },
+    {
+      "rank": 119,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      },
+      "accuracy": 0.6222136817832437,
+      "sample_size": 2602,
+      "effect_size": 0.30559864733350145,
+      "p_value": 6.473381331052486e-36,
+      "score": 9.699394648367505
+    },
+    {
+      "rank": 120,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      },
+      "accuracy": 0.6137399228881879,
+      "sample_size": 2853,
+      "effect_size": 0.2908266972355146,
+      "p_value": 3.7570078985352294e-34,
+      "score": 9.533876712201858
+    },
+    {
+      "rank": 121,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      },
+      "accuracy": 0.6112452569851673,
+      "sample_size": 2899,
+      "effect_size": 0.28545889986953066,
+      "p_value": 3.126660612709436e-33,
+      "score": 9.394706083565502
+    },
+    {
+      "rank": 122,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.7
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 0.6101169993117688,
+      "sample_size": 2906,
+      "effect_size": 0.28258262212214635,
+      "p_value": 1.1562370019446589e-32,
+      "score": 9.294079462918303
+    },
+    {
+      "rank": 123,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        }
+      },
+      "accuracy": 0.6020663744520977,
+      "sample_size": 3194,
+      "effect_size": 0.2691574161232601,
+      "p_value": 6.636462838108621e-31,
+      "score": 9.158369866838552
+    },
+    {
+      "rank": 124,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "l10_win_pct": {
+          "min": 0.6
+        },
+        "top1_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6185691318327974,
+      "sample_size": 2488,
+      "effect_size": 0.29226881276342914,
+      "p_value": 1.8149389331933335e-32,
+      "score": 9.017702576543455
+    },
+    {
+      "rank": 125,
+      "features": [
+        "home",
+        "top3_scoring_share",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_scoring_share": {
+          "max": 0.36254980079681276
+        },
+        "players_used": {
+          "min": 25.0
+        }
+      },
+      "accuracy": 0.6032142857142857,
+      "sample_size": 2800,
+      "effect_size": 0.26061329912148384,
+      "p_value": 7.167741302707177e-28,
+      "score": 8.318541889696151
+    },
+    {
+      "rank": 126,
+      "features": [
+        "home",
+        "top3_points",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 22.0
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        }
+      },
+      "accuracy": 0.6002113420218387,
+      "sample_size": 2839,
+      "effect_size": 0.2535996165787158,
+      "p_value": 1.0630051515220587e-26,
+      "score": 8.11027325233267
+    },
+    {
+      "rank": 127,
+      "features": [
+        "home",
+        "top3_points",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 22.0
+        },
+        "players_used": {
+          "min": 25.0
+        }
+      },
+      "accuracy": 0.6047244094488189,
+      "sample_size": 2540,
+      "effect_size": 0.25735258714452736,
+      "p_value": 3.9049254999520194e-26,
+      "score": 7.843373489072156
+    },
+    {
+      "rank": 128,
+      "features": [
+        "home",
+        "top3_points",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6090831918505942,
+      "sample_size": 2356,
+      "effect_size": 0.26364501340592583,
+      "p_value": 2.6488540877107e-26,
+      "score": 7.794420279539798
+    },
+    {
+      "rank": 129,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        },
+        "top3_scoring_share": {
+          "max": 0.36254980079681276
+        }
+      },
+      "accuracy": 0.6045400238948626,
+      "sample_size": 2511,
+      "effect_size": 0.25607680160826024,
+      "p_value": 9.086254179590125e-26,
+      "score": 7.757444051740154
+    },
+    {
+      "rank": 130,
+      "features": [
+        "home",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        }
+      },
+      "accuracy": 0.6069941715237303,
+      "sample_size": 2402,
+      "effect_size": 0.2595008152957629,
+      "p_value": 7.995511224726744e-26,
+      "score": 7.719865770637143
+    },
+    {
+      "rank": 131,
+      "features": [
+        "home",
+        "top3_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6069941715237303,
+      "sample_size": 2402,
+      "effect_size": 0.2595008152957629,
+      "p_value": 7.995511224726744e-26,
+      "score": 7.719865770637143
+    },
+    {
+      "rank": 132,
+      "features": [
+        "home",
+        "top3_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6069941715237303,
+      "sample_size": 2402,
+      "effect_size": 0.2595008152957629,
+      "p_value": 7.995511224726744e-26,
+      "score": 7.719865770637143
+    },
+    {
+      "rank": 133,
+      "features": [
+        "home",
+        "bench_points",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "bench_points": {
+          "min": 96.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6203703703703703,
+      "sample_size": 1944,
+      "effect_size": 0.2808163337514139,
+      "p_value": 1.8729955376698512e-26,
+      "score": 7.681066808619069
+    },
+    {
+      "rank": 134,
+      "features": [
+        "home",
+        "top1_scoring_share",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6338832487309645,
+      "sample_size": 1576,
+      "effect_size": 0.3035194135592013,
+      "p_value": 1.4214286613641796e-26,
+      "score": 7.63789803114049
+    },
+    {
+      "rank": 135,
+      "features": [
+        "home",
+        "top1_points",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "top3_points": {
+          "max": 20.0
+        }
+      },
+      "accuracy": 0.6095068858285206,
+      "sample_size": 2251,
+      "effect_size": 0.26186562446564493,
+      "p_value": 2.1953331621699336e-25,
+      "score": 7.57259718157093
+    },
+    {
+      "rank": 136,
+      "features": [
+        "home",
+        "top3_points",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6090026478375993,
+      "sample_size": 2266,
+      "effect_size": 0.26098202487568517,
+      "p_value": 2.5380092324015104e-25,
+      "score": 7.56588489861562
+    },
+    {
+      "rank": 137,
+      "features": [
+        "home",
+        "top3_points",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6143822393822393,
+      "sample_size": 2072,
+      "effect_size": 0.2693599273537264,
+      "p_value": 1.6842332948476086e-25,
+      "score": 7.53297479609496
+    },
+    {
+      "rank": 138,
+      "features": [
+        "home",
+        "top3_points",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6065924657534246,
+      "sample_size": 2336,
+      "effect_size": 0.2566807822954275,
+      "p_value": 5.600538846823725e-25,
+      "score": 7.525351416097011
+    },
+    {
+      "rank": 139,
+      "features": [
+        "home",
+        "top2_points",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6184821889519876,
+      "sample_size": 1937,
+      "effect_size": 0.27591443581253366,
+      "p_value": 1.3836528188192596e-25,
+      "score": 7.510458159228601
+    },
+    {
+      "rank": 140,
+      "features": [
+        "home",
+        "top2_points",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 30.0
+        },
+        "top3_points": {
+          "max": 20.0
+        }
+      },
+      "accuracy": 0.6066350710900474,
+      "sample_size": 2321,
+      "effect_size": 0.2563893749194669,
+      "p_value": 7.586680089063844e-25,
+      "score": 7.493161760125575
+    },
+    {
+      "rank": 141,
+      "features": [
+        "home",
+        "top1_points",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6186974789915967,
+      "sample_size": 1904,
+      "effect_size": 0.2755404262393645,
+      "p_value": 2.9125565281033137e-25,
+      "score": 7.438701716091868
+    },
+    {
+      "rank": 142,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        }
+      },
+      "accuracy": 0.6053196053196053,
+      "sample_size": 2331,
+      "effect_size": 0.2532750348499881,
+      "p_value": 2.2746631431958506e-24,
+      "score": 7.401986024489384
+    },
+    {
+      "rank": 143,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        },
+        "players_used": {
+          "min": 25.0
+        }
+      },
+      "accuracy": 0.6029350104821803,
+      "sample_size": 2385,
+      "effect_size": 0.24855112226956108,
+      "p_value": 7.576652781617016e-24,
+      "score": 7.318640637255654
+    },
+    {
+      "rank": 144,
+      "features": [
+        "home",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6096082089552238,
+      "sample_size": 2144,
+      "effect_size": 0.2592575709438917,
+      "p_value": 2.7113315897846958e-24,
+      "score": 7.3180377382042785
+    },
+    {
+      "rank": 145,
+      "features": [
+        "home",
+        "experienced_players",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6096082089552238,
+      "sample_size": 2144,
+      "effect_size": 0.2592575709438917,
+      "p_value": 2.7113315897846958e-24,
+      "score": 7.3180377382042785
+    },
+    {
+      "rank": 146,
+      "features": [
+        "home",
+        "avg_experience",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6096082089552238,
+      "sample_size": 2144,
+      "effect_size": 0.2592575709438917,
+      "p_value": 2.7113315897846958e-24,
+      "score": 7.3180377382042785
+    },
+    {
+      "rank": 147,
+      "features": [
+        "home",
+        "top1_points",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 30.0
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        }
+      },
+      "accuracy": 0.607359105728924,
+      "sample_size": 2147,
+      "effect_size": 0.25365578581259063,
+      "p_value": 2.1519968068017773e-23,
+      "score": 7.138489779757022
+    },
+    {
+      "rank": 148,
+      "features": [
+        "home",
+        "top3_points",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6082375478927203,
+      "sample_size": 2088,
+      "effect_size": 0.2543399754468412,
+      "p_value": 3.823495273533553e-23,
+      "score": 7.068920522522293
+    },
+    {
+      "rank": 149,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6084860173577628,
+      "sample_size": 2074,
+      "effect_size": 0.2546016678833333,
+      "p_value": 4.247884147007536e-23,
+      "score": 7.055311989696347
+    },
+    {
+      "rank": 150,
+      "features": [
+        "home",
+        "players_5plus_ast",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6089712335446124,
+      "sample_size": 2051,
+      "effect_size": 0.25522290248528906,
+      "p_value": 4.73232955684912e-23,
+      "score": 7.038810148103189
+    },
+    {
+      "rank": 151,
+      "features": [
+        "home",
+        "top3_points",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_points": {
+          "max": 20.0
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 0.6047575480329369,
+      "sample_size": 2186,
+      "effect_size": 0.24808364011956896,
+      "p_value": 1.017507159365182e-22,
+      "score": 7.014625699123634
+    },
+    {
+      "rank": 152,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        },
+        "bench_points": {
+          "min": 105.0
+        }
+      },
+      "accuracy": 0.6025641025641025,
+      "sample_size": 2262,
+      "effect_size": 0.24444438688478667,
+      "p_value": 1.5277458818282465e-22,
+      "score": 7.00534655381134
+    },
+    {
+      "rank": 153,
+      "features": [
+        "home",
+        "games_played",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "top3_points": {
+          "max": 20.0
+        }
+      },
+      "accuracy": 0.6084189916789036,
+      "sample_size": 2043,
+      "effect_size": 0.2536360872715058,
+      "p_value": 9.489529039826615e-23,
+      "score": 6.975060681496114
+    },
+    {
+      "rank": 154,
+      "features": [
+        "home",
+        "top2_points",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 23.0
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6012243113248797,
+      "sample_size": 2287,
+      "effect_size": 0.2416590155705184,
+      "p_value": 3.207111232809712e-22,
+      "score": 6.948204911391196
+    },
+    {
+      "rank": 155,
+      "features": [
+        "home",
+        "top2_points",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 23.0
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      },
+      "accuracy": 0.6005188067444877,
+      "sample_size": 2313,
+      "effect_size": 0.2405080912786345,
+      "p_value": 3.655651872709512e-22,
+      "score": 6.946149416212119
+    },
+    {
+      "rank": 156,
+      "features": [
+        "home",
+        "top1_points",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "top2_points": {
+          "max": 23.0
+        }
+      },
+      "accuracy": 0.6018641810918774,
+      "sample_size": 2253,
+      "effect_size": 0.24243695347107197,
+      "p_value": 3.5810854803391407e-22,
+      "score": 6.925927029509446
+    },
+    {
+      "rank": 157,
+      "features": [
+        "home",
+        "top2_points",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 23.0
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6006989951944081,
+      "sample_size": 2289,
+      "effect_size": 0.24036911063335822,
+      "p_value": 5.0533638913635e-22,
+      "score": 6.9080974982751515
+    },
+    {
+      "rank": 158,
+      "features": [
+        "home",
+        "top2_points",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 23.0
+        },
+        "players_20plus_pts": {
+          "max": 3.0
+        }
+      },
+      "accuracy": 0.6097560975609756,
+      "sample_size": 1968,
+      "effect_size": 0.25504505876354167,
+      "p_value": 1.7631150573303895e-22,
+      "score": 6.898991548771693
+    },
+    {
+      "rank": 159,
+      "features": [
+        "home",
+        "players_10plus_pts",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6141124586549063,
+      "sample_size": 1814,
+      "effect_size": 0.2618291893271147,
+      "p_value": 2.0536282257416893e-22,
+      "score": 6.848328912851918
+    },
+    {
+      "rank": 160,
+      "features": [
+        "home",
+        "top3_scoring_share",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_scoring_share": {
+          "max": 0.3412322274881517
+        },
+        "bench_points": {
+          "min": 112.0
+        }
+      },
+      "accuracy": 0.6010830324909747,
+      "sample_size": 2216,
+      "effect_size": 0.23953572504629206,
+      "p_value": 1.6046453427126963e-21,
+      "score": 6.777813918304844
+    },
+    {
+      "rank": 161,
+      "features": [
+        "home",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        }
+      },
+      "accuracy": 0.6159629843840371,
+      "sample_size": 1729,
+      "effect_size": 0.26415079817587767,
+      "p_value": 4.329817031976999e-22,
+      "score": 6.765564495010808
+    },
+    {
+      "rank": 162,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6159629843840371,
+      "sample_size": 1729,
+      "effect_size": 0.26415079817587767,
+      "p_value": 4.329817031976999e-22,
+      "score": 6.765564495010808
+    },
+    {
+      "rank": 163,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6159629843840371,
+      "sample_size": 1729,
+      "effect_size": 0.26415079817587767,
+      "p_value": 4.329817031976999e-22,
+      "score": 6.765564495010808
+    },
+    {
+      "rank": 164,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6168831168831169,
+      "sample_size": 1694,
+      "effect_size": 0.2654811857709694,
+      "p_value": 5.367049244256922e-22,
+      "score": 6.740518984285572
+    },
+    {
+      "rank": 165,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      },
+      "accuracy": 0.6157894736842106,
+      "sample_size": 1710,
+      "effect_size": 0.2632384975325126,
+      "p_value": 8.396518746537552e-22,
+      "score": 6.703162060414277
+    },
+    {
+      "rank": 166,
+      "features": [
+        "home",
+        "games_played",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.3170731707317073
+        },
+        "top1_points": {
+          "max": 30.0
+        }
+      },
+      "accuracy": 0.6026871401151631,
+      "sample_size": 2084,
+      "effect_size": 0.2403349641217941,
+      "p_value": 6.2054631776343564e-21,
+      "score": 6.61237901580706
+    },
+    {
+      "rank": 167,
+      "features": [
+        "home",
+        "top2_points",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 23.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6026936026936027,
+      "sample_size": 2079,
+      "effect_size": 0.2402292186562303,
+      "p_value": 6.869999980690665e-21,
+      "score": 6.601606821898026
+    },
+    {
+      "rank": 168,
+      "features": [
+        "home",
+        "top1_scoring_share",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6028971028971029,
+      "sample_size": 2002,
+      "effect_size": 0.2388721995384695,
+      "p_value": 3.02634550809984e-20,
+      "score": 6.443782040612108
+    },
+    {
+      "rank": 169,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6075880758807588,
+      "sample_size": 1845,
+      "effect_size": 0.2466246707038993,
+      "p_value": 2.1453189746577836e-20,
+      "score": 6.436413628331963
+    },
+    {
+      "rank": 170,
+      "features": [
+        "home",
+        "top1_points",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 38.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6029043565348022,
+      "sample_size": 1997,
+      "effect_size": 0.23877004969492244,
+      "p_value": 3.3505331948309907e-20,
+      "score": 6.433055590138283
+    },
+    {
+      "rank": 171,
+      "features": [
+        "home",
+        "games_played",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.3170731707317073
+        },
+        "top3_scoring_share": {
+          "max": 0.3412322274881517
+        }
+      },
+      "accuracy": 0.6044238683127572,
+      "sample_size": 1944,
+      "effect_size": 0.24125168902270372,
+      "p_value": 3.000507816303744e-20,
+      "score": 6.429246822092777
+    },
+    {
+      "rank": 172,
+      "features": [
+        "home",
+        "games_played",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "players_used": {
+          "min": 27.0
+        }
+      },
+      "accuracy": 0.6095774647887324,
+      "sample_size": 1775,
+      "effect_size": 0.24976643835956253,
+      "p_value": 2.3239305565485482e-20,
+      "score": 6.414490451269846
+    },
+    {
+      "rank": 173,
+      "features": [
+        "home",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6022896963663514,
+      "sample_size": 2009,
+      "effect_size": 0.2375336830634796,
+      "p_value": 4.34429255041658e-20,
+      "score": 6.412399988532596
+    },
+    {
+      "rank": 174,
+      "features": [
+        "home",
+        "experienced_players",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6022896963663514,
+      "sample_size": 2009,
+      "effect_size": 0.2375336830634796,
+      "p_value": 4.34429255041658e-20,
+      "score": 6.412399988532596
+    },
+    {
+      "rank": 175,
+      "features": [
+        "home",
+        "avg_experience",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6022896963663514,
+      "sample_size": 2009,
+      "effect_size": 0.2375336830634796,
+      "p_value": 4.34429255041658e-20,
+      "score": 6.412399988532596
+    },
+    {
+      "rank": 176,
+      "features": [
+        "home",
+        "top3_scoring_share",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6045286993154292,
+      "sample_size": 1899,
+      "effect_size": 0.2404280483681066,
+      "p_value": 7.491218434567449e-20,
+      "score": 6.333802787482731
+    },
+    {
+      "rank": 177,
+      "features": [
+        "home",
+        "top1_points",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 30.0
+        },
+        "bench_points": {
+          "min": 112.0
+        }
+      },
+      "accuracy": 0.6084959816303099,
+      "sample_size": 1742,
+      "effect_size": 0.24633496450862058,
+      "p_value": 1.2109067643222295e-19,
+      "score": 6.256160032116489
+    },
+    {
+      "rank": 178,
+      "features": [
+        "home",
+        "games_played",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.4024390243902439
+        },
+        "top2_points": {
+          "max": 23.0
+        }
+      },
+      "accuracy": 0.601526717557252,
+      "sample_size": 1965,
+      "effect_size": 0.23460233905264813,
+      "p_value": 2.0750902253216563e-19,
+      "score": 6.255593749459948
+    },
+    {
+      "rank": 179,
+      "features": [
+        "home",
+        "games_played",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        }
+      },
+      "accuracy": 0.618591934381408,
+      "sample_size": 1463,
+      "effect_size": 0.2636871488135634,
+      "p_value": 1.004555509779207e-19,
+      "score": 6.239005672093306
+    },
+    {
+      "rank": 180,
+      "features": [
+        "home",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 21.0
+        }
+      },
+      "accuracy": 0.6216412490922295,
+      "sample_size": 1377,
+      "effect_size": 0.2687371546603988,
+      "p_value": 1.4925202826734625e-19,
+      "score": 6.199183745810552
+    },
+    {
+      "rank": 181,
+      "features": [
+        "home",
+        "top2_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 21.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6216412490922295,
+      "sample_size": 1377,
+      "effect_size": 0.2687371546603988,
+      "p_value": 1.4925202826734625e-19,
+      "score": 6.199183745810552
+    },
+    {
+      "rank": 182,
+      "features": [
+        "home",
+        "top2_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 21.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6216412490922295,
+      "sample_size": 1377,
+      "effect_size": 0.2687371546603988,
+      "p_value": 1.4925202826734625e-19,
+      "score": 6.199183745810552
+    },
+    {
+      "rank": 183,
+      "features": [
+        "home",
+        "players_20plus_pts",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      },
+      "accuracy": 0.6123882503192848,
+      "sample_size": 1566,
+      "effect_size": 0.2514468552230467,
+      "p_value": 5.239030643053669e-19,
+      "score": 6.093529762643482
+    },
+    {
+      "rank": 184,
+      "features": [
+        "home",
+        "players_10plus_pts",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        }
+      },
+      "accuracy": 0.6018075491759702,
+      "sample_size": 1881,
+      "effect_size": 0.2333311447062632,
+      "p_value": 9.730322942414238e-19,
+      "score": 6.090104443845513
+    },
+    {
+      "rank": 185,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      },
+      "accuracy": 0.6089318044659022,
+      "sample_size": 1657,
+      "effect_size": 0.245347618011868,
+      "p_value": 6.759297654084466e-19,
+      "score": 6.081514659713104
+    },
+    {
+      "rank": 186,
+      "features": [
+        "home",
+        "top1_scoring_share",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        },
+        "bench_points": {
+          "min": 119.0
+        }
+      },
+      "accuracy": 0.6045989904655076,
+      "sample_size": 1783,
+      "effect_size": 0.23785359539506853,
+      "p_value": 9.412503447323133e-19,
+      "score": 6.072294271156959
+    },
+    {
+      "rank": 187,
+      "features": [
+        "home",
+        "top1_points",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 33.0
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6067146282973621,
+      "sample_size": 1668,
+      "effect_size": 0.2402754350923876,
+      "p_value": 2.6587750186839128e-18,
+      "score": 5.953767371822112
+    },
+    {
+      "rank": 188,
+      "features": [
+        "home",
+        "top2_points",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 21.0
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      },
+      "accuracy": 0.6225218080888184,
+      "sample_size": 1261,
+      "effect_size": 0.26787821816224117,
+      "p_value": 2.857574651757684e-18,
+      "score": 5.921742449123892
+    },
+    {
+      "rank": 189,
+      "features": [
+        "home",
+        "top2_points",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top2_points": {
+          "max": 21.0
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        }
+      },
+      "accuracy": 0.6264020707506471,
+      "sample_size": 1159,
+      "effect_size": 0.2743461913564549,
+      "p_value": 6.526688837702989e-18,
+      "score": 5.850511510745061
+    },
+    {
+      "rank": 190,
+      "features": [
+        "home",
+        "games_played",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.3170731707317073
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        }
+      },
+      "accuracy": 0.6102699144173799,
+      "sample_size": 1519,
+      "effect_size": 0.24527783206319653,
+      "p_value": 7.67146183653142e-18,
+      "score": 5.833902224755089
+    },
+    {
+      "rank": 191,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        }
+      },
+      "accuracy": 0.614336917562724,
+      "sample_size": 1395,
+      "effect_size": 0.2519562455869408,
+      "p_value": 1.2183204223565095e-17,
+      "score": 5.781211346820579
+    },
+    {
+      "rank": 192,
+      "features": [
+        "home",
+        "games_played",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.3170731707317073
+        },
+        "bench_points": {
+          "min": 119.0
+        }
+      },
+      "accuracy": 0.6147919876733436,
+      "sample_size": 1298,
+      "effect_size": 0.2507235769105934,
+      "p_value": 1.2341814259209648e-16,
+      "score": 5.553422558488877
+    },
+    {
+      "rank": 193,
+      "features": [
+        "home",
+        "bench_points",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "bench_points": {
+          "min": 112.0
+        },
+        "players_5plus_ast": {
+          "max": 4.0
+        }
+      },
+      "accuracy": 0.6070199587061252,
+      "sample_size": 1453,
+      "effect_size": 0.23607268263803013,
+      "p_value": 3.2550139448167333e-16,
+      "score": 5.462375017834418
+    },
+    {
+      "rank": 194,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        },
+        "players_5plus_ast": {
+          "max": 4.0
+        }
+      },
+      "accuracy": 0.6024096385542169,
+      "sample_size": 1577,
+      "effect_size": 0.227922013227574,
+      "p_value": 4.063349175720495e-16,
+      "score": 5.45247936904804
+    },
+    {
+      "rank": 195,
+      "features": [
+        "home",
+        "players_10plus_pts",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        },
+        "bench_points": {
+          "min": 119.0
+        }
+      },
+      "accuracy": 0.6002482929857231,
+      "sample_size": 1611,
+      "effect_size": 0.22352149167126587,
+      "p_value": 8.337137985929794e-16,
+      "score": 5.3851523077668215
+    },
+    {
+      "rank": 196,
+      "features": [
+        "home",
+        "top1_points",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 30.0
+        },
+        "players_10plus_pts": {
+          "min": 11.0
+        }
+      },
+      "accuracy": 0.603399433427762,
+      "sample_size": 1412,
+      "effect_size": 0.22667041988674308,
+      "p_value": 7.752650111507224e-15,
+      "score": 5.13945532785836
+    },
+    {
+      "rank": 197,
+      "features": [
+        "home",
+        "players_15plus_pts",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_15plus_pts": {
+          "max": 6.0
+        },
+        "players_10plus_pts": {
+          "min": 11.0
+        }
+      },
+      "accuracy": 0.6086956521739131,
+      "sample_size": 1265,
+      "effect_size": 0.23579982510411737,
+      "p_value": 1.0427659808049366e-14,
+      "score": 5.104920005574531
+    },
+    {
+      "rank": 198,
+      "features": [
+        "home",
+        "top1_points",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 24.0
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.618860510805501,
+      "sample_size": 1018,
+      "effect_size": 0.2535671677873944,
+      "p_value": 3.2290296829217493e-14,
+      "score": 5.006793506172292
+    },
+    {
+      "rank": 199,
+      "features": [
+        "home",
+        "top1_points",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 24.0
+        },
+        "top1_scoring_share": {
+          "max": 0.14479638009049775
+        }
+      },
+      "accuracy": 0.6177606177606177,
+      "sample_size": 1036,
+      "effect_size": 0.25147439200768346,
+      "p_value": 3.3417921075131845e-14,
+      "score": 5.0002746917474665
+    },
+    {
+      "rank": 200,
+      "features": [
+        "home",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 24.0
+        }
+      },
+      "accuracy": 0.6171648987463838,
+      "sample_size": 1037,
+      "effect_size": 0.2501383204567241,
+      "p_value": 4.3819109011120786e-14,
+      "score": 4.971309766726404
+    },
+    {
+      "rank": 201,
+      "features": [
+        "home",
+        "top1_points",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 24.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6171648987463838,
+      "sample_size": 1037,
+      "effect_size": 0.2501383204567241,
+      "p_value": 4.3819109011120786e-14,
+      "score": 4.971309766726404
+    },
+    {
+      "rank": 202,
+      "features": [
+        "home",
+        "top1_points",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_points": {
+          "max": 24.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      },
+      "accuracy": 0.6171648987463838,
+      "sample_size": 1037,
+      "effect_size": 0.2501383204567241,
+      "p_value": 4.3819109011120786e-14,
+      "score": 4.971309766726404
+    },
+    {
+      "rank": 203,
+      "features": [
+        "home",
+        "games_played",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.3170731707317073
+        },
+        "top1_scoring_share": {
+          "max": 0.12264150943396226
+        }
+      },
+      "accuracy": 0.6051401869158879,
+      "sample_size": 1284,
+      "effect_size": 0.22797939533591677,
+      "p_value": 4.903426491576092e-14,
+      "score": 4.943495058690037
+    },
+    {
+      "rank": 204,
+      "features": [
+        "home",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.614423076923077,
+      "sample_size": 1040,
+      "effect_size": 0.24395746700051218,
+      "p_value": 1.5725488351051566e-13,
+      "score": 4.8339071473566415
+    },
+    {
+      "rank": 205,
+      "features": [
+        "home",
+        "experienced_players",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.614423076923077,
+      "sample_size": 1040,
+      "effect_size": 0.24395746700051218,
+      "p_value": 1.5725488351051566e-13,
+      "score": 4.8339071473566415
+    },
+    {
+      "rank": 206,
+      "features": [
+        "home",
+        "avg_experience",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.614423076923077,
+      "sample_size": 1040,
+      "effect_size": 0.24395746700051218,
+      "p_value": 1.5725488351051566e-13,
+      "score": 4.8339071473566415
+    },
+    {
+      "rank": 207,
+      "features": [
+        "home",
+        "top1_scoring_share",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      },
+      "accuracy": 0.6154618473895582,
+      "sample_size": 996,
+      "effect_size": 0.24533524977842114,
+      "p_value": 3.143224500871858e-13,
+      "score": 4.765305602032458
+    },
+    {
+      "rank": 208,
+      "features": [
+        "home",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 0
+        },
+        "bench_points": {
+          "min": 129.0
+        }
+      },
+      "accuracy": 0.6046738072054527,
+      "sample_size": 1027,
+      "effect_size": 0.24156253928968122,
+      "p_value": 2.0597521248201655e-11,
+      "score": 4.680971151549104
+    },
+    {
+      "rank": 209,
+      "features": [
+        "home",
+        "experienced_players",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 129.0
+        }
+      },
+      "accuracy": 0.6046738072054527,
+      "sample_size": 1027,
+      "effect_size": 0.24156253928968122,
+      "p_value": 2.0597521248201655e-11,
+      "score": 4.680971151549104
+    },
+    {
+      "rank": 210,
+      "features": [
+        "home",
+        "avg_experience",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        },
+        "bench_points": {
+          "min": 129.0
+        }
+      },
+      "accuracy": 0.6046738072054527,
+      "sample_size": 1027,
+      "effect_size": 0.24156253928968122,
+      "p_value": 2.0597521248201655e-11,
+      "score": 4.680971151549104
+    },
+    {
+      "rank": 211,
+      "features": [
+        "home",
+        "players_10plus_pts",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_10plus_pts": {
+          "min": 11.0
+        },
+        "players_5plus_ast": {
+          "max": 4.0
+        }
+      },
+      "accuracy": 0.6026600166251039,
+      "sample_size": 1203,
+      "effect_size": 0.22056891220040228,
+      "p_value": 1.1018569375294485e-12,
+      "score": 4.610515583214835
+    },
+    {
+      "rank": 212,
+      "features": [
+        "home",
+        "players_10plus_pts",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "players_10plus_pts": {
+          "min": 9.0
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.612410986775178,
+      "sample_size": 983,
+      "effect_size": 0.2381360114586447,
+      "p_value": 1.8395455789561973e-12,
+      "score": 4.572406228717048
+    },
+    {
+      "rank": 213,
+      "features": [
+        "season_win_pct",
+        "top1_points",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "top1_points": {
+          "max": 24.0
+        },
+        "players_5plus_ast": {
+          "min": 5.0
+        }
+      },
+      "accuracy": 0.6142241379310345,
+      "sample_size": 464,
+      "effect_size": 0.23131246423651391,
+      "p_value": 9.840222383968574e-07,
+      "score": 3.060447296806375
+    },
+    {
+      "rank": 214,
+      "features": [
+        "home",
+        "games_played",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.23170731707317074
+        },
+        "players_10plus_pts": {
+          "min": 12.0
+        }
+      },
+      "accuracy": 0.6032315978456014,
+      "sample_size": 557,
+      "effect_size": 0.2093189050820405,
+      "p_value": 1.2551725180049356e-06,
+      "score": 2.9800265553675436
+    },
+    {
+      "rank": 215,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "players_15plus_pts": {
+          "max": 5.0
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.6013986013986014,
+      "sample_size": 572,
+      "effect_size": 0.20562387650191635,
+      "p_value": 1.4062372099833705e-06,
+      "score": 2.957562769212292
+    },
+    {
+      "rank": 216,
+      "features": [
+        "home",
+        "games_played",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "games_played": {
+          "max": 0.07317073170731707
+        },
+        "players_5plus_ast": {
+          "min": 6.0
+        }
+      },
+      "accuracy": 0.6363636363636364,
+      "sample_size": 143,
+      "effect_size": 0.27200433234125165,
+      "p_value": 0.0013982749350205154,
+      "score": 2.0698991914299336
+    },
+    {
+      "rank": 217,
+      "features": [
+        "season_win_pct",
+        "top1_scoring_share",
+        "bench_points"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        },
+        "bench_points": {
+          "max": 112.0
+        }
+      },
+      "accuracy": 0.6099585062240664,
+      "sample_size": 241,
+      "effect_size": 0.21788189328208138,
+      "p_value": 0.000774772559680837,
+      "score": 2.063145960357048
+    },
+    {
+      "rank": 218,
+      "features": [
+        "season_win_pct",
+        "top1_points",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "top1_points": {
+          "max": 27.0
+        },
+        "top1_scoring_share": {
+          "min": 0.13333333333333333
+        }
+      },
+      "accuracy": 0.6039603960396039,
+      "sample_size": 202,
+      "effect_size": 0.20453953673482525,
+      "p_value": 0.0038086226009039995,
+      "score": 1.7557448933321116
+    },
+    {
+      "rank": 219,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "min": 0.3125
+        },
+        "players_15plus_pts": {
+          "min": 8.0
+        },
+        "players_5plus_ast": {
+          "max": 3.0
+        }
+      },
+      "accuracy": 0.6,
+      "sample_size": 220,
+      "effect_size": 0.19653269549203842,
+      "p_value": 0.0036456098977157214,
+      "score": 1.7490305747674653
+    },
+    {
+      "rank": 220,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "min": 0.3
+        },
+        "players_20plus_pts": {
+          "min": 5.0
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        }
+      },
+      "accuracy": 0.6009615384615384,
+      "sample_size": 208,
+      "effect_size": 0.19834844573756397,
+      "p_value": 0.004357971866560856,
+      "score": 1.7191237776811865
+    },
+    {
+      "rank": 221,
+      "features": [
+        "players_15plus_pts",
+        "top3_scoring_share",
+        "bench_points"
+      ],
+      "conditions": {
+        "players_15plus_pts": {
+          "min": 5.0
+        },
+        "top3_scoring_share": {
+          "max": 0.32098765432098764
+        },
+        "bench_points": {
+          "max": 105.0
+        }
+      },
+      "accuracy": 0.6137931034482759,
+      "sample_size": 145,
+      "effect_size": 0.22417101314688725,
+      "p_value": 0.007656052792678142,
+      "score": 1.6568586526913252
+    },
+    {
+      "rank": 222,
+      "features": [
+        "l10_win_pct",
+        "top1_scoring_share",
+        "players_used"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "min": 0.3
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        },
+        "players_used": {
+          "max": 23.0
+        }
+      },
+      "accuracy": 0.6023391812865497,
+      "sample_size": 171,
+      "effect_size": 0.20060863556899797,
+      "p_value": 0.009122083075432096,
+      "score": 1.5801153556776255
+    },
+    {
+      "rank": 223,
+      "features": [
+        "l10_win_pct",
+        "top3_scoring_share",
+        "players_used"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "min": 0.3
+        },
+        "top3_scoring_share": {
+          "max": 0.29765551143883534
+        },
+        "players_used": {
+          "max": 23.0
+        }
+      },
+      "accuracy": 0.6013986013986014,
+      "sample_size": 143,
+      "effect_size": 0.1981713066739492,
+      "p_value": 0.018891135018809613,
+      "score": 1.4251848776412919
+    },
+    {
+      "rank": 224,
+      "features": [
+        "top2_points",
+        "players_20plus_pts",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "top2_points": {
+          "min": 21.0
+        },
+        "players_20plus_pts": {
+          "max": 2.0
+        },
+        "players_15plus_pts": {
+          "min": 8.0
+        }
+      },
+      "accuracy": 0.6083333333333333,
+      "sample_size": 120,
+      "effect_size": 0.21225879084568094,
+      "p_value": 0.022082715809704268,
+      "score": 1.4144836212618976
+    },
+    {
+      "rank": 225,
+      "features": [
+        "l10_win_pct",
+        "top1_scoring_share",
+        "bench_points"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "min": 0.3
+        },
+        "top1_scoring_share": {
+          "max": 0.1111111111111111
+        },
+        "bench_points": {
+          "max": 105.0
+        }
+      },
+      "accuracy": 0.6132075471698113,
+      "sample_size": 106,
+      "effect_size": 0.2222075355508287,
+      "p_value": 0.025021349991899068,
+      "score": 1.4028757456334993
+    }
+  ]
+}

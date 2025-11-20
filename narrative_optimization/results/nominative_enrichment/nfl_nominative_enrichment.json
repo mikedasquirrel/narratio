@@ -1,0 +1,9 @@
+{
+  "domain": "nfl",
+  "metric": "accuracy",
+  "baseline": 0.5511288180610889,
+  "enriched": 0.5617529880478087,
+  "lift": 0.010624169986719778,
+  "sample_size": 3010,
+  "feature_count": 41
+}

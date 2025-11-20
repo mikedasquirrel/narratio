@@ -1,0 +1,212 @@
+{
+  "nba": {
+    "domain": "nba",
+    "sample_size": 1000,
+    "transformers": {
+      "hero_journey": {
+        "mean_completion": 0.017493939393939395,
+        "stages_present_mean": 0.0,
+        "follows_journey_pct": 0.0
+      },
+      "character": {
+        "mean_clarity": 0.024666666666666663,
+        "dominant_archetype": "warrior",
+        "archetype_distribution": {
+          "warrior": 485,
+          "rebel": 410,
+          "magician": 66,
+          "ruler": 39
+        }
+      },
+      "plot": {
+        "plot_purity": 0.08116666666666665,
+        "dominant_plot": "quest",
+        "plot_distribution": {
+          "quest": 1000
+        }
+      },
+      "structural": {
+        "mean_beat_adherence": 0.02022222222222222,
+        "mean_structure_quality": 0.30808888888888897
+      },
+      "thematic": {
+        "mythos_purity": 0.0,
+        "dominant_mythos": "romance",
+        "mythos_distribution": {
+          "romance": 513,
+          "tragedy": 487
+        }
+      }
+    }
+  },
+  "tennis": {
+    "domain": "tennis",
+    "sample_size": 74906,
+    "transformers": {
+      "hero_journey": {
+        "mean_completion": 0.0712079413702114,
+        "stages_present_mean": 0.0005607027474434624,
+        "follows_journey_pct": 1.3350065415320536e-05
+      },
+      "character": {
+        "mean_clarity": 9.345045790724375e-05,
+        "dominant_archetype": "ruler",
+        "archetype_distribution": {
+          "ruler": 73747,
+          "caregiver": 1114,
+          "warrior": 41,
+          "jester": 2,
+          "lover": 2
+        }
+      },
+      "plot": {
+        "plot_purity": 8.677542519958348e-05,
+        "dominant_plot": "quest",
+        "plot_distribution": {
+          "quest": 71203,
+          "voyage_and_return": 3509,
+          "overcoming_monster": 99,
+          "rags_to_riches": 89,
+          "rebirth": 6
+        }
+      },
+      "structural": {
+        "mean_beat_adherence": 0.047209209765127845,
+        "mean_structure_quality": 0.27331533553025616
+      },
+      "thematic": {
+        "mythos_purity": 0.00027338398341107537,
+        "dominant_mythos": "comedy",
+        "mythos_distribution": {
+          "comedy": 63892,
+          "romance": 11014
+        }
+      }
+    }
+  },
+  "golf": {
+    "domain": "golf",
+    "sample_size": 7700,
+    "transformers": {
+      "hero_journey": {
+        "mean_completion": 0.03876623376623377,
+        "stages_present_mean": 0.0,
+        "follows_journey_pct": 0.0
+      },
+      "character": {
+        "mean_clarity": 0.48251082251082245,
+        "dominant_archetype": "warrior",
+        "archetype_distribution": {
+          "warrior": 4813,
+          "rebel": 1639,
+          "innocent": 1108,
+          "ruler": 140
+        }
+      },
+      "plot": {
+        "plot_purity": 0.09521645021645023,
+        "dominant_plot": "quest",
+        "plot_distribution": {
+          "quest": 7700
+        }
+      },
+      "structural": {
+        "mean_beat_adherence": 0.07911035209235208,
+        "mean_structure_quality": 0.32769521625111836
+      },
+      "thematic": {
+        "mythos_purity": 0.0,
+        "dominant_mythos": "comedy",
+        "mythos_distribution": {
+          "comedy": 7700
+        }
+      }
+    }
+  },
+  "ufc": {
+    "domain": "ufc",
+    "sample_size": 5500,
+    "transformers": {
+      "hero_journey": {
+        "mean_completion": 0.12301069521387704,
+        "stages_present_mean": 0.0025454545454545456,
+        "follows_journey_pct": 0.0
+      },
+      "character": {
+        "mean_clarity": 0.07763636363636364,
+        "dominant_archetype": "warrior",
+        "archetype_distribution": {
+          "warrior": 2271,
+          "creator": 1784,
+          "magician": 768,
+          "ruler": 588,
+          "lover": 85
+        }
+      },
+      "plot": {
+        "plot_purity": 0.08915151515151515,
+        "dominant_plot": "quest",
+        "plot_distribution": {
+          "quest": 4042,
+          "overcoming_monster": 1355,
+          "comedy": 72,
+          "rags_to_riches": 31
+        }
+      },
+      "structural": {
+        "mean_beat_adherence": 0.0431096202020202,
+        "mean_structure_quality": 0.31033116105148956
+      },
+      "thematic": {
+        "mythos_purity": 0.0,
+        "dominant_mythos": "romance",
+        "mythos_distribution": {
+          "romance": 4932,
+          "comedy": 568
+        }
+      }
+    }
+  },
+  "mlb": {
+    "domain": "mlb",
+    "sample_size": 23264,
+    "transformers": {
+      "hero_journey": {
+        "mean_completion": 0.1350592097966797,
+        "stages_present_mean": 0.0017623796423658872,
+        "follows_journey_pct": 0.0
+      },
+      "character": {
+        "mean_clarity": 0.07892022008253094,
+        "dominant_archetype": "magician",
+        "archetype_distribution": {
+          "magician": 16877,
+          "ruler": 4083,
+          "warrior": 1556,
+          "caregiver": 501,
+          "sage": 228
+        }
+      },
+      "plot": {
+        "plot_purity": 0.26247994039431455,
+        "dominant_plot": "quest",
+        "plot_distribution": {
+          "quest": 21736,
+          "voyage_and_return": 1528
+        }
+      },
+      "structural": {
+        "mean_beat_adherence": 0.017559828251566555,
+        "mean_structure_quality": 0.30873644849457427
+      },
+      "thematic": {
+        "mythos_purity": 0.01388713201691686,
+        "dominant_mythos": "comedy",
+        "mythos_distribution": {
+          "comedy": 15138,
+          "romance": 8126
+        }
+      }
+    }
+  }
+}

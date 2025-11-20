@@ -1,0 +1,39 @@
+{
+  "dataset": "NBA Complete (2014-2024)",
+  "total_games": 11976,
+  "train_games": 10746,
+  "test_games": 1230,
+  "transformers_tested": 3,
+  "results": [
+    {
+      "name": "Context Pattern Transformer",
+      "type": "Pattern Discovery",
+      "train_accuracy": 0.667,
+      "test_accuracy": 0.648,
+      "patterns_found": 225,
+      "features_used": 17
+    },
+    {
+      "name": "Temporal Evolution (Custom)",
+      "type": "Temporal",
+      "train_accuracy": 0.5978038339847385,
+      "test_accuracy": 0.5829268292682926,
+      "features_used": 17
+    },
+    {
+      "name": "Baseline (No Transformer)",
+      "type": "Baseline",
+      "train_accuracy": 0.6005025125628141,
+      "test_accuracy": 0.5878048780487805,
+      "features_used": 14
+    }
+  ],
+  "best_transformer": {
+    "name": "Context Pattern Transformer",
+    "type": "Pattern Discovery",
+    "train_accuracy": 0.667,
+    "test_accuracy": 0.648,
+    "patterns_found": 225.0,
+    "features_used": 17
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "graph_metadata": {
+    "n_nodes": 1452,
+    "n_edges": 1328,
+    "density": 0.0012606485885102512
+  },
+  "sample_nodes": {
+    "Curebit": {
+      "degree": 2.1,
+      "centrality": 0.001666273193757859,
+      "clustering": 0.0
+    },
+    "cluster:E-Commerce": {
+      "degree": 6.0,
+      "centrality": 0.004149899738307357,
+      "clustering": 0.0
+    },
+    "founder:Allan Grant": {
+      "degree": 0.4,
+      "centrality": 0.00037279506493861117,
+      "clustering": 0.0
+    },
+    "founder:Dominic Coryell": {
+      "degree": 0.4,
+      "centrality": 0.00037279506493861117,
+      "clustering": 0.0
+    },
+    "founder:Jeff Yee": {
+      "degree": 0.4,
+      "centrality": 0.00037279506493861117,
+      "clustering": 0.0
+    },
+    "founder:Nori Yoshida": {
+      "degree": 0.4,
+      "centrality": 0.00037279506493861117,
+      "clustering": 0.0
+    },
+    "Goldbely": {
+      "degree": 2.1,
+      "centrality": 0.0019566708379865853,
+      "clustering": 0.0
+    },
+    "cluster:Social": {
+      "degree": 0.5,
+      "centrality": 0.0004983133187792664,
+      "clustering": 0.0
+    },
+    "founder:Joe Ariel": {
+      "degree": 0.4,
+      "centrality": 0.0004193118120482066,
+      "clustering": 0.0
+    },
+    "founder:Joel Gillman": {
+      "degree": 0.4,
+      "centrality": 0.0004193118120482066,
+      "clustering": 0.0
+    },
+    "founder:Trevor Stow": {
+      "degree": 0.4,
+      "centrality": 0.0004193118120482066,
+      "clustering": 0.0
+    },
+    "founder:Vanessa Torrivilla": {
+      "degree": 0.4,
+      "centrality": 0.0004193118120482066,
+      "clustering": 0.0
+    },
+    "theDailyMuse": {
+      "degree": 1.7000000000000002,
+      "centrality": 0.0013134408764120835,
+      "clustering": 0.0
+    },
+    "cluster:uncategorized": {
+      "degree": 23.0,
+      "centrality": 0.014994098581241677,
+      "clustering": 0.0
+    },
+    "founder:Alex Cavoulacos": {
+      "degree": 0.4,
+      "centrality": 0.00036612197499521614,
+      "clustering": 0.0
+    },
+    "founder:Kathryn Minshew": {
+      "degree": 0.4,
+      "centrality": 0.00036612197499521614,
+      "clustering": 0.0
+    },
+    "founder:Melissa McCreery": {
+      "degree": 0.4,
+      "centrality": 0.00036612197499521614,
+      "clustering": 0.0
+    },
+    "Zencoder": {
+      "degree": 1.7000000000000002,
+      "centrality": 0.001444860268810664,
+      "clustering": 0.0
+    },
+    "cluster:SaaS": {
+      "degree": 1.5,
+      "centrality": 0.001201850814858955,
+      "clustering": 0.0
+    },
+    "founder:Brandon Arbini": {
+      "degree": 0.4,
+      "centrality": 0.00039185337007211597,
+      "clustering": 0.0
+    }
+  }
+}

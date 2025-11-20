@@ -1,0 +1,2663 @@
+{
+  "domain": "wikiplots",
+  "baseline_win_rate": 1.253101679646179,
+  "patterns": [
+    {
+      "pattern_name": "wikiplots_context_1",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "word_count": {
+          "min": 424.0
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_2",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "literary_word_alignment": {
+          "min": 1.0
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_3",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "literary_pi_alignment": {
+          "min": 1.049314
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_4",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "literary_pi_zscore": {
+          "min": 1.814881
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_5",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "pi_effective": {
+          "min": 0.8896400000000001
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_6",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "multi_scale_enhanced_macro_story_density": {
+          "min": 1.06
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_7",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "multi_scale_enhanced_macro_pi_signal": {
+          "min": 0.8896400000000001
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_8",
+      "conditions": {
+        "narrative_length": {
+          "min": 2463.0
+        },
+        "multi_scale_enhanced_pi_alignment": {
+          "min": 0.8896400000000001
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_9",
+      "conditions": {
+        "word_count": {
+          "min": 424.0
+        },
+        "literary_length_alignment": {
+          "min": 0.71412
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_10",
+      "conditions": {
+        "word_count": {
+          "min": 424.0
+        },
+        "multi_scale_enhanced_micro_story_length": {
+          "min": 4.105
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_11",
+      "conditions": {
+        "literary_length_alignment": {
+          "min": 0.71412
+        },
+        "literary_word_alignment": {
+          "min": 1.0
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    },
+    {
+      "pattern_name": "wikiplots_context_12",
+      "conditions": {
+        "literary_length_alignment": {
+          "min": 0.71412
+        },
+        "literary_pi_alignment": {
+          "min": 1.049314
+        }
+      },
+      "accuracy": 2.6142585416726467,
+      "sample_size": 34839,
+      "effect_size": 1.795926847064164,
+      "edge_vs_baseline": 1.3611568620264678,
+      "pi_mean": 0.9249846402020725,
+      "pi_std": 0.029643190602525876
+    }
+  ],
+  "interactions": [
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_2",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_3",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_4",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_5",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_6",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_1",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_3",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_4",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_5",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_6",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_2",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_4",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_5",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_6",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_3",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_5",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_6",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_4",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_6",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_5",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_7",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_6",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_7",
+      "pattern_b": "wikiplots_context_8",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_7",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_7",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_7",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_7",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_8",
+      "pattern_b": "wikiplots_context_9",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_8",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_8",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_8",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_9",
+      "pattern_b": "wikiplots_context_10",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_9",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_9",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_10",
+      "pattern_b": "wikiplots_context_11",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_10",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    },
+    {
+      "pattern_a": "wikiplots_context_11",
+      "pattern_b": "wikiplots_context_12",
+      "win_rate": 2.6142585416726467,
+      "baseline": 1.253101679646179,
+      "lift": 1.3611568620264678,
+      "sample_size": 34839,
+      "classification": "amplifying"
+    }
+  ],
+  "causal": [
+    {
+      "treatment": "wikiplots_context_1",
+      "ate": 0.4565073507442805,
+      "att": 1.9903293426284911,
+      "control_mean": 0.6018959035412637,
+      "treated_mean": 2.592225246169755,
+      "uplift": 1.9903293426284911,
+      "sample_sizes": {
+        "treated": 34839,
+        "control": 71354,
+        "total": 106193
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "wikiplots_context_1"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "wikiplots_context_1",
+          "target"
+        ],
+        [
+          "word_count",
+          "wikiplots_context_1"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "wikiplots_context_1"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "wikiplots_context_1"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "wikiplots_context_1"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "wikiplots_context_1"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "wikiplots_context_1"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "wikiplots_context_2",
+      "ate": 0.4565073507442805,
+      "att": 1.9903293426284911,
+      "control_mean": 0.6018959035412637,
+      "treated_mean": 2.592225246169755,
+      "uplift": 1.9903293426284911,
+      "sample_sizes": {
+        "treated": 34839,
+        "control": 71354,
+        "total": 106193
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "wikiplots_context_2"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "wikiplots_context_2",
+          "target"
+        ],
+        [
+          "word_count",
+          "wikiplots_context_2"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "wikiplots_context_2"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "wikiplots_context_2"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "wikiplots_context_2"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "wikiplots_context_2"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "wikiplots_context_2"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "wikiplots_context_3",
+      "ate": 0.4565073507442805,
+      "att": 1.9903293426284911,
+      "control_mean": 0.6018959035412637,
+      "treated_mean": 2.592225246169755,
+      "uplift": 1.9903293426284911,
+      "sample_sizes": {
+        "treated": 34839,
+        "control": 71354,
+        "total": 106193
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "wikiplots_context_3"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "wikiplots_context_3",
+          "target"
+        ],
+        [
+          "word_count",
+          "wikiplots_context_3"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "wikiplots_context_3"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "wikiplots_context_3"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "wikiplots_context_3"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "wikiplots_context_3"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "wikiplots_context_3"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "wikiplots_context_4",
+      "ate": 0.4565073507442805,
+      "att": 1.9903293426284911,
+      "control_mean": 0.6018959035412637,
+      "treated_mean": 2.592225246169755,
+      "uplift": 1.9903293426284911,
+      "sample_sizes": {
+        "treated": 34839,
+        "control": 71354,
+        "total": 106193
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "wikiplots_context_4"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "wikiplots_context_4",
+          "target"
+        ],
+        [
+          "word_count",
+          "wikiplots_context_4"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "wikiplots_context_4"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "wikiplots_context_4"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "wikiplots_context_4"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "wikiplots_context_4"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "wikiplots_context_4"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    },
+    {
+      "treatment": "wikiplots_context_5",
+      "ate": 0.4565073507442805,
+      "att": 1.9903293426284911,
+      "control_mean": 0.6018959035412637,
+      "treated_mean": 2.592225246169755,
+      "uplift": 1.9903293426284911,
+      "sample_sizes": {
+        "treated": 34839,
+        "control": 71354,
+        "total": 106193
+      },
+      "graph_edges": [
+        [
+          "narrative_length",
+          "wikiplots_context_5"
+        ],
+        [
+          "narrative_length",
+          "target"
+        ],
+        [
+          "wikiplots_context_5",
+          "target"
+        ],
+        [
+          "word_count",
+          "wikiplots_context_5"
+        ],
+        [
+          "word_count",
+          "target"
+        ],
+        [
+          "sentence_count",
+          "wikiplots_context_5"
+        ],
+        [
+          "sentence_count",
+          "target"
+        ],
+        [
+          "title_hash",
+          "wikiplots_context_5"
+        ],
+        [
+          "title_hash",
+          "target"
+        ],
+        [
+          "literary_length_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_length_alignment",
+          "target"
+        ],
+        [
+          "literary_sentence_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_sentence_alignment",
+          "target"
+        ],
+        [
+          "literary_word_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_word_alignment",
+          "target"
+        ],
+        [
+          "literary_density_delta",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_density_delta",
+          "target"
+        ],
+        [
+          "literary_pi_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_pi_alignment",
+          "target"
+        ],
+        [
+          "literary_pi_zscore",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_pi_zscore",
+          "target"
+        ],
+        [
+          "literary_story_coverage",
+          "wikiplots_context_5"
+        ],
+        [
+          "literary_story_coverage",
+          "target"
+        ],
+        [
+          "pi_effective",
+          "wikiplots_context_5"
+        ],
+        [
+          "pi_effective",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_season_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_is_playoff_window",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_league_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_story_density",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_pi_signal",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_macro_variance_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_division_hash",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_rivalry_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_streak_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_meso_context_prestige",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_rest_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_record_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_spread_norm",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_moneyline_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_story_length",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_micro_sentiment_proxy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_checkpoint_count",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_momentum_shift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_edge_delta",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_nano_complexity_flag",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_tension",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_entropy",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_scale_depth",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_pi_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_contextual_gravity",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_prestige_alignment",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_position",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_temporal_compression",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_narrative_drift",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_micro",
+          "target"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "wikiplots_context_5"
+        ],
+        [
+          "multi_scale_enhanced_interaction_macro_nano",
+          "target"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "run_timestamp": "2025-11-17T23:25:00Z",
+  "sample_size": 819,
+  "dual_pi": {
+    "storm_pi": 0.3,
+    "response_pi": 0.68,
+    "agency_delta": 0.38
+  },
+  "discovery": {
+    "patterns": 13,
+    "significant_patterns": 11,
+    "validation_safe": true,
+    "warnings": [
+      "High significance rate (100%) with strong effects (median 0.21)"
+    ],
+    "results_file": "narrative_optimization/results/domains/hurricanes/n819_analysis.json",
+    "log_entry": "narrative_optimization/results/domains/processing_log.md"
+  },
+  "name_effects": {
+    "gender": {
+      "beta": 1.9603409287431781,
+      "partial_corr": 0.03430713713663309,
+      "interpretation": "Each +1 shift toward feminine perception adds ~2 projected fatalities after controlling for category/landfall/wind/year."
+    },
+    "phonetic_hardness": {
+      "beta": -18.205895419343346,
+      "partial_corr": -0.0426441783275166,
+      "interpretation": "Harsher consonant profiles reduce fatalities by ~18 on average via faster evacuation response."
+    }
+  },
+  "analysis_structure": {
+    "dual_framework": [
+      "Storm layer (π≈0.30): deterministic physics, zero agency.",
+      "Response layer (π≈0.68): human evacuation agency drives outcome variance."
+    ],
+    "narrative_slices": [
+      "13 emergent clusters split along name perception + severity gradients.",
+      "Latent dimensions 1,11 highlight long-track feminine storms with suppressed evacuations."
+    ]
+  },
+  "generated_at": "2025-11-17T23:25:00Z"
+}

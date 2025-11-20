@@ -1,0 +1,1899 @@
+{
+  "test_period": "2023-24",
+  "test_games": 1230,
+  "patterns_tested": 50,
+  "top_20_patterns": [
+    {
+      "rank": 41,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "train_accuracy": 0.6135382955771305,
+      "test_accuracy": 0.3713450292397661,
+      "test_sample_size": 342,
+      "wins": 127,
+      "losses": 215,
+      "total_bet": 34200.0,
+      "profit": 17957.0,
+      "roi": 52.505847953216374,
+      "features": [
+        "season_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "train_accuracy": 0.6537404580152671,
+      "test_accuracy": 0.6377245508982036,
+      "test_sample_size": 334,
+      "wins": 213,
+      "losses": 121,
+      "total_bet": 33400.0,
+      "profit": 995.9520315366818,
+      "roi": 2.9818923099900654,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      }
+    }
+  ],
+  "strategy_results": [
+    {
+      "strategy": "Top 1 Pattern",
+      "games": 317,
+      "wins": 121,
+      "losses": 196,
+      "win_pct": 38.170347003154575,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808
+    },
+    {
+      "strategy": "Top 3 Patterns",
+      "games": 951,
+      "wins": 363,
+      "losses": 588,
+      "win_pct": 38.170347003154575,
+      "total_bet": 95100.0,
+      "profit": 50184.0,
+      "roi": 52.76971608832808
+    },
+    {
+      "strategy": "Top 5 Patterns",
+      "games": 1645,
+      "wins": 620,
+      "losses": 1025,
+      "win_pct": 37.68996960486322,
+      "total_bet": 164500.0,
+      "profit": 85943.0,
+      "roi": 52.24498480243162
+    },
+    {
+      "strategy": "Top 10 Patterns",
+      "games": 3306,
+      "wins": 1228,
+      "losses": 2078,
+      "win_pct": 37.14458560193587,
+      "total_bet": 330600.0,
+      "profit": 168797.0,
+      "roi": 51.057773744706594
+    },
+    {
+      "strategy": "Top 20 Patterns",
+      "games": 6889,
+      "wins": 2641,
+      "losses": 4248,
+      "win_pct": 38.33647844389606,
+      "total_bet": 688900.0,
+      "profit": 279574.2142381827,
+      "roi": 40.582699120072974
+    },
+    {
+      "strategy": "All Profitable (ROI>0)",
+      "games": 8153,
+      "wins": 3449,
+      "losses": 4704,
+      "win_pct": 42.30344658407948,
+      "total_bet": 815300.0,
+      "profit": 282662.05266718444,
+      "roi": 34.669698597716724
+    }
+  ],
+  "best_strategy": {
+    "strategy": "Top 1 Pattern",
+    "games": 317,
+    "wins": 121,
+    "losses": 196,
+    "win_pct": 38.170347003154575,
+    "total_bet": 31700.0,
+    "profit": 16728.0,
+    "roi": 52.76971608832808
+  },
+  "all_pattern_results": [
+    {
+      "rank": 41,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "train_accuracy": 0.6149577167019027,
+      "test_accuracy": 0.38170347003154576,
+      "test_sample_size": 317,
+      "wins": 121,
+      "losses": 196,
+      "total_bet": 31700.0,
+      "profit": 16728.0,
+      "roi": 52.76971608832808,
+      "features": [
+        "season_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "train_accuracy": 0.6135382955771305,
+      "test_accuracy": 0.3713450292397661,
+      "test_sample_size": 342,
+      "wins": 127,
+      "losses": 215,
+      "total_bet": 34200.0,
+      "profit": 17957.0,
+      "roi": 52.505847953216374,
+      "features": [
+        "season_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_5plus_ast": {
+          "min": 3.0
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "train_accuracy": 0.6128064032016007,
+      "test_accuracy": 0.3693181818181818,
+      "test_sample_size": 352,
+      "wins": 130,
+      "losses": 222,
+      "total_bet": 35200.0,
+      "profit": 17802.0,
+      "roi": 50.57386363636363,
+      "features": [
+        "season_win_pct",
+        "experienced_players",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "train_accuracy": 0.6153234358430542,
+      "test_accuracy": 0.36363636363636365,
+      "test_sample_size": 319,
+      "wins": 116,
+      "losses": 203,
+      "total_bet": 31900.0,
+      "profit": 15750.0,
+      "roi": 49.3730407523511,
+      "features": [
+        "season_win_pct",
+        "players_15plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "train_accuracy": 0.6126320845341018,
+      "test_accuracy": 0.3740648379052369,
+      "test_sample_size": 401,
+      "wins": 150,
+      "losses": 251,
+      "total_bet": 40100.0,
+      "profit": 17002.33483096209,
+      "roi": 42.39983748369598,
+      "features": [
+        "season_win_pct",
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.5
+        },
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "experienced_players"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "train_accuracy": 0.603480714957667,
+      "test_accuracy": 0.4005167958656331,
+      "test_sample_size": 387,
+      "wins": 155,
+      "losses": 232,
+      "total_bet": 38700.0,
+      "profit": 16257.419237919908,
+      "roi": 42.00883524010312,
+      "features": [
+        "l10_win_pct",
+        "players_20plus_pts",
+        "avg_experience"
+      ],
+      "conditions": {
+        "l10_win_pct": {
+          "max": 0.4
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "experienced_players"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "train_accuracy": 0.6211234640140433,
+      "test_accuracy": 0.3220338983050847,
+      "test_sample_size": 295,
+      "wins": 95,
+      "losses": 200,
+      "total_bet": 29500.0,
+      "profit": 3334.0,
+      "roi": 11.301694915254238,
+      "features": [
+        "season_win_pct",
+        "games_played",
+        "avg_experience"
+      ],
+      "conditions": {
+        "season_win_pct": {
+          "max": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "train_accuracy": 0.6537404580152671,
+      "test_accuracy": 0.6377245508982036,
+      "test_sample_size": 334,
+      "wins": 213,
+      "losses": 121,
+      "total_bet": 33400.0,
+      "profit": 995.9520315366818,
+      "roi": 2.9818923099900654,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "train_accuracy": 0.6582781456953642,
+      "test_accuracy": 0.6488294314381271,
+      "test_sample_size": 299,
+      "wins": 194,
+      "losses": 105,
+      "total_bet": 29900.0,
+      "profit": 887.9441306823911,
+      "roi": 2.969712811646793,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top3_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top3_points": {
+          "max": 25.0
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "train_accuracy": 0.6568123393316195,
+      "test_accuracy": 0.6414473684210527,
+      "test_sample_size": 304,
+      "wins": 195,
+      "losses": 109,
+      "total_bet": 30400.0,
+      "profit": 776.368105656297,
+      "roi": 2.5538424528167663,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "train_accuracy": 0.6673525377229081,
+      "test_accuracy": 0.6447368421052632,
+      "test_sample_size": 304,
+      "wins": 196,
+      "losses": 108,
+      "total_bet": 30400.0,
+      "profit": 747.2494247125557,
+      "roi": 2.458057318133407,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top2_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.5
+        },
+        "top2_points": {
+          "max": 30.0
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "train_accuracy": 0.6529610309911016,
+      "test_accuracy": 0.6246498599439776,
+      "test_sample_size": 357,
+      "wins": 223,
+      "losses": 134,
+      "total_bet": 35700.0,
+      "profit": 676.2767679504892,
+      "roi": 1.8943326833347036,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "train_accuracy": 0.6564051638530288,
+      "test_accuracy": 0.6246056782334385,
+      "test_sample_size": 317,
+      "wins": 198,
+      "losses": 119,
+      "total_bet": 31700.0,
+      "profit": -86.81656357205229,
+      "roi": -0.2738692857162533,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top3_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top3_scoring_share": {
+          "max": 0.3902439024390244
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "train_accuracy": 0.6486241306319928,
+      "test_accuracy": 0.6104218362282878,
+      "test_sample_size": 403,
+      "wins": 246,
+      "losses": 157,
+      "total_bet": 40300.0,
+      "profit": -376.49654278484377,
+      "roi": -0.9342345974810019,
+      "features": [
+        "home",
+        "season_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "train_accuracy": 0.6434604555925262,
+      "test_accuracy": 0.6084070796460177,
+      "test_sample_size": 452,
+      "wins": 275,
+      "losses": 177,
+      "total_bet": 45200.0,
+      "profit": -816.2317395550263,
+      "roi": -1.8058224326438634,
+      "features": [
+        "home",
+        "season_win_pct",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "l10_win_pct": {
+          "min": 0.3
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "train_accuracy": 0.646954986760812,
+      "test_accuracy": 0.6059782608695652,
+      "test_sample_size": 368,
+      "wins": 223,
+      "losses": 145,
+      "total_bet": 36800.0,
+      "profit": -673.9377095224382,
+      "roi": -1.831352471528365,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "train_accuracy": 0.6442019099590723,
+      "test_accuracy": 0.6042654028436019,
+      "test_sample_size": 422,
+      "wins": 255,
+      "losses": 167,
+      "total_bet": 42200.0,
+      "profit": -938.2822701205839,
+      "roi": -2.223417701707545,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "train_accuracy": 0.6425146510388918,
+      "test_accuracy": 0.6070588235294118,
+      "test_sample_size": 425,
+      "wins": 258,
+      "losses": 167,
+      "total_bet": 42500.0,
+      "profit": -950.812075522196,
+      "roi": -2.237204883581638,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "train_accuracy": 0.6464616303374141,
+      "test_accuracy": 0.6104218362282878,
+      "test_sample_size": 403,
+      "wins": 246,
+      "losses": 157,
+      "total_bet": 40300.0,
+      "profit": -908.4994831212608,
+      "roi": -2.25434114918427,
+      "features": [
+        "home",
+        "season_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "train_accuracy": 0.6461819288104654,
+      "test_accuracy": 0.5994623655913979,
+      "test_sample_size": 372,
+      "wins": 223,
+      "losses": 149,
+      "total_bet": 37200.0,
+      "profit": -945.0180601827307,
+      "roi": -2.5403711295234697,
+      "features": [
+        "home",
+        "season_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "train_accuracy": 0.6474340388518411,
+      "test_accuracy": 0.6170212765957447,
+      "test_sample_size": 376,
+      "wins": 232,
+      "losses": 144,
+      "total_bet": 37600.0,
+      "profit": -974.5662849004217,
+      "roi": -2.5919316087777173,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_15plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_15plus_pts": {
+          "max": 8.0
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "train_accuracy": 0.6415906788247214,
+      "test_accuracy": 0.6030701754385965,
+      "test_sample_size": 456,
+      "wins": 275,
+      "losses": 181,
+      "total_bet": 45600.0,
+      "profit": -1216.2317395550274,
+      "roi": -2.6671748674452354,
+      "features": [
+        "home",
+        "season_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "train_accuracy": 0.6415906788247214,
+      "test_accuracy": 0.6030701754385965,
+      "test_sample_size": 456,
+      "wins": 275,
+      "losses": 181,
+      "total_bet": 45600.0,
+      "profit": -1216.2317395550274,
+      "roi": -2.6671748674452354,
+      "features": [
+        "home",
+        "season_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "train_accuracy": 0.6415906788247214,
+      "test_accuracy": 0.6030701754385965,
+      "test_sample_size": 456,
+      "wins": 275,
+      "losses": 181,
+      "total_bet": 45600.0,
+      "profit": -1216.2317395550274,
+      "roi": -2.6671748674452354,
+      "features": [
+        "home",
+        "season_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "train_accuracy": 0.6514668367346939,
+      "test_accuracy": 0.6123076923076923,
+      "test_sample_size": 325,
+      "wins": 199,
+      "losses": 126,
+      "total_bet": 32500.0,
+      "profit": -901.0310410449769,
+      "roi": -2.772403203215313,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top1_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top1_points": {
+          "max": 38.0
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "train_accuracy": 0.6390791997807619,
+      "test_accuracy": 0.60431654676259,
+      "test_sample_size": 417,
+      "wins": 252,
+      "losses": 165,
+      "total_bet": 41700.0,
+      "profit": -1212.0928983530614,
+      "roi": -2.9066975979689724,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "train_accuracy": 0.6463909164639091,
+      "test_accuracy": 0.6049382716049383,
+      "test_sample_size": 405,
+      "wins": 245,
+      "losses": 160,
+      "total_bet": 40500.0,
+      "profit": -1213.8111169845502,
+      "roi": -2.9970644863816056,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "train_accuracy": 0.6552406064601186,
+      "test_accuracy": 0.6100278551532033,
+      "test_sample_size": 359,
+      "wins": 219,
+      "losses": 140,
+      "total_bet": 35900.0,
+      "profit": -1129.099353162245,
+      "roi": -3.145123546412939,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "bench_points"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "bench_points": {
+          "min": 96.0
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "train_accuracy": 0.6538842975206611,
+      "test_accuracy": 0.6206896551724138,
+      "test_sample_size": 348,
+      "wins": 216,
+      "losses": 132,
+      "total_bet": 34800.0,
+      "profit": -1111.0341803043636,
+      "roi": -3.1926269548975967,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "games_played"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "games_played": {
+          "min": 0.07317073170731707
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "train_accuracy": 0.6525751711818993,
+      "test_accuracy": 0.6106666666666667,
+      "test_sample_size": 375,
+      "wins": 229,
+      "losses": 146,
+      "total_bet": 37500.0,
+      "profit": -1201.1144936832063,
+      "roi": -3.2029719831552166,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_used"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_used": {
+          "min": 23.0
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "train_accuracy": 0.6523529411764706,
+      "test_accuracy": 0.6145251396648045,
+      "test_sample_size": 358,
+      "wins": 220,
+      "losses": 138,
+      "total_bet": 35800.0,
+      "profit": -1210.412836254478,
+      "roi": -3.3810414420516146,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_20plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_20plus_pts": {
+          "max": 5.0
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "train_accuracy": 0.642607995707003,
+      "test_accuracy": 0.6010362694300518,
+      "test_sample_size": 386,
+      "wins": 232,
+      "losses": 154,
+      "total_bet": 38600.0,
+      "profit": -1318.749538227665,
+      "roi": -3.4164495809006863,
+      "features": [
+        "home",
+        "season_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "season_win_pct": {
+          "min": 0.43478260869565216
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "train_accuracy": 0.6473509933774835,
+      "test_accuracy": 0.6109725685785536,
+      "test_sample_size": 401,
+      "wins": 245,
+      "losses": 156,
+      "total_bet": 40100.0,
+      "profit": -1418.76643673813,
+      "roi": -3.538070914558928,
+      "features": [
+        "home",
+        "l10_win_pct"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "train_accuracy": 0.6473509933774835,
+      "test_accuracy": 0.6109725685785536,
+      "test_sample_size": 401,
+      "wins": 245,
+      "losses": 156,
+      "total_bet": 40100.0,
+      "profit": -1418.76643673813,
+      "roi": -3.538070914558928,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "experienced_players"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "experienced_players": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "train_accuracy": 0.6473509933774835,
+      "test_accuracy": 0.6109725685785536,
+      "test_sample_size": 401,
+      "wins": 245,
+      "losses": 156,
+      "total_bet": 40100.0,
+      "profit": -1418.76643673813,
+      "roi": -3.538070914558928,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "avg_experience"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "avg_experience": {
+          "eq": 0.0
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "train_accuracy": 0.6452380952380953,
+      "test_accuracy": 0.6120218579234973,
+      "test_sample_size": 366,
+      "wins": 224,
+      "losses": 142,
+      "total_bet": 36600.0,
+      "profit": -1467.8078920450125,
+      "roi": -4.010404076625717,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_10plus_pts"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_10plus_pts": {
+          "max": 12.0
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "train_accuracy": 0.6506420810009879,
+      "test_accuracy": 0.6,
+      "test_sample_size": 330,
+      "wins": 198,
+      "losses": 132,
+      "total_bet": 33000.0,
+      "profit": -1478.1113917052705,
+      "roi": -4.479125429409911,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "top1_scoring_share"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "top1_scoring_share": {
+          "max": 0.16115702479338842
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "train_accuracy": 0.6476412347117064,
+      "test_accuracy": 0.6064139941690962,
+      "test_sample_size": 343,
+      "wins": 208,
+      "losses": 135,
+      "total_bet": 34300.0,
+      "profit": -1671.8384743379956,
+      "roi": -4.87416464821573,
+      "features": [
+        "home",
+        "l10_win_pct",
+        "players_5plus_ast"
+      ],
+      "conditions": {
+        "home": {
+          "eq": 1
+        },
+        "l10_win_pct": {
+          "min": 0.5
+        },
+        "players_5plus_ast": {
+          "max": 6.0
+        }
+      }
+    }
+  ]
+}

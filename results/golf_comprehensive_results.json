@@ -1,0 +1,242 @@
+{
+  "test_date": "2025-11-16T14:18:39.007171",
+  "dataset": "Golf",
+  "train_samples": 400,
+  "test_samples": 100,
+  "transformers_tested": 17,
+  "successful": 16,
+  "errors": 1,
+  "total_time_seconds": 6.373610973358154,
+  "avg_time_per_transformer": 0.37491829255047965,
+  "results": [
+    {
+      "name": "Nominative Analysis",
+      "category": "Core",
+      "status": "SUCCESS",
+      "fit_time": 0.09325599670410156,
+      "transform_time": 0.017794132232666016,
+      "total_time": 0.11105012893676758,
+      "features": 51,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Self Perception",
+      "category": "Core",
+      "status": "ERROR",
+      "fit_time": 0.0,
+      "transform_time": 0.0,
+      "total_time": 0.0,
+      "features": 0,
+      "accuracy": 0.0,
+      "error": "Found input variables with inconsistent numbers of samples: [1, 400]"
+    },
+    {
+      "name": "Narrative Potential",
+      "category": "Core",
+      "status": "SUCCESS",
+      "fit_time": 0.08024311065673828,
+      "transform_time": 0.02207016944885254,
+      "total_time": 0.10231328010559082,
+      "features": 35,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Linguistic Patterns",
+      "category": "Core",
+      "status": "SUCCESS",
+      "fit_time": 0.27040910720825195,
+      "transform_time": 0.03343605995178223,
+      "total_time": 0.3038451671600342,
+      "features": 36,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Ensemble Narrative",
+      "category": "Core",
+      "status": "SUCCESS",
+      "fit_time": 0.16273093223571777,
+      "transform_time": 0.0017650127410888672,
+      "total_time": 0.16449594497680664,
+      "features": 25,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Relational Value",
+      "category": "Core",
+      "status": "SUCCESS",
+      "fit_time": 0.931999921798706,
+      "transform_time": 0.15233111381530762,
+      "total_time": 1.0843310356140137,
+      "features": 17,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Framing",
+      "category": "Structural",
+      "status": "SUCCESS",
+      "fit_time": 0.026973962783813477,
+      "transform_time": 0.004500865936279297,
+      "total_time": 0.03147482872009277,
+      "features": 12,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Phonetic",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "fit_time": 0.10506582260131836,
+      "transform_time": 0.022730112075805664,
+      "total_time": 0.12779593467712402,
+      "features": 91,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Social Status",
+      "category": "Nominative",
+      "status": "SUCCESS",
+      "fit_time": 0.06293392181396484,
+      "transform_time": 0.006880998611450195,
+      "total_time": 0.06981492042541504,
+      "features": 20,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Information Theory",
+      "category": "Advanced",
+      "status": "SUCCESS",
+      "fit_time": 0.14092111587524414,
+      "transform_time": 0.05756402015686035,
+      "total_time": 0.1984851360321045,
+      "features": 25,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Namespace Ecology",
+      "category": "Advanced",
+      "status": "SUCCESS",
+      "fit_time": 0.07519698143005371,
+      "transform_time": 0.03304600715637207,
+      "total_time": 0.10824298858642578,
+      "features": 35,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Quantitative",
+      "category": "Advanced",
+      "status": "SUCCESS",
+      "fit_time": 0.025107860565185547,
+      "transform_time": 0.008060216903686523,
+      "total_time": 0.03316807746887207,
+      "features": 10,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Optics",
+      "category": "Theory",
+      "status": "SUCCESS",
+      "fit_time": 0.05450010299682617,
+      "transform_time": 0.01998114585876465,
+      "total_time": 0.07448124885559082,
+      "features": 15,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Anticipatory Communication",
+      "category": "Contextual",
+      "status": "SUCCESS",
+      "fit_time": 0.017035961151123047,
+      "transform_time": 0.0028390884399414062,
+      "total_time": 0.019875049591064453,
+      "features": 25,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Temporal Evolution",
+      "category": "Temporal",
+      "status": "SUCCESS",
+      "fit_time": 0.052980899810791016,
+      "transform_time": 0.004495859146118164,
+      "total_time": 0.05747675895690918,
+      "features": 30,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Temporal Narrative Context",
+      "category": "Temporal",
+      "status": "SUCCESS",
+      "fit_time": 0.050189971923828125,
+      "transform_time": 0.01769399642944336,
+      "total_time": 0.06788396835327148,
+      "features": 50,
+      "accuracy": 0.97,
+      "error": null
+    },
+    {
+      "name": "Statistical",
+      "category": "Baseline",
+      "status": "SUCCESS",
+      "fit_time": 0.025755882263183594,
+      "transform_time": 0.004591226577758789,
+      "total_time": 0.030347108840942383,
+      "features": 571,
+      "accuracy": 0.97,
+      "error": null
+    }
+  ],
+  "category_breakdown": {
+    "Advanced": {
+      "tested": 3,
+      "successful": 3,
+      "avg_accuracy": 0.9700000000000001
+    },
+    "Baseline": {
+      "tested": 1,
+      "successful": 1,
+      "avg_accuracy": 0.97
+    },
+    "Contextual": {
+      "tested": 1,
+      "successful": 1,
+      "avg_accuracy": 0.97
+    },
+    "Core": {
+      "tested": 6,
+      "successful": 5,
+      "avg_accuracy": 0.97
+    },
+    "Nominative": {
+      "tested": 2,
+      "successful": 2,
+      "avg_accuracy": 0.97
+    },
+    "Structural": {
+      "tested": 1,
+      "successful": 1,
+      "avg_accuracy": 0.97
+    },
+    "Temporal": {
+      "tested": 2,
+      "successful": 2,
+      "avg_accuracy": 0.97
+    },
+    "Theory": {
+      "tested": 1,
+      "successful": 1,
+      "avg_accuracy": 0.97
+    }
+  }
+}

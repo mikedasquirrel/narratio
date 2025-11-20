@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "total_domains": 8,
+    "total_narratives": 121727,
+    "transformers_applied": 5,
+    "features_per_narrative": 225,
+    "total_features_generated": 27388575,
+    "date": "2025-11-13"
+  },
+  "domains": {
+    "nba": {
+      "domain": "nba",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 1000,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.017493939393939395,
+        "journey_completion_std": 0.07609090130697618,
+        "dominant_plot": "quest",
+        "plot_purity": 0.08116666666666665,
+        "dominant_mythos": "romance"
+      },
+      "betting_insights": {
+        "journey_correlation": 0.018082658030748527,
+        "journey_pvalue": 0.5678943336603169,
+        "journey_predictive": "False"
+      }
+    },
+    "tennis": {
+      "domain": "tennis",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 74906,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.0712079413702114,
+        "journey_completion_std": 0.11731877733446064,
+        "dominant_plot": "quest",
+        "plot_purity": 8.677542519958348e-05,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": {
+        "journey_correlation": NaN,
+        "journey_pvalue": NaN,
+        "journey_predictive": false
+      }
+    },
+    "golf": {
+      "domain": "golf",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 7700,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.03876623376623377,
+        "journey_completion_std": 0.11649576870206446,
+        "dominant_plot": "quest",
+        "plot_purity": 0.09521645021645023,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": {
+        "journey_correlation": NaN,
+        "journey_pvalue": NaN,
+        "journey_predictive": false
+      }
+    },
+    "ufc": {
+      "domain": "ufc",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 5500,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.12301069521387704,
+        "journey_completion_std": 0.1653264304358423,
+        "dominant_plot": "quest",
+        "plot_purity": 0.08915151515151515,
+        "dominant_mythos": "romance"
+      },
+      "betting_insights": {
+        "journey_correlation": NaN,
+        "journey_pvalue": NaN,
+        "journey_predictive": false
+      }
+    },
+    "mlb": {
+      "domain": "mlb",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 23264,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.1350592097966797,
+        "journey_completion_std": 0.12787726760144497,
+        "dominant_plot": "quest",
+        "plot_purity": 0.26247994039431455,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": {}
+    },
+    "nfl": {
+      "domain": "nfl",
+      "type": "sports",
+      "has_betting": true,
+      "sample_size": 3010,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.06926489623333477,
+        "journey_completion_std": 0.11696322951532728,
+        "dominant_plot": "quest",
+        "plot_purity": 0.020099667774086376,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": {
+        "journey_correlation": NaN,
+        "journey_pvalue": NaN,
+        "journey_predictive": false
+      }
+    },
+    "crypto": {
+      "domain": "crypto",
+      "type": "business",
+      "has_betting": false,
+      "sample_size": 300,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.010424242424242423,
+        "journey_completion_std": 0.043918113969282836,
+        "dominant_plot": "quest",
+        "plot_purity": 0.03166666666666667,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": null
+    },
+    "movies": {
+      "domain": "movies",
+      "type": "entertainment",
+      "has_betting": false,
+      "sample_size": 6047,
+      "archetype_profiles": {
+        "journey_completion_mean": 0.3477994966860965,
+        "journey_completion_std": 0.1690396000025093,
+        "dominant_plot": "quest",
+        "plot_purity": 0.31310291604652446,
+        "dominant_mythos": "comedy"
+      },
+      "betting_insights": null
+    }
+  }
+}

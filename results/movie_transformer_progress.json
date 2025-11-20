@@ -1,0 +1,51 @@
+{
+  "start_time": "2025-11-16T12:35:44.606425",
+  "dataset": "movies_merged_complete",
+  "total_transformers": 23,
+  "total_movies": 81747,
+  "completed_transformers": [
+    "Linguistic Patterns",
+    "Nominative Analysis",
+    "Emotional Resonance",
+    "Conflict & Tension",
+    "Suspense & Mystery",
+    "Narrative Potential",
+    "Authenticity",
+    "Cultural Context",
+    "Phonetic Analysis",
+    "Information Theory",
+    "Quantitative",
+    "Social Status",
+    "Optics",
+    "Framing",
+    "Discoverability",
+    "Hierarchical Nominative",
+    "Cognitive Fluency",
+    "Self-Perception",
+    "Expertise & Authority"
+  ],
+  "current_transformer": "Relational Value",
+  "errors": [
+    {
+      "transformer": "Statistical",
+      "error": "max_df corresponds to < documents than min_df",
+      "timestamp": "2025-11-16T12:37:26.784722"
+    },
+    {
+      "transformer": "Nominative Richness",
+      "error": "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+      "timestamp": "2025-11-16T12:37:28.087837"
+    },
+    {
+      "transformer": "Namespace Ecology",
+      "error": "list index out of range",
+      "timestamp": "2025-11-16T12:37:29.952116"
+    },
+    {
+      "transformer": "Relational Value",
+      "error": "max_df corresponds to < documents than min_df",
+      "timestamp": "2025-11-16T12:37:30.012852"
+    }
+  ],
+  "status": "complete"
+}

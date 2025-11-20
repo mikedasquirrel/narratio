@@ -1,0 +1,9 @@
+{
+  "domain": "golf",
+  "metric": "accuracy",
+  "baseline": 0.985974025974026,
+  "enriched": 0.985974025974026,
+  "lift": 0.0,
+  "sample_size": 7700,
+  "feature_count": 41
+}

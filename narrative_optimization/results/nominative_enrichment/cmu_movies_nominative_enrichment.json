@@ -1,0 +1,9 @@
+{
+  "domain": "cmu_movies",
+  "metric": "r2",
+  "baseline": -0.20773141942110085,
+  "enriched": -0.041191209289389574,
+  "lift": 0.16654021013171127,
+  "sample_size": 42306,
+  "feature_count": 41
+}

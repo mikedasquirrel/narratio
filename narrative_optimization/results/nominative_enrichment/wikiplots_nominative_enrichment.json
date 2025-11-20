@@ -1,0 +1,9 @@
+{
+  "domain": "wikiplots",
+  "metric": "r2",
+  "baseline": 0.0766288243849007,
+  "enriched": 0.2429363484349607,
+  "lift": 0.16630752405006,
+  "sample_size": 106193,
+  "feature_count": 41
+}

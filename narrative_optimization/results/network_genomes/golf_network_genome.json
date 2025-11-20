@@ -1,0 +1,109 @@
+{
+  "graph_metadata": {
+    "n_nodes": 924,
+    "n_edges": 4728,
+    "density": 0.011087504045250524
+  },
+  "sample_nodes": {
+    "Jordan Spieth": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "cluster:Masters Tournament": {
+      "degree": 232.5,
+      "centrality": 0.045373230777726085,
+      "clustering": 0.0
+    },
+    "Collin Morikawa": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Patrick Cantlay": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Tommy Fleetwood": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Tiger Woods": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Player 833": {
+      "degree": 1.5,
+      "centrality": 0.00041103020488468534,
+      "clustering": 0.0
+    },
+    "Dustin Johnson": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Xander Schauffele": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Player 742": {
+      "degree": 3.5,
+      "centrality": 0.0007414742101755834,
+      "clustering": 0.0
+    },
+    "Brooks Koepka": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Player 586": {
+      "degree": 4.0,
+      "centrality": 0.0008245239681842775,
+      "clustering": 0.0
+    },
+    "Player 736": {
+      "degree": 3.5,
+      "centrality": 0.0007417915846402168,
+      "clustering": 0.0
+    },
+    "Player 573": {
+      "degree": 3.5,
+      "centrality": 0.0007422596059292821,
+      "clustering": 0.0
+    },
+    "Player 247": {
+      "degree": 3.5,
+      "centrality": 0.0007421150666303822,
+      "clustering": 0.0
+    },
+    "Player 935": {
+      "degree": 3.5,
+      "centrality": 0.0007412978368755618,
+      "clustering": 0.0
+    },
+    "Shane Lowry": {
+      "degree": 5.0,
+      "centrality": 0.0009902744869627,
+      "clustering": 0.0
+    },
+    "Player 556": {
+      "degree": 3.0,
+      "centrality": 0.0006588649601239198,
+      "clustering": 0.0
+    },
+    "Player 632": {
+      "degree": 2.0,
+      "centrality": 0.00049384678523328,
+      "clustering": 0.0
+    },
+    "Player 322": {
+      "degree": 2.0,
+      "centrality": 0.0004937222634581088,
+      "clustering": 0.0
+    }
+  }
+}

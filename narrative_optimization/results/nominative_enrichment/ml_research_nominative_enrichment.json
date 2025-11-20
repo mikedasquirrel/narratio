@@ -1,0 +1,9 @@
+{
+  "domain": "ml_research",
+  "metric": "r2",
+  "baseline": -0.8616179099889263,
+  "enriched": -1.321477765674676,
+  "lift": -0.4598598556857496,
+  "sample_size": 12,
+  "feature_count": 41
+}

@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-11-16T10:42:38.168594",
+  "domain": "movies",
+  "n_samples": 200,
+  "genome_features": {
+    "shape": [
+      200,
+      122
+    ],
+    "n_features": 122
+  },
+  "discovered_archetypes": {},
+  "discovered_patterns": [
+    {
+      "type": "golden_narratio",
+      "pattern": "Optimal \u03b1 = 0.458 (CHARACTER-HEAVY (traits > events))",
+      "strength": 0.22398653444571953
+    },
+    {
+      "type": "novelty_effect",
+      "pattern": "Novelty HURTS movie success (familiarity preferred)",
+      "strength": 0.21944883452529745
+    }
+  ],
+  "feature_correlations": {},
+  "archetype_library": {},
+  "structural_patterns": {
+    "arc_slope_correlation": -0.02572240145121211,
+    "tension_correlation": -0.027273130140290477,
+    "hero_journey_correlation": 0.09445143633571088
+  },
+  "embedding": {
+    "n_clusters": 8,
+    "embedding_dim": 10
+  },
+  "golden_narratio": {
+    "optimal_alpha": 0.4576485168806667,
+    "character_effectiveness": 0.0653847928192209,
+    "plot_effectiveness": 0.07748640725563959,
+    "xi_correlation": -0.22398653444571953,
+    "n_winner_clusters": 3,
+    "n_winners": 112,
+    "n_losers": 88
+  },
+  "interactions": {
+    "n_generated": 100,
+    "from_base_features": 122
+  },
+  "novelty": {
+    "correlation": -0.21944883452529745,
+    "high_novelty_success": 0.44,
+    "low_novelty_success": 0.66,
+    "effect": "Novelty HURTS movie success (familiarity preferred)"
+  }
+}

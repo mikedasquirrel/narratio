@@ -1,0 +1,109 @@
+{
+  "graph_metadata": {
+    "n_nodes": 38,
+    "n_edges": 59,
+    "density": 0.08392603129445235
+  },
+  "sample_nodes": {
+    "justice:Warren, Earl": {
+      "degree": 3.35,
+      "centrality": 0.04250256763561726,
+      "clustering": 0.26794326836824095
+    },
+    "case:brown-v-board-347-us-483": {
+      "degree": 1.8,
+      "centrality": 0.023787416376244,
+      "clustering": 0.896280949311433
+    },
+    "issue:constitutional_civil_rights": {
+      "degree": 1.7000000000000002,
+      "centrality": 0.022639535940012563,
+      "clustering": 0.896280949311433
+    },
+    "justice:Blackmun, Harry": {
+      "degree": 1.65,
+      "centrality": 0.026536948443880874,
+      "clustering": 0.8041451517178116
+    },
+    "case:roe-v-wade-410-us-113": {
+      "degree": 1.8,
+      "centrality": 0.02872538316085882,
+      "clustering": 0.8041451517178116
+    },
+    "issue:constitutional_privacy": {
+      "degree": 1.4500000000000002,
+      "centrality": 0.023685036816312947,
+      "clustering": 0.8041451517178116
+    },
+    "case:miranda-v-arizona-384-us-436": {
+      "degree": 1.8,
+      "centrality": 0.02456793427126972,
+      "clustering": 0.7113786608980126
+    },
+    "issue:criminal_procedure": {
+      "degree": 1.25,
+      "centrality": 0.018081493145277475,
+      "clustering": 0.7113786608980126
+    },
+    "justice:Kennedy, Anthony": {
+      "degree": 2.9000000000000004,
+      "centrality": 0.04054413642186982,
+      "clustering": 0.23712622029933753
+    },
+    "case:citizens-united-558-us-310": {
+      "degree": 1.8,
+      "centrality": 0.026290455434669492,
+      "clustering": 0.7113786608980126
+    },
+    "issue:first_amendment_corporate_speech": {
+      "degree": 1.25,
+      "centrality": 0.019226950038606132,
+      "clustering": 0.7113786608980126
+    },
+    "case:obergefell-v-hodges-576-us-644": {
+      "degree": 1.8,
+      "centrality": 0.026290455434669492,
+      "clustering": 0.7113786608980126
+    },
+    "issue:constitutional_equal_protection": {
+      "degree": 1.25,
+      "centrality": 0.019226950038606132,
+      "clustering": 0.7113786608980126
+    },
+    "justice:Scalia, Antonin": {
+      "degree": 1.45,
+      "centrality": 0.025474392299171505,
+      "clustering": 0.7113786608980126
+    },
+    "case:district-of-columbia-v-heller-554-us-570": {
+      "degree": 1.8,
+      "centrality": 0.03106860873225545,
+      "clustering": 0.7113786608980126
+    },
+    "issue:second_amendment": {
+      "degree": 1.25,
+      "centrality": 0.022404367389625708,
+      "clustering": 0.7113786608980126
+    },
+    "justice:Roberts, John": {
+      "degree": 20.9,
+      "centrality": 0.15246645081134313,
+      "clustering": 0.08536009041061261
+    },
+    "case:routine-case-0": {
+      "degree": 1.8,
+      "centrality": 0.015131145838671523,
+      "clustering": 0.896280949311433
+    },
+    "issue:statutory_interpretation": {
+      "degree": 16.900000000000006,
+      "centrality": 0.12385800083627896,
+      "clustering": 0.08536009041061265
+    },
+    "case:routine-case-1": {
+      "degree": 1.8,
+      "centrality": 0.015131145838671523,
+      "clustering": 0.896280949311433
+    }
+  }
+}

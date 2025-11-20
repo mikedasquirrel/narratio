@@ -1,0 +1,152 @@
+{
+  "domain": "stereotropes",
+  "sample_size": 3,
+  "timestamp": "2025-11-18T18:01:50.082216",
+  "domain_info": {
+    "name": "stereotropes",
+    "estimated_pi": 0.78,
+    "sample_size": 3,
+    "total_available": 3,
+    "outcome_type": "continuous",
+    "used_transformers": true,
+    "fast_mode": false
+  },
+  "n_patterns": 3,
+  "patterns": [
+    {
+      "id": "pattern_0",
+      "size": 1,
+      "size_pct": 0.3333333333333333,
+      "centroid_latent": [
+        -44.04098968093741,
+        80.97714320062413
+      ],
+      "variance": 3907.383387297945,
+      "std": 62.50906644078077,
+      "density": 0.0,
+      "separation": 0.10573276457481233,
+      "coherence": 1.0,
+      "example_narratives": [
+        "links: {'source': 'ManlyGay', 'target': 'opposite'}, {'source': 'ManlyGay', 'target': 'certain'}, {'source': 'ManlyGay', 'target': 'modern'}, {'source': 'ManlyGay', 'target': 'same'}, {'source': 'ManlyGay', 'target': 'large'}, {'source': 'ManlyGay', 'target': 'strong'}, {'source': 'CollegeWidow', 'target': 'short'}, {'source': 'CollegeWidow', 'target': 'sexual'}, {'source': 'CollegeWidow', 'target': 'young'}, {'source': 'CollegeWidow', 'target': 'hot'}, {'source': 'CollegeWidow', 'target': 'single'}, {'source': 'CollegeWidow', 'target': 'local'}, {'source': 'TheOldConvict', 'target': 'new'}, {'source': 'TheOldConvict', 'target': 'old'}, {'source': 'BeardOfBarbarism', 'target': 'good'}"
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          1,
+          0
+        ],
+        "dimension_values": [
+          80.97714320062413,
+          -44.04098968093741
+        ],
+        "dimension_prominence": [
+          0.647723184902621,
+          0.35227681509737896
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_1",
+      "size": 1,
+      "size_pct": 0.3333333333333333,
+      "centroid_latent": [
+        671.5749141889295,
+        -36.37077166485666
+      ],
+      "variance": 125296.7735297469,
+      "std": 353.97284292689307,
+      "density": 0.0,
+      "separation": 0.6409514446105915,
+      "coherence": 1.0,
+      "example_narratives": [
+        "nodes: {'name': 'good', 'trope_count': 136}, {'name': 'many', 'trope_count': 116}, {'name': 'same', 'trope_count': 105}, {'name': 'young', 'trope_count': 85}, {'name': 'real', 'trope_count': 69}, {'name': 'popular', 'trope_count': 67}, {'name': 'attractive', 'trope_count': 65}, {'name': 'bad', 'trope_count': 61}, {'name': 'high', 'trope_count': 59}, {'name': 'evil', 'trope_count': 58}, {'name': 'old', 'trope_count': 56}, {'name': 'certain', 'trope_count': 51}, {'name': 'similar', 'trope_count': 51}, {'name': 'main', 'trope_count': 50}, {'name': 'different', 'trope_count': 50} links: {'source': 'good', 'target': 'many', 'weight': 66}, {'source': 'good', 'target': 'same', 'weight': 64}, {'source': 'many', 'target': 'same', 'weight': 60}, {'source': 'bad', 'target': 'good', 'weight': 52}, {'source': 'good', 'target': 'old', 'weight': 50}, {'source': 'same', 'target': 'young', 'weight': 44}, {'source': 'evil', 'target': 'good', 'weight': 42}, {'source': 'good', 'target': 'real', 'weight': 40}, {'source': 'many', 'target': 'real', 'weight': 40}, {'source': 'bad', 'target': 'many', 'weight': 38}, {'source': 'different', 'target': 'many', 'weight': 38}, {'source': 'good', 'target': 'popular', 'weight': 38}, {'source': 'attractive', 'target': 'many', 'weight': 38}, {'source': 'many', 'target': 'young', 'weight': 38}, {'source': 'popular', 'target': 'young', 'weight': 36}"
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1
+        ],
+        "dimension_values": [
+          671.5749141889295,
+          -36.37077166485666
+        ],
+        "dimension_prominence": [
+          0.9486249123462158,
+          0.051375087653784235
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    },
+    {
+      "id": "pattern_2",
+      "size": 1,
+      "size_pct": 0.3333333333333333,
+      "centroid_latent": [
+        -627.5339245079919,
+        -44.60637153576749
+      ],
+      "variance": 84951.13300354636,
+      "std": 291.4637764861122,
+      "density": 0.0,
+      "separation": 0.6435164438524554,
+      "coherence": 1.0,
+      "example_narratives": [
+        "name: Don't Be A Menace To South Central While Drinking Your Juice In The Hood id: DontBeAMenaceToSouthCentralWhileDrinkingYourJuiceInTheHood"
+      ],
+      "latent_signature": {
+        "prominent_dimensions": [
+          0,
+          1
+        ],
+        "dimension_values": [
+          -627.5339245079919,
+          -44.60637153576749
+        ],
+        "dimension_prominence": [
+          0.9336353261390187,
+          0.06636467386098127
+        ],
+        "note": "These dimensions predict patterns. What they MEAN remains elusive."
+      }
+    }
+  ],
+  "significant_correlations": [],
+  "all_correlations": [
+    {
+      "pattern_id": "latent_dim_0",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.9223119480696442,
+      "p_value": 0.2525950212247074,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 0.5051900424494148,
+      "p_value_fdr": 0.5051900424494148,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    },
+    {
+      "pattern_id": "latent_dim_1",
+      "correlation_type": "latent_dimension",
+      "effect_size": 0.38644620640909133,
+      "p_value": 0.7474049787752924,
+      "significant": false,
+      "interpretation": "UNKNOWN - dimension eludes interpretation",
+      "note": "Correlation exists. Mechanism remains mysterious.",
+      "p_value_bonferroni": 1.0,
+      "p_value_fdr": 0.7474049787752924,
+      "significant_bonferroni": false,
+      "significant_fdr": false
+    }
+  ],
+  "validation": {
+    "safe_to_proceed": false,
+    "issues": [
+      "Too few patterns (3)"
+    ],
+    "warnings": [
+      "Low significance rate (0%)",
+      "Pattern count differs from \u03c0 prediction (exp 22, got 3)"
+    ]
+  }
+}
