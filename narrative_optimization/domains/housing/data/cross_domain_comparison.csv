@@ -1,0 +1,8 @@
+,pi,lambda,psi,nu,arch,leverage,sample,type,finding
+Lottery,0.04,0.95,0.7,0.05,0.0,0.0,60000,Pure Randomness,Lucky numbers have zero effect
+Coin Flips,0.12,0.85,0.6,0.03,0.005,0.04,10000,Physics,Physics dominates
+Aviation,0.12,0.83,0.14,0.0,0.0,0.0,1743,Engineering,Complete nominative suppression
+NBA,0.49,0.75,0.3,0.08,0.018,0.04,450,Physical Skill,Tiny narrative wedge
+Crypto,0.76,0.08,0.36,0.85,0.423,0.56,3514,Speculation,Names predict returns
+Housing,0.92,0.08,0.35,0.85,0.42,0.46,150000,Pure Nominative,"#13 costs $93K, 99.92% skip rate"
+Self-Rated,0.95,0.05,1.0,0.95,0.564,0.59,1000,Pure Identity,Narrative determines self-perception

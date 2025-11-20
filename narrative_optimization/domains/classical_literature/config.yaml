@@ -1,0 +1,187 @@
+# Classical Literature Domain Configuration
+# π = 0.72 (High Narrativity)
+# Spans from epic poetry (π≈0.90) to postmodern experiments (π≈0.35)
+
+domain:
+  name: "Classical Literature"
+  type: "literature"
+  subtype: "classical_canon"
+  
+narrativity:
+  # Weighted average across literary periods
+  components:
+    structural: 0.80    # Variable plots, generally coherent
+    temporal: 0.75      # Stories unfold over time
+    agency: 0.70        # Character-driven narratives
+    interpretive: 0.75  # Subjective literary judgment
+    format: 0.55        # Book format somewhat flexible
+  
+  calculated_pi: 0.72  # 0.30×0.80 + 0.20×0.75 + 0.25×0.70 + 0.15×0.75 + 0.10×0.55
+  
+  # π varies significantly by literary period:
+  pi_by_period:
+    epic: 0.88          # Homer, Virgil, Beowulf
+    classical_novel: 0.78  # Dickens, Austen, Tolstoy
+    modernist: 0.55     # Joyce, Woolf, Faulkner
+    postmodern: 0.38    # Pynchon, DeLillo, Wallace
+
+expected_forces:
+  theta: 0.50          # Awareness (varies widely by period)
+  lambda: 0.55         # Constraints (genre conventions moderate)
+  ta_marbuta: 0.70     # Nominatives (character names important)
+  
+expected_performance:
+  r_squared: 0.65      # 60-70% range expected
+  correlation: 0.81
+  
+# Archetype Expectations (theoretical from classical theory)
+archetype_requirements:
+  # Campbell's Hero's Journey
+  hero_journey_completion: 0.70    # Expected average
+  hero_journey_by_period:
+    epic: 0.85                     # High journey adherence
+    classical: 0.72
+    modernist: 0.50
+    postmodern: 0.30
+  
+  # Jung's Character Archetypes
+  archetype_clarity: 0.65          # Moderate (complex characters)
+  dominant_archetypes:
+    - hero                         # Protagonist archetype
+    - mentor                       # Guide figures
+    - shadow                       # Antagonists
+  
+  # Booker's Plot Types
+  plot_distribution:
+    quest: 0.20
+    rags_to_riches: 0.15
+    tragedy: 0.20
+    comedy: 0.15
+    voyage_and_return: 0.10
+    overcoming_monster: 0.10
+    rebirth: 0.10
+  
+  # Frye's Mythoi
+  mythos_distribution:
+    romance: 0.25      # Classic novels
+    tragedy: 0.30      # Serious literature
+    comedy: 0.20       # Social novels
+    irony: 0.25        # Modern/postmodern
+  
+  # Aristotelian Quality
+  aristotelian_adherence: 0.60     # Moderate (not strict)
+  
+data:
+  target_samples: 800              # 500-1000 range
+  
+  sources:
+    - "Project Gutenberg"
+    - "Internet Archive"
+    - "Google Books"
+    - "Open Library"
+  
+  periods:
+    epic: 50                       # Ancient epics
+    classical: 300                 # 1800-1900
+    modernist: 250                 # 1900-1950
+    postmodern: 200                # 1950-present
+  
+  required_fields:
+    - title
+    - author
+    - publication_year
+    - genre
+    - summary
+    - full_text                    # Or substantial excerpt
+    - literary_period
+    - awards                       # Optional
+    - critical_reception           # Optional
+  
+  outcome_field: literary_success
+  outcome_measures:
+    - still_taught                 # Boolean
+    - citation_count               # Academic citations
+    - editions_published           # Number of editions
+    - translations                 # Number of languages
+    - cultural_references          # Modern adaptations/references
+  
+narrative_requirements:
+  min_length_words: 10000          # Short novels minimum
+  max_length_words: 500000         # Epic novels maximum
+  
+  elements:
+    - character_development
+    - plot_structure
+    - thematic_depth
+    - narrative_voice
+    - setting_description
+
+transformer_pipeline:
+  # Core archetype transformers
+  - hero_journey
+  - character_archetype
+  - plot_archetype
+  - structural_beat
+  - thematic_archetype
+  - literary_device
+  
+  # Existing transformers
+  - nominative
+  - linguistic_advanced
+  - emotional_resonance
+  - narrative_potential
+  - temporal_evolution
+
+validation_hypotheses:
+  - "Epic poetry has highest Hero's Journey completion (>0.85)"
+  - "Postmodern literature has high θ (irony/meta-narrative)"
+  - "Character archetype clarity decreases over time"
+  - "Aristotelian adherence higher in earlier periods"
+  - "Literary success correlates with journey completion in classics"
+
+domain_xi:
+  # Classical Literature Ξ (golden narratio)
+  epic_xi:
+    journey_completion: 0.90
+    archetype_clarity: 0.85
+    plot_coherence: 0.85
+    thematic_depth: 0.80
+  
+  classical_novel_xi:
+    character_complexity: 0.75
+    plot_coherence: 0.80
+    thematic_depth: 0.85
+    linguistic_quality: 0.80
+  
+  modernist_xi:
+    innovation: 0.80
+    psychological_depth: 0.85
+    linguistic_experimentation: 0.75
+    thematic_complexity: 0.90
+  
+  postmodern_xi:
+    meta_narrative: 0.85
+    intertextuality: 0.80
+    fragmentation: 0.70
+    irony: 0.85
+
+perspectives:
+  - reader
+  - critic
+  - scholar
+  - author
+
+quality_methods:
+  - weighted_mean
+  - ensemble
+  - temporal
+  - canonical_status
+
+scales:
+  - nano                           # Sentence level
+  - micro                          # Paragraph level
+  - meso                           # Chapter level
+  - macro                          # Book level
+
+aggregation_method: importance_weighted
+

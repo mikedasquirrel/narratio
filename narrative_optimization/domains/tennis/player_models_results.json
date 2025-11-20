@@ -1,0 +1,17 @@
+{
+  "player_models": {
+    "Roger Federer": {
+      "n_matches": 103,
+      "n_train": 72,
+      "n_test": 31,
+      "train_r2": 0.9997804144025111,
+      "test_r2": 0.758052608515655,
+      "improvement_over_general": 0.0
+    }
+  },
+  "general_model_r2": 0.9294,
+  "summary": {
+    "players_modeled": 1,
+    "best_player_model": "Roger Federer"
+  }
+}

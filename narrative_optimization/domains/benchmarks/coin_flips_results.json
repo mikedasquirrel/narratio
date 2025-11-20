@@ -1,0 +1,12 @@
+{
+  "D_combined": 0.04369898227378756,
+  "R_squared": 0.0019096010517647994,
+  "p_value": 0.16733602558705676,
+  "transformer_Ds": {
+    "nominative": 0.009528159539046727,
+    "self_perception": 0.015713481678588166,
+    "narrative_potential": 0.06819637962320987
+  },
+  "n_flips": 1000,
+  "baseline_accuracy": 0.5
+}

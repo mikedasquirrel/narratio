@@ -1,0 +1,17 @@
+{
+  "model_type": "nfl_single_narrative",
+  "architecture": "game_as_single_narrative",
+  "timestamp": "2025-11-13T18:10:38.152223",
+  "n_features": 932,
+  "test_metrics": {
+    "r2": 0.0007933436894969059,
+    "mae": 0.4921450225792784,
+    "accuracy": 0.5578947368421052
+  },
+  "best_params": {
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_samples_split": 20,
+    "n_estimators": 100
+  }
+}

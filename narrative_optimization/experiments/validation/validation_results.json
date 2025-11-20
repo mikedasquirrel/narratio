@@ -1,0 +1,76 @@
+{
+  "generativity": {
+    "domain_results": {
+      "synthetic": {
+        "novel_prediction": "\u2717 QUESTIONABLE | Novel Prediction Test: 0.000 (confidence: 1.000)",
+        "compression": "\u2713 GENERATIVE | Compression Test: 1.000 (confidence: 1.000)"
+      }
+    },
+    "overall": {
+      "overall_score": 0.5,
+      "overall_confidence": 1.0,
+      "verdict": "NOT GENERATIVE",
+      "passed_tests": 1,
+      "failed_tests": 1,
+      "total_tests": 2,
+      "test_results": [
+        "\u2717 QUESTIONABLE | Novel Prediction Test: 0.000 (confidence: 1.000)",
+        "\u2713 GENERATIVE | Compression Test: 1.000 (confidence: 1.000)"
+      ],
+      "recommendations": [
+        "Framework does not demonstrate generativity.",
+        "Consider: Is this elaborate rationalization rather than discovery?",
+        "Options: (1) Simplify drastically, (2) Abandon, (3) Reframe as exploratory only."
+      ]
+    }
+  },
+  "bias_detection": {
+    "domain_results": {
+      "synthetic": {
+        "randomization": "\u2713 CLEAN | Randomization Robustness Test (severity: none, p=0.0000)"
+      }
+    },
+    "overall": {
+      "bias_detected": false,
+      "severity": "none",
+      "n_tests_failed": 0,
+      "n_tests_passed": 1,
+      "n_total_tests": 1,
+      "verdict": "CLEAN - No significant bias detected",
+      "test_results": [
+        "\u2713 CLEAN | Randomization Robustness Test (severity: none, p=0.0000)"
+      ],
+      "recommendations": [
+        "No significant bias detected. Continue with current practices.",
+        "Consider pre-registration for future studies."
+      ]
+    }
+  },
+  "better_stories_win": {
+    "domain_results": {
+      "synthetic": "\u2713 VALIDATED | synthetic: r=0.806, R\u00b2=0.650, p=0.0000"
+    },
+    "synthesis": {
+      "verdict": "VALIDATED - Better stories win across domains",
+      "n_domains": 1,
+      "n_validated": 1,
+      "validation_rate": 1.0,
+      "mean_correlation": 0.8063619263284574,
+      "std_correlation": 0.0,
+      "weighted_avg_correlation": 0.8063619263284574,
+      "heterogeneity_i_squared": 0,
+      "strongest_domains": [
+        "synthetic"
+      ],
+      "weakest_domains": [
+        "synthetic"
+      ],
+      "all_results": [
+        "\u2713 VALIDATED | synthetic: r=0.806, R\u00b2=0.650, p=0.0000"
+      ]
+    }
+  },
+  "entanglement": {
+    "synthetic": null
+  }
+}

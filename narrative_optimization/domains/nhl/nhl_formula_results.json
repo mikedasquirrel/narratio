@@ -1,0 +1,53 @@
+{
+  "domain": "nhl",
+  "n_games": 422,
+  "n_features": 100,
+  "formula": {
+    "pi": 0.7715071090047394,
+    "r": 0.013550686645932775,
+    "kappa": 0.7625,
+    "delta": 0.007971518947914952,
+    "efficiency": 0.010332398567523741,
+    "threshold": 0.5,
+    "narrative_matters": false
+  },
+  "validation": {
+    "rivalry_games": {
+      "n_games": 42,
+      "r": -0.17899705125358506,
+      "home_win_pct": 0.35714285714285715
+    },
+    "back_to_back": {
+      "n_games": 70,
+      "r": 0.1285897852821553,
+      "home_win_pct": 0.5428571428571428
+    },
+    "home_games": {
+      "n_games": 225,
+      "r": NaN,
+      "home_win_pct": 1.0
+    },
+    "overtime_games": {
+      "n_games": 113,
+      "r": 0.044582524530805676,
+      "home_win_pct": 0.4690265486725664
+    }
+  },
+  "comparison": {
+    "nba": {
+      "pi": 0.49,
+      "delta": 0.034,
+      "efficiency": 0.06
+    },
+    "nfl": {
+      "pi": 0.57,
+      "delta": 0.034,
+      "efficiency": 0.06
+    },
+    "nhl": {
+      "pi": 0.7715071090047394,
+      "delta": 0.007971518947914952,
+      "efficiency": 0.010332398567523741
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "domain_formula": {
+    "vote_margin": {
+      "r": -0.679618070214562,
+      "n": 26,
+      "hypothesis": "Better narrative \u2192 larger margin (more unanimous)"
+    },
+    "citations": {
+      "r": 0.7850871161669534,
+      "n": 26,
+      "hypothesis": "Better narrative \u2192 more future citations"
+    },
+    "precedent_setting": {
+      "r": 0.8282195958181878,
+      "n": 26,
+      "n_precedent": 6,
+      "hypothesis": "Better narrative \u2192 landmark status"
+    },
+    "domain_formula": {
+      "pi": 0.52,
+      "delta": 0.3061839753051118,
+      "r_primary": 0.7850871161669534,
+      "kappa": 0.75,
+      "efficiency": 0.588815337125215,
+      "verdict": "PASS"
+    }
+  },
+  "pi_variance": {
+    "pi_unanimous": 0.52,
+    "pi_split": 0.52,
+    "pi_difference": 0.0,
+    "n_unanimous": 21,
+    "n_split": 5,
+    "hypothesis": "Split cases have higher \u03c0 (more narrative-driven)",
+    "result": "NOT CONFIRMED"
+  },
+  "adversarial": {
+    "hypothesis": "Side with better narrative wins more often",
+    "method": "Compare petitioner_brief vs respondent_brief narrative quality",
+    "metric": "Correlation(narrative_gap, winner)",
+    "status": "Requires brief data (future enhancement)",
+    "expected_r": 0.3
+  },
+  "evidence_narrative": {
+    "narrative_quality_unanimous": 0.023298448295972093,
+    "narrative_quality_split": 0.44828997347126676,
+    "difference": 0.42499152517529465,
+    "hypothesis": "Split cases require better narrative (weaker evidence)",
+    "result": "CONFIRMED",
+    "interpretation": "Higher narrative quality in split cases suggests narrative compensates for weaker evidence"
+  },
+  "predictive_models": {
+    "citations_model": {
+      "r2": 0.7576575722655804,
+      "r": 0.983007389114243,
+      "n_train": 20,
+      "n_test": 6,
+      "interpretation": "Narrative quality predicts future influence"
+    },
+    "vote_margin_model": {
+      "r2": 0.0,
+      "r": NaN,
+      "n_train": 20,
+      "n_test": 6,
+      "interpretation": "Narrative predicts agreement level"
+    }
+  },
+  "metadata": {
+    "n_cases": 26,
+    "n_analyzed": 26,
+    "n_features": 279,
+    "year_range": [
+      1954,
+      2022
+    ],
+    "avg_word_count": 275
+  }
+}

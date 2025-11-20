@@ -1,0 +1,39 @@
+{
+  "domain": "MLB",
+  "created_date": "2025-11-12",
+  "formulas": {
+    "astros_rangers": {
+      "context": "Astros-Rangers Rivalry",
+      "n_matches": 38,
+      "features_selected": 50,
+      "best_alpha": 100.0,
+      "test_r2": -0.26023806417859485,
+      "test_r": -0.06747667246082169,
+      "model_path": "models/astros_rangers_formula.pkl"
+    },
+    "yankees_redsox": {
+      "context": "Yankees-Red Sox Rivalry",
+      "n_matches": 35,
+      "features_selected": 50,
+      "best_alpha": 100.0,
+      "test_r2": -0.4112248182103373,
+      "test_r": -0.3577288173069078,
+      "model_path": "models/yankees_redsox_formula.pkl"
+    },
+    "historic_stadiums": {
+      "context": "Historic Stadiums (Wrigley, Fenway, Yankee)",
+      "n_matches": 485,
+      "features_selected": 100,
+      "best_alpha": 100.0,
+      "test_r2": -0.03927581532360924,
+      "test_r": -0.03197259042678183,
+      "model_path": "models/historic_stadiums_formula.pkl"
+    }
+  },
+  "usage_guide": {
+    "astros_rangers": "Use for HOU vs TEX games",
+    "yankees_redsox": "Use for NYY vs BOS games",
+    "historic_stadiums": "Use for games at Wrigley, Fenway, or Yankee Stadium"
+  },
+  "deployment_ready": true
+}

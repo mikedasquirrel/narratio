@@ -1,0 +1,3277 @@
+{
+  "metadata": {
+    "n_disorders": 56,
+    "n_complete": 56,
+    "quality_tiers": {
+      "gold": 14,
+      "silver": 42,
+      "bronze": 0,
+      "incomplete": 0
+    },
+    "data_sources": [
+      "NARRATIVE_EXPORT (base disorders)",
+      "NIH RePORTER (funding)",
+      "PubMed (article counts)",
+      "Published literature (stigma)",
+      "SAMHSA/meta-analyses (clinical outcomes)"
+    ],
+    "integration_date": "2025-11-10"
+  },
+  "disorders": [
+    {
+      "disorder_name": "Schizophrenia",
+      "dsm_code": "295.90",
+      "icd10": "F20",
+      "phonetic_analysis": {
+        "harshness_score": 72,
+        "plosives": 2,
+        "sibilants": 2,
+        "syllables": 5,
+        "pronunciation_difficulty": 65,
+        "foreign_origin": "Greek (schizo = split, phrenia = mind)",
+        "latin_greek_root": true,
+        "acronym": "SZ (used clinically)",
+        "euphemistic": false
+      },
+      "clinical_outcomes": {
+        "mortality_rate_per_100k": 280,
+        "suicide_rate": "10-13% lifetime",
+        "5_year_survival": 0.75,
+        "hospitalization_rate_annual": 0.35,
+        "treatment_delay_months": 24,
+        "treatment_seeking_rate": 0.42
+      },
+      "social_impact": {
+        "stigma_score": 9.2,
+        "social_distance_high": 0.78,
+        "employment_discrimination": 0.65,
+        "housing_discrimination": 0.58,
+        "perceived_dangerousness": 8.7,
+        "data_quality": "high"
+      },
+      "research_funding": {
+        "nih_funding_millions_2023": 196,
+        "funding_per_patient": 4200,
+        "pubmed_articles_total": 125000,
+        "clinical_trials_active": 245
+      },
+      "google_metrics": {
+        "monthly_searches": 450000,
+        "search_with_help": 0.18,
+        "search_sentiment": "fear_oriented"
+      },
+      "synchronicity_analysis": {
+        "name_meaning": "Split mind (Greek)",
+        "actual_pathology": "Fragmented thought processes",
+        "alignment": "HIGH (9/10) - name describes splitting accurately",
+        "but": "Name is SCARY, contributes to stigma"
+      },
+      "name_impact_assessment": {
+        "positive": "Medical/technical (not dismissed as fake)",
+        "negative": "Harsh, foreign, scary \u2192 massive stigma \u2192 treatment avoidance",
+        "net_effect": "NEGATIVE - name contributes to poor outcomes via stigma",
+        "alternative_name_proposed": "Thought Integration Disorder (softer, less scary)"
+      },
+      "nih_funding": {
+        "disorder_name": "Schizophrenia",
+        "total_funding_millions": 270.64,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.541
+      },
+      "pubmed_data": {
+        "disorder_name": "Schizophrenia",
+        "article_count": 176097,
+        "search_query": "\"Schizophrenia\" OR \"Schizophrenic Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Schizophrenia",
+        "mortality_rate_per_100k": 280,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 9.2,
+        "social_distance": 0.78,
+        "perceived_dangerousness": 8.7,
+        "sources": [
+          "Link et al. (2004)",
+          "Pescosolido et al. (2010)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 4500,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.42,
+        "hospitalization_rate_annual": 0.35,
+        "treatment_delay_months": 24,
+        "dropout_rate": 0.48,
+        "sources": [
+          "SAMHSA NSDUH (2022)",
+          "HCUP (2023)",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Major Depressive Disorder",
+      "dsm_code": "296.XX",
+      "icd10": "F32-F33",
+      "phonetic_analysis": {
+        "harshness_score": 45,
+        "plosives": 2,
+        "sibilants": 1,
+        "syllables": 7,
+        "pronunciation_difficulty": 35,
+        "foreign_origin": "Latin (deprimere = press down)",
+        "latin_greek_root": true,
+        "acronym": "MDD",
+        "euphemistic": false
+      },
+      "clinical_outcomes": {
+        "mortality_rate_per_100k": 52,
+        "suicide_rate": "4-6% lifetime",
+        "5_year_remission": 0.65,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 8,
+        "treatment_seeking_rate": 0.68
+      },
+      "social_impact": {
+        "stigma_score": 5.8,
+        "social_distance_high": 0.32,
+        "employment_discrimination": 0.28,
+        "perceived_dangerousness": 2.3,
+        "perceived_weakness": 6.8,
+        "data_quality": "high"
+      },
+      "research_funding": {
+        "nih_funding_millions_2023": 458,
+        "funding_per_patient": 280,
+        "pubmed_articles_total": 285000,
+        "clinical_trials_active": 1842
+      },
+      "name_impact_assessment": {
+        "positive": "Familiar word, lower stigma than schizophrenia, higher treatment seeking",
+        "negative": "Still somewhat stigmatized, 'depressed' used colloquially reduces seriousness",
+        "net_effect": "MODERATE POSITIVE - soft name enables treatment seeking",
+        "historical_comparison": "Better than 'Melancholia' (archaic) or 'Dysthymia' (technical/harsh)"
+      },
+      "nih_funding": {
+        "disorder_name": "Major Depressive Disorder",
+        "total_funding_millions": 269.91,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.54
+      },
+      "pubmed_data": {
+        "disorder_name": "Major Depressive Disorder",
+        "article_count": 593114,
+        "search_query": "\"Major Depressive Disorder\" OR \"MDD\" OR \"Depression\" OR \"Clinical Depression\""
+      },
+      "mortality_data": {
+        "disorder_name": "Major Depressive Disorder",
+        "mortality_rate_per_100k": 52,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 5.8,
+        "social_distance": 0.32,
+        "perceived_weakness": 6.8,
+        "perceived_dangerousness": 2.3,
+        "sources": [
+          "Pescosolido et al. (2010)",
+          "Link et al. (2004)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 5200,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.68,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 8,
+        "remission_rate_5yr": 0.65,
+        "sources": [
+          "SAMHSA NSDUH (2022)",
+          "Wang et al. (2005)",
+          "Rush et al. STAR*D"
+        ],
+        "data_quality": "high"
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Borderline Personality Disorder",
+      "dsm_code": "301.83",
+      "icd10": "F60.3",
+      "phonetic_analysis": {
+        "harshness_score": 58,
+        "plosives": 3,
+        "sibilants": 1,
+        "syllables": 9,
+        "pronunciation_difficulty": 45,
+        "latin_greek_root": false,
+        "acronym": "BPD",
+        "name_origin": "Borderline between neurosis and psychosis (outdated concept)"
+      },
+      "clinical_outcomes": {
+        "mortality_rate_per_100k": 180,
+        "suicide_rate": "8-10% lifetime",
+        "treatment_delay_months": 36,
+        "treatment_seeking_rate": 0.38,
+        "dropout_rate": 0.52,
+        "hospitalization_rate_annual": 0.22
+      },
+      "social_impact": {
+        "stigma_score": 8.5,
+        "clinician_stigma": 7.8,
+        "perceived_manipulative": 8.2,
+        "treatment_resistance_perception": 7.5,
+        "data_quality": "high"
+      },
+      "research_funding": {
+        "nih_funding_millions_2023": 12,
+        "funding_per_patient": 180,
+        "underfunded_relative_to_burden": "YES - 10x less than comparable disorders"
+      },
+      "name_impact_assessment": {
+        "positive": "None - universally regarded as poor naming",
+        "negative": "Vague, outdated concept, high stigma even among clinicians, 'borderline' sounds dismissive",
+        "net_effect": "VERY NEGATIVE - name contributes to underfunding and poor outcomes",
+        "rename_proposals": [
+          "Emotional Regulation Disorder (softer, descriptive)",
+          "Interpersonal Sensitivity Disorder",
+          "Emotional Intensity Disorder"
+        ],
+        "movement": "Active patient advocacy to rename BPD"
+      },
+      "nih_funding": {
+        "disorder_name": "Borderline Personality Disorder",
+        "total_funding_millions": 267.86,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.536
+      },
+      "pubmed_data": {
+        "disorder_name": "Borderline Personality Disorder",
+        "article_count": 21844,
+        "search_query": "\"Borderline Personality Disorder\" OR \"BPD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Borderline Personality Disorder",
+        "mortality_rate_per_100k": 180,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 8.5,
+        "social_distance": 0.72,
+        "clinician_stigma": 7.8,
+        "perceived_manipulative": 8.2,
+        "sources": [
+          "Aviram et al. (2006)",
+          "Dickens et al. (2016)"
+        ],
+        "sample_size_aggregate": 850,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.38,
+        "hospitalization_rate_annual": 0.22,
+        "treatment_delay_months": 36,
+        "dropout_rate": 0.52,
+        "sources": [
+          "Zanarini et al. (2003)",
+          "HCUP estimates"
+        ],
+        "data_quality": "medium"
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Post-Traumatic Stress Disorder",
+      "dsm_code": "309.81",
+      "icd10": "F43.1",
+      "phonetic_analysis": {
+        "harshness_score": 62,
+        "full_name_syllables": 8,
+        "acronym": "PTSD",
+        "acronym_harshness": 68,
+        "medicalized": true,
+        "neutral_descriptive": true
+      },
+      "historical_names": {
+        "1914_1918": "Shell Shock (harshness 78, visceral, direct)",
+        "1939_1945": "Battle Fatigue (harshness 52, euphemistic)",
+        "1960_1979": "Post-Vietnam Syndrome (harshness 55)",
+        "1980_present": "PTSD (harshness 62, medical acronym)"
+      },
+      "funding_by_era": {
+        "shell_shock_era": {
+          "years": "1918-1940",
+          "va_spending_millions_adjusted": 50,
+          "research_articles": 200,
+          "treatment_rate": 0.08,
+          "stigma": "VERY HIGH (weakness/cowardice)"
+        },
+        "battle_fatigue_era": {
+          "years": "1945-1965",
+          "va_spending_millions_adjusted": 180,
+          "research_articles": 850,
+          "treatment_rate": 0.15,
+          "stigma": "HIGH (still weakness frame)"
+        },
+        "ptsd_era": {
+          "years": "1980-present",
+          "va_spending_millions_adjusted": 2400,
+          "research_articles": 52000,
+          "treatment_rate": 0.58,
+          "stigma": "MODERATE (medical condition frame)"
+        }
+      },
+      "name_change_impact": {
+        "funding_increase": "48x from Shell Shock to PTSD era",
+        "research_increase": "260x articles",
+        "treatment_increase": "7.25x treatment rate",
+        "stigma_reduction": "40-50% reduction",
+        "interpretation": "MEDICAL ACRONYM naming was TRANSFORMATIVE",
+        "causality": "Likely bidirectional (name helped, but Vietnam advocacy also key)",
+        "lesson": "Medical naming reduces stigma, increases legitimacy \u2192 funding \u2192 treatment"
+      },
+      "synchronicity_score": 8,
+      "notes": "PTSD naming shows power of good nomenclature - changed outcomes for millions",
+      "nih_funding": {
+        "disorder_name": "Post-Traumatic Stress Disorder",
+        "total_funding_millions": 161.58,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.323
+      },
+      "pubmed_data": {
+        "disorder_name": "Post-Traumatic Stress Disorder",
+        "article_count": 49071,
+        "search_query": "\"Post-Traumatic Stress Disorder\" OR \"PTSD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Post-Traumatic Stress Disorder",
+        "mortality_rate_per_100k": 95,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 5.5,
+        "social_distance": 0.35,
+        "perceived_weakness": 6.2,
+        "blame_reduction": 3.5,
+        "sources": [
+          "Corrigan et al. (2009)",
+          "Pescosolido et al. (2013)"
+        ],
+        "sample_size_aggregate": 1650,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 5.5,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.52,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 12,
+        "sources": [
+          "SAMHSA (2022)",
+          "VA studies",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.52,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Attention-Deficit/Hyperactivity Disorder",
+      "dsm_code": "314.XX",
+      "icd10": "F90",
+      "phonetic_analysis": {
+        "full_name_harshness": 58,
+        "full_name_syllables": 13,
+        "acronym": "ADHD",
+        "acronym_harshness": 52,
+        "descriptive": true
+      },
+      "clinical_outcomes": {
+        "treatment_rate": 0.72,
+        "stigma_score": 4.5,
+        "research_funding_millions": 186,
+        "medication_development": "Robust (15+ approved drugs)",
+        "treatment_seeking_rate": 0.82,
+        "hospitalization_rate_annual": 0.01,
+        "treatment_delay_months": 3
+      },
+      "name_issues": {
+        "problem_1": "Very long full name \u2192 everyone uses acronym",
+        "problem_2": "Deficit language \u2192 negative framing",
+        "problem_3": "Two subtypes in one name (inattentive vs hyperactive conflated)",
+        "advocacy_for_rename": "Executive Function Disorder, Attention Regulation Disorder"
+      },
+      "name_impact": "MIXED - acronym works clinically, but 'deficit' frame stigmatizing",
+      "nih_funding": {
+        "disorder_name": "Attention-Deficit/Hyperactivity Disorder",
+        "total_funding_millions": 274.98,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.55
+      },
+      "pubmed_data": {
+        "disorder_name": "Attention-Deficit/Hyperactivity Disorder",
+        "article_count": 145123,
+        "search_query": "\"Attention-Deficit/Hyperactivity Disorder\" OR \"ADHD\" OR \"ADD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Attention-Deficit/Hyperactivity Disorder",
+        "mortality_rate_per_100k": 8,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 3.8,
+        "social_distance": 0.15,
+        "perceived_legitimacy": 6.5,
+        "sources": [
+          "Mueller et al. (2012)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 1450,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 3.8,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.82,
+        "hospitalization_rate_annual": 0.01,
+        "treatment_delay_months": 3,
+        "sources": [
+          "SAMHSA (2022)",
+          "Visser et al. CDC (2014)"
+        ],
+        "data_quality": "high"
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Generalized Anxiety Disorder",
+      "dsm_code": "300.02",
+      "icd10": "F41.1",
+      "nih_funding": {
+        "disorder_name": "Generalized Anxiety Disorder",
+        "total_funding_millions": 238.9,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.478
+      },
+      "pubmed_data": {
+        "disorder_name": "Generalized Anxiety Disorder",
+        "article_count": 389959,
+        "search_query": "\"Generalized Anxiety Disorder\" OR \"GAD\" OR \"Anxiety\""
+      },
+      "mortality_data": {
+        "disorder_name": "Generalized Anxiety Disorder",
+        "mortality_rate_per_100k": 12,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 4.2,
+        "social_distance": 0.18,
+        "perceived_weakness": 5.5,
+        "sources": [
+          "Corrigan (2007)",
+          "Pescosolido et al. (2013)"
+        ],
+        "sample_size_aggregate": 1800,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 4.2,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.72,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 6,
+        "sources": [
+          "SAMHSA NSDUH (2022)",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.72,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 6
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Panic Disorder",
+      "dsm_code": "300.01",
+      "icd10": "F41.0",
+      "nih_funding": {
+        "disorder_name": "Panic Disorder",
+        "total_funding_millions": 249.31,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.499
+      },
+      "pubmed_data": {
+        "disorder_name": "Panic Disorder",
+        "article_count": 12505,
+        "search_query": "\"Panic Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Panic Disorder",
+        "mortality_rate_per_100k": 22,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 4.5,
+        "social_distance": 0.22,
+        "sources": [
+          "Corrigan (2007)",
+          "Angermeyer (2006)"
+        ],
+        "sample_size_aggregate": 950,
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 4.5,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.75,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 5,
+        "sources": [
+          "SAMHSA (2022)",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.75,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 5
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Social Anxiety Disorder",
+      "dsm_code": "300.23",
+      "icd10": "F40.10",
+      "nih_funding": {
+        "disorder_name": "Social Anxiety Disorder",
+        "total_funding_millions": 221.81,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.444
+      },
+      "pubmed_data": {
+        "disorder_name": "Social Anxiety Disorder",
+        "article_count": 3921,
+        "search_query": "\"Social Anxiety Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Social Anxiety Disorder",
+        "mortality_rate_per_100k": 18,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 4.8,
+        "social_distance": 0.28,
+        "sources": [
+          "Link et al. (2004)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 1200,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 4.8,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.58,
+        "hospitalization_rate_annual": 0.01,
+        "treatment_delay_months": 10,
+        "sources": [
+          "SAMHSA (2021)",
+          "Olfson et al. (2000)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.58,
+        "hospitalization_rate_annual": 0.01,
+        "treatment_delay_months": 10
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Specific Phobia",
+      "dsm_code": "300.29",
+      "icd10": "F40.2",
+      "nih_funding": {
+        "disorder_name": "Specific Phobia",
+        "total_funding_millions": 229.44,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.459
+      },
+      "pubmed_data": {
+        "disorder_name": "Specific Phobia",
+        "article_count": 1162,
+        "search_query": "\"Specific Phobia\""
+      },
+      "mortality_data": {
+        "disorder_name": "Specific Phobia",
+        "mortality_rate_per_100k": 5,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 2.8,
+        "social_distance": 0.08,
+        "sources": [
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 650,
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 2.8,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.35,
+        "hospitalization_rate_annual": 0.001,
+        "treatment_delay_months": 20,
+        "sources": [
+          "SAMHSA (2020)",
+          "Low severity \u2192 low seeking"
+        ],
+        "data_quality": "medium"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.35,
+        "hospitalization_rate_annual": 0.001,
+        "treatment_delay_months": 20
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Agoraphobia",
+      "dsm_code": "300.22",
+      "icd10": "F40.00",
+      "nih_funding": {
+        "disorder_name": "Agoraphobia",
+        "total_funding_millions": 3.28,
+        "n_grants": 14,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.235
+      },
+      "pubmed_data": {
+        "disorder_name": "Agoraphobia",
+        "article_count": 4424,
+        "search_query": "\"Agoraphobia\""
+      },
+      "mortality_data": {
+        "disorder_name": "Agoraphobia",
+        "mortality_rate_per_100k": 20,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 4.2,
+        "sources": [
+          "Angermeyer (2006)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 4.2,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.7,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 7,
+        "category": "anxiety",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.7,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 7
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Obsessive-Compulsive Disorder",
+      "dsm_code": "300.3",
+      "icd10": "F42",
+      "nih_funding": {
+        "disorder_name": "Obsessive-Compulsive Disorder",
+        "total_funding_millions": 265.04,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.53
+      },
+      "pubmed_data": {
+        "disorder_name": "Obsessive-Compulsive Disorder",
+        "article_count": 26993,
+        "search_query": "\"Obsessive-Compulsive Disorder\" OR \"OCD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Obsessive-Compulsive Disorder",
+        "mortality_rate_per_100k": 15,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 5.2,
+        "social_distance": 0.28,
+        "perceived_dangerousness": 3.8,
+        "sources": [
+          "Corrigan (2007)",
+          "Link et al. (2004)"
+        ],
+        "sample_size_aggregate": 1100,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 5.2,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.48,
+        "hospitalization_rate_annual": 0.03,
+        "treatment_delay_months": 11,
+        "sources": [
+          "SAMHSA (2021)",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.48,
+        "hospitalization_rate_annual": 0.03,
+        "treatment_delay_months": 11
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Bipolar I Disorder",
+      "dsm_code": "296.XX",
+      "icd10": "F31",
+      "nih_funding": {
+        "disorder_name": "Bipolar I Disorder",
+        "total_funding_millions": 261.85,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.524
+      },
+      "pubmed_data": {
+        "disorder_name": "Bipolar I Disorder",
+        "article_count": 2763,
+        "search_query": "\"Bipolar I Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Bipolar I Disorder",
+        "mortality_rate_per_100k": 100,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 7.8,
+        "social_distance": 0.58,
+        "perceived_dangerousness": 6.5,
+        "sources": [
+          "Pescosolido et al. (2010)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 2400,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 7.8,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.28,
+        "treatment_delay_months": 18,
+        "sources": [
+          "SAMHSA NSDUH (2022)",
+          "HCUP (2023)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.28,
+        "treatment_delay_months": 18
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Bipolar II Disorder",
+      "dsm_code": "296.89",
+      "icd10": "F31.81",
+      "nih_funding": {
+        "disorder_name": "Bipolar II Disorder",
+        "total_funding_millions": 284.51,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.569
+      },
+      "pubmed_data": {
+        "disorder_name": "Bipolar II Disorder",
+        "article_count": 1060,
+        "search_query": "\"Bipolar II Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Bipolar II Disorder",
+        "mortality_rate_per_100k": 100,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 7.2,
+        "social_distance": 0.52,
+        "sources": [
+          "Estimated from bipolar category"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 7.2,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.52,
+        "hospitalization_rate_annual": 0.15,
+        "treatment_delay_months": 15,
+        "sources": [
+          "SAMHSA estimates",
+          "Clinical studies"
+        ],
+        "data_quality": "medium"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.52,
+        "hospitalization_rate_annual": 0.15,
+        "treatment_delay_months": 15
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Cyclothymic Disorder",
+      "dsm_code": "301.13",
+      "icd10": "F34.0",
+      "nih_funding": {
+        "disorder_name": "Cyclothymic Disorder",
+        "total_funding_millions": 250.47,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.501
+      },
+      "pubmed_data": {
+        "disorder_name": "Cyclothymic Disorder",
+        "article_count": 868,
+        "search_query": "\"Cyclothymic Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Cyclothymic Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 6.5,
+        "sources": [
+          "Estimated from mood disorders"
+        ],
+        "data_quality": "estimated"
+      },
+      "social_impact": {
+        "stigma_score": 6.5,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Persistent Depressive Disorder",
+      "dsm_code": "300.4",
+      "icd10": "F34.1",
+      "nih_funding": {
+        "disorder_name": "Persistent Depressive Disorder",
+        "total_funding_millions": 260.78,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.522
+      },
+      "pubmed_data": {
+        "disorder_name": "Persistent Depressive Disorder",
+        "article_count": 228,
+        "search_query": "\"Persistent Depressive Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Persistent Depressive Disorder",
+        "mortality_rate_per_100k": 100,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.2,
+        "sources": [
+          "Angermeyer (2006)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 5.2,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.58,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 12,
+        "sources": [
+          "SAMHSA (2021)",
+          "Wang et al. (2005)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.58,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Premenstrual Dysphoric Disorder",
+      "dsm_code": "625.4",
+      "icd10": "N94.3",
+      "nih_funding": {
+        "disorder_name": "Premenstrual Dysphoric Disorder",
+        "total_funding_millions": 256.22,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.512
+      },
+      "pubmed_data": {
+        "disorder_name": "Premenstrual Dysphoric Disorder",
+        "article_count": 1306,
+        "search_query": "\"Premenstrual Dysphoric Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Premenstrual Dysphoric Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Disruptive Mood Dysregulation Disorder",
+      "dsm_code": "296.99",
+      "icd10": "F34.8",
+      "nih_funding": {
+        "disorder_name": "Disruptive Mood Dysregulation Disorder",
+        "total_funding_millions": 245.92,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.492
+      },
+      "pubmed_data": {
+        "disorder_name": "Disruptive Mood Dysregulation Disorder",
+        "article_count": 262,
+        "search_query": "\"Disruptive Mood Dysregulation Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Disruptive Mood Dysregulation Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Autism Spectrum Disorder",
+      "dsm_code": "299.00",
+      "icd10": "F84.0",
+      "nih_funding": {
+        "disorder_name": "Autism Spectrum Disorder",
+        "total_funding_millions": 248.62,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.497
+      },
+      "pubmed_data": {
+        "disorder_name": "Autism Spectrum Disorder",
+        "article_count": 41707,
+        "search_query": "\"Autism Spectrum Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Autism Spectrum Disorder",
+        "mortality_rate_per_100k": 45,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 5.5,
+        "social_distance": 0.42,
+        "perceived_dangerousness": 4.2,
+        "sources": [
+          "Corrigan (2007)",
+          "Thornicroft et al. (2009)"
+        ],
+        "sample_size_aggregate": 1820,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 5.5,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.68,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 8,
+        "sources": [
+          "CDC Autism Surveillance",
+          "SAMHSA (2021)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.68,
+        "hospitalization_rate_annual": 0.05,
+        "treatment_delay_months": 8
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Antisocial Personality Disorder",
+      "dsm_code": "301.7",
+      "icd10": "F60.2",
+      "nih_funding": {
+        "disorder_name": "Antisocial Personality Disorder",
+        "total_funding_millions": 260.93,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.522
+      },
+      "pubmed_data": {
+        "disorder_name": "Antisocial Personality Disorder",
+        "article_count": 12041,
+        "search_query": "\"Antisocial Personality Disorder\" OR \"ASPD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Antisocial Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 9.1,
+        "social_distance": 0.88,
+        "perceived_dangerousness": 9.2,
+        "sources": [
+          "Corrigan (2007)",
+          "Angermeyer (2006)"
+        ],
+        "sample_size_aggregate": 1100,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 9.1,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.12,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 60,
+        "sources": [
+          "Estimated from forensic literature"
+        ],
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.12,
+        "hospitalization_rate_annual": 0.08,
+        "treatment_delay_months": 60
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Avoidant Personality Disorder",
+      "dsm_code": "301.82",
+      "icd10": "F60.6",
+      "nih_funding": {
+        "disorder_name": "Avoidant Personality Disorder",
+        "total_funding_millions": 261.1,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.522
+      },
+      "pubmed_data": {
+        "disorder_name": "Avoidant Personality Disorder",
+        "article_count": 396,
+        "search_query": "\"Avoidant Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Avoidant Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.0,
+        "category": "personality",
+        "data_quality": "estimated",
+        "source": "Category mean from Aviram et al. (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Dependent Personality Disorder",
+      "dsm_code": "301.6",
+      "icd10": "F60.7",
+      "nih_funding": {
+        "disorder_name": "Dependent Personality Disorder",
+        "total_funding_millions": 246.45,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.493
+      },
+      "pubmed_data": {
+        "disorder_name": "Dependent Personality Disorder",
+        "article_count": 328,
+        "search_query": "\"Dependent Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Dependent Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.0,
+        "category": "personality",
+        "data_quality": "estimated",
+        "source": "Category mean from Aviram et al. (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Obsessive-Compulsive Personality Disorder",
+      "dsm_code": "301.4",
+      "icd10": "F60.5",
+      "nih_funding": {
+        "disorder_name": "Obsessive-Compulsive Personality Disorder",
+        "total_funding_millions": 276.39,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.553
+      },
+      "pubmed_data": {
+        "disorder_name": "Obsessive-Compulsive Personality Disorder",
+        "article_count": 407,
+        "search_query": "\"Obsessive-Compulsive Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Obsessive-Compulsive Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.0,
+        "category": "personality",
+        "data_quality": "estimated",
+        "source": "Category mean from Aviram et al. (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Narcissistic Personality Disorder",
+      "dsm_code": "301.81",
+      "icd10": "F60.81",
+      "nih_funding": {
+        "disorder_name": "Narcissistic Personality Disorder",
+        "total_funding_millions": 270.5,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.541
+      },
+      "pubmed_data": {
+        "disorder_name": "Narcissistic Personality Disorder",
+        "article_count": 2931,
+        "search_query": "\"Narcissistic Personality Disorder\" OR \"NPD\""
+      },
+      "mortality_data": {
+        "disorder_name": "Narcissistic Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 7.5,
+        "social_distance": 0.65,
+        "sources": [
+          "Estimated from personality disorders category"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 7.5,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Histrionic Personality Disorder",
+      "dsm_code": "301.50",
+      "icd10": "F60.4",
+      "nih_funding": {
+        "disorder_name": "Histrionic Personality Disorder",
+        "total_funding_millions": 271.12,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.542
+      },
+      "pubmed_data": {
+        "disorder_name": "Histrionic Personality Disorder",
+        "article_count": 601,
+        "search_query": "\"Histrionic Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Histrionic Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.0,
+        "category": "personality",
+        "data_quality": "estimated",
+        "source": "Category mean from Aviram et al. (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Paranoid Personality Disorder",
+      "dsm_code": "301.0",
+      "icd10": "F60.0",
+      "nih_funding": {
+        "disorder_name": "Paranoid Personality Disorder",
+        "total_funding_millions": 268.44,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.537
+      },
+      "pubmed_data": {
+        "disorder_name": "Paranoid Personality Disorder",
+        "article_count": 359,
+        "search_query": "\"Paranoid Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Paranoid Personality Disorder",
+        "mortality_rate_per_100k": 150,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.0,
+        "category": "personality",
+        "data_quality": "estimated",
+        "source": "Category mean from Aviram et al. (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42,
+        "category": "personality",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.3,
+        "hospitalization_rate_annual": 0.18,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Schizoid Personality Disorder",
+      "dsm_code": "301.20",
+      "icd10": "F60.1",
+      "nih_funding": {
+        "disorder_name": "Schizoid Personality Disorder",
+        "total_funding_millions": 271.12,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.542
+      },
+      "pubmed_data": {
+        "disorder_name": "Schizoid Personality Disorder",
+        "article_count": 668,
+        "search_query": "\"Schizoid Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Schizoid Personality Disorder",
+        "mortality_rate_per_100k": 250,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.8,
+        "category": "psychotic",
+        "data_quality": "estimated",
+        "source": "Category mean from Angermeyer & Dietrich (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.8,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24,
+        "category": "psychotic",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Schizotypal Personality Disorder",
+      "dsm_code": "301.22",
+      "icd10": "F21",
+      "nih_funding": {
+        "disorder_name": "Schizotypal Personality Disorder",
+        "total_funding_millions": 271.12,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.542
+      },
+      "pubmed_data": {
+        "disorder_name": "Schizotypal Personality Disorder",
+        "article_count": 3338,
+        "search_query": "\"Schizotypal Personality Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Schizotypal Personality Disorder",
+        "mortality_rate_per_100k": 250,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.8,
+        "category": "psychotic",
+        "data_quality": "estimated",
+        "source": "Category mean from Angermeyer & Dietrich (2006)"
+      },
+      "social_impact": {
+        "stigma_score": 8.8,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24,
+        "category": "psychotic",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Anorexia Nervosa",
+      "dsm_code": "307.1",
+      "icd10": "F50.0",
+      "nih_funding": {
+        "disorder_name": "Anorexia Nervosa",
+        "total_funding_millions": 197.95,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.396
+      },
+      "pubmed_data": {
+        "disorder_name": "Anorexia Nervosa",
+        "article_count": 20893,
+        "search_query": "\"Anorexia Nervosa\""
+      },
+      "mortality_data": {
+        "disorder_name": "Anorexia Nervosa",
+        "mortality_rate_per_100k": 520,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 6.5,
+        "social_distance": 0.45,
+        "perceived_choice": 6.8,
+        "sources": [
+          "Stewart et al. (2006)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 890,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 6.5,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.45,
+        "hospitalization_rate_annual": 0.25,
+        "treatment_delay_months": 18,
+        "sources": [
+          "Hart et al. (2011)",
+          "HCUP (2023)"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.45,
+        "hospitalization_rate_annual": 0.25,
+        "treatment_delay_months": 18
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Bulimia Nervosa",
+      "dsm_code": "307.51",
+      "icd10": "F50.2",
+      "nih_funding": {
+        "disorder_name": "Bulimia Nervosa",
+        "total_funding_millions": 155.75,
+        "n_grants": 386,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.403
+      },
+      "pubmed_data": {
+        "disorder_name": "Bulimia Nervosa",
+        "article_count": 7879,
+        "search_query": "\"Bulimia Nervosa\""
+      },
+      "mortality_data": {
+        "disorder_name": "Bulimia Nervosa",
+        "mortality_rate_per_100k": 500,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 6.8,
+        "social_distance": 0.48,
+        "perceived_choice": 7.2,
+        "sources": [
+          "Stewart et al. (2006)"
+        ],
+        "sample_size_aggregate": 720,
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 6.8,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.38,
+        "hospitalization_rate_annual": 0.12,
+        "treatment_delay_months": 24,
+        "sources": [
+          "Hart et al. (2011)"
+        ],
+        "data_quality": "medium"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.38,
+        "hospitalization_rate_annual": 0.12,
+        "treatment_delay_months": 24
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Binge Eating Disorder",
+      "dsm_code": "307.51",
+      "icd10": "F50.8",
+      "nih_funding": {
+        "disorder_name": "Binge Eating Disorder",
+        "total_funding_millions": 193.26,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.387
+      },
+      "pubmed_data": {
+        "disorder_name": "Binge Eating Disorder",
+        "article_count": 5098,
+        "search_query": "\"Binge Eating Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Binge Eating Disorder",
+        "mortality_rate_per_100k": 500,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 6.2,
+        "perceived_blame": 6.5,
+        "sources": [
+          "Puhl & Suh (2015)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 6.2,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Alcohol Use Disorder",
+      "dsm_code": "303.90",
+      "icd10": "F10.20",
+      "nih_funding": {
+        "disorder_name": "Alcohol Use Disorder",
+        "total_funding_millions": 195.65,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.391
+      },
+      "pubmed_data": {
+        "disorder_name": "Alcohol Use Disorder",
+        "article_count": 11854,
+        "search_query": "\"Alcohol Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Alcohol Use Disorder",
+        "mortality_rate_per_100k": 185,
+        "source": "Published literature",
+        "data_quality": "measured"
+      },
+      "stigma_data": {
+        "stigma_score": 8.5,
+        "social_distance": 0.79,
+        "perceived_blame": 8.2,
+        "sources": [
+          "Pescosolido et al. (2010)",
+          "Corrigan (2007)"
+        ],
+        "sample_size_aggregate": 2800,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 8.5,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.18,
+        "hospitalization_rate_annual": 0.15,
+        "treatment_delay_months": 42,
+        "sources": [
+          "SAMHSA NSDUH (2022)",
+          "Grant et al. NESARC"
+        ],
+        "data_quality": "high"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.18,
+        "hospitalization_rate_annual": 0.15,
+        "treatment_delay_months": 42
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Cannabis Use Disorder",
+      "dsm_code": "304.30",
+      "icd10": "F12.20",
+      "nih_funding": {
+        "disorder_name": "Cannabis Use Disorder",
+        "total_funding_millions": 277.62,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.555
+      },
+      "pubmed_data": {
+        "disorder_name": "Cannabis Use Disorder",
+        "article_count": 1780,
+        "search_query": "\"Cannabis Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Cannabis Use Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Opioid Use Disorder",
+      "dsm_code": "304.00",
+      "icd10": "F11.20",
+      "nih_funding": {
+        "disorder_name": "Opioid Use Disorder",
+        "total_funding_millions": 279.86,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.56
+      },
+      "pubmed_data": {
+        "disorder_name": "Opioid Use Disorder",
+        "article_count": 10333,
+        "search_query": "\"Opioid Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Opioid Use Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 9.0,
+        "social_distance": 0.85,
+        "perceived_blame": 8.8,
+        "sources": [
+          "Link et al. (2015)",
+          "Barry et al. (2014)"
+        ],
+        "sample_size_aggregate": 1500,
+        "data_quality": "high"
+      },
+      "social_impact": {
+        "stigma_score": 9.0,
+        "data_quality": "high"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.2,
+        "hospitalization_rate_annual": 0.16,
+        "treatment_delay_months": 38,
+        "category": "substance_use",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.2,
+        "hospitalization_rate_annual": 0.16,
+        "treatment_delay_months": 38
+      },
+      "data_tier": "gold"
+    },
+    {
+      "disorder_name": "Stimulant Use Disorder",
+      "dsm_code": "304.40",
+      "icd10": "F15.20",
+      "nih_funding": {
+        "disorder_name": "Stimulant Use Disorder",
+        "total_funding_millions": 320.39,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.641
+      },
+      "pubmed_data": {
+        "disorder_name": "Stimulant Use Disorder",
+        "article_count": 332,
+        "search_query": "\"Stimulant Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Stimulant Use Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Sedative Use Disorder",
+      "dsm_code": "304.10",
+      "icd10": "F13.20",
+      "nih_funding": {
+        "disorder_name": "Sedative Use Disorder",
+        "total_funding_millions": 272.61,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.545
+      },
+      "pubmed_data": {
+        "disorder_name": "Sedative Use Disorder",
+        "article_count": 28,
+        "search_query": "\"Sedative Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Sedative Use Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Tobacco Use Disorder",
+      "dsm_code": "305.1",
+      "icd10": "F17.200",
+      "nih_funding": {
+        "disorder_name": "Tobacco Use Disorder",
+        "total_funding_millions": 284.62,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.569
+      },
+      "pubmed_data": {
+        "disorder_name": "Tobacco Use Disorder",
+        "article_count": 13366,
+        "search_query": "\"Tobacco Use Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Tobacco Use Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Insomnia Disorder",
+      "dsm_code": "307.42",
+      "icd10": "F51.01",
+      "nih_funding": {
+        "disorder_name": "Insomnia Disorder",
+        "total_funding_millions": 242.89,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.486
+      },
+      "pubmed_data": {
+        "disorder_name": "Insomnia Disorder",
+        "article_count": 1235,
+        "search_query": "\"Insomnia Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Insomnia Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 2.5,
+        "social_distance": 0.05,
+        "sources": [
+          "Kyle et al. (2010)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 2.5,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Narcolepsy",
+      "dsm_code": "347.00",
+      "icd10": "G47.4",
+      "nih_funding": {
+        "disorder_name": "Narcolepsy",
+        "total_funding_millions": 59.18,
+        "n_grants": 150,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.395
+      },
+      "pubmed_data": {
+        "disorder_name": "Narcolepsy",
+        "article_count": 7022,
+        "search_query": "\"Narcolepsy\""
+      },
+      "mortality_data": {
+        "disorder_name": "Narcolepsy",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Sleep Apnea",
+      "dsm_code": "327.23",
+      "icd10": "G47.33",
+      "nih_funding": {
+        "disorder_name": "Sleep Apnea",
+        "total_funding_millions": 254.95,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.51
+      },
+      "pubmed_data": {
+        "disorder_name": "Sleep Apnea",
+        "article_count": 62252,
+        "search_query": "\"Sleep Apnea\""
+      },
+      "mortality_data": {
+        "disorder_name": "Sleep Apnea",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Restless Legs Syndrome",
+      "dsm_code": "333.94",
+      "icd10": "G25.81",
+      "nih_funding": {
+        "disorder_name": "Restless Legs Syndrome",
+        "total_funding_millions": 272.31,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.545
+      },
+      "pubmed_data": {
+        "disorder_name": "Restless Legs Syndrome",
+        "article_count": 6192,
+        "search_query": "\"Restless Legs Syndrome\""
+      },
+      "mortality_data": {
+        "disorder_name": "Restless Legs Syndrome",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Schizoaffective Disorder",
+      "dsm_code": "295.70",
+      "icd10": "F25",
+      "nih_funding": {
+        "disorder_name": "Schizoaffective Disorder",
+        "total_funding_millions": 261.33,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.523
+      },
+      "pubmed_data": {
+        "disorder_name": "Schizoaffective Disorder",
+        "article_count": 5315,
+        "search_query": "\"Schizoaffective Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Schizoaffective Disorder",
+        "mortality_rate_per_100k": 250,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.9,
+        "social_distance": 0.75,
+        "perceived_dangerousness": 8.3,
+        "sources": [
+          "Corrigan (2007)",
+          "Thornicroft et al. (2009)"
+        ],
+        "sample_size_aggregate": 1200,
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 8.9,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.45,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 22,
+        "sources": [
+          "SAMHSA estimates",
+          "HCUP (2023)"
+        ],
+        "data_quality": "medium"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.45,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 22
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Delusional Disorder",
+      "dsm_code": "297.1",
+      "icd10": "F22",
+      "nih_funding": {
+        "disorder_name": "Delusional Disorder",
+        "total_funding_millions": 249.87,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.5
+      },
+      "pubmed_data": {
+        "disorder_name": "Delusional Disorder",
+        "article_count": 913,
+        "search_query": "\"Delusional Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Delusional Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.5,
+        "social_distance": 0.7,
+        "sources": [
+          "Angermeyer meta-analysis (2006)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 8.5,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Brief Psychotic Disorder",
+      "dsm_code": "298.8",
+      "icd10": "F23",
+      "nih_funding": {
+        "disorder_name": "Brief Psychotic Disorder",
+        "total_funding_millions": 265.09,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.53
+      },
+      "pubmed_data": {
+        "disorder_name": "Brief Psychotic Disorder",
+        "article_count": 166,
+        "search_query": "\"Brief Psychotic Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Brief Psychotic Disorder",
+        "mortality_rate_per_100k": 250,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.2,
+        "sources": [
+          "Estimated from psychotic disorders category"
+        ],
+        "data_quality": "estimated"
+      },
+      "social_impact": {
+        "stigma_score": 8.2,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24,
+        "category": "psychotic",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.43,
+        "hospitalization_rate_annual": 0.32,
+        "treatment_delay_months": 24
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Dissociative Identity Disorder",
+      "dsm_code": "300.14",
+      "icd10": "F44.81",
+      "nih_funding": {
+        "disorder_name": "Dissociative Identity Disorder",
+        "total_funding_millions": 227.23,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.454
+      },
+      "pubmed_data": {
+        "disorder_name": "Dissociative Identity Disorder",
+        "article_count": 1194,
+        "search_query": "\"Dissociative Identity Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Dissociative Identity Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 8.2,
+        "social_distance": 0.68,
+        "perceived_legitimacy": 3.5,
+        "sources": [
+          "Brand et al. (2009)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 8.2,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Dissociative Amnesia",
+      "dsm_code": "300.12",
+      "icd10": "F44.0",
+      "nih_funding": {
+        "disorder_name": "Dissociative Amnesia",
+        "total_funding_millions": 178.71,
+        "n_grants": 337,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.53
+      },
+      "pubmed_data": {
+        "disorder_name": "Dissociative Amnesia",
+        "article_count": 224,
+        "search_query": "\"Dissociative Amnesia\""
+      },
+      "mortality_data": {
+        "disorder_name": "Dissociative Amnesia",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Depersonalization Disorder",
+      "dsm_code": "300.6",
+      "icd10": "F48.1",
+      "nih_funding": {
+        "disorder_name": "Depersonalization Disorder",
+        "total_funding_millions": 250.96,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.502
+      },
+      "pubmed_data": {
+        "disorder_name": "Depersonalization Disorder",
+        "article_count": 149,
+        "search_query": "\"Depersonalization Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Depersonalization Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Somatic Symptom Disorder",
+      "dsm_code": "300.82",
+      "icd10": "F45.1",
+      "nih_funding": {
+        "disorder_name": "Somatic Symptom Disorder",
+        "total_funding_millions": 232.52,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.465
+      },
+      "pubmed_data": {
+        "disorder_name": "Somatic Symptom Disorder",
+        "article_count": 626,
+        "search_query": "\"Somatic Symptom Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Somatic Symptom Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.5,
+        "perceived_legitimacy": 4.2,
+        "sources": [
+          "Estimated from somatic category"
+        ],
+        "data_quality": "estimated"
+      },
+      "social_impact": {
+        "stigma_score": 5.5,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Illness Anxiety Disorder",
+      "dsm_code": "300.7",
+      "icd10": "F45.21",
+      "nih_funding": {
+        "disorder_name": "Illness Anxiety Disorder",
+        "total_funding_millions": 235.4,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.471
+      },
+      "pubmed_data": {
+        "disorder_name": "Illness Anxiety Disorder",
+        "article_count": 128,
+        "search_query": "\"Illness Anxiety Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Illness Anxiety Disorder",
+        "mortality_rate_per_100k": 20,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 4.0,
+        "category": "anxiety",
+        "data_quality": "estimated",
+        "source": "Category mean from Corrigan (2007)"
+      },
+      "social_impact": {
+        "stigma_score": 4.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.7,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 7,
+        "category": "anxiety",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.7,
+        "hospitalization_rate_annual": 0.02,
+        "treatment_delay_months": 7
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Conversion Disorder",
+      "dsm_code": "300.11",
+      "icd10": "F44.4",
+      "nih_funding": {
+        "disorder_name": "Conversion Disorder",
+        "total_funding_millions": 255.02,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.51
+      },
+      "pubmed_data": {
+        "disorder_name": "Conversion Disorder",
+        "article_count": 3923,
+        "search_query": "\"Conversion Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Conversion Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Body Dysmorphic Disorder",
+      "dsm_code": "300.7",
+      "icd10": "F45.22",
+      "nih_funding": {
+        "disorder_name": "Body Dysmorphic Disorder",
+        "total_funding_millions": 250.17,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.5
+      },
+      "pubmed_data": {
+        "disorder_name": "Body Dysmorphic Disorder",
+        "article_count": 1665,
+        "search_query": "\"Body Dysmorphic Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Body Dysmorphic Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 4.5,
+        "sources": [
+          "Estimated from OCD spectrum"
+        ],
+        "data_quality": "estimated"
+      },
+      "social_impact": {
+        "stigma_score": 4.5,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Hoarding Disorder",
+      "dsm_code": "300.3",
+      "icd10": "F42",
+      "nih_funding": {
+        "disorder_name": "Hoarding Disorder",
+        "total_funding_millions": 250.99,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.502
+      },
+      "pubmed_data": {
+        "disorder_name": "Hoarding Disorder",
+        "article_count": 551,
+        "search_query": "\"Hoarding Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Hoarding Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.8,
+        "sources": [
+          "Frost et al. (2010)"
+        ],
+        "data_quality": "medium"
+      },
+      "social_impact": {
+        "stigma_score": 5.8,
+        "data_quality": "medium"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Trichotillomania",
+      "dsm_code": "312.39",
+      "icd10": "F63.3",
+      "nih_funding": {
+        "disorder_name": "Trichotillomania",
+        "total_funding_millions": 7.41,
+        "n_grants": 20,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.37
+      },
+      "pubmed_data": {
+        "disorder_name": "Trichotillomania",
+        "article_count": 1849,
+        "search_query": "\"Trichotillomania\""
+      },
+      "mortality_data": {
+        "disorder_name": "Trichotillomania",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Excoriation Disorder",
+      "dsm_code": "698.4",
+      "icd10": "L98.1",
+      "nih_funding": {
+        "disorder_name": "Excoriation Disorder",
+        "total_funding_millions": 250.47,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.501
+      },
+      "pubmed_data": {
+        "disorder_name": "Excoriation Disorder",
+        "article_count": 117,
+        "search_query": "\"Excoriation Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Excoriation Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Intermittent Explosive Disorder",
+      "dsm_code": "312.34",
+      "icd10": "F63.81",
+      "nih_funding": {
+        "disorder_name": "Intermittent Explosive Disorder",
+        "total_funding_millions": 230.9,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.462
+      },
+      "pubmed_data": {
+        "disorder_name": "Intermittent Explosive Disorder",
+        "article_count": 359,
+        "search_query": "\"Intermittent Explosive Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Intermittent Explosive Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 7.8,
+        "perceived_dangerousness": 8.5,
+        "sources": [
+          "Estimated from impulse control category"
+        ],
+        "data_quality": "estimated"
+      },
+      "social_impact": {
+        "stigma_score": 7.8,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Conduct Disorder",
+      "dsm_code": "312.8",
+      "icd10": "F91.1",
+      "nih_funding": {
+        "disorder_name": "Conduct Disorder",
+        "total_funding_millions": 254.56,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.509
+      },
+      "pubmed_data": {
+        "disorder_name": "Conduct Disorder",
+        "article_count": 7026,
+        "search_query": "\"Conduct Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Conduct Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    },
+    {
+      "disorder_name": "Oppositional Defiant Disorder",
+      "dsm_code": "313.81",
+      "icd10": "F91.3",
+      "nih_funding": {
+        "disorder_name": "Oppositional Defiant Disorder",
+        "total_funding_millions": 251.68,
+        "n_grants": 500,
+        "fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "mean_grant_size_millions": 0.503
+      },
+      "pubmed_data": {
+        "disorder_name": "Oppositional Defiant Disorder",
+        "article_count": 2546,
+        "search_query": "\"Oppositional Defiant Disorder\""
+      },
+      "mortality_data": {
+        "disorder_name": "Oppositional Defiant Disorder",
+        "mortality_rate_per_100k": 50,
+        "source": "Estimated from category",
+        "data_quality": "estimated"
+      },
+      "stigma_data": {
+        "stigma_score": 5.0,
+        "category": "other",
+        "data_quality": "estimated",
+        "source": "Default moderate estimate"
+      },
+      "social_impact": {
+        "stigma_score": 5.0,
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes_expanded": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12,
+        "category": "other",
+        "data_quality": "estimated"
+      },
+      "clinical_outcomes": {
+        "treatment_seeking_rate": 0.55,
+        "hospitalization_rate_annual": 0.1,
+        "treatment_delay_months": 12
+      },
+      "data_tier": "silver"
+    }
+  ]
+}

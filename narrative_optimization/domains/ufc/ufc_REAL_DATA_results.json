@@ -1,0 +1,95 @@
+{
+  "dataset": "Real UFC Data (GitHub: komaksym/UFC-DataLab)",
+  "total_fights": 7735,
+  "physical_auc": 0.8711676234785186,
+  "narrative_auc": 0.5479038919024808,
+  "combined_auc": 0.8958812936195659,
+  "delta": 0.024713670141047306,
+  "top_features": [
+    [
+      "blue_knockdowns",
+      0.1748083964906523
+    ],
+    [
+      "control_ratio",
+      0.09027042036690354
+    ],
+    [
+      "blue_control",
+      0.08459415536547477
+    ],
+    [
+      "red_sig_str_pct",
+      0.08435298777536929
+    ],
+    [
+      "blue_sig_str_pct",
+      0.08202427818937624
+    ],
+    [
+      "red_control",
+      0.0672479169578705
+    ],
+    [
+      "control_diff",
+      0.0654475878490113
+    ],
+    [
+      "red_submissions",
+      0.05483114937053554
+    ],
+    [
+      "strike_diff",
+      0.03484774656644683
+    ],
+    [
+      "blue_submissions",
+      0.03480472239610987
+    ],
+    [
+      "is_finish",
+      0.034452301200570995
+    ],
+    [
+      "red_knockdowns",
+      0.029502838677607085
+    ],
+    [
+      "red_td_pct",
+      0.02679523773563598
+    ],
+    [
+      "kd_diff",
+      0.021579109300306282
+    ],
+    [
+      "blue_td_pct",
+      0.016470706060507732
+    ],
+    [
+      "td_diff",
+      0.016298080021964808
+    ],
+    [
+      "blue_name_len",
+      0.016104552201332466
+    ],
+    [
+      "red_name_len",
+      0.013484365627701724
+    ],
+    [
+      "blue_vowels",
+      0.01144031456990736
+    ],
+    [
+      "name_len_diff",
+      0.010941661083701022
+    ]
+  ],
+  "narrativity": 0.722,
+  "correlation": 0.7917625872391318,
+  "bridge": 0.3429915527919919,
+  "efficiency": 0.4750575523434791,
+  "passes": false
+}

@@ -1,0 +1,49 @@
+domain: novels
+type: literature
+narrativity:
+  structural: 0.85  # Highly variable plots
+  temporal: 0.80    # Stories unfold over time
+  agency: 0.75      # Characters drive narrative
+  interpretive: 0.70 # Subjective literary judgment
+  format: 0.50      # Book format somewhat flexible
+data:
+  text_fields:
+    - full_narrative
+    - plot_summary
+  outcome_field: success_score
+  context_features:
+    - author_name
+    - character_names
+    - ensemble_size
+    - character_diversity
+  name_field: author_name
+  nominative_fields:
+    - author_name
+    - book_title
+    - character_names
+    - all_nominatives
+outcome_type: continuous
+transformer_augmentation:
+  - nominative
+  - phonetic
+  - ensemble
+  - relational
+custom_validators: []
+description: Novels domain with rich character ensembles and narrative structure
+sample_size: null
+pi: 0.72  # Calculated: 0.30*0.85 + 0.20*0.80 + 0.25*0.75 + 0.15*0.70 + 0.10*0.50
+perspectives:
+  - reader
+  - critic
+  - author
+quality_methods:
+  - weighted_mean
+  - ensemble
+  - temporal
+scales:
+  - nano
+  - micro
+  - meso
+  - macro
+aggregation_method: importance_weighted
+

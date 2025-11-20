@@ -1,0 +1,215 @@
+# Music Domain Configuration (UNFILTERED)
+# π = 0.58 (Medium Narrativity - EXPECTED AVERAGE, not pre-selected)
+# Broad sample across all genres - let transformers discover narrative patterns
+
+domain:
+  name: "Music"
+  type: "entertainment"
+  subtype: "musical_all_genres"
+  
+narrativity:
+  components:
+    structural: 0.60    # Song/album structure
+    temporal: 0.65      # Temporal progression in lyrics
+    agency: 0.50        # Narrative voice
+    interpretive: 0.70  # Subjective appreciation
+    format: 0.50        # 3-5 minute constraints
+  
+  calculated_pi: 0.58  # 0.30×0.60 + 0.20×0.65 + 0.25×0.50 + 0.15×0.70 + 0.10×0.50
+  
+  pi_by_type:
+    concept_album: 0.75  # High narrative cohesion
+    story_song: 0.72     # Clear narrative
+    ballad: 0.68         # Traditional storytelling
+    opera: 0.80          # Extended narrative
+    hip_hop_narrative: 0.70  # Storytelling tradition
+    pop: 0.45            # Often non-narrative
+
+expected_forces:
+  theta: 0.40          # Moderate awareness
+  lambda: 0.55         # Time/format constraints
+  ta_marbuta: 0.60     # Artist names important
+  
+expected_performance:
+  r_squared: 0.42      # 35-50% range (narrative secondary)
+  correlation: 0.65
+  
+archetype_requirements:
+  # Lyrical Narrative Structure
+  narrative_clarity: 0.65          # How clear is the story?
+  story_completeness: 0.60         # Beginning/middle/end?
+  
+  # Character in Songs
+  archetype_clarity: 0.50          # Moderate (limited time)
+  narrative_voice:
+    - first_person                 # "I" narratives
+    - third_person                 # Story songs
+    - character_voice              # Persona
+  
+  # Emotional Arc (PRIMARY for music)
+  emotional_arc: 0.80              # Key to music
+  emotional_range: 0.75
+  emotional_authenticity: 0.80
+  
+  # Hero's Journey (compressed)
+  journey_elements: 0.45           # Partial only (time limits)
+  transformation: 0.55             # Character change
+  
+  # Booker Plots (compressed)
+  plot_distribution:
+    tragedy: 0.25                  # Sad songs
+    rags_to_riches: 0.20           # Success stories
+    quest: 0.15                    # Journey songs
+    comedy: 0.15                   # Happy songs
+    rebirth: 0.10                  # Redemption
+    love_story: 0.15               # Romance (not Booker but common)
+  
+data:
+  target_samples: 5000             # Large unfiltered sample
+  
+  # METHODOLOGY: Collect broadly, discover narrative patterns empirically
+  # Do NOT pre-select for "narrative" songs - let transformers find patterns
+  
+  sources:
+    - "Genius Lyrics API"
+    - "Spotify API"
+    - "MusicBrainz"
+    - "Last.fm"
+  
+  sampling_strategy: "stratified_random_by_genre"
+  
+  # Proportional to genre popularity (unbiased sampling)
+  genre_distribution:
+    pop: 800                       # Most popular, may have low narrative
+    rock: 700                      # Varies widely
+    hip_hop: 600                   # Often narrative-heavy
+    country: 500                   # Traditional storytelling
+    folk: 400                      # Story tradition
+    r_and_b: 400                   # Personal narratives
+    indie: 300                     # Varies
+    electronic: 200                # Usually low narrative
+    metal: 200                     # Conceptual themes
+    other: 900                     # Jazz, classical, world, etc.
+  
+  # Include DIVERSE narrative levels (let data reveal patterns)
+  expected_narrative_distribution:
+    high_narrative: 20%            # Story songs, concept albums
+    medium_narrative: 35%          # Personal narratives, journey songs
+    low_narrative: 45%             # Abstract, non-narrative
+  
+  # DO NOT filter by lyrics - include instrumental metadata too
+  
+  required_fields:
+    - title
+    - artist
+    - album
+    - year
+    - genre
+    - lyrics
+    - duration
+    - chart_performance
+    - critical_rating
+    - cultural_impact
+  
+  outcome_field: musical_success
+  outcome_measures:
+    - chart_peak                   # Billboard, etc.
+    - streams                      # Spotify streams
+    - critical_score               # Album reviews
+    - awards                       # Grammys
+    - cultural_impact              # Covers, samples
+    - longevity                    # Still played
+  
+narrative_requirements:
+  min_length_words: 100            # Short songs
+  max_length_words: 2000           # Long story songs
+  
+  elements:
+    - lyrical_narrative
+    - character_voice
+    - emotional_arc
+    - story_clarity
+    - musical_structure
+
+transformer_pipeline:
+  # Archetype transformers
+  - music_narrative                # Domain-specific PRIMARY
+  - character_archetype            # Voice/persona
+  - plot_archetype                 # Compressed plots
+  - hero_journey                   # Partial elements
+  - thematic_archetype             # Emotional themes
+  
+  # Existing transformers
+  - nominative                     # Artist/character names
+  - emotional_resonance            # PRIMARY for music
+  - phonetic                       # Sound patterns
+  - linguistic_advanced            # Lyrical quality
+  - audio                          # If available
+
+validation_hypotheses:
+  # EMPIRICAL DISCOVERY APPROACH
+  - "Narrative clarity distribution will be bimodal (story vs abstract songs)"
+  - "Some genres cluster high-narrative (discover which empirically)"
+  - "Some genres cluster low-narrative (discover which empirically)"
+  - "Narrative predicts success ONLY in high-narrative genres"
+  - "Campbell journey detection will be near-zero for most songs"
+  - "Journey detection will be high (>0.60) for concept albums/story songs"
+  - "Emotional arc detected across ALL songs (even non-narrative)"
+  - "Character archetypes rare in music (3-minute constraint)"
+  - "First-person narrative will dominate when narrative present"
+  - "π_song will range from 0.15 (abstract) to 0.85 (story songs)"
+  - "Transformers will empirically segment songs by narrative level"
+  - "Genre is NOT destiny - within-genre variation expected"
+  
+  # Key discoveries to validate:
+  - "DISCOVERY 1: Which % of music has narrative structure?"
+  - "DISCOVERY 2: Which genres are most/least narrative?"
+  - "DISCOVERY 3: Does narrative predict success in some genres only?"
+  - "DISCOVERY 4: Are there narrative songs in 'non-narrative' genres?"
+
+domain_xi:
+  # Music Ξ by type
+  concept_album_xi:
+    narrative_cohesion: 0.85
+    thematic_unity: 0.90
+    emotional_arc: 0.85
+    story_completeness: 0.75
+  
+  story_song_xi:
+    narrative_clarity: 0.85
+    character_voice: 0.80
+    plot_completeness: 0.70
+    emotional_authenticity: 0.85
+  
+  hip_hop_narrative_xi:
+    storytelling_vivid: 0.85
+    character_development: 0.75
+    street_authenticity: 0.90
+    wordplay_quality: 0.80
+  
+  ballad_xi:
+    emotional_depth: 0.90
+    story_simplicity: 0.80
+    memorability: 0.85
+    universal_themes: 0.75
+
+perspectives:
+  - listener
+  - critic
+  - musician
+  - cultural
+
+quality_methods:
+  - commercial_success
+  - critical_acclaim
+  - cultural_longevity
+  - emotional_resonance
+
+scales:
+  - verse                          # Line level
+  - song                           # Single track
+  - album                          # Album level
+  - discography                    # Career
+
+aggregation_method: commercial_weighted
+

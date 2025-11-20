@@ -1,0 +1,26 @@
+{
+  "model_version": "1.0.0",
+  "trained_date": "2025-11-16T20:14:42.147522",
+  "model_path": "trained_models/mlb_betting_model.pkl",
+  "feature_count": 91,
+  "training_games": 2000,
+  "validation_accuracy": 0,
+  "backtest_performance": {
+    "win_rate": 0.8933333333333333,
+    "roi": 75.11947344838339,
+    "total_bets": 300,
+    "return": 6.860377616246537e+26
+  },
+  "strategy_params": {
+    "kelly_fraction": 0.25,
+    "min_edge": 0.05,
+    "max_bet_pct": 0.05
+  },
+  "status": "READY",
+  "notes": [
+    "Nominative features (player names) + statistics = core approach",
+    "32 players per game provides rich nominative context",
+    "Ensemble model: Logistic + Random Forest + Gradient Boosting",
+    "Kelly Criterion bet sizing with fractional (0.25)"
+  ]
+}

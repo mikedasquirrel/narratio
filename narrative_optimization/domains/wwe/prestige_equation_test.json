@@ -1,0 +1,26 @@
+{
+  "domain": "wwe",
+  "narrativity": 0.974,
+  "samples": 250,
+  "forces": {
+    "theta_mean": 0.5521742967906901,
+    "theta_std": 0.14720019829497333,
+    "lambda_mean": 0.5,
+    "lambda_std": 0.0,
+    "ta_mean": 0.27123003765142534
+  },
+  "equations": {
+    "regular": {
+      "D": 0.0,
+      "r": 0.07333445232200259,
+      "p": 0.24798203948755113
+    },
+    "prestige": {
+      "D": 0.3179375840706553,
+      "r": 0.14680255903013276,
+      "p": 0.020226773125056798
+    }
+  },
+  "winner": "prestige",
+  "validates_prestige": true
+}

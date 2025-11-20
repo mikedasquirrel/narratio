@@ -1,0 +1,32 @@
+{
+  "models": {
+    "hierarchical": {
+      "physical_auc": 0.9707884257060393,
+      "refined_auc": 0.9677943809141061,
+      "full_auc": 0.9684337437433781,
+      "narrative_delta": -0.0029940447919332147,
+      "context_delta": 0.0006393628292720166,
+      "total_delta": -0.002354681962661198
+    },
+    "context_aware": {
+      "finish_auc": 0.9856853678805055,
+      "decision_auc": 0.9737720329024677,
+      "title_auc": 0.9864731923266109
+    },
+    "stacking": {
+      "auc": 0.9842570603923861
+    },
+    "method_predictor": {
+      "winner_auc": 0.977704080167686
+    }
+  },
+  "domain_fit": {
+    "physical_dominance": true,
+    "narrative_sensitivity": true,
+    "context_awareness": false,
+    "temporal_stability": true,
+    "overall_fit_quality": "EXCELLENT"
+  },
+  "best_model": "stacking",
+  "best_auc": 0.9842570603923861
+}

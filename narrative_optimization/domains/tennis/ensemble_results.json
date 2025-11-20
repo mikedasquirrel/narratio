@@ -1,0 +1,16 @@
+{
+  "stacked_model": {
+    "train_r2": 0.9984411574098191,
+    "test_r2": 0.9074461409570241,
+    "meta_weights": {
+      "ridge": -0.22927443111160475,
+      "random_forest": 0.2583618828020764,
+      "gradient_boosting": 0.9751538659250181
+    }
+  },
+  "comparison_to_best_single": {
+    "best_single_r2": 0.9294,
+    "stacked_r2": 0.9074461409570241,
+    "improvement": -0.021953859042975865
+  }
+}

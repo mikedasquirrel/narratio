@@ -1,0 +1,21 @@
+{
+  "model_type": "pre_fight",
+  "data_used": "career_statistics_only",
+  "valid_for_betting": true,
+  "dataset_size": 6850,
+  "coverage": 0.8831872099020114,
+  "performance": {
+    "career_only_auc": 0.7192328353476001,
+    "with_physical_auc": 0.7613573167932337,
+    "full_model_auc": 0.7590334359595712,
+    "physical_delta": 0.04212448144563363,
+    "narrative_delta": -0.0023238808336625283,
+    "total_delta": 0.039800600611971104
+  },
+  "betting": {
+    "best_accuracy": 0.7730727470141151,
+    "baseline_accuracy": 0.6576642335766424,
+    "edge": 0.11540851343747272,
+    "profitable": true
+  }
+}

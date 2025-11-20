@@ -1,0 +1,41 @@
+{
+  "h1": {
+    "hypothesis": "H1_phonetic_stigma",
+    "correlation": 0.9397917293638857,
+    "p_value": 0.22203767280678693,
+    "r_squared": 0.8832084945807629,
+    "n": 3,
+    "validated": false
+  },
+  "h2": {
+    "n_disorders": 3,
+    "path_a_harshness_to_stigma": {
+      "correlation": 0.9397917293638857,
+      "p_value": 0.22203767280678693,
+      "interpretation": "Harsh names \u2192 Higher stigma"
+    },
+    "path_b_stigma_to_seeking": {
+      "correlation": -0.9494568464409535,
+      "p_value": 0.20326972347732353,
+      "interpretation": "Higher stigma \u2192 Lower treatment seeking"
+    },
+    "path_c_total_effect": {
+      "correlation": -0.7850179055251391,
+      "p_value": 0.4253073962841105,
+      "interpretation": "Harsh names \u2192 Lower treatment seeking (total effect)"
+    },
+    "indirect_effect": -0.8922916916731249,
+    "mediation_supported": false
+  },
+  "h3": {
+    "hypothesis": "H3_framing_amplification",
+    "r2_simple": 0.8832084945807628,
+    "r2_interact": 1.0,
+    "delta_r2": 0.11679150541923722,
+    "interaction_coef": -0.01827864703681701,
+    "validated": true
+  },
+  "h4": {
+    "error": "Insufficient data"
+  }
+}

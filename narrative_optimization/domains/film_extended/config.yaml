@@ -1,0 +1,199 @@
+# Film Extended Domain Configuration
+# π = 0.68 (Medium-High Narrativity)
+# Extends existing IMDB dataset with beat sheet & Hero's Journey analysis
+
+domain:
+  name: "Film Extended"
+  type: "entertainment"
+  subtype: "cinema"
+  
+narrativity:
+  components:
+    structural: 0.75    # Screenplay structure
+    temporal: 0.70      # 90-120 minute format
+    agency: 0.60        # Character-driven
+    interpretive: 0.70  # Subjective viewing
+    format: 0.65        # Film medium constraints
+  
+  calculated_pi: 0.68  # 0.30×0.75 + 0.20×0.70 + 0.25×0.60 + 0.15×0.70 + 0.10×0.65
+  
+  pi_by_type:
+    blockbuster: 0.75   # Formula adherence
+    indie: 0.58         # Less structured
+    art_film: 0.45      # Experimental
+    documentary: 0.35   # Factual constraints
+
+expected_forces:
+  theta: 0.45          # Moderate awareness
+  lambda: 0.60         # Medium constraints (budget, runtime)
+  ta_marbuta: 0.65     # Character names important
+  
+expected_performance:
+  r_squared: 0.58      # 55-65% range
+  correlation: 0.76
+  beat_adherence_matters: true
+  
+archetype_requirements:
+  # Hero's Journey (Hollywood uses this)
+  hero_journey_completion: 0.72    # High for blockbusters
+  journey_by_type:
+    blockbuster: 0.82
+    indie: 0.58
+    art_film: 0.35
+  
+  # Save the Cat Beats (Hollywood formula)
+  beat_adherence: 0.75             # Expected for commercial
+  beat_timing_accuracy: 0.70
+  key_beats_required:
+    - catalyst                     # 12%
+    - break_into_two               # 25%
+    - midpoint                     # 50%
+    - all_is_lost                  # 75%
+    - finale                       # 85-99%
+  
+  # Character Archetypes
+  archetype_clarity: 0.65          # Moderate
+  dominant_archetypes:
+    - hero                         # Protagonist
+    - mentor                       # Guide
+    - shadow                       # Antagonist
+    - shapeshifter                 # Love interest often
+  
+  # Booker's Plots
+  plot_distribution:
+    overcoming_monster: 0.30       # Action films
+    quest: 0.20                    # Adventure
+    rags_to_riches: 0.15           # Underdog
+    comedy: 0.15                   # Rom-com
+    tragedy: 0.10                  # Drama
+    voyage_and_return: 0.05
+    rebirth: 0.05
+  
+  # Visual Storytelling
+  show_dont_tell_ratio: 0.70       # Film-specific
+  visual_markers: 0.75
+  scene_structure: 0.70
+  
+data:
+  target_samples: 2500             # 2000-3000 range
+  
+  sources:
+    - "IMDb Top 1000"
+    - "Box Office Mojo"
+    - "The Numbers"
+    - "Rotten Tomatoes API"
+    - "OMDb API"
+    - "Screenplay databases"
+  
+  categories:
+    blockbusters: 800              # Top grossing
+    oscar_winners: 200             # Critical acclaim
+    indie: 500                     # Sundance, etc.
+    genre_representatives: 800     # Cover all genres
+    international: 200             # Non-Hollywood
+  
+  required_fields:
+    - title
+    - year
+    - director
+    - genre
+    - runtime
+    - budget
+    - box_office
+    - plot_summary
+    - screenplay_beats             # If available
+    - critical_score               # Metacritic/RT
+    - audience_score
+    - awards
+  
+  outcome_field: commercial_and_critical_success
+  outcome_measures:
+    - box_office_adjusted          # Primary
+    - roi                          # Budget efficiency
+    - critical_score               # Metacritic
+    - awards_count                 # Oscars, etc.
+    - cultural_impact              # References, influence
+  
+narrative_requirements:
+  min_length_words: 1000           # Short films
+  max_length_words: 15000          # Long epics
+  
+  elements:
+    - three_act_structure
+    - character_arcs
+    - visual_storytelling
+    - dialogue_quality
+    - pacing
+
+transformer_pipeline:
+  # Archetype transformers
+  - hero_journey                   # Blockbusters should score high
+  - character_archetype
+  - plot_archetype
+  - structural_beat                # PRIMARY - Save the Cat
+  - thematic_archetype
+  - film_narrative                 # Domain-specific
+  
+  # Existing transformers
+  - nominative
+  - emotional_resonance
+  - conflict_tension
+  - suspense_mystery
+  - visual_multimodal
+
+validation_hypotheses:
+  - "Blockbusters have higher beat adherence than indie films"
+  - "Save the Cat beats predict box office (R²>0.45)"
+  - "Hero's Journey completion varies by genre"
+  - "Oscar winners have different archetype profiles than commercial hits"
+  - "Refusal of Call MORE important in films than myths (Campbell undervalued)"
+  - "Return with Elixir LESS important in films (time constraints)"
+  - "Visual storytelling markers predict success"
+
+domain_xi:
+  # Film Ξ by type
+  blockbuster_xi:
+    beat_adherence: 0.88
+    hero_journey: 0.82
+    visual_spectacle: 0.80
+    emotional_payoff: 0.85
+    pacing_tight: 0.80
+  
+  indie_xi:
+    character_depth: 0.80
+    thematic_complexity: 0.75
+    innovation: 0.70
+    authenticity: 0.85
+  
+  oscar_winner_xi:
+    thematic_depth: 0.85
+    character_complexity: 0.80
+    artistic_merit: 0.90
+    emotional_resonance: 0.85
+  
+  art_film_xi:
+    innovation: 0.85
+    visual_artistry: 0.90
+    thematic_ambiguity: 0.70
+    meta_narrative: 0.60
+
+perspectives:
+  - audience
+  - critic
+  - filmmaker
+  - box_office
+
+quality_methods:
+  - commercial_success
+  - critical_acclaim
+  - cultural_impact
+  - weighted_composite
+
+scales:
+  - scene
+  - sequence
+  - act
+  - film
+
+aggregation_method: commercial_critical_weighted
+

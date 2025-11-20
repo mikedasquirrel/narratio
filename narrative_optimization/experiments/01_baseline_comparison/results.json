@@ -1,0 +1,319 @@
+{
+  "experiment_id": "01_baseline_comparison",
+  "description": "Test whether narrative-driven features outperform statistical baselines",
+  "metadata": {
+    "experiment_id": "01_baseline_comparison",
+    "description": "Test whether narrative-driven features outperform statistical baselines",
+    "created_at": "2025-11-09T19:48:57.956616",
+    "status": "completed",
+    "run_started_at": "2025-11-09T19:48:57.956726",
+    "run_completed_at": "2025-11-09T19:49:10.487057"
+  },
+  "narratives": {
+    "Statistical Baseline": {
+      "name": "Statistical Baseline",
+      "hypothesis": "Statistical baseline: TF-IDF is sufficient",
+      "metadata": {
+        "narrative_name": "Statistical Baseline",
+        "hypothesis": "Pure statistical word frequencies (TF-IDF) are sufficient for classification",
+        "expected_outcome": "Baseline performance - other narratives should beat this if they add value",
+        "domain_assumptions": [
+          "Text is just bags of words",
+          "Context doesn't matter"
+        ],
+        "step_rationales": {
+          "features": "TF-IDF captures statistical word importance without domain knowledge",
+          "classifier": "Simple linear classifier on statistical features"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.6875,
+            0.7125,
+            0.75,
+            0.6625,
+            0.6375
+          ],
+          "train_scores": [
+            0.975,
+            0.971875,
+            0.96875,
+            0.965625,
+            0.978125
+          ],
+          "test_mean": 0.6900000000000001,
+          "test_std": 0.03905124837953329,
+          "train_mean": 0.971875,
+          "train_std": 0.004419417382415938
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.68946773167456,
+            0.7084141863450458,
+            0.7507864763962324,
+            0.6562015503875969,
+            0.6372528807003586
+          ],
+          "train_scores": [
+            0.9751607409284899,
+            0.9723345070965684,
+            0.9692156371538376,
+            0.9656465123361988,
+            0.9783478443378132
+          ],
+          "test_mean": 0.6884245651007588,
+          "test_std": 0.03986613875457236,
+          "train_mean": 0.9721410483705816,
+          "train_std": 0.004436604888667408
+        },
+        "precision_macro": {
+          "test_scores": [
+            0.7144122383252819,
+            0.7085058661145618,
+            0.7584194862155388,
+            0.6641847826086956,
+            0.6581226995629169
+          ],
+          "train_scores": [
+            0.9761801016702978,
+            0.9747191011235955,
+            0.9711850649350648,
+            0.9665709621553014,
+            0.9791883842144453
+          ],
+          "test_mean": 0.700729014565399,
+          "test_std": 0.03667882091641549,
+          "train_mean": 0.9735687228197409,
+          "train_std": 0.004344507869994068
+        },
+        "recall_macro": {
+          "test_scores": [
+            0.6875,
+            0.7125,
+            0.75,
+            0.6625,
+            0.6375
+          ],
+          "train_scores": [
+            0.9750000000000001,
+            0.971875,
+            0.96875,
+            0.965625,
+            0.9781249999999999
+          ],
+          "test_mean": 0.6900000000000001,
+          "test_std": 0.03905124837953329,
+          "train_mean": 0.971875,
+          "train_std": 0.004419417382415922
+        }
+      },
+      "summary_statistics": {}
+    },
+    "Semantic Narrative": {
+      "name": "Semantic Narrative",
+      "hypothesis": "Semantic narrative: embeddings + clustering add value",
+      "metadata": {
+        "narrative_name": "Semantic Narrative",
+        "hypothesis": "Understanding semantic meaning through embeddings improves predictions",
+        "expected_outcome": "Better than statistical baseline by capturing deeper meaning",
+        "domain_assumptions": [
+          "Documents have semantic structure",
+          "Similar meanings cluster together",
+          "Dense representations capture more than sparse TF-IDF"
+        ],
+        "step_rationales": {
+          "features": "Semantic embeddings and clustering capture meaning beyond word counts",
+          "scaler": "Normalize features for consistent scale",
+          "classifier": "Linear classifier on semantic features"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.625,
+            0.6875,
+            0.65,
+            0.7125,
+            0.6625
+          ],
+          "train_scores": [
+            0.865625,
+            0.915625,
+            0.9,
+            0.91875,
+            0.8875
+          ],
+          "test_mean": 0.6675,
+          "test_std": 0.030207614933986434,
+          "train_mean": 0.8975,
+          "train_std": 0.019505608167909052
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.6191016333938293,
+            0.6911270246423395,
+            0.6601527998586821,
+            0.7032415533128565,
+            0.6737197724039828
+          ],
+          "train_scores": [
+            0.8659729047094897,
+            0.9164437138976808,
+            0.9008496705683678,
+            0.9180494265659518,
+            0.8888932818373392
+          ],
+          "test_mean": 0.6694685567223381,
+          "test_std": 0.029159518712212663,
+          "train_mean": 0.8980417995157659,
+          "train_std": 0.019281748482724213
+        },
+        "precision_macro": {
+          "test_scores": [
+            0.6758164414414415,
+            0.7008216873706005,
+            0.6947046963946869,
+            0.7595520421607378,
+            0.697829131652661
+          ],
+          "train_scores": [
+            0.8664322174738841,
+            0.9181708318485351,
+            0.9035332211523365,
+            0.9178143322921805,
+            0.8916758416466944
+          ],
+          "test_mean": 0.7057447998040255,
+          "test_std": 0.028283227135236125,
+          "train_mean": 0.8995252888827261,
+          "train_std": 0.019261225815521088
+        },
+        "recall_macro": {
+          "test_scores": [
+            0.625,
+            0.6875,
+            0.6499999999999999,
+            0.7125,
+            0.6625
+          ],
+          "train_scores": [
+            0.8656250000000001,
+            0.9156250000000001,
+            0.8999999999999999,
+            0.9187500000000001,
+            0.8875
+          ],
+          "test_mean": 0.6675,
+          "test_std": 0.030207614933986448,
+          "train_mean": 0.8975000000000002,
+          "train_std": 0.019505608167909055
+        }
+      },
+      "summary_statistics": {}
+    },
+    "Domain Narrative": {
+      "name": "Domain Narrative",
+      "hypothesis": "Domain narrative: expert features are best",
+      "metadata": {
+        "narrative_name": "Domain Narrative",
+        "hypothesis": "Expert-crafted domain features (style + structure + topics) outperform generic approaches",
+        "expected_outcome": "Best performance by encoding domain expertise about text quality",
+        "domain_assumptions": [
+          "Good writing has consistent style",
+          "Clear structure matters",
+          "Topical coherence is important",
+          "Domain experts know what features matter"
+        ],
+        "step_rationales": {
+          "features": "Domain-specific features capture text quality through expert knowledge",
+          "scaler": "Normalize features for consistent scale",
+          "classifier": "Linear classifier on domain features"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.4375,
+            0.6,
+            0.6375,
+            0.4875,
+            0.4375
+          ],
+          "train_scores": [
+            0.609375,
+            0.625,
+            0.678125,
+            0.65,
+            0.659375
+          ],
+          "test_mean": 0.52,
+          "test_std": 0.08351646544245031,
+          "train_mean": 0.6443749999999999,
+          "train_std": 0.024478945034457675
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.4404821627647715,
+            0.5935686653771761,
+            0.6234294161123429,
+            0.49488216481156155,
+            0.4363378684807256
+          ],
+          "train_scores": [
+            0.6093931222947776,
+            0.6245395297235948,
+            0.6739627725812993,
+            0.6498746217491589,
+            0.654340725620394
+          ],
+          "test_mean": 0.5177400555093156,
+          "test_std": 0.0775084514497412,
+          "train_mean": 0.6424221543938449,
+          "train_std": 0.02281713142316264
+        },
+        "precision_macro": {
+          "test_scores": [
+            0.4508265856950068,
+            0.6014957264957265,
+            0.6225274725274725,
+            0.5065067693744164,
+            0.47782327586206896
+          ],
+          "train_scores": [
+            0.6107153987789744,
+            0.6326915332729286,
+            0.679038992851631,
+            0.652001274283883,
+            0.6632961144057327
+          ],
+          "test_mean": 0.5318359659909382,
+          "test_std": 0.06811591617761185,
+          "train_mean": 0.64754866271863,
+          "train_std": 0.023819624279525116
+        },
+        "recall_macro": {
+          "test_scores": [
+            0.4375,
+            0.6,
+            0.6375,
+            0.48750000000000004,
+            0.43749999999999994
+          ],
+          "train_scores": [
+            0.609375,
+            0.625,
+            0.678125,
+            0.6499999999999999,
+            0.659375
+          ],
+          "test_mean": 0.52,
+          "test_std": 0.08351646544245031,
+          "train_mean": 0.6443749999999999,
+          "train_std": 0.024478945034457668
+        }
+      },
+      "summary_statistics": {}
+    }
+  }
+}

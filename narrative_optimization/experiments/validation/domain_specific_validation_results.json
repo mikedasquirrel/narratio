@@ -1,0 +1,92 @@
+{
+  "domain_formulas": {
+    "character_domain": {
+      "domain": "character_domain",
+      "best_transformer": "statistical",
+      "best_accuracy": 1.0,
+      "alpha": 1.0,
+      "archetype": "Plot-Driven (content matters most)",
+      "all_results": {
+        "statistical": {
+          "accuracy": 1.0,
+          "n_features": 50
+        },
+        "nominative": {
+          "accuracy": 1.0,
+          "n_features": 51
+        },
+        "self_perception": {
+          "accuracy": 1.0,
+          "n_features": 21
+        },
+        "narrative_potential": {
+          "accuracy": 0.5,
+          "n_features": 35
+        }
+      },
+      "recommendation": "Use statistical transformer with \u03b1=1.000"
+    },
+    "plot_domain": {
+      "domain": "plot_domain",
+      "best_transformer": "statistical",
+      "best_accuracy": 0.8,
+      "alpha": 1.0,
+      "archetype": "Plot-Driven (content matters most)",
+      "all_results": {
+        "statistical": {
+          "accuracy": 0.8,
+          "n_features": 50
+        },
+        "nominative": {
+          "accuracy": 0.8,
+          "n_features": 51
+        },
+        "self_perception": {
+          "accuracy": 0.8,
+          "n_features": 21
+        },
+        "narrative_potential": {
+          "accuracy": 0.8,
+          "n_features": 35
+        }
+      },
+      "recommendation": "Use statistical transformer with \u03b1=1.000"
+    }
+  },
+  "meta_analysis": {
+    "n_domains_analyzed": 2,
+    "archetypes": {
+      "Plot-Driven (content matters most)": [
+        {
+          "domain": "character_domain",
+          "alpha": 1.0,
+          "transformer": "statistical",
+          "accuracy": 1.0
+        },
+        {
+          "domain": "plot_domain",
+          "alpha": 1.0,
+          "transformer": "statistical",
+          "accuracy": 0.8
+        }
+      ]
+    },
+    "alpha_groups": {
+      "plot_driven": [
+        "character_domain",
+        "plot_domain"
+      ],
+      "hybrid": [],
+      "character_driven": []
+    },
+    "transformer_groups": {
+      "statistical": [
+        "character_domain",
+        "plot_domain"
+      ]
+    },
+    "mean_alpha": 1.0,
+    "std_alpha": 0.0,
+    "interpretation": "Domains are predominantly PLOT-DRIVEN - statistical content dominates"
+  }
+}

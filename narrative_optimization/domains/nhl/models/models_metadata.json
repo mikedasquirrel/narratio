@@ -1,0 +1,10 @@
+{
+  "trained_date": "2025-11-20T11:49:39.250060",
+  "n_features": 1150,
+  "models": [
+    "random_forest",
+    "gradient_boosting",
+    "logistic",
+    "meta_ensemble"
+  ]
+}

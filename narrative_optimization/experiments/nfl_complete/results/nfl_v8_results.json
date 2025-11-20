@@ -1,0 +1,17 @@
+{
+  "version": "V8_optimized",
+  "r2_train": 0.8773705171697349,
+  "r2_test": 0.8830498714337451,
+  "accuracy": 0.9631578947368421,
+  "n_features": 15,
+  "improvement_over_v6": 0.006249871433745113,
+  "best_params": {
+    "learning_rate": 0.010211629700527601,
+    "max_depth": 2,
+    "max_features": 0.5775208083638721,
+    "min_samples_leaf": 6,
+    "min_samples_split": 26,
+    "n_estimators": 404,
+    "subsample": 0.6149392754996857
+  }
+}

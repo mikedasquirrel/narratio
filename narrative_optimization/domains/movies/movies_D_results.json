@@ -1,0 +1,11 @@
+{
+  "domain": "movies",
+  "n_movies": 1000,
+  "narrativity": 0.65,
+  "coupling": 0.5,
+  "r_measured": 0.07866004811584543,
+  "p_value": 0.012839360750119405,
+  "D_agency": 0.025564515637649766,
+  "efficiency": 0.03933002405792271,
+  "passes_threshold": false
+}

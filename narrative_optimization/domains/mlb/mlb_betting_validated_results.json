@@ -1,0 +1,18 @@
+{
+  "test_accuracy": 0.9808725553406404,
+  "confident_predictions": 4491,
+  "confidence_threshold": 0.7,
+  "roi_results": {
+    "total_bets": 4491,
+    "wins": 4456,
+    "losses": 35,
+    "win_rate": 0.9922066354932086,
+    "total_wagered": 449100.0,
+    "net_profit": -3500.0,
+    "roi_pct": -0.779336450679136,
+    "bet_amount": 100
+  },
+  "p_value": 0.0,
+  "significant": true,
+  "uses_real_odds": true
+}

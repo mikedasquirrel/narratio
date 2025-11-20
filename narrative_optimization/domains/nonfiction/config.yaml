@@ -1,0 +1,46 @@
+domain: nonfiction
+type: literature
+narrativity:
+  structural: 0.60  # More constrained by facts
+  temporal: 0.65    # Chronological or thematic organization
+  agency: 0.55      # Author's perspective matters
+  interpretive: 0.75 # Subjective quality judgment
+  format: 0.50      # Book format
+data:
+  text_fields:
+    - full_narrative
+    - description
+  outcome_field: success_score
+  context_features:
+    - author_name
+    - key_figures
+    - topics
+  name_field: author_name
+  nominative_fields:
+    - author_name
+    - book_title
+    - key_figures
+    - all_nominatives
+outcome_type: continuous
+transformer_augmentation:
+  - expertise
+  - authenticity
+  - framing
+  - information_theory
+custom_validators: []
+description: Nonfiction domain with author expertise and factual constraints
+sample_size: null
+pi: 0.61  # Calculated: 0.30*0.60 + 0.20*0.65 + 0.25*0.55 + 0.15*0.75 + 0.10*0.50
+perspectives:
+  - reader
+  - expert
+  - critic
+quality_methods:
+  - weighted_mean
+  - ensemble
+scales:
+  - micro
+  - meso
+  - macro
+aggregation_method: importance_weighted
+

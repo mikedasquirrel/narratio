@@ -1,0 +1,176 @@
+# Scripture & Parables Domain Configuration  
+# π = 0.81 (High Narrativity)
+# Teaching stories with clear moral lessons
+
+domain:
+  name: "Scripture & Parables"
+  type: "didactic_narrative"
+  subtype: "religious_teaching"
+  
+narrativity:
+  components:
+    structural: 0.85    # Simple, clear structure
+    temporal: 0.80      # Sequential teaching
+    agency: 0.75        # Character choices matter
+    interpretive: 0.88  # Multiple layers of meaning
+    format: 0.65        # Short form, flexible
+  
+  calculated_pi: 0.81  # 0.30×0.85 + 0.20×0.80 + 0.25×0.75 + 0.15×0.88 + 0.10×0.65
+  
+  pi_by_tradition:
+    biblical: 0.83
+    buddhist: 0.80
+    sufi: 0.82
+    hasidic: 0.79
+    zen: 0.75           # Koans more abstract
+
+expected_forces:
+  theta: 0.40          # Moderate awareness (lessons conscious)
+  lambda: 0.60         # Moderate constraints (teaching format)
+  ta_marbuta: 0.65     # Moderate nominatives
+  
+expected_performance:
+  r_squared: 0.70      # 65-75% range
+  correlation: 0.84
+  moral_clarity: 0.85  # High expected
+  
+archetype_requirements:
+  # Parable-Specific Structure
+  parable_completeness: 0.80
+  parable_elements:
+    - setting                      # Context established
+    - crisis                       # Problem presented
+    - resolution                   # Outcome shown
+    - moral_lesson                 # Teaching explicit or implicit
+  
+  # Character Archetypes (simplified in parables)
+  archetype_clarity: 0.70          # Moderate (types, not individuals)
+  character_types:
+    - teacher                      # Wise figure
+    - student                      # Learner
+    - fool                         # Negative example
+    - seeker                       # Spiritual quester
+  
+  # Moral Framework
+  moral_clarity: 0.85              # High (teaching goal)
+  allegorical_depth: 0.75          # Multiple meanings
+  universal_truth: 0.80            # Applies broadly
+  
+  # Teaching Effectiveness
+  memorability: 0.80               # Easy to remember
+  applicability: 0.85              # Practical wisdom
+  
+data:
+  target_samples: 500              # 400-600 range
+  
+  traditions:
+    biblical: 120                  # Gospels + parables
+    buddhist_jataka: 150           # 547 Jataka tales subset
+    sufi: 80                       # Teaching stories
+    hasidic: 60                    # Jewish tales
+    zen_koans: 50                  # 1,700 koans subset
+    aesops_fables: 40              # Classic fables
+  
+  sources:
+    - "Bible (multiple translations)"
+    - "Jataka Tales compilations"
+    - "Sufi teaching story collections"
+    - "Hasidic tale anthologies"
+    - "Zen koan collections"
+    - "Aesop's Fables"
+  
+  required_fields:
+    - title
+    - tradition                    # Religious/cultural origin
+    - full_text
+    - explicit_moral               # If stated
+    - implicit_lesson              # If unstated
+    - teacher_figure               # Who tells it
+    - cultural_context
+  
+  outcome_field: teaching_effectiveness
+  outcome_measures:
+    - memorability_score           # How well remembered
+    - transmission_success         # Still taught
+    - cross_cultural_adoption      # Used in other traditions
+    - modern_citations             # References in teaching
+    - moral_clarity_rating
+  
+narrative_requirements:
+  min_length_words: 100            # Very short possible
+  max_length_words: 5000           # Usually brief
+  
+  elements:
+    - moral_lesson
+    - character_types              # Often symbolic
+    - clear_resolution
+    - memorable_imagery
+    - practical_wisdom
+
+transformer_pipeline:
+  - scripture_parable              # Domain-specific
+  - character_archetype            # Simplified types
+  - plot_archetype                 # Teaching structures
+  - thematic_archetype             # Moral frameworks
+  - nominative                     # Symbolic names
+  - emotional_resonance
+  - cognitive_fluency              # Easy to understand
+
+validation_hypotheses:
+  - "Parable completeness predicts memorability (R²>0.60)"
+  - "Moral clarity predicts transmission success"
+  - "Allegorical depth enables cross-cultural adoption"
+  - "Biblical parables have highest structural completeness"
+  - "Zen koans have lowest π (more abstract)"
+  - "Universal truths transcend cultural context"
+
+domain_xi:
+  # Parable Ξ (golden narratio) - Perfect teaching story
+  parable_xi:
+    parable_completeness: 0.90
+    moral_clarity: 0.88
+    allegorical_depth: 0.75
+    memorability: 0.85
+    universal_truth: 0.80
+    practical_wisdom: 0.85
+  
+  # By tradition
+  biblical_xi:
+    moral_clarity: 0.90
+    allegorical_layers: 0.80
+    practical_application: 0.85
+  
+  buddhist_xi:
+    compassion_teaching: 0.90
+    karma_illustration: 0.85
+    spiritual_insight: 0.88
+  
+  sufi_xi:
+    mystical_depth: 0.85
+    paradox_resolution: 0.75
+    love_divine: 0.80
+  
+  zen_xi:
+    paradox: 0.90
+    suddenness: 0.85
+    non_conceptual: 0.80
+
+perspectives:
+  - theological
+  - pedagogical
+  - psychological
+  - comparative_religion
+
+quality_methods:
+  - teaching_effectiveness
+  - memorability
+  - cross_cultural_resonance
+  - moral_clarity
+
+scales:
+  - micro                          # Single lesson
+  - meso                           # Parable cycle
+  - macro                          # Tradition wisdom
+
+aggregation_method: teaching_weighted
+

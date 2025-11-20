@@ -1,0 +1,448 @@
+{
+  "total_fights": 8,
+  "date_range": "2020-2024",
+  "fights": [
+    {
+      "fight_id": 1,
+      "date": "2024-05-18",
+      "fighter1": {
+        "name": "Tyson Fury",
+        "nationality": "British",
+        "weight_class": "Heavyweight",
+        "record": "34-0-1",
+        "style": "Boxer-puncher, unorthodox movement",
+        "narrative": "The Gypsy King, comeback story, mental health advocate",
+        "achievements": [
+          "WBC Heavyweight Champion",
+          "Lineal Champion"
+        ],
+        "reputation": 0.95
+      },
+      "fighter2": {
+        "name": "Oleksandr Usyk",
+        "nationality": "Ukrainian",
+        "weight_class": "Heavyweight",
+        "record": "21-0-0",
+        "style": "Technical boxer, exceptional footwork",
+        "narrative": "Undisputed cruiserweight, Olympic gold medalist",
+        "achievements": [
+          "Undisputed Heavyweight Champion",
+          "Olympic Gold"
+        ],
+        "reputation": 0.93
+      },
+      "venue": "Kingdom Arena, Riyadh",
+      "promotion": "Top Rank / Queensberry",
+      "title": "Undisputed Heavyweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 12,
+      "method": "Split Decision",
+      "winner": "Oleksandr Usyk",
+      "loser": "Tyson Fury",
+      "significance": "Undisputed heavyweight title, historic fight",
+      "narrative": "Tyson Fury (British, Heavyweight) faces Oleksandr Usyk (Ukrainian, Heavyweight) in a Undisputed Heavyweight Championship at Kingdom Arena, Riyadh. Tyson Fury, known as 'The Gypsy King, comeback story, mental health advocate', brings a record of 34-0-1 and achievements including WBC Heavyweight Champion, Lineal Champion. His style is characterized as Boxer-puncher, unorthodox movement. Oleksandr Usyk, Undisputed cruiserweight, Olympic gold medalist, enters with a 21-0-0 record and credentials including Undisputed Heavyweight Champion, Olympic Gold. He is known for Technical boxer, exceptional footwork. This fight represents Undisputed heavyweight title, historic fight. The bout is promoted by Top Rank / Queensberry and scheduled for 12 rounds. The stylistic matchup pits Boxer-puncher, unorthodox movement against Technical boxer, exceptional footwork, creating an intriguing clash of approaches. Tyson Fury enters as the more established fighter with higher reputation, while Oleksandr Usyk looks to prove himself on the biggest stage.",
+      "outcome": 0
+    },
+    {
+      "fight_id": 2,
+      "date": "2023-07-29",
+      "fighter1": {
+        "name": "Terence Crawford",
+        "nationality": "American",
+        "weight_class": "Welterweight",
+        "record": "40-0-0",
+        "style": "Switch-hitter, technical master",
+        "narrative": "Undisputed welterweight, pound-for-pound #1",
+        "achievements": [
+          "Undisputed Welterweight",
+          "P4P #1"
+        ],
+        "reputation": 0.92
+      },
+      "fighter2": {
+        "name": "Errol Spence Jr",
+        "nationality": "American",
+        "weight_class": "Welterweight",
+        "record": "28-1-0",
+        "style": "Pressure fighter, body puncher",
+        "narrative": "The Truth, unified champion, Crawford rivalry",
+        "achievements": [
+          "Former Unified Welterweight",
+          "22 KOs"
+        ],
+        "reputation": 0.89
+      },
+      "venue": "T-Mobile Arena, Las Vegas",
+      "promotion": "Premier Boxing Champions",
+      "title": "Undisputed Welterweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 9,
+      "method": "Technical Knockout",
+      "winner": "Terence Crawford",
+      "loser": "Errol Spence Jr",
+      "significance": "Undisputed welterweight, P4P #1 vs #2",
+      "narrative": "Terence Crawford (American, Welterweight) faces Errol Spence Jr (American, Welterweight) in a Undisputed Welterweight Championship at T-Mobile Arena, Las Vegas. Terence Crawford, known as 'Undisputed welterweight, pound-for-pound #1', brings a record of 40-0-0 and achievements including Undisputed Welterweight, P4P #1. His style is characterized as Switch-hitter, technical master. Errol Spence Jr, The Truth, unified champion, Crawford rivalry, enters with a 28-1-0 record and credentials including Former Unified Welterweight, 22 KOs. He is known for Pressure fighter, body puncher. This fight represents Undisputed welterweight, P4P #1 vs #2. The bout is promoted by Premier Boxing Champions and scheduled for 12 rounds. The stylistic matchup pits Switch-hitter, technical master against Pressure fighter, body puncher, creating an intriguing clash of approaches. Terence Crawford enters as the more established fighter with higher reputation, while Errol Spence Jr looks to prove himself on the biggest stage.",
+      "outcome": 1
+    },
+    {
+      "fight_id": 3,
+      "date": "2023-04-22",
+      "fighter1": {
+        "name": "Gervonta Davis",
+        "nationality": "American",
+        "weight_class": "Lightweight",
+        "record": "29-0-0",
+        "style": "Power puncher, explosive finisher",
+        "narrative": "Tank, knockout artist, rising star",
+        "achievements": [
+          "Lightweight Champion",
+          "28 KOs"
+        ],
+        "reputation": 0.87
+      },
+      "fighter2": {
+        "name": "Ryan Garcia",
+        "nationality": "American",
+        "weight_class": "Lightweight",
+        "record": "24-1-0",
+        "style": "Speed, power, social media star",
+        "narrative": "KingRy, social media sensation, comeback story",
+        "achievements": [
+          "Lightweight contender",
+          "20 KOs"
+        ],
+        "reputation": 0.85
+      },
+      "venue": "T-Mobile Arena, Las Vegas",
+      "promotion": "Showtime / DAZN",
+      "title": "Lightweight Superfight",
+      "rounds_scheduled": 12,
+      "round_finished": 7,
+      "method": "Knockout",
+      "winner": "Gervonta Davis",
+      "loser": "Ryan Garcia",
+      "significance": "Social media stars, massive PPV",
+      "narrative": "Gervonta Davis (American, Lightweight) faces Ryan Garcia (American, Lightweight) in a Lightweight Superfight at T-Mobile Arena, Las Vegas. Gervonta Davis, known as 'Tank, knockout artist, rising star', brings a record of 29-0-0 and achievements including Lightweight Champion, 28 KOs. His style is characterized as Power puncher, explosive finisher. Ryan Garcia, KingRy, social media sensation, comeback story, enters with a 24-1-0 record and credentials including Lightweight contender, 20 KOs. He is known for Speed, power, social media star. This fight represents Social media stars, massive PPV. The bout is promoted by Showtime / DAZN and scheduled for 12 rounds. The stylistic matchup pits Power puncher, explosive finisher against Speed, power, social media star, creating an intriguing clash of approaches. Gervonta Davis enters as the more established fighter with higher reputation, while Ryan Garcia looks to prove himself on the biggest stage.",
+      "outcome": 1
+    },
+    {
+      "fight_id": 4,
+      "date": "2022-12-03",
+      "fighter1": {
+        "name": "Tyson Fury",
+        "nationality": "British",
+        "weight_class": "Heavyweight",
+        "record": "34-0-1",
+        "style": "Boxer-puncher, unorthodox movement",
+        "narrative": "The Gypsy King, comeback story, mental health advocate",
+        "achievements": [
+          "WBC Heavyweight Champion",
+          "Lineal Champion"
+        ],
+        "reputation": 0.95
+      },
+      "fighter2": {
+        "name": "Derek Chisora",
+        "nationality": "Unknown",
+        "weight_class": "Unknown",
+        "record": "0-0-0",
+        "style": "Unknown",
+        "narrative": "Unknown fighter",
+        "achievements": [],
+        "reputation": 0.5
+      },
+      "venue": "Tottenham Hotspur Stadium, London",
+      "promotion": "Queensberry",
+      "title": "WBC Heavyweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 10,
+      "method": "Technical Knockout",
+      "winner": "Tyson Fury",
+      "loser": "Derek Chisora",
+      "significance": "Fury title defense, trilogy fight",
+      "narrative": "Tyson Fury (British, Heavyweight) faces Derek Chisora (Unknown, Unknown) in a WBC Heavyweight Championship at Tottenham Hotspur Stadium, London. Tyson Fury, known as 'The Gypsy King, comeback story, mental health advocate', brings a record of 34-0-1 and achievements including WBC Heavyweight Champion, Lineal Champion. His style is characterized as Boxer-puncher, unorthodox movement. This fight represents Fury title defense, trilogy fight. The bout is promoted by Queensberry and scheduled for 12 rounds. The stylistic matchup pits Boxer-puncher, unorthodox movement against Unknown, creating an intriguing clash of approaches. Tyson Fury enters as the more established fighter with higher reputation, while Derek Chisora looks to prove himself on the biggest stage.",
+      "outcome": 1
+    },
+    {
+      "fight_id": 5,
+      "date": "2022-08-20",
+      "fighter1": {
+        "name": "Oleksandr Usyk",
+        "nationality": "Ukrainian",
+        "weight_class": "Heavyweight",
+        "record": "21-0-0",
+        "style": "Technical boxer, exceptional footwork",
+        "narrative": "Undisputed cruiserweight, Olympic gold medalist",
+        "achievements": [
+          "Undisputed Heavyweight Champion",
+          "Olympic Gold"
+        ],
+        "reputation": 0.93
+      },
+      "fighter2": {
+        "name": "Anthony Joshua",
+        "nationality": "British",
+        "weight_class": "Heavyweight",
+        "record": "28-3-0",
+        "style": "Athletic boxer, combination puncher",
+        "narrative": "AJ, Olympic gold medalist, two-time champion",
+        "achievements": [
+          "Former Unified Champion",
+          "Olympic Gold"
+        ],
+        "reputation": 0.9
+      },
+      "venue": "King Abdullah Sports City, Jeddah",
+      "promotion": "Matchroom / K2",
+      "title": "Unified Heavyweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 12,
+      "method": "Unanimous Decision",
+      "winner": "Anthony Joshua",
+      "loser": "Oleksandr Usyk",
+      "significance": "Rematch, Usyk repeat victory",
+      "narrative": "Oleksandr Usyk (Ukrainian, Heavyweight) faces Anthony Joshua (British, Heavyweight) in a Unified Heavyweight Championship at King Abdullah Sports City, Jeddah. Oleksandr Usyk, known as 'Undisputed cruiserweight, Olympic gold medalist', brings a record of 21-0-0 and achievements including Undisputed Heavyweight Champion, Olympic Gold. His style is characterized as Technical boxer, exceptional footwork. Anthony Joshua, AJ, Olympic gold medalist, two-time champion, enters with a 28-3-0 record and credentials including Former Unified Champion, Olympic Gold. He is known for Athletic boxer, combination puncher. This fight represents Rematch, Usyk repeat victory. The bout is promoted by Matchroom / K2 and scheduled for 12 rounds. The stylistic matchup pits Technical boxer, exceptional footwork against Athletic boxer, combination puncher, creating an intriguing clash of approaches. Oleksandr Usyk enters as the more established fighter with higher reputation, while Anthony Joshua looks to prove himself on the biggest stage.",
+      "outcome": 0
+    },
+    {
+      "fight_id": 6,
+      "date": "2021-10-09",
+      "fighter1": {
+        "name": "Tyson Fury",
+        "nationality": "British",
+        "weight_class": "Heavyweight",
+        "record": "34-0-1",
+        "style": "Boxer-puncher, unorthodox movement",
+        "narrative": "The Gypsy King, comeback story, mental health advocate",
+        "achievements": [
+          "WBC Heavyweight Champion",
+          "Lineal Champion"
+        ],
+        "reputation": 0.95
+      },
+      "fighter2": {
+        "name": "Deontay Wilder",
+        "nationality": "American",
+        "weight_class": "Heavyweight",
+        "record": "43-3-1",
+        "style": "Power puncher, devastating right hand",
+        "narrative": "Bronze Bomber, knockout artist, trilogy with Fury",
+        "achievements": [
+          "Former WBC Champion",
+          "42 KOs"
+        ],
+        "reputation": 0.88
+      },
+      "venue": "T-Mobile Arena, Las Vegas",
+      "promotion": "Top Rank / PBC",
+      "title": "WBC Heavyweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 11,
+      "method": "Knockout",
+      "winner": "Tyson Fury",
+      "loser": "Deontay Wilder",
+      "significance": "Trilogy finale, dramatic knockout",
+      "narrative": "Tyson Fury (British, Heavyweight) faces Deontay Wilder (American, Heavyweight) in a WBC Heavyweight Championship at T-Mobile Arena, Las Vegas. Tyson Fury, known as 'The Gypsy King, comeback story, mental health advocate', brings a record of 34-0-1 and achievements including WBC Heavyweight Champion, Lineal Champion. His style is characterized as Boxer-puncher, unorthodox movement. Deontay Wilder, Bronze Bomber, knockout artist, trilogy with Fury, enters with a 43-3-1 record and credentials including Former WBC Champion, 42 KOs. He is known for Power puncher, devastating right hand. This fight represents Trilogy finale, dramatic knockout. The bout is promoted by Top Rank / PBC and scheduled for 12 rounds. The stylistic matchup pits Boxer-puncher, unorthodox movement against Power puncher, devastating right hand, creating an intriguing clash of approaches. Tyson Fury enters as the more established fighter with higher reputation, while Deontay Wilder looks to prove himself on the biggest stage.",
+      "outcome": 1
+    },
+    {
+      "fight_id": 7,
+      "date": "2021-05-08",
+      "fighter1": {
+        "name": "Canelo Alvarez",
+        "nationality": "Mexican",
+        "weight_class": "Super Middleweight",
+        "record": "60-2-2",
+        "style": "Power puncher, body attack specialist",
+        "narrative": "Mexican superstar, four-division champion",
+        "achievements": [
+          "Undisputed Super Middleweight",
+          "4-division champ"
+        ],
+        "reputation": 0.94
+      },
+      "fighter2": {
+        "name": "Billy Joe Saunders",
+        "nationality": "Unknown",
+        "weight_class": "Unknown",
+        "record": "0-0-0",
+        "style": "Unknown",
+        "narrative": "Unknown fighter",
+        "achievements": [],
+        "reputation": 0.5
+      },
+      "venue": "AT&T Stadium, Arlington",
+      "promotion": "Matchroom / DAZN",
+      "title": "Unified Super Middleweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 8,
+      "method": "Technical Knockout",
+      "winner": "Canelo Alvarez",
+      "loser": "Billy Joe Saunders",
+      "significance": "Canelo unification, eye injury",
+      "narrative": "Canelo Alvarez (Mexican, Super Middleweight) faces Billy Joe Saunders (Unknown, Unknown) in a Unified Super Middleweight Championship at AT&T Stadium, Arlington. Canelo Alvarez, known as 'Mexican superstar, four-division champion', brings a record of 60-2-2 and achievements including Undisputed Super Middleweight, 4-division champ. His style is characterized as Power puncher, body attack specialist. This fight represents Canelo unification, eye injury. The bout is promoted by Matchroom / DAZN and scheduled for 12 rounds. The stylistic matchup pits Power puncher, body attack specialist against Unknown, creating an intriguing clash of approaches. Canelo Alvarez enters as the more established fighter with higher reputation, while Billy Joe Saunders looks to prove himself on the biggest stage.",
+      "outcome": 1
+    },
+    {
+      "fight_id": 8,
+      "date": "2020-12-19",
+      "fighter1": {
+        "name": "Canelo Alvarez",
+        "nationality": "Mexican",
+        "weight_class": "Super Middleweight",
+        "record": "60-2-2",
+        "style": "Power puncher, body attack specialist",
+        "narrative": "Mexican superstar, four-division champion",
+        "achievements": [
+          "Undisputed Super Middleweight",
+          "4-division champ"
+        ],
+        "reputation": 0.94
+      },
+      "fighter2": {
+        "name": "Callum Smith",
+        "nationality": "Unknown",
+        "weight_class": "Unknown",
+        "record": "0-0-0",
+        "style": "Unknown",
+        "narrative": "Unknown fighter",
+        "achievements": [],
+        "reputation": 0.5
+      },
+      "venue": "Alamodome, San Antonio",
+      "promotion": "Matchroom / DAZN",
+      "title": "WBA/WBC Super Middleweight Championship",
+      "rounds_scheduled": 12,
+      "round_finished": 12,
+      "method": "Unanimous Decision",
+      "winner": "Canelo Alvarez",
+      "loser": "Callum Smith",
+      "significance": "Canelo super middleweight debut",
+      "narrative": "Canelo Alvarez (Mexican, Super Middleweight) faces Callum Smith (Unknown, Unknown) in a WBA/WBC Super Middleweight Championship at Alamodome, San Antonio. Canelo Alvarez, known as 'Mexican superstar, four-division champion', brings a record of 60-2-2 and achievements including Undisputed Super Middleweight, 4-division champ. His style is characterized as Power puncher, body attack specialist. This fight represents Canelo super middleweight debut. The bout is promoted by Matchroom / DAZN and scheduled for 12 rounds. The stylistic matchup pits Power puncher, body attack specialist against Unknown, creating an intriguing clash of approaches. Canelo Alvarez enters as the more established fighter with higher reputation, while Callum Smith looks to prove himself on the biggest stage.",
+      "outcome": 1
+    }
+  ],
+  "fighters": {
+    "Tyson Fury": {
+      "nationality": "British",
+      "weight_class": "Heavyweight",
+      "record": "34-0-1",
+      "style": "Boxer-puncher, unorthodox movement",
+      "narrative": "The Gypsy King, comeback story, mental health advocate",
+      "achievements": [
+        "WBC Heavyweight Champion",
+        "Lineal Champion"
+      ],
+      "reputation": 0.95
+    },
+    "Oleksandr Usyk": {
+      "nationality": "Ukrainian",
+      "weight_class": "Heavyweight",
+      "record": "21-0-0",
+      "style": "Technical boxer, exceptional footwork",
+      "narrative": "Undisputed cruiserweight, Olympic gold medalist",
+      "achievements": [
+        "Undisputed Heavyweight Champion",
+        "Olympic Gold"
+      ],
+      "reputation": 0.93
+    },
+    "Canelo Alvarez": {
+      "nationality": "Mexican",
+      "weight_class": "Super Middleweight",
+      "record": "60-2-2",
+      "style": "Power puncher, body attack specialist",
+      "narrative": "Mexican superstar, four-division champion",
+      "achievements": [
+        "Undisputed Super Middleweight",
+        "4-division champ"
+      ],
+      "reputation": 0.94
+    },
+    "Terence Crawford": {
+      "nationality": "American",
+      "weight_class": "Welterweight",
+      "record": "40-0-0",
+      "style": "Switch-hitter, technical master",
+      "narrative": "Undisputed welterweight, pound-for-pound #1",
+      "achievements": [
+        "Undisputed Welterweight",
+        "P4P #1"
+      ],
+      "reputation": 0.92
+    },
+    "Deontay Wilder": {
+      "nationality": "American",
+      "weight_class": "Heavyweight",
+      "record": "43-3-1",
+      "style": "Power puncher, devastating right hand",
+      "narrative": "Bronze Bomber, knockout artist, trilogy with Fury",
+      "achievements": [
+        "Former WBC Champion",
+        "42 KOs"
+      ],
+      "reputation": 0.88
+    },
+    "Anthony Joshua": {
+      "nationality": "British",
+      "weight_class": "Heavyweight",
+      "record": "28-3-0",
+      "style": "Athletic boxer, combination puncher",
+      "narrative": "AJ, Olympic gold medalist, two-time champion",
+      "achievements": [
+        "Former Unified Champion",
+        "Olympic Gold"
+      ],
+      "reputation": 0.9
+    },
+    "Gervonta Davis": {
+      "nationality": "American",
+      "weight_class": "Lightweight",
+      "record": "29-0-0",
+      "style": "Power puncher, explosive finisher",
+      "narrative": "Tank, knockout artist, rising star",
+      "achievements": [
+        "Lightweight Champion",
+        "28 KOs"
+      ],
+      "reputation": 0.87
+    },
+    "Ryan Garcia": {
+      "nationality": "American",
+      "weight_class": "Lightweight",
+      "record": "24-1-0",
+      "style": "Speed, power, social media star",
+      "narrative": "KingRy, social media sensation, comeback story",
+      "achievements": [
+        "Lightweight contender",
+        "20 KOs"
+      ],
+      "reputation": 0.85
+    },
+    "Naoya Inoue": {
+      "nationality": "Japanese",
+      "weight_class": "Bantamweight",
+      "record": "26-0-0",
+      "style": "Power puncher, body attack",
+      "narrative": "The Monster, undisputed champion, pound-for-pound elite",
+      "achievements": [
+        "Undisputed Bantamweight",
+        "P4P #2"
+      ],
+      "reputation": 0.91
+    },
+    "Errol Spence Jr": {
+      "nationality": "American",
+      "weight_class": "Welterweight",
+      "record": "28-1-0",
+      "style": "Pressure fighter, body puncher",
+      "narrative": "The Truth, unified champion, Crawford rivalry",
+      "achievements": [
+        "Former Unified Welterweight",
+        "22 KOs"
+      ],
+      "reputation": 0.89
+    }
+  },
+  "collection_date": "2025-11-12T16:41:40.809263"
+}

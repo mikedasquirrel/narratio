@@ -1,0 +1,32 @@
+domain: oscars
+type: entertainment
+narrativity:
+  structural: 0.8250000000000001
+  temporal: 0.675
+  agency: 0.6000000000000001
+  interpretive: 0.8999999999999999
+  format: 0.675
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.735
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

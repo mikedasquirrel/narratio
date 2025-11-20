@@ -1,0 +1,81 @@
+{
+  "narrativity": {
+    "pi": 0.9744999999999999,
+    "structural": 0.99,
+    "temporal": 0.98,
+    "agency": 0.95,
+    "interpretive": 0.98,
+    "format": 0.97
+  },
+  "forces": {
+    "lambda_limit": 0.05,
+    "psi_witness": 0.9,
+    "nu_narrative": 0.95
+  },
+  "prestige": {
+    "arch_regular": -6.938893903907228e-17,
+    "arch_prestige": 1.8,
+    "equation_type": "prestige",
+    "predicted_arch": 1.8
+  },
+  "empirical": {
+    "correlation": 0.1387938232491435,
+    "p_value": 0.02822422919945211,
+    "r2_full": 0.0362310708098148,
+    "r2_baseline": 0.030794581735528515,
+    "arch_observed": 0.005436489074286288,
+    "narrative_coefficient": 1122631.6127559112,
+    "sample_size": 250
+  },
+  "kayfabe": {
+    "high_quality_engagement": 3260549.1578947366,
+    "low_quality_engagement": 2991844.4,
+    "quality_effect_pct": 8.981241066371524,
+    "kayfabe_confirmed": true
+  },
+  "leverage": {
+    "leverage": 1.8471010774756287,
+    "threshold": 0.5,
+    "passes": true
+  },
+  "spectrum": {
+    "spectrum_position": "highest",
+    "comparison": {
+      "Lottery": {
+        "pi": 0.04,
+        "arch": 0.0,
+        "type": "Pure Random"
+      },
+      "Aviation": {
+        "pi": 0.12,
+        "arch": 0.0,
+        "type": "Engineering"
+      },
+      "NBA": {
+        "pi": 0.49,
+        "arch": 0.018,
+        "type": "Physical Skill"
+      },
+      "Crypto": {
+        "pi": 0.76,
+        "arch": 0.423,
+        "type": "Speculation"
+      },
+      "Housing": {
+        "pi": 0.92,
+        "arch": 0.42,
+        "type": "Pure Nominative"
+      },
+      "Self-Rated": {
+        "pi": 0.95,
+        "arch": 0.564,
+        "type": "Identity"
+      },
+      "WWE": {
+        "pi": 0.9744999999999999,
+        "arch": 1.8,
+        "type": "Prestige/Constructed"
+      }
+    }
+  }
+}

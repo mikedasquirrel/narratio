@@ -1,0 +1,32 @@
+domain: ufc
+type: sports_individual
+narrativity:
+  structural: 0.6498
+  temporal: 0.8664
+  agency: 0.6498
+  interpretive: 0.5054
+  format: 0.4332
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: binary
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.6497999999999999
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

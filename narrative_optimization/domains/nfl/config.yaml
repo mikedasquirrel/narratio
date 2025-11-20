@@ -1,0 +1,32 @@
+domain: nfl
+type: sports_team
+narrativity:
+  structural: 0.5850000000000001
+  temporal: 0.78
+  agency: 0.5850000000000001
+  interpretive: 0.45499999999999996
+  format: 0.39
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: binary
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.5850000000000001
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

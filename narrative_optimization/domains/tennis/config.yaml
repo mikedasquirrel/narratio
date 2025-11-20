@@ -1,0 +1,32 @@
+domain: tennis
+type: sports_individual
+narrativity:
+  structural: 0.675
+  temporal: 0.8999999999999999
+  agency: 0.675
+  interpretive: 0.5249999999999999
+  format: 0.44999999999999996
+data:
+  text_fields:
+  - narrative
+  outcome_field: player1_wins
+  context_features: null
+  name_field: null
+outcome_type: binary
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.675
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

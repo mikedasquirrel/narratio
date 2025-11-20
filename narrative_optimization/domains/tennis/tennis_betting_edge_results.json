@@ -1,0 +1,25 @@
+{
+  "models": {
+    "narrative_only": {
+      "accuracy": 0.7073333333333334,
+      "roi_pct": 49.49066666666667
+    },
+    "odds_only": {
+      "accuracy": 0.544,
+      "roi_pct": -22.038666666666668
+    },
+    "optimized": {
+      "accuracy": 0.9846666666666667,
+      "roi_pct": 127.65533333333335
+    }
+  },
+  "roi_simulation": {
+    "bet_amount": 100,
+    "n_bets": 1500,
+    "total_wagered": 150000,
+    "narrative_return": 74236.0,
+    "odds_return": -33058.0,
+    "optimized_return": 191483.0
+  },
+  "target_achieved": true
+}

@@ -1,0 +1,32 @@
+domain: ncaa
+type: sports_team
+narrativity:
+  structural: 0.45
+  temporal: 0.6
+  agency: 0.45
+  interpretive: 0.35
+  format: 0.3
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.44999999999999996
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

@@ -1,0 +1,417 @@
+{
+  "domain": "oscars",
+  "dataset": {
+    "total_films": 45,
+    "total_winners": 5,
+    "train_size": 36,
+    "test_size": 9,
+    "year_range": [
+      2020,
+      2024
+    ],
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "narrativity": 0.85,
+  "alpha_analysis": {
+    "optimal_alpha": 0.0,
+    "optimal_score": 1.0,
+    "alpha_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001,
+      1.0
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "interpretation": "Highly narrative-driven (star power, artistry, prestige dominate)"
+  },
+  "competitive_model": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.8888888888888888,
+    "train_auc": 1.0,
+    "test_auc": 0.0
+  },
+  "bridge_results": {
+    "auc_narrative_train": 1.0,
+    "auc_narrative_test": 0.0,
+    "auc_baseline_estimate": 0.58,
+    "D_train": 0.42000000000000004,
+    "D_test": -0.58
+  },
+  "feature_importance": {
+    "top_features": [
+      {
+        "name": "narrative_potential_3",
+        "coefficient": 0.25946904425204576,
+        "abs_coefficient": 0.25946904425204576
+      },
+      {
+        "name": "statistical_21",
+        "coefficient": 0.20132358904468267,
+        "abs_coefficient": 0.20132358904468267
+      },
+      {
+        "name": "linguistic_1",
+        "coefficient": 0.19244261400298054,
+        "abs_coefficient": 0.19244261400298054
+      },
+      {
+        "name": "narrative_potential_5",
+        "coefficient": 0.18564388599158413,
+        "abs_coefficient": 0.18564388599158413
+      },
+      {
+        "name": "statistical_75",
+        "coefficient": 0.1768522441414771,
+        "abs_coefficient": 0.1768522441414771
+      },
+      {
+        "name": "statistical_19",
+        "coefficient": 0.17172083743973565,
+        "abs_coefficient": 0.17172083743973565
+      },
+      {
+        "name": "nominative_11",
+        "coefficient": -0.17107027483548204,
+        "abs_coefficient": 0.17107027483548204
+      },
+      {
+        "name": "statistical_59",
+        "coefficient": 0.16913993098404873,
+        "abs_coefficient": 0.16913993098404873
+      },
+      {
+        "name": "nominative_7",
+        "coefficient": 0.1619250239150729,
+        "abs_coefficient": 0.1619250239150729
+      },
+      {
+        "name": "statistical_48",
+        "coefficient": 0.1527288742074402,
+        "abs_coefficient": 0.1527288742074402
+      },
+      {
+        "name": "statistical_14",
+        "coefficient": 0.15224058738107504,
+        "abs_coefficient": 0.15224058738107504
+      },
+      {
+        "name": "linguistic_15",
+        "coefficient": 0.14876820611966815,
+        "abs_coefficient": 0.14876820611966815
+      },
+      {
+        "name": "statistical_42",
+        "coefficient": 0.14374579074533433,
+        "abs_coefficient": 0.14374579074533433
+      },
+      {
+        "name": "statistical_65",
+        "coefficient": 0.12919072458981165,
+        "abs_coefficient": 0.12919072458981165
+      },
+      {
+        "name": "nominative_16",
+        "coefficient": 0.12831640635570854,
+        "abs_coefficient": 0.12831640635570854
+      },
+      {
+        "name": "nominative_2",
+        "coefficient": 0.1259735791865932,
+        "abs_coefficient": 0.1259735791865932
+      },
+      {
+        "name": "nominative_21",
+        "coefficient": 0.11946635051101777,
+        "abs_coefficient": 0.11946635051101777
+      },
+      {
+        "name": "nominative_23",
+        "coefficient": 0.11946635051101777,
+        "abs_coefficient": 0.11946635051101777
+      },
+      {
+        "name": "nominative_15",
+        "coefficient": 0.11946635051101777,
+        "abs_coefficient": 0.11946635051101777
+      },
+      {
+        "name": "statistical_27",
+        "coefficient": 0.11796694938125082,
+        "abs_coefficient": 0.11796694938125082
+      },
+      {
+        "name": "linguistic_19",
+        "coefficient": 0.11609865585972627,
+        "abs_coefficient": 0.11609865585972627
+      },
+      {
+        "name": "narrative_potential_22",
+        "coefficient": -0.1158705100622266,
+        "abs_coefficient": 0.1158705100622266
+      },
+      {
+        "name": "statistical_86",
+        "coefficient": 0.1115822700296609,
+        "abs_coefficient": 0.1115822700296609
+      },
+      {
+        "name": "nominative_10",
+        "coefficient": 0.11119907626047733,
+        "abs_coefficient": 0.11119907626047733
+      },
+      {
+        "name": "ensemble_15",
+        "coefficient": 0.10753288725853521,
+        "abs_coefficient": 0.10753288725853521
+      },
+      {
+        "name": "ensemble_10",
+        "coefficient": 0.10669543713741664,
+        "abs_coefficient": 0.10669543713741664
+      },
+      {
+        "name": "linguistic_10",
+        "coefficient": 0.10255563623401437,
+        "abs_coefficient": 0.10255563623401437
+      },
+      {
+        "name": "linguistic_27",
+        "coefficient": 0.10200494192755555,
+        "abs_coefficient": 0.10200494192755555
+      },
+      {
+        "name": "statistical_44",
+        "coefficient": -0.09998938101495713,
+        "abs_coefficient": 0.09998938101495713
+      },
+      {
+        "name": "nominative_9",
+        "coefficient": -0.09733730273508058,
+        "abs_coefficient": 0.09733730273508058
+      },
+      {
+        "name": "narrative_potential_10",
+        "coefficient": 0.09702181240468245,
+        "abs_coefficient": 0.09702181240468245
+      },
+      {
+        "name": "linguistic_11",
+        "coefficient": 0.09573118411106254,
+        "abs_coefficient": 0.09573118411106254
+      },
+      {
+        "name": "linguistic_8",
+        "coefficient": 0.09348209990145316,
+        "abs_coefficient": 0.09348209990145316
+      },
+      {
+        "name": "linguistic_7",
+        "coefficient": -0.08705924183589456,
+        "abs_coefficient": 0.08705924183589456
+      },
+      {
+        "name": "narrative_potential_32",
+        "coefficient": -0.08539533973266496,
+        "abs_coefficient": 0.08539533973266496
+      },
+      {
+        "name": "relational_8",
+        "coefficient": -0.08506185646170891,
+        "abs_coefficient": 0.08506185646170891
+      },
+      {
+        "name": "ensemble_13",
+        "coefficient": 0.08240323988912623,
+        "abs_coefficient": 0.08240323988912623
+      },
+      {
+        "name": "statistical_1",
+        "coefficient": 0.08195099758171898,
+        "abs_coefficient": 0.08195099758171898
+      },
+      {
+        "name": "statistical_29",
+        "coefficient": 0.08146117940893657,
+        "abs_coefficient": 0.08146117940893657
+      },
+      {
+        "name": "linguistic_29",
+        "coefficient": -0.08056997279000594,
+        "abs_coefficient": 0.08056997279000594
+      },
+      {
+        "name": "statistical_96",
+        "coefficient": -0.08010674967400803,
+        "abs_coefficient": 0.08010674967400803
+      },
+      {
+        "name": "nominative_8",
+        "coefficient": -0.07997132809121513,
+        "abs_coefficient": 0.07997132809121513
+      },
+      {
+        "name": "statistical_50",
+        "coefficient": 0.0797873680265324,
+        "abs_coefficient": 0.0797873680265324
+      },
+      {
+        "name": "nominative_18",
+        "coefficient": 0.0791940645945336,
+        "abs_coefficient": 0.0791940645945336
+      },
+      {
+        "name": "linguistic_35",
+        "coefficient": -0.07857135764227542,
+        "abs_coefficient": 0.07857135764227542
+      },
+      {
+        "name": "narrative_potential_34",
+        "coefficient": -0.07779276656704763,
+        "abs_coefficient": 0.07779276656704763
+      },
+      {
+        "name": "linguistic_31",
+        "coefficient": -0.07711263832876368,
+        "abs_coefficient": 0.07711263832876368
+      },
+      {
+        "name": "linguistic_33",
+        "coefficient": -0.07696901285566202,
+        "abs_coefficient": 0.07696901285566202
+      },
+      {
+        "name": "statistical_64",
+        "coefficient": -0.07680119290356922,
+        "abs_coefficient": 0.07680119290356922
+      },
+      {
+        "name": "ensemble_4",
+        "coefficient": -0.07677769512141042,
+        "abs_coefficient": 0.07677769512141042
+      }
+    ]
+  },
+  "gravitational_clustering": {
+    "2020": {
+      "num_nominees": 8,
+      "winner_avg_distance": 643.22841553816,
+      "nominee_avg_distance": 278.7166910711726,
+      "winner_distinctiveness": 364.5117244669874
+    },
+    "2021": {
+      "num_nominees": 8,
+      "winner_avg_distance": 110.29422091435518,
+      "nominee_avg_distance": 186.18367011594887,
+      "winner_distinctiveness": -75.88944920159369
+    },
+    "2022": {
+      "num_nominees": 9,
+      "winner_avg_distance": 150.3466763122923,
+      "nominee_avg_distance": 236.8672902521442,
+      "winner_distinctiveness": -86.5206139398519
+    },
+    "2023": {
+      "num_nominees": 10,
+      "winner_avg_distance": 423.69570808633335,
+      "nominee_avg_distance": 247.975651708183,
+      "winner_distinctiveness": 175.72005637815036
+    },
+    "2024": {
+      "num_nominees": 10,
+      "winner_avg_distance": 253.38550111422467,
+      "nominee_avg_distance": 355.96015783920416,
+      "winner_distinctiveness": -102.57465672497949
+    }
+  },
+  "temporal_trends": {
+    "2020": {
+      "num_nominees": 8,
+      "winner_score": 9.641216979927583e-05,
+      "winner_rank": 8,
+      "predicted_correctly": false,
+      "mean_nominee_score": 0.013452187269087977
+    },
+    "2021": {
+      "num_nominees": 8,
+      "winner_score": 0.0013082574255991876,
+      "winner_rank": 7,
+      "predicted_correctly": false,
+      "mean_nominee_score": 0.004630948914193812
+    },
+    "2022": {
+      "num_nominees": 9,
+      "winner_score": 0.011256200851207113,
+      "winner_rank": 2,
+      "predicted_correctly": false,
+      "mean_nominee_score": 0.12498755326832851
+    },
+    "2023": {
+      "num_nominees": 10,
+      "winner_score": 0.011470267430707483,
+      "winner_rank": 2,
+      "predicted_correctly": false,
+      "mean_nominee_score": 0.10982234731936913
+    },
+    "2024": {
+      "num_nominees": 10,
+      "winner_score": 0.003022807012745268,
+      "winner_rank": 5,
+      "predicted_correctly": false,
+      "mean_nominee_score": 0.2177138024672927
+    }
+  },
+  "transformer_counts": {
+    "nominative": 51,
+    "self_perception": 21,
+    "narrative_potential": 35,
+    "linguistic": 36,
+    "ensemble": 25,
+    "relational": 17,
+    "statistical": 100
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "target_seasons": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "games_needed": 3738,
+  "current_coverage": "2014-2024",
+  "expansion_coverage": "2000-2024",
+  "priority_fields": [
+    "scores",
+    "QB_names",
+    "coach_names",
+    "week",
+    "date"
+  ],
+  "optional_fields": [
+    "spread",
+    "rosters",
+    "coordinators",
+    "odds"
+  ],
+  "collection_methods": [
+    "Search existing datasets (Kaggle, GitHub)",
+    "Pro Football Reference API/scraping",
+    "Sports database subscriptions"
+  ]
+}

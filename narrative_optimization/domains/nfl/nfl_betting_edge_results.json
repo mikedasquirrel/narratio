@@ -1,0 +1,31 @@
+{
+  "narrative_only": {
+    "accuracy": 0.5459579180509413,
+    "description": "Predict from narrative quality alone"
+  },
+  "odds_only": {
+    "accuracy": 0.9490586932447398,
+    "spread_accuracy": 0.9523809523809523,
+    "description": "Vegas baseline (betting odds)"
+  },
+  "combined": {
+    "accuracy": 0.9490586932447398,
+    "improvement_over_odds": 0.0,
+    "improvement_over_narrative": 0.4031007751937985,
+    "description": "Narrative + Odds combined model"
+  },
+  "spread_coverage": {
+    "accuracy": 0.5193798449612403,
+    "edge": 0.019379844961240345,
+    "description": "Predict if home covers spread"
+  },
+  "pattern": {
+    "correlation": -0.00969706138713938,
+    "pattern_type": "inverse",
+    "interpretation": "Better narrative favors underdog"
+  },
+  "baseline": {
+    "home_win_rate": 0.5514950166112956,
+    "description": "Always predict home win"
+  }
+}

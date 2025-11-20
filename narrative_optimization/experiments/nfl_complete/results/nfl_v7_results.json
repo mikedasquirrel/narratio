@@ -1,0 +1,17 @@
+{
+  "version": "V7",
+  "r2_train": 0.8675857340989902,
+  "r2_test": 0.863214400386788,
+  "accuracy": 0.9526315789473684,
+  "improvement_over_v6": -0.01358559961321204,
+  "n_features": 216,
+  "feature_breakdown": {
+    "betting": 15,
+    "context": 3,
+    "roster": 15,
+    "temporal": 22,
+    "coaching": 16,
+    "text": 142,
+    "interactions": 3
+  }
+}

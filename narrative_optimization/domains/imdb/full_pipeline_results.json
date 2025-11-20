@@ -1,0 +1,36 @@
+{
+  "domain": "imdb",
+  "n_samples": 1000,
+  "n_total_features": 308,
+  "r_combined": 0.6501505281815899,
+  "r2_combined": 0.4226957092948003,
+  "transformer_contributions": {
+    "universal_nominative": {
+      "n_features": 116,
+      "r": 0.2606851856327179,
+      "r2": 0.0679567660083646
+    },
+    "emotional": {
+      "n_features": 34,
+      "r": 0.3698493486300891,
+      "r2": 0.1367885406821012
+    },
+    "conflict": {
+      "n_features": 28,
+      "r": 0.35488310851411886,
+      "r2": 0.12594202070864385
+    },
+    "authenticity": {
+      "n_features": 30,
+      "r": 0.4227361366125602,
+      "r2": 0.17870584119811317
+    },
+    "statistical": {
+      "n_features": 100,
+      "r": 0.5014710977174639,
+      "r2": 0.25147326184595825
+    }
+  },
+  "baseline": 0.2,
+  "D": 0.4501505281815899
+}

@@ -1,0 +1,42 @@
+{
+  "overall": {
+    "train_r2": 0.19252698821071176,
+    "test_r2": 0.140296625295435,
+    "train_r": 0.43877897421220147,
+    "test_r": 0.37456191116480997,
+    "features_total": 1073,
+    "features_selected": 400
+  },
+  "coach_specific": {
+    "Andy Reid": {
+      "n_games": 108,
+      "train_r2": 0.40675845803230515,
+      "test_r2": 0.007014073793406304
+    },
+    "John Harbaugh": {
+      "n_games": 95,
+      "train_r2": 0.47954538872758573,
+      "test_r2": 0.007012365908714477
+    },
+    "Mike Tomlin": {
+      "n_games": 94,
+      "train_r2": 0.2972683366123654,
+      "test_r2": 0.007349252961942382
+    },
+    "Bill Belichick": {
+      "n_games": 92,
+      "train_r2": 0.6278584298833633,
+      "test_r2": 0.09690301256587891
+    },
+    "Sean Payton": {
+      "n_games": 87,
+      "train_r2": 0.44848954924401396,
+      "test_r2": 0.16698166369565304
+    }
+  },
+  "improvement_over_original": {
+    "original_test_r2": 0.0001,
+    "optimized_test_r2": 0.140296625295435,
+    "improvement_factor": 1402.9662529543498
+  }
+}

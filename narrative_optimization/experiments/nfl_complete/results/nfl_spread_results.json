@@ -1,0 +1,18 @@
+{
+  "model_type": "nfl_spread",
+  "target": "point_differential",
+  "test_performance": {
+    "r2": -0.011481431066361791,
+    "mae": 11.32230303593354,
+    "correlation": 0.20996541459031268
+  },
+  "comparison": {
+    "moneyline_r2": -0.032,
+    "spread_r2": -0.011481431066361791,
+    "improvement": 0.02051856893363821
+  },
+  "betting_edge": {
+    "accuracy_pct": 84.36944937833037,
+    "profitable": true
+  }
+}

@@ -1,0 +1,32 @@
+domain: nba
+type: sports_team
+narrativity:
+  structural: 0.63
+  temporal: 0.84
+  agency: 0.63
+  interpretive: 0.48999999999999994
+  format: 0.42
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: binary
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.63
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

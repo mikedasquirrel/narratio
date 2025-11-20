@@ -1,0 +1,88 @@
+{
+  "total_contexts": 8,
+  "top_contexts": [
+    {
+      "rank": 1,
+      "name": "harshness_level=High \u00d7 length_category=Long",
+      "dimension": "harshness_level\u00d7length_category",
+      "r": 0.3310022591903622,
+      "r_squared": 0.10956249558912372,
+      "n": 63,
+      "p": 0.008054288304704973,
+      "significant": true
+    },
+    {
+      "rank": 2,
+      "name": "length_category=Long",
+      "dimension": "length_category",
+      "r": 0.24999186562653938,
+      "r_squared": 0.06249593287943772,
+      "n": 115,
+      "p": 0.00704939130762069,
+      "significant": true
+    },
+    {
+      "rank": 3,
+      "name": "harshness_level=High",
+      "dimension": "harshness_level",
+      "r": 0.22730266701389745,
+      "r_squared": 0.05166650243163075,
+      "n": 100,
+      "p": 0.02294759938040235,
+      "significant": true
+    },
+    {
+      "rank": 4,
+      "name": "harshness_level=High \u00d7 length_category=Medium",
+      "dimension": "harshness_level\u00d7length_category",
+      "r": 0.20471955707570233,
+      "r_squared": 0.04191009704927175,
+      "n": 36,
+      "p": 0.23103246938478883,
+      "significant": false
+    },
+    {
+      "rank": 5,
+      "name": "length_category=Medium",
+      "dimension": "length_category",
+      "r": 0.17180462059668355,
+      "r_squared": 0.02951682765837038,
+      "n": 72,
+      "p": 0.14900614600375486,
+      "significant": false
+    },
+    {
+      "rank": 6,
+      "name": "harshness_level=Medium \u00d7 length_category=Medium",
+      "dimension": "harshness_level\u00d7length_category",
+      "r": -0.11472727512698316,
+      "r_squared": 0.01316234765806249,
+      "n": 28,
+      "p": 0.5610203949215078,
+      "significant": false
+    },
+    {
+      "rank": 7,
+      "name": "harshness_level=Medium \u00d7 length_category=Long",
+      "dimension": "harshness_level\u00d7length_category",
+      "r": 0.10813556590547446,
+      "r_squared": 0.011693300613697211,
+      "n": 50,
+      "p": 0.45476777926813794,
+      "significant": false
+    },
+    {
+      "rank": 8,
+      "name": "harshness_level=Medium",
+      "dimension": "harshness_level",
+      "r": 0.046400667542856204,
+      "r_squared": 0.002153021948422669,
+      "n": 86,
+      "p": 0.6713951015609112,
+      "significant": false
+    }
+  ],
+  "passing_contexts": [],
+  "approach": "pure_empirical_discovery",
+  "principle": "Data leads, theory explains"
+}

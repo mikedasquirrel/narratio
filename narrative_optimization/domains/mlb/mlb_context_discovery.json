@@ -1,0 +1,276 @@
+{
+  "total_contexts_discovered": 19,
+  "top_contexts": [
+    {
+      "context_name": "Rivalry_HOU-TEX",
+      "n_samples": 38,
+      "r": 0.34866557984897456,
+      "abs_r": 0.34866557984897456,
+      "p_value": 0.0319246485328739,
+      "significant": true
+    },
+    {
+      "context_name": "Rivalry_LAD-SF",
+      "n_samples": 35,
+      "r": 0.2677548576811753,
+      "abs_r": 0.2677548576811753,
+      "p_value": 0.11992730346682823,
+      "significant": false
+    },
+    {
+      "context_name": "Stadium_Wrigley_Field",
+      "n_samples": 167,
+      "r": 0.14096106423568885,
+      "abs_r": 0.14096106423568885,
+      "p_value": 0.06921407814044243,
+      "significant": false
+    },
+    {
+      "context_name": "Stadium_Fenway_Park",
+      "n_samples": 160,
+      "r": -0.08413698458489283,
+      "abs_r": 0.08413698458489283,
+      "p_value": 0.2901510369847811,
+      "significant": false
+    },
+    {
+      "context_name": "Rivalry_CHC-STL",
+      "n_samples": 38,
+      "r": 0.0774401440586332,
+      "abs_r": 0.0774401440586332,
+      "p_value": 0.6439942231496382,
+      "significant": false
+    },
+    {
+      "context_name": "Rivalry_BOS-NYY",
+      "n_samples": 35,
+      "r": -0.07646918467696484,
+      "abs_r": 0.07646918467696484,
+      "p_value": 0.6623955095066795,
+      "significant": false
+    },
+    {
+      "context_name": "Stadium_Dodger_Stadium",
+      "n_samples": 160,
+      "r": 0.058467851557543624,
+      "abs_r": 0.058467851557543624,
+      "p_value": 0.4627073307768828,
+      "significant": false
+    },
+    {
+      "context_name": "Month_6",
+      "n_samples": 824,
+      "r": -0.052965959421172853,
+      "abs_r": 0.052965959421172853,
+      "p_value": 0.1287203520150871,
+      "significant": false
+    },
+    {
+      "context_name": "Playoff_One_Strong",
+      "n_samples": 529,
+      "r": -0.05204397489833109,
+      "abs_r": 0.05204397489833109,
+      "p_value": 0.2320910099950176,
+      "significant": false
+    },
+    {
+      "context_name": "Playoff_Both_Strong",
+      "n_samples": 434,
+      "r": -0.051038230482368344,
+      "abs_r": 0.051038230482368344,
+      "p_value": 0.28874102181961003,
+      "significant": false
+    },
+    {
+      "context_name": "Month_5",
+      "n_samples": 863,
+      "r": -0.041238117861423826,
+      "abs_r": 0.041238117861423826,
+      "p_value": 0.2262000754911941,
+      "significant": false
+    },
+    {
+      "context_name": "Season_2016",
+      "n_samples": 2342,
+      "r": -0.03763168986648515,
+      "abs_r": 0.03763168986648515,
+      "p_value": 0.0686328920795064,
+      "significant": false
+    },
+    {
+      "context_name": "Month_9",
+      "n_samples": 757,
+      "r": -0.0309910070608126,
+      "abs_r": 0.0309910070608126,
+      "p_value": 0.3945079515075912,
+      "significant": false
+    },
+    {
+      "context_name": "Stadium_Yankee_Stadium",
+      "n_samples": 158,
+      "r": -0.027133251422733224,
+      "abs_r": 0.027133251422733224,
+      "p_value": 0.7350513206363963,
+      "significant": false
+    },
+    {
+      "context_name": "Month_7",
+      "n_samples": 765,
+      "r": 0.020745589568960117,
+      "abs_r": 0.020745589568960117,
+      "p_value": 0.566700192793217,
+      "significant": false
+    },
+    {
+      "context_name": "Month_4",
+      "n_samples": 692,
+      "r": 0.014238205947457455,
+      "abs_r": 0.014238205947457455,
+      "p_value": 0.7084857541492063,
+      "significant": false
+    },
+    {
+      "context_name": "Playoff_Both_Moderate",
+      "n_samples": 168,
+      "r": 0.009693200866536952,
+      "abs_r": 0.009693200866536952,
+      "p_value": 0.9007585668266113,
+      "significant": false
+    },
+    {
+      "context_name": "Season_2015",
+      "n_samples": 2471,
+      "r": -0.0028236445733091,
+      "abs_r": 0.0028236445733091,
+      "p_value": 0.8884306737143244,
+      "significant": false
+    },
+    {
+      "context_name": "Month_8",
+      "n_samples": 845,
+      "r": -0.001875608623316146,
+      "abs_r": 0.001875608623316146,
+      "p_value": 0.9565836640047433,
+      "significant": false
+    }
+  ],
+  "top_contexts_efficiency": [
+    {
+      "context_name": "Rivalry_HOU-TEX",
+      "n_samples": 38,
+      "r": 0.34866557984897456,
+      "abs_r": 0.34866557984897456,
+      "p_value": 0.0319246485328739,
+      "significant": true,
+      "\u0394": 0.030508238236785272,
+      "efficiency": 0.12203295294714109,
+      "passed": false
+    },
+    {
+      "context_name": "Rivalry_LAD-SF",
+      "n_samples": 35,
+      "r": 0.2677548576811753,
+      "abs_r": 0.2677548576811753,
+      "p_value": 0.11992730346682823,
+      "significant": false,
+      "\u0394": 0.02342855004710284,
+      "efficiency": 0.09371420018841135,
+      "passed": false
+    },
+    {
+      "context_name": "Stadium_Wrigley_Field",
+      "n_samples": 167,
+      "r": 0.14096106423568885,
+      "abs_r": 0.14096106423568885,
+      "p_value": 0.06921407814044243,
+      "significant": false,
+      "\u0394": 0.012334093120622775,
+      "efficiency": 0.0493363724824911,
+      "passed": false
+    },
+    {
+      "context_name": "Stadium_Fenway_Park",
+      "n_samples": 160,
+      "r": -0.08413698458489283,
+      "abs_r": 0.08413698458489283,
+      "p_value": 0.2901510369847811,
+      "significant": false,
+      "\u0394": 0.007361986151178122,
+      "efficiency": 0.02944794460471249,
+      "passed": false
+    },
+    {
+      "context_name": "Rivalry_CHC-STL",
+      "n_samples": 38,
+      "r": 0.0774401440586332,
+      "abs_r": 0.0774401440586332,
+      "p_value": 0.6439942231496382,
+      "significant": false,
+      "\u0394": 0.006776012605130405,
+      "efficiency": 0.02710405042052162,
+      "passed": false
+    },
+    {
+      "context_name": "Rivalry_BOS-NYY",
+      "n_samples": 35,
+      "r": -0.07646918467696484,
+      "abs_r": 0.07646918467696484,
+      "p_value": 0.6623955095066795,
+      "significant": false,
+      "\u0394": 0.006691053659234423,
+      "efficiency": 0.02676421463693769,
+      "passed": false
+    },
+    {
+      "context_name": "Stadium_Dodger_Stadium",
+      "n_samples": 160,
+      "r": 0.058467851557543624,
+      "abs_r": 0.058467851557543624,
+      "p_value": 0.4627073307768828,
+      "significant": false,
+      "\u0394": 0.005115937011285067,
+      "efficiency": 0.020463748045140267,
+      "passed": false
+    },
+    {
+      "context_name": "Month_6",
+      "n_samples": 824,
+      "r": -0.052965959421172853,
+      "abs_r": 0.052965959421172853,
+      "p_value": 0.1287203520150871,
+      "significant": false,
+      "\u0394": 0.0046345214493526245,
+      "efficiency": 0.018538085797410498,
+      "passed": false
+    },
+    {
+      "context_name": "Playoff_One_Strong",
+      "n_samples": 529,
+      "r": -0.05204397489833109,
+      "abs_r": 0.05204397489833109,
+      "p_value": 0.2320910099950176,
+      "significant": false,
+      "\u0394": 0.0045538478036039704,
+      "efficiency": 0.018215391214415882,
+      "passed": false
+    },
+    {
+      "context_name": "Playoff_Both_Strong",
+      "n_samples": 434,
+      "r": -0.051038230482368344,
+      "abs_r": 0.051038230482368344,
+      "p_value": 0.28874102181961003,
+      "significant": false,
+      "\u0394": 0.004465845167207229,
+      "efficiency": 0.017863380668828917,
+      "passed": false
+    }
+  ],
+  "contexts_passing_threshold": [],
+  "summary": {
+    "strongest_context": "Rivalry_HOU-TEX",
+    "strongest_abs_r": 0.34866557984897456,
+    "contexts_with_significant_correlation": 1,
+    "contexts_passing_efficiency": 0
+  }
+}

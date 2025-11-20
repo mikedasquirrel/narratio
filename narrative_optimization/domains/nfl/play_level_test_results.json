@@ -1,0 +1,22 @@
+{
+  "play_level_only": {
+    "features": 8,
+    "train_r2": 0.005693985976644746,
+    "test_r2": 4.2010423206850396e-05
+  },
+  "nominative_elements_tested": {
+    "shotgun_pct": "formation",
+    "no_huddle_pct": "formation",
+    "3rd_and_long_pct": "situational",
+    "red_zone_pct": "field_position",
+    "touchdowns": "momentum",
+    "sacks": "momentum",
+    "top_qb_wr_connection": "relational",
+    "game_pace": "tempo"
+  },
+  "comparison": {
+    "game_level_r2": 0.14,
+    "play_level_r2": 4.2010423206850396e-05,
+    "improvement": 0
+  }
+}

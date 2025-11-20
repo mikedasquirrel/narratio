@@ -1,0 +1,129 @@
+{
+  "experiment_id": "03_linguistic_test",
+  "description": "Linguistic patterns vs baseline",
+  "metadata": {
+    "experiment_id": "03_linguistic_test",
+    "description": "Linguistic patterns vs baseline",
+    "created_at": "2025-11-09T20:40:22.219468",
+    "status": "completed",
+    "run_started_at": "2025-11-09T20:40:22.219506",
+    "run_completed_at": "2025-11-09T20:40:29.696323"
+  },
+  "narratives": {
+    "Statistical": {
+      "name": "Statistical",
+      "hypothesis": "Statistical sufficient",
+      "metadata": {
+        "narrative_name": "Statistical",
+        "hypothesis": "",
+        "expected_outcome": "",
+        "domain_assumptions": [],
+        "step_rationales": {
+          "features": "TF-IDF",
+          "classifier": "Classify"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.7625,
+            0.6875,
+            0.6875,
+            0.7125,
+            0.65
+          ],
+          "train_scores": [
+            0.940625,
+            0.959375,
+            0.965625,
+            0.971875,
+            0.959375
+          ],
+          "test_mean": 0.7,
+          "test_std": 0.0370809924354783,
+          "train_mean": 0.9593749999999999,
+          "train_std": 0.010458250331675934
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.7590193432298695,
+            0.6849001269732977,
+            0.6928976465421478,
+            0.7247732426303855,
+            0.6490588149124734
+          ],
+          "train_scores": [
+            0.9415842194085573,
+            0.9602445400010526,
+            0.9657433818459594,
+            0.9722562051580141,
+            0.9601222420989862
+          ],
+          "test_mean": 0.7021298348576348,
+          "test_std": 0.03727672027228133,
+          "train_mean": 0.9599901177025141,
+          "train_std": 0.010221704645897844
+        }
+      },
+      "summary_statistics": {}
+    },
+    "Linguistic": {
+      "name": "Linguistic",
+      "hypothesis": "Linguistic adds value",
+      "metadata": {
+        "narrative_name": "Linguistic Patterns",
+        "hypothesis": "Voice, agency, temporality capture predictive signals",
+        "expected_outcome": "",
+        "domain_assumptions": [],
+        "step_rationales": {
+          "features": "Extract linguistic patterns",
+          "scaler": "Normalize",
+          "classifier": "Classify"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.3625,
+            0.3375,
+            0.3625,
+            0.325,
+            0.4125
+          ],
+          "train_scores": [
+            0.46875,
+            0.484375,
+            0.46875,
+            0.48125,
+            0.471875
+          ],
+          "test_mean": 0.36,
+          "test_std": 0.029999999999999985,
+          "train_mean": 0.475,
+          "train_std": 0.006555055301063451
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.3573926073926074,
+            0.3331129236617042,
+            0.3607142857142857,
+            0.32496669996669997,
+            0.39553642347456963
+          ],
+          "train_scores": [
+            0.46677239543859583,
+            0.48479192237681207,
+            0.46839561329043333,
+            0.4807866560509897,
+            0.46981715344645425
+          ],
+          "test_mean": 0.3543445880419734,
+          "test_std": 0.024740552365799254,
+          "train_mean": 0.474112748120657,
+          "train_std": 0.0072609138767089215
+        }
+      },
+      "summary_statistics": {}
+    }
+  }
+}

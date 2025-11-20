@@ -1,0 +1,803 @@
+================================================================================
+UFC/MMA NARRATIVE ANALYSIS - COMPLETE IMPLEMENTATION INSTRUCTIONS
+================================================================================
+
+GOAL: Apply narrative framework to UFC fights (potential 3rd PASSING domain!)
+
+WHY UFC: Highest individual narrative in sports
+  - Pure 1v1 matchups
+  - Fighter personas/trash talk HUGE
+  - Name recognition critical
+  - Betting market very active
+  - Expected п ≈ 0.58 (might PASS threshold!)
+
+APPROACH: Data-first, presume-and-prove, ALL transformers, rich nominative
+
+================================================================================
+TASK OVERVIEW
+================================================================================
+
+1. Collect UFC fight data (2014-2024, ~500 fights/year = 5,000+ fights)
+2. Collect betting odds (moneyline, method of victory, round)
+3. Generate fighter narratives (personas, records, styles, trash talk)
+4. Apply ALL 25 transformers (nominative-heavy for 1v1 names)
+5. Compute narrative quality (ю) 
+6. Run presume-and-prove validation
+7. Discover where narrative is strongest (data-first)
+8. Test betting odds prediction (narrative vs Vegas)
+9. Optimize for empirically-discovered contexts
+
+================================================================================
+STEP 1: DATA COLLECTION
+================================================================================
+
+FILE: narrative_optimization/domains/ufc/collect_ufc_data.py
+
+COLLECT FROM:
+  - UFC API (if available) or ESPN MMA
+  - Tapology.com (comprehensive fight database)
+  - Sherdog.com (fighter records, stats)
+  - BestFightOdds.com (historical betting lines)
+  - Wikipedia (fighter bios, personas)
+
+DATA STRUCTURE:
+
+{
+  "fight_id": "unique_id",
+  "event_name": "UFC 300",
+  "date": "2024-04-13",
+  "location": "Las Vegas",
+  "weight_class": "Welterweight",
+  "title_fight": false,
+  "main_event": true,
+  
+  // FIGHTER A (Winner)
+  "fighter_a": {
+    "name": "Alex Pereira",
+    "nickname": "Poatan",
+    "record": "9-2-0",  // wins-losses-draws
+    "age": 36,
+    "height": "6'4\"",
+    "reach": 79,
+    "stance": "Orthodox",
+    "nationality": "Brazil",
+    "fighting_style": "Striker",
+    "finishing_rate": 0.89,
+    "win_streak": 5,
+    "ko_power": "Legendary",
+    "submission_threat": "Low",
+    "wrestling": "Developing",
+    "persona": "Silent assassin",
+    "trash_talker": false,
+    "marketability": "High",
+    "social_media_followers": 2500000,
+    "previous_titles": ["Glory Kickboxing Champion"],
+    "recent_form": ["Win KO", "Win KO", "Win Dec", "Win KO", "Win KO"]
+  },
+  
+  // FIGHTER B (Loser)
+  "fighter_b": {/* Same structure */},
+  
+  // FIGHT OUTCOME
+  "result": {
+    "winner": "fighter_a",
+    "method": "KO/TKO",  // KO/TKO, Submission, Decision, Draw
+    "round": 2,
+    "time": "2:15",
+    "finish": true  // true if finish, false if decision
+  },
+  
+  // BETTING ODDS (CRITICAL)
+  "betting_odds": {
+    "moneyline_a": -250,  // Favorite
+    "moneyline_b": +200,  // Underdog
+    "method_odds": {
+      "a_ko": -150,
+      "a_submission": +300,
+      "a_decision": +250,
+      "b_ko": +500,
+      "b_submission": +400,
+      "b_decision": +300
+    },
+    "round_over_under": 2.5,
+    "odds_winner": "fighter_a",  // Who Vegas favored
+    "odds_correct": true,  // Did favorite win
+    "underdog_won": false  // Underdog victory (narrative test!)
+  },
+  
+  // NARRATIVE CONTEXT
+  "context": {
+    "rivalry": false,
+    "rematch": false,
+    "grudge_match": false,
+    "title_eliminator": false,
+    "ranked_fight": true,
+    "hype_level": "High",  // Low/Medium/High
+    "trash_talk_level": "Minimal",  // Minimal/Moderate/Intense
+    "media_attention": "Very High",
+    "bad_blood": false
+  },
+  
+  // STYLISTIC MATCHUP
+  "matchup": {
+    "style_clash": "Striker vs Grappler",
+    "experience_gap": 5,  // years difference
+    "size_advantage": "fighter_a",  // or "even"
+    "reach_advantage": 4,  // inches
+    "age_advantage": "fighter_b"
+  }
+}
+
+TARGET: 5,000+ fights (2014-2024)
+
+================================================================================
+STEP 2: GENERATE FIGHTER NARRATIVES
+================================================================================
+
+FILE: narrative_optimization/domains/ufc/generate_fighter_narratives.py
+
+CREATE: Rich fight narratives (200-300 words) - NOMINATIVE-HEAVY!
+
+INCLUDE EXTENSIVELY:
+
+FIGHTER NAMES (Critical!):
+  - Full name: "Alexander Pereira"
+  - Nickname: "Poatan" (The Stone Hand)
+  - Repeated use: "Pereira", "Alex", "Poatan"
+  - Opponent name: "Jamahal Hill"
+  - Opponent nickname: "Sweet Dreams"
+
+PERSONA & STYLE (Nominative Context):
+  - "Pereira's legendary knockout power"
+  - "Hill's slick boxing and confidence"
+  - "The silent assassin vs the trash talker"
+  - "Brazilian precision vs American swagger"
+
+RECORD & HISTORY:
+  - "Pereira (9-2) brings a five-fight win streak"
+  - "Hill (12-1, 1 NC) returns from injury"
+  - "Both former champions in this division"
+
+STYLISTIC NARRATIVE:
+  - "Striker vs striker showdown"
+  - "Pereira's devastating left hook vs Hill's speed"
+  - "Can Hill's movement neutralize Poatan's power?"
+
+CONTEXT & STAKES:
+  - "Light Heavyweight title eliminator"
+  - "Winner faces Ankalaev for the vacant belt"
+  - "Redemption for both after previous setbacks"
+
+PERSONA CLASH:
+  - "Hill's brash confidence vs Pereira's quiet intensity"
+  - "The showman vs the executioner"
+  - "Contrasting personalities, similar goals"
+
+EXAMPLE NARRATIVE:
+"Alex 'Poatan' Pereira (9-2) faces Jamahal 'Sweet Dreams' Hill (12-1, 1 NC) 
+in a light heavyweight title eliminator at UFC 300. The former Glory Kickboxing 
+champion Pereira brings legendary knockout power, having finished five straight 
+opponents with devastating strikes. His silent assassin persona contrasts 
+sharply with Hill's brash confidence and verbal warfare.
+
+Hill, the former 205-pound champion, returns from a torn Achilles seeking 
+redemption against the Brazilian powerhouse. Sweet Dreams' slick boxing and 
+supreme self-belief face the ultimate test in Poatan's granite fists. Both 
+strikers prefer to stand and trade, setting up a potential war.
+
+Pereira's path from kickboxing to UFC dominance has been meteoric, while Hill's 
+comeback story inspires. The stylistic matchup favors the knockout artist, but 
+Hill's speed and movement could frustrate the slower Pereira. Winner advances 
+to face Magomed Ankalaev for the vacant light heavyweight championship.
+
+The persona clash amplifies the stakes: Hill's trash talk versus Pereira's 
+actions-speak-louder approach. Can Sweet Dreams' confidence overcome Poatan's 
+proven power? Las Vegas awaits the answer."
+
+LENGTH: 200-300 words
+NAMES: 15-20 mentions (fighters, coaches, opponents, champions)
+PERSONAS: Emphasize character/style clash
+NOMINATIVE RICHNESS: Maximum
+
+================================================================================
+STEP 3: APPLY ALL 25 TRANSFORMERS
+================================================================================
+
+FILE: narrative_optimization/domains/ufc/analyze_ufc_complete.py
+
+IMPORT ALL TRANSFORMERS:
+
+from src.transformers import (
+    # Core (6) - CRITICAL for UFC
+    NominativeAnalysisTransformer,      # Fighter names - HUGE!
+    SelfPerceptionTransformer,          # Persona, confidence, mindset
+    NarrativePotentialTransformer,      # Redemption, comeback, momentum
+    LinguisticPatternsTransformer,      # Narrative structure
+    EnsembleNarrativeTransformer,       # Training camps, corner teams
+    RelationalValueTransformer,         # Fighter matchup complementarity
+    
+    # Semantic
+    EmotionalSemanticTransformer,       # Aggression, confidence, fear
+    
+    # Structural  
+    ConflictTensionTransformer,         # Rivalry, stakes, grudges - HUGE for UFC!
+    SuspenseMysteryTransformer,         # Upset potential, underdog
+    FramingTransformer,                 # Media hype, perception
+    
+    # Credibility
+    AuthenticityTransformer,            # Real vs hype, legitimacy
+    ExpertiseAuthorityTransformer,      # Experience, skills, pedigree
+    
+    # Contextual
+    CulturalContextTransformer,         # Nationality, style, background
+    TemporalTransformer,                # Career momentum, timing
+    
+    # Statistical
+    StatisticalTransformer,             # Baseline
+    
+    # Nominative-specific
+    PhoneticTransformer,                # Name sounds, memorability
+    
+    # All others available
+)
+
+PROCESS:
+
+1. Load fight narratives (nominative-rich!)
+
+2. Apply ALL 25 transformers:
+   
+   NOMINATIVE will extract:
+   - Fighter name phonetics (harsh vs soft names)
+   - Nickname patterns ("Poatan", "Sweet Dreams")
+   - Name memorability
+   - Cultural name associations
+   - Name length, syllables
+   - Relational name patterns (matchup)
+   
+   ENSEMBLE will extract:
+   - Training camp names (Jackson-Wink, ATT, etc.)
+   - Corner team dynamics
+   - Coach names (if mentioned)
+   
+   CONFLICT/TENSION will extract:
+   - Rivalry language
+   - Grudge match indicators
+   - Stakes mentions
+   - Revenge narrative
+   - Bad blood markers
+   
+   SELF-PERCEPTION will extract:
+   - Confidence language
+   - Persona markers (silent vs loud)
+   - Mindset indicators
+   - Trash talk patterns
+   
+3. Combine → ж (genome)
+   Expected: 400-500 features (nominative-heavy!)
+
+4. Compute ю (story quality)
+   Weight nominative HIGH (UFC is persona-driven)
+
+5. Measure |r| with fight outcomes
+
+IMPORTANT: UFC is NOMINATIVE + PERSONA domain
+  - Fighter names are the brand
+  - Personas drive narratives
+  - 1v1 = pure individual name effects
+  - Use ALL transformers, let data show which matter most
+
+================================================================================
+STEP 4: CALCULATE NARRATIVITY (п)
+================================================================================
+
+UFC DOMAIN CHARACTERISTICS:
+
+п_structural: 0.70
+  - Many possible fight paths (striker, grappler, wrestle-boxer)
+  - Not as constrained as team sports
+  - Individual creativity high
+
+п_temporal: 0.65
+  - Fights unfold over 15-25 minutes
+  - Rounds create temporal structure
+  - Career arcs over years (comebacks, declines)
+
+п_agency: 0.95
+  - Fighters have extreme agency (choose style, tactics)
+  - No team constraining individual
+  - Coach advice but fighter executes
+
+п_interpretation: 0.70
+  - Judges score (if decision)
+  - But finish = objective
+  - Style preferences subjective
+  - Fan perception matters for careers
+
+п_format: 0.40
+  - Rules constrain (rounds, weight classes, illegal moves)
+  - Octagon format rigid
+  - But fighting style very flexible
+
+CALCULATED п:
+п = 0.30(0.70) + 0.20(0.65) + 0.25(0.95) + 0.15(0.70) + 0.10(0.40)
+п = 0.21 + 0.13 + 0.24 + 0.11 + 0.04
+п ≈ 0.73
+
+INTERPRETATION: HIGH NARRATIVITY!
+  - Higher than all team sports (NBA 0.49, NFL ~0.48)
+  - Individual agency + persona-driven
+  - Might PASS threshold if |r| > 0.45
+
+================================================================================
+STEP 5: PRESUME AND PROVE
+================================================================================
+
+HYPOTHESIS:
+  "Narrative laws should apply to UFC fights"
+  Test: Д/п > 0.5 (efficiency threshold)
+  
+EXPECTATION:
+  п ≈ 0.73 (HIGH - individual narrative)
+  Expected |r| ≈ 0.4-0.6 (persona matters!)
+  Expected κ ≈ 0.6 (judges evaluate but fans/media matter)
+  Predicted Д = 0.73 × 0.5 × 0.6 = 0.219
+  Efficiency = 0.30 (close to threshold!)
+  
+  BUT: If |r| > 0.6, could PASS!
+
+MEASURE:
+  1. Extract ю from ALL transformers
+  2. Measure actual |r| with fight outcomes
+  3. Calculate Д = п × |r| × κ
+  4. Test: Д/п > 0.5?
+
+VALIDATE:
+  - Report honest pass/fail
+  - If PASS: UFC is 3rd passing domain! (after Character, Self-Rated)
+  - If FAIL: Still higher than team sports (valuable!)
+
+REGISTER:
+  - Add to CrossDomainValidator
+  - Update spectrum (fills 0.70-0.75 gap perfectly!)
+
+================================================================================
+STEP 6: DATA-FIRST DISCOVERY
+================================================================================
+
+FILE: narrative_optimization/domains/ufc/discover_ufc_contexts.py
+
+MEASURE |r| EXHAUSTIVELY ACROSS:
+
+FIGHTER-LEVEL (Nominative Discovery):
+  - Fighter name phonetics (harsh vs soft names)
+  - Nickname effects ("Bones", "The Spider", "Notorious")
+  - Name memorability patterns
+  - Name length by outcome
+  - Cultural name patterns (Brazilian, Russian, American, etc.)
+  - Trash talker vs silent type
+  - Persona type (villain, hero, underdog, champion)
+
+MATCHUP-LEVEL (1v1 Nominative):
+  - Fighter A name vs Fighter B name patterns
+  - Nickname clash effects
+  - Persona contrast (loud vs quiet)
+  - Style narrative (striker vs grappler)
+  - Experience gap (veteran vs rookie)
+  - Confidence language differential
+
+CONTEXT-LEVEL:
+  - Title fights vs non-title
+  - Main event vs prelims
+  - Weight class (Heavyweight, Light Heavyweight, Middleweight, etc.)
+  - Location (Las Vegas, Abu Dhabi, Brazil, etc.)
+  - Grudge match vs respectful
+  - Rematch vs first fight
+  - PPV vs Fight Night
+
+OUTCOME-LEVEL:
+  - Finish vs decision
+  - Method (KO vs Submission vs Decision)
+  - Round ended
+  - Underdog win vs favorite win
+  - Close fight vs dominant
+
+TEMPORAL-LEVEL:
+  - Year (2014-2024)
+  - Fighter age categories
+  - Career phase (rising, peak, declining)
+  - Win streak length
+  - Time since last fight
+
+RANK: By |r| (absolute correlation)
+
+DISCOVER: Top 50 contexts where narrative is empirically strongest
+
+HYPOTHESIS: 
+  • Fighter personas might have |r| > 0.5
+  • Trash talkers vs silent might differ
+  • Title fights higher stakes → higher |r|
+  • Main events > prelims
+
+LET DATA SHOW US (don't predict!)
+
+================================================================================
+STEP 7: BETTING ODDS INTEGRATION
+================================================================================
+
+FILE: narrative_optimization/domains/ufc/test_ufc_betting_edge.py
+
+UFC BETTING MARKETS (Test All):
+
+1. FIGHT WINNER (Moneyline):
+   - Narrative model: Predict from ю
+   - Odds model: Use moneyline favorite
+   - Combined: ю + odds
+   - Test: Does narrative beat Vegas?
+
+2. METHOD OF VICTORY:
+   - KO/TKO: Aggressive narrative?
+   - Submission: Grappler narrative?
+   - Decision: Even narrative?
+   - Test: Can narrative predict method?
+
+3. UNDERDOG UPSETS:
+   - Like NBA inverse pattern?
+   - Do underdogs have better personas?
+   - If r negative: narrative indicates underdog
+   - Test: Narrative + odds for upset detection
+
+4. FINISH vs DECISION:
+   - Finishing narrative vs technical?
+   - Test: Narrative predicts entertainment?
+
+5. ROUND BETTING:
+   - Early finish vs goes distance
+   - Aggressive narrative → early finish?
+
+OUTPUTS:
+  - Narrative-only accuracy: Expected 55-60%
+  - Odds-only accuracy: Expected 65-70% (Vegas good)
+  - Combined accuracy: Expected 70-75%?
+  - Narrative edge: 0-5% (if exists)
+  - Method prediction: Might be stronger than winner!
+  - Underdog detection: Narrative might excel here
+
+HYPOTHESIS: Narrative might beat odds for:
+  - Underdog upsets (persona > stats)
+  - Method of victory (style > record)
+  - Entertainment value (finish > decision)
+
+================================================================================
+STEP 8: NOMINATIVE-SPECIFIC ANALYSIS
+================================================================================
+
+UFC IS PURE NOMINATIVE MATCHUP - Exploit This!
+
+FIGHTER NAME ANALYSIS:
+
+1. PHONETIC PATTERNS:
+   - Harsh names (Khabib, Conor) vs Soft names
+   - Memorability by phonetic structure
+   - Nickname phonetics ("Bones" vs "Blessed")
+
+2. CULTURAL PATTERNS:
+   - Brazilian fighters: Name patterns?
+   - Russian fighters: Name patterns?
+   - American fighters: Different patterns?
+   - Does cultural name background predict?
+
+3. PERSONA-NAME ALIGNMENT:
+   - Do harsh names correlate with aggressive style?
+   - Do soft names correlate with technical style?
+   - Name-persona fit → better performance?
+
+4. NICKNAME EFFECTS:
+   - Intimidating nicknames ("The Spider", "Bones")
+   - Inspirational nicknames ("Blessed", "The Answer")
+   - Nickname memorability → name recognition → pressure?
+
+5. NAME MATCHUP:
+   - Short name vs long name
+   - Harsh vs soft in matchup
+   - Memorable vs forgettable
+   - Cultural clash in names
+
+ENSEMBLE (Training Camps):
+  - Jackson-Wink MMA (Greg Jackson, Mike Winkeljohn)
+  - American Top Team (names of corner)
+  - SBG Ireland (John Kavanagh)
+  - Camp name prestige → fighter confidence?
+
+MEASURE |r| for ALL name dimensions - let data show patterns!
+
+================================================================================
+STEP 9: EXPECTED NARRATIVITY POTENTIAL
+================================================================================
+
+UFC CHARACTERISTICS:
+
+HIGH NARRATIVITY FACTORS:
+  ✓ Individual agency (п_agency = 0.95)
+  ✓ Persona-driven (fighter brands)
+  ✓ Trash talk/hype culture
+  ✓ Many stylistic paths
+  ✓ Comebacks, redemption arcs
+  ✓ Grudge matches amplify stakes
+
+CONSTRAINTS:
+  ❌ Physical performance still matters
+  ❌ Rules constrain actions
+  ❌ Weight classes limit matchups
+  ❌ Judges can be inconsistent
+
+CALCULATED: п ≈ 0.73
+
+COUPLING ESTIMATE:
+  κ ≈ 0.6 (moderate-high)
+  - Judges evaluate performance
+  - But media/fans determine careers
+  - Fighter persona influences opportunities
+  - Trash talk affects opponent mentality
+  - Not pure self-rated (κ < 1)
+  - Not pure external (κ > 0.3)
+
+PREDICTED OUTCOME:
+
+If |r| ≈ 0.5 (moderate persona effect):
+  Д = 0.73 × 0.5 × 0.6 = 0.219
+  Efficiency = 0.30 (FAILS, but close!)
+
+If |r| ≈ 0.6 (strong persona effect):
+  Д = 0.73 × 0.6 × 0.6 = 0.263
+  Efficiency = 0.36 (FAILS, but approaching!)
+
+If |r| ≈ 0.7 (very strong persona effect):
+  Д = 0.73 × 0.7 × 0.6 = 0.307
+  Efficiency = 0.42 (FAILS, but high!)
+
+If |r| ≈ 0.85 (extreme persona dominance):
+  Д = 0.73 × 0.85 × 0.6 = 0.372
+  Efficiency = 0.51 (PASSES! ✓)
+
+CONCLUSION: UFC could PASS if |r| > 0.85
+  - Possible for title fights?
+  - Grudge matches?
+  - Trash talker matchups?
+  - Let data discover!
+
+================================================================================
+STEP 10: DATA-FIRST DISCOVERIES TO EXPECT
+================================================================================
+
+MEASURE EVERYTHING, DISCOVER PATTERNS:
+
+Likely Discoveries:
+  • Title fights: |r| > 0.5? (highest stakes)
+  • Trash talk level: Intense > Minimal?
+  • Grudge matches: |r| > 0.6? (bad blood)
+  • Main events: |r| > prelims?
+  • Specific fighters: Conor, Khabib, Jones - unique patterns?
+  • Fighter personas: Villain vs hero effects?
+  • Cultural clashes: Different patterns?
+  • Experience gaps: Veteran vs rookie name effects?
+
+Possible Surprises (Like Horror for Movies):
+  • Unexpected weight class has highest |r|
+  • Specific persona type dominates
+  • Underdog narratives (inverse pattern)
+  • Method prediction > winner prediction
+  • Nickname effects > real name effects
+
+GOAL: Find 20-30 contexts, rank by |r|, optimize top 10
+
+PASSING THRESHOLD:
+  - Need |r| > 0.85 to pass overall
+  - But subdivisions might pass with lower |r| if п_eff or κ higher
+  - Title fights: п_eff ≈ 0.80, κ ≈ 0.7 → need |r| > 0.6
+  - Grudge matches: κ ≈ 0.75 → need |r| > 0.55
+  
+POTENTIAL: 5-10 UFC contexts might PASS!
+
+================================================================================
+STEP 11: IMPLEMENTATION FILES
+================================================================================
+
+CREATE:
+
+1. domains/ufc/__init__.py
+2. domains/ufc/collect_ufc_data.py (data collection)
+3. domains/ufc/generate_fighter_narratives.py (narrative generation)
+4. domains/ufc/analyze_ufc_complete.py (all transformers, presume-prove)
+5. domains/ufc/discover_ufc_contexts.py (data-first discovery)
+6. domains/ufc/test_ufc_betting_edge.py (betting comparison)
+7. domains/ufc/ufc_fighter_analyzer.py (individual fighter analysis)
+
+OUTPUT FILES:
+  - data/domains/ufc_complete_dataset.json (5,000+ fights)
+  - domains/ufc/ufc_validation_results.json (presume-prove)
+  - domains/ufc/ufc_empirical_discoveries.json (data-first)
+  - domains/ufc/ufc_betting_analysis.json (edge testing)
+
+================================================================================
+STEP 12: ANALYSIS QUESTIONS
+================================================================================
+
+FRAMEWORK VALIDATION:
+  1. What is UFC's actual п? (calculate from data)
+  2. What is measured |r|? (fighter narrative → outcome)
+  3. Does UFC pass Д/п > 0.5? (could be 3rd passer!)
+  4. Is r positive or negative? (personas help or indicate?)
+
+NOMINATIVE DISCOVERIES:
+  5. Which FIGHTERS have highest |r|? (Conor, Khabib, Jones?)
+  6. Do fighter NAME patterns predict? (phonetics, length, culture)
+  7. Do NICKNAMES matter? (intimidating vs inspirational)
+  8. PERSONA types: Villain vs hero |r|?
+  9. TRASH TALK: Does it predict outcomes?
+  10. MATCHUP names: Complementary vs contrasting?
+  11. TRAINING CAMP names: Does camp prestige matter?
+
+CONTEXT DISCOVERIES:
+  12. TITLE FIGHTS: |r| higher? (biggest stakes)
+  13. GRUDGE MATCHES: |r| higher? (bad blood)
+  14. MAIN EVENTS vs prelims?
+  15. WEIGHT CLASSES: Different patterns?
+  16. REMATCHES: Revenge narrative effects?
+
+BETTING EDGE:
+  17. Narrative beats odds for underdogs?
+  18. Narrative predicts method better than winner?
+  19. Combined model improves on Vegas?
+  20. Where is narrative edge strongest?
+
+================================================================================
+STEP 13: SUCCESS CRITERIA
+================================================================================
+
+MINIMUM SUCCESS:
+  ✓ Complete data collection (5,000+ fights)
+  ✓ ALL transformers applied
+  ✓ Presume-and-prove validation complete
+  ✓ Measured |r| and calculated Д
+  ✓ Honest pass/fail reported
+
+GOOD SUCCESS:
+  ✓ Above +
+  ✓ Data-first discovery complete (50+ contexts)
+  ✓ Top 10 contexts identified by |r|
+  ✓ Betting odds comparison done
+  ✓ Nominative patterns discovered
+
+EXCELLENT SUCCESS:
+  ✓ Above +
+  ✓ UFC PASSES threshold! (3rd passing domain)
+  ✓ OR: Specific contexts pass (title fights, grudge matches)
+  ✓ Narrative edge found in betting
+  ✓ Unexpected patterns discovered (like Horror for movies)
+  ✓ Nominative effects quantified (fighter names matter X%)
+
+================================================================================
+STEP 14: INTEGRATION WITH FRAMEWORK
+================================================================================
+
+AFTER ANALYSIS:
+
+1. Register in CrossDomainValidator
+2. Add to spectrum visualization (fills 0.70-0.75 gap!)
+3. Update formulas page with UFC results
+4. Add UFC route to Flask app
+5. Create UFC dashboard page
+6. Document discoveries
+7. Update README spectrum table
+
+IF UFC PASSES:
+  - Update pass rate: 3/11 domains (27%)
+  - Celebrate: First combat sport validated!
+  - Analyze: Why UFC passes but team sports fail?
+  - Theory: Individual agency + persona > team performance constraints
+
+================================================================================
+KEY PRINCIPLES FOR UFC
+================================================================================
+
+1. TREAT AS UNKNOWN DOMAIN
+   - Calculate п from scratch
+   - Don't assume like NBA/NFL
+   - Let data reveal true narrativity
+
+2. NOMINATIVE-FIRST
+   - Fighter names ARE the narrative
+   - Personas built around names
+   - 1v1 = purest nominative test
+   - Exploit maximum name richness
+
+3. ALL TRANSFORMERS
+   - Don't pre-select
+   - UFC might use unexpected transformers
+   - Data shows which matter
+
+4. DATA-FIRST DISCOVERY
+   - Measure |r| in ALL contexts
+   - Rank empirically
+   - Don't predict winners - discover them
+
+5. PERSONA = NARRATIVE
+   - Trash talk is narrative
+   - Confidence is narrative
+   - Style clash is narrative
+   - Fighter brand is narrative
+
+================================================================================
+EXPECTED TIMELINE
+================================================================================
+
+Week 1: Data Collection
+  - Scrape/API 5,000+ fights
+  - Collect betting odds
+  - Get fighter bios/personas
+  
+Week 2: Narrative Generation
+  - Generate 200-300 word narratives
+  - Include fighter names extensively
+  - Persona emphasis
+  - Nominative-rich content
+
+Week 3: Transformer Application
+  - Apply ALL 25 transformers
+  - Extract 400-500 features
+  - Compute ю
+  - Presume-and-prove validation
+
+Week 4: Discovery & Optimization
+  - Data-first discovery (50+ contexts)
+  - Betting odds testing
+  - Report findings
+  - Integration
+
+TOTAL: 4 weeks to complete UFC domain
+
+================================================================================
+WHY UFC MIGHT PASS (Hopeful but Data Will Decide)
+================================================================================
+
+FACTORS FAVORING PASS:
+  • High п (0.73 - highest team sport)
+  • Individual agency (not team constrained)
+  • Persona-driven (narrative IS the product)
+  • Trash talk culture (narrative amplification)
+  • Fan/media matter (higher κ than pure performance)
+  • 1v1 clarity (clean narrative matchup)
+
+FACTORS AGAINST:
+  • Physical performance still matters
+  • Finish = objective outcome
+  • Skill/training dominate
+
+REALISTIC EXPECTATION:
+  - Overall UFC: Probably fails (eff ≈ 0.30-0.40)
+  - BUT: Title fights might pass (higher stakes, higher κ)
+  - Grudge matches might pass (narrative maximized)
+  - Trash talk matchups might pass (persona clash)
+
+EVEN IF FAILS:
+  - Still higher than team sports
+  - Validates individual > team for narrative
+  - Nominative effects quantified
+  - Betting edge possible
+
+VALUE EITHER WAY: High!
+
+================================================================================
+READY TO IMPLEMENT
+================================================================================
+
+Status: Instructions complete
+Next: Bot implements UFC data collection & analysis
+Expected: 4 weeks to complete domain
+Potential: 3rd passing domain (if |r| > 0.85)
+
+================================================================================
+
+
+

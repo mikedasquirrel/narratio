@@ -1,0 +1,32 @@
+domain: hurricanes
+type: nominative
+narrativity:
+  structural: 0.4
+  temporal: 0.35
+  agency: 0.3
+  interpretive: 0.4
+  format: 0.35
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.36
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

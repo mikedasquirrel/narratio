@@ -1,0 +1,40 @@
+{
+  "domain": "professional_poker",
+  "calculation_date": "2025-11-12T22:41:20.379541",
+  "components": {
+    "structural": 0.68,
+    "temporal": 0.88,
+    "agency": 1.0,
+    "interpretive": 0.88,
+    "format": 0.73
+  },
+  "weights": {
+    "structural": 0.3,
+    "temporal": 0.2,
+    "agency": 0.25,
+    "interpretive": 0.15,
+    "format": 0.1
+  },
+  "calculated_pi": 0.835,
+  "classification": "very_high_narrativity",
+  "target_achieved": true,
+  "expected_forces": {
+    "theta": 0.65,
+    "lambda": 0.7,
+    "ta_marbuta": 0.72
+  },
+  "expected_performance": {
+    "r_squared": 0.75,
+    "range": [
+      0.65,
+      0.8
+    ]
+  },
+  "key_characteristics": [
+    "Perfect individual agency (1.00)",
+    "Skill + chance hybrid",
+    "Psychological warfare central",
+    "Multiple temporal layers",
+    "Rich interpretive complexity"
+  ]
+}

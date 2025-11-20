@@ -1,0 +1,19 @@
+{
+  "\u03c0": 0.7,
+  "components": {
+    "\u03c0_structural": 0.4,
+    "\u03c0_temporal": 0.75,
+    "\u03c0_agency": 1.0,
+    "\u03c0_interpretation": 0.7,
+    "\u03c0_format": 0.65
+  },
+  "classification": "HIGH",
+  "domain_type": "Individual Performance + Mental Game",
+  "reasoning": {
+    "structural": "Moderate constraint - rules exist but courses/weather vary",
+    "temporal": "Strong arc - 4 rounds create clear progression",
+    "agency": "Maximum - complete individual control over every shot",
+    "interpretation": "High - objective scoring but heavy mental game interpretation",
+    "format": "Medium-high - stroke play standard but course variety"
+  }
+}

@@ -1,0 +1,49 @@
+domain: books_combined
+type: literature
+narrativity:
+  structural: 0.725  # Weighted average of novels (0.85) and nonfiction (0.60)
+  temporal: 0.725    # Weighted average
+  agency: 0.65       # Weighted average
+  interpretive: 0.725 # Weighted average
+  format: 0.50       # Same for both
+data:
+  text_fields:
+    - full_narrative
+  outcome_field: success_score
+  context_features:
+    - author_name
+    - book_type  # 0=novel, 1=nonfiction
+    - character_names
+    - key_figures
+  name_field: author_name
+  nominative_fields:
+    - author_name
+    - book_title
+    - character_names
+    - key_figures
+    - all_nominatives
+outcome_type: continuous
+transformer_augmentation:
+  - nominative
+  - phonetic
+  - ensemble
+  - expertise
+  - authenticity
+custom_validators: []
+description: Combined novels and nonfiction books domain
+sample_size: null
+pi: 0.66  # Weighted average of novels (0.72) and nonfiction (0.61)
+perspectives:
+  - reader
+  - critic
+  - expert
+quality_methods:
+  - weighted_mean
+  - ensemble
+scales:
+  - nano
+  - micro
+  - meso
+  - macro
+aggregation_method: importance_weighted
+

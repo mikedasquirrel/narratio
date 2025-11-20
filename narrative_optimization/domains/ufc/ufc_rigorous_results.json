@@ -1,0 +1,119 @@
+{
+  "overall_correlation": 0.010987357647487645,
+  "hypotheses": [
+    {
+      "name": "H3: Title fights",
+      "r_abs": 0.06413246539673016,
+      "r": -0.06413246539673016
+    },
+    {
+      "name": "H6: Veteran vs young",
+      "r_abs": 0.010217986004124916,
+      "r": -0.010217986004124916
+    },
+    {
+      "name": "H5: Hot streak clash",
+      "r_abs": 0.007830796720584246,
+      "r": 0.007830796720584246
+    },
+    {
+      "name": "H2: Nominative (names/nicknames)",
+      "r_abs": 0.007214751263011778,
+      "r": -0.007214751263011778
+    },
+    {
+      "name": "H4: Style clash",
+      "r_abs": 0.0030925642432470734,
+      "r": -0.0030925642432470734
+    },
+    {
+      "name": "H1: Betting odds (public perception)",
+      "r_abs": 0.00031661701699335724,
+      "r": 0.00031661701699335724
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "strike_differential",
+      "importance": 0.07571922378204872
+    },
+    {
+      "feature": "reach_b",
+      "importance": 0.07501500448024548
+    },
+    {
+      "feature": "td_pct_b",
+      "importance": 0.07130994136227962
+    },
+    {
+      "feature": "sub_threat_b",
+      "importance": 0.07015174956079546
+    },
+    {
+      "feature": "td_pct_a",
+      "importance": 0.06992837023983083
+    },
+    {
+      "feature": "strike_pct_b",
+      "importance": 0.06697890995037753
+    },
+    {
+      "feature": "sub_threat_a",
+      "importance": 0.05870808016174349
+    },
+    {
+      "feature": "strike_pct_a",
+      "importance": 0.05476056308800371
+    },
+    {
+      "feature": "reach_advantage",
+      "importance": 0.05212792477844526
+    },
+    {
+      "feature": "streak_a",
+      "importance": 0.03847949493708757
+    },
+    {
+      "feature": "streak_diff",
+      "importance": 0.03239053411717843
+    },
+    {
+      "feature": "reach_a",
+      "importance": 0.03147841144045706
+    },
+    {
+      "feature": "age_b",
+      "importance": 0.0310368426887346
+    },
+    {
+      "feature": "streak_b",
+      "importance": 0.03091739529555099
+    },
+    {
+      "feature": "age_a",
+      "importance": 0.029225873754355786
+    },
+    {
+      "feature": "age_gap",
+      "importance": 0.027837879873369525
+    },
+    {
+      "feature": "name_a_length",
+      "importance": 0.025271934601494454
+    },
+    {
+      "feature": "name_b_length",
+      "importance": 0.019690626933746774
+    },
+    {
+      "feature": "syllable_diff",
+      "importance": 0.017292528575163862
+    },
+    {
+      "feature": "syllables_b",
+      "importance": 0.017259903415165062
+    }
+  ],
+  "best_efficiency": 0.03847947923803809,
+  "passes_threshold": false
+}

@@ -1,0 +1,791 @@
+{
+  "primary_hypothesis": {
+    "sample_sizes": {
+      "geographic": 101,
+      "saint": 150
+    },
+    "descriptive_statistics": {
+      "geographic": {
+        "mean_significance": 77.94059405940594,
+        "median_significance": 77.0,
+        "std_significance": 5.75295016870165,
+        "mean_years_active": 68.22222222222223,
+        "mean_events": 4.678571428571429
+      },
+      "saint": {
+        "mean_significance": 72.32666666666667,
+        "median_significance": 71.0,
+        "std_significance": 4.439748264625354,
+        "mean_years_active": 323.96875,
+        "mean_events": 0.22058823529411764
+      }
+    },
+    "hypothesis_tests": {
+      "t_test": {
+        "t_statistic": 8.285424476596564,
+        "p_value": 2.8133994790511558e-14,
+        "significant": "True",
+        "direction": "geographic > saint"
+      },
+      "mann_whitney": {
+        "u_statistic": 12181.5,
+        "p_value": 2.3895743955795347e-16,
+        "significant": "True"
+      }
+    },
+    "effect_sizes": {
+      "cohens_d": {
+        "value": 1.1208392578631738,
+        "interpretation": "large"
+      }
+    },
+    "examples": {
+      "top_geographic": [
+        {
+          "name": "Arizona",
+          "historical_significance_score": 92.0,
+          "nation": "United States",
+          "era": "modern"
+        },
+        {
+          "name": "Arizona",
+          "historical_significance_score": 92.0,
+          "nation": "US",
+          "era": "modern"
+        },
+        {
+          "name": "Missouri",
+          "historical_significance_score": 91.0,
+          "nation": "United States",
+          "era": "modern"
+        },
+        {
+          "name": "Missouri",
+          "historical_significance_score": 91.0,
+          "nation": "US",
+          "era": "modern"
+        },
+        {
+          "name": "South Carolina",
+          "historical_significance_score": 89.0,
+          "nation": "US",
+          "era": "steam_era"
+        }
+      ],
+      "top_saint": [
+        {
+          "name": "Santa Maria",
+          "historical_significance_score": 96.0,
+          "nation": "Spain",
+          "era": "age_of_discovery"
+        },
+        {
+          "name": "San Gabriel",
+          "historical_significance_score": 88.0,
+          "nation": "Portugal",
+          "era": "age_of_discovery"
+        },
+        {
+          "name": "Sant\u00edsima Trinidad",
+          "historical_significance_score": 87.0,
+          "nation": "Spain",
+          "era": "age_of_sail"
+        },
+        {
+          "name": "Santa Clara",
+          "historical_significance_score": 85.0,
+          "nation": "Spain",
+          "era": "age_of_discovery"
+        },
+        {
+          "name": "Stalwart",
+          "historical_significance_score": 84.0,
+          "nation": "US",
+          "era": "steam_era"
+        }
+      ]
+    },
+    "interpretation": {
+      "hypothesis_supported": true,
+      "strength": "large",
+      "conclusion": "\u2713 HYPOTHESIS SUPPORTED: Geographic-named ships show large advantage over saint-named ships (p=0.0000, d=1.121)"
+    }
+  },
+  "semantic_alignment": {
+    "overall_statistics": {
+      "mean_alignment": 50.31204644412192,
+      "median_alignment": 50.0,
+      "std_alignment": 3.145666550089414,
+      "high_alignment_count": 6,
+      "high_alignment_percentage": 0.8708272859216255
+    },
+    "case_studies": {
+      "high_alignment_ships": [
+        {
+          "name": "Beagle",
+          "semantic_alignment_score": 90.0,
+          "historical_significance_score": 98.0,
+          "semantic_alignment_explanation": "Beagle (dog breed) \u2192 carried Darwin \u2192 natural selection theory (biological connection)"
+        },
+        {
+          "name": "Endeavour",
+          "semantic_alignment_score": 85.0,
+          "historical_significance_score": 95.0,
+          "semantic_alignment_explanation": "'Endeavour' name \u2192 exploration missions | Major discoveries made"
+        },
+        {
+          "name": "Constitution",
+          "semantic_alignment_score": 85.0,
+          "historical_significance_score": 94.0,
+          "semantic_alignment_explanation": "'Constitution' name \u2192 227 years of service (constitutional longevity)"
+        },
+        {
+          "name": "Discovery",
+          "semantic_alignment_score": 80.0,
+          "historical_significance_score": 88.0,
+          "semantic_alignment_explanation": "'Discovery' name \u2192 3 major discoveries"
+        },
+        {
+          "name": "Victory",
+          "semantic_alignment_score": 80.0,
+          "historical_significance_score": 98.0,
+          "semantic_alignment_explanation": "'Victory' name \u2192 13 battles won"
+        },
+        {
+          "name": "Enterprise",
+          "semantic_alignment_score": 75.0,
+          "historical_significance_score": 97.0,
+          "semantic_alignment_explanation": "'Enterprise' name \u2192 20 major accomplishments"
+        }
+      ],
+      "hms_beagle": {
+        "name": "Beagle",
+        "semantic_alignment_score": 90.0,
+        "historical_significance_score": 98.0,
+        "explanation": "Beagle (dog breed) \u2192 carried Darwin \u2192 natural selection theory (biological connection)",
+        "analysis": "HMS Beagle demonstrates strong nominative determinism: animal name (beagle dog) \u2192 carried naturalist Darwin \u2192 evolution theory (biological connection)"
+      }
+    },
+    "permutation_test": {
+      "observed_mean_alignment": 50.31204644412192,
+      "null_distribution_mean": 50.312046444121926,
+      "null_distribution_std": 7.105427357601002e-15,
+      "p_value": 1.0,
+      "significant": "False",
+      "interpretation": "No evidence of nominative determinism"
+    },
+    "correlation_analysis": {
+      "pearson_r": 0.3094937865639043,
+      "p_value": 9.246810736973194e-17,
+      "r_squared": 0.09578640392166356,
+      "significant": "True",
+      "interpretation": "Positive correlation (r=0.309)"
+    },
+    "beagle_case_study": {
+      "semantic_alignment_score": 90.0,
+      "historical_significance": 98.0,
+      "analysis": "HMS Beagle demonstrates strong nominative determinism",
+      "evidence": [
+        "Name: Beagle (animal - dog breed)",
+        "Carried: Charles Darwin (naturalist)",
+        "Achievement: Theory of evolution (biological theory)",
+        "Connection: Animal name \u2192 animal studies \u2192 evolutionary biology"
+      ]
+    }
+  },
+  "category_analysis": {
+    "categories": {
+      "geographic": {
+        "count": 101,
+        "mean_significance": 77.94059405940594,
+        "median_significance": 77.0,
+        "std_significance": 5.75295016870165,
+        "mean_years_active": 68.22222222222223,
+        "mean_events": 4.678571428571429
+      },
+      "saint": {
+        "count": 150,
+        "mean_significance": 72.32666666666667,
+        "median_significance": 71.0,
+        "std_significance": 4.439748264625354,
+        "mean_years_active": 323.96875,
+        "mean_events": 0.22058823529411764
+      },
+      "monarch": {
+        "count": 15,
+        "mean_significance": 79.13333333333334,
+        "median_significance": 79.0,
+        "std_significance": 5.316640543300503,
+        "mean_years_active": 86.0,
+        "mean_events": 0.0
+      },
+      "virtue": {
+        "count": 19,
+        "mean_significance": 87.26315789473684,
+        "median_significance": 88.0,
+        "std_significance": 7.8869942539964555,
+        "mean_years_active": 106.125,
+        "mean_events": 7.0
+      },
+      "mythological": {
+        "count": 10,
+        "mean_significance": 74.1,
+        "median_significance": 74.0,
+        "std_significance": 2.131770260709264,
+        "mean_years_active": 225.0,
+        "mean_events": 0.0
+      },
+      "animal": {
+        "count": 10,
+        "mean_significance": 78.3,
+        "median_significance": 74.0,
+        "std_significance": 10.79145752693099,
+        "mean_years_active": 50.0,
+        "mean_events": 8.0
+      },
+      "other": {
+        "count": 548,
+        "mean_significance": 76.44343065693431,
+        "median_significance": 76.0,
+        "std_significance": 5.812620441694493,
+        "mean_years_active": 132.29545454545453,
+        "mean_events": 0.6526946107784432
+      }
+    },
+    "anova": {
+      "f_statistic": 26.47077210393251,
+      "p_value": 5.711741393676727e-29,
+      "significant": "True",
+      "interpretation": "Significant differences between categories"
+    },
+    "rankings": [
+      {
+        "category": "virtue",
+        "mean_significance": 87.26315789473684,
+        "count": 19
+      },
+      {
+        "category": "monarch",
+        "mean_significance": 79.13333333333334,
+        "count": 15
+      },
+      {
+        "category": "animal",
+        "mean_significance": 78.3,
+        "count": 10
+      },
+      {
+        "category": "geographic",
+        "mean_significance": 77.94059405940594,
+        "count": 101
+      },
+      {
+        "category": "other",
+        "mean_significance": 76.44343065693431,
+        "count": 548
+      },
+      {
+        "category": "mythological",
+        "mean_significance": 74.1,
+        "count": 10
+      },
+      {
+        "category": "saint",
+        "mean_significance": 72.32666666666667,
+        "count": 150
+      }
+    ]
+  },
+  "phonetic_power": {
+    "harshness_analysis": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "interpretation": "No significant correlation"
+    },
+    "authority_analysis": {
+      "correlation": -0.07728241681608437,
+      "p_value": 0.04256823845553901,
+      "significant": "True",
+      "sample_size": 689
+    },
+    "memorability_analysis": {
+      "correlation": 0.09850834643346104,
+      "p_value": 0.009672369009197535,
+      "significant": "True",
+      "interpretation": "More memorable names achieve greater significance"
+    }
+  },
+  "temporal_evolution": {
+    "eras": {
+      "age_of_discovery": {
+        "count": 51,
+        "mean_significance": 74.54901960784314,
+        "category_distribution": {
+          "saint": 50,
+          "other": 1
+        },
+        "geographic_percentage": 0.0,
+        "saint_percentage": 98.0392156862745,
+        "virtue_percentage": 0.0
+      },
+      "age_of_sail": {
+        "count": 173,
+        "mean_significance": 75.11560693641619,
+        "category_distribution": {
+          "saint": 80,
+          "other": 69,
+          "virtue": 8,
+          "mythological": 5,
+          "animal": 4,
+          "monarch": 4,
+          "geographic": 3
+        },
+        "geographic_percentage": 1.7341040462427744,
+        "saint_percentage": 46.24277456647399,
+        "virtue_percentage": 4.624277456647398
+      },
+      "steam_era": {
+        "count": 244,
+        "mean_significance": 76.29098360655738,
+        "category_distribution": {
+          "other": 193,
+          "geographic": 25,
+          "virtue": 7,
+          "saint": 7,
+          "monarch": 6,
+          "animal": 3,
+          "mythological": 3
+        },
+        "geographic_percentage": 10.245901639344263,
+        "saint_percentage": 2.8688524590163933,
+        "virtue_percentage": 2.8688524590163933
+      },
+      "modern": {
+        "count": 385,
+        "mean_significance": 76.8025974025974,
+        "category_distribution": {
+          "other": 285,
+          "geographic": 73,
+          "saint": 13,
+          "monarch": 5,
+          "virtue": 4,
+          "animal": 3,
+          "mythological": 2
+        },
+        "geographic_percentage": 18.961038961038962,
+        "saint_percentage": 3.3766233766233764,
+        "virtue_percentage": 1.0389610389610389
+      }
+    },
+    "category_trends": {},
+    "significance_trends": {
+      "historical_significance_score": {
+        "1460": 96.0,
+        "1490": 79.8,
+        "1500": 72.0,
+        "1510": 76.42857142857143,
+        "1520": 72.0,
+        "1550": 72.0,
+        "1560": 71.33333333333333,
+        "1570": 79.0,
+        "1580": 73.23809523809524,
+        "1590": 71.0,
+        "1600": 74.0,
+        "1610": 72.5,
+        "1620": 74.25,
+        "1630": 80.0,
+        "1640": 72.0,
+        "1650": 70.5,
+        "1660": 71.5,
+        "1670": 72.33333333333333,
+        "1680": 75.66666666666667,
+        "1690": 71.66666666666667,
+        "1700": 70.66666666666667,
+        "1710": 70.66666666666667,
+        "1720": 69.4,
+        "1730": 70.66666666666667,
+        "1740": 73.25,
+        "1750": 74.0,
+        "1760": 77.88888888888889,
+        "1770": 75.3529411764706,
+        "1780": 75.07692307692308,
+        "1790": 75.10344827586206,
+        "1800": 75.63636363636364,
+        "1810": 79.75,
+        "1820": 91.0,
+        "1850": 81.4,
+        "1860": 83.125,
+        "1870": 79.28571428571429,
+        "1880": 79.66666666666667,
+        "1890": 75.96296296296296,
+        "1900": 76.86274509803921,
+        "1910": 77.67676767676768,
+        "1920": 75.0701754385965,
+        "1930": 77.09848484848484,
+        "1940": 76.24022346368714,
+        "1950": 77.46153846153847,
+        "1960": 75.0,
+        "1970": 72.46153846153847,
+        "1980": 72.07692307692308,
+        "1990": 74.0
+      },
+      "name_category": {
+        "1460": 0.0,
+        "1490": 0.0,
+        "1500": 0.0,
+        "1510": 0.0,
+        "1520": 0.0,
+        "1550": 0.0,
+        "1560": 0.0,
+        "1570": 0.0,
+        "1580": 0.0,
+        "1590": 0.0,
+        "1600": 0.0,
+        "1610": 0.0,
+        "1620": 0.0,
+        "1630": 0.0,
+        "1640": 0.0,
+        "1650": 0.0,
+        "1660": 0.0,
+        "1670": 0.0,
+        "1680": 0.0,
+        "1690": 0.0,
+        "1700": 0.0,
+        "1710": 0.0,
+        "1720": 0.0,
+        "1730": 0.0,
+        "1740": 0.0,
+        "1750": 0.0,
+        "1760": 0.0,
+        "1770": 5.88235294117647,
+        "1780": 7.6923076923076925,
+        "1790": 0.0,
+        "1800": 0.0,
+        "1810": 0.0,
+        "1820": 0.0,
+        "1850": 0.0,
+        "1860": 12.5,
+        "1870": 0.0,
+        "1880": 16.666666666666664,
+        "1890": 14.814814814814813,
+        "1900": 17.647058823529413,
+        "1910": 23.232323232323232,
+        "1920": 14.035087719298245,
+        "1930": 14.393939393939394,
+        "1940": 9.497206703910614,
+        "1950": 15.384615384615385,
+        "1960": 25.0,
+        "1970": 38.46153846153847,
+        "1980": 23.076923076923077,
+        "1990": 44.44444444444444
+      }
+    }
+  },
+  "robustness_checks": {
+    "survivorship_bias": {
+      "total_ships": 853,
+      "sunk_ships": 58,
+      "active_ships": 795,
+      "sunk_percentage": 6.799531066822978
+    },
+    "era_specific": {
+      "age_of_sail": {
+        "geographic_mean": 78.33333333333333,
+        "saint_mean": 70.35,
+        "p_value": 0.007120009181615372,
+        "significant": "True"
+      },
+      "steam_era": {
+        "geographic_mean": 76.2,
+        "saint_mean": 75.71428571428571,
+        "p_value": 0.8460776122467567,
+        "significant": "False"
+      },
+      "modern": {
+        "geographic_mean": 78.52054794520548,
+        "saint_mean": 75.0,
+        "p_value": 0.017823741511858324,
+        "significant": "True"
+      }
+    },
+    "nation_specific": {
+      "US": {
+        "total": 261,
+        "geographic_mean": 77.32835820895522,
+        "saint_mean": 75.6
+      }
+    }
+  },
+  "advanced_statistics": {
+    "sample_info": {
+      "total_n": 853,
+      "by_category": {
+        "other": 548,
+        "saint": 150,
+        "geographic": 101,
+        "virtue": 19,
+        "monarch": 15,
+        "animal": 10,
+        "mythological": 10
+      },
+      "by_era": {
+        "modern": 385,
+        "steam_era": 244,
+        "age_of_sail": 173,
+        "age_of_discovery": 51
+      },
+      "by_type": {
+        "naval": 788,
+        "exploration": 56,
+        "commercial": 7,
+        "passenger": 2
+      },
+      "by_nation": {
+        "US": 261,
+        "UK": 199,
+        "Spain": 99,
+        "France": 75,
+        "Germany": 53,
+        "Japan": 40,
+        "Italy": 35,
+        "Russia": 29,
+        "Portugal": 22,
+        "United Kingdom": 19
+      },
+      "outcome_stats": {
+        "mean": 76.17936694021103,
+        "std": 6.172743819844753,
+        "min": 64.0,
+        "max": 98.0,
+        "skewness": 0.9332932927066356,
+        "kurtosis": 0.8793211618979346
+      }
+    },
+    "multiple_regression": {
+      "model1_name_only": {
+        "r_squared": 0.155309926447585,
+        "adj_r_squared": 0.15132553930818682,
+        "f_statistic": 38.97962748445263,
+        "f_pvalue": 5.556536391614763e-30,
+        "coefficients": {
+          "is_geographic": {
+            "coef": 1.505734904476284,
+            "se": 0.6140829282636296,
+            "pvalue": 0.014406876296781179,
+            "ci_lower": 0.30043417805313144,
+            "ci_upper": 2.7110356308994366
+          },
+          "is_saint": {
+            "coef": -4.108192488262997,
+            "se": 0.5220249309476122,
+            "pvalue": 1.0823333992492749e-14
+          },
+          "is_virtue": {
+            "coef": 10.82829873980726,
+            "pvalue": 1.1617237304815142e-15
+          }
+        }
+      },
+      "model2_with_controls": {
+        "r_squared": 0.18916451560371195,
+        "adj_r_squared": 0.18147887120185136,
+        "f_statistic": 24.6127072386954,
+        "f_pvalue": 3.29116265576748e-34,
+        "aic": 5364.007607944148,
+        "bic": 5406.746443871573,
+        "coefficients": {
+          "is_geographic": {
+            "coef": 1.5684143085527171,
+            "se": 0.6109622740189005,
+            "pvalue": 0.010425935580483898,
+            "ci_lower": 0.3692305712090109,
+            "ci_upper": 2.767598045896423
+          },
+          "is_saint": {
+            "coef": -5.229988423879312,
+            "pvalue": 1.5235078099200256e-17
+          },
+          "is_virtue": {
+            "coef": 9.448784544567632,
+            "pvalue": 3.2229443782783568e-12
+          }
+        }
+      },
+      "model_comparison": {
+        "r_squared_change": 0.033854589156126935,
+        "interpretation": "Controls explain additional variance"
+      }
+    },
+    "interaction_effects": {
+      "geographic_x_modern": {
+        "coefficient": 1.3095173091747871,
+        "pvalue": 0.3621692242611735,
+        "significant": "False",
+        "interpretation": "No era moderation"
+      },
+      "geographic_x_naval": {
+        "coefficient": 1.0983901883638023,
+        "pvalue": 0.0007839441076092272,
+        "significant": "True",
+        "interpretation": "Geographic effect differs for naval vs exploration"
+      },
+      "saint_x_age_of_discovery": {
+        "coefficient": -6.02139601139433,
+        "pvalue": 0.31382577347408613,
+        "significant": "False",
+        "interpretation": "No era effect for saints"
+      }
+    },
+    "polynomial_regression": {
+      "syllable_nonlinearity": {
+        "r2_linear": 0.0021432944939592247,
+        "r2_quadratic": 0.003425907533171957,
+        "improvement": 0.0012826130392127322,
+        "f_statistic": 0.8828972693058662,
+        "pvalue": 0.34774009217805957,
+        "significant": "False",
+        "interpretation": "Linear fit adequate"
+      },
+      "length_nonlinearity": {
+        "r2_linear": 0.01614178670361932,
+        "r2_quadratic": 0.016167121133401796,
+        "improvement": 2.5334429782475354e-05
+      }
+    },
+    "subgroup_analysis": {
+      "by_era": {
+        "age_of_sail": {
+          "geo_n": 3,
+          "saint_n": 80,
+          "geo_mean": 78.33333333333333,
+          "saint_mean": 70.35,
+          "difference": 7.983333333333334,
+          "t_statistic": 8.630466598536831,
+          "pvalue": 0.007120009181615372,
+          "cohens_d": 5.226318471152018,
+          "significant": "True"
+        },
+        "steam_era": {
+          "geo_n": 25,
+          "saint_n": 7,
+          "geo_mean": 76.2,
+          "saint_mean": 75.71428571428571,
+          "difference": 0.48571428571429465,
+          "t_statistic": 0.1998088096816688,
+          "pvalue": 0.8460776122467567,
+          "cohens_d": 0.09206578629695808,
+          "significant": "False"
+        },
+        "modern": {
+          "geo_n": 73,
+          "saint_n": 13,
+          "geo_mean": 78.52054794520548,
+          "saint_mean": 75.0,
+          "difference": 3.520547945205479,
+          "t_statistic": 2.5676413769931066,
+          "pvalue": 0.017823741511858324,
+          "cohens_d": 0.593175384322863,
+          "significant": "True"
+        }
+      },
+      "by_nation": {},
+      "by_type": {
+        "naval": {
+          "geo_mean": 77.94059405940594,
+          "saint_mean": 72.01904761904763,
+          "pvalue": 2.3133857871384795e-15,
+          "significant": "True"
+        }
+      },
+      "by_century": {}
+    },
+    "mediation_analysis": {
+      "memorability_mediation": {
+        "total_effect": 2.764129668780848,
+        "direct_effect": 2.9122914263858894,
+        "indirect_effect": -0.148161757605075,
+        "proportion_mediated": -0.05360159448323692,
+        "sobel_z": -1.3204936043901419,
+        "sobel_p": 0.18667026995753244,
+        "significant": "False",
+        "interpretation": "No mediation: 5.4% of effect through memorability"
+      },
+      "authority_mediation": {
+        "indirect_effect": -0.03328964956674841,
+        "proportion_mediated": -0.01204344714458754,
+        "interpretation": "1.2% of effect through authority"
+      }
+    },
+    "bootstrap_ci": {
+      "observed_difference": 5.613927392739271,
+      "bootstrap_mean": 5.61059610561056,
+      "bootstrap_std": 0.6967993409186016,
+      "ci_95_lower": 4.253123762376232,
+      "ci_95_upper": 7.0339422442244235,
+      "ci_contains_zero": "False",
+      "interpretation": "Significant difference (CI excludes 0)"
+    },
+    "power_analysis": {
+      "observed_effect_size": 1.1208392578631738,
+      "n_geographic": 101,
+      "n_saint": 150,
+      "achieved_power": 1.0,
+      "n_needed_per_group": 13,
+      "adequately_powered": "True",
+      "interpretation": "Adequately powered (power=1.000)"
+    },
+    "diagnostics": {
+      "vif": [
+        {
+          "Variable": "const",
+          "VIF": 66.34572697148586
+        },
+        {
+          "Variable": "syllable_count",
+          "VIF": 2.135943452150321
+        },
+        {
+          "Variable": "memorability_score",
+          "VIF": 2.242164183319702
+        },
+        {
+          "Variable": "is_geographic",
+          "VIF": 1.043719730364612
+        },
+        {
+          "Variable": "is_modern",
+          "VIF": 1.1384668439647365
+        }
+      ],
+      "multicollinearity_concern": true,
+      "heteroskedasticity": {
+        "lm_statistic": 5.88083903751647,
+        "pvalue": 0.20822577644879237,
+        "concern": "False",
+        "interpretation": "Homoskedastic"
+      },
+      "normality": {
+        "shapiro_w": 0.9391164183616638,
+        "pvalue": 3.5634551683024287e-16,
+        "concern": true,
+        "interpretation": "Non-normal residuals"
+      }
+    },
+    "cross_validation": {
+      "cross_validation": {
+        "cv_folds": 5,
+        "cv_scores": [
+          0.016193740835356296,
+          0.154890750654594,
+          -0.5526035208862676,
+          -0.09061514692686101,
+          -0.11050577581236043
+        ],
+        "mean_r2": -0.11652799042710775,
+        "std_r2": 0.23755117417182076,
+        "interpretation": "Model explains -11.7% of variance (CV)"
+      }
+    }
+  }
+}

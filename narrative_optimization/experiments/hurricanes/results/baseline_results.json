@@ -1,0 +1,10 @@
+{
+  "h1": {
+    "hypothesis": "H1_gender_effect",
+    "r_simple": -0.42186546133072056,
+    "p_simple": 1.234096327296167e-05,
+    "gender_coef": -0.03220473297954965,
+    "r2_controlled": 0.808074484785505,
+    "cohens_d": 0.9474265059750052,
+    "p_value": 9.514675972658056e-06,
+    "validated": 

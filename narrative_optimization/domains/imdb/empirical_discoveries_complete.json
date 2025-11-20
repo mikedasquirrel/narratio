@@ -1,0 +1,508 @@
+{
+  "total_contexts": 66,
+  "top_contexts": [
+    {
+      "rank": 1,
+      "name": "decade=1980 \u00d7 runtime_level=Short",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.3727754927876179,
+      "r_squared": 0.13896156802305137,
+      "n": 43,
+      "p": 0.013821135409984277,
+      "significant": true
+    },
+    {
+      "rank": 2,
+      "name": "primary_genre=Horror",
+      "dimension": "primary_genre",
+      "r": 0.3419372689696806,
+      "r_squared": 0.11692109591044368,
+      "n": 31,
+      "p": 0.059728796551544935,
+      "significant": false
+    },
+    {
+      "rank": 3,
+      "name": "decade=2010 \u00d7 runtime_level=Long",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.31300417584566403,
+      "r_squared": 0.09797161409682337,
+      "n": 36,
+      "p": 0.06306117629914348,
+      "significant": false
+    },
+    {
+      "rank": 4,
+      "name": "decade=1980 \u00d7 runtime_level=Long",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.269656757195904,
+      "r_squared": 0.07271476670141072,
+      "n": 52,
+      "p": 0.053207679052642176,
+      "significant": false
+    },
+    {
+      "rank": 5,
+      "name": "primary_genre=Biography",
+      "dimension": "primary_genre",
+      "r": 0.26479850785911246,
+      "r_squared": 0.07011824976441244,
+      "n": 31,
+      "p": 0.14998263722478952,
+      "significant": false
+    },
+    {
+      "rank": 6,
+      "name": "primary_genre=Science Fiction",
+      "dimension": "primary_genre",
+      "r": 0.25770143469721746,
+      "r_squared": 0.06641002944500424,
+      "n": 65,
+      "p": 0.0382199784271212,
+      "significant": true
+    },
+    {
+      "rank": 7,
+      "name": "primary_genre=Drama \u00d7 decade=2000",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.23844700603362579,
+      "r_squared": 0.05685697468639997,
+      "n": 57,
+      "p": 0.07406455142970021,
+      "significant": false
+    },
+    {
+      "rank": 8,
+      "name": "primary_genre=Thriller \u00d7 decade=1990",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.2320942096387988,
+      "r_squared": 0.053867722147858677,
+      "n": 111,
+      "p": 0.014239947618673253,
+      "significant": true
+    },
+    {
+      "rank": 9,
+      "name": "primary_genre=Romantic comedy \u00d7 decade=2000",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.22994594790255268,
+      "r_squared": 0.05287513895680347,
+      "n": 114,
+      "p": 0.013848546732976478,
+      "significant": true
+    },
+    {
+      "rank": 10,
+      "name": "primary_genre=Drama \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.2274765206091227,
+      "r_squared": 0.05174556742843263,
+      "n": 87,
+      "p": 0.03409595069124531,
+      "significant": true
+    },
+    {
+      "rank": 11,
+      "name": "decade=1980",
+      "dimension": "decade",
+      "r": 0.22508732608239712,
+      "r_squared": 0.05066430436292337,
+      "n": 343,
+      "p": 2.581264204287701e-05,
+      "significant": true
+    },
+    {
+      "rank": 12,
+      "name": "primary_genre=Romance Film",
+      "dimension": "primary_genre",
+      "r": 0.21620335132810187,
+      "r_squared": 0.04674388912550265,
+      "n": 44,
+      "p": 0.1586639334577751,
+      "significant": false
+    },
+    {
+      "rank": 13,
+      "name": "primary_genre=LGBT \u00d7 decade=2000",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.20800770329980978,
+      "r_squared": 0.0432672046320617,
+      "n": 31,
+      "p": 0.26148784949483306,
+      "significant": false
+    },
+    {
+      "rank": 14,
+      "name": "primary_genre=Thriller \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.20745333819614994,
+      "r_squared": 0.04303688752872616,
+      "n": 298,
+      "p": 0.0003116120607372421,
+      "significant": true
+    },
+    {
+      "rank": 15,
+      "name": "primary_genre=Drama",
+      "dimension": "primary_genre",
+      "r": 0.2058450206057018,
+      "r_squared": 0.042372172508161804,
+      "n": 131,
+      "p": 0.01833699085506349,
+      "significant": true
+    },
+    {
+      "rank": 16,
+      "name": "primary_genre=Romance Film \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.20274301068115883,
+      "r_squared": 0.04110472838006048,
+      "n": 31,
+      "p": 0.27402240358727226,
+      "significant": false
+    },
+    {
+      "rank": 17,
+      "name": "primary_genre=Thriller \u00d7 decade=1980",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.20161994633078573,
+      "r_squared": 0.04065060275842892,
+      "n": 52,
+      "p": 0.1517647049858171,
+      "significant": false
+    },
+    {
+      "rank": 18,
+      "name": "primary_genre=Sports",
+      "dimension": "primary_genre",
+      "r": 0.20057537876037349,
+      "r_squared": 0.04023048256486728,
+      "n": 43,
+      "p": 0.19717015633937643,
+      "significant": false
+    },
+    {
+      "rank": 19,
+      "name": "decade=2010 \u00d7 runtime_level=Medium",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.1930035030551,
+      "r_squared": 0.03725035219153999,
+      "n": 165,
+      "p": 0.013001590595780375,
+      "significant": true
+    },
+    {
+      "rank": 20,
+      "name": "primary_genre=Sports \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.18856361842345426,
+      "r_squared": 0.03555623819294606,
+      "n": 33,
+      "p": 0.2932987003314297,
+      "significant": false
+    },
+    {
+      "rank": 21,
+      "name": "primary_genre=Adventure \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": -0.18587725725404677,
+      "r_squared": 0.03455035476428708,
+      "n": 32,
+      "p": 0.30841301849337105,
+      "significant": false
+    },
+    {
+      "rank": 22,
+      "name": "decade=2000 \u00d7 runtime_level=Medium",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.1844831608969122,
+      "r_squared": 0.034034036654515994,
+      "n": 581,
+      "p": 7.6173260804233814e-06,
+      "significant": true
+    },
+    {
+      "rank": 23,
+      "name": "runtime_level=Medium",
+      "dimension": "runtime_level",
+      "r": 0.1833182417731726,
+      "r_squared": 0.033605577766807365,
+      "n": 1355,
+      "p": 1.0500100958521086e-11,
+      "significant": true
+    },
+    {
+      "rank": 24,
+      "name": "decade=2000 \u00d7 runtime_level=Long",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.18070809278552025,
+      "r_squared": 0.032655414798180196,
+      "n": 161,
+      "p": 0.021791553619184587,
+      "significant": true
+    },
+    {
+      "rank": 25,
+      "name": "primary_genre=Adventure \u00d7 decade=2000",
+      "dimension": "primary_genre\u00d7decade",
+      "r": -0.17939576304749263,
+      "r_squared": 0.03218283979939213,
+      "n": 34,
+      "p": 0.31001655424118607,
+      "significant": false
+    },
+    {
+      "rank": 26,
+      "name": "primary_genre=Thriller",
+      "dimension": "primary_genre",
+      "r": 0.17419188841330552,
+      "r_squared": 0.03034281398899348,
+      "n": 420,
+      "p": 0.00033490202899246293,
+      "significant": true
+    },
+    {
+      "rank": 27,
+      "name": "decade=2010",
+      "dimension": "decade",
+      "r": 0.17346526098484985,
+      "r_squared": 0.030090196768542073,
+      "n": 229,
+      "p": 0.00852308447579119,
+      "significant": true
+    },
+    {
+      "rank": 28,
+      "name": "decade=2000",
+      "dimension": "decade",
+      "r": 0.16847800227484,
+      "r_squared": 0.028384837250520992,
+      "n": 884,
+      "p": 4.699810574606257e-07,
+      "significant": true
+    },
+    {
+      "rank": 29,
+      "name": "has_box_office=True",
+      "dimension": "has_box_office",
+      "r": 0.168045404269676,
+      "r_squared": 0.028239257896158845,
+      "n": 2000,
+      "p": 3.897413273580952e-14,
+      "significant": true
+    },
+    {
+      "rank": 30,
+      "name": "decade=1990 \u00d7 runtime_level=Medium",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.1678899192303868,
+      "r_squared": 0.0281870249791858,
+      "n": 361,
+      "p": 0.0013666665782527958,
+      "significant": true
+    },
+    {
+      "rank": 31,
+      "name": "decade=1980 \u00d7 runtime_level=Medium",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.1650590792508147,
+      "r_squared": 0.027244499643126727,
+      "n": 248,
+      "p": 0.00921140223766395,
+      "significant": true
+    },
+    {
+      "rank": 32,
+      "name": "primary_genre=Romantic drama",
+      "dimension": "primary_genre",
+      "r": 0.15354416662904305,
+      "r_squared": 0.023575811105807337,
+      "n": 47,
+      "p": 0.3028097524672371,
+      "significant": false
+    },
+    {
+      "rank": 33,
+      "name": "primary_genre=Crime Fiction \u00d7 decade=1990",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.1513049427256303,
+      "r_squared": 0.022893185693206267,
+      "n": 49,
+      "p": 0.2993713924186786,
+      "significant": false
+    },
+    {
+      "rank": 34,
+      "name": "runtime_level=Long",
+      "dimension": "runtime_level",
+      "r": 0.1487052806399409,
+      "r_squared": 0.022113260490203582,
+      "n": 356,
+      "p": 0.004930400778945968,
+      "significant": true
+    },
+    {
+      "rank": 35,
+      "name": "primary_genre=Crime Fiction \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.14621520737211557,
+      "r_squared": 0.02137888686687076,
+      "n": 128,
+      "p": 0.09958437998004044,
+      "significant": false
+    },
+    {
+      "rank": 36,
+      "name": "primary_genre=Science Fiction \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.14603918501386245,
+      "r_squared": 0.02132744355951315,
+      "n": 34,
+      "p": 0.40986685693493,
+      "significant": false
+    },
+    {
+      "rank": 37,
+      "name": "primary_genre=Crime Fiction \u00d7 runtime_level=Long",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": -0.14070322136326685,
+      "r_squared": 0.019797396502000474,
+      "n": 36,
+      "p": 0.413066631765028,
+      "significant": false
+    },
+    {
+      "rank": 38,
+      "name": "primary_genre=Thriller \u00d7 decade=2000",
+      "dimension": "primary_genre\u00d7decade",
+      "r": 0.1361277712133427,
+      "r_squared": 0.018530770095512177,
+      "n": 198,
+      "p": 0.0558414919474771,
+      "significant": false
+    },
+    {
+      "rank": 39,
+      "name": "primary_genre=Drama \u00d7 runtime_level=Long",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.12824692181976777,
+      "r_squared": 0.016447272956245627,
+      "n": 33,
+      "p": 0.4769224645837262,
+      "significant": false
+    },
+    {
+      "rank": 40,
+      "name": "primary_genre=Romantic comedy",
+      "dimension": "primary_genre",
+      "r": 0.12284454514613555,
+      "r_squared": 0.015090782272160935,
+      "n": 230,
+      "p": 0.06289545190873687,
+      "significant": false
+    },
+    {
+      "rank": 41,
+      "name": "primary_genre=Thriller \u00d7 runtime_level=Long",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.11978326773731264,
+      "r_squared": 0.014348031229828723,
+      "n": 77,
+      "p": 0.29943608053151044,
+      "significant": false
+    },
+    {
+      "rank": 42,
+      "name": "decade=1990",
+      "dimension": "decade",
+      "r": 0.1187101947719947,
+      "r_squared": 0.014092110342804916,
+      "n": 544,
+      "p": 0.0055676510935287185,
+      "significant": true
+    },
+    {
+      "rank": 43,
+      "name": "primary_genre=Romantic comedy \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.11573836143175582,
+      "r_squared": 0.013395368306907744,
+      "n": 188,
+      "p": 0.11372706859113799,
+      "significant": false
+    },
+    {
+      "rank": 44,
+      "name": "runtime_level=Short",
+      "dimension": "runtime_level",
+      "r": 0.10746191869824756,
+      "r_squared": 0.011548063970308768,
+      "n": 289,
+      "p": 0.06811864235637861,
+      "significant": false
+    },
+    {
+      "rank": 45,
+      "name": "primary_genre=LGBT",
+      "dimension": "primary_genre",
+      "r": 0.10282161812959588,
+      "r_squared": 0.01057228515478844,
+      "n": 62,
+      "p": 0.426466514857101,
+      "significant": false
+    },
+    {
+      "rank": 46,
+      "name": "decade=2000 \u00d7 runtime_level=Short",
+      "dimension": "decade\u00d7runtime_level",
+      "r": 0.09847670806510268,
+      "r_squared": 0.00969766203133946,
+      "n": 142,
+      "p": 0.2436347529933616,
+      "significant": false
+    },
+    {
+      "rank": 47,
+      "name": "primary_genre=LGBT \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.09609848053299092,
+      "r_squared": 0.009234917960749633,
+      "n": 34,
+      "p": 0.588755593220313,
+      "significant": false
+    },
+    {
+      "rank": 48,
+      "name": "primary_genre=Family Film \u00d7 runtime_level=Medium",
+      "dimension": "primary_genre\u00d7runtime_level",
+      "r": 0.09134088914548776,
+      "r_squared": 0.008343158029888283,
+      "n": 30,
+      "p": 0.6311975490658571,
+      "significant": false
+    },
+    {
+      "rank": 49,
+      "name": "primary_genre=Action/Adventure",
+      "dimension": "primary_genre",
+      "r": 0.0893155221547953,
+      "r_squared": 0.00797726249778373,
+      "n": 41,
+      "p": 0.5786730114766336,
+      "significant": false
+    },
+    {
+      "rank": 50,
+      "name": "primary_genre=Drama \u00d7 decade=1990",
+      "dimension": "primary_genre\u00d7decade",
+      "r": -0.08576798854154491,
+      "r_squared": 0.007356147858462579,
+      "n": 34,
+      "p": 0.6295977060905016,
+      "significant": false
+    }
+  ],
+  "passing_contexts": [],
+  "approach": "pure_empirical_discovery",
+  "principle": "Data leads, theory explains"
+}

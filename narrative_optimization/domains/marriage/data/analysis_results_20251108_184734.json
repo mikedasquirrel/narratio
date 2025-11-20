@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-08T18:47:34.855938",
+  "n_couples": 50,
+  "divorce_rate": 0.42,
+  "mean_duration": 21.69013004791239,
+  "hypotheses": {
+    "H1_compatibility_duration": {
+      "r": -0.20659952354431912,
+      "p": 0.15000546886504468
+    },
+    "H2_distance_divorce": {
+      "t": -0.40453583213339134,
+      "p": 0.6876157868070214
+    },
+    "H3_golden_ratio": {
+      "r": 0.0036885000022086967,
+      "p": 0.9797183453291403
+    },
+    "H4_vowel_harmony": {
+      "r": 0.030039639329384065,
+      "p": 0.835942326931183
+    }
+  },
+  "theory_comparison": {
+    "Similarity": -0.2041074273497037,
+    "Complementarity": -0.24886820658882775,
+    "Golden Ratio": -0.2079999694489397,
+    "Resonance": -0.01416095691030557
+  },
+  "winner": "Complementarity"
+}

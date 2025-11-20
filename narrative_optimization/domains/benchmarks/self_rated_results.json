@@ -1,0 +1,12 @@
+{
+  "D_combined": 0.5942243162996519,
+  "R_squared": 0.3531025380817887,
+  "p_value": 4.738122336185533e-49,
+  "transformer_Ds": {
+    "nominative": 0.3967762020439195,
+    "self_perception": 0.5272392776179519,
+    "narrative_potential": 0.30021456461466667
+  },
+  "n_narratives": 500,
+  "interpretation": "Narrator=Judge, pure circularity"
+}

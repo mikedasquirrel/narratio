@@ -1,0 +1,44 @@
+domain: supreme_court
+type: legal
+narrativity:
+  structural: 0.52
+  temporal: 0.50
+  agency: 0.45
+  interpretive: 0.65
+  format: 0.48
+data:
+  text_fields:
+  - majority_opinion
+  - dissenting_opinion
+  - petitioner_brief
+  - respondent_brief
+  outcome_field: vote_margin
+  context_features:
+  - year
+  - area_of_law
+  - precedential_status
+  name_field: null
+outcome_type: continuous
+transformer_augmentation:
+- ArgumentativeStructureTransformer
+- PrecedentialNarrativeTransformer
+- PersuasiveFramingTransformer
+- JudicialRhetoricTransformer
+custom_validators: []
+description: Supreme Court opinions testing narrative vs evidence in legal decisions
+sample_size: 30000
+pi: 0.52
+perspectives:
+- petitioner
+- respondent
+- majority
+- dissent
+quality_methods:
+- weighted_mean
+- adversarial_comparison
+scales:
+- case
+- term
+- era
+aggregation_method: importance_weighted
+

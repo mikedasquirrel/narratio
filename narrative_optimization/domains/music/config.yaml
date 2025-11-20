@@ -1,0 +1,32 @@
+domain: music
+type: entertainment
+narrativity:
+  structural: 0.7722
+  temporal: 0.6318
+  agency: 0.5616
+  interpretive: 0.8423999999999999
+  format: 0.6318
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.6879599999999999
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

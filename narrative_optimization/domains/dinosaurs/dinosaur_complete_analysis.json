@@ -1,0 +1,49 @@
+{
+  "domain": "dinosaurs",
+  "analysis_date": "2025-11-12T23:31:29.230727",
+  "sample_size": 950,
+  "pi": 0.753,
+  "regression_analysis": {
+    "r2_scientific": 0.003640612918623387,
+    "r2_full": 0.6264718552215361,
+    "r2_improvement": 0.6228312423029128,
+    "name_effect_percentage": 99.41887047466227,
+    "coefficients": {
+      "pronounceability": -0.0008581036877395301,
+      "coolness": 0.0035485036715978777,
+      "length_penalty": -7.546030070708931e-05,
+      "has_nickname": 0.1151235472321754,
+      "jurassic_park": 0.676784297401807
+    }
+  },
+  "forces": {
+    "theta": {
+      "mean": 0.361578947368421,
+      "std": 0.03199722979699087
+    },
+    "lambda": {
+      "mean": 0.2845789473684211,
+      "std": 0.06317545808425234
+    },
+    "ta_marbuta": {
+      "mean": 0.7634736842105263,
+      "std": 0.03483097293932911
+    }
+  },
+  "key_findings": {
+    "name_r2_contribution": 0.6228312423029128,
+    "total_r2": 0.6264718552215361,
+    "pronounceability_effect": -0.0008581036877395301,
+    "coolness_effect": 0.0035485036715978777,
+    "length_penalty_effect": -7.546030070708931e-05,
+    "nickname_advantage": 0.1151235472321754,
+    "jurassic_park_boost": 0.676784297401807
+  },
+  "theoretical_contributions": [
+    "First educational/learning domain",
+    "Tests nominative effects in childhood knowledge",
+    "Validates name > scientific importance for cultural transmission",
+    "Quantifies Jurassic Park effect (media influence)",
+    "Shows perfect agency (1.00) + low constraints \u2192 high name effects"
+  ]
+}

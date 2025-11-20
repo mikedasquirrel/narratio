@@ -1,0 +1,9 @@
+{
+  "physical_only_auc": 0.49988991574789365,
+  "narrative_only_auc": 0.5019024885622141,
+  "combined_auc": 0.49962985274631866,
+  "delta_auc": -0.00026006300157499496,
+  "p_value": 0.9865745011742222,
+  "significant": false,
+  "narrative_adds_value": false
+}

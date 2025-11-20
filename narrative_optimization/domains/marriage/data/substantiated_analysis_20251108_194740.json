@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-11-08T19:47:40.279134",
+  "n_couples": 998,
+  "descriptive_stats": {
+    "n_total": 998,
+    "n_divorced": 420,
+    "divorce_rate": 0.42084168336673344,
+    "mean_duration": 16.268098140154365,
+    "sd_duration": 13.722720085533737,
+    "median_duration": 12.188911704312115
+  },
+  "hypotheses": {
+    "H1_compatibility": {
+      "r": -0.04379454522293744,
+      "p": 0.16683389341494653,
+      "d": -0.0437926573926579,
+      "significant": false
+    },
+    "H2_distance_divorce": {
+      "t": -0.44265538792661685,
+      "p": 0.6581111289565216,
+      "divorced_mean": 0.7985877482306054,
+      "married_mean": 0.805179389046171,
+      "significant": false
+    },
+    "H3_golden_ratio": {
+      "r": 0.03364707967988834,
+      "p": 0.28827286705877886,
+      "significant": false
+    },
+    "H4_vowel_harmony": {
+      "r": -0.011029294874387906,
+      "p": 0.7278387555521988,
+      "significant": false
+    }
+  },
+  "theory_comparison": {
+    "Similarity": -0.05204384834426031,
+    "Complementarity": -0.0473437624857003,
+    "Golden Ratio": -0.004309610927505999,
+    "Resonance": -0.024111349977811166
+  },
+  "winner": "Similarity",
+  "predictive_models": {
+    "duration": {
+      "r2_train": 0.004536492120936986,
+      "r2_test": -0.013758741259870977
+    },
+    "divorce": {
+      "accuracy": 0.564,
+      "auc": 0.4909232871364435
+    }
+  },
+  "power": {
+    "achieved": 0.2814547046513302,
+    "adequate": false
+  }
+}

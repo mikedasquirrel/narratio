@@ -1,0 +1,33 @@
+domain: mlb
+type: sports_team
+narrativity:
+  structural: 0.20
+  temporal: 0.30
+  agency: 0.25
+  interpretive: 0.35
+  format: 0.15
+data:
+  text_fields:
+  - narrative
+  outcome_field: winner
+  context_features: null
+  name_field: null
+outcome_type: binary
+transformer_augmentation: []
+custom_validators: []
+description: MLB Baseball game analysis with team names, rivalries, stadiums, and narratives
+sample_size: null
+pi: 0.25
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted
+

@@ -1,0 +1,58 @@
+{
+  "domain": "Movies",
+  "overall_efficiency": 0.04,
+  "genres": [
+    {
+      "name": "Movies - LGBT Films",
+      "\u043f_effective": 0.9194999999999999,
+      "\u03ba": 0.6,
+      "r": 0.528,
+      "\u0414": 0.2912976,
+      "efficiency": 0.3168,
+      "passes": false,
+      "improvement": 7.920000000000001
+    },
+    {
+      "name": "Movies - Sports Films",
+      "\u043f_effective": 0.8575,
+      "\u03ba": 0.5,
+      "r": 0.518,
+      "\u0414": 0.22209250000000003,
+      "efficiency": 0.259,
+      "passes": false,
+      "improvement": 6.475
+    },
+    {
+      "name": "Movies - Biography",
+      "\u043f_effective": 0.8324999999999999,
+      "\u03ba": 0.5,
+      "r": 0.485,
+      "\u0414": 0.20188124999999998,
+      "efficiency": 0.24250000000000002,
+      "passes": false,
+      "improvement": 6.0625
+    },
+    {
+      "name": "Movies - Thriller",
+      "\u043f_effective": 0.6349999999999999,
+      "\u03ba": 0.4,
+      "r": 0.31,
+      "\u0414": 0.07873999999999999,
+      "efficiency": 0.124,
+      "passes": false,
+      "improvement": 3.1
+    },
+    {
+      "name": "Movies - Action",
+      "\u043f_effective": 0.48,
+      "\u03ba": 0.3,
+      "r": 0.22,
+      "\u0414": 0.03168,
+      "efficiency": 0.066,
+      "passes": false,
+      "improvement": 1.6500000000000001
+    }
+  ],
+  "passing_count": 0,
+  "interpretation": "Genre decomposition reveals hidden narrative effects"
+}

@@ -1,0 +1,274 @@
+{
+  "overall": {
+    "train_accuracy": 0.983611842458761,
+    "test_accuracy": 0.9808725553406404,
+    "p_value": 0.0,
+    "significant": true,
+    "confidence_interval_95": {
+      "lower": 0.9765219071289887,
+      "upper": 0.9844298537525716
+    },
+    "cross_validation": {
+      "mean": 0.9787655372258655,
+      "std": 0.0018600560670738637,
+      "scores": [
+        0.9780786589297228,
+        0.9813023855577047,
+        0.9759295078444015,
+        0.9782935740382549,
+        0.9802235597592434
+      ]
+    },
+    "backtesting": {
+      "total_bets": 4491,
+      "correct": 4456,
+      "accuracy": 0.9922066354932086,
+      "total_wagered": 449100.0,
+      "net_return": 401996.0,
+      "roi_pct": 89.51146737920284,
+      "unit_size": 100,
+      "confidence_threshold": 0.7
+    },
+    "confidence_thresholds": {
+      "threshold_60": {
+        "threshold": 0.6,
+        "total_bets": 4587,
+        "correct": 4523,
+        "accuracy": 0.986047525615871,
+        "total_wagered": 458700.0,
+        "net_return": 405193.0,
+        "roi_pct": 88.33507739263135,
+        "unit_size": 100
+      },
+      "threshold_65": {
+        "threshold": 0.65,
+        "total_bets": 4539,
+        "correct": 4493,
+        "accuracy": 0.9898656091650143,
+        "total_wagered": 453900.0,
+        "net_return": 404263.0,
+        "roi_pct": 89.06433135051773,
+        "unit_size": 100
+      },
+      "threshold_70": {
+        "threshold": 0.7,
+        "total_bets": 4491,
+        "correct": 4456,
+        "accuracy": 0.9922066354932086,
+        "total_wagered": 449100.0,
+        "net_return": 401996.0,
+        "roi_pct": 89.51146737920284,
+        "unit_size": 100
+      },
+      "threshold_75": {
+        "threshold": 0.75,
+        "total_bets": 4444,
+        "correct": 4414,
+        "accuracy": 0.9932493249324933,
+        "total_wagered": 444400.0,
+        "net_return": 398674.0,
+        "roi_pct": 89.71062106210621,
+        "unit_size": 100
+      },
+      "threshold_80": {
+        "threshold": 0.8,
+        "total_bets": 4407,
+        "correct": 4385,
+        "accuracy": 0.9950079419105968,
+        "total_wagered": 440700.0,
+        "net_return": 396835.0,
+        "roi_pct": 90.04651690492399,
+        "unit_size": 100
+      }
+    }
+  },
+  "contexts": {
+    "overall": {
+      "train_accuracy": 0.983611842458761,
+      "test_accuracy": 0.9808725553406404,
+      "p_value": 0.0,
+      "significant": true,
+      "confidence_interval_95": {
+        "lower": 0.9765219071289887,
+        "upper": 0.9844298537525716
+      },
+      "cross_validation": {
+        "mean": 0.9787655372258655,
+        "std": 0.0018600560670738637,
+        "scores": [
+          0.9780786589297228,
+          0.9813023855577047,
+          0.9759295078444015,
+          0.9782935740382549,
+          0.9802235597592434
+        ]
+      },
+      "backtesting": {
+        "total_bets": 4491,
+        "correct": 4456,
+        "accuracy": 0.9922066354932086,
+        "total_wagered": 449100.0,
+        "net_return": 401996.0,
+        "roi_pct": 89.51146737920284,
+        "unit_size": 100,
+        "confidence_threshold": 0.7
+      },
+      "confidence_thresholds": {
+        "threshold_60": {
+          "threshold": 0.6,
+          "total_bets": 4587,
+          "correct": 4523,
+          "accuracy": 0.986047525615871,
+          "total_wagered": 458700.0,
+          "net_return": 405193.0,
+          "roi_pct": 88.33507739263135,
+          "unit_size": 100
+        },
+        "threshold_65": {
+          "threshold": 0.65,
+          "total_bets": 4539,
+          "correct": 4493,
+          "accuracy": 0.9898656091650143,
+          "total_wagered": 453900.0,
+          "net_return": 404263.0,
+          "roi_pct": 89.06433135051773,
+          "unit_size": 100
+        },
+        "threshold_70": {
+          "threshold": 0.7,
+          "total_bets": 4491,
+          "correct": 4456,
+          "accuracy": 0.9922066354932086,
+          "total_wagered": 449100.0,
+          "net_return": 401996.0,
+          "roi_pct": 89.51146737920284,
+          "unit_size": 100
+        },
+        "threshold_75": {
+          "threshold": 0.75,
+          "total_bets": 4444,
+          "correct": 4414,
+          "accuracy": 0.9932493249324933,
+          "total_wagered": 444400.0,
+          "net_return": 398674.0,
+          "roi_pct": 89.71062106210621,
+          "unit_size": 100
+        },
+        "threshold_80": {
+          "threshold": 0.8,
+          "total_bets": 4407,
+          "correct": 4385,
+          "accuracy": 0.9950079419105968,
+          "total_wagered": 440700.0,
+          "net_return": 396835.0,
+          "roi_pct": 90.04651690492399,
+          "unit_size": 100
+        }
+      }
+    }
+  },
+  "data_summary": {
+    "total_games": 23264,
+    "total_features": 199,
+    "archetype_features": 199,
+    "home_win_rate": 0.5214064649243466,
+    "validation_date": "2025-11-14"
+  },
+  "archetype_contribution": {
+    "archetype_only": true,
+    "feature_breakdown": {
+      "hero_journey": 58,
+      "character": 51,
+      "plot": 40,
+      "thematic": 21,
+      "structural": 29,
+      "total": 199
+    }
+  },
+  "best_context": {
+    "name": "overall",
+    "results": {
+      "train_accuracy": 0.983611842458761,
+      "test_accuracy": 0.9808725553406404,
+      "p_value": 0.0,
+      "significant": true,
+      "confidence_interval_95": {
+        "lower": 0.9765219071289887,
+        "upper": 0.9844298537525716
+      },
+      "cross_validation": {
+        "mean": 0.9787655372258655,
+        "std": 0.0018600560670738637,
+        "scores": [
+          0.9780786589297228,
+          0.9813023855577047,
+          0.9759295078444015,
+          0.9782935740382549,
+          0.9802235597592434
+        ]
+      },
+      "backtesting": {
+        "total_bets": 4491,
+        "correct": 4456,
+        "accuracy": 0.9922066354932086,
+        "total_wagered": 449100.0,
+        "net_return": 401996.0,
+        "roi_pct": 89.51146737920284,
+        "unit_size": 100,
+        "confidence_threshold": 0.7
+      },
+      "confidence_thresholds": {
+        "threshold_60": {
+          "threshold": 0.6,
+          "total_bets": 4587,
+          "correct": 4523,
+          "accuracy": 0.986047525615871,
+          "total_wagered": 458700.0,
+          "net_return": 405193.0,
+          "roi_pct": 88.33507739263135,
+          "unit_size": 100
+        },
+        "threshold_65": {
+          "threshold": 0.65,
+          "total_bets": 4539,
+          "correct": 4493,
+          "accuracy": 0.9898656091650143,
+          "total_wagered": 453900.0,
+          "net_return": 404263.0,
+          "roi_pct": 89.06433135051773,
+          "unit_size": 100
+        },
+        "threshold_70": {
+          "threshold": 0.7,
+          "total_bets": 4491,
+          "correct": 4456,
+          "accuracy": 0.9922066354932086,
+          "total_wagered": 449100.0,
+          "net_return": 401996.0,
+          "roi_pct": 89.51146737920284,
+          "unit_size": 100
+        },
+        "threshold_75": {
+          "threshold": 0.75,
+          "total_bets": 4444,
+          "correct": 4414,
+          "accuracy": 0.9932493249324933,
+          "total_wagered": 444400.0,
+          "net_return": 398674.0,
+          "roi_pct": 89.71062106210621,
+          "unit_size": 100
+        },
+        "threshold_80": {
+          "threshold": 0.8,
+          "total_bets": 4407,
+          "correct": 4385,
+          "accuracy": 0.9950079419105968,
+          "total_wagered": 440700.0,
+          "net_return": 396835.0,
+          "roi_pct": 90.04651690492399,
+          "unit_size": 100
+        }
+      }
+    }
+  }
+}

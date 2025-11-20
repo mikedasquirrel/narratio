@@ -1,0 +1,30 @@
+{
+  "model_type": "nfl_relational",
+  "architecture": "domain_aware_relational",
+  "timestamp": "2025-11-13T17:43:06.166048",
+  "dataset": {
+    "total_games": 3010,
+    "train_games": 1871,
+    "val_games": 569,
+    "test_games": 570
+  },
+  "features": {
+    "total": 120,
+    "relational": true,
+    "differential": true,
+    "ratios": true
+  },
+  "test_metrics": {
+    "r2": 0.006946653531414215,
+    "mae": 0.4912702653762882,
+    "accuracy": 0.5491228070175439,
+    "baseline_r2": 0.545,
+    "improvement": -0.5380533464685858
+  },
+  "best_params": {
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_samples_split": 10,
+    "n_estimators": 100
+  }
+}

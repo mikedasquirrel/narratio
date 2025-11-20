@@ -1,0 +1,295 @@
+{
+  "primary_hypotheses": {
+    "H1_toponymic_vs_nontoponlaymic_immigration": {
+      "sample_sizes": {
+        "toponymic": 103,
+        "non_toponymic": 104
+      },
+      "descriptive_statistics": {
+        "toponymic": {
+          "mean_rate": 0.1354348944244702,
+          "median_rate": 0.139296,
+          "std_rate": 0.022534577652686214
+        },
+        "non_toponymic": {
+          "mean_rate": 0.13258801824638236,
+          "median_rate": 0.1338324420677362,
+          "std_rate": 0.020631767944913938
+        }
+      },
+      "hypothesis_test": {
+        "t_statistic": 0.9481457228281093,
+        "p_value": 0.3441716227700218,
+        "significant": false,
+        "effect_size_cohens_d": 0.13180290455922847,
+        "interpretation": "negligible"
+      },
+      "correlation": {
+        "r": 0.0660766462908829,
+        "p_value": 0.34417162277002367,
+        "r_squared": 0.004366123185050449
+      },
+      "conclusion": "No significant difference in immigration rates between toponymic and non-toponymic surnames (p=0.3442)"
+    },
+    "H2_toponymic_clustering": {
+      "sample_sizes": {
+        "toponymic": 103,
+        "non_toponymic": 104
+      },
+      "descriptive_statistics": {
+        "toponymic": {
+          "mean_hhi": 2124.3685132139,
+          "median_hhi": 2123.8763542225943,
+          "mean_num_states": 5.0
+        },
+        "non_toponymic": {
+          "mean_hhi": 2379.684654594219,
+          "median_hhi": 2331.352040403538,
+          "mean_num_states": 5.0
+        }
+      },
+      "hypothesis_test": {
+        "t_statistic": -10.670614524299431,
+        "p_value": 1.9995457207010475e-21,
+        "significant": true,
+        "effect_size_cohens_d": -1.4833352657432455,
+        "interpretation": "large"
+      },
+      "conclusion": "Toponymic surnames show significantly lower geographic clustering (HHI) than non-toponymic surnames (p=0.0000, d=-1.483)"
+    },
+    "H3_temporal_dispersion_by_category": {
+      "overall_trend": {
+        "n": 207,
+        "mean_change": 32.10489993098689,
+        "t_statistic": 214.15208758243818,
+        "p_value": 5.5525286556655725e-244,
+        "significant": true,
+        "interpretation": "Dispersion increases over time"
+      },
+      "by_semantic_category": {
+        "toponymic": {
+          "n": 103,
+          "mean_change": 34.23023578363383,
+          "t_statistic": 616.999999999999,
+          "p_value": 5.250744919129421e-184,
+          "significant": true
+        },
+        "occupational": {
+          "n": 32,
+          "mean_change": 30.0,
+          "t_statistic": Infinity,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "patronymic": {
+          "n": 41,
+          "mean_change": 30.0,
+          "t_statistic": Infinity,
+          "p_value": 0.0,
+          "significant": true
+        },
+        "descriptive": {
+          "n": 21,
+          "mean_change": 30.0,
+          "t_statistic": Infinity,
+          "p_value": 0.0,
+          "significant": true
+        }
+      },
+      "conclusion": "Overall dispersion significantly increases over time (p=0.0000)"
+    }
+  },
+  "expanded_analyses": {
+    "H4_place_importance": {
+      "immigration_rate_correlation": {
+        "n": 29,
+        "r": -0.17521226891517047,
+        "p_value": 0.36329554923177215,
+        "r_squared": 0.03069933917840201,
+        "significant": false,
+        "interpretation": "No significant correlation"
+      },
+      "settlement_clustering_correlation": {
+        "n": 29,
+        "r": -0.14499013733141325,
+        "p_value": 0.4529960030239623,
+        "r_squared": 0.021022139923382074,
+        "significant": false
+      },
+      "conclusion": "Place importance does not significantly correlate with immigration rate"
+    }
+  },
+  "cross_category_comparisons": {
+    "anova": {
+      "f_statistic": 1.7876233649260624,
+      "p_value": 0.13267657258980595,
+      "significant": false,
+      "eta_squared": 0.03418826961114442,
+      "interpretation": "No significant differences"
+    },
+    "descriptive_by_category": {
+      "toponymic": {
+        "n": 103,
+        "mean": 0.1354348944244702,
+        "median": 0.139296,
+        "std": 0.022534577652686214
+      },
+      "occupational": {
+        "n": 32,
+        "mean": 0.140343881237794,
+        "median": 0.1431555558290525,
+        "std": 0.020847456916773352
+      },
+      "patronymic": {
+        "n": 41,
+        "mean": 0.12867363737339152,
+        "median": 0.1299598719378812,
+        "std": 0.024170571185861044
+      },
+      "descriptive": {
+        "n": 21,
+        "mean": 0.1287715239497302,
+        "median": 0.12942307692307692,
+        "std": 0.012422906433195572
+      },
+      "religious": {
+        "n": 10,
+        "mean": 0.1318328562760971,
+        "median": 0.13173820656070745,
+        "std": 0.010806089198681059
+      }
+    },
+    "pairwise_comparisons": [
+      {
+        "comparison": "toponymic vs occupational",
+        "t_statistic": -1.0949377972413072,
+        "p_value": 0.2755227936914352,
+        "bonferroni_significant": false,
+        "cohens_d": -0.22159641527142196
+      },
+      {
+        "comparison": "toponymic vs patronymic",
+        "t_statistic": 1.591450375858149,
+        "p_value": 0.11373201529449627,
+        "bonferroni_significant": false,
+        "cohens_d": 0.2938757878683216
+      },
+      {
+        "comparison": "toponymic vs descriptive",
+        "t_statistic": 1.3121175529709366,
+        "p_value": 0.19194391518090326,
+        "bonferroni_significant": false,
+        "cohens_d": 0.31416321178329953
+      },
+      {
+        "comparison": "toponymic vs religious",
+        "t_statistic": 0.49839982223500584,
+        "p_value": 0.6191884062787292,
+        "bonferroni_significant": false,
+        "cohens_d": 0.16508153106826864
+      },
+      {
+        "comparison": "occupational vs patronymic",
+        "t_statistic": 2.1719226049593403,
+        "p_value": 0.03320309087588713,
+        "bonferroni_significant": false,
+        "cohens_d": 0.5123171071200111
+      },
+      {
+        "comparison": "occupational vs descriptive",
+        "t_statistic": 2.286797046717934,
+        "p_value": 0.026391445532287967,
+        "bonferroni_significant": false,
+        "cohens_d": 0.6422157037805378
+      },
+      {
+        "comparison": "occupational vs religious",
+        "t_statistic": 1.2328728008540921,
+        "p_value": 0.22482009175207848,
+        "bonferroni_significant": false,
+        "cohens_d": 0.4466506059326608
+      },
+      {
+        "comparison": "patronymic vs descriptive",
+        "t_statistic": -0.017371955310555277,
+        "p_value": 0.986197521450721,
+        "bonferroni_significant": false,
+        "cohens_d": -0.00466168552078574
+      },
+      {
+        "comparison": "patronymic vs religious",
+        "t_statistic": -0.4012502226479538,
+        "p_value": 0.6899804460186787,
+        "bonferroni_significant": false,
+        "cohens_d": -0.1415169454640668
+      },
+      {
+        "comparison": "descriptive vs religious",
+        "t_statistic": -0.667065416284385,
+        "p_value": 0.5100036624681201,
+        "bonferroni_significant": false,
+        "cohens_d": -0.25629469977317365
+      }
+    ],
+    "conclusion": "No significant differences in immigration rates across semantic categories (F=1.79, p=0.1327)"
+  },
+  "interaction_effects": {
+    "by_origin_country": {
+      "Italian": {
+        "n": 57,
+        "categories": [
+          "toponymic",
+          "occupational",
+          "descriptive",
+          "religious"
+        ],
+        "f_statistic": 11.782352772292652,
+        "p_value": 5.0332300421501144e-06,
+        "significant": true,
+        "mean_by_category": {
+          "toponymic": 0.14261510771507835,
+          "occupational": 0.14054934055611606,
+          "descriptive": 0.12648370616504384,
+          "religious": 0.12241315334183209
+        }
+      },
+      "English": {
+        "n": 50,
+        "categories": [
+          "toponymic",
+          "occupational",
+          "descriptive",
+          "patronymic",
+          "religious"
+        ],
+        "f_statistic": 16.520368696020245,
+        "p_value": 2.1293971540373727e-08,
+        "significant": true,
+        "mean_by_category": {
+          "toponymic": 0.16098798067110096,
+          "occupational": 0.15260578597187688,
+          "descriptive": 0.13441584671729448,
+          "patronymic": 0.13828274147144926,
+          "religious": 0.1328884192187836
+        }
+      },
+      "German": {
+        "n": 46,
+        "categories": [
+          "toponymic",
+          "occupational",
+          "descriptive"
+        ],
+        "f_statistic": 2.664429654938362,
+        "p_value": 0.08112058666556168,
+        "significant": false,
+        "mean_by_category": {
+          "toponymic": 0.10941031414565633,
+          "occupational": 0.11054070182087682,
+          "descriptive": 0.09812677519225008
+        }
+      }
+    },
+    "conclusion": "Tested semantic \u00d7 origin interactions for 3 major origin countries"
+  }
+}

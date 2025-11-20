@@ -1,0 +1,20 @@
+{
+  "domain": "oscars",
+  "samples": 45,
+  "forces": {
+    "theta_mean": 0.5262317999151063,
+    "lambda_mean": 0.5159154212926758,
+    "ta_mean": 0.446068928886954
+  },
+  "equations": {
+    "regular": {
+      "r": NaN,
+      "p": NaN
+    },
+    "prestige": {
+      "r": 0.2268411738395901,
+      "p": 0.13400666013844292
+    }
+  },
+  "winner": "regular"
+}

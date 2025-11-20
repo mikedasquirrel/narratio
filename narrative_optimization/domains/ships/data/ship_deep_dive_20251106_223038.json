@@ -1,0 +1,101 @@
+{
+  "primary_hypothesis": {
+    "error": "Insufficient data",
+    "geographic_n": 1,
+    "saint_n": 0
+  },
+  "semantic_alignment": {
+    "error": "No analysis data"
+  },
+  "category_analysis": {
+    "categories": {
+      "virtue": {
+        "count": 5,
+        "mean_significance": 93.6,
+        "median_significance": 95.0,
+        "std_significance": 4.393176527297759,
+        "mean_years_active": 74.8,
+        "mean_events": 11.2
+      },
+      "other": {
+        "count": 6,
+        "mean_significance": 88.16666666666667,
+        "median_significance": 94.0,
+        "std_significance": 10.400320507881796,
+        "mean_years_active": 46.666666666666664,
+        "mean_events": 3.8333333333333335
+      }
+    },
+    "anova": {},
+    "rankings": [
+      {
+        "category": "virtue",
+        "mean_significance": 93.6,
+        "count": 5
+      },
+      {
+        "category": "other",
+        "mean_significance": 88.16666666666667,
+        "count": 6
+      }
+    ]
+  },
+  "phonetic_power": {
+    "error": "No analysis data"
+  },
+  "temporal_evolution": {
+    "eras": {
+      "age_of_sail": {
+        "count": 7,
+        "mean_significance": 92.42857142857143,
+        "category_distribution": {
+          "virtue": 3,
+          "other": 3,
+          "animal": 1
+        },
+        "geographic_percentage": 0.0,
+        "saint_percentage": 0.0,
+        "virtue_percentage": 42.857142857142854
+      }
+    },
+    "category_trends": {},
+    "significance_trends": {
+      "historical_significance_score": {
+        "1460": 96.0,
+        "1540": 72.0,
+        "1600": 94.0,
+        "1760": 96.5,
+        "1770": 90.0,
+        "1780": 78.0,
+        "1790": 94.0,
+        "1820": 98.0,
+        "1900": 88.0,
+        "1910": 93.5,
+        "1930": 97.0
+      },
+      "name_category": {
+        "1460": 0.0,
+        "1540": 0.0,
+        "1600": 0.0,
+        "1760": 0.0,
+        "1770": 0.0,
+        "1780": 0.0,
+        "1790": 0.0,
+        "1820": 0.0,
+        "1900": 0.0,
+        "1910": 50.0,
+        "1930": 0.0
+      }
+    }
+  },
+  "robustness_checks": {
+    "survivorship_bias": {
+      "total_ships": 13,
+      "sunk_ships": 4,
+      "active_ships": 9,
+      "sunk_percentage": 30.76923076923077
+    },
+    "era_specific": {},
+    "nation_specific": {}
+  }
+}

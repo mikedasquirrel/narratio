@@ -1,0 +1,45 @@
+{
+  "domain": "Tennis",
+  "created_date": "2025-11-12",
+  "formulas": {
+    "clay": {
+      "context": "Clay Court",
+      "surface": "clay",
+      "n_matches": 1734,
+      "features_selected": 400,
+      "best_alpha": 100.0,
+      "train_r2": 0.2782483811187425,
+      "test_r2": 0.17159021919360262,
+      "accuracy": 0.7332053742802304,
+      "model_path": "models/clay_formula.pkl"
+    },
+    "hard": {
+      "context": "Hard Court",
+      "surface": "hard",
+      "n_matches": 2506,
+      "features_selected": 400,
+      "best_alpha": 100.0,
+      "train_r2": 0.298272347593307,
+      "test_r2": 0.16388352214788482,
+      "accuracy": 0.7460106382978723,
+      "model_path": "models/hard_formula.pkl"
+    },
+    "grand_slam": {
+      "context": "Grand Slam Tournaments",
+      "level": "grand_slam",
+      "n_matches": 508,
+      "features_selected": 300,
+      "best_alpha": 10.0,
+      "test_r2": 0.1727047598934781,
+      "accuracy": 0.7777777777777778,
+      "model_path": "models/grand_slam_formula.pkl"
+    }
+  },
+  "usage_guide": {
+    "clay": "Use for clay court matches",
+    "hard": "Use for hard court matches",
+    "grand_slam": "Use for Grand Slam tournaments (any surface)"
+  },
+  "deployment_ready": true,
+  "note": "Surface-specific formulas should be used for optimal prediction"
+}

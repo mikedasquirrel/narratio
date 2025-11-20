@@ -1,0 +1,132 @@
+{
+  "experiment_id": "02_ensemble_test",
+  "description": "Test if ensemble network effects beat statistical baseline",
+  "metadata": {
+    "experiment_id": "02_ensemble_test",
+    "description": "Test if ensemble network effects beat statistical baseline",
+    "created_at": "2025-11-09T20:39:53.761513",
+    "status": "completed",
+    "run_started_at": "2025-11-09T20:39:53.761543",
+    "run_completed_at": "2025-11-09T20:39:58.436781"
+  },
+  "narratives": {
+    "Statistical": {
+      "name": "Statistical",
+      "hypothesis": "Statistical is sufficient",
+      "metadata": {
+        "narrative_name": "Statistical Baseline",
+        "hypothesis": "",
+        "expected_outcome": "",
+        "domain_assumptions": [],
+        "step_rationales": {
+          "features": "TF-IDF",
+          "classifier": "Classify"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.7625,
+            0.6875,
+            0.6875,
+            0.7125,
+            0.65
+          ],
+          "train_scores": [
+            0.940625,
+            0.959375,
+            0.965625,
+            0.971875,
+            0.959375
+          ],
+          "test_mean": 0.7,
+          "test_std": 0.0370809924354783,
+          "train_mean": 0.9593749999999999,
+          "train_std": 0.010458250331675934
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.7590193432298695,
+            0.6849001269732977,
+            0.6928976465421478,
+            0.7247732426303855,
+            0.6490588149124734
+          ],
+          "train_scores": [
+            0.9415842194085573,
+            0.9602445400010526,
+            0.9657433818459594,
+            0.9722562051580141,
+            0.9601222420989862
+          ],
+          "test_mean": 0.7021298348576348,
+          "test_std": 0.03727672027228133,
+          "train_mean": 0.9599901177025141,
+          "train_std": 0.010221704645897844
+        }
+      },
+      "summary_statistics": {}
+    },
+    "Ensemble": {
+      "name": "Ensemble",
+      "hypothesis": "Network relationships add value",
+      "metadata": {
+        "narrative_name": "Ensemble Network",
+        "hypothesis": "Network relationships and co-occurrence patterns capture meaning beyond word frequencies",
+        "expected_outcome": "Beat 69% baseline by capturing ensemble effects",
+        "domain_assumptions": [
+          "Elements gain meaning through relationships",
+          "Network structure matters"
+        ],
+        "step_rationales": {
+          "features": "Network analysis captures relational meaning",
+          "scaler": "Normalize",
+          "classifier": "Classify"
+        }
+      },
+      "cv_scores": {
+        "accuracy": {
+          "test_scores": [
+            0.3125,
+            0.35,
+            0.2875,
+            0.2375,
+            0.275
+          ],
+          "train_scores": [
+            0.36875,
+            0.440625,
+            0.378125,
+            0.3125,
+            0.35
+          ],
+          "test_mean": 0.2925,
+          "test_std": 0.03758324094593227,
+          "train_mean": 0.37,
+          "train_std": 0.041861005124100875
+        },
+        "f1_macro": {
+          "test_scores": [
+            0.3077836352918933,
+            0.35974368328520695,
+            0.2785265125490689,
+            0.23281312525010006,
+            0.26626317379071357
+          ],
+          "train_scores": [
+            0.36739262518332283,
+            0.44465428110845506,
+            0.364707116700464,
+            0.29847969901161386,
+            0.34910341322604754
+          ],
+          "test_mean": 0.28902602603339655,
+          "test_std": 0.04275771834974711,
+          "train_mean": 0.3648674270459807,
+          "train_std": 0.04696419694087486
+        }
+      },
+      "summary_statistics": {}
+    }
+  }
+}

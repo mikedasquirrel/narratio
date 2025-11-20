@@ -1,0 +1,19 @@
+{
+  "domain": "UFC",
+  "sample_size": 1000,
+  "total_dataset": 5500,
+  "narrativity": 0.7224999999999999,
+  "correlation": {
+    "r_raw": 0.03395004116852876,
+    "r_abs": 0.03395004116852876,
+    "cv_auc": 0.518991899189919,
+    "accuracy": 0.523
+  },
+  "bridge": {
+    "\u0414": 0.014717342846557216,
+    "efficiency": 0.020370024701117255,
+    "passes": false
+  },
+  "features": 312,
+  "time": 18.78708004951477
+}

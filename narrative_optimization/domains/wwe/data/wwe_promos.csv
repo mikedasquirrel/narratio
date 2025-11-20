@@ -1,0 +1,101 @@
+promo_id,text,quality_score,word_count,emotional_intensity
+PROMO_0001,"The fact of the matter is, I am the best in the world. Not because I tell you so, but because I prove it every single night.",0.8978982844604382,27,0.49850492358718324
+PROMO_0002,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.7250343327180203,16,0.8318554805649419
+PROMO_0003,You can't beat me. Nobody can.,0.40178032405412867,6,0.5282289335462289
+PROMO_0004,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.8736813137754924,18,0.4815880988218253
+PROMO_0005,You think you're tough? I've faced tougher. Let's do this.,0.661135390275018,10,0.8014493690284534
+PROMO_0006,The championship is coming home with me. No question about it.,0.5897289565647494,11,0.7069392466520418
+PROMO_0007,"I'm the best, you're not. Simple as that.",0.7290741028254594,8,0.6796742970386312
+PROMO_0008,"I'm the best, you're not. Simple as that.",0.7158629614855309,8,0.7616862889273934
+PROMO_0009,I'm gonna win. You're gonna lose. End of story.,0.21214423452018863,9,0.49806792443251047
+PROMO_0010,You think you're tough? I've faced tougher. Let's do this.,0.7357527878325861,10,0.7676828222673034
+PROMO_0011,Let's fight. Now.,0.21917671370473674,3,0.7163394172852995
+PROMO_0012,I'm gonna win. You're gonna lose. End of story.,0.42316818186534455,9,0.8192106043475904
+PROMO_0013,"The fact of the matter is, I am the best in the world. Not because I tell you so, but because I prove it every single night.",0.8690284831432488,27,0.4523100708996225
+PROMO_0014,"I'm the best, you're not. Simple as that.",0.6839628977441554,8,0.8344478784558056
+PROMO_0015,"I'm the best, you're not. Simple as that.",0.6163248174778552,8,0.33118271172236863
+PROMO_0016,The championship is coming home with me. No question about it.,0.5653003695358345,11,0.6843866097754847
+PROMO_0017,The championship is coming home with me. No question about it.,0.5380393847739068,11,0.7612547546781832
+PROMO_0018,Let's fight. Now.,0.25386600411266996,3,0.8790675660045077
+PROMO_0019,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.8600171393136222,18,0.839589870513429
+PROMO_0020,You think you're tough? I've faced tougher. Let's do this.,0.600567107014558,10,0.831680251154292
+PROMO_0021,Title shot. Mine. Tonight.,0.25463031996038515,4,0.44071935890075964
+PROMO_0022,Let's fight. Now.,0.38259078614763015,3,0.7169024926342936
+PROMO_0023,Title shot. Mine. Tonight.,0.39725647174483203,4,0.5810904041469727
+PROMO_0024,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.585571145070969,16,0.36978966350039427
+PROMO_0025,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.5626537668914442,16,0.7274394640878521
+PROMO_0026,Let's fight. Now.,0.36674300355266676,3,0.3406071558228737
+PROMO_0027,You think you're tough? I've faced tougher. Let's do this.,0.7281617501016204,10,0.5703655344392615
+PROMO_0028,"I'm the best, you're not. Simple as that.",0.6660431529209944,8,0.8558001241911308
+PROMO_0029,The championship is coming home with me. No question about it.,0.6252423828927975,11,0.37783447038606677
+PROMO_0030,The championship is coming home with me. No question about it.,0.6038545485355172,11,0.7930172007181537
+PROMO_0031,The championship is coming home with me. No question about it.,0.6258931638885323,11,0.5681455021470003
+PROMO_0032,You can't beat me. Nobody can.,0.3515478993056257,6,0.718687848484219
+PROMO_0033,You can't beat me. Nobody can.,0.2973624477720798,6,0.360438702947278
+PROMO_0034,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.6243340223772587,16,0.6026780600492752
+PROMO_0035,The championship is coming home with me. No question about it.,0.5402907151810589,11,0.782456681545497
+PROMO_0036,The championship is coming home with me. No question about it.,0.7418391623742713,11,0.3093832484631337
+PROMO_0037,The championship is coming home with me. No question about it.,0.533178122407036,11,0.6602558163021418
+PROMO_0038,"I'm the best, you're not. Simple as that.",0.6541565827666433,8,0.5655496171912464
+PROMO_0039,I'm gonna win. You're gonna lose. End of story.,0.3083883368954247,9,0.3301810478970299
+PROMO_0040,You can't beat me. Nobody can.,0.4375284626934025,6,0.38340076486888025
+PROMO_0041,"I'm the best, you're not. Simple as that.",0.5973597570521563,8,0.563437935543327
+PROMO_0042,"I'm the best, you're not. Simple as that.",0.7440886400111564,8,0.3183492338216823
+PROMO_0043,You think you're tough? I've faced tougher. Let's do this.,0.7152817867908958,10,0.5904783704717629
+PROMO_0044,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.5014182424668728,16,0.7841698332579595
+PROMO_0045,"I'm the best, you're not. Simple as that.",0.5348304696870323,8,0.5010755285113283
+PROMO_0046,"I'm the best, you're not. Simple as that.",0.6337042863289308,8,0.5445814723486633
+PROMO_0047,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.8702593991555466,17,0.8768408533724135
+PROMO_0048,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.8601141242857056,17,0.799527064371576
+PROMO_0049,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.861676192351447,18,0.7820518536306146
+PROMO_0050,You can't beat me. Nobody can.,0.27716224673265577,6,0.574058682470963
+PROMO_0051,The championship is coming home with me. No question about it.,0.5651979551393055,11,0.3116440157510314
+PROMO_0052,You think you're tough? I've faced tougher. Let's do this.,0.7088450978797304,10,0.4538228185953873
+PROMO_0053,You think you're tough? I've faced tougher. Let's do this.,0.6856563901687345,10,0.43389005260316227
+PROMO_0054,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.8324160570234632,17,0.8737106043233172
+PROMO_0055,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.8594257129732558,17,0.47781477466016065
+PROMO_0056,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.5453473098294533,16,0.725475691369631
+PROMO_0057,I'm gonna win. You're gonna lose. End of story.,0.488583042601482,9,0.8648245985150114
+PROMO_0058,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.9452765161118561,17,0.6817531790711013
+PROMO_0059,"I'm the best, you're not. Simple as that.",0.5235435348753749,8,0.7161354747419015
+PROMO_0060,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.6628435435289505,16,0.47155476223932036
+PROMO_0061,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.9390867410294507,17,0.5470964780191144
+PROMO_0062,I'm gonna win. You're gonna lose. End of story.,0.34074717690999273,9,0.8215122485859796
+PROMO_0063,You can't beat me. Nobody can.,0.29847361465687455,6,0.8705011708876236
+PROMO_0064,Let's fight. Now.,0.308257388003932,3,0.47097144105134015
+PROMO_0065,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.8589608947334344,17,0.5474767908372855
+PROMO_0066,Let's fight. Now.,0.4273149613886218,3,0.37259423957739457
+PROMO_0067,"I'm the best, you're not. Simple as that.",0.6696868868348043,8,0.49667834061940963
+PROMO_0068,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.6788175921034867,16,0.639209676275185
+PROMO_0069,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.848864748665109,17,0.8035890588838512
+PROMO_0070,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.9464810839647718,18,0.7792708568275958
+PROMO_0071,"I'm the best, you're not. Simple as that.",0.5983684319448767,8,0.6339438801611356
+PROMO_0072,You can't beat me. Nobody can.,0.2336828645640292,6,0.43353907487847876
+PROMO_0073,You think you're tough? I've faced tougher. Let's do this.,0.6675482352289395,10,0.7387587046688437
+PROMO_0074,I'm gonna win. You're gonna lose. End of story.,0.29115078514099035,9,0.8619515975224292
+PROMO_0075,You can't beat me. Nobody can.,0.31536516927184605,6,0.8675755413437318
+PROMO_0076,Let's fight. Now.,0.2485802759328766,3,0.615859560902978
+PROMO_0077,"Tonight, I'm going to beat you and take that title. That's all there is to it.",0.5244570663205569,16,0.6295972913050123
+PROMO_0078,The championship is coming home with me. No question about it.,0.5893327389976153,11,0.5567333372130139
+PROMO_0079,"I'm the best, you're not. Simple as that.",0.6345311922040379,8,0.35782186509152547
+PROMO_0080,"The fact of the matter is, I am the best in the world. Not because I tell you so, but because I prove it every single night.",0.8198100739803086,27,0.5372564136819908
+PROMO_0081,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.8365005893099889,18,0.6097028988117589
+PROMO_0082,Title shot. Mine. Tonight.,0.304041001004751,4,0.762303344421275
+PROMO_0083,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.832110382043461,18,0.8664893609723736
+PROMO_0084,"The fact of the matter is, I am the best in the world. Not because I tell you so, but because I prove it every single night.",0.8933579871266402,27,0.3229795216781776
+PROMO_0085,The championship is coming home with me. No question about it.,0.5991306981453313,11,0.6555922946468924
+PROMO_0086,Let's fight. Now.,0.41573473829600066,3,0.4534230816944141
+PROMO_0087,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.9431704865957785,17,0.4641118166070786
+PROMO_0088,You think you're tough? I've faced tougher. Let's do this.,0.6541547384621891,10,0.4795113119680744
+PROMO_0089,"I'm the best, you're not. Simple as that.",0.5884053980990047,8,0.5676303254803459
+PROMO_0090,You can't beat me. Nobody can.,0.23480871042076729,6,0.5410582784464114
+PROMO_0091,"I'm the best, you're not. Simple as that.",0.6570613591693042,8,0.8546534980337832
+PROMO_0092,"I'm the best, you're not. Simple as that.",0.5849049466136091,8,0.570357098857039
+PROMO_0093,I'm gonna win. You're gonna lose. End of story.,0.349066071921029,9,0.5537279540795238
+PROMO_0094,"This isn't about a championship. This is about respect, legacy, and proving that the doubters were wrong.",0.880493958148342,17,0.4072952113807862
+PROMO_0095,The championship is coming home with me. No question about it.,0.6881479536182251,11,0.49403274893743904
+PROMO_0096,I didn't choose this path because it was easy. I chose it because nobody else could walk it.,0.9219125347120263,18,0.49349577746094486
+PROMO_0097,The championship is coming home with me. No question about it.,0.675045627005536,11,0.7655461992860642
+PROMO_0098,The championship is coming home with me. No question about it.,0.6009096801279333,11,0.867302688145428
+PROMO_0099,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.863241936410418,17,0.7149818327038999
+PROMO_0100,"For years, you people told me what I couldn't do. Tonight, I show you what I can.",0.8769433006951595,17,0.6524986539710222

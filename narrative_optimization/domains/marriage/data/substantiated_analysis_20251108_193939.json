@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-11-08T19:39:39.104394",
+  "n_couples": 949,
+  "descriptive_stats": {
+    "n_total": 949,
+    "n_divorced": 396,
+    "divorce_rate": 0.4172813487881981,
+    "mean_duration": 16.35423577107355,
+    "sd_duration": 13.749166435985913,
+    "median_duration": 12.544832306639288
+  },
+  "hypotheses": {
+    "H1_compatibility": {
+      "r": -0.03661760394425553,
+      "p": 0.2597731784863097,
+      "d": -0.03660354627505276,
+      "significant": 

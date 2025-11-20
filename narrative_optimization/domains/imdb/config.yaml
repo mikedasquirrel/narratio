@@ -1,0 +1,32 @@
+domain: imdb
+type: entertainment
+narrativity:
+  structural: 0.7480000000000001
+  temporal: 0.6120000000000001
+  agency: 0.544
+  interpretive: 0.8160000000000001
+  format: 0.6120000000000001
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.6664000000000001
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

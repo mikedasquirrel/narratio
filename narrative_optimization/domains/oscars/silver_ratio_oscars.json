@@ -1,0 +1,50 @@
+{
+  "silver_ratio_characteristics": {
+    "avg_cast_size": 30.0,
+    "avg_runtime": 134.8,
+    "common_genres": [
+      [
+        "Drama",
+        4
+      ],
+      [
+        "History",
+        1
+      ],
+      [
+        "Action",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Music",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Thriller",
+        1
+      ]
+    ],
+    "avg_keywords": 22.2,
+    "director_name_patterns": {},
+    "lead_actor_patterns": {},
+    "setting_patterns": {}
+  },
+  "n_winners_analyzed": 5,
+  "interpretation": "\u03a3_oscars = achievable best within Academy/Hollywood system"
+}

@@ -1,0 +1,412 @@
+{
+  "domain": "imdb",
+  "dataset": {
+    "total_movies": 2000,
+    "train_size": 1600,
+    "test_size": 400,
+    "year_range": [
+      1980,
+      2012
+    ]
+  },
+  "narrativity": 0.65,
+  "alpha_analysis": {
+    "optimal_alpha": 0.5,
+    "optimal_score": 0.6369233922322548,
+    "alpha_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001,
+      1.0
+    ],
+    "scores": [
+      0.5723585284466431,
+      0.5833463658491416,
+      0.5937752438974908,
+      0.6034797024556033,
+      0.6122850705101915,
+      0.6200128848281581,
+      0.6264877828125144,
+      0.6315455749553831,
+      0.6350419607798594,
+      0.6368611347444434,
+      0.6369233922322548,
+      0.6351908422991438,
+      0.6316704907835271,
+      0.6264142626615938,
+      0.6195159317622507,
+      0.6111053355026119,
+      0.6013405846192164,
+      0.5903991686664638,
+      0.5784688839365105,
+      0.5657393906502134,
+      0.5523949899939057
+    ],
+    "interpretation": "Balanced (narrative \u2248 content)"
+  },
+  "bridge_results": {
+    "r_narrative_train": 0.20987845204634986,
+    "r_narrative_test": 0.18398327645012688,
+    "p_value_train": 2.1902575216398066e-17,
+    "p_value_test": 0.0002157858350067675,
+    "r_baseline_estimate": 0.2,
+    "D_train": 0.00987845204634985,
+    "D_test": -0.01601672354987313,
+    "R2_train": 0.044048964633371976,
+    "R2_test": 0.03384984601332381
+  },
+  "feature_importance": {
+    "top_features": [
+      {
+        "name": "self_perception_2",
+        "coefficient": 0.032054226701838814,
+        "abs_coefficient": 0.032054226701838814
+      },
+      {
+        "name": "ensemble_8",
+        "coefficient": 0.03060878766478127,
+        "abs_coefficient": 0.03060878766478127
+      },
+      {
+        "name": "ensemble_0",
+        "coefficient": -0.026470991772018993,
+        "abs_coefficient": 0.026470991772018993
+      },
+      {
+        "name": "linguistic_3",
+        "coefficient": -0.025765726798234814,
+        "abs_coefficient": 0.025765726798234814
+      },
+      {
+        "name": "ensemble_18",
+        "coefficient": 0.024241173799796786,
+        "abs_coefficient": 0.024241173799796786
+      },
+      {
+        "name": "linguistic_0",
+        "coefficient": -0.02035692026849536,
+        "abs_coefficient": 0.02035692026849536
+      },
+      {
+        "name": "self_perception_16",
+        "coefficient": -0.020165150510891783,
+        "abs_coefficient": 0.020165150510891783
+      },
+      {
+        "name": "relational_5",
+        "coefficient": 0.01977637369761241,
+        "abs_coefficient": 0.01977637369761241
+      },
+      {
+        "name": "relational_6",
+        "coefficient": 0.018937004265611065,
+        "abs_coefficient": 0.018937004265611065
+      },
+      {
+        "name": "linguistic_2",
+        "coefficient": -0.01830167906529266,
+        "abs_coefficient": 0.01830167906529266
+      },
+      {
+        "name": "linguistic_20",
+        "coefficient": 0.015713982472573895,
+        "abs_coefficient": 0.015713982472573895
+      },
+      {
+        "name": "relational_8",
+        "coefficient": -0.014711257064125478,
+        "abs_coefficient": 0.014711257064125478
+      },
+      {
+        "name": "nominative_32",
+        "coefficient": -0.014160633127419544,
+        "abs_coefficient": 0.014160633127419544
+      },
+      {
+        "name": "nominative_18",
+        "coefficient": 0.013876430918156366,
+        "abs_coefficient": 0.013876430918156366
+      },
+      {
+        "name": "linguistic_10",
+        "coefficient": 0.013471180810362589,
+        "abs_coefficient": 0.013471180810362589
+      },
+      {
+        "name": "statistical_156",
+        "coefficient": -0.01217606295827891,
+        "abs_coefficient": 0.01217606295827891
+      },
+      {
+        "name": "self_perception_11",
+        "coefficient": 0.011460234467817616,
+        "abs_coefficient": 0.011460234467817616
+      },
+      {
+        "name": "relational_2",
+        "coefficient": 0.010660327824914948,
+        "abs_coefficient": 0.010660327824914948
+      },
+      {
+        "name": "linguistic_8",
+        "coefficient": -0.010298654572521307,
+        "abs_coefficient": 0.010298654572521307
+      },
+      {
+        "name": "nominative_12",
+        "coefficient": 0.010221123300447076,
+        "abs_coefficient": 0.010221123300447076
+      },
+      {
+        "name": "nominative_20",
+        "coefficient": 0.010221123300437923,
+        "abs_coefficient": 0.010221123300437923
+      },
+      {
+        "name": "nominative_11",
+        "coefficient": -0.009992149210276396,
+        "abs_coefficient": 0.009992149210276396
+      },
+      {
+        "name": "narrative_potential_22",
+        "coefficient": 0.009839446463609972,
+        "abs_coefficient": 0.009839446463609972
+      },
+      {
+        "name": "linguistic_5",
+        "coefficient": -0.009512099218936103,
+        "abs_coefficient": 0.009512099218936103
+      },
+      {
+        "name": "nominative_34",
+        "coefficient": 0.0094725372704076,
+        "abs_coefficient": 0.0094725372704076
+      },
+      {
+        "name": "statistical_129",
+        "coefficient": -0.00929417882672168,
+        "abs_coefficient": 0.00929417882672168
+      },
+      {
+        "name": "relational_3",
+        "coefficient": -0.009181365547862088,
+        "abs_coefficient": 0.009181365547862088
+      },
+      {
+        "name": "statistical_53",
+        "coefficient": 0.009021918642074352,
+        "abs_coefficient": 0.009021918642074352
+      },
+      {
+        "name": "nominative_16",
+        "coefficient": 0.009009730159602153,
+        "abs_coefficient": 0.009009730159602153
+      },
+      {
+        "name": "statistical_33",
+        "coefficient": -0.008868334666947031,
+        "abs_coefficient": 0.008868334666947031
+      },
+      {
+        "name": "self_perception_9",
+        "coefficient": 0.00873434040469609,
+        "abs_coefficient": 0.00873434040469609
+      },
+      {
+        "name": "relational_12",
+        "coefficient": -0.00859760682756739,
+        "abs_coefficient": 0.00859760682756739
+      },
+      {
+        "name": "relational_15",
+        "coefficient": -0.00859760682756499,
+        "abs_coefficient": 0.00859760682756499
+      },
+      {
+        "name": "narrative_potential_11",
+        "coefficient": 0.008564680508755746,
+        "abs_coefficient": 0.008564680508755746
+      },
+      {
+        "name": "self_perception_3",
+        "coefficient": 0.008486890941239061,
+        "abs_coefficient": 0.008486890941239061
+      },
+      {
+        "name": "statistical_143",
+        "coefficient": 0.008193130606909814,
+        "abs_coefficient": 0.008193130606909814
+      },
+      {
+        "name": "statistical_39",
+        "coefficient": -0.008092719329952197,
+        "abs_coefficient": 0.008092719329952197
+      },
+      {
+        "name": "nominative_42",
+        "coefficient": -0.007974220095021176,
+        "abs_coefficient": 0.007974220095021176
+      },
+      {
+        "name": "statistical_125",
+        "coefficient": -0.007960488094838816,
+        "abs_coefficient": 0.007960488094838816
+      },
+      {
+        "name": "statistical_51",
+        "coefficient": 0.007954962657881403,
+        "abs_coefficient": 0.007954962657881403
+      },
+      {
+        "name": "ensemble_22",
+        "coefficient": -0.007920798393911667,
+        "abs_coefficient": 0.007920798393911667
+      },
+      {
+        "name": "ensemble_17",
+        "coefficient": -0.007920798393763815,
+        "abs_coefficient": 0.007920798393763815
+      },
+      {
+        "name": "ensemble_21",
+        "coefficient": 0.007920798393741763,
+        "abs_coefficient": 0.007920798393741763
+      },
+      {
+        "name": "ensemble_2",
+        "coefficient": -0.007920798393740647,
+        "abs_coefficient": 0.007920798393740647
+      },
+      {
+        "name": "statistical_100",
+        "coefficient": -0.00775406155393768,
+        "abs_coefficient": 0.00775406155393768
+      },
+      {
+        "name": "relational_9",
+        "coefficient": 0.007657398982349484,
+        "abs_coefficient": 0.007657398982349484
+      },
+      {
+        "name": "relational_0",
+        "coefficient": -0.007657398982338476,
+        "abs_coefficient": 0.007657398982338476
+      },
+      {
+        "name": "statistical_198",
+        "coefficient": 0.007624542914495079,
+        "abs_coefficient": 0.007624542914495079
+      },
+      {
+        "name": "statistical_14",
+        "coefficient": -0.007443575221005403,
+        "abs_coefficient": 0.007443575221005403
+      },
+      {
+        "name": "linguistic_24",
+        "coefficient": 0.007403730363060756,
+        "abs_coefficient": 0.007403730363060756
+      }
+    ],
+    "model_intercept": 0.557995145104213,
+    "n_features": 385
+  },
+  "genre_results": {
+    "Thriller": {
+      "n_movies": 336,
+      "r": 0.10490176707980199,
+      "p_value": 0.05472936391570641,
+      "mean_quality": 0.00809246458557166,
+      "mean_success": 0.5851872311764019
+    },
+    "Romantic comedy": {
+      "n_movies": 181,
+      "r": 0.2729496659609681,
+      "p_value": 0.00020115413140250592,
+      "mean_quality": 0.013345233031715397,
+      "mean_success": 0.5698823972627873
+    },
+    "Crime Fiction": {
+      "n_movies": 146,
+      "r": 0.18025941298329615,
+      "p_value": 0.02946354433592746,
+      "mean_quality": -0.0014199152794544664,
+      "mean_success": 0.5626965602035695
+    },
+    "Drama": {
+      "n_movies": 111,
+      "r": 0.4909976797047027,
+      "p_value": 4.4700649875479935e-08,
+      "mean_quality": -0.017219440756938806,
+      "mean_success": 0.4857040898095349
+    },
+    "Adventure": {
+      "n_movies": 55,
+      "r": 0.3181633792358401,
+      "p_value": 0.01792121670342103,
+      "mean_quality": -0.001556766002788884,
+      "mean_success": 0.6046390286194095
+    },
+    "Parody": {
+      "n_movies": 53,
+      "r": 0.32730524533153926,
+      "p_value": 0.016743006349581157,
+      "mean_quality": -0.002176719256150443,
+      "mean_success": 0.56983756597171
+    },
+    "Science Fiction": {
+      "n_movies": 52,
+      "r": 0.2878604146832223,
+      "p_value": 0.03851267359294922,
+      "mean_quality": 0.028598789296017724,
+      "mean_success": 0.6080324408562177
+    },
+    "LGBT": {
+      "n_movies": 50,
+      "r": 0.26454727026015645,
+      "p_value": 0.06337569292815406,
+      "mean_quality": 0.009652547228726618,
+      "mean_success": 0.4788287899341848
+    },
+    "Romantic drama": {
+      "n_movies": 40,
+      "r": 0.21648138015755988,
+      "p_value": 0.17969119320628635,
+      "mean_quality": 0.03571899100070556,
+      "mean_success": 0.5268231639840263
+    },
+    "Sports": {
+      "n_movies": 37,
+      "r": 0.4003259617862088,
+      "p_value": 0.014082189821503067,
+      "mean_quality": -0.040054316697137174,
+      "mean_success": 0.575354416629528
+    }
+  },
+  "transformer_counts": {
+    "nominative": 51,
+    "self_perception": 21,
+    "narrative_potential": 35,
+    "linguistic": 36,
+    "ensemble": 25,
+    "relational": 17,
+    "statistical": 200
+  }
+}

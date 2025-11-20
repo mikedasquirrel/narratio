@@ -1,0 +1,193 @@
+# Mythology & Folklore Domain Configuration
+# π = 0.89 (Very High Narrativity)
+# Purest archetypal narratives - Campbell's source material
+
+domain:
+  name: "Mythology & Folklore"
+  type: "mythology"
+  subtype: "cross_cultural"
+  
+narrativity:
+  # Myths are prototypical narratives
+  components:
+    structural: 0.92    # Highly structured, archetypal
+    temporal: 0.88      # Clear temporal progression
+    agency: 0.90        # Individual heroes/gods
+    interpretive: 0.85  # Cultural meaning-making
+    format: 0.70        # Oral tradition flexibility
+  
+  calculated_pi: 0.89  # 0.30×0.92 + 0.20×0.88 + 0.25×0.90 + 0.15×0.85 + 0.10×0.70
+  
+  pi_by_culture:
+    greek_roman: 0.91
+    norse: 0.90
+    hindu: 0.88
+    egyptian: 0.87
+    native_american: 0.86
+    african: 0.85
+    asian: 0.87
+
+expected_forces:
+  theta: 0.25          # Low awareness (straight mythic telling)
+  lambda: 0.30         # Low constraints (gods can do anything)
+  ta_marbuta: 0.88     # Very high nominatives (iconic names)
+  
+expected_performance:
+  r_squared: 0.82      # 75-85% range (high archetypal purity)
+  correlation: 0.91
+  hero_journey_validation: 0.87  # Should validate Campbell strongly
+  
+archetype_requirements:
+  # Campbell's Hero's Journey (should be HIGHEST here)
+  hero_journey_completion: 0.88    # Very high expected
+  journey_stages_present: 15       # Out of 17 Campbell stages
+  
+  # Jung's Archetypes (purest form)
+  archetype_clarity: 0.92          # Very high (pure archetypes)
+  archetype_purity: 0.90           # Myths ARE the archetypes
+  
+  dominant_archetypes:
+    - hero                         # Central protagonist
+    - mentor                       # Divine/wise guide
+    - shadow                       # Antagonistic forces
+    - trickster                    # Chaos agents
+    - creator                      # Cosmological figures
+  
+  # Booker's Plot Types
+  plot_distribution:
+    quest: 0.35                    # Dominant
+    overcoming_monster: 0.30       # Common
+    voyage_and_return: 0.15
+    tragedy: 0.10
+    rebirth: 0.10
+  
+  # Frye's Mythoi
+  mythos_distribution:
+    romance: 0.70                  # Dominant (idealized heroes)
+    tragedy: 0.15                  # Some tragic myths
+    comedy: 0.10                   # Trickster tales
+    irony: 0.05                    # Rare in pure myths
+  
+  # Mythological-Specific
+  divine_intervention: 0.80        # Gods/supernatural common
+  cosmological_scope: 0.75         # Creation/world-spanning
+  moral_teaching: 0.70             # Cultural values
+  
+data:
+  target_samples: 1000             # 800-1200 range
+  
+  cultures:
+    greek_roman: 250               # Extensive corpus
+    norse: 150                     # Eddas + sagas
+    hindu: 120                     # Epics + Puranas
+    egyptian: 80
+    mesopotamian: 60
+    native_american: 100
+    african: 80
+    asian: 80                      # Chinese, Japanese
+    celtic: 50
+    other: 30
+  
+  sources:
+    - "Theoi Project (Greek)"
+    - "Sacred Texts Archive"
+    - "Wikipedia Mythology"
+    - "Bulfinch's Mythology"
+    - "Edith Hamilton compilations"
+    - "Prose/Poetic Eddas"
+    - "Mahabharata/Ramayana"
+  
+  required_fields:
+    - myth_name
+    - culture
+    - deity_names                  # Primary figures
+    - hero_name                    # If applicable
+    - summary
+    - full_narrative
+    - moral_lesson                 # If explicit
+    - modern_references            # Adaptations
+  
+  outcome_field: cultural_persistence
+  outcome_measures:
+    - still_taught                 # In schools
+    - name_recognition            # % who know the myth
+    - modern_adaptations          # Films, books, games
+    - scholarly_citations
+    - popular_culture_refs
+  
+narrative_requirements:
+  min_length_words: 500
+  max_length_words: 50000          # Some epics are long
+  
+  elements:
+    - hero_protagonist
+    - supernatural_elements
+    - quest_or_journey
+    - moral_lesson
+    - cultural_values
+
+transformer_pipeline:
+  # Core archetype transformers
+  - hero_journey                   # PRIMARY - should validate Campbell
+  - character_archetype            # Pure archetypes
+  - plot_archetype                 # Clear plot types
+  - mythological_pattern           # Domain-specific
+  - thematic_archetype
+  
+  # Existing transformers
+  - nominative                     # Iconic god/hero names
+  - emotional_resonance
+  - narrative_potential
+
+validation_hypotheses:
+  - "Mythology validates Campbell's Hero's Journey (r>0.85)"
+  - "Archetype clarity highest in mythology (>0.90)"
+  - "Journey completion predicts cultural persistence (R²>0.65)"
+  - "Divine intervention correlates with high π"
+  - "Name recognition correlates with nominative strength (ة)"
+  - "Greek/Roman myths have highest archetype clarity"
+
+domain_xi:
+  # Mythology Ξ (golden narratio) - Archetypal perfection
+  mythology_xi:
+    journey_completion: 0.92       # Near-perfect Hero's Journey
+    archetype_clarity: 0.95        # Pure archetypes
+    divine_intervention: 0.85
+    moral_clarity: 0.75
+    nominative_strength: 0.90      # Iconic names (Zeus, Odin, etc.)
+    cosmological_scope: 0.80
+    
+  # By mythological function
+  creation_myth_xi:
+    cosmological_scope: 0.95
+    divine_intervention: 0.90
+    moral_teaching: 0.70
+  
+  hero_myth_xi:
+    journey_completion: 0.95
+    archetype_clarity: 0.92
+    quest_structure: 0.90
+  
+  trickster_tale_xi:
+    chaos_elements: 0.85
+    moral_ambiguity: 0.70
+    entertainment_value: 0.80
+
+perspectives:
+  - anthropological
+  - literary
+  - psychological                  # Jungian
+  - cultural
+
+quality_methods:
+  - cultural_persistence
+  - archetypal_purity
+  - cross_cultural_resonance
+
+scales:
+  - micro                          # Single episode
+  - meso                           # Full myth
+  - macro                          # Mythological cycle
+
+aggregation_method: archetypal_weighted
+

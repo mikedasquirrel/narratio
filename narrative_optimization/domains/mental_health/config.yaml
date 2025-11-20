@@ -1,0 +1,32 @@
+domain: mental_health
+type: medical
+narrativity:
+  structural: 0.7
+  temporal: 0.7
+  agency: 0.7
+  interpretive: 0.7
+  format: 0.7
+data:
+  text_fields:
+  - text
+  outcome_field: outcome
+  context_features: null
+  name_field: null
+outcome_type: continuous
+transformer_augmentation: []
+custom_validators: []
+description: null
+sample_size: null
+pi: 0.6999999999999998
+perspectives:
+- director
+- audience
+- critic
+quality_methods:
+- weighted_mean
+- ensemble
+scales:
+- micro
+- meso
+- macro
+aggregation_method: importance_weighted

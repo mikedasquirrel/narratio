@@ -1,0 +1,453 @@
+{
+  "baseline": {
+    "abs_r": 0.0026199991601812724,
+    "r": -0.0026199991601812724,
+    "n": 5000
+  },
+  "ranked_contexts": [
+    {
+      "dimension": "player",
+      "value": "Andrei Medvedev",
+      "abs_r": 0.42216094294246564,
+      "r": -0.42216094294246564,
+      "n": 28
+    },
+    {
+      "dimension": "player",
+      "value": "Galo Blanco",
+      "abs_r": 0.3884240501808599,
+      "r": -0.3884240501808599,
+      "n": 22
+    },
+    {
+      "dimension": "player",
+      "value": "Sergi Bruguera",
+      "abs_r": 0.38720168589362114,
+      "r": -0.38720168589362114,
+      "n": 27
+    },
+    {
+      "dimension": "player",
+      "value": "Marc Rosset",
+      "abs_r": 0.36524566591214913,
+      "r": 0.36524566591214913,
+      "n": 36
+    },
+    {
+      "dimension": "player",
+      "value": "Jiri Novak",
+      "abs_r": 0.326011611235909,
+      "r": -0.326011611235909,
+      "n": 47
+    },
+    {
+      "dimension": "player",
+      "value": "Sebastien Grosjean",
+      "abs_r": 0.32224090306793784,
+      "r": -0.32224090306793784,
+      "n": 71
+    },
+    {
+      "dimension": "player",
+      "value": "Fernando Meligeni",
+      "abs_r": 0.3143400457574033,
+      "r": 0.3143400457574033,
+      "n": 20
+    },
+    {
+      "dimension": "player",
+      "value": "George Bastl",
+      "abs_r": 0.309928201438566,
+      "r": -0.309928201438566,
+      "n": 23
+    },
+    {
+      "dimension": "player",
+      "value": "Christophe Rochus",
+      "abs_r": 0.2246516598069944,
+      "r": 0.2246516598069944,
+      "n": 24
+    },
+    {
+      "dimension": "player",
+      "value": "Davide Sanguinetti",
+      "abs_r": 0.21860547323652083,
+      "r": -0.21860547323652083,
+      "n": 26
+    },
+    {
+      "dimension": "player",
+      "value": "Goran Ivanisevic",
+      "abs_r": 0.21248169295682304,
+      "r": 0.21248169295682304,
+      "n": 29
+    },
+    {
+      "dimension": "player",
+      "value": "Karol Kucera",
+      "abs_r": 0.20610765933371594,
+      "r": 0.20610765933371594,
+      "n": 36
+    },
+    {
+      "dimension": "player",
+      "value": "Alex Corretja",
+      "abs_r": 0.204974815052504,
+      "r": -0.204974815052504,
+      "n": 77
+    },
+    {
+      "dimension": "player",
+      "value": "Bohdan Ulihrach",
+      "abs_r": 0.1876898199984369,
+      "r": 0.1876898199984369,
+      "n": 39
+    },
+    {
+      "dimension": "player",
+      "value": "Pete Sampras",
+      "abs_r": 0.1707361537740792,
+      "r": 0.1707361537740792,
+      "n": 58
+    },
+    {
+      "dimension": "player",
+      "value": "Cedric Pioline",
+      "abs_r": 0.16199161328600484,
+      "r": -0.16199161328600484,
+      "n": 40
+    },
+    {
+      "dimension": "player",
+      "value": "Ivan Ljubicic",
+      "abs_r": 0.15902860198497426,
+      "r": -0.15902860198497426,
+      "n": 47
+    },
+    {
+      "dimension": "player",
+      "value": "Markus Hantschk",
+      "abs_r": 0.15362878496166593,
+      "r": 0.15362878496166593,
+      "n": 21
+    },
+    {
+      "dimension": "player",
+      "value": "Andrea Gaudenzi",
+      "abs_r": 0.15203244052382547,
+      "r": 0.15203244052382547,
+      "n": 23
+    },
+    {
+      "dimension": "player",
+      "value": "Jan Michael Gambill",
+      "abs_r": 0.14349603624959256,
+      "r": -0.14349603624959256,
+      "n": 62
+    },
+    {
+      "dimension": "player",
+      "value": "Juan Balcells",
+      "abs_r": 0.1418362012334696,
+      "r": -0.1418362012334696,
+      "n": 22
+    },
+    {
+      "dimension": "player",
+      "value": "Gianluca Pozzi",
+      "abs_r": 0.13809937608821773,
+      "r": 0.13809937608821773,
+      "n": 31
+    },
+    {
+      "dimension": "player",
+      "value": "Juan Carlos Ferrero",
+      "abs_r": 0.136134721446007,
+      "r": 0.136134721446007,
+      "n": 76
+    },
+    {
+      "dimension": "player",
+      "value": "Sjeng Schalken",
+      "abs_r": 0.13609291333871715,
+      "r": 0.13609291333871715,
+      "n": 58
+    },
+    {
+      "dimension": "player",
+      "value": "Mark Philippoussis",
+      "abs_r": 0.12817955526563837,
+      "r": -0.12817955526563837,
+      "n": 53
+    },
+    {
+      "dimension": "player",
+      "value": "Alberto Martin",
+      "abs_r": 0.11735474266352744,
+      "r": -0.11735474266352744,
+      "n": 39
+    },
+    {
+      "dimension": "player",
+      "value": "Marcelo Rios",
+      "abs_r": 0.11550417524345728,
+      "r": 0.11550417524345728,
+      "n": 46
+    },
+    {
+      "dimension": "player",
+      "value": "Jonas Bjorkman",
+      "abs_r": 0.10432296331097103,
+      "r": -0.10432296331097103,
+      "n": 45
+    },
+    {
+      "dimension": "player",
+      "value": "Magnus Norman",
+      "abs_r": 0.10345073205083713,
+      "r": 0.10345073205083713,
+      "n": 82
+    },
+    {
+      "dimension": "top_10_match",
+      "value": "top10",
+      "abs_r": 0.0937083674716292,
+      "r": 0.0937083674716292,
+      "n": 63
+    },
+    {
+      "dimension": "player",
+      "value": "Andrei Pavel",
+      "abs_r": 0.08797288508599899,
+      "r": 0.08797288508599899,
+      "n": 58
+    },
+    {
+      "dimension": "player",
+      "value": "Andre Agassi",
+      "abs_r": 0.0828604761665954,
+      "r": 0.0828604761665954,
+      "n": 65
+    },
+    {
+      "dimension": "player",
+      "value": "Stefan Koubek",
+      "abs_r": 0.0781020317962679,
+      "r": -0.0781020317962679,
+      "n": 41
+    },
+    {
+      "dimension": "player",
+      "value": "Gaston Gaudio",
+      "abs_r": 0.070578360459635,
+      "r": -0.070578360459635,
+      "n": 41
+    },
+    {
+      "dimension": "player",
+      "value": "Tommy Haas",
+      "abs_r": 0.0678812108268545,
+      "r": 0.0678812108268545,
+      "n": 75
+    },
+    {
+      "dimension": "player",
+      "value": "Magnus Gustafsson",
+      "abs_r": 0.0650298679652167,
+      "r": -0.0650298679652167,
+      "n": 29
+    },
+    {
+      "dimension": "player",
+      "value": "Fabrice Santoro",
+      "abs_r": 0.06497597135312676,
+      "r": 0.06497597135312676,
+      "n": 52
+    },
+    {
+      "dimension": "player",
+      "value": "Byron Black",
+      "abs_r": 0.06438271776267122,
+      "r": -0.06438271776267122,
+      "n": 33
+    },
+    {
+      "dimension": "player",
+      "value": "Greg Rusedski",
+      "abs_r": 0.06303130787840457,
+      "r": -0.06303130787840457,
+      "n": 42
+    },
+    {
+      "dimension": "player",
+      "value": "Albert Portas",
+      "abs_r": 0.04255384757952568,
+      "r": 0.04255384757952568,
+      "n": 38
+    },
+    {
+      "dimension": "player",
+      "value": "Andrew Ilie",
+      "abs_r": 0.04082573544579962,
+      "r": -0.04082573544579962,
+      "n": 33
+    },
+    {
+      "dimension": "player",
+      "value": "Francisco Clavet",
+      "abs_r": 0.03978797789619557,
+      "r": -0.03978797789619557,
+      "n": 41
+    },
+    {
+      "dimension": "player",
+      "value": "Marat Safin",
+      "abs_r": 0.03700452712830308,
+      "r": -0.03700452712830308,
+      "n": 87
+    },
+    {
+      "dimension": "tournament_level",
+      "value": "grand_slam",
+      "abs_r": 0.031262908680631876,
+      "r": -0.031262908680631876,
+      "n": 508
+    },
+    {
+      "dimension": "player",
+      "value": "Michael Chang",
+      "abs_r": 0.02787859758958404,
+      "r": 0.02787859758958404,
+      "n": 56
+    },
+    {
+      "dimension": "player",
+      "value": "Julien Boutter",
+      "abs_r": 0.024523614395108508,
+      "r": 0.024523614395108508,
+      "n": 28
+    },
+    {
+      "dimension": "year",
+      "value": "2001",
+      "abs_r": 0.02451046763358944,
+      "r": 0.02451046763358944,
+      "n": 1622
+    },
+    {
+      "dimension": "surface",
+      "value": "clay",
+      "abs_r": 0.02405641479305502,
+      "r": -0.02405641479305502,
+      "n": 1734
+    },
+    {
+      "dimension": "player",
+      "value": "Thomas Johansson",
+      "abs_r": 0.023485778149863128,
+      "r": 0.023485778149863128,
+      "n": 38
+    },
+    {
+      "dimension": "player",
+      "value": "Lleyton Hewitt",
+      "abs_r": 0.020264985624212913,
+      "r": -0.020264985624212913,
+      "n": 103
+    },
+    {
+      "dimension": "player",
+      "value": "Franco Squillari",
+      "abs_r": 0.01951232726235305,
+      "r": 0.01951232726235305,
+      "n": 47
+    },
+    {
+      "dimension": "surface",
+      "value": "hard",
+      "abs_r": 0.01614103828266472,
+      "r": 0.01614103828266472,
+      "n": 2506
+    },
+    {
+      "dimension": "year",
+      "value": "2000",
+      "abs_r": 0.01612502256243665,
+      "r": -0.01612502256243665,
+      "n": 3378
+    },
+    {
+      "dimension": "surface",
+      "value": "grass",
+      "abs_r": 0.014977380561228075,
+      "r": -0.014977380561228075,
+      "n": 412
+    },
+    {
+      "dimension": "player",
+      "value": "Max Mirnyi",
+      "abs_r": 0.014218789640207246,
+      "r": -0.014218789640207246,
+      "n": 49
+    },
+    {
+      "dimension": "ranking_upset",
+      "value": "expected",
+      "abs_r": 0.007823823897974936,
+      "r": -0.007823823897974936,
+      "n": 3194
+    },
+    {
+      "dimension": "player",
+      "value": "Thomas Enqvist",
+      "abs_r": 0.007350130133285931,
+      "r": -0.007350130133285931,
+      "n": 67
+    },
+    {
+      "dimension": "ranking_upset",
+      "value": "upset",
+      "abs_r": 0.006627852371943857,
+      "r": 0.006627852371943857,
+      "n": 1806
+    },
+    {
+      "dimension": "player",
+      "value": "Younes El Aynaoui",
+      "abs_r": 0.006532147980753618,
+      "r": -0.006532147980753618,
+      "n": 58
+    },
+    {
+      "dimension": "top_10_match",
+      "value": "other",
+      "abs_r": 0.003577727995377714,
+      "r": -0.003577727995377714,
+      "n": 4937
+    },
+    {
+      "dimension": "tournament_level",
+      "value": "masters_1000",
+      "abs_r": 0.002554063791277602,
+      "r": -0.002554063791277602,
+      "n": 1134
+    },
+    {
+      "dimension": "tournament_level",
+      "value": "atp_500",
+      "abs_r": 0.0009936166095086962,
+      "r": 0.0009936166095086962,
+      "n": 3018
+    }
+  ],
+  "summary": {
+    "total_measured": 62,
+    "strongest": {
+      "dimension": "player",
+      "value": "Andrei Medvedev",
+      "abs_r": 0.42216094294246564,
+      "r": -0.42216094294246564,
+      "n": 28
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "phys": 0.9380303734756843,
+    "all": 0.9183969986215474,
+    "delta": -0.019633374854136854
+  },
+  "feature_selection": {
+    "auc": 0.9380036347220763,
+    "delta": -2.673875360803546e-05,
+    "features": [
+      "blue_name_len",
+      "name_len_diff",
+      "name_len_ratio",
+      "red_first_name_len",
+      "blue_first_name_len",
+      "blue_last_name_len",
+      "red_vowels",
+      "blue_vowels",
+      "red_vowel_ratio",
+      "blue_vowel_ratio",
+      "blue_has_nickname",
+      "neither_has_nickname",
+      "blue_name_memorability",
+      "red_name_hardness",
+      "is_title_fight",
+      "has_bonus",
+      "is_perf_bonus",
+      "title_x_strike_diff",
+      "title_x_ctrl_diff",
+      "heavyweight_x_short_name"
+    ]
+  },
+  "with_interactions": {
+    "auc": 0.9390247034064995,
+    "delta": 0.0009943299308151632
+  },
+  "ensemble": {
+    "random_forest": {
+      "auc": 0.948278312459682,
+      "delta": -0.0017238205251969285
+    },
+    "gradient_boosting": {
+      "auc": 0.9612352526944223,
+      "delta": 9.75616642260313e-05
+    },
+    "voting": {
+      "auc": 0.958481229096605,
+      "delta": 0.02045085562092075
+    }
+  },
+  "best_method": "Voting Ensemble",
+  "best_delta": 0.02045085562092075,
+  "improvement": 0.0400842304750576
+}

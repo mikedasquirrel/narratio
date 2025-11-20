@@ -1,0 +1,210 @@
+{
+  "approach": "pure_data_driven",
+  "principle": "Measure everything, rank by r, optimize top contexts",
+  "overall_r": 0.168045404269676,
+  "n_movies": 2000,
+  "discoveries": [
+    {
+      "rank": 1,
+      "context": "Genre: Horror",
+      "dimension": "genre",
+      "r_measured": 0.3419372689696806,
+      "n_samples": 31,
+      "p_value": 0.059728796551544935,
+      "abs_r": 0.3419372689696806
+    },
+    {
+      "rank": 2,
+      "context": "Genre: Biography",
+      "dimension": "genre",
+      "r_measured": 0.26479850785911246,
+      "n_samples": 31,
+      "p_value": 0.14998263722478952,
+      "abs_r": 0.26479850785911246
+    },
+    {
+      "rank": 3,
+      "context": "Genre: Science Fiction",
+      "dimension": "genre",
+      "r_measured": 0.25770143469721746,
+      "n_samples": 65,
+      "p_value": 0.0382199784271212,
+      "abs_r": 0.25770143469721746
+    },
+    {
+      "rank": 4,
+      "context": "Decade: 1980s",
+      "dimension": "decade",
+      "r_measured": 0.22508732608239712,
+      "n_samples": 343,
+      "p_value": 2.581264204287701e-05,
+      "abs_r": 0.22508732608239712
+    },
+    {
+      "rank": 5,
+      "context": "Genre: Romance Film",
+      "dimension": "genre",
+      "r_measured": 0.21620335132810187,
+      "n_samples": 44,
+      "p_value": 0.1586639334577751,
+      "abs_r": 0.21620335132810187
+    },
+    {
+      "rank": 6,
+      "context": "Genre: Drama",
+      "dimension": "genre",
+      "r_measured": 0.2058450206057018,
+      "n_samples": 131,
+      "p_value": 0.01833699085506349,
+      "abs_r": 0.2058450206057018
+    },
+    {
+      "rank": 7,
+      "context": "Genre: Sports",
+      "dimension": "genre",
+      "r_measured": 0.20057537876037349,
+      "n_samples": 43,
+      "p_value": 0.19717015633937643,
+      "abs_r": 0.20057537876037349
+    },
+    {
+      "rank": 8,
+      "context": "Genre: Thriller",
+      "dimension": "genre",
+      "r_measured": 0.17419188841330552,
+      "n_samples": 420,
+      "p_value": 0.00033490202899246293,
+      "abs_r": 0.17419188841330552
+    },
+    {
+      "rank": 9,
+      "context": "Decade: 2010s",
+      "dimension": "decade",
+      "r_measured": 0.17346526098484985,
+      "n_samples": 229,
+      "p_value": 0.00852308447579119,
+      "abs_r": 0.17346526098484985
+    },
+    {
+      "rank": 10,
+      "context": "Decade: 2000s",
+      "dimension": "decade",
+      "r_measured": 0.16847800227484,
+      "n_samples": 884,
+      "p_value": 4.699810574606257e-07,
+      "abs_r": 0.16847800227484
+    },
+    {
+      "rank": 11,
+      "context": "Cast: High Diversity",
+      "dimension": "diversity",
+      "r_measured": 0.16610287949530336,
+      "n_samples": 1979,
+      "p_value": 1.0355277913429592e-13,
+      "abs_r": 0.16610287949530336
+    },
+    {
+      "rank": 12,
+      "context": "Genre: Romantic drama",
+      "dimension": "genre",
+      "r_measured": 0.15354416662904305,
+      "n_samples": 47,
+      "p_value": 0.3028097524672371,
+      "abs_r": 0.15354416662904305
+    },
+    {
+      "rank": 13,
+      "context": "Genre: Romantic comedy",
+      "dimension": "genre",
+      "r_measured": 0.12284454514613555,
+      "n_samples": 230,
+      "p_value": 0.06289545190873687,
+      "abs_r": 0.12284454514613555
+    },
+    {
+      "rank": 14,
+      "context": "Decade: 1990s",
+      "dimension": "decade",
+      "r_measured": 0.1187101947719947,
+      "n_samples": 544,
+      "p_value": 0.0055676510935287185,
+      "abs_r": 0.1187101947719947
+    },
+    {
+      "rank": 15,
+      "context": "Genre: LGBT",
+      "dimension": "genre",
+      "r_measured": 0.10282161812959588,
+      "n_samples": 62,
+      "p_value": 0.426466514857101,
+      "abs_r": 0.10282161812959588
+    },
+    {
+      "rank": 16,
+      "context": "Genre: Action/Adventure",
+      "dimension": "genre",
+      "r_measured": 0.0893155221547953,
+      "n_samples": 41,
+      "p_value": 0.5786730114766336,
+      "abs_r": 0.0893155221547953
+    },
+    {
+      "rank": 17,
+      "context": "Genre: Cult",
+      "dimension": "genre",
+      "r_measured": 0.0805466544503668,
+      "n_samples": 30,
+      "p_value": 0.6722115397956899,
+      "abs_r": 0.0805466544503668
+    },
+    {
+      "rank": 18,
+      "context": "Genre: Crime Fiction",
+      "dimension": "genre",
+      "r_measured": 0.07376509092659943,
+      "n_samples": 178,
+      "p_value": 0.3278026999783914,
+      "abs_r": 0.07376509092659943
+    },
+    {
+      "rank": 19,
+      "context": "Genre: Comedy",
+      "dimension": "genre",
+      "r_measured": 0.029542683700994644,
+      "n_samples": 33,
+      "p_value": 0.8703598057685292,
+      "abs_r": 0.029542683700994644
+    },
+    {
+      "rank": 20,
+      "context": "Genre: Parody",
+      "dimension": "genre",
+      "r_measured": 0.023056044583951052,
+      "n_samples": 66,
+      "p_value": 0.8542066437271492,
+      "abs_r": 0.023056044583951052
+    },
+    {
+      "rank": 21,
+      "context": "Genre: Family Film",
+      "dimension": "genre",
+      "r_measured": 0.019126007333288897,
+      "n_samples": 40,
+      "p_value": 0.9067504298588507,
+      "abs_r": 0.019126007333288897
+    },
+    {
+      "rank": 22,
+      "context": "Genre: Adventure",
+      "dimension": "genre",
+      "r_measured": 0.013893535613547746,
+      "n_samples": 70,
+      "p_value": 0.9091156175322259,
+      "abs_r": 0.013893535613547746
+    }
+  ],
+  "strong_contexts": [
+    "Genre: Horror"
+  ],
+  "insight": "Data reveals where narrative is empirically strongest - optimize those contexts"
+}

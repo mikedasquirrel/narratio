@@ -1,0 +1,119 @@
+{
+  "confidence_strategies": {
+    "confidence_60": {
+      "bets": 1521,
+      "accuracy": 0.9434582511505588,
+      "wins": 1435,
+      "losses": 86,
+      "roi": 0.8869165023011177
+    },
+    "confidence_65": {
+      "bets": 1504,
+      "accuracy": 0.9468085106382979,
+      "wins": 1424,
+      "losses": 80,
+      "roi": 0.8936170212765957
+    },
+    "confidence_70": {
+      "bets": 1483,
+      "accuracy": 0.9527983816587997,
+      "wins": 1413,
+      "losses": 70,
+      "roi": 0.9055967633175994
+    },
+    "confidence_75": {
+      "bets": 1466,
+      "accuracy": 0.9549795361527967,
+      "wins": 1400,
+      "losses": 66,
+      "roi": 0.9099590723055935
+    },
+    "confidence_80": {
+      "bets": 1429,
+      "accuracy": 0.9622113365990203,
+      "wins": 1375,
+      "losses": 54,
+      "roi": 0.9244226731980406
+    }
+  },
+  "context_strategies": {
+    "Submission Fights": {
+      "context": "Submission Fights",
+      "bets": 422,
+      "accuracy": 0.919431279620853,
+      "wins": 388,
+      "losses": 34,
+      "roi": 0.8388625592417062
+    },
+    "KO/TKO Fights": {
+      "context": "KO/TKO Fights",
+      "bets": 594,
+      "accuracy": 0.9478114478114478,
+      "wins": 563,
+      "losses": 31,
+      "roi": 0.8956228956228957
+    },
+    "All Finishes": {
+      "context": "All Finishes",
+      "bets": 1016,
+      "accuracy": 0.9360236220472441,
+      "wins": 951,
+      "losses": 65,
+      "roi": 0.8720472440944882
+    },
+    "Round 1 Finishes": {
+      "context": "Round 1 Finishes",
+      "bets": 627,
+      "accuracy": 0.9362041467304625,
+      "wins": 587,
+      "losses": 40,
+      "roi": 0.8724082934609251
+    },
+    "Title Fights": {
+      "context": "Title Fights",
+      "bets": 145,
+      "accuracy": 0.9517241379310345,
+      "wins": 138,
+      "losses": 7,
+      "roi": 0.903448275862069
+    },
+    "Title Fight Finishes": {
+      "context": "Title Fight Finishes",
+      "bets": 102,
+      "accuracy": 0.9313725490196079,
+      "wins": 95,
+      "losses": 7,
+      "roi": 0.8627450980392157
+    },
+    "5 Round Fights": {
+      "context": "5 Round Fights",
+      "bets": 97,
+      "accuracy": 0.9690721649484536,
+      "wins": 94,
+      "losses": 3,
+      "roi": 0.9381443298969072
+    }
+  },
+  "narrative_edge": {
+    "bets": 767,
+    "accuracy": 0.9452411994784876,
+    "roi": 0.8904823989569752
+  },
+  "best_strategy": {
+    "name": "5 Round Fights",
+    "roi": 0.9381443298969072,
+    "result": {
+      "context": "5 Round Fights",
+      "bets": 97,
+      "accuracy": 0.9690721649484536,
+      "wins": 94,
+      "losses": 3,
+      "roi": 0.9381443298969072
+    }
+  },
+  "baseline": {
+    "random_accuracy": 0.5,
+    "random_roi": 0.0,
+    "note": "Random betting breaks even"
+  }
+}

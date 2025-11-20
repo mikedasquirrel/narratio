@@ -1,0 +1,21 @@
+{
+  "model_type": "nfl_full_narrativity",
+  "architecture": "structural_plus_linguistic",
+  "timestamp": "2025-11-13T18:45:33.778858",
+  "n_features": {
+    "total": 959,
+    "structural": 27,
+    "linguistic": 932
+  },
+  "test_metrics": {
+    "r2": -0.010677793192223506,
+    "mae": 0.49592678425311204,
+    "accuracy": 0.531578947368421
+  },
+  "best_params": {
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_samples_split": 10,
+    "n_estimators": 100
+  }
+}

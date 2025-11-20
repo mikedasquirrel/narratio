@@ -1,0 +1,21 @@
+{
+  "experiment": "nfl_complete_model",
+  "date": "2025-11-13T17:31:06.216089",
+  "dataset": {
+    "total": 3010,
+    "train": 1871,
+    "val": 569,
+    "test": 570
+  },
+  "features": {
+    "total": 882
+  },
+  "test_performance": {
+    "r2": -0.032140315151164334,
+    "accuracy": 0.5736842105263158
+  },
+  "baseline_comparison": {
+    "baseline_r2": 0.545,
+    "improvement": -0.5771403151511644
+  }
+}

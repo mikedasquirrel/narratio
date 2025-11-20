@@ -1,0 +1,129 @@
+{
+  "narrative_logistic": {
+    "accuracy": 0.5462962962962963,
+    "roc_auc": 0.5472997618383504,
+    "brier": 0.24734800170256058,
+    "log_loss": 0.6876739768361856,
+    "strategy": {
+      "bets": 174,
+      "win_rate": 0.5,
+      "roi": 0.2031245564191809,
+      "total_profit": 35.34367281693748,
+      "max_drawdown": 9.22822208008822,
+      "avg_edge": 0.0636963684196129,
+      "edge_threshold": 0.03
+    },
+    "top_features": [
+      {
+        "feature": "odds_implied_edge",
+        "coefficient": 0.054876113846079766
+      },
+      {
+        "feature": "odds_implied_prob_home",
+        "coefficient": 0.0542485351112636
+      },
+      {
+        "feature": "odds_implied_prob_away",
+        "coefficient": -0.05116831247526996
+      },
+      {
+        "feature": "odds_puck_line_home",
+        "coefficient": -0.036456446803506515
+      },
+      {
+        "feature": "odds_puck_line_away",
+        "coefficient": 0.036456446803506515
+      },
+      {
+        "feature": "ctx_away_l10_wins",
+        "coefficient": -0.030758547164152713
+      },
+      {
+        "feature": "ctx_form_differential",
+        "coefficient": 0.030203389478942685
+      },
+      {
+        "feature": "ctx_away_win_pct",
+        "coefficient": -0.02649985880718671
+      },
+      {
+        "feature": "odds_moneyline_away",
+        "coefficient": 0.024857378117507517
+      },
+      {
+        "feature": "odds_moneyline_gap",
+        "coefficient": -0.024033311105434742
+      },
+      {
+        "feature": "ctx_win_pct_gap",
+        "coefficient": 0.0226051161167154
+      },
+      {
+        "feature": "ctx_record_differential",
+        "coefficient": 0.0226051161167154
+      },
+      {
+        "feature": "StatisticalTransformer_16",
+        "coefficient": -0.017876905626292277
+      },
+      {
+        "feature": "nominative_9",
+        "coefficient": -0.017662433490784217
+      },
+      {
+        "feature": "StatisticalTransformer_1",
+        "coefficient": -0.016233221346257473
+      },
+      {
+        "feature": "odds_total_pressure",
+        "coefficient": 0.011958903316898388
+      },
+      {
+        "feature": "StatisticalTransformer_112",
+        "coefficient": 0.011878791703080007
+      },
+      {
+        "feature": "nominative_27",
+        "coefficient": 0.01145807382489627
+      },
+      {
+        "feature": "StatisticalTransformer_48",
+        "coefficient": 0.01129661667098452
+      },
+      {
+        "feature": "StatisticalTransformer_47",
+        "coefficient": 0.011118683617865504
+      }
+    ]
+  },
+  "narrative_gradient": {
+    "accuracy": 0.5509259259259259,
+    "roc_auc": 0.5617289248396165,
+    "brier": 0.2511270154668334,
+    "log_loss": 0.6960498084439034,
+    "strategy": {
+      "bets": 156,
+      "win_rate": 0.5384615384615384,
+      "roi": 0.17300075517885857,
+      "total_profit": 26.988117807901936,
+      "max_drawdown": 9.519218687042283,
+      "avg_edge": 0.0863696810285231,
+      "edge_threshold": 0.03
+    }
+  },
+  "narrative_forest": {
+    "accuracy": 0.5416666666666666,
+    "roc_auc": 0.5449503293496686,
+    "brier": 0.25517294560185183,
+    "log_loss": 0.704393882934341,
+    "strategy": {
+      "bets": 243,
+      "win_rate": 0.5349794238683128,
+      "roi": 0.10370579970892693,
+      "total_profit": 25.200509329269245,
+      "max_drawdown": 9.815090389938534,
+      "avg_edge": 0.09558052862388575,
+      "edge_threshold": 0.03
+    }
+  }
+}

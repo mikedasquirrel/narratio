@@ -1,0 +1,199 @@
+# Stage Drama Domain Configuration
+# π = 0.76 (High Narrativity)
+# Theatrical narratives from Greek tragedy to modern drama
+
+domain:
+  name: "Stage Drama"
+  type: "theatre"
+  subtype: "dramatic_literature"
+  
+narrativity:
+  components:
+    structural: 0.88    # Highly structured (acts, scenes)
+    temporal: 0.75      # Real-time performance
+    agency: 0.70        # Character-driven
+    interpretive: 0.75  # Performance interpretation
+    format: 0.70        # Stage constraints
+  
+  calculated_pi: 0.76  # 0.30×0.88 + 0.20×0.75 + 0.25×0.70 + 0.15×0.75 + 0.10×0.70
+  
+  pi_by_period:
+    greek_tragedy: 0.85  # Highly structured
+    shakespeare: 0.78    # Complex but structured
+    modern_drama: 0.70   # Varied
+    absurdist: 0.45      # Anti-structure
+    musical_theatre: 0.75
+
+expected_forces:
+  theta: 0.55          # Moderate-high awareness
+  lambda: 0.75         # High constraints (stage, time, unities)
+  ta_marbuta: 0.70     # Character names important
+  
+expected_performance:
+  r_squared: 0.68      # 60-75% range
+  correlation: 0.82
+  aristotelian_validation: 0.80    # Should validate Aristotle
+  
+archetype_requirements:
+  # Aristotelian Principles (PRIMARY for theatre)
+  aristotelian_adherence: 0.75     # Expected high
+  three_unities:
+    unity_of_action: 0.80
+    unity_of_time: 0.60            # Varies by period
+    unity_of_place: 0.55           # Often relaxed
+  
+  # Tragedy-Specific (Greek)
+  tragic_structure: 0.80
+  hamartia: 0.75                   # Fatal flaw
+  peripeteia: 0.85                 # Reversal
+  anagnorisis: 0.80                # Recognition
+  catharsis: 0.75                  # Emotional purging
+  
+  # Character Archetypes
+  archetype_clarity: 0.75          # High in classical
+  character_types_by_period:
+    greek: ['tragic_hero', 'chorus', 'gods']
+    shakespeare: ['complex_hero', 'fool', 'villain']
+    modern: ['everyman', 'psychological', 'symbolic']
+  
+  # Plot Types
+  plot_distribution:
+    tragedy: 0.40                  # Dominant in classics
+    comedy: 0.25                   # Shakespeare, etc.
+    history: 0.15                  # Historical drama
+    romance: 0.10
+    absurdist: 0.10
+  
+  # 5-Act Structure (Shakespeare)
+  five_act_adherence: 0.70
+  acts:
+    - exposition
+    - rising_action
+    - climax
+    - falling_action
+    - denouement
+  
+data:
+  target_samples: 500              # 300-500 range
+  
+  periods:
+    greek_tragedy: 50              # Aeschylus, Sophocles, Euripides
+    greek_comedy: 30               # Aristophanes
+    shakespeare: 100               # Complete works
+    restoration: 40                # 1660-1700
+    modern_drama: 150              # Miller, Williams, O'Neill
+    contemporary: 100              # Current
+    musical_theatre: 30            # Rodgers, Sondheim
+  
+  sources:
+    - "Project Gutenberg Drama"
+    - "Internet Shakespeare"
+    - "Greek Drama in Translation"
+    - "Modern Drama Database"
+    - "PlayScript.com"
+  
+  required_fields:
+    - title
+    - playwright
+    - year_written
+    - year_first_performed
+    - period
+    - genre
+    - full_text
+    - act_structure
+    - major_characters
+    - production_count             # How often produced
+    - awards
+  
+  outcome_field: dramatic_success
+  outcome_measures:
+    - production_frequency         # Still performed
+    - tony_awards                  # If applicable
+    - critical_reputation
+    - educational_curriculum       # Taught in schools
+    - cultural_references
+    - adaptations                  # Film/TV versions
+  
+narrative_requirements:
+  min_length_words: 5000           # One-act plays
+  max_length_words: 40000          # Long plays
+  
+  elements:
+    - dramatic_conflict
+    - dialogue_quality
+    - character_development
+    - structural_unity
+    - theatrical_viability
+
+transformer_pipeline:
+  # Archetype transformers
+  - structural_beat                # Act structure PRIMARY
+  - thematic_archetype             # Tragedy/comedy classification
+  - character_archetype            # Dramatic roles
+  - plot_archetype                 # Plot types
+  - hero_journey                   # Some plays
+  
+  # Existing transformers
+  - nominative                     # Character names
+  - conflict_tension               # Dramatic tension
+  - emotional_resonance
+  - linguistic_advanced            # Dialogue quality
+  - temporal_evolution
+
+validation_hypotheses:
+  - "Greek tragedy validates Aristotelian principles (r>0.85)"
+  - "5-act structure predicts Shakespeare success"
+  - "Tragic structure (peripeteia + anagnorisis) predicts persistence"
+  - "Unity of action matters more than unity of time/place"
+  - "Frye's mythoi map to dramatic genres perfectly"
+  - "Modern drama has higher θ (self-awareness) than classical"
+  - "Production frequency correlates with structural quality"
+
+domain_xi:
+  # Drama Ξ by period
+  greek_tragedy_xi:
+    aristotelian_adherence: 0.92
+    tragic_structure: 0.90
+    unity_of_action: 0.95
+    catharsis: 0.88
+    hamartia: 0.85
+  
+  shakespeare_xi:
+    five_act_structure: 0.85
+    character_complexity: 0.90
+    linguistic_brilliance: 0.95
+    thematic_depth: 0.88
+    universal_appeal: 0.85
+  
+  modern_drama_xi:
+    psychological_depth: 0.85
+    social_relevance: 0.80
+    character_realism: 0.85
+    thematic_complexity: 0.80
+  
+  musical_theatre_xi:
+    emotional_arc: 0.90
+    narrative_clarity: 0.85
+    entertainment_value: 0.88
+    musical_integration: 0.90
+
+perspectives:
+  - audience
+  - theatre_critic
+  - director
+  - scholar
+
+quality_methods:
+  - production_frequency
+  - critical_reputation
+  - educational_importance
+  - cultural_endurance
+
+scales:
+  - scene
+  - act
+  - play
+  - playwright_corpus
+
+aggregation_method: cultural_weighted
+

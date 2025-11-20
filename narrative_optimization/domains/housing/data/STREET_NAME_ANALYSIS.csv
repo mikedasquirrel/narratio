@@ -1,0 +1,6 @@
+street_name,harshness_score,softness_score,memorability_score,syllable_count,character_length,has_nature_words,has_prestige_words,has_pleasant_words,has_negative_words,has_danger_words,has_industrial_words,has_infrastructure_words,emotional_valence,semantic_valence_score,natural_beauty_score,avg_price,property_count,city,state
+Oak Ave,14.285714285714285,57.14285714285714,93,4,7,True,False,False,False,False,False,False,0.3333,66.66499999999999,33.33,593033.9919374906,20093,New York,NY
+Hill Blvd,22.22222222222222,44.44444444444444,91,1,9,True,False,False,False,False,False,False,0.3333,66.66499999999999,33.33,595306.1376872916,20089,New York,NY
+Main St,14.285714285714285,57.14285714285714,93,2,7,False,False,False,False,False,False,False,0.0,50.0,0.0,598500.4509469887,19958,New York,NY
+Lake Rd,28.57142857142857,57.14285714285714,93,2,7,True,False,False,False,False,False,False,0.3333,66.66499999999999,33.33,592735.9020670279,19932,New York,NY
+Park Dr,42.857142857142854,42.857142857142854,93,1,7,True,False,False,False,False,False,False,0.3333,66.66499999999999,33.33,593243.7775993577,19928,New York,NY

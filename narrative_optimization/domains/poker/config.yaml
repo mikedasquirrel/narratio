@@ -1,0 +1,64 @@
+# Professional Poker Domain Configuration
+# π = 0.81 (Very High Narrativity)
+# Individual competition with skill+chance dynamics
+
+domain:
+  name: "Professional Poker"
+  type: "individual_competition"
+  subtype: "skill_plus_chance"
+  
+narrativity:
+  # Target π ≥ 0.80 (Very High)
+  components:
+    structural: 0.68  # Fixed rules but high opponent unpredictability
+    temporal: 0.88    # Tournament arcs + hand progressions
+    agency: 1.00      # Perfect individual control
+    interpretive: 0.88 # Heavy psychological interpretation
+    format: 0.73      # Multiple tournament formats and stakes
+  
+  calculated_pi: 0.81  # 0.30×0.68 + 0.20×0.88 + 0.25×1.00 + 0.15×0.88 + 0.10×0.73
+  
+expected_forces:
+  theta: 0.65   # Awareness (moderate-high, optimal range)
+  lambda: 0.70  # Constraints (high skill barrier)
+  ta_marbuta: 0.72  # Nominatives (very rich)
+  
+expected_performance:
+  r_squared: 0.75  # 65-80% range
+  correlation: 0.87
+  
+data:
+  target_samples: 12000
+  sources:
+    - "WSOP (World Series of Poker)"
+    - "WPT (World Poker Tour)"
+    - "EPT (European Poker Tour)"
+    - "High Roller Events ($25K+)"
+  
+  temporal_range:
+    start: "2020-01-01"
+    end: "2024-12-31"
+    
+player_profiles:
+  target_count: 250
+  required_fields:
+    - name
+    - nickname
+    - career_earnings
+    - major_titles
+    - playing_style
+    - psychological_profile
+    - mental_game_reputation
+    
+narrative_requirements:
+  length_words: [200, 300]
+  proper_nouns_target: [30, 40]
+  elements:
+    - player_introduction
+    - tournament_context
+    - psychological_state
+    - style_matchups
+    - mental_game_elements
+    - historical_context
+    - rivalry_narratives
+

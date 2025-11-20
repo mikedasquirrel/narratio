@@ -1,0 +1,72 @@
+{
+  "Kentucky": {
+    "all_time_wins": 2376,
+    "national_championships": 8,
+    "final_fours": 17,
+    "conference_titles": 51,
+    "first_season": 1903
+  },
+  "Kansas": {
+    "all_time_wins": 2357,
+    "national_championships": 3,
+    "final_fours": 16,
+    "conference_titles": 62,
+    "first_season": 1899
+  },
+  "North Carolina": {
+    "all_time_wins": 2328,
+    "national_championships": 6,
+    "final_fours": 21,
+    "conference_titles": 32,
+    "first_season": 1911
+  },
+  "Duke": {
+    "all_time_wins": 2270,
+    "national_championships": 5,
+    "final_fours": 17,
+    "conference_titles": 22,
+    "first_season": 1906
+  },
+  "UCLA": {
+    "all_time_wins": 1929,
+    "national_championships": 11,
+    "final_fours": 19,
+    "conference_titles": 31,
+    "first_season": 1920
+  },
+  "Syracuse": {
+    "all_time_wins": 2029,
+    "national_championships": 1,
+    "final_fours": 6,
+    "conference_titles": 10,
+    "first_season": 1901
+  },
+  "Louisville": {
+    "all_time_wins": 1828,
+    "national_championships": 3,
+    "final_fours": 10,
+    "conference_titles": 13,
+    "first_season": 1912
+  },
+  "Indiana": {
+    "all_time_wins": 1926,
+    "national_championships": 5,
+    "final_fours": 8,
+    "conference_titles": 23,
+    "first_season": 1901
+  },
+  "Villanova": {
+    "all_time_wins": 1811,
+    "national_championships": 3,
+    "final_fours": 6,
+    "conference_titles": 12,
+    "first_season": 1921
+  },
+  "Connecticut": {
+    "all_time_wins": 1850,
+    "national_championships": 4,
+    "final_fours": 6,
+    "conference_titles": 10,
+    "first_season": 1901
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "overall_optimization": {
+    "n_train": 3369,
+    "n_test": 1444,
+    "features_selected": 100,
+    "train_abs_r": 0.11427149403121846,
+    "train_r2": 0.01304667708032925,
+    "test_abs_r": 0.002623101311019732,
+    "test_r2": -0.013524670118485904,
+    "pattern": "inverse"
+  },
+  "context_specific": {
+    "rivalry_games": {
+      "n_matches": 176,
+      "test_abs_r": 0.03169207874761002,
+      "test_r2": -0.4867313612466604,
+      "improvement": -0.4732066911281745
+    },
+    "playoff_race": {
+      "n_matches": 1131,
+      "test_abs_r": 0.076784222778265,
+      "test_r2": -0.10746407773198241,
+      "improvement": -0.0939394076134965
+    },
+    "historic_stadiums": {
+      "n_matches": 645,
+      "test_abs_r": 0.011149395393896986,
+      "test_r2": -0.15587069378862295,
+      "improvement": -0.14234602367013705
+    }
+  },
+  "efficiency_recalculation": {
+    "original_abs_r": 0.0004,
+    "optimized_abs_r": 0.002623101311019732,
+    "original_efficiency": 0.0001,
+    "optimized_efficiency": 0.0009180854588569062,
+    "improvement": 0.0008180854588569061,
+    "validation_passed": false,
+    "threshold": 0.5
+  },
+  "selected_features": [
+    "favored road",
+    "nationals",
+    "paced",
+    "player",
+    "playoff",
+    "playoff implications",
+    "twins",
+    "tyler",
+    "victory",
+    "nominative_7",
+    "nominative_20",
+    "nominative_23",
+    "nominative_38",
+    "nominative_41",
+    "narrative_potential_16",
+    "narrative_potential_20",
+    "narrative_potential_21",
+    "narrative_potential_24",
+    "narrative_potential_28",
+    "narrative_potential_32",
+    "linguistic_13",
+    "linguistic_21",
+    "linguistic_35",
+    "optics_2",
+    "framing_7",
+    "phonetic_4",
+    "phonetic_9",
+    "phonetic_13",
+    "phonetic_22",
+    "phonetic_31",
+    "phonetic_38",
+    "phonetic_40",
+    "phonetic_52",
+    "phonetic_82",
+    "phonetic_84",
+    "phonetic_90",
+    "temporal_3",
+    "temporal_20",
+    "social_status_12",
+    "anticipatory_2",
+    "anticipatory_5",
+    "anticipatory_10",
+    "anticipatory_15",
+    "anticipatory_21",
+    "quantitative_8",
+    "crosslingual_3",
+    "crosslingual_6",
+    "crosslingual_16",
+    "crosslingual_18",
+    "discoverability_2"
+  ],
+  "feature_selection": {
+    "total_features": 1036,
+    "selected_features": 100,
+    "selection_ratio": 0.09652509652509653
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "approach": "data_driven",
+  "overall_r": 0.168045404269676,
+  "contexts_explored": 3,
+  "top_contexts": [
+    {
+      "rank": 1,
+      "context": "Genre: Unknown",
+      "r_measured": 0.168045404269676,
+      "n_samples": 2000,
+      "p_value": 3.897413273580952e-14,
+      "dimension": "genre"
+    },
+    {
+      "rank": 2,
+      "context": "Years: 1991-2000",
+      "r_measured": 0.168045404269676,
+      "n_samples": 2000,
+      "p_value": 3.897413273580952e-14,
+      "dimension": "temporal"
+    },
+    {
+      "rank": 3,
+      "context": "Budget: Low",
+      "r_measured": 0.168045404269676,
+      "n_samples": 2000,
+      "p_value": 3.897413273580952e-14,
+      "dimension": "budget"
+    }
+  ],
+  "passing_contexts": [],
+  "insight": "Data shows where narrative is strongest, theory explains why"
+}

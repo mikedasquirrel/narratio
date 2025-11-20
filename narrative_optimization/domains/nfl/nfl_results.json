@@ -1,0 +1,307 @@
+{
+  "domain": "NFL",
+  "analysis_date": "2025-11-10",
+  "dataset": {
+    "games": 3010,
+    "seasons": "2014-2024",
+    "transformers_applied": 33,
+    "features_extracted": 1044
+  },
+  "framework_analysis": {
+    "domain": "NFL",
+    "hypothesis": "Narrative laws should apply to NFL games",
+    "test": "\u0414/\u043f > 0.5",
+    "data": {
+      "games": 3010,
+      "seasons": "2014-2024",
+      "home_win_rate": 0.5514950166112956
+    },
+    "narrativity": {
+      "\u043f": 0.57,
+      "components": {
+        "\u043f_structural": 0.45,
+        "\u043f_temporal": 0.6,
+        "\u043f_agency": 1.0,
+        "\u043f_interpretation": 0.5,
+        "\u043f_format": 0.3
+      },
+      "classification": "MEDIUM",
+      "domain_type": "PERFORMANCE"
+    },
+    "genome": {
+      "transformers_applied": 35,
+      "total_features": 1044,
+      "feature_names": [
+        "10",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "aaron",
+        "aaron rodgers",
+        "allen",
+        "andrew",
+        "andrew dalton",
+        "ari",
+        "bal",
+        "balance",
+        "brady",
+        "brandon",
+        "bright primetime",
+        "brings",
+        "brings showdown",
+        "build",
+        "build momentum",
+        "casey",
+        "cle",
+        "crucial",
+        "crucial division",
+        "dal",
+        "dalton",
+        "daniel",
+        "davis",
+        "derek",
+        "determine",
+        "determine playoff",
+        "division",
+        "division game",
+        "division supremacy",
+        "drew",
+        "face",
+        "game determine",
+        "gb",
+        "hangs",
+        "hangs balance",
+        "host",
+        "hou",
+        "jackson",
+        "james",
+        "john",
+        "johnson",
+        "jones",
+        "joseph",
+        "joshua",
+        "kc",
+        "look build",
+        "matchup",
+        "matt",
+        "matthew",
+        "mccoy",
+        "michael",
+        "min",
+        "momentum",
+        "nation watches",
+        "ne",
+        "phi",
+        "pit",
+        "playoff",
+        "playoff seeding",
+        "plays division",
+        "plays teams",
+        "primetime",
+        "rivalry",
+        "robert",
+        "rodgers",
+        "ryan",
+        "season",
+        "seeding",
+        "seeding led",
+        "shines",
+        "showdown",
+        "smith",
+        "spotlight",
+        "spotlight shines",
+        "supremacy",
+        "supremacy hangs",
+        "taylor",
+        "teams",
+        "teams look",
+        "tom",
+        "tom brady",
+        "travel",
+        "travel face",
+        "watches",
+        "watches primetime",
+        "william",
+        "williams",
+        "wilson"
+      ]
+    },
+    "story_quality": {
+      "\u044e_mean": 0.44030036722869514,
+      "\u044e_std": 0.08233562641251696,
+      "\u044e_min": 0.0,
+      "\u044e_max": 1.0
+    },
+    "correlation": {
+      "r": -0.00969706138713938,
+      "abs_r": 0.00969706138713938,
+      "pattern": "inverse",
+      "interpretation": "Better narratives favor underdogs"
+    },
+    "bridge": {
+      "\u03ba": 0.3,
+      "\u0414": 0.0016581974972008338,
+      "efficiency": 0.0029091184161418138,
+      "threshold": 0.5
+    },
+    "validation": {
+      "passed": false,
+      "result": "FAIL",
+      "expected": "FAIL (performance domain)",
+      "explanation": "Performance and physics dominate outcomes, narrative shows weak but measurable correlation"
+    }
+  },
+  "context_discoveries": {
+    "total_contexts_measured": 200,
+    "baseline_abs_r": 0.00969706138713938,
+    "strongest_context": {
+      "context_dimension": "by_home_coach",
+      "context_value": "TB Head Coach 2022",
+      "abs_r": 0.8042341324176298,
+      "r": 0.8042341324176298,
+      "n": 10,
+      "mean_\u044e": 0.40178222345992937,
+      "win_rate": 0.5
+    },
+    "top_10_contexts": [
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "TB Head Coach 2022",
+        "abs_r": 0.8042341324176298,
+        "r": 0.8042341324176298,
+        "n": 10,
+        "mean_\u044e": 0.40178222345992937,
+        "win_rate": 0.5
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "DET Head Coach 2023",
+        "abs_r": 0.6526410408274881,
+        "r": -0.6526410408274881,
+        "n": 10,
+        "mean_\u044e": 0.5203702983711109,
+        "win_rate": 0.8
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "LA Head Coach 2021",
+        "abs_r": 0.6100186731174176,
+        "r": -0.6100186731174176,
+        "n": 10,
+        "mean_\u044e": 0.41821292119974485,
+        "win_rate": 0.7
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "NE Head Coach 2017",
+        "abs_r": 0.6035226989406642,
+        "r": -0.6035226989406642,
+        "n": 11,
+        "mean_\u044e": 0.40222083131490793,
+        "win_rate": 0.7272727272727273
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "LA Head Coach 2024",
+        "abs_r": 0.5910239004226115,
+        "r": -0.5910239004226115,
+        "n": 10,
+        "mean_\u044e": 0.41894689811171004,
+        "win_rate": 0.6
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "KC Head Coach 2020",
+        "abs_r": 0.5616120761546466,
+        "r": -0.5616120761546466,
+        "n": 10,
+        "mean_\u044e": 0.4143572028312164,
+        "win_rate": 0.8
+      },
+      {
+        "context_dimension": "by_home_team",
+        "context_value": "SD",
+        "abs_r": 0.5570136436641695,
+        "r": 0.5570136436641695,
+        "n": 24,
+        "mean_\u044e": 0.43147342440388353,
+        "win_rate": 0.4583333333333333
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "MIN Head Coach 2022",
+        "abs_r": 0.5476471883803905,
+        "r": 0.5476471883803905,
+        "n": 10,
+        "mean_\u044e": 0.3923862867090927,
+        "win_rate": 0.8
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "HOU Head Coach 2023",
+        "abs_r": 0.5228223159336348,
+        "r": -0.5228223159336348,
+        "n": 10,
+        "mean_\u044e": 0.43097827684598444,
+        "win_rate": 0.7
+      },
+      {
+        "context_dimension": "by_home_coach",
+        "context_value": "BUF Head Coach 2020",
+        "abs_r": 0.5110806437379226,
+        "r": 0.5110806437379226,
+        "n": 10,
+        "mean_\u044e": 0.45059850843360094,
+        "win_rate": 0.9
+      }
+    ]
+  },
+  "betting_analysis": {
+    "narrative_only": {
+      "accuracy": 0.5459579180509413,
+      "description": "Predict from narrative quality alone"
+    },
+    "odds_only": {
+      "accuracy": 0.9490586932447398,
+      "spread_accuracy": 0.9523809523809523,
+      "description": "Vegas baseline (betting odds)"
+    },
+    "combined": {
+      "accuracy": 0.9490586932447398,
+      "improvement_over_odds": 0.0,
+      "improvement_over_narrative": 0.4031007751937985,
+      "description": "Narrative + Odds combined model"
+    },
+    "spread_coverage": {
+      "accuracy": 0.5193798449612403,
+      "edge": 0.019379844961240345,
+      "description": "Predict if home covers spread"
+    },
+    "pattern": {
+      "correlation": -0.00969706138713938,
+      "pattern_type": "inverse",
+      "interpretation": "Better narrative favors underdog"
+    },
+    "baseline": {
+      "home_win_rate": 0.5514950166112956,
+      "description": "Always predict home win"
+    }
+  },
+  "key_findings": {
+    "validation": "FAILED (expected for performance domain)",
+    "narrativity": 0.57,
+    "correlation": -0.0097,
+    "pattern": "INVERSE (like NBA)",
+    "efficiency": 0.0029,
+    "strongest_context_improvement": "8194% over baseline",
+    "betting_edge": "None - narrative does not beat odds"
+  }
+}

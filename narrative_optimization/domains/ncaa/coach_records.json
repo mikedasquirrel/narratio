@@ -1,0 +1,60 @@
+{
+  "Mike Krzyzewski": {
+    "school": "Duke",
+    "years_at_school": 42,
+    "career_wins": 1202,
+    "career_losses": 368,
+    "national_championships": 5,
+    "final_fours": 13,
+    "active": false,
+    "retired_year": 2022
+  },
+  "Jim Boeheim": {
+    "school": "Syracuse",
+    "years_at_school": 46,
+    "career_wins": 1015,
+    "career_losses": 441,
+    "national_championships": 1,
+    "final_fours": 5,
+    "active": false,
+    "retired_year": 2023
+  },
+  "Roy Williams": {
+    "school": "North Carolina",
+    "years_at_school": 18,
+    "career_wins": 903,
+    "career_losses": 264,
+    "national_championships": 3,
+    "final_fours": 9,
+    "active": false,
+    "retired_year": 2021
+  },
+  "Bill Self": {
+    "school": "Kansas",
+    "years_at_school": 21,
+    "career_wins": 800,
+    "career_losses": 242,
+    "national_championships": 2,
+    "final_fours": 5,
+    "active": true
+  },
+  "John Calipari": {
+    "school": "Kentucky",
+    "years_at_school": 15,
+    "career_wins": 855,
+    "career_losses": 263,
+    "national_championships": 1,
+    "final_fours": 8,
+    "active": true
+  },
+  "Jay Wright": {
+    "school": "Villanova",
+    "years_at_school": 21,
+    "career_wins": 642,
+    "career_losses": 282,
+    "national_championships": 2,
+    "final_fours": 4,
+    "active": false,
+    "retired_year": 2022
+  }
+}

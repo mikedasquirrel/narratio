@@ -1,0 +1,61 @@
+{
+  "analysis_date": "2025-11-07T16:02:15.007790",
+  "dataset_summary": {
+    "total_surnames": 367,
+    "toponymic_surnames": 103,
+    "by_semantic_category": {
+      "toponymic": 103,
+      "occupational": 32,
+      "descriptive": 21,
+      "patronymic": 41,
+      "religious": 10
+    },
+    "total_immigration_records": 3105,
+    "total_settlement_patterns": 5838
+  },
+  "descriptive_statistics": {
+    "by_semantic_category": {
+      "toponymic": {
+        "count": 103,
+        "percentage": 28.065395095367844,
+        "mean_bearers": 18930.796116504855
+      },
+      "unknown": {
+        "count": 160,
+        "percentage": 43.596730245231605,
+        "mean_bearers": 70487.68125
+      },
+      "occupational": {
+        "count": 32,
+        "percentage": 8.71934604904632,
+        "mean_bearers": 237841.4375
+      },
+      "patronymic": {
+        "count": 41,
+        "percentage": 11.1716621253406,
+        "mean_bearers": 399530.6341463415
+      },
+      "descriptive": {
+        "count": 21,
+        "percentage": 5.722070844686648,
+        "mean_bearers": 202580.38095238095
+      },
+      "religious": {
+        "count": 10,
+        "percentage": 2.7247956403269753,
+        "mean_bearers": 58200.0
+      }
+    },
+    "overall": {
+      "total_surnames": 367,
+      "categories": {
+        "unknown": 160,
+        "toponymic": 103,
+        "patronymic": 41,
+        "occupational": 32,
+        "descriptive": 21,
+        "religious": 10
+      }
+    }
+  }
+}
