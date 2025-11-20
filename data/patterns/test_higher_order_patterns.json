@@ -1,0 +1,143 @@
+{
+  "timestamp": "2025-11-16T17:50:58.472116",
+  "n_patterns": 7,
+  "parameters": {
+    "min_support": 0.05,
+    "min_confidence": 0.6,
+    "min_lift": 1.1,
+    "p_value_threshold": 0.05
+  },
+  "patterns": [
+    {
+      "pattern": "is_underdog AND bad_record AND division_game",
+      "features": [
+        "is_underdog",
+        "bad_record",
+        "division_game"
+      ],
+      "n_games": 53,
+      "wins": 38,
+      "losses": 15,
+      "win_rate": 0.7169811320754716,
+      "lift": 1.2556587251759574,
+      "edge": 0.19298113207547163,
+      "roi_pct": 19.298113207547164,
+      "p_value": 0.03902255828049877,
+      "support": 0.053,
+      "profitable": true,
+      "order": 3
+    },
+    {
+      "pattern": "huge_underdog AND division_game",
+      "features": [
+        "huge_underdog",
+        "division_game"
+      ],
+      "n_games": 79,
+      "wins": 54,
+      "losses": 25,
+      "win_rate": 0.6835443037974683,
+      "lift": 1.1971003569132546,
+      "edge": 0.1595443037974683,
+      "roi_pct": 15.954430379746832,
+      "p_value": 0.04685864530295871,
+      "support": 0.079,
+      "profitable": true,
+      "order": 2
+    },
+    {
+      "pattern": "is_home AND huge_underdog AND division_game",
+      "features": [
+        "is_home",
+        "huge_underdog",
+        "division_game"
+      ],
+      "n_games": 79,
+      "wins": 54,
+      "losses": 25,
+      "win_rate": 0.6835443037974683,
+      "lift": 1.1971003569132546,
+      "edge": 0.1595443037974683,
+      "roi_pct": 15.954430379746832,
+      "p_value": 0.04685864530295871,
+      "support": 0.079,
+      "profitable": true,
+      "order": 3
+    },
+    {
+      "pattern": "is_underdog AND huge_underdog AND division_game",
+      "features": [
+        "is_underdog",
+        "huge_underdog",
+        "division_game"
+      ],
+      "n_games": 79,
+      "wins": 54,
+      "losses": 25,
+      "win_rate": 0.6835443037974683,
+      "lift": 1.1971003569132546,
+      "edge": 0.1595443037974683,
+      "roi_pct": 15.954430379746832,
+      "p_value": 0.04685864530295871,
+      "support": 0.079,
+      "profitable": true,
+      "order": 3
+    },
+    {
+      "pattern": "big_underdog AND huge_underdog AND division_game",
+      "features": [
+        "big_underdog",
+        "huge_underdog",
+        "division_game"
+      ],
+      "n_games": 79,
+      "wins": 54,
+      "losses": 25,
+      "win_rate": 0.6835443037974683,
+      "lift": 1.1971003569132546,
+      "edge": 0.1595443037974683,
+      "roi_pct": 15.954430379746832,
+      "p_value": 0.04685864530295871,
+      "support": 0.079,
+      "profitable": true,
+      "order": 3
+    },
+    {
+      "pattern": "is_underdog AND division_game",
+      "features": [
+        "is_underdog",
+        "division_game"
+      ],
+      "n_games": 158,
+      "wins": 102,
+      "losses": 56,
+      "win_rate": 0.6455696202531646,
+      "lift": 1.130594781529185,
+      "edge": 0.12156962025316453,
+      "roi_pct": 12.156962025316453,
+      "p_value": 0.04811981276740293,
+      "support": 0.158,
+      "profitable": true,
+      "order": 2
+    },
+    {
+      "pattern": "is_home AND is_underdog AND division_game",
+      "features": [
+        "is_home",
+        "is_underdog",
+        "division_game"
+      ],
+      "n_games": 158,
+      "wins": 102,
+      "losses": 56,
+      "win_rate": 0.6455696202531646,
+      "lift": 1.130594781529185,
+      "edge": 0.12156962025316453,
+      "roi_pct": 12.156962025316453,
+      "p_value": 0.04811981276740293,
+      "support": 0.158,
+      "profitable": true,
+      "order": 3
+    }
+  ]
+}

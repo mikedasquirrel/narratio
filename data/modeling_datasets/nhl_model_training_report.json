@@ -1,0 +1,18 @@
+{
+  "train_accuracy": 0.5416267942583732,
+  "train_auc": 0.5491658955717118,
+  "train_log_loss": 0.6896495102225999,
+  "test_accuracy": 0.5021940516821063,
+  "test_auc": 0.4991270550478991,
+  "test_log_loss": 0.6969158957123869,
+  "betting_strategy": {
+    "bets": 505,
+    "wins": 195,
+    "roi": 0.7209348168072477,
+    "hit_rate": 0.38613861386138615,
+    "avg_edge": 0.10230548010517063,
+    "threshold": 0.03,
+    "total_profit_units": 364.0720824876601
+  },
+  "test_samples": 2051
+}

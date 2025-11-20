@@ -1,0 +1,30 @@
+{
+  "date": "2025-11-16T18:41:58.869232",
+  "predictions": [
+    {
+      "game": {
+        "game_id": "mock_001",
+        "commence_time": "2025-11-17T00:00:00Z",
+        "home_team": "TOR",
+        "away_team": "BOS",
+        "home_team_full": "Toronto Maple Leafs",
+        "away_team_full": "Boston Bruins",
+        "odds": {
+          "moneyline_home": -150,
+          "moneyline_away": 130,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 165,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -185,
+          "total": 6.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "bookmaker": "Mock"
+      },
+      "model_scores": {},
+      "pattern_matches": [],
+      "recommendation": null
+    }
+  ]
+}

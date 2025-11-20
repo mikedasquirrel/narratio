@@ -1,0 +1,559 @@
+{
+  "date": "2025-11-18",
+  "generated_at": "2025-11-18T17:09:57.297611",
+  "predictions": {
+    "nhl": [
+      {
+        "sport": "NHL",
+        "game_id": "401802658",
+        "away_team": "St. Louis Blues",
+        "home_team": "Toronto Maple Leafs",
+        "date": "2025-11-19",
+        "time": "2025-11-19T00:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.46504317456421296,
+        "odds": {
+          "moneyline_home": -115.0,
+          "moneyline_away": -105.0,
+          "total": 6.5,
+          "over_odds": 115.0,
+          "under_odds": -135.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 210.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -260.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.6465721903647067,
+          "confidence": 0.6465721903647067,
+          "edge": 0.11168846943447419
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.4372896755996749,
+          "confidence": 0.5627103244003251,
+          "edge": 0.05051520244910557
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9999268954944455,
+          "edge": 0.46504317456421296,
+          "home_win_prob": 0.9999268954944455
+        },
+        "implied_prob_home": 0.5348837209302325,
+        "implied_prob_away": 0.5121951219512195,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802659",
+        "away_team": "Seattle Kraken",
+        "home_team": "Detroit Red Wings",
+        "date": "2025-11-19",
+        "time": "2025-11-19T00:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.37717369132098344,
+        "odds": {
+          "moneyline_home": -165.0,
+          "moneyline_away": 140.0,
+          "total": 5.5,
+          "over_odds": -130.0,
+          "under_odds": 110.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 150.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -180.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.6846032365884661,
+          "confidence": 0.6846032365884661,
+          "edge": 0.061961727154503876
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.4764945090104525,
+          "confidence": 0.5235054909895476,
+          "edge": 0.10683882432288089
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9998152007549457,
+          "edge": 0.37717369132098344,
+          "home_win_prob": 0.9998152007549457
+        },
+        "implied_prob_home": 0.6226415094339622,
+        "implied_prob_away": 0.4166666666666667,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802660",
+        "away_team": "New Jersey Devils",
+        "home_team": "Tampa Bay Lightning",
+        "date": "2025-11-19",
+        "time": "2025-11-19T00:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.3701668347499387,
+        "odds": {
+          "moneyline_home": -170.0,
+          "moneyline_away": 145.0,
+          "total": 5.5,
+          "over_odds": -130.0,
+          "under_odds": 110.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 145.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -175.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.6413730264507681,
+          "confidence": 0.6413730264507681,
+          "edge": 0.011743396821138452
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.39932261497273613,
+          "confidence": 0.6006773850272639,
+          "edge": 0.1925141197211414
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9997964643795684,
+          "edge": 0.3701668347499387,
+          "home_win_prob": 0.9997964643795684
+        },
+        "implied_prob_home": 0.6296296296296297,
+        "implied_prob_away": 0.40816326530612246,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802661",
+        "away_team": "New York Islanders",
+        "home_team": "Dallas Stars",
+        "date": "2025-11-19",
+        "time": "2025-11-19T01:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.3634297358825248,
+        "odds": {
+          "moneyline_home": -175.0,
+          "moneyline_away": 150.0,
+          "total": 6.5,
+          "over_odds": 105.0,
+          "under_odds": -125.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 135.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -160.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.63728046212857,
+          "confidence": 0.63728046212857,
+          "edge": 0.000916825764933682
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.42204801413954907,
+          "confidence": 0.5779519858604509,
+          "edge": 0.1779519858604509
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9997933722461612,
+          "edge": 0.3634297358825248,
+          "home_win_prob": 0.9997933722461612
+        },
+        "implied_prob_home": 0.6363636363636364,
+        "implied_prob_away": 0.4,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802662",
+        "away_team": "Columbus Blue Jackets",
+        "home_team": "Winnipeg Jets",
+        "date": "2025-11-19",
+        "time": "2025-11-19T01:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.607843137254902,
+        "odds": {
+          "moneyline_home": -185.0,
+          "moneyline_away": 155.0,
+          "total": 6.5,
+          "over_odds": -110.0,
+          "under_odds": -110.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 135.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -160.0
+        },
+        "meta_ensemble": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.33172765570982715,
+          "confidence": 0.6682723442901728,
+          "edge": 0.27611548154507476
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.4526829671294815,
+          "confidence": 0.5473170328705186,
+          "edge": 0.15516017012542055
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "AWAY",
+          "probability": 1.0,
+          "edge": 0.607843137254902,
+          "home_win_prob": 0.0
+        },
+        "implied_prob_home": 0.6491228070175439,
+        "implied_prob_away": 0.39215686274509803,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802663",
+        "away_team": "Calgary Flames",
+        "home_team": "Chicago Blackhawks",
+        "date": "2025-11-19",
+        "time": "2025-11-19T01:30Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.49982846235987666,
+        "odds": {
+          "moneyline_home": 100.0,
+          "moneyline_away": -120.0,
+          "total": 5.5,
+          "over_odds": -125.0,
+          "under_odds": 105.0,
+          "puck_line_home": 1.5,
+          "puck_line_home_odds": -260.0,
+          "puck_line_away": -1.5,
+          "puck_line_away_odds": 210.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.6464704684729619,
+          "confidence": 0.6464704684729619,
+          "edge": 0.14647046847296186
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.467082943059009,
+          "confidence": 0.532917056940991,
+          "edge": -0.012537488513554407
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9998284623598767,
+          "edge": 0.49982846235987666,
+          "home_win_prob": 0.9998284623598767
+        },
+        "implied_prob_home": 0.5,
+        "implied_prob_away": 0.5454545454545454,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802664",
+        "away_team": "New York Rangers",
+        "home_team": "Vegas Golden Knights",
+        "date": "2025-11-19",
+        "time": "2025-11-19T03:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.4254680220804937,
+        "odds": {
+          "moneyline_home": -135.0,
+          "moneyline_away": 115.0,
+          "total": 5.5,
+          "over_odds": -130.0,
+          "under_odds": 110.0,
+          "puck_line_home": -1.5,
+          "puck_line_home_odds": 175.0,
+          "puck_line_away": 1.5,
+          "puck_line_away_odds": -225.0
+        },
+        "meta_ensemble": {
+          "prediction": "HOME",
+          "home_win_prob": 0.6160934436372386,
+          "confidence": 0.6160934436372386,
+          "edge": 0.04162535853085558
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.3683442237248389,
+          "confidence": 0.6316557762751611,
+          "edge": 0.16653949720539368
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "HOME",
+          "probability": 0.9999361071868768,
+          "edge": 0.4254680220804937,
+          "home_win_prob": 0.9999361071868768
+        },
+        "implied_prob_home": 0.574468085106383,
+        "implied_prob_away": 0.46511627906976744,
+        "patterns": []
+      },
+      {
+        "sport": "NHL",
+        "game_id": "401802665",
+        "away_team": "Utah Mammoth",
+        "home_team": "San Jose Sharks",
+        "date": "2025-11-19",
+        "time": "2025-11-19T03:00Z",
+        "model_used": "narrative_logistic",
+        "edge": 0.42553191489361697,
+        "odds": {
+          "moneyline_home": 115.0,
+          "moneyline_away": -135.0,
+          "total": 6.5,
+          "over_odds": 105.0,
+          "under_odds": -125.0,
+          "puck_line_home": 1.5,
+          "puck_line_home_odds": -215.0,
+          "puck_line_away": -1.5,
+          "puck_line_away_odds": 170.0
+        },
+        "meta_ensemble": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.291947140608434,
+          "confidence": 0.708052859391566,
+          "edge": 0.133584774285183
+        },
+        "gbm": {
+          "prediction": "AWAY",
+          "home_win_prob": 0.3433414218253022,
+          "confidence": 0.6566585781746979,
+          "edge": 0.08219049306831483
+        },
+        "best_model": {
+          "model": "narrative_logistic",
+          "pick": "AWAY",
+          "probability": 1.0,
+          "edge": 0.42553191489361697,
+          "home_win_prob": 0.0
+        },
+        "implied_prob_home": 0.46511627906976744,
+        "implied_prob_away": 0.574468085106383,
+        "patterns": []
+      }
+    ],
+    "nfl": [],
+    "nba": [
+      {
+        "sport": "NBA",
+        "pattern": "Elite Team + Close Game",
+        "matchup": "Detroit Pistons @ Atlanta Hawks",
+        "pick_side": "AWAY",
+        "pick_team": "Detroit Pistons",
+        "elite_win_rate": 0.8571,
+        "elite_record": "12-2",
+        "opponent": "Atlanta Hawks",
+        "opponent_record": "9-5",
+        "spread": -1.5,
+        "tipoff": "2025-11-19 00:30 UTC",
+        "confidence": 0.545,
+        "expected_roi": 0.076,
+        "units": "1"
+      }
+    ]
+  },
+  "betting_opportunities": {
+    "nhl": {
+      "ultra_confident": [
+        {
+          "game": "Seattle Kraken @ Detroit Red Wings",
+          "time": "2025-11-19T00:00Z",
+          "pick": "HOME",
+          "confidence": 0.6846032365884661,
+          "home_prob": 0.6846032365884661,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "69.4%",
+          "validated_roi": "32.5%",
+          "units": "3-5"
+        },
+        {
+          "game": "Columbus Blue Jackets @ Winnipeg Jets",
+          "time": "2025-11-19T01:00Z",
+          "pick": "AWAY",
+          "confidence": 0.6682723442901728,
+          "home_prob": 0.33172765570982715,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "69.4%",
+          "validated_roi": "32.5%",
+          "units": "3-5"
+        },
+        {
+          "game": "Utah Mammoth @ San Jose Sharks",
+          "time": "2025-11-19T03:00Z",
+          "pick": "AWAY",
+          "confidence": 0.708052859391566,
+          "home_prob": 0.291947140608434,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "69.4%",
+          "validated_roi": "32.5%",
+          "units": "3-5"
+        }
+      ],
+      "high_confident": [
+        {
+          "game": "New Jersey Devils @ Tampa Bay Lightning",
+          "time": "2025-11-19T00:00Z",
+          "pick": "AWAY",
+          "confidence": 0.6006773850272639,
+          "home_prob": 0.39932261497273613,
+          "model": "GBM",
+          "validated_win_rate": "65.2%",
+          "validated_roi": "24.4%",
+          "units": "2-3"
+        },
+        {
+          "game": "New York Rangers @ Vegas Golden Knights",
+          "time": "2025-11-19T03:00Z",
+          "pick": "AWAY",
+          "confidence": 0.6316557762751611,
+          "home_prob": 0.3683442237248389,
+          "model": "GBM",
+          "validated_win_rate": "65.2%",
+          "validated_roi": "24.4%",
+          "units": "2-3"
+        },
+        {
+          "game": "Utah Mammoth @ San Jose Sharks",
+          "time": "2025-11-19T03:00Z",
+          "pick": "AWAY",
+          "confidence": 0.6566585781746979,
+          "home_prob": 0.3433414218253022,
+          "model": "GBM",
+          "validated_win_rate": "65.2%",
+          "validated_roi": "24.4%",
+          "units": "2-3"
+        }
+      ],
+      "moderate": [
+        {
+          "game": "St. Louis Blues @ Toronto Maple Leafs",
+          "time": "2025-11-19T00:00Z",
+          "pick": "HOME",
+          "confidence": 0.6465721903647067,
+          "home_prob": 0.6465721903647067,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "Seattle Kraken @ Detroit Red Wings",
+          "time": "2025-11-19T00:00Z",
+          "pick": "HOME",
+          "confidence": 0.6846032365884661,
+          "home_prob": 0.6846032365884661,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "New Jersey Devils @ Tampa Bay Lightning",
+          "time": "2025-11-19T00:00Z",
+          "pick": "HOME",
+          "confidence": 0.6413730264507681,
+          "home_prob": 0.6413730264507681,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "New York Islanders @ Dallas Stars",
+          "time": "2025-11-19T01:00Z",
+          "pick": "HOME",
+          "confidence": 0.63728046212857,
+          "home_prob": 0.63728046212857,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "Columbus Blue Jackets @ Winnipeg Jets",
+          "time": "2025-11-19T01:00Z",
+          "pick": "AWAY",
+          "confidence": 0.6682723442901728,
+          "home_prob": 0.33172765570982715,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "Calgary Flames @ Chicago Blackhawks",
+          "time": "2025-11-19T01:30Z",
+          "pick": "HOME",
+          "confidence": 0.6464704684729619,
+          "home_prob": 0.6464704684729619,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "New York Rangers @ Vegas Golden Knights",
+          "time": "2025-11-19T03:00Z",
+          "pick": "HOME",
+          "confidence": 0.6160934436372386,
+          "home_prob": 0.6160934436372386,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        },
+        {
+          "game": "Utah Mammoth @ San Jose Sharks",
+          "time": "2025-11-19T03:00Z",
+          "pick": "AWAY",
+          "confidence": 0.708052859391566,
+          "home_prob": 0.291947140608434,
+          "model": "Meta-Ensemble",
+          "validated_win_rate": "63.6%",
+          "validated_roi": "21.5%",
+          "units": "1-2"
+        }
+      ]
+    },
+    "nfl": {
+      "contextual": []
+    },
+    "nba": {
+      "contextual": [
+        {
+          "sport": "NBA",
+          "pattern": "Elite Team + Close Game",
+          "matchup": "Detroit Pistons @ Atlanta Hawks",
+          "pick_side": "AWAY",
+          "pick_team": "Detroit Pistons",
+          "elite_win_rate": 0.8571,
+          "elite_record": "12-2",
+          "opponent": "Atlanta Hawks",
+          "opponent_record": "9-5",
+          "spread": -1.5,
+          "tipoff": "2025-11-19 00:30 UTC",
+          "confidence": 0.545,
+          "expected_roi": 0.076,
+          "units": "1"
+        }
+      ],
+      "props": []
+    }
+  }
+}

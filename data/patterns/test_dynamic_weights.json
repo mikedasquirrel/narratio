@@ -1,0 +1,513 @@
+{
+  "pattern_history": {
+    "home_underdog": [
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820969",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820974",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820979",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820983",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820988",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821266",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821271",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821275",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821280",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821284",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821558",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821563",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821567",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821573",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821578",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821854",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821858",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821863",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821867",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821872",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822146",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822151",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822156",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822160",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822165",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822440",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822445",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822449",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822453",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822460",
+        "game_id": null
+      }
+    ],
+    "late_season_home": [
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.820971",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.820976",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820980",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820985",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821083",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821267",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821272",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821277",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821281",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821376",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821560",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821565",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821569",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821575",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821667",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821855",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821860",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821864",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821869",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821964",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822148",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822153",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822157",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822162",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822257",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822441",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822446",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822450",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822457",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.822552",
+        "game_id": null
+      }
+    ],
+    "division_rival": [
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.820972",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820977",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820982",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.820986",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821174",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821269",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821274",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821278",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821283",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821468",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821562",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821566",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821570",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821576",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821761",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821857",
+        "game_id": null
+      },
+      {
+        "outcome": 0,
+        "timestamp": "2025-11-16T17:34:27.821861",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821866",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.821870",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822056",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822150",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822154",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822159",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822163",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822349",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822443",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822447",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822452",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822458",
+        "game_id": null
+      },
+      {
+        "outcome": 1,
+        "timestamp": "2025-11-16T17:34:27.822702",
+        "game_id": null
+      }
+    ]
+  },
+  "pattern_weights": {
+    "home_underdog": 1.2307692307692308,
+    "late_season_home": 0.8823529411764705,
+    "division_rival": 1.222222222222222
+  },
+  "pattern_metadata": {
+    "home_underdog": {
+      "historical_win_rate": 0.65,
+      "historical_games": 100,
+      "historical_roi": 10,
+      "status": "strong",
+      "last_updated": "2025-11-16T17:34:27.822548",
+      "decay_detected": false,
+      "recent_win_rate": 0.8,
+      "recent_games": 30,
+      "performance_ratio": 1.2307692307692308,
+      "confidence_interval": [
+        0.6333333333333333,
+        0.9333333333333333
+      ]
+    },
+    "late_season_home": {
+      "historical_win_rate": 0.68,
+      "historical_games": 80,
+      "historical_roi": 15,
+      "status": "decaying",
+      "last_updated": "2025-11-16T17:34:27.822698",
+      "decay_detected": true,
+      "recent_win_rate": 0.6,
+      "recent_games": 30,
+      "performance_ratio": 0.8823529411764705,
+      "confidence_interval": [
+        0.43333333333333335,
+        0.7666666666666667
+      ]
+    },
+    "division_rival": {
+      "historical_win_rate": 0.6,
+      "historical_games": 50,
+      "historical_roi": 5,
+      "status": "strong",
+      "last_updated": "2025-11-16T17:34:27.822795",
+      "decay_detected": false,
+      "recent_win_rate": 0.7333333333333333,
+      "recent_games": 30,
+      "performance_ratio": 1.222222222222222,
+      "confidence_interval": [
+        0.5666666666666667,
+        0.8666666666666667
+      ]
+    }
+  },
+  "timestamp": "2025-11-16T17:34:27.826062"
+}

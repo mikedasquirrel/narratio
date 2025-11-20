@@ -1,0 +1,34 @@
+{
+  "insight": "Every metadata field is actually a narrative dimension",
+  "components": {
+    "textual": {
+      "r2": 0.25739102743780284,
+      "description": "Plot, characters, style from text"
+    },
+    "production_scale": {
+      "r2": 0.550053250165903,
+      "gain": 0.29266222272810016,
+      "description": "Budget, franchise = narrative scope"
+    },
+    "genre_archetype": {
+      "r2": 0.5635621484622806,
+      "gain": 0.01350889829637758,
+      "description": "Story template/category"
+    },
+    "temporal_era": {
+      "r2": 0.5653695460525036,
+      "gain": 0.00180739759022297,
+      "description": "Cultural moment"
+    },
+    "release_timing": {
+      "r2": 0.5954475717543373,
+      "gain": 0.03007802570183371,
+      "description": "Strategic positioning"
+    }
+  },
+  "total_narrative_r2": 0.5954475717543373,
+  "total_variance_explained_pct": 59.54475717543373,
+  "unexplained_pct": 40.45524282456627,
+  "key_finding": "Production decisions (budget, timing, runtime) are narrative dimensions, not confounds",
+  "implication": "Narrative is multi-dimensional: text + scale + archetype + timing + pacing"
+}

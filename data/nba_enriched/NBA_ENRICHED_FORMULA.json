@@ -1,0 +1,11 @@
+{
+  "domain": "NBA (Enriched)",
+  "n": 982,
+  "alpha": 0.5185555252772983,
+  "alpha_old": 0.85,
+  "change": -0.33144447472270167,
+  "formula": "Success = 0.519 \u00d7 Narrative + 0.481 \u00d7 Records",
+  "narrative_accuracy": 0.5295712224283653,
+  "empirical_accuracy": 0.4916718202432488,
+  "enrichment": "Complete with rosters and coaches"
+}

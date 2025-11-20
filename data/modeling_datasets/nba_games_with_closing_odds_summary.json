@@ -1,0 +1,10 @@
+{
+  "scoreboard_games": 7471,
+  "odds_records": 6949,
+  "merged_games": 6639,
+  "match_rate": 0.8886360594297952,
+  "unused_odds_records": 310,
+  "median_time_delta_seconds": 600.0,
+  "max_time_delta_seconds": 85200.0,
+  "unmatched_games": 832
+}

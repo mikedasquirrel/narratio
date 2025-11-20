@@ -1,0 +1,157 @@
+{
+  "dataset": {
+    "total_movies": 22805,
+    "analyzed_movies": 6228,
+    "features_extracted": 402,
+    "features_used": 402
+  },
+  "performance": {
+    "ridge_r2_train": 0.2918878193847342,
+    "ridge_r2_test": 0.15508141387258834,
+    "rf_r2_test": 0.25571947094606096
+  },
+  "top_20_features": [
+    {
+      "rank": 1,
+      "name": "word_count",
+      "importance": 0.28098865233088977
+    },
+    {
+      "rank": 2,
+      "name": "nominative_feature_12",
+      "importance": 0.03658076034505365
+    },
+    {
+      "rank": 3,
+      "name": "nominative_feature_20",
+      "importance": 0.028758026802319557
+    },
+    {
+      "rank": 4,
+      "name": "avg_word_length",
+      "importance": 0.013916513890363209
+    },
+    {
+      "rank": 5,
+      "name": "linguistic_feature_2",
+      "importance": 0.010982770653613444
+    },
+    {
+      "rank": 6,
+      "name": "linguistic_feature_5",
+      "importance": 0.00910265976565718
+    },
+    {
+      "rank": 7,
+      "name": "nominative_feature_19",
+      "importance": 0.008323583606986176
+    },
+    {
+      "rank": 8,
+      "name": "self_perception_feature_11",
+      "importance": 0.0075848043080733825
+    },
+    {
+      "rank": 9,
+      "name": "potential_feature_32",
+      "importance": 0.007109875007640061
+    },
+    {
+      "rank": 10,
+      "name": "linguistic_feature_14",
+      "importance": 0.007010899228627558
+    },
+    {
+      "rank": 11,
+      "name": "ensemble_feature_10",
+      "importance": 0.006948764587092183
+    },
+    {
+      "rank": 12,
+      "name": "ensemble_feature_15",
+      "importance": 0.005993887758322533
+    },
+    {
+      "rank": 13,
+      "name": "nominative_feature_9",
+      "importance": 0.005985923239802113
+    },
+    {
+      "rank": 14,
+      "name": "entropy_efficiency",
+      "importance": 0.00590114455493433
+    },
+    {
+      "rank": 15,
+      "name": "linguistic_feature_13",
+      "importance": 0.005536459041079689
+    },
+    {
+      "rank": 16,
+      "name": "color_density",
+      "importance": 0.005320621416382281
+    },
+    {
+      "rank": 17,
+      "name": "potential_feature_10",
+      "importance": 0.005265325455709128
+    },
+    {
+      "rank": 18,
+      "name": "text_fricative_avg",
+      "importance": 0.0052650917591833
+    },
+    {
+      "rank": 19,
+      "name": "text_nasal_avg",
+      "importance": 0.005185131296942443
+    },
+    {
+      "rank": 20,
+      "name": "word_repetition",
+      "importance": 0.00512336720748335
+    }
+  ],
+  "genre_performance": {
+    "Thriller": {
+      "n": 1339,
+      "mean_success": 0.7881040063378393
+    },
+    "Romantic comedy": {
+      "n": 642,
+      "mean_success": 0.7747393288934403
+    },
+    "Crime Fiction": {
+      "n": 556,
+      "mean_success": 0.7662468249331186
+    },
+    "Drama": {
+      "n": 382,
+      "mean_success": 0.7087080956791282
+    },
+    "Adventure": {
+      "n": 227,
+      "mean_success": 0.8187880324739497
+    },
+    "Parody": {
+      "n": 211,
+      "mean_success": 0.7663306076573925
+    },
+    "Action/Adventure": {
+      "n": 178,
+      "mean_success": 0.7846085561027157
+    },
+    "Science Fiction": {
+      "n": 171,
+      "mean_success": 0.802523040283827
+    },
+    "Romantic drama": {
+      "n": 157,
+      "mean_success": 0.7408853136906512
+    },
+    "Romance Film": {
+      "n": 147,
+      "mean_success": 0.746412871885924
+    }
+  }
+}

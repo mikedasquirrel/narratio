@@ -1,0 +1,89 @@
+{
+  "feature_selection": {
+    "best_k": 150,
+    "r2": 0.20832899714725517,
+    "features": [
+      "word_count",
+      "avg_syllables",
+      "avg_word_length",
+      "max_word_length",
+      "text_plosive_avg",
+      "power_score",
+      "speed_score",
+      "alliteration",
+      "rhyme",
+      "phonetic_potency",
+      "phonetic_semantic_alignment",
+      "modern_density",
+      "futuristic_density",
+      "tech_1990s",
+      "tech_2000s",
+      "tech_2020s",
+      "dominant_tech_era",
+      "novelty_markers",
+      "staleness_markers",
+      "historical_depth"
+    ]
+  },
+  "model_comparison": {
+    "Ridge (\u03b1=0.1)": {
+      "r2": 0.2083564329029941,
+      "mse": 0.006428124474074248
+    },
+    "Ridge (\u03b1=1.0)": {
+      "r2": 0.20832899714725517,
+      "mse": 0.00642834725167298
+    },
+    "Ridge (\u03b1=10)": {
+      "r2": 0.20843472461541257,
+      "mse": 0.006427488747475016
+    },
+    "Lasso (\u03b1=0.01)": {
+      "r2": 0.14099317907854658,
+      "mse": 0.006975112283436622
+    },
+    "ElasticNet": {
+      "r2": -0.0029996948720421024,
+      "mse": 0.008144330547318057
+    },
+    "Random Forest (d=5)": {
+      "r2": 0.2456143109489407,
+      "mse": 0.006125591506368245
+    },
+    "Random Forest (d=10)": {
+      "r2": 0.24511417049015782,
+      "mse": 0.006129652633442601
+    },
+    "Random Forest (d=15)": {
+      "r2": 0.24141934596863213,
+      "mse": 0.006159654509187419
+    },
+    "Gradient Boosting": {
+      "r2": 0.2267437173094088,
+      "mse": 0.006278820219208554
+    }
+  },
+  "best_model": {
+    "name": "Random Forest (d=5)",
+    "r2": 0.2456143109489407
+  },
+  "hyperparameter_tuning": {
+    "best_params": {
+      "max_depth": 15,
+      "min_samples_split": 20,
+      "n_estimators": 100
+    },
+    "tuned_r2": 0.24353598799845821
+  },
+  "genre_specific": {
+    "Thriller": 0.24094685648963066,
+    "Romantic comedy": 0.11180651710035105,
+    "Crime Fiction": 0.21184751862759776
+  },
+  "final_performance": {
+    "baseline_r2": 0.1551,
+    "optimized_r2": 0.24353598799845821,
+    "improvement_absolute": 0.08843598799845823,
+    "improvement_relative_pct": 57.01868987650434
+  }
+}

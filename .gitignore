@@ -19,6 +19,16 @@ data/ml-latest-small/
 external/
 nba_data_repo/
 
+# Large data files (>50MB - GitHub limit)
+data/**/espn_scoreboard_complete.json
+data/**/*_complete.json
+data/**/season_*_complete.json
+data/literary_corpus/wikiplots_corpus.json
+data/literary_corpus/cmu_movies_corpus.json
+data/movies_cleaned.json
+analysis/**/nhl_absolute_max_snapshot.json
+analysis/snapshots/**/*.json
+
 # Logs
 *.log
 logs/

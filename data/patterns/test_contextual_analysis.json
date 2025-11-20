@@ -1,0 +1,134 @@
+{
+  "pattern_name": "test_pattern",
+  "base_performance": {
+    "n_games": 500,
+    "win_rate": 0.67
+  },
+  "contexts": {
+    "home_away": {
+      "home": {
+        "n_games": 244,
+        "wins": 181,
+        "win_rate": 0.7418032786885246,
+        "profitable": true
+      },
+      "away": {
+        "n_games": 256,
+        "wins": 154,
+        "win_rate": 0.6015625,
+        "profitable": true
+      }
+    },
+    "rest": {
+      "back_to_back": {
+        "n_games": 133,
+        "wins": 92,
+        "win_rate": 0.6917293233082706,
+        "profitable": true
+      },
+      "short_rest": {
+        "n_games": 49,
+        "wins": 32,
+        "win_rate": 0.6530612244897959,
+        "profitable": true
+      },
+      "normal_rest": {
+        "n_games": 144,
+        "wins": 95,
+        "win_rate": 0.6597222222222222,
+        "profitable": true
+      },
+      "well_rested": {
+        "n_games": 174,
+        "wins": 116,
+        "win_rate": 0.6666666666666666,
+        "profitable": true
+      }
+    },
+    "matchup": {
+      "vs_top5": {
+        "n_games": 58,
+        "wins": 29,
+        "win_rate": 0.5,
+        "profitable": false
+      },
+      "vs_good": {
+        "n_games": 107,
+        "wins": 67,
+        "win_rate": 0.6261682242990654,
+        "profitable": true
+      },
+      "vs_average": {
+        "n_games": 137,
+        "wins": 82,
+        "win_rate": 0.5985401459854015,
+        "profitable": true
+      },
+      "vs_bad": {
+        "n_games": 140,
+        "wins": 111,
+        "win_rate": 0.7928571428571428,
+        "profitable": true
+      },
+      "vs_bottom5": {
+        "n_games": 58,
+        "wins": 46,
+        "win_rate": 0.7931034482758621,
+        "profitable": true
+      }
+    },
+    "temporal": {
+      "early_season": {
+        "n_games": 108,
+        "wins": 61,
+        "win_rate": 0.5648148148148148,
+        "profitable": false
+      },
+      "mid_season": {
+        "n_games": 265,
+        "wins": 167,
+        "win_rate": 0.630188679245283,
+        "profitable": true
+      },
+      "late_season": {
+        "n_games": 127,
+        "wins": 107,
+        "win_rate": 0.84251968503937,
+        "profitable": true
+      }
+    },
+    "weather": {
+      "cold": {
+        "n_games": 47,
+        "wins": 36,
+        "win_rate": 0.7659574468085106,
+        "profitable": true
+      },
+      "moderate": {
+        "n_games": 109,
+        "wins": 77,
+        "win_rate": 0.7064220183486238,
+        "profitable": true
+      },
+      "hot": {
+        "n_games": 94,
+        "wins": 56,
+        "win_rate": 0.5957446808510638,
+        "profitable": true
+      },
+      "outdoor": {
+        "n_games": 250,
+        "wins": 169,
+        "win_rate": 0.676,
+        "profitable": true
+      },
+      "indoor": {
+        "n_games": 250,
+        "wins": 166,
+        "win_rate": 0.664,
+        "profitable": true
+      }
+    }
+  },
+  "n_total_contexts": 19
+}

@@ -1,0 +1,159 @@
+{
+  "true_narrative_r2": 0.5968536370743687,
+  "pure_features_r2": 0.2486931141473112,
+  "with_context_r2": 0.5935184302892464,
+  "features_used": 348,
+  "length_features_removed": 56,
+  "top_30_features": [
+    {
+      "rank": 1,
+      "name": "narrative_weight",
+      "importance": 0.4361494074522334
+    },
+    {
+      "rank": 2,
+      "name": "release_year",
+      "importance": 0.0593108608693474
+    },
+    {
+      "rank": 3,
+      "name": "runtime",
+      "importance": 0.039730431076474955
+    },
+    {
+      "rank": 4,
+      "name": "linguistic_feature_3",
+      "importance": 0.014755537174174502
+    },
+    {
+      "rank": 5,
+      "name": "self_perception_feature_11",
+      "importance": 0.009326110380031036
+    },
+    {
+      "rank": 6,
+      "name": "nominative_feature_20",
+      "importance": 0.006434401950297585
+    },
+    {
+      "rank": 7,
+      "name": "nominative_feature_11",
+      "importance": 0.006343486246854536
+    },
+    {
+      "rank": 8,
+      "name": "linguistic_feature_5",
+      "importance": 0.006039221516537994
+    },
+    {
+      "rank": 9,
+      "name": "rhyme",
+      "importance": 0.005766855285420128
+    },
+    {
+      "rank": 10,
+      "name": "nominative_feature_19",
+      "importance": 0.00565493171668064
+    },
+    {
+      "rank": 11,
+      "name": "entropy_efficiency",
+      "importance": 0.005069632256227345
+    },
+    {
+      "rank": 12,
+      "name": "aesthetic_valence",
+      "importance": 0.0048890250790488594
+    },
+    {
+      "rank": 13,
+      "name": "text_fricative_avg",
+      "importance": 0.004742701870874336
+    },
+    {
+      "rank": 14,
+      "name": "potential_feature_21",
+      "importance": 0.004541928657529481
+    },
+    {
+      "rank": 15,
+      "name": "nominative_feature_12",
+      "importance": 0.004521267856661609
+    },
+    {
+      "rank": 16,
+      "name": "text_plosive_avg",
+      "importance": 0.004495052094276875
+    },
+    {
+      "rank": 17,
+      "name": "alliteration",
+      "importance": 0.004418456306623841
+    },
+    {
+      "rank": 18,
+      "name": "linguistic_feature_13",
+      "importance": 0.004404204031798902
+    },
+    {
+      "rank": 19,
+      "name": "potential_feature_32",
+      "importance": 0.004348287730073637
+    },
+    {
+      "rank": 20,
+      "name": "genre_Drama",
+      "importance": 0.00412036178163722
+    },
+    {
+      "rank": 21,
+      "name": "nominative_feature_0",
+      "importance": 0.004095558798590084
+    },
+    {
+      "rank": 22,
+      "name": "ensemble_feature_20",
+      "importance": 0.004050825745629885
+    },
+    {
+      "rank": 23,
+      "name": "recency_indicators",
+      "importance": 0.004048451161199666
+    },
+    {
+      "rank": 24,
+      "name": "relational_feature_3",
+      "importance": 0.003822918007804406
+    },
+    {
+      "rank": 25,
+      "name": "nominative_feature_32",
+      "importance": 0.0037947222017638794
+    },
+    {
+      "rank": 26,
+      "name": "linguistic_feature_2",
+      "importance": 0.003745812308826522
+    },
+    {
+      "rank": 27,
+      "name": "potential_feature_24",
+      "importance": 0.0037162882717453006
+    },
+    {
+      "rank": 28,
+      "name": "nominative_feature_13",
+      "importance": 0.0036528287948489418
+    },
+    {
+      "rank": 29,
+      "name": "potential_feature_27",
+      "importance": 0.003627025532638152
+    },
+    {
+      "rank": 30,
+      "name": "nominative_feature_30",
+      "importance": 0.0036043310361249838
+    }
+  ]
+}

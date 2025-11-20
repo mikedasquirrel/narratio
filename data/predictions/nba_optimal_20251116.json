@@ -1,0 +1,224 @@
+{
+  "date": "2025-11-16",
+  "generated_at": "2025-11-16T16:17:34.725088",
+  "total_opportunities": 78,
+  "recommended_portfolio": [
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Warriors ML",
+        "Trail Blazers ML",
+        "Bulls ML"
+      ],
+      "games": [
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks",
+        "Bulls @ Jazz"
+      ],
+      "combined_odds": "+1116",
+      "probability": 0.269923914,
+      "ev": 2.284164261637999,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Celtics ML",
+        "Warriors ML",
+        "Trail Blazers ML"
+      ],
+      "games": [
+        "Clippers @ Celtics",
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.286404417,
+      "ev": 1.8924242440481818,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Celtics ML",
+        "Warriors ML",
+        "Bulls ML"
+      ],
+      "games": [
+        "Clippers @ Celtics",
+        "Warriors @ Pelicans",
+        "Bulls @ Jazz"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.273539916,
+      "ev": 1.7625044789490907,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Spurs -3.5",
+        "Warriors ML",
+        "Trail Blazers ML"
+      ],
+      "games": [
+        "Kings @ Spurs",
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.26738502570000006,
+      "ev": 1.7003456822739096,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Rockets -3.5",
+        "Warriors ML",
+        "Trail Blazers ML"
+      ],
+      "games": [
+        "Magic @ Rockets",
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.26738502570000006,
+      "ev": 1.7003456822739096,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Warriors ML",
+        "Trail Blazers ML",
+        "Suns -3.5"
+      ],
+      "games": [
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks",
+        "Hawks @ Suns"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.26738502570000006,
+      "ev": 1.7003456822739096,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Spurs -3.5",
+        "Warriors ML",
+        "Bulls ML"
+      ],
+      "games": [
+        "Kings @ Spurs",
+        "Warriors @ Pelicans",
+        "Bulls @ Jazz"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.2553748236,
+      "ev": 1.5790535594294544,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Rockets -3.5",
+        "Warriors ML",
+        "Bulls ML"
+      ],
+      "games": [
+        "Magic @ Rockets",
+        "Warriors @ Pelicans",
+        "Bulls @ Jazz"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.2553748236,
+      "ev": 1.5790535594294544,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Warriors ML",
+        "Suns -3.5",
+        "Bulls ML"
+      ],
+      "games": [
+        "Warriors @ Pelicans",
+        "Hawks @ Suns",
+        "Bulls @ Jazz"
+      ],
+      "combined_odds": "+909",
+      "probability": 0.2553748236,
+      "ev": 1.5790535594294544,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "2-LEG PARLAY",
+      "legs": [
+        "Warriors ML",
+        "Trail Blazers ML"
+      ],
+      "games": [
+        "Warriors @ Pelicans",
+        "Trail Blazers @ Mavericks"
+      ],
+      "combined_odds": "+428",
+      "probability": 0.445419,
+      "ev": 1.3562665099999998,
+      "units": 1.0,
+      "confidence": "PARLAY"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Celtics ML",
+        "Warriors ML",
+        "Suns -3.5"
+      ],
+      "games": [
+        "Clippers @ Celtics",
+        "Warriors @ Pelicans",
+        "Hawks @ Suns"
+      ],
+      "combined_odds": "+738",
+      "probability": 0.27096701580000004,
+      "ev": 1.2714201993879342,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    },
+    {
+      "type": "3-LEG PARLAY",
+      "legs": [
+        "Celtics ML",
+        "Spurs -3.5",
+        "Warriors ML"
+      ],
+      "games": [
+        "Clippers @ Celtics",
+        "Kings @ Spurs",
+        "Warriors @ Pelicans"
+      ],
+      "combined_odds": "+738",
+      "probability": 0.2709670158,
+      "ev": 1.271420199387934,
+      "units": 0.5,
+      "confidence": "PARLAY-HIGH-RISK"
+    }
+  ],
+  "total_units": 6.5,
+  "total_ev": 19.67639761852123,
+  "expected_roi": 302.7138095157112
+}

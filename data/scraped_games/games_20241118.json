@@ -1,0 +1,946 @@
+{
+  "date": "2024-11-18",
+  "scraped_at": "2025-11-18T16:29:06.764028",
+  "nhl": [
+    {
+      "sport": "NHL",
+      "away_team": "Columbus",
+      "home_team": "Boston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Colorado",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Edmonton",
+      "home_team": "Montreal",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Anaheim",
+      "home_team": "Dallas",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Washington",
+      "home_team": "Utah",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Detroit",
+      "home_team": "San Jose",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Edmonton",
+      "home_team": "Ottawa",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Tampa Bay",
+      "home_team": "Pittsburgh",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Minnesota",
+      "home_team": "St. Louis",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Florida",
+      "home_team": "Winnipeg",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Anaheim",
+      "home_team": "Chicago",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New York",
+      "home_team": "Calgary",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New York",
+      "home_team": "Vancouver",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Vegas",
+      "home_team": "Toronto",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Carolina",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "San Jose",
+      "home_team": "Dallas",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Nashville",
+      "home_team": "Seattle",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Buffalo",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Utah",
+      "home_team": "Boston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Vegas",
+      "home_team": "Ottawa",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New York",
+      "home_team": "Detroit",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Carolina",
+      "home_team": "New Jersey",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Colorado",
+      "home_team": "Washington",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Tampa Bay",
+      "home_team": "Columbus",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "San Jose",
+      "home_team": "St. Louis",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Florida",
+      "home_team": "Chicago",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New York",
+      "home_team": "Calgary",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Minnesota",
+      "home_team": "Edmonton",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Winnipeg",
+      "home_team": "Pittsburgh",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Buffalo",
+      "home_team": "Anaheim",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Chicago",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Minnesota",
+      "home_team": "Calgary",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Seattle",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Colorado",
+      "home_team": "Florida",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Vegas",
+      "home_team": "Montreal",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Vancouver",
+      "home_team": "Ottawa",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Boston",
+      "home_team": "Detroit",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Dallas",
+      "home_team": "Tampa Bay",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Utah",
+      "home_team": "Pittsburgh",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New Jersey",
+      "home_team": "Washington",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Carolina",
+      "home_team": "Columbus",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Winnipeg",
+      "home_team": "Nashville",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "St. Louis",
+      "home_team": "New York",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Buffalo",
+      "home_team": "San Jose",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "New York",
+      "home_team": "Edmonton",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    },
+    {
+      "sport": "NHL",
+      "away_team": "Utah",
+      "home_team": "Toronto",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "source": "ESPN"
+    }
+  ],
+  "nfl": [
+    {
+      "sport": "NFL",
+      "away_team": "New York",
+      "home_team": "New England",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Washington",
+      "home_team": "Miami",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Carolina",
+      "home_team": "Atlanta",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Tampa Bay",
+      "home_team": "Buffalo",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Houston",
+      "home_team": "Tennessee",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Chicago",
+      "home_team": "Minnesota",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Green Bay",
+      "home_team": "New York",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Cincinnati",
+      "home_team": "Pittsburgh",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Los Angeles",
+      "home_team": "Jacksonville",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Seattle",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "San Francisco",
+      "home_team": "Arizona",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Baltimore",
+      "home_team": "Cleveland",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Kansas City",
+      "home_team": "Denver",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Detroit",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Dallas",
+      "home_team": "Las Vegas",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NFL",
+      "away_team": "Indianapolis",
+      "home_team": "New Orleans",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    }
+  ],
+  "nba": [
+    {
+      "sport": "NBA",
+      "away_team": "Chicago",
+      "home_team": "Detroit",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Philadelphia",
+      "home_team": "Miami",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Washington",
+      "home_team": "New York",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Indiana",
+      "home_team": "Toronto",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Houston",
+      "home_team": "Milwaukee",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Orlando",
+      "home_team": "Phoenix",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Atlanta",
+      "home_team": "Sacramento",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Golden State",
+      "home_team": "LA",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Cleveland",
+      "home_team": "Boston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Charlotte",
+      "home_team": "Brooklyn",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Denver",
+      "home_team": "Memphis",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "New Orleans",
+      "home_team": "Dallas",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Oklahoma City",
+      "home_team": "San Antonio",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Utah",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "New Orleans",
+      "home_team": "Cleveland",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Chicago",
+      "home_team": "Milwaukee",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Indiana",
+      "home_team": "Houston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Philadelphia",
+      "home_team": "Memphis",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Portland",
+      "home_team": "Oklahoma City",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "New York",
+      "home_team": "Phoenix",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Atlanta",
+      "home_team": "Golden State",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Orlando",
+      "home_team": "LA",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Detroit",
+      "home_team": "Charlotte",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Minnesota",
+      "home_team": "Toronto",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Utah",
+      "home_team": "San Antonio",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Orlando",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Brooklyn",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Boston",
+      "home_team": "Washington",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Golden State",
+      "home_team": "New Orleans",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Indiana",
+      "home_team": "Milwaukee",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Atlanta",
+      "home_team": "Chicago",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Portland",
+      "home_team": "Houston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Dallas",
+      "home_team": "Denver",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Sacramento",
+      "home_team": "LA",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "New York",
+      "home_team": "Utah",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Detroit",
+      "home_team": "Orlando",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Memphis",
+      "home_team": "Chicago",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Portland",
+      "home_team": "Houston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Charlotte",
+      "home_team": "Milwaukee",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Golden State",
+      "home_team": "San Antonio",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Denver",
+      "home_team": "Los Angeles",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Minnesota",
+      "home_team": "Boston",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Washington",
+      "home_team": "Indiana",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Dallas",
+      "home_team": "Miami",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "LA",
+      "home_team": "Philadelphia",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Toronto",
+      "home_team": "Cleveland",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    },
+    {
+      "sport": "NBA",
+      "away_team": "Brooklyn",
+      "home_team": "Sacramento",
+      "date": "2024-11-18",
+      "time": "TBD",
+      "spread": null,
+      "source": "ESPN"
+    }
+  ],
+  "total_games": 109
+}

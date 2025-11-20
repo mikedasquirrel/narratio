@@ -1,0 +1,82 @@
+[
+  {
+    "pattern": "home_underdog",
+    "universal": true,
+    "nba": {
+      "n_games": 173,
+      "win_rate": 0.6416184971098265,
+      "roi_estimate": 11.761849710982652
+    },
+    "nfl": {
+      "n_games": 102,
+      "win_rate": 0.7254901960784313,
+      "roi_estimate": 20.149019607843133
+    },
+    "statistics": {
+      "t_statistic": -1.4319825869367655,
+      "p_value": 0.15329272030371538,
+      "correlation": 0.884393063583815,
+      "both_profitable": true
+    }
+  },
+  {
+    "pattern": "huge_underdog",
+    "universal": true,
+    "nba": {
+      "n_games": 83,
+      "win_rate": 0.6144578313253012,
+      "roi_estimate": 9.045783132530117
+    },
+    "nfl": {
+      "n_games": 44,
+      "win_rate": 0.7045454545454546,
+      "roi_estimate": 18.054545454545455
+    },
+    "statistics": {
+      "t_statistic": -1.0060592306841112,
+      "p_value": 0.3163306223713095,
+      "correlation": 0.872133696074621,
+      "both_profitable": true
+    }
+  },
+  {
+    "pattern": "high_momentum",
+    "universal": true,
+    "nba": {
+      "n_games": 96,
+      "win_rate": 0.5416666666666666,
+      "roi_estimate": 1.7666666666666608
+    },
+    "nfl": {
+      "n_games": 54,
+      "win_rate": 0.6111111111111112,
+      "roi_estimate": 8.711111111111114
+    },
+    "statistics": {
+      "t_statistic": -0.8201995322647254,
+      "p_value": 0.41342138509889215,
+      "correlation": 0.8863636363636362,
+      "both_profitable": true
+    }
+  },
+  {
+    "pattern": "division_rival",
+    "universal": true,
+    "nba": {
+      "n_games": 149,
+      "win_rate": 0.5570469798657718,
+      "roi_estimate": 3.3046979865771764
+    },
+    "nfl": {
+      "n_games": 109,
+      "win_rate": 0.6238532110091743,
+      "roi_estimate": 9.985321100917432
+    },
+    "statistics": {
+      "t_statistic": -1.0740867259437061,
+      "p_value": 0.2837951590901551,
+      "correlation": 0.8929135412554282,
+      "both_profitable": true
+    }
+  }
+]

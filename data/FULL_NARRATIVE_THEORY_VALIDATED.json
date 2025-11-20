@@ -1,0 +1,34 @@
+{
+  "hypothesis": "Budget and stars are PART of narrative, not confounds",
+  "experiments": {
+    "1_text_only": {
+      "r2": 0.25739102743780284,
+      "variance_explained_pct": 25.739102743780286,
+      "components": "Synopsis + title text features only"
+    },
+    "2_text_plus_weight": {
+      "r2": 0.5500532501659028,
+      "improvement": 0.29266222272809994,
+      "components": "Text + budget/franchise context (narrative weight)"
+    },
+    "3_text_weight_genre": {
+      "r2": 0.550874727005066,
+      "improvement": 0.29348369956726317,
+      "components": "Text + weight + genre archetype"
+    },
+    "4_full_narrative": {
+      "r2": 0.5855907989511375,
+      "improvement": 0.3281997715133347,
+      "variance_explained_pct": 58.559079895113754,
+      "components": "Text + weight + genre + temporal era"
+    }
+  },
+  "narrative_components_breakdown": {
+    "textual_narrative": 0.25739102743780284,
+    "budget_franchise_context": 0.29266222272809994,
+    "genre_archetype": 0.0008214768391632266,
+    "temporal_era": 0.034716071946071514
+  },
+  "conclusion": "Full narrative explains 58.6% of movie success",
+  "insight": "Budget, stars, genre are not confounds - they are narrative dimensions"
+}

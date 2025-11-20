@@ -1,0 +1,34 @@
+{
+  "domain": "bible_stories",
+  "n_stories": 47,
+  "forces": {
+    "pi": 0.87,
+    "theta": 0.15,
+    "lambda": 0.18,
+    "nominative_gravity": 0.82,
+    "narrative_agency": 0.29561890048379197
+  },
+  "statistics": {
+    "persistence_mean": 0.6736170212765958,
+    "persistence_std": 0.322855777906014,
+    "persistence_variance": 0.10423585332729743,
+    "persistence_range": 0.97,
+    "high_persistence_count": 25,
+    "low_persistence_count": 10
+  },
+  "interpretation": {
+    "pi": "Very high narrativity - narrative determines cultural survival even in sacred text",
+    "theta": "Very low awareness - selection process invisible, nobody questions why some stories persist",
+    "lambda": "Very low constraints - free access, massive distribution, active transmission",
+    "nominative_gravity": "Very high - stories that become idioms achieve cultural immortality",
+    "narrative_agency": "Very high - narrative has major impact on survival independent of theological weight"
+  },
+  "key_findings": [
+    "All stories have equal claimed divine authority, yet persistence varies 2%-99%",
+    "Narrative genomic features (underdog, villain, visual, metaphor) predict survival",
+    "Theological importance does not predict cultural persistence",
+    "Narrative selection process is completely unconscious",
+    "Idiom formation (nominative compression) predicts cultural immortality",
+    "Even maximum authority (sacred text) cannot overcome poor narrative structure"
+  ]
+}

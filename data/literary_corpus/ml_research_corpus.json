@@ -1,0 +1,74 @@
+[
+  {
+    "id": "README-0",
+    "path": "README.md",
+    "narrative": "[![GitHub forks](https://img.shields.io/github/forks/tirthajyoti/Papers-Literature-ML-DL-RL-AI.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/network)\n[![GitHub stars](https://img.shields.io/github/stars/tirthajyoti/Papers-Literature-ML-DL-RL-AI.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/stargazers)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/pulls)",
+    "impact_score": 9.012
+  },
+  {
+    "id": "README-1",
+    "path": "README.md",
+    "narrative": "Impactful and widely cited papers and literature on ML/DL/RL/AI\n\n**Widely cited and impactful papers/literature and free tutorials/books, related to Artificial intelligence (AI), statistical modeling, Machine Learning (ML), Deep learning (DL), Reinforcement learning (RL), and their various applications.**",
+    "impact_score": 1.0
+  },
+  {
+    "id": "README-2",
+    "path": "README.md",
+    "narrative": "Collector/maintainer\nPapers collected and maintained by [Dr. Tirthajyoti Sarkar](https://tirthajyoti.github.io).\n<br>Please feel free to [add me on LinkedIn](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/)\n\n![ML def](https://raw.githubusercontent.com/tirthajyoti/Papers-Literature-ML-DL-AI/master/Images/What-is-machine-learning_Definition.jpg)",
+    "impact_score": 4.538
+  },
+  {
+    "id": "README-5",
+    "path": "README.md",
+    "narrative": "[Application of Artificial Intelligence](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/tree/master/Application%20of%20AI)",
+    "impact_score": 1.508
+  },
+  {
+    "id": "README-6",
+    "path": "README.md",
+    "narrative": "[Artificial Intelligence (AI), and Game Theory](https://github.com/tirthajyoti/Papers-Literature-ML-DL-AI/tree/master/AI-Game-Theory)",
+    "impact_score": 1.512
+  },
+  {
+    "id": "README-8",
+    "path": "README.md",
+    "narrative": "[Fairness, Bias, and Ethics in AI](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/tree/master/Fairness%2C%20Bias%2C%20Ethics%20in%20AI%20and%20ML)",
+    "impact_score": 1.512
+  },
+  {
+    "id": "README-9",
+    "path": "README.md",
+    "narrative": "[General Machine Learning topics](https://github.com/tirthajyoti/Papers-Literature-ML-DL-AI/tree/master/General-Machine-Learning)",
+    "impact_score": 1.508
+  },
+  {
+    "id": "README-10",
+    "path": "README.md",
+    "narrative": "[Reinforcement Learning](https://github.com/tirthajyoti/Papers-Literature-ML-DL-AI/tree/master/Reinforcement%20Learning)",
+    "impact_score": 1.504
+  },
+  {
+    "id": "README-11",
+    "path": "README.md",
+    "narrative": "[Statistics and Statistical Learning](https://github.com/tirthajyoti/Papers-Literature-ML-DL-AI/tree/master/Statistics%20and%20Statistical%20Learning)",
+    "impact_score": 1.508
+  },
+  {
+    "id": "README-14",
+    "path": "README.md",
+    "narrative": "(New!) [ML for manufacturing and IoT](https://github.com/tirthajyoti/Papers-Literature-ML-DL-RL-AI/tree/master/ML-for-manufacturing-IoT)",
+    "impact_score": 1.512
+  },
+  {
+    "id": "Links to read the chapters online-0",
+    "path": "General-Machine-Learning/The Hundred-Page Machine Learning Book by Andriy Burkov/Links to read the chapters online.md",
+    "narrative": "- [Chapter 1: Introduction](http://bit.ly/theMLbook-Chapter-1)\n- [Chapter 2:  Notation and Definitions](http://bit.ly/theMLbook-Chapter-2)\n- [Chapter 3: Fundamental Algorithms](http://bit.ly/theMLbook-Chapter-3)\n- [Chapter 4: Anatomy of a Learning Algorithm](http://bit.ly/theMLbook-Chapter-4)\n- [Chapter 5: Basic Practice](http://bit.ly/theMLbook-Chapter-5)\n- [Chapter 6: Neural Networks and Deep Learning](http://bit.ly/theMLbook-Chapter-6)\n- [Chapter 7: Problems and Solutions](http://bit.ly/theMLbook-Chapter-7)\n- [Chapter 8: Advanced Practice](http://bit.ly/theMLbook-Chapter-8)\n- [Chapter 9: Unsupervised Learning](https://www.dropbox.com/s/y9a7b0hzmuksqar/Chapter9.pdf?dl=0)\n- [Chapter 10: Other Forms of Learning](http://bit.ly/theMLbook-Chapter-10)\n- [Chapter 11: Conclusion](http://bit.ly/theMLbook-Chapter-11)\n\n**Note**: The chapters are downloadable as PDFs but the contents are constantly updated by the author which is why the links.",
+    "impact_score": 16.668
+  },
+  {
+    "id": "Citation-0",
+    "path": "General-Machine-Learning/The Hundred-Page Machine Learning Book by Andriy Burkov/Citation.txt",
+    "narrative": "@book{book,\nauthor = {Andriy Burkov}, \ntitle = {The Hundred-Page Machine Learning Book},\npublisher = {Kindle Direct Publishing},\nyear = 2019,\nedition = 1,\nisbn = {9781790485000}\n}",
+    "impact_score": 1.0
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "domain": "conspiracy_theories",
+  "pi": 0.9694999999999999,
+  "theta": 0.41191417012689663,
+  "lambda": 0.16440146586553647,
+  "nominative_gravity": 0.82,
+  "narrative_agency": 0.39066099358626166,
+  "pi_components": {
+    "openness_to_interpretation": 0.95,
+    "role_of_perception": 0.98,
+    "subjective_evaluation": 0.96,
+    "agency": 1.0,
+    "freedom_from_constraints": 0.95
+  },
+  "interpretations": {
+    "pi": "Extremely high narrativity - pure narrative effects domain",
+    "theta": "Moderate-low awareness - believers see theories as truth, not narrative",
+    "lambda": "Low bridging constraints - minimal friction to belief adoption",
+    "nominative_gravity": "Very high nominative gravity - names are primary spread vector",
+    "narrative_agency": "Very high - pure narrative effects domain"
+  },
+  "predictions": {
+    "expected_r_squared": 0.78,
+    "narrative_dominance": "very_high",
+    "primary_predictors": [
+      "villain_clarity",
+      "accessibility",
+      "emotional_resonance",
+      "name_quality"
+    ],
+    "framework_validation": "Should show highest R\u00b2 for pure narrative domain"
+  },
+  "theoretical_significance": [
+    "Highest \u03c0 in framework (0.92-0.95)",
+    "Pure narrative effects - truth = 0 for all",
+    "Isolates narrative from reality constraints",
+    "Tests framework at extreme boundary",
+    "Policy relevance for misinformation spread"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "model": "Gradient Boosting",
+  "r2_final": 0.5916134899718641,
+  "variance_explained_pct": 59.161348997186415,
+  "components": {
+    "text_features": 404,
+    "context_features": 20,
+    "derived_features": 12,
+    "interaction_features": 11,
+    "polynomial_features": 2,
+    "cast_features": 2
+  },
+  "total_features": 439,
+  "conclusion": "Maximum optimization achieved: 59.2% of movie success is predictable from narrative"
+}

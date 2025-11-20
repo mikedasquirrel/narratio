@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "start_date": "2025-11-16T17:34:37.817756",
+    "days_active": 1,
+    "initial_bankroll": 10000.0,
+    "current_bankroll": 10210.0,
+    "bankroll_change": 210.0,
+    "bankroll_roi": 0.021
+  },
+  "betting": {
+    "total_bets": 4,
+    "wins": 3,
+    "losses": 1,
+    "win_rate": 0.75,
+    "total_staked": 470,
+    "total_profit": 210.0,
+    "roi": 0.44680851063829785,
+    "avg_stake": 117.5,
+    "avg_profit_per_bet": 52.5,
+    "avg_edge": 0.057499999999999996
+  },
+  "by_edge": {
+    "high_edge": {
+      "n_bets": 1,
+      "win_rate": 1.0,
+      "roi": 1.2
+    },
+    "medium_edge": {
+      "n_bets": 3,
+      "win_rate": 0.6666666666666666,
+      "roi": 0.24324324324324326
+    }
+  },
+  "timestamp": "2025-11-16T17:34:37.820768",
+  "all_bets": [
+    {
+      "bet_id": "paper_1",
+      "game_id": "LAL_vs_GSW",
+      "bet_type": "moneyline",
+      "side": "LAL",
+      "odds": -150,
+      "stake": 150,
+      "win_probability": 0.65,
+      "edge": 0.05,
+      "reasoning": "Test bet",
+      "placed_at": "2025-11-16T17:34:37.817766",
+      "status": "settled",
+      "result": "win",
+      "profit": 100.0,
+      "settled_at": "2025-11-16T17:34:37.817797",
+      "actual_outcome": null
+    },
+    {
+      "bet_id": "paper_2",
+      "game_id": "MIA_vs_BOS",
+      "bet_type": "spread",
+      "side": "MIA +7",
+      "odds": -110,
+      "stake": 110,
+      "win_probability": 0.58,
+      "edge": 0.06,
+      "reasoning": "Test bet",
+      "placed_at": "2025-11-16T17:34:37.817782",
+      "status": "settled",
+      "result": "win",
+      "profit": 100.0,
+      "settled_at": "2025-11-16T17:34:37.817801",
+      "actual_outcome": null
+    },
+    {
+      "bet_id": "paper_3",
+      "game_id": "CHI_vs_NYK",
+      "bet_type": "total",
+      "side": "OVER 215",
+      "odds": -110,
+      "stake": 110,
+      "win_probability": 0.56,
+      "edge": 0.04,
+      "reasoning": "Test bet",
+      "placed_at": "2025-11-16T17:34:37.817786",
+      "status": "settled",
+      "result": "loss",
+      "profit": -110,
+      "settled_at": "2025-11-16T17:34:37.817804",
+      "actual_outcome": null
+    },
+    {
+      "bet_id": "paper_4",
+      "game_id": "DAL_vs_PHX",
+      "bet_type": "moneyline",
+      "side": "DAL",
+      "odds": 120,
+      "stake": 100,
+      "win_probability": 0.5,
+      "edge": 0.08,
+      "reasoning": "Test bet",
+      "placed_at": "2025-11-16T17:34:37.817789",
+      "status": "settled",
+      "result": "win",
+      "profit": 120.0,
+      "settled_at": "2025-11-16T17:34:37.817807",
+      "actual_outcome": null
+    }
+  ]
+}
