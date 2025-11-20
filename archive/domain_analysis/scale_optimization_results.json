@@ -1,0 +1,39 @@
+{
+  "domain": "NBA",
+  "overall_efficiency": -0.03,
+  "insight": "\u03b1 increases 0.05 \u2192 0.80 by temporal scale (16x)",
+  "scales": [
+    {
+      "name": "NBA - Single Game",
+      "alpha": 0.05,
+      "efficiency": -0.0048,
+      "passes": false
+    },
+    {
+      "name": "NBA - 3-Game Series",
+      "alpha": 0.25,
+      "efficiency": 0.035,
+      "passes": false
+    },
+    {
+      "name": "NBA - Month (10-15 games)",
+      "alpha": 0.5,
+      "efficiency": 0.09999999999999999,
+      "passes": false
+    },
+    {
+      "name": "NBA - Full Season (82 games)",
+      "alpha": 0.8,
+      "efficiency": 0.19999999999999998,
+      "passes": false
+    },
+    {
+      "name": "NBA - Playoff Run",
+      "alpha": 0.85,
+      "efficiency": 0.3,
+      "passes": false
+    }
+  ],
+  "passing_count": 0,
+  "interpretation": "Narrative accumulates over longer timescales"
+}

@@ -1,0 +1,62 @@
+{
+  "ablation_study": [
+    {
+      "name": "FULL (baseline)",
+      "exclude": "none",
+      "features": 243,
+      "proper_nouns_sample": 36,
+      "r2": 0.10530981218358926
+    },
+    {
+      "name": "Remove field dynamics",
+      "exclude": "field_dynamics",
+      "features": 243,
+      "proper_nouns_sample": 11,
+      "r2": 0.017776054854998394
+    },
+    {
+      "name": "MINIMAL (all removed)",
+      "exclude": "all",
+      "features": 243,
+      "proper_nouns_sample": 4,
+      "r2": 0.01776616917391787
+    },
+    {
+      "name": "Remove course lore",
+      "exclude": "course_lore",
+      "features": 243,
+      "proper_nouns_sample": 9,
+      "r2": 0.017438425294777224
+    },
+    {
+      "name": "Remove relational",
+      "exclude": "relational",
+      "features": 243,
+      "proper_nouns_sample": 12,
+      "r2": 0.01726147061310462
+    },
+    {
+      "name": "Remove tournament context",
+      "exclude": "tournament_context",
+      "features": 243,
+      "proper_nouns_sample": 14,
+      "r2": 0.01725614692225151
+    }
+  ],
+  "data_correlations": {
+    "num_contenders": 0.0164589811432455,
+    "has_defending_champ": -2.931064175331774e-17,
+    "has_rivalry": 0.06777411868585141,
+    "has_caddie": 0.1400510877080632,
+    "num_past_winners": -6.979554448841789e-18,
+    "num_leaderboard_names": -0.07075824070227474,
+    "field_strength": -0.008176066629859252
+  },
+  "proper_noun_analysis": {
+    "mean": 30.08753246753247,
+    "correlation_with_winning": 0.04433799442574777,
+    "winners_avg": 31.736363636363638,
+    "nonwinners_avg": 30.063636363636363
+  },
+  "key_finding": "Field dynamics and rich nominative context drive the 58-point R\u00b2 improvement"
+}

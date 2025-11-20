@@ -1,0 +1,52 @@
+{
+  "domain": "professional_poker",
+  "analysis_date": "2025-11-12T22:47:04.240596",
+  "pi": 0.835,
+  "sample_size": 12000,
+  "forces": {
+    "theta": {
+      "mean": 0.2562910146899855,
+      "std": 0.07677207234545502,
+      "min": 0.09345794392523364,
+      "max": 0.5714285714285714
+    },
+    "lambda": {
+      "mean": 0.5565966682995627,
+      "std": 0.10810091353760544,
+      "min": 0.1904761904761905,
+      "max": 0.972972972972973
+    },
+    "ta_marbuta": {
+      "mean": 0.7042384702567339,
+      "std": 0.05569587120358841,
+      "min": 0.5927835051546392,
+      "max": 0.9361233480176212
+    }
+  },
+  "performance": {
+    "correlation": 0.21692582966646137,
+    "r_squared": 0.047056815576482613,
+    "n_samples": 12000
+  },
+  "validation": {
+    "empirical_delta": 0.0724532271085981,
+    "theoretical_delta": -0.10864921273281425,
+    "difference": 0.18110243984141233,
+    "match": false
+  },
+  "key_findings": {
+    "theta_mean": 0.2562910146899855,
+    "lambda_mean": 0.5565966682995627,
+    "ta_marbuta_mean": 0.7042384702567339,
+    "correlation": 0.21692582966646137,
+    "r_squared": 0.047056815576482613,
+    "three_force_validates": false
+  },
+  "interpretation": {
+    "narrativity": "Very High (\u03c0 = 0.835)",
+    "awareness": "Moderate-high (\u03b8 = 0.256)",
+    "constraints": "High (\u03bb = 0.557)",
+    "nominatives": "Very rich (\u0629 = 0.704)",
+    "performance": "Moderate (R\u00b2 = 0.047)"
+  }
+}

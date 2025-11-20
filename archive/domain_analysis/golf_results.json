@@ -1,0 +1,12 @@
+{
+  "domain": "Golf",
+  "\u03c0": 0.7,
+  "tournaments": 110,
+  "basic_r": 0.0006338896611228547,
+  "optimized": {
+    "train_r2": 0.07608741274633805,
+    "test_r2": 0.001990694641592471,
+    "features": 108,
+    "selected": 50
+  }
+}

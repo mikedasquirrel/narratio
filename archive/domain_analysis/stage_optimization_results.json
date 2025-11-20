@@ -1,0 +1,50 @@
+{
+  "domain": "Startups",
+  "overall_efficiency": 0.29,
+  "paradox": "High r=0.980 but low overall efficiency",
+  "resolution": "\u03ba varies by stage - early high, late low",
+  "stages": [
+    {
+      "name": "Startups - Idea Stage (Pre-Product)",
+      "\u03ba": 0.8,
+      "\u0414": 0.6428800000000001,
+      "efficiency": 0.784,
+      "passes": true,
+      "improvement": 2.703448275862069
+    },
+    {
+      "name": "Startups - Seed Stage (MVP/Early Traction)",
+      "\u03ba": 0.6,
+      "\u0414": 0.45423,
+      "efficiency": 0.588,
+      "passes": true,
+      "improvement": 2.027586206896552
+    },
+    {
+      "name": "Startups - Series A (Product-Market Fit)",
+      "\u03ba": 0.4,
+      "\u0414": 0.27930000000000005,
+      "efficiency": 0.39200000000000007,
+      "passes": false,
+      "improvement": 1.3517241379310347
+    },
+    {
+      "name": "Startups - Growth Stage (Scaling)",
+      "\u03ba": 0.2,
+      "\u0414": 0.12065000000000002,
+      "efficiency": 0.19,
+      "passes": false,
+      "improvement": 0.6551724137931035
+    },
+    {
+      "name": "Startups - Late Stage (Post-Revenue)",
+      "\u03ba": 0.1,
+      "\u0414": 0.04927500000000001,
+      "efficiency": 0.09000000000000001,
+      "passes": false,
+      "improvement": 0.31034482758620696
+    }
+  ],
+  "passing_count": 2,
+  "interpretation": "Narrative matters in early stages, market in late stages"
+}

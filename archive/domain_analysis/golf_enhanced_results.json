@@ -1,0 +1,19 @@
+{
+  "domain": "Golf (ENHANCED)",
+  "\u03c0": 0.7,
+  "player_tournaments": 7700,
+  "features_extracted": 1044,
+  "basic_r": 0.08787233957393395,
+  "optimized": {
+    "train_r2": 0.9775965853251192,
+    "test_r2": 0.9769266243097419,
+    "features_selected": 300
+  },
+  "baseline_comparison": {
+    "baseline_features": 1044,
+    "baseline_r2": 0.39559407496394366,
+    "enhanced_features": 1044,
+    "enhanced_r2": 0.9769266243097419,
+    "improvement": 0.5813325493457981
+  }
+}

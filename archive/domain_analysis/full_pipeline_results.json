@@ -1,0 +1,31 @@
+{
+  "domain": "oscar",
+  "n_samples": 45,
+  "n_winners": 5,
+  "n_total_features": 255,
+  "auc_combined": 1.0,
+  "transformer_contributions": {
+    "universal_nominative": {
+      "n_features": 116,
+      "auc": 1.0
+    },
+    "hierarchical_nominative": {
+      "n_features": 41,
+      "auc": 1.0
+    },
+    "emotional": {
+      "n_features": 34,
+      "auc": 0.9025
+    },
+    "cultural": {
+      "n_features": 34,
+      "auc": 0.99
+    },
+    "authenticity": {
+      "n_features": 30,
+      "auc": 0.99
+    }
+  },
+  "baseline": 0.58,
+  "D": 0.42000000000000004
+}

@@ -1,0 +1,40 @@
+{
+  "structural_prediction": {
+    "predicted_alpha": 0.4,
+    "predicted_transformer": "ensemble",
+    "archetype": "Ensemble-Driven (group chemistry matters)",
+    "reasoning": "Small team \u2192 ensemble effects dominate"
+  },
+  "empirical_formula": {
+    "best_transformer": "statistical_tfidf",
+    "accuracy": 0.806638714185884,
+    "alpha": 1.0,
+    "all_results": {
+      "startup_specific": {
+        "accuracy": 0.7807826694619148,
+        "n_features": 45
+      },
+      "narrative_potential": {
+        "accuracy": 0.747099930118798,
+        "n_features": 35
+      },
+      "statistical_tfidf": {
+        "accuracy": 0.806638714185884,
+        "n_features": 50
+      }
+    }
+  },
+  "structural_validation": {
+    "alpha_error": 0.6,
+    "alpha_accurate": "False",
+    "transformer_matches": false,
+    "verdict": "\u2717 PREDICTION FAILED",
+    "score": 0.3
+  },
+  "better_stories_win": {
+    "correlation": 0.031403479930069374,
+    "r_squared": 0.00098617855171827,
+    "p_value": 0.6081028774136796,
+    "validates": "False"
+  }
+}

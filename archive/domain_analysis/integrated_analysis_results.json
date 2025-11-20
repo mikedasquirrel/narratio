@@ -1,0 +1,33 @@
+{
+  "house": {
+    "sample_size": 50000,
+    "n_thirteen": 3,
+    "skip_rate": 0.99922,
+    "mean_thirteen": 503666.6666666667,
+    "discount_dollars": 93237.72759698908,
+    "discount_percent": 15.620211292297087,
+    "observed_arch": 0.15620211292297087,
+    "t_statistic": -0.5252623732909556,
+    "p_value": 0.5994031395782694
+  },
+  "street": {
+    "unique_streets": 5,
+    "total_properties": 100000,
+    "valence_correlation": -0.9083988543303618,
+    "valence_r2": 0.8251884785486998,
+    "valence_pvalue": 0.03281906240974086
+  },
+  "framework": {
+    "pi": 0.92,
+    "lambda": 0.08,
+    "psi": 0.35,
+    "nu": 0.85,
+    "arch_predicted": 0.42,
+    "arch_observed": 0.15620211292297087,
+    "error": 0.2637978870770291,
+    "assessment": "FAIR",
+    "leverage": 0.16978490535105528,
+    "passes_threshold": false,
+    "us_market_impact_billions": 0.7272542752565175
+  }
+}

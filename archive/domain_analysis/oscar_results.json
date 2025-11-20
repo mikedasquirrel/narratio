@@ -1,0 +1,9 @@
+{
+  "domain": "oscars",
+  "n_films": 45,
+  "n_years": 5,
+  "r_narrative": -0.18775510384342448,
+  "r_baseline_estimate": 0.05,
+  "D_advantage": -0.23775510384342446,
+  "p_value": 0.21680215045023113
+}

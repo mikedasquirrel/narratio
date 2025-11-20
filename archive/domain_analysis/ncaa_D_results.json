@@ -1,0 +1,11 @@
+{
+  "domain": "ncaa",
+  "n_games": 998,
+  "narrativity": 0.45,
+  "coupling": 0.7,
+  "r_measured": -0.16178063498008402,
+  "p_value": 2.772148102413149e-07,
+  "D_agency": -0.05096090001872646,
+  "efficiency": -0.1132464444860588,
+  "passes_threshold": false
+}
