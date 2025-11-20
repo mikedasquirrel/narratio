@@ -29,6 +29,15 @@ data/movies_cleaned.json
 analysis/**/nhl_absolute_max_snapshot.json
 analysis/snapshots/**/*.json
 
+# Massive archive and historical files (>100MB)
+data/historical_odds_extra/*.json
+archive/data_domains_old/*_complete*.json
+archive/data_domains_old/tennis*.json
+archive/data_domains_old/nba_complete_with_players.json
+data/college_basketball_season/complete_seasons*.json
+data/college_basketball_season/season_with*.json
+data/domains/mlb_complete_dataset.json
+
 # Logs
 *.log
 logs/
