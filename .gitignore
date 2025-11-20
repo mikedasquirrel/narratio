@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+ENV/
+
+# Data files
+*.parquet
+*.pkl
+*.npz
+*.xz
+data/MovieSummaries/
+data/ml-latest-small/
+external/
+nba_data_repo/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+*.key
