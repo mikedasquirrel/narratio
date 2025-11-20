@@ -1,0 +1,13 @@
+{
+  "sport_key": "basketball_nba",
+  "friendly_name": "NBA",
+  "records": 6949,
+  "start_date": "2020-07-30T22:30:00+00:00",
+  "end_date": "2026-01-20T01:00:00+00:00",
+  "missing_market_counts": {
+    "h2h": 225,
+    "spreads": 15,
+    "totals": 2920
+  },
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/processed_odds/basketball_nba_normalized.jsonl"
+}

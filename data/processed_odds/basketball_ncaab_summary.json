@@ -1,0 +1,13 @@
+{
+  "sport_key": "basketball_ncaab",
+  "friendly_name": "NCAAB",
+  "records": 26166,
+  "start_date": "2020-11-25T16:00:00+00:00",
+  "end_date": "2025-11-20T04:00:00+00:00",
+  "missing_market_counts": {
+    "h2h": 778,
+    "spreads": 22,
+    "totals": 523
+  },
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/processed_odds/basketball_ncaab_normalized.jsonl"
+}

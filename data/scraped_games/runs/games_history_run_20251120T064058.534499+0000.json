@@ -1,0 +1,60 @@
+{
+  "run_timestamp": "2025-11-20T06:40:58.534499+00:00",
+  "label": null,
+  "stats": [
+    {
+      "sport_key": "basketball_nba",
+      "sport_label": "NBA",
+      "category": "major",
+      "requested_days": 2,
+      "processed_days": 2,
+      "new_games": 15,
+      "skipped_games": 0,
+      "earliest_commence": "2025-11-20T00:00:00Z",
+      "latest_commence": "2025-11-22T03:10:00Z",
+      "api_requests": 2,
+      "requests_remaining": "1380170",
+      "consecutive_empty_days": 0,
+      "cursor_start": "2025-11-20T06:40:48.380657+00:00",
+      "cursor_end": "2025-11-19T06:40:48.380657+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:40:58.534554+00:00, ingested_at=2025-11-20T06:40:58.534566+00:00",
+        "Completed requested day window."
+      ],
+      "timestamp": "2025-11-20T06:41:00.440396+00:00"
+    }
+  ],
+  "summary_snapshot": {
+    "sport_totals": {
+      "basketball_nba": {
+        "sport_label": "NBA",
+        "category": "major",
+        "records": 15,
+        "completed_runs": 1,
+        "last_updated": "2025-11-20T06:40:58.534499+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:40:58.534554+00:00, ingested_at=2025-11-20T06:40:58.534566+00:00",
+          "Completed requested day window."
+        ],
+        "requested_days": 2,
+        "latest_commence": "2025-11-22T03:10:00Z",
+        "earliest_commence": "2025-11-20T00:00:00Z"
+      }
+    },
+    "history_file": "data/scraped_games/games_history.jsonl",
+    "updated_at": "2025-11-20T06:40:58.534499+00:00",
+    "total_records": 15,
+    "existing_snapshots": [
+      {
+        "file": "data/scraped_games/games_20241118.json",
+        "date": "2024-11-18",
+        "total_games": 109,
+        "sports": [
+          "nhl",
+          "nfl",
+          "nba"
+        ]
+      }
+    ]
+  }
+}

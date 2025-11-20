@@ -1,0 +1,10 @@
+{
+  "sport": "Serie_A",
+  "sport_key": "soccer_italy_serie_a",
+  "start_date": "2025-11-18T21:14:31.267445",
+  "end_date": "2025-11-18T21:14:31.267445",
+  "days_scraped": 0,
+  "total_games": 0,
+  "total_requests": 1,
+  "games": []
+}

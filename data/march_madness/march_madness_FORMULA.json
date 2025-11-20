@@ -1,0 +1,126 @@
+{
+  "domain": "March Madness Basketball",
+  "alpha": 0.4977064220183486,
+  "classification": "Balanced",
+  "empirical_accuracy": 0.6537313432835821,
+  "narrative_accuracy": 0.6477611940298507,
+  "combined_accuracy": 0.6507462686567164,
+  "top_narrative_features": [
+    {
+      "rank": 1,
+      "feature": "Relational_3",
+      "transformer": "Relational",
+      "importance": 0.04888708504832623,
+      "weight": 0.04888708504832623
+    },
+    {
+      "rank": 2,
+      "feature": "text_plosive_avg",
+      "transformer": "text",
+      "importance": 0.04738727902950742,
+      "weight": 0.04738727902950742
+    },
+    {
+      "rank": 3,
+      "feature": "text_liquid_avg",
+      "transformer": "text",
+      "importance": 0.03923151153572059,
+      "weight": 0.03923151153572059
+    },
+    {
+      "rank": 4,
+      "feature": "Ensemble_8",
+      "transformer": "Ensemble",
+      "importance": 0.035535305806745764,
+      "weight": 0.035535305806745764
+    },
+    {
+      "rank": 5,
+      "feature": "Ensemble_20",
+      "transformer": "Ensemble",
+      "importance": 0.02303077162741717,
+      "weight": 0.02303077162741717
+    },
+    {
+      "rank": 6,
+      "feature": "alliteration",
+      "transformer": "Unknown",
+      "importance": 0.022283772362975046,
+      "weight": 0.022283772362975046
+    },
+    {
+      "rank": 7,
+      "feature": "text_fricative_avg",
+      "transformer": "text",
+      "importance": 0.022040721146910854,
+      "weight": 0.022040721146910854
+    },
+    {
+      "rank": 8,
+      "feature": "close_vowel_ratio",
+      "transformer": "close",
+      "importance": 0.02167127545389628,
+      "weight": 0.02167127545389628
+    },
+    {
+      "rank": 9,
+      "feature": "Relational_0",
+      "transformer": "Relational",
+      "importance": 0.021487701748421312,
+      "weight": 0.021487701748421312
+    },
+    {
+      "rank": 10,
+      "feature": "Ensemble_3",
+      "transformer": "Ensemble",
+      "importance": 0.020540945292761306,
+      "weight": 0.020540945292761306
+    },
+    {
+      "rank": 11,
+      "feature": "Relational_2",
+      "transformer": "Relational",
+      "importance": 0.019872785518825146,
+      "weight": 0.019872785518825146
+    },
+    {
+      "rank": 12,
+      "feature": "Relational_6",
+      "transformer": "Relational",
+      "importance": 0.01881137020564114,
+      "weight": 0.01881137020564114
+    },
+    {
+      "rank": 13,
+      "feature": "Ensemble_19",
+      "transformer": "Ensemble",
+      "importance": 0.017853595510652624,
+      "weight": 0.017853595510652624
+    },
+    {
+      "rank": 14,
+      "feature": "Ensemble_15",
+      "transformer": "Ensemble",
+      "importance": 0.017814446614125946,
+      "weight": 0.017814446614125946
+    },
+    {
+      "rank": 15,
+      "feature": "avg_word_length",
+      "transformer": "avg",
+      "importance": 0.017792969736288577,
+      "weight": 0.017792969736288577
+    }
+  ],
+  "empirical_coefficient": 0.6665674803203003,
+  "formula": "Success = 0.498 \u00d7 Narrative + 0.502 \u00d7 Seeding",
+  "best_transformer": "NamespaceEcology",
+  "dataset_size": 335,
+  "years": [
+    2024,
+    2023,
+    2022,
+    2021,
+    2019
+  ]
+}

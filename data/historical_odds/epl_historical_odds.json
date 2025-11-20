@@ -1,0 +1,10 @@
+{
+  "sport": "EPL",
+  "sport_key": "soccer_epl",
+  "start_date": "2025-11-18T21:14:30.574217",
+  "end_date": "2025-11-18T21:14:30.574217",
+  "days_scraped": 0,
+  "total_games": 0,
+  "total_requests": 1,
+  "games": []
+}

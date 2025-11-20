@@ -1,0 +1,11 @@
+{
+  "domain": "March Madness (Temporal Series)",
+  "n": 998,
+  "years": 15,
+  "alpha": 0.48445595854922285,
+  "methodology": "Temporal series with narrative gravity",
+  "temporal_decay": 0.95,
+  "narrative_accuracy": 0.6759036144578314,
+  "empirical_accuracy": 0.7192771084337348,
+  "formula": "Success = 0.484 \u00d7 Narrative(with_history) + 0.516 \u00d7 Seeding"
+}

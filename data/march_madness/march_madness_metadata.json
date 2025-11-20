@@ -1,0 +1,36 @@
+{
+  "collection_date": "2025-11-10T07:39:23.493541",
+  "tournaments_collected": 5,
+  "years_covered": [
+    2018,
+    2019,
+    2021,
+    2022,
+    2023
+  ],
+  "total_games": 5,
+  "narrative_levels": [
+    "team_seeding",
+    "game_context",
+    "upset_potential",
+    "cinderella_stories",
+    "elimination_stakes",
+    "historical_performance"
+  ],
+  "theoretical_frameworks": {
+    "phase_transitions": "Elimination as catastrophe points",
+    "narrative_momentum": "Hot team vs cold favorite dynamics",
+    "information_theory": "Upset entropy and predictability",
+    "network_science": "Bracket topology and path dependence",
+    "temporal_dynamics": "Round-by-round narrative amplification"
+  },
+  "stats": {
+    "tournaments_collected": 0,
+    "games_collected": 0,
+    "teams_collected": 0,
+    "upsets_identified": 0,
+    "cinderellas_identified": 0,
+    "start_time": "2025-11-10T07:39:21.808161",
+    "errors": []
+  }
+}

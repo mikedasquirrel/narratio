@@ -1,0 +1,13 @@
+{
+  "sport_key": "baseball_mlb",
+  "friendly_name": "MLB",
+  "records": 12971,
+  "start_date": "2020-07-18T22:05:00+00:00",
+  "end_date": "2025-11-02T00:10:13+00:00",
+  "missing_market_counts": {
+    "h2h": 4,
+    "spreads": 733,
+    "totals": 543
+  },
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/processed_odds/baseball_mlb_normalized.jsonl"
+}

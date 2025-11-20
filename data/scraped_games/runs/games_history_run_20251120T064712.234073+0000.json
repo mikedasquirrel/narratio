@@ -1,0 +1,249 @@
+{
+  "run_timestamp": "2025-11-20T06:47:12.234073+00:00",
+  "label": null,
+  "stats": [
+    {
+      "sport_key": "basketball_nba",
+      "sport_label": "NBA",
+      "category": "major",
+      "requested_days": 1020,
+      "processed_days": 30,
+      "new_games": 0,
+      "skipped_games": 1305,
+      "earliest_commence": null,
+      "latest_commence": null,
+      "api_requests": 30,
+      "requests_remaining": "1360430",
+      "consecutive_empty_days": 30,
+      "cursor_start": "2025-09-20T06:40:48.380657+00:00",
+      "cursor_end": "2025-08-22T06:40:48.380657+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:47:12.234115+00:00, ingested_at=2025-11-20T06:47:12.234128+00:00",
+        "Stopped due to consecutive empty day threshold."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182162+00:00"
+    },
+    {
+      "sport_key": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "category": "major",
+      "requested_days": 900,
+      "processed_days": 48,
+      "new_games": 125,
+      "skipped_games": 9360,
+      "earliest_commence": "2025-09-05T00:20:00Z",
+      "latest_commence": "2026-01-04T21:05:00Z",
+      "api_requests": 48,
+      "requests_remaining": "1357550",
+      "consecutive_empty_days": 30,
+      "cursor_start": "2025-09-21T06:41:31.102051+00:00",
+      "cursor_end": "2025-08-05T06:41:31.102051+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:47:42.325088+00:00, ingested_at=2025-11-20T06:47:42.325104+00:00",
+        "Stopped due to consecutive empty day threshold."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182224+00:00"
+    },
+    {
+      "sport_key": "icehockey_nhl",
+      "sport_label": "NHL",
+      "category": "major",
+      "requested_days": 1320,
+      "processed_days": 30,
+      "new_games": 0,
+      "skipped_games": 630,
+      "earliest_commence": null,
+      "latest_commence": null,
+      "api_requests": 30,
+      "requests_remaining": "1355750",
+      "consecutive_empty_days": 30,
+      "cursor_start": "2025-09-21T06:41:31.102051+00:00",
+      "cursor_end": "2025-08-23T06:41:31.102051+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:48:52.885725+00:00, ingested_at=2025-11-20T06:48:52.885738+00:00",
+        "Stopped due to consecutive empty day threshold."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182247+00:00"
+    },
+    {
+      "sport_key": "soccer_usa_mls",
+      "sport_label": "MLS",
+      "category": "major",
+      "requested_days": 1100,
+      "processed_days": 253,
+      "new_games": 466,
+      "skipped_games": 4652,
+      "earliest_commence": "2024-12-07T21:00:00Z",
+      "latest_commence": "2025-09-22T01:00:00Z",
+      "api_requests": 253,
+      "requests_remaining": "1340570",
+      "consecutive_empty_days": 30,
+      "cursor_start": "2025-09-21T06:41:31.102051+00:00",
+      "cursor_end": "2025-01-12T06:41:31.102051+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:49:14.966580+00:00, ingested_at=2025-11-20T06:49:14.966597+00:00",
+        "Stopped due to consecutive empty day threshold."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182269+00:00"
+    },
+    {
+      "sport_key": "mma_mixed_martial_arts",
+      "sport_label": "MMA",
+      "category": "niche",
+      "requested_days": 1460,
+      "processed_days": 1460,
+      "new_games": 5075,
+      "skipped_games": 76525,
+      "earliest_commence": "2021-10-23T17:30:00Z",
+      "latest_commence": "2026-01-01T04:00:00Z",
+      "api_requests": 1460,
+      "requests_remaining": "1252970",
+      "consecutive_empty_days": 0,
+      "cursor_start": "2025-10-21T06:41:31.102051+00:00",
+      "cursor_end": "2021-10-23T06:41:31.102051+00:00",
+      "notes": [
+        "Run started at 2025-11-20T06:53:39.840491+00:00, ingested_at=2025-11-20T06:53:39.840509+00:00",
+        "Completed requested day window."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182290+00:00"
+    },
+    {
+      "sport_key": "soccer_epl",
+      "sport_label": "EPL",
+      "category": "niche",
+      "requested_days": 1160,
+      "processed_days": 98,
+      "new_games": 81,
+      "skipped_games": 1581,
+      "earliest_commence": "2025-08-15T19:00:00Z",
+      "latest_commence": "2025-10-20T19:00:00Z",
+      "api_requests": 98,
+      "requests_remaining": "1247090",
+      "consecutive_empty_days": 30,
+      "cursor_start": "2025-10-21T06:41:31.102051+00:00",
+      "cursor_end": "2025-07-16T06:41:31.102051+00:00",
+      "notes": [
+        "Run started at 2025-11-20T07:14:05.638451+00:00, ingested_at=2025-11-20T07:14:05.638470+00:00",
+        "Stopped due to consecutive empty day threshold."
+      ],
+      "timestamp": "2025-11-20T07:16:56.182311+00:00"
+    }
+  ],
+  "summary_snapshot": {
+    "sport_totals": {
+      "basketball_nba": {
+        "sport_label": "NBA",
+        "category": "major",
+        "records": 245,
+        "completed_runs": 3,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:47:12.234115+00:00, ingested_at=2025-11-20T06:47:12.234128+00:00",
+          "Stopped due to consecutive empty day threshold."
+        ],
+        "requested_days": 1020,
+        "latest_commence": null,
+        "earliest_commence": null
+      },
+      "americanfootball_nfl": {
+        "sport_label": "NFL",
+        "category": "major",
+        "records": 272,
+        "completed_runs": 2,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:47:42.325088+00:00, ingested_at=2025-11-20T06:47:42.325104+00:00",
+          "Stopped due to consecutive empty day threshold."
+        ],
+        "requested_days": 900,
+        "latest_commence": "2026-01-04T21:05:00Z",
+        "earliest_commence": "2025-09-05T00:20:00Z"
+      },
+      "icehockey_nhl": {
+        "sport_label": "NHL",
+        "category": "major",
+        "records": 330,
+        "completed_runs": 2,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:48:52.885725+00:00, ingested_at=2025-11-20T06:48:52.885738+00:00",
+          "Stopped due to consecutive empty day threshold."
+        ],
+        "requested_days": 1320,
+        "latest_commence": null,
+        "earliest_commence": null
+      },
+      "soccer_usa_mls": {
+        "sport_label": "MLS",
+        "category": "major",
+        "records": 549,
+        "completed_runs": 2,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:49:14.966580+00:00, ingested_at=2025-11-20T06:49:14.966597+00:00",
+          "Stopped due to consecutive empty day threshold."
+        ],
+        "requested_days": 1100,
+        "latest_commence": "2025-09-22T01:00:00Z",
+        "earliest_commence": "2024-12-07T21:00:00Z"
+      },
+      "mma_mixed_martial_arts": {
+        "sport_label": "MMA",
+        "category": "niche",
+        "records": 5293,
+        "completed_runs": 2,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T06:53:39.840491+00:00, ingested_at=2025-11-20T06:53:39.840509+00:00",
+          "Completed requested day window."
+        ],
+        "requested_days": 1460,
+        "latest_commence": "2026-01-01T04:00:00Z",
+        "earliest_commence": "2021-10-23T17:30:00Z"
+      },
+      "soccer_epl": {
+        "sport_label": "EPL",
+        "category": "niche",
+        "records": 131,
+        "completed_runs": 2,
+        "last_updated": "2025-11-20T06:47:12.234073+00:00",
+        "last_run_notes": [
+          "Run started at 2025-11-20T07:14:05.638451+00:00, ingested_at=2025-11-20T07:14:05.638470+00:00",
+          "Stopped due to consecutive empty day threshold."
+        ],
+        "requested_days": 1160,
+        "latest_commence": "2025-10-20T19:00:00Z",
+        "earliest_commence": "2025-08-15T19:00:00Z"
+      }
+    },
+    "history_file": "data/scraped_games/games_history.jsonl",
+    "updated_at": "2025-11-20T06:47:12.234073+00:00",
+    "total_records": 6820,
+    "existing_snapshots": [
+      {
+        "file": "data/scraped_games/games_20241118.json",
+        "date": "2024-11-18",
+        "total_games": 109,
+        "sports": [
+          "nhl",
+          "nfl",
+          "nba"
+        ]
+      },
+      {
+        "file": "data/scraped_games/games_history_progress.json",
+        "date": null,
+        "total_games": null,
+        "sports": []
+      },
+      {
+        "file": "data/scraped_games/games_history_summary.json",
+        "date": null,
+        "total_games": null,
+        "sports": [
+          "existing_snapshots"
+        ]
+      }
+    ]
+  }
+}

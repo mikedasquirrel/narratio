@@ -1,0 +1,77 @@
+{
+  "scraped_date": "2025-11-18T21:14:31.764996",
+  "total_requests_used": 288,
+  "sports": {
+    "NHL": {
+      "games": 2943,
+      "days": 274,
+      "requests": 275
+    },
+    "NBA": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "NFL": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "MLB": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "EPL": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "UEFA_CL": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "UFC": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "Boxing": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "La_Liga": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "Bundesliga": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "Serie_A": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "Ligue_1": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "NCAAB": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    },
+    "NCAAF": {
+      "games": 0,
+      "days": 0,
+      "requests": 1
+    }
+  },
+  "total_games": 2943
+}

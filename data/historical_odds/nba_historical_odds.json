@@ -1,0 +1,10 @@
+{
+  "sport": "NBA",
+  "sport_key": "basketball_nba",
+  "start_date": "2025-11-18T21:14:30.188740",
+  "end_date": "2025-11-18T21:14:30.188740",
+  "days_scraped": 0,
+  "total_games": 0,
+  "total_requests": 1,
+  "games": []
+}

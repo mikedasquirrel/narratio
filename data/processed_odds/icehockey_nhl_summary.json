@@ -1,0 +1,13 @@
+{
+  "sport_key": "icehockey_nhl",
+  "friendly_name": "NHL",
+  "records": 7124,
+  "start_date": "2020-07-31T23:00:00+00:00",
+  "end_date": "2025-11-20T03:00:00+00:00",
+  "missing_market_counts": {
+    "h2h": 3,
+    "spreads": 467,
+    "totals": 361
+  },
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/processed_odds/icehockey_nhl_normalized.jsonl"
+}

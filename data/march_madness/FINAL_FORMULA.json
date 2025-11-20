@@ -1,0 +1,10 @@
+{
+  "domain": "March Madness",
+  "alpha": 0.4724220623501199,
+  "narrative_accuracy": 0.5880597014925374,
+  "empirical_accuracy": 0.6567164179104477,
+  "features": 468,
+  "games": 335,
+  "teams": 162,
+  "formula": "Success = 0.472 \u00d7 Narrative + 0.528 \u00d7 Seeding"
+}

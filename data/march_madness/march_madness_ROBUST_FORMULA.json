@@ -1,0 +1,19 @@
+{
+  "domain": "March Madness (MAXIMUM)",
+  "n": 998,
+  "years": 15,
+  "alpha": 0.47264022907935754,
+  "empirical_accuracy": 0.7143434343434344,
+  "narrative_accuracy": 0.6402222222222222,
+  "formula": "Success = 0.473 \u00d7 Narrative + 0.527 \u00d7 Seeding",
+  "dataset_comparison": {
+    "n_335": {
+      "alpha": 0.472,
+      "years": 5
+    },
+    "n_998": {
+      "alpha": 0.47264022907935754,
+      "years": 15
+    }
+  }
+}

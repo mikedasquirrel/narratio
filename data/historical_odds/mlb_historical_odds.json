@@ -1,0 +1,10 @@
+{
+  "sport": "MLB",
+  "sport_key": "baseball_mlb",
+  "start_date": "2025-11-18T21:14:30.445043",
+  "end_date": "2025-11-18T21:14:30.445043",
+  "days_scraped": 0,
+  "total_games": 0,
+  "total_requests": 1,
+  "games": []
+}

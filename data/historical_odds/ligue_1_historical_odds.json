@@ -1,0 +1,10 @@
+{
+  "sport": "Ligue_1",
+  "sport_key": "soccer_france_ligue_one",
+  "start_date": "2025-11-18T21:14:31.379497",
+  "end_date": "2025-11-18T21:14:31.379497",
+  "days_scraped": 0,
+  "total_games": 0,
+  "total_requests": 1,
+  "games": []
+}
