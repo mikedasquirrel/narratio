@@ -1,0 +1,7 @@
+{
+  "domain": "oscars",
+  "status": "failed",
+  "error": "Unexpected data format. Type: <class 'dict'>, Keys: dict_keys(['2024', '2023', '2022', '2021', '2020'])",
+  "duration_seconds": 0.0017330646514892578,
+  "completed_at": "2025-11-12T21:43:51.899661"
+}

@@ -1,0 +1,83 @@
+{
+  "domain": "lottery",
+  "optimized_at": "2025-11-12T21:45:21.872669",
+  "n_samples": 1000,
+  "n_features": 483,
+  "transformers": {
+    "nominative_analysis": {
+      "recommended_params": {
+        "n_semantic_fields": 10,
+        "include_phonetic": true
+      },
+      "rationale": "Balanced semantic field coverage with phonetic features"
+    },
+    "statistical": {
+      "recommended_params": {
+        "max_features": 1000,
+        "ngram_range": [
+          1,
+          2
+        ]
+      },
+      "rationale": "Standard TF-IDF with bigrams for context"
+    },
+    "ensemble": {
+      "recommended_params": {
+        "n_top_terms": 20,
+        "network_metrics": true
+      },
+      "rationale": "Medium term count with network effects"
+    },
+    "narrative_potential": {
+      "recommended_params": {
+        "track_modality": true,
+        "innovation_markers": true
+      },
+      "rationale": "Full feature set for growth orientation"
+    },
+    "relational": {
+      "recommended_params": {
+        "n_features": 50,
+        "complementarity_threshold": 0.3
+      },
+      "rationale": "Moderate feature count with standard threshold"
+    },
+    "phonetic": {
+      "recommended_params": {
+        "include_clusters": true,
+        "include_euphony": true
+      },
+      "rationale": "Complete phonetic analysis"
+    },
+    "emotional_resonance": {
+      "recommended_params": {
+        "sentiment_depth": "full",
+        "emotion_categories": 8
+      },
+      "rationale": "Comprehensive emotional analysis"
+    },
+    "information_theory": {
+      "recommended_params": {
+        "entropy_window": 5,
+        "complexity_metrics": true
+      },
+      "rationale": "Standard entropy analysis with complexity"
+    },
+    "gravitational_features": {
+      "recommended_params": {
+        "include_phi": true,
+        "include_alif": true
+      },
+      "rationale": "Full gravitational force analysis"
+    },
+    "linguistic_patterns": {
+      "recommended_params": {
+        "pos_depth": "full",
+        "syntax_analysis": true
+      },
+      "rationale": "Complete linguistic feature extraction"
+    }
+  },
+  "baseline_f1": 0.4882926479511386,
+  "baseline_std": 0.02747911180575842
+}

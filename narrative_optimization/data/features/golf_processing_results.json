@@ -1,0 +1,7 @@
+{
+  "domain": "golf",
+  "status": "failed",
+  "error": "Text field 'narrative' not found. Available fields: ['player_tournament_id', 'year', 'tournament_name', 'course_name', 'is_major', 'player_name', 'finish_position', 'total_score', 'to_par', 'rounds', 'made_cut', 'world_ranking_before', 'won_tournament', 'top_10_finish', 'top_3_finish', 'player_prestige', 'player_majors', 'course_difficulty']",
+  "duration_seconds": 0.03172183036804199,
+  "completed_at": "2025-11-12T20:20:27.547045"
+}

@@ -1,0 +1,141 @@
+{
+  "disorders": [
+    {
+      "name": "Schizophrenia",
+      "harshness": 72,
+      "plosives": 2,
+      "sibilants": 2,
+      "syllables": 5,
+      "stigma": 9.2,
+      "treatment_seeking": 0.42,
+      "mortality_per_100k": 280,
+      "funding_per_capita": 4200,
+      "category": "psychotic"
+    },
+    {
+      "name": "Major Depressive Disorder",
+      "harshness": 45,
+      "plosives": 2,
+      "sibilants": 1,
+      "syllables": 7,
+      "stigma": 5.8,
+      "treatment_seeking": 0.68,
+      "mortality_per_100k": 52,
+      "funding_per_capita": 280,
+      "category": "mood"
+    },
+    {
+      "name": "Borderline Personality Disorder",
+      "harshness": 58,
+      "plosives": 3,
+      "sibilants": 1,
+      "syllables": 9,
+      "stigma": 8.5,
+      "treatment_seeking": 0.38,
+      "mortality_per_100k": 180,
+      "funding_per_capita": 180,
+      "category": "personality"
+    },
+    {
+      "name": "Post-Traumatic Stress Disorder",
+      "harshness": 62,
+      "plosives": 4,
+      "sibilants": 2,
+      "syllables": 8,
+      "stigma": 5.8,
+      "treatment_seeking": 0.58,
+      "mortality_per_100k": 68,
+      "funding_per_capita": 1850,
+      "category": "anxiety",
+      "historical": {
+        "1918": {"name": "Shell Shock", "harshness": 78, "treatment_rate": 0.08, "funding": 50},
+        "1945": {"name": "Battle Fatigue", "harshness": 52, "treatment_rate": 0.15, "funding": 180},
+        "1980": {"name": "PTSD", "harshness": 62, "treatment_rate": 0.58, "funding": 2400}
+      }
+    },
+    {
+      "name": "Generalized Anxiety Disorder",
+      "harshness": 42,
+      "plosives": 2,
+      "sibilants": 1,
+      "syllables": 9,
+      "stigma": 4.2,
+      "treatment_seeking": 0.72,
+      "mortality_per_100k": 24,
+      "funding_per_capita": 195,
+      "category": "anxiety"
+    },
+    {
+      "name": "Bipolar Disorder",
+      "harshness": 55,
+      "plosives": 3,
+      "sibilants": 1,
+      "syllables": 6,
+      "stigma": 7.1,
+      "treatment_seeking": 0.52,
+      "mortality_per_100k": 142,
+      "funding_per_capita": 890,
+      "category": "mood",
+      "historical": {
+        "pre_1980": {"name": "Manic-Depressive Illness", "harshness": 62, "stigma": 8.4, "treatment_seeking": 0.44},
+        "post_1980": {"name": "Bipolar Disorder", "harshness": 55, "stigma": 7.1, "treatment_seeking": 0.52}
+      }
+    },
+    {
+      "name": "Obsessive-Compulsive Disorder",
+      "harshness": 52,
+      "plosives": 4,
+      "sibilants": 2,
+      "syllables": 9,
+      "stigma": 5.5,
+      "treatment_seeking": 0.64,
+      "mortality_per_100k": 38,
+      "funding_per_capita": 425,
+      "category": "anxiety"
+    },
+    {
+      "name": "Social Anxiety Disorder",
+      "harshness": 38,
+      "plosives": 2,
+      "sibilants": 3,
+      "syllables": 8,
+      "stigma": 3.8,
+      "treatment_seeking": 0.78,
+      "mortality_per_100k": 18,
+      "funding_per_capita": 142,
+      "category": "anxiety"
+    },
+    {
+      "name": "Panic Disorder",
+      "harshness": 48,
+      "plosives": 3,
+      "sibilants": 1,
+      "syllables": 5,
+      "stigma": 4.5,
+      "treatment_seeking": 0.74,
+      "mortality_per_100k": 28,
+      "funding_per_capita": 215,
+      "category": "anxiety"
+    },
+    {
+      "name": "Schizoaffective Disorder",
+      "harshness": 68,
+      "plosives": 2,
+      "sibilants": 2,
+      "syllables": 7,
+      "stigma": 8.8,
+      "treatment_seeking": 0.45,
+      "mortality_per_100k": 225,
+      "funding_per_capita": 3100,
+      "category": "psychotic"
+    }
+  ],
+  "metadata": {
+    "n_disorders": 10,
+    "harshness_range": [38, 72],
+    "stigma_range": [3.8, 9.2],
+    "predicted_correlation": 0.68,
+    "source": "Composite from DSM-5, WHO data, research literature"
+  }
+}
+

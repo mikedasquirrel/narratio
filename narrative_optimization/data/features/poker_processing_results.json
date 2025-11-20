@@ -1,0 +1,7 @@
+{
+  "domain": "poker",
+  "status": "failed",
+  "error": "Unexpected data format. Type: <class 'dict'>, Keys: dict_keys(['metadata', 'statistics', 'player_profiles', 'tournaments'])",
+  "duration_seconds": 0.1562488079071045,
+  "completed_at": "2025-11-12T23:52:16.441287"
+}

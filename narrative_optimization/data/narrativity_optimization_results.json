@@ -1,0 +1,305 @@
+{
+  "timestamp": "2025-11-12",
+  "method": "empirical_optimization",
+  "domains_optimized": 18,
+  "optimizations": [
+    {
+      "domain": "lottery",
+      "pi_current": 0.04,
+      "pi_optimized": 0.174,
+      "delta_pi": 0.13399999999999998,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.1,
+        "agency": 0.0,
+        "interpretive": 0.0,
+        "format": 0.1
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.0
+    },
+    {
+      "domain": "aviation",
+      "pi_current": 0.12,
+      "pi_optimized": 0.259,
+      "delta_pi": 0.139,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.1,
+        "agency": 0.6,
+        "interpretive": 0.0,
+        "format": 0.1
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.0
+    },
+    {
+      "domain": "hurricanes",
+      "pi_current": 0.3,
+      "pi_optimized": 0.34855,
+      "delta_pi": 0.04855000000000004,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.5,
+        "agency": 0.0,
+        "interpretive": 0.19,
+        "format": 0.5
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.19
+    },
+    {
+      "domain": "nba",
+      "pi_current": 0.49,
+      "pi_optimized": 0.489,
+      "delta_pi": -0.0010000000000000009,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.2,
+        "format": 0.5
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.2
+    },
+    {
+      "domain": "nfl",
+      "pi_current": 0.57,
+      "pi_optimized": 0.54475,
+      "delta_pi": -0.025249999999999995,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.6,
+        "agency": 0.7,
+        "interpretive": 0.25,
+        "format": 0.5
+      },
+      "theta": 0.5054186289610042,
+      "lambda": 0.5,
+      "r_observed": 0.25
+    },
+    {
+      "domain": "mental_health",
+      "pi_current": 0.55,
+      "pi_optimized": 0.519699598402941,
+      "delta_pi": -0.030300401597059046,
+      "components": {
+        "structural": 0.491550339320486,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.27,
+        "format": 0.5
+      },
+      "theta": 0.5169731303687136,
+      "lambda": 0.508449660679514,
+      "r_observed": 0.27
+    },
+    {
+      "domain": "movies",
+      "pi_current": 0.65,
+      "pi_optimized": 0.57905,
+      "delta_pi": -0.07095000000000007,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.29,
+        "format": 0.7
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.29
+    },
+    {
+      "domain": "oscars",
+      "pi_current": 0.75,
+      "pi_optimized": 0.6902499999999999,
+      "delta_pi": -0.05975000000000008,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.9,
+        "agency": 0.6,
+        "interpretive": 0.95,
+        "format": 0.95
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.95
+    },
+    {
+      "domain": "crypto",
+      "pi_current": 0.76,
+      "pi_optimized": 0.6427667600227307,
+      "delta_pi": -0.11723323997726931,
+      "components": {
+        "structural": 0.4948853793887261,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.65,
+        "format": 0.5
+      },
+      "theta": 0.5020192828731234,
+      "lambda": 0.5051146206112739,
+      "r_observed": 0.65
+    },
+    {
+      "domain": "startups",
+      "pi_current": 0.76,
+      "pi_optimized": 0.655936274319275,
+      "delta_pi": -0.10406372568072497,
+      "components": {
+        "structural": 0.49374577351474147,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.95,
+        "format": 0.5
+      },
+      "theta": 0.5021069273963464,
+      "lambda": 0.5062542264852585,
+      "r_observed": 0.98
+    },
+    {
+      "domain": "character",
+      "pi_current": 0.85,
+      "pi_optimized": 0.742875,
+      "delta_pi": -0.10712500000000003,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.9,
+        "agency": 0.95,
+        "interpretive": 0.725,
+        "format": 0.5
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.725
+    },
+    {
+      "domain": "tennis",
+      "pi_current": 0.75,
+      "pi_optimized": 0.6789421692904116,
+      "delta_pi": -0.07105783070958838,
+      "components": {
+        "structural": 0.46928334238072966,
+        "temporal": 0.6,
+        "agency": 1.0,
+        "interpretive": 0.93,
+        "format": 0.5
+      },
+      "theta": 0.5149394020339901,
+      "lambda": 0.5307166576192703,
+      "r_observed": 0.93
+    },
+    {
+      "domain": "ufc",
+      "pi_current": 0.722,
+      "pi_optimized": 0.5968266280449502,
+      "delta_pi": -0.12517337195504974,
+      "components": {
+        "structural": 0.45578147601706986,
+        "temporal": 0.6,
+        "agency": 0.6,
+        "interpretive": 0.17,
+        "format": 0.5
+      },
+      "theta": 0.5350223229628357,
+      "lambda": 0.5442185239829301,
+      "r_observed": 0.17
+    },
+    {
+      "domain": "golf",
+      "pi_current": 0.7,
+      "pi_optimized": 0.6088204596332243,
+      "delta_pi": -0.09117954036677567,
+      "components": {
+        "structural": 0.31058779183870444,
+        "temporal": 0.6,
+        "agency": 1.0,
+        "interpretive": 0.95,
+        "format": 0.5
+      },
+      "theta": 0.5726051258858009,
+      "lambda": 0.6894122081612956,
+      "r_observed": 0.988
+    },
+    {
+      "domain": "music",
+      "pi_current": 0.702,
+      "pi_optimized": 0.6001,
+      "delta_pi": -0.10189999999999999,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.18,
+        "format": 0.7
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.18
+    },
+    {
+      "domain": "housing",
+      "pi_current": 0.92,
+      "pi_optimized": 0.713,
+      "delta_pi": -0.20700000000000007,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.4,
+        "format": 0.5
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.4
+    },
+    {
+      "domain": "self_rated",
+      "pi_current": 0.95,
+      "pi_optimized": 0.7869799999999999,
+      "delta_pi": -0.16302000000000005,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.9,
+        "agency": 0.95,
+        "interpretive": 0.594,
+        "format": 0.5
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.594
+    },
+    {
+      "domain": "wwe",
+      "pi_current": 0.974,
+      "pi_optimized": 0.7775,
+      "delta_pi": -0.1965,
+      "components": {
+        "structural": 0.5,
+        "temporal": 0.9,
+        "agency": 0.6,
+        "interpretive": 0.4,
+        "format": 0.95
+      },
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r_observed": 0.4
+    }
+  ],
+  "summary": {
+    "large_adjustments": 10,
+    "moderate_adjustments": 4,
+    "well_calibrated": 4
+  },
+  "correlations": {
+    "pi_r": 0.6014596600720692,
+    "pi_theta": 0.08631678395191361,
+    "pi_lambda": 0.09120431530198331
+  }
+}

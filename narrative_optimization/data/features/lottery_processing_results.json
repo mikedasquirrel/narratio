@@ -1,0 +1,293 @@
+{
+  "domain": "lottery",
+  "status": "success",
+  "pi": 0.04,
+  "sample_size": 1000,
+  "transformers_completed": 17,
+  "transformers_failed": 20,
+  "total_features": 483,
+  "duration_seconds": 15.641294956207275,
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/data/features/lottery_all_features.npz",
+  "transformer_stats": [
+    {
+      "name": "nominative_analysis",
+      "category": "core",
+      "status": "success",
+      "features": 51,
+      "time_seconds": 1.9272661209106445
+    },
+    {
+      "name": "self_perception",
+      "category": "core",
+      "status": "success",
+      "features": 21,
+      "time_seconds": 1.3318781852722168
+    },
+    {
+      "name": "narrative_potential",
+      "category": "core",
+      "status": "success",
+      "features": 35,
+      "time_seconds": 1.5695507526397705
+    },
+    {
+      "name": "linguistic_patterns",
+      "category": "core",
+      "status": "success",
+      "features": 36,
+      "time_seconds": 3.0436673164367676
+    },
+    {
+      "name": "relational_value",
+      "category": "core",
+      "status": "success",
+      "features": 17,
+      "time_seconds": 2.721874952316284
+    },
+    {
+      "name": "ensemble_narrative",
+      "category": "core",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 0.27590298652648926
+    },
+    {
+      "name": "statistical",
+      "category": "statistical",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "sparse array length is ambiguous; use getnnz() or shape[0]"
+    },
+    {
+      "name": "phonetic",
+      "category": "nominative",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "social_status",
+      "category": "nominative",
+      "status": "success",
+      "features": 20,
+      "time_seconds": 0.6898596286773682
+    },
+    {
+      "name": "nominative_richness",
+      "category": "nominative",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "expected string or bytes-like object"
+    },
+    {
+      "name": "emotional_resonance",
+      "category": "narrative_semantic",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "authenticity",
+      "category": "narrative_semantic",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "conflict_tension",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 28,
+      "time_seconds": 0.48234105110168457
+    },
+    {
+      "name": "expertise_authority",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 32,
+      "time_seconds": 1.6854519844055176
+    },
+    {
+      "name": "cultural_context",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 34,
+      "time_seconds": 0.5600972175598145
+    },
+    {
+      "name": "suspense_mystery",
+      "category": "narrative_semantic",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "optics",
+      "category": "structural",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "framing",
+      "category": "structural",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 0.619002103805542
+    },
+    {
+      "name": "temporal_evolution",
+      "category": "contextual",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "information_theory",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "namespace_ecology",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "list index out of range"
+    },
+    {
+      "name": "anticipatory_communication",
+      "category": "advanced",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 0.2752211093902588
+    },
+    {
+      "name": "cognitive_fluency",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "quantitative",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "discoverability",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "visual_multimodal",
+      "category": "multimodal",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "crossmodal",
+      "category": "multimodal",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "audio",
+      "category": "multimodal",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "local variable 'X' referenced before assignment"
+    },
+    {
+      "name": "crosslingual",
+      "category": "multimodal",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "multi_scale",
+      "category": "fractal",
+      "status": "success",
+      "features": 40,
+      "time_seconds": 0.010394096374511719
+    },
+    {
+      "name": "multi_perspective",
+      "category": "fractal",
+      "status": "success",
+      "features": 50,
+      "time_seconds": 0.005747079849243164
+    },
+    {
+      "name": "scale_interaction",
+      "category": "fractal",
+      "status": "success",
+      "features": 30,
+      "time_seconds": 0.003445863723754883
+    },
+    {
+      "name": "coupling_strength",
+      "category": "theory_aligned",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'split'"
+    },
+    {
+      "name": "narrative_mass",
+      "category": "theory_aligned",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'split'"
+    },
+    {
+      "name": "gravitational_features",
+      "category": "theory_aligned",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "'dict' object has no attribute 'lower'"
+    },
+    {
+      "name": "awareness_resistance",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 15,
+      "time_seconds": 0.0008070468902587891
+    },
+    {
+      "name": "fundamental_constraints",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 0.0006561279296875
+    }
+  ],
+  "completed_at": "2025-11-12T20:13:08.482986"
+}

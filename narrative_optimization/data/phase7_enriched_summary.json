@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-12",
+  "method": "enriched_patterns",
+  "domains_reextracted": 3,
+  "results": [
+    {
+      "domain": "golf_enhanced_narratives",
+      "display_name": "Golf Enhanced",
+      "samples": 1000,
+      "theta_mean": 0.5714875342193851,
+      "theta_std": 0.02763524189958569,
+      "theta_range": 0.11186032394363665,
+      "lambda_mean": 0.6844239324237369,
+      "lambda_std": 0.037100300248237995,
+      "lambda_range": 0.15762114557947404
+    },
+    {
+      "domain": "tennisset",
+      "display_name": "Tennis",
+      "samples": 1000,
+      "theta_mean": 0.5468980525753013,
+      "theta_std": 0.05520340828552152,
+      "theta_range": 0.18771830920639299,
+      "lambda_mean": 0.5448835558964845,
+      "lambda_std": 0.09380378491818749,
+      "lambda_range": 0.33087436186498476
+    },
+    {
+      "domain": "mental_health",
+      "display_name": "Mental Health",
+      "samples": 200,
+      "theta_mean": 0.5169731303687136,
+      "theta_std": 0.08064228413339422,
+      "theta_range": 0.49330714907571527,
+      "lambda_mean": 0.508449660679514,
+      "lambda_std": 0.05951206781867927,
+      "lambda_range": 0.49330714907571527
+    }
+  ],
+  "average_theta_std": 0.054493644772833805,
+  "average_lambda_std": 0.06347205099503492
+}

@@ -1,0 +1,7 @@
+{
+  "domain": "startups",
+  "status": "failed",
+  "error": "Text field 'narrative' not found. Available fields: ['company_id', 'name', 'yc_batch', 'description_short', 'description_long', 'founders', 'founder_count', 'founding_team_narrative', 'market_category', 'total_funding_usd', 'last_valuation_usd', 'exit_type', 'ipo_date', 'years_active', 'successful', 'data_sources', 'collected_date']",
+  "duration_seconds": 0.0008909702301025391,
+  "completed_at": "2025-11-12T21:43:51.898936"
+}

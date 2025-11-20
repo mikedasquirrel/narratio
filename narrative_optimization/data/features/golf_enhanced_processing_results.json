@@ -1,0 +1,7 @@
+{
+  "domain": "golf_enhanced",
+  "status": "failed",
+  "error": "Text field 'narrative_enhanced' not found. Available fields: ['player_tournament_id', 'year', 'tournament_name', 'course_name', 'is_major', 'player_name', 'finish_position', 'total_score', 'to_par', 'rounds', 'made_cut', 'world_ranking_before', 'won_tournament', 'top_10_finish', 'top_3_finish', 'player_prestige', 'player_majors', 'course_difficulty', 'leaderboard_top_10', 'tournament_leader', 'tournament_runner_up', 'contenders_within_3', 'tied_players', 'one_shot_ahead', 'one_shot_behind', 'defending_champion', 'past_winners_3yr', 'rivalry_player_in_field', 'cut_line_score', 'winning_score', 'field_strength', 'signature_holes', 'course_architect', 'famous_moments', 'course_record_round', 'course_playing_style', 'course_main_challenge', 'caddie_name', 'nationality', 'recent_tournaments']",
+  "duration_seconds": 0.11268806457519531,
+  "completed_at": "2025-11-12T20:20:28.706438"
+}

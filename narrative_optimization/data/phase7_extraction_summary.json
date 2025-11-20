@@ -1,0 +1,402 @@
+{
+  "timestamp": "now",
+  "domains_processed": 44,
+  "results": [
+    {
+      "domain": "tennisset",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/tennis_complete_dataset.json",
+      "samples": 5000,
+      "theta_mean": 0.5149394020339901,
+      "theta_std": 0.03351307952460967,
+      "lambda_mean": 0.5307166576192703,
+      "lambda_std": 0.06101630130631404
+    },
+    {
+      "domain": "mlbset",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/mlb_complete_dataset.json",
+      "samples": 5000,
+      "theta_mean": 0.5055678758646445,
+      "theta_std": 0.01288054192251742,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_all_seasons_real",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_all_seasons_real.json",
+      "samples": 5000,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_games_with_nominative",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_games_with_nominative.json",
+      "samples": 5000,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "train_games_real",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/train_games_real.json",
+      "samples": 5000,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "golf_with_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/golf_with_narratives.json",
+      "samples": 5000,
+      "theta_mean": 0.6017969560570082,
+      "theta_std": 0.06704770413085773,
+      "lambda_mean": 0.5668543529441604,
+      "lambda_std": 0.09110684337941279
+    },
+    {
+      "domain": "golf_enhanced_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/golf_enhanced_narratives.json",
+      "samples": 5000,
+      "theta_mean": 0.5726051258858009,
+      "theta_std": 0.028096532116512713,
+      "lambda_mean": 0.6894122081612956,
+      "lambda_std": 0.041008385048347
+    },
+    {
+      "domain": "ufc_with_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/ufc_with_narratives.json",
+      "samples": 5000,
+      "theta_mean": 0.5350223229628357,
+      "theta_std": 0.02709402991441445,
+      "lambda_mean": 0.5442185239829301,
+      "lambda_std": 0.06364692840040381
+    },
+    {
+      "domain": "crypto_with_competitive_context",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/crypto_with_competitive_context.json",
+      "samples": 3514,
+      "theta_mean": 0.5020192828731234,
+      "theta_std": 0.031143470780754835,
+      "lambda_mean": 0.5051146206112739,
+      "lambda_std": 0.04874702789130331
+    },
+    {
+      "domain": "nflset",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nfl_complete_dataset.json",
+      "samples": 3010,
+      "theta_mean": 0.5054186289610042,
+      "theta_std": 0.008807154353254128,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nfl_situational_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nfl_situational_narratives.json",
+      "samples": 3010,
+      "theta_mean": 0.5054186289610042,
+      "theta_std": 0.008807154353254128,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2023_24",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2023_24.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "test_games_real",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/test_games_real.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2017_18",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2017_18.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2021_22",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2021_22.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_real_2023_24",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_real_2023_24.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2014_15",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2014_15.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2022_23",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2022_23.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2015_16",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2015_16.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2018_19",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2018_19.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2016_17",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2016_17.json",
+      "samples": 1230,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2020_21",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2020_21.json",
+      "samples": 1080,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "nba_2019_20",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_2019_20.json",
+      "samples": 1059,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "coin_flips_benchmark",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/coin_flips_benchmark.json",
+      "samples": 1000,
+      "theta_mean": 0.5184800665655617,
+      "theta_std": 0.014130723155977307,
+      "lambda_mean": 0.5980134663925306,
+      "lambda_std": 0.06809913916683448
+    },
+    {
+      "domain": "nba_enriched_1000",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/nba_enriched_1000.json",
+      "samples": 1000,
+      "theta_mean": 0.5528855409349869,
+      "theta_std": 0.05428714303679169,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "math_problems_benchmark",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/math_problems_benchmark.json",
+      "samples": 500,
+      "theta_mean": 0.5533912674256275,
+      "theta_std": 0.052819424051095416,
+      "lambda_mean": 0.6509384360354123,
+      "lambda_std": 0.04445270797555118
+    },
+    {
+      "domain": "airports_with_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/aviation/airports_with_narratives.json",
+      "samples": 500,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.553766800788775,
+      "lambda_std": 0.05576769565032203
+    },
+    {
+      "domain": "startups_real",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/startups_real_data.json",
+      "samples": 474,
+      "theta_mean": 0.5021069273963464,
+      "theta_std": 0.03236725730049567,
+      "lambda_mean": 0.5062542264852585,
+      "lambda_std": 0.055254483934450704
+    },
+    {
+      "domain": "startups_largeset",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/startups_large_dataset.json",
+      "samples": 474,
+      "theta_mean": 0.5021069273963464,
+      "theta_std": 0.03236725730049567,
+      "lambda_mean": 0.5062542264852585,
+      "lambda_std": 0.055254483934450704
+    },
+    {
+      "domain": "crypto_enriched_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/crypto_enriched_narratives.json",
+      "samples": 300,
+      "theta_mean": 0.5016665153404377,
+      "theta_std": 0.028816744101204415,
+      "lambda_mean": 0.507776402608648,
+      "lambda_std": 0.06000734538443089
+    },
+    {
+      "domain": "ai_humor_benchmark",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/ai_humor_benchmark.json",
+      "samples": 300,
+      "theta_mean": 0.5166748897980188,
+      "theta_std": 0.02134419895841287,
+      "lambda_mean": 0.5837274354844011,
+      "lambda_std": 0.010101444766045594
+    },
+    {
+      "domain": "mental_health",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/mental_health_complete_200_disorders.json",
+      "samples": 200,
+      "theta_mean": 0.5169731303687136,
+      "theta_std": 0.08064228413339422,
+      "lambda_mean": 0.508449660679514,
+      "lambda_std": 0.05951206781867927
+    },
+    {
+      "domain": "airlines_with_narratives",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/aviation/airlines_with_narratives.json",
+      "samples": 198,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.500638136096194,
+      "lambda_std": 0.006589462687497974
+    },
+    {
+      "domain": "disorders_with_automated",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/disorders_with_automated_data.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "integrated_disorders",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/integrated_disorders_complete.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "REAL_DATA_FOR_ANALYSIS",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/REAL_DATA_FOR_ANALYSIS.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "disorders_with_automated",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/disorders_with_automated_data.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "integrated_disorders",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/integrated_disorders_complete.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "REAL_DATA_FOR_ANALYSIS",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/domains/mental_health/data/REAL_DATA_FOR_ANALYSIS.json",
+      "samples": 56,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.507768407694131,
+      "lambda_std": 0.057612053388356635
+    },
+    {
+      "domain": "crypto_with_real_descriptions",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/crypto_with_real_descriptions.json",
+      "samples": 19,
+      "theta_mean": 0.5597262510689919,
+      "theta_std": 0.09372343624604157,
+      "lambda_mean": 0.5754693944378017,
+      "lambda_std": 0.06674210030697213
+    },
+    {
+      "domain": "startups_verified",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/startups_verified.json",
+      "samples": 12,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5,
+      "lambda_std": 0.0
+    },
+    {
+      "domain": "media_narratives_recent",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/college_basketball_season/media_narratives_recent.json",
+      "samples": 10,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5670215391325096,
+      "lambda_std": 0.134124164341414
+    },
+    {
+      "domain": "startups_initial",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/startups_initial.json",
+      "samples": 7,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5371732473282019,
+      "lambda_std": 0.09105548803637292
+    },
+    {
+      "domain": "startups_template",
+      "file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/data/domains/startups_template.json",
+      "samples": 7,
+      "theta_mean": 0.5,
+      "theta_std": 0.0,
+      "lambda_mean": 0.5371732473282019,
+      "lambda_std": 0.09105548803637292
+    }
+  ]
+}

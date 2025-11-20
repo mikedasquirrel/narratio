@@ -1,0 +1,184 @@
+{
+  "timestamp": "2025-11-12",
+  "method": "dimensional_analysis",
+  "benchmark": {
+    "domain": "golf",
+    "components": {
+      "structural": 0.4,
+      "temporal": 0.75,
+      "agency": 1.0,
+      "interpretive": 0.7,
+      "format": 0.65
+    },
+    "pi": 0.7,
+    "performance": {
+      "r": 0.988,
+      "r2": 0.977
+    },
+    "forces": {
+      "theta": 0.573,
+      "lambda": 0.689
+    }
+  },
+  "optimizations": [
+    {
+      "domain": "nba",
+      "pi_current": 0.49,
+      "pi_optimized": 0.5130000000000001,
+      "delta_pi": 0.02300000000000013,
+      "components": {
+        "structural": 0.6,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.22000000000000003,
+        "format": 0.5
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5,
+      "lambda": 0.5,
+      "r": 0.2
+    },
+    {
+      "domain": "nfl",
+      "pi_current": 0.57,
+      "pi_optimized": 0.5862499999999999,
+      "delta_pi": 0.016249999999999987,
+      "components": {
+        "structural": 0.6,
+        "temporal": 0.65,
+        "agency": 0.7,
+        "interpretive": 0.275,
+        "format": 0.6
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5054186289610042,
+      "lambda": 0.5,
+      "r": 0.25
+    },
+    {
+      "domain": "mental_health",
+      "pi_current": 0.55,
+      "pi_optimized": 0.5550220814369166,
+      "delta_pi": 0.0050220814369165145,
+      "components": {
+        "structural": 0.5932402714563887,
+        "temporal": 0.6,
+        "agency": 0.65,
+        "interpretive": 0.29700000000000004,
+        "format": 0.5
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5169731303687136,
+      "lambda": 0.508449660679514,
+      "r": 0.27
+    },
+    {
+      "domain": "tennis",
+      "pi_current": 0.75,
+      "pi_optimized": 0.7551280021713751,
+      "delta_pi": 0.005128002171375101,
+      "components": {
+        "structural": 0.5754266739045837,
+        "temporal": 0.65,
+        "agency": 1.0,
+        "interpretive": 0.95,
+        "format": 0.6
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5149394020339901,
+      "lambda": 0.5307166576192703,
+      "r": 0.93
+    },
+    {
+      "domain": "golf",
+      "pi_current": 0.7,
+      "pi_optimized": 0.717041070041289,
+      "delta_pi": 0.017041070041289075,
+      "components": {
+        "structural": 0.4484702334709635,
+        "temporal": 0.65,
+        "agency": 1.0,
+        "interpretive": 0.95,
+        "format": 0.6
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5726051258858009,
+      "lambda": 0.6894122081612956,
+      "r": 0.988
+    },
+    {
+      "domain": "ufc",
+      "pi_current": 0.722,
+      "pi_optimized": 0.5074375542440968,
+      "delta_pi": -0.21456244575590322,
+      "components": {
+        "structural": 0.5646251808136559,
+        "temporal": 0.5,
+        "agency": 0.6,
+        "interpretive": 0.18700000000000003,
+        "format": 0.6
+      },
+      "status": "\u26a0\ufe0f  Review needed",
+      "theta": 0.5350223229628357,
+      "lambda": 0.5442185239829301,
+      "r": 0.17
+    },
+    {
+      "domain": "crypto",
+      "pi_current": 0.76,
+      "pi_optimized": 0.5985224910532942,
+      "delta_pi": -0.16147750894670576,
+      "components": {
+        "structural": 0.5959083035109809,
+        "temporal": 0.5,
+        "agency": 0.65,
+        "interpretive": 0.7150000000000001,
+        "format": 0.5
+      },
+      "status": "\u26a0\ufe0f  Review needed",
+      "theta": 0.5020192828731234,
+      "lambda": 0.5051146206112739,
+      "r": 0.65
+    },
+    {
+      "domain": "startups",
+      "pi_current": 0.76,
+      "pi_optimized": 0.6534989856435379,
+      "delta_pi": -0.10650101435646209,
+      "components": {
+        "structural": 0.5949966188117932,
+        "temporal": 0.6,
+        "agency": 0.65,
+        "interpretive": 0.95,
+        "format": 0.5
+      },
+      "status": "\u26a0\ufe0f  Review needed",
+      "theta": 0.5021069273963464,
+      "lambda": 0.5062542264852585,
+      "r": 0.98
+    },
+    {
+      "domain": "mlb",
+      "pi_current": 0.55,
+      "pi_optimized": 0.5862499999999999,
+      "delta_pi": 0.03624999999999989,
+      "components": {
+        "structural": 0.6,
+        "temporal": 0.65,
+        "agency": 0.7,
+        "interpretive": 0.275,
+        "format": 0.6
+      },
+      "status": "\u2713 Well calibrated",
+      "theta": 0.5055678758646445,
+      "lambda": 0.5,
+      "r": 0.25
+    }
+  ],
+  "patterns": {
+    "agency": "Individual = 1.00, Team = 0.70",
+    "temporal": "Multi-day = 0.75+, Single event = 0.60-0.65",
+    "structural_lambda": "Inverse relationship (r \u2248 -1)",
+    "interpretive_r": "Positive relationship (high r \u2192 high interpretive)"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "domain": "ufc",
+  "status": "success",
+  "pi": 0.722,
+  "sample_size": 5500,
+  "transformers_completed": 34,
+  "transformers_failed": 3,
+  "total_features": 898,
+  "duration_seconds": 202.04958605766296,
+  "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/data/features/ufc_all_features.npz",
+  "transformer_stats": [
+    {
+      "name": "nominative_analysis",
+      "category": "core",
+      "status": "success",
+      "features": 51,
+      "time_seconds": 6.040066719055176
+    },
+    {
+      "name": "self_perception",
+      "category": "core",
+      "status": "success",
+      "features": 21,
+      "time_seconds": 3.0932750701904297
+    },
+    {
+      "name": "narrative_potential",
+      "category": "core",
+      "status": "success",
+      "features": 35,
+      "time_seconds": 3.601410150527954
+    },
+    {
+      "name": "linguistic_patterns",
+      "category": "core",
+      "status": "success",
+      "features": 36,
+      "time_seconds": 10.289358139038086
+    },
+    {
+      "name": "relational_value",
+      "category": "core",
+      "status": "success",
+      "features": 17,
+      "time_seconds": 36.45541787147522
+    },
+    {
+      "name": "ensemble_narrative",
+      "category": "core",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 1.2686131000518799
+    },
+    {
+      "name": "statistical",
+      "category": "statistical",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "sparse array length is ambiguous; use getnnz() or shape[0]"
+    },
+    {
+      "name": "phonetic",
+      "category": "nominative",
+      "status": "success",
+      "features": 91,
+      "time_seconds": 2.7513821125030518
+    },
+    {
+      "name": "social_status",
+      "category": "nominative",
+      "status": "success",
+      "features": 20,
+      "time_seconds": 2.070307970046997
+    },
+    {
+      "name": "nominative_richness",
+      "category": "nominative",
+      "status": "success",
+      "features": 15,
+      "time_seconds": 5.229893207550049
+    },
+    {
+      "name": "emotional_resonance",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 34,
+      "time_seconds": 4.903895139694214
+    },
+    {
+      "name": "authenticity",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 30,
+      "time_seconds": 3.308734178543091
+    },
+    {
+      "name": "conflict_tension",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 28,
+      "time_seconds": 2.959578037261963
+    },
+    {
+      "name": "expertise_authority",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 32,
+      "time_seconds": 5.2340240478515625
+    },
+    {
+      "name": "cultural_context",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 34,
+      "time_seconds": 2.8719401359558105
+    },
+    {
+      "name": "suspense_mystery",
+      "category": "narrative_semantic",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 2.0018811225891113
+    },
+    {
+      "name": "optics",
+      "category": "structural",
+      "status": "success",
+      "features": 15,
+      "time_seconds": 1.9561221599578857
+    },
+    {
+      "name": "framing",
+      "category": "structural",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 1.9530341625213623
+    },
+    {
+      "name": "temporal_evolution",
+      "category": "contextual",
+      "status": "success",
+      "features": 30,
+      "time_seconds": 1.5695080757141113
+    },
+    {
+      "name": "information_theory",
+      "category": "advanced",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 2.0971009731292725
+    },
+    {
+      "name": "namespace_ecology",
+      "category": "advanced",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "list index out of range"
+    },
+    {
+      "name": "anticipatory_communication",
+      "category": "advanced",
+      "status": "success",
+      "features": 25,
+      "time_seconds": 1.5450327396392822
+    },
+    {
+      "name": "cognitive_fluency",
+      "category": "advanced",
+      "status": "success",
+      "features": 15,
+      "time_seconds": 0.18254899978637695
+    },
+    {
+      "name": "quantitative",
+      "category": "advanced",
+      "status": "success",
+      "features": 10,
+      "time_seconds": 0.7296099662780762
+    },
+    {
+      "name": "discoverability",
+      "category": "advanced",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 0.8375608921051025
+    },
+    {
+      "name": "visual_multimodal",
+      "category": "multimodal",
+      "status": "success",
+      "features": 39,
+      "time_seconds": 2.814973831176758
+    },
+    {
+      "name": "crossmodal",
+      "category": "multimodal",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 0.2944297790527344
+    },
+    {
+      "name": "audio",
+      "category": "multimodal",
+      "status": "failed",
+      "features": 0,
+      "time_seconds": 0,
+      "error": "local variable 'X' referenced before assignment"
+    },
+    {
+      "name": "crosslingual",
+      "category": "multimodal",
+      "status": "success",
+      "features": 20,
+      "time_seconds": 0.1709730625152588
+    },
+    {
+      "name": "multi_scale",
+      "category": "fractal",
+      "status": "success",
+      "features": 40,
+      "time_seconds": 0.2606089115142822
+    },
+    {
+      "name": "multi_perspective",
+      "category": "fractal",
+      "status": "success",
+      "features": 50,
+      "time_seconds": 0.3800530433654785
+    },
+    {
+      "name": "scale_interaction",
+      "category": "fractal",
+      "status": "success",
+      "features": 30,
+      "time_seconds": 0.0547490119934082
+    },
+    {
+      "name": "coupling_strength",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 9.166115045547485
+    },
+    {
+      "name": "narrative_mass",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 10,
+      "time_seconds": 17.41036295890808
+    },
+    {
+      "name": "gravitational_features",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 20,
+      "time_seconds": 6.432165145874023
+    },
+    {
+      "name": "awareness_resistance",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 15,
+      "time_seconds": 31.98080801963806
+    },
+    {
+      "name": "fundamental_constraints",
+      "category": "theory_aligned",
+      "status": "success",
+      "features": 12,
+      "time_seconds": 28.21199679374695
+    }
+  ],
+  "completed_at": "2025-11-12T20:24:17.817559"
+}

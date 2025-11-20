@@ -1,0 +1,7 @@
+{
+  "domain": "music",
+  "status": "failed",
+  "error": "Unexpected data format. Type: <class 'dict'>, Keys: dict_keys(['collected_at', 'total_songs', 'genres', 'data_type', 'note', 'songs'])",
+  "duration_seconds": 0.23854780197143555,
+  "completed_at": "2025-11-12T20:20:54.763110"
+}

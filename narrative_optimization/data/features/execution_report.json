@@ -1,0 +1,312 @@
+{
+  "execution_mode": "specific",
+  "started_at": "2025-11-12T20:17:57.887272",
+  "completed_at": "2025-11-12T20:20:28.799650",
+  "total_duration_seconds": 150.91185522079468,
+  "batches_run": 1,
+  "total_domains": 3,
+  "successful_domains": 1,
+  "failed_domains": 2,
+  "batch_results": [
+    {
+      "batch_id": "batch_3_mid_pi",
+      "batch_name": "Mid-\u03c0 Domains",
+      "successful": 1,
+      "failed": 2,
+      "total": 3,
+      "duration_seconds": 150.90948605537415,
+      "domain_results": [
+        {
+          "domain": "imdb",
+          "status": "success",
+          "pi": 0.65,
+          "sample_size": 1000,
+          "transformers_completed": 34,
+          "transformers_failed": 3,
+          "total_features": 898,
+          "duration_seconds": 147.19078087806702,
+          "output_file": "/Users/michaelsmerconish/Desktop/RandomCode/novelization/narrative_optimization/data/features/imdb_all_features.npz",
+          "transformer_stats": [
+            {
+              "name": "nominative_analysis",
+              "category": "core",
+              "status": "success",
+              "features": 51,
+              "time_seconds": 3.7004010677337646
+            },
+            {
+              "name": "self_perception",
+              "category": "core",
+              "status": "success",
+              "features": 21,
+              "time_seconds": 2.061682939529419
+            },
+            {
+              "name": "narrative_potential",
+              "category": "core",
+              "status": "success",
+              "features": 35,
+              "time_seconds": 2.2223751544952393
+            },
+            {
+              "name": "linguistic_patterns",
+              "category": "core",
+              "status": "success",
+              "features": 36,
+              "time_seconds": 5.87690806388855
+            },
+            {
+              "name": "relational_value",
+              "category": "core",
+              "status": "success",
+              "features": 17,
+              "time_seconds": 4.766098976135254
+            },
+            {
+              "name": "ensemble_narrative",
+              "category": "core",
+              "status": "success",
+              "features": 25,
+              "time_seconds": 1.7732231616973877
+            },
+            {
+              "name": "statistical",
+              "category": "statistical",
+              "status": "failed",
+              "features": 0,
+              "time_seconds": 0,
+              "error": "sparse array length is ambiguous; use getnnz() or shape[0]"
+            },
+            {
+              "name": "phonetic",
+              "category": "nominative",
+              "status": "success",
+              "features": 91,
+              "time_seconds": 1.3575007915496826
+            },
+            {
+              "name": "social_status",
+              "category": "nominative",
+              "status": "success",
+              "features": 20,
+              "time_seconds": 1.3474621772766113
+            },
+            {
+              "name": "nominative_richness",
+              "category": "nominative",
+              "status": "success",
+              "features": 15,
+              "time_seconds": 4.5601418018341064
+            },
+            {
+              "name": "emotional_resonance",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 34,
+              "time_seconds": 3.4583981037139893
+            },
+            {
+              "name": "authenticity",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 30,
+              "time_seconds": 2.4805538654327393
+            },
+            {
+              "name": "conflict_tension",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 28,
+              "time_seconds": 2.0410079956054688
+            },
+            {
+              "name": "expertise_authority",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 32,
+              "time_seconds": 3.8080132007598877
+            },
+            {
+              "name": "cultural_context",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 34,
+              "time_seconds": 2.0260818004608154
+            },
+            {
+              "name": "suspense_mystery",
+              "category": "narrative_semantic",
+              "status": "success",
+              "features": 25,
+              "time_seconds": 1.34847092628479
+            },
+            {
+              "name": "optics",
+              "category": "structural",
+              "status": "success",
+              "features": 15,
+              "time_seconds": 1.1884691715240479
+            },
+            {
+              "name": "framing",
+              "category": "structural",
+              "status": "success",
+              "features": 12,
+              "time_seconds": 1.1982159614562988
+            },
+            {
+              "name": "temporal_evolution",
+              "category": "contextual",
+              "status": "success",
+              "features": 30,
+              "time_seconds": 0.9526998996734619
+            },
+            {
+              "name": "information_theory",
+              "category": "advanced",
+              "status": "success",
+              "features": 25,
+              "time_seconds": 11.013713121414185
+            },
+            {
+              "name": "namespace_ecology",
+              "category": "advanced",
+              "status": "failed",
+              "features": 0,
+              "time_seconds": 0,
+              "error": "list index out of range"
+            },
+            {
+              "name": "anticipatory_communication",
+              "category": "advanced",
+              "status": "success",
+              "features": 25,
+              "time_seconds": 0.5319888591766357
+            },
+            {
+              "name": "cognitive_fluency",
+              "category": "advanced",
+              "status": "success",
+              "features": 15,
+              "time_seconds": 0.10387611389160156
+            },
+            {
+              "name": "quantitative",
+              "category": "advanced",
+              "status": "success",
+              "features": 10,
+              "time_seconds": 0.5853049755096436
+            },
+            {
+              "name": "discoverability",
+              "category": "advanced",
+              "status": "success",
+              "features": 12,
+              "time_seconds": 5.01512598991394
+            },
+            {
+              "name": "visual_multimodal",
+              "category": "multimodal",
+              "status": "success",
+              "features": 39,
+              "time_seconds": 2.1573147773742676
+            },
+            {
+              "name": "crossmodal",
+              "category": "multimodal",
+              "status": "success",
+              "features": 12,
+              "time_seconds": 0.12901806831359863
+            },
+            {
+              "name": "audio",
+              "category": "multimodal",
+              "status": "failed",
+              "features": 0,
+              "time_seconds": 0,
+              "error": "local variable 'X' referenced before assignment"
+            },
+            {
+              "name": "crosslingual",
+              "category": "multimodal",
+              "status": "success",
+              "features": 20,
+              "time_seconds": 0.11152982711791992
+            },
+            {
+              "name": "multi_scale",
+              "category": "fractal",
+              "status": "success",
+              "features": 40,
+              "time_seconds": 0.19874215126037598
+            },
+            {
+              "name": "multi_perspective",
+              "category": "fractal",
+              "status": "success",
+              "features": 50,
+              "time_seconds": 0.2643110752105713
+            },
+            {
+              "name": "scale_interaction",
+              "category": "fractal",
+              "status": "success",
+              "features": 30,
+              "time_seconds": 0.02945995330810547
+            },
+            {
+              "name": "coupling_strength",
+              "category": "theory_aligned",
+              "status": "success",
+              "features": 12,
+              "time_seconds": 5.898821115493774
+            },
+            {
+              "name": "narrative_mass",
+              "category": "theory_aligned",
+              "status": "success",
+              "features": 10,
+              "time_seconds": 20.883058786392212
+            },
+            {
+              "name": "gravitational_features",
+              "category": "theory_aligned",
+              "status": "success",
+              "features": 20,
+              "time_seconds": 7.161244869232178
+            },
+            {
+              "name": "awareness_resistance",
+              "category": "theory_aligned",
+              "status": "success",
+              "features": 15,
+              "time_seconds": 24.542476892471313
+            },
+            {
+              "name": "fundamental_constraints",
+              "category": "theory_aligned",
+              "status": "success",
+              "features": 12,
+              "time_seconds": 20.60311985015869
+            }
+          ],
+          "completed_at": "2025-11-12T20:20:26.039964"
+        },
+        {
+          "domain": "golf",
+          "status": "failed",
+          "error": "Text field 'narrative' not found. Available fields: ['player_tournament_id', 'year', 'tournament_name', 'course_name', 'is_major', 'player_name', 'finish_position', 'total_score', 'to_par', 'rounds', 'made_cut', 'world_ranking_before', 'won_tournament', 'top_10_finish', 'top_3_finish', 'player_prestige', 'player_majors', 'course_difficulty']",
+          "duration_seconds": 0.03172183036804199,
+          "completed_at": "2025-11-12T20:20:27.547045"
+        },
+        {
+          "domain": "golf_enhanced",
+          "status": "failed",
+          "error": "Text field 'narrative_enhanced' not found. Available fields: ['player_tournament_id', 'year', 'tournament_name', 'course_name', 'is_major', 'player_name', 'finish_position', 'total_score', 'to_par', 'rounds', 'made_cut', 'world_ranking_before', 'won_tournament', 'top_10_finish', 'top_3_finish', 'player_prestige', 'player_majors', 'course_difficulty', 'leaderboard_top_10', 'tournament_leader', 'tournament_runner_up', 'contenders_within_3', 'tied_players', 'one_shot_ahead', 'one_shot_behind', 'defending_champion', 'past_winners_3yr', 'rivalry_player_in_field', 'cut_line_score', 'winning_score', 'field_strength', 'signature_holes', 'course_architect', 'famous_moments', 'course_record_round', 'course_playing_style', 'course_main_challenge', 'caddie_name', 'nationality', 'recent_tournaments']",
+          "duration_seconds": 0.11268806457519531,
+          "completed_at": "2025-11-12T20:20:28.706438"
+        }
+      ]
+    }
+  ]
+}

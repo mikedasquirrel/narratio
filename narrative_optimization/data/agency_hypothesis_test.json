@@ -1,0 +1,56 @@
+{
+  "hypothesis": "Agency component predicts R\u00b2 in sports",
+  "sports_analyzed": 6,
+  "correlation_agency_r2": 0.9574166697478037,
+  "p_value": 0.0026814009946844633,
+  "individual_mean_r2": 0.6443333333333333,
+  "team_mean_r2": 0.05466666666666667,
+  "gap": 0.5896666666666667,
+  "t_test_p": 0.12995114247053632,
+  "regression_r2": 0.9166466795109749,
+  "verdict": "supported",
+  "sports": {
+    "tennis": {
+      "file": "data/domains/tennis_complete_dataset.json",
+      "agency": 1.0,
+      "pi": 0.75,
+      "r2_reported": 0.931,
+      "type": "individual"
+    },
+    "golf": {
+      "file": "data/domains/golf_enhanced_narratives.json",
+      "agency": 1.0,
+      "pi": 0.7,
+      "r2_reported": 0.977,
+      "type": "individual"
+    },
+    "ufc": {
+      "file": "data/domains/ufc_with_narratives.json",
+      "agency": 0.8,
+      "pi": 0.722,
+      "r2_reported": 0.025,
+      "type": "individual_combat"
+    },
+    "nba": {
+      "file": "data/domains/nba_all_seasons_real.json",
+      "agency": 0.7,
+      "pi": 0.49,
+      "r2_reported": 0.04,
+      "type": "team"
+    },
+    "nfl": {
+      "file": "data/domains/nfl_complete_dataset.json",
+      "agency": 0.7,
+      "pi": 0.57,
+      "r2_reported": 0.062,
+      "type": "team"
+    },
+    "mlb": {
+      "file": "data/domains/mlb_complete_dataset.json",
+      "agency": 0.7,
+      "pi": 0.55,
+      "r2_reported": 0.062,
+      "type": "team"
+    }
+  }
+}

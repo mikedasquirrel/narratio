@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./narrative_optimization/domains:/app/narrative_optimization/domains
+      - cache_volume:/root/.narrative_optimization/cache
+    environment:
+      - NARRATIVE_CACHE_DIR=/root/.narrative_optimization/cache
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+  
+  continuous_learner:
+    build: .
+    command: python workflows/continuous_learning_workflow.py --continuous --interval 3600
+    volumes:
+      - ./data:/app/data
+      - ./narrative_optimization/domains:/app/narrative_optimization/domains
+      - cache_volume:/root/.narrative_optimization/cache
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    depends_on:
+      - api
+
+volumes:
+  cache_volume:
+
